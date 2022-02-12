@@ -1,0 +1,11 @@
+base
+knitr
+Rcpp
+brms
+dplyr
+purrr
+ggplot2
+gridExtra
+extraDistr
+StanHeaders
+rstan
