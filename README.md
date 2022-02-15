@@ -1,7 +1,7 @@
-<font size="8"> Power Analysis </font><br>
-<font size="6"> Replication Study JDMLab </font><br>
-<font size="3"> Simone D’Ambrogio </font><br>
-<font size="3"> 2022-02-15 </font><br>
+## Power Analysis
+### Replication Study JDMLab
+#### Simone D’Ambrogio 
+#### 2022-02-15 
 
 <br><br> <font size="6"> **Introduction** </font> <br> One of the most
 difficult and important decisions in power analysis involves specifying
