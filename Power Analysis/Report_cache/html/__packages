@@ -5,7 +5,9 @@ brms
 dplyr
 purrr
 ggplot2
+ggpubr
 gridExtra
 extraDistr
+stringr
 StanHeaders
 rstan

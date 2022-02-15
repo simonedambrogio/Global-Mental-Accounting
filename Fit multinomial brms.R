@@ -57,3 +57,30 @@ stan_mn <- stan_model(file = "mulinomial.stan")
 res<-sampling(stan_mn, iter = 2000, cores=4, data=data_mn)
 
 
+
+# ----------------- Fit Logistic ----------------- #
+
+N_cond1 = 93
+N_cond2 = 88
+
+
+sim_data <- rbind( data.frame(condition = 0, ans = rbinom(N_cond1, 1, 0.68)),
+                   data.frame(condition = 1, ans = rbinom(N_cond2, 1, 0.29)))
+
+fit_recall <- brm(ans ~ 1 + condition,
+                  data = sim_data,
+                  family = bernoulli(link = logit))
+
+make_stancode(ans ~ 1 + condition,
+              data = sim_data,
+              family = bernoulli(link = logit))
+
+
+
+stan_data <-  list(N_sbj = nrow(sim_data),
+                   x = sim_data$condition,
+                   ans = sim_data$ans) 
+
+stan_model <- stan_model(file = "Power Analysis/Stan/logistic.stan")
+res<-sampling(stan_model, iter = 4000, cores=4, 
+              data=stan_data, save_warmup = FALSE)
