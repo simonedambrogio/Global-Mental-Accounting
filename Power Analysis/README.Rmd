@@ -1,3 +1,29 @@
+---
+title: "Power Analysis"
+author: "Simone D'Ambrogio"
+subtitle: "Replication Study JDMLab"
+date: "`r Sys.Date()`"
+output:
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, fig.align='center')
+library(knitr)
+## Global options
+options(max.print="75")
+opts_chunk$set(
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE
+               )
+opts_knit$set(width=75)
+```
+
 <style type="text/css">
 body {
 text-align: justify;
@@ -14,25 +40,24 @@ font-size: 16px;
 
 
 </style>
+<br><br>
+<font size="6"> **Introduction** </font>
+<br>
+One of the most difficult and important decisions in power analysis involves specifying an effect size. Here we use previous finding to quantify the sample size needed to have a 80% statistical power, assuming as effect equal to the one these papers report.
 
-<br><br> <font size="6"> **Introduction** </font> <br> One of the most
-difficult and important decisions in power analysis involves specifying
-an effect size. Here we use previous finding to quantify the sample size
-needed to have a 80% statistical power, assuming as effect equal to the
-one these papers report.
+<br><br>
+<font size="4"> **Thaler, R. (1985). Mental accounting and consumer choice. Marketing science, 4(3), 199-214.** </font>
 
-<br><br> <font size="4"> **Thaler, R. (1985). Mental accounting and
-consumer choice. Marketing science, 4(3), 199-214.** </font>
-
-<br><br><br> <font size="3"> **Scenario 1** </font>
-
-<br> First, generate data assuming a multinomial distribution. The
-outcomes will be determined by a vector θ (called true_theta below in
-the R code) that indicates the probability of each outcome:
+<br><br><br>
+<font size="3"> **Scenario 1** </font>
 
 <br>
-
-``` r
+First, generate data assuming a multinomial distribution.
+The outcomes will be determined by a vector  θ (called true_theta
+ below in the R code) that indicates the probability of each outcome:
+ 
+ <br>
+```{r message=F}
  #Load libraries:
 library(brms); library(dplyr); library(purrr)
 library(ggplot2); theme_set(ggpubr::theme_pubr())
@@ -73,7 +98,7 @@ words_replace <- function (variable, words_to_replace, replace_with = "") {
 }
 ```
 
-``` r
+```{r message=F, warning=F, fig.width=3, fig.height=4}
 study = 'Thaler1985_scenario1'
 N_sbj <- 87
 answers <- c('A'=56, 'B'=16, 'nd'=15)
@@ -83,25 +108,19 @@ answers <- c('A'=56, 'B'=16, 'nd'=15)
                           nd = answers['nd']/N_sbj, 
                           row.names = 'Proportion of Responses'))
 ```
+<br><br>
+Given this vector of probabilities θ, generate values assuming a 
+multinomial distribution of responses in 100 trials:
 
-                                    A        B        nd
-    Proportion of Responses 0.6436782 0.183908 0.1724138
-
-<br><br> Given this vector of probabilities θ, generate values assuming
-a multinomial distribution of responses in 100 trials:
-
-``` r
+```{r message=F, warning=F, fig.width=3, fig.height=4}
 (sim_ans <- rmultinom(1, N_sbj, true_theta))
 ```
 
-       [,1]
-    A    58
-    B    15
-    nd   14
-
-<br><br> Now, let’s fit this simulated data using Stan. <br> Stan Code:
-
-``` r
+<br><br>
+Now, let's fit this simulated data using Stan. 
+<br>
+Stan Code:
+```{r eval = FALSE}
 data {
   int<lower = 1> N_opt;
   int<lower = 1> N_sbj;
@@ -116,17 +135,17 @@ model {
 }
 ```
 
-<br> Stan Data:
-
-``` r
+<br>
+Stan Data:
+```{r message=F, warning=F, fig.width=3, fig.height=4}
 stan_data <-  list(N_sbj = N_sbj,
                    N_opt = nrow(sim_ans),
                    ans = c(sim_ans)) 
 ```
 
-<br> Fit Stan Model:
-
-``` r
+<br>
+Fit Stan Model:
+```{r message=F, warning=F, fig.width=3, fig.height=4}
 library( rstan ); options( mc.cores = 4 ); 
 rstan_options(auto_write = TRUE)
 
@@ -139,14 +158,11 @@ res<-sampling(stan_model, iter = 2000, cores=4,
 plot(res)
 ```
 
-<img src="README_files/figure-markdown_github/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
+Repeat this procedure and count the number of time the 95% Credible Interval (CI) of response 'A' intersects the 95% CI of response 'B'.
 
-Repeat this procedure and count the number of time the 95% Credible
-Interval (CI) of response ‘A’ intersects the 95% CI of response ‘B’.
-
-<br><br> Functions:
-
-``` r
+<br><br>
+Functions:
+```{r}
 isStatSign <- function(true_theta, N_sbj){
   # Generate Artificial Data
   sim_ans <- rmultinom(1, N_sbj, true_theta)
@@ -216,14 +232,14 @@ get_power <- function(N_sbj, N_sim=100){
 }
 ```
 
-``` r
+```{r eval=FALSE}
 Power <- get_power(87, N_sim = 300)
 # Save Results
 dir.create( paste0('Results/', study) )
 write.csv(Power, file = paste0('Results/', study, '/power.csv'), row.names = F)
 ```
 
-``` r
+```{r message=F, warning=F, fig.width=4, fig.height=3.5}
 pow_df <- read.csv(file = paste0('Results/', study, '/power.csv'))
 pow_pl <- ggplot(pow_df, aes(N_sbj, power)) +
   geom_ribbon(aes(x=N_sbj, ymin=0.75, ymax=0.85), fill="#E7D4E8", alpha=1) +
@@ -240,11 +256,12 @@ ggsave(pow_pl, filename = paste0('Results/', study, '/power.svg'), width = 4.5, 
 #pow_pl
 ```
 
-<br><br> <font size="3"> **Scenario 2** </font>
+<br><br>
+<font size="3"> **Scenario 2** </font>
 
-<br> Estimate and Plot Power
-
-``` r
+<br>
+Estimate and Plot Power
+```{r eval=FALSE}
 # ------------ Input Paper Results ------------ #
 study = 'Thaler1985_scenario2'
 N_sbj <- 87
@@ -263,7 +280,8 @@ dir.create( paste0('Results/', study) )
 write.csv(Power, file = paste0('Results/', study, '/power.csv'), row.names = F)
 ```
 
-``` r
+```{r message=F, warning=F, fig.width=4, fig.height=3.5}
+
 # ----------------- Plot ----------------- #
 pow_df <- read.csv(file = paste0('Results/', study, '/power.csv'))
 pow_pl <- ggplot(pow_df, aes(N_sbj, power)) +
@@ -282,11 +300,13 @@ ggsave(pow_pl, filename = paste0('Results/', study, '/power.svg'), width = 4.5, 
 #pow_pl
 ```
 
-<br><br> <font size="3"> **Scenario 3** </font>
 
-<br> Estimate and Plot Power
+<br><br>
+<font size="3"> **Scenario 3** </font>
 
-``` r
+<br>
+Estimate and Plot Power
+```{r eval=FALSE}
 # ------------ Input Paper Results ------------ #
 study = 'Thaler1985_scenario3'
 N_sbj <- 87
@@ -303,9 +323,10 @@ Power <- get_power(N_sbj, N_sim = 300)
 # Save Results
 dir.create( paste0('Results/', study) )
 write.csv(Power, file = paste0('Results/', study, '/power.csv'), row.names = F)
+
 ```
 
-``` r
+```{r message=F, warning=F, fig.width=4, fig.height=3.5}
 # ----------------- Plot ----------------- #
 pow_df <- read.csv(file = paste0('Results/', study, '/power.csv'))
 pow_pl <- ggplot(pow_df, aes(N_sbj, power)) +
@@ -324,11 +345,12 @@ ggsave(pow_pl, filename = paste0('Results/', study, '/power.svg'), width = 4.5, 
 #pow_pl
 ```
 
-<br><br> <font size="3"> **Scenario 4** </font>
+<br><br>
+<font size="3"> **Scenario 4** </font>
 
-<br> Estimate and Plot Power
-
-``` r
+<br>
+Estimate and Plot Power
+```{r eval=FALSE}
 # ------------ Input Paper Results ------------ #
 study = 'Thaler1985_scenario4'
 N_sbj <- 87
@@ -345,9 +367,10 @@ Power <- get_power(N_sbj, N_sim = 300)
 # Save Results
 dir.create( paste0('Results/', study) )
 write.csv(Power, file = paste0('Results/', study, '/power.csv'), row.names = F)
+
 ```
 
-``` r
+```{r message=F, warning=F, fig.width=4, fig.height=3.5}
 # ----------------- Plot ----------------- #
 pow_df <- read.csv(file = paste0('Results/', study, '/power.csv'))
 pow_pl <- ggplot(pow_df, aes(N_sbj, power)) +
@@ -366,9 +389,13 @@ ggsave(pow_pl, filename = paste0('Results/', study, '/power.svg'), width = 4.5, 
 #pow_pl
 ```
 
-<br><br> <font size="3"> **All 4 Scenarios** </font>
 
-``` r
+<br><br>
+<font size="3"> **All 4 Scenarios** </font>
+
+```{r message=F, warning=F, fig.width=4, fig.height=3.5}
+
+
 Thaler1985 <- purrr::map_dfr(1:4, function(i){
   read.csv(paste0('Results/Thaler1985_scenario', i,'/power.csv'))
 })
@@ -388,15 +415,12 @@ Thaler1985 %>%
   theme_pubr()
 ```
 
-<img src="README_files/figure-markdown_github/unnamed-chunk-16-1.png" style="display: block; margin: auto;" />
-
-<br><br> <font size="4"> **Kahneman & Tversky, (1981). Kahneman, D., &
-Tversky, A. (1982). The psychology of preferences. Scientific American,
-246(1), 160-173.** </font>
+<br><br>
+<font size="4"> **Kahneman &amp; Tversky, (1981). Kahneman, D., &amp; Tversky, A. (1982). The psychology of preferences. Scientific American, 246(1), 160-173.** </font>
 
 <br><br>
 
-``` r
+```{r message=F, warning=F, fig.width=3, fig.height=4}
 # ------------ Input Paper Results ------------ #
 study = 'Kahneman1981'
 N_sbj = 181
@@ -406,21 +430,21 @@ P_sbj_v2 = 88/N_sbj #Proportion Subject in the Second Version
 (true_theta <- c(V1  = 0.68,  #First Version 
                  V2  = 0.29)) #Second Version
 ```
+<br><br>
+Given this vector of probabilities θ, generate values assuming a 
+binomial distribution of responses in N_sbj trials:
 
-      V1   V2 
-    0.68 0.29 
-
-<br><br> Given this vector of probabilities θ, generate values assuming
-a binomial distribution of responses in N_sbj trials:
-
-``` r
+```{r message=F, warning=F, fig.width=3, fig.height=4}
 sim_ans <- rbind( data.frame(condition = 0, ans = rbinom( round(N_sbj*P_sbj_v1), 1, true_theta['V1'])),
                   data.frame(condition = 1, ans = rbinom( round(N_sbj*P_sbj_v2), 1, true_theta['V2'])))
 ```
 
-<br><br> Now, let’s fit this simulated data using Stan. <br> Stan Code:
+<br><br>
+Now, let's fit this simulated data using Stan. 
+<br>
+Stan Code:
+```{r eval = FALSE}
 
-``` r
 data {
   int<lower = 1> N_sbj;
   vector[N_sbj] x;
@@ -437,17 +461,17 @@ model {
 }
 ```
 
-<br> Stan Data:
-
-``` r
+<br>
+Stan Data:
+```{r message=F, warning=F, fig.width=3, fig.height=4}
 stan_data <-  list(N_sbj = nrow(sim_ans),
                    x = sim_ans$condition,
                    ans = sim_ans$ans) 
 ```
 
-<br> Fit Stan Model:
-
-``` r
+<br>
+Fit Stan Model:
+```{r message=F, warning=F, fig.width=3, fig.height=4}
 library( rstan ); options( mc.cores = 4 ); 
 rstan_options(auto_write = TRUE)
 
@@ -460,14 +484,11 @@ res<-sampling(stan_model, iter = 2000, cores=4,
 plot(res)
 ```
 
-<img src="README_files/figure-markdown_github/unnamed-chunk-21-1.png" style="display: block; margin: auto;" />
+Repeat this procedure and count the number of time the 95% Credible Interval (CI) of beta1 intersects 0.
 
-Repeat this procedure and count the number of time the 95% Credible
-Interval (CI) of beta1 intersects 0.
-
-<br><br> Functions:
-
-``` r
+<br><br>
+Functions:
+```{r}
 isStatSign <- function(true_theta, N_sbj){
   # Generate Artificial Data
   sim_ans <- rbind( data.frame(condition = 0, 
@@ -502,15 +523,16 @@ isStatSign <- function(true_theta, N_sbj){
 }
 ```
 
-``` r
+```{r eval=FALSE}
 # ----------------- Estimate ----------------- #
 Power <- get_power(N_sbj, N_sim = 300)
 # Save Results
 dir.create( paste0('Results/', study) )
 write.csv(Power, file = paste0('Results/', study, '/power.csv'), row.names = F)
+
 ```
 
-``` r
+```{r message=F, warning=F, fig.width=4, fig.height=3.5}
 pow_df <- read.csv(file = paste0('Results/', study, '/power.csv'))
 pow_pl <- ggplot(pow_df, aes(N_sbj, power)) +
   geom_ribbon(aes(x=N_sbj, ymin=0.75, ymax=0.85), fill="#E7D4E8", alpha=1) +
@@ -527,4 +549,3 @@ ggsave(pow_pl, filename = paste0('Results/', study, '/power.svg'), width = 4.5, 
 pow_pl
 ```
 
-<img src="README_files/figure-markdown_github/unnamed-chunk-24-1.png" style="display: block; margin: auto;" />
