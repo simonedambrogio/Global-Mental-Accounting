@@ -1,19 +1,7 @@
-<style type="text/css">
-body {
-text-align: justify;
-font-size: 16px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-
-
-</style>
+<font size="8">Power Analysis</font><br>
+<font size="6">Replication Study JDMLab</font><br>
+<font size="3">Simone D’Ambrogio</font><br>
+<font size="3">2022-02-15</font><br>
 
 <br><br> <font size="6"> **Introduction** </font> <br> One of the most
 difficult and important decisions in power analysis involves specifying
