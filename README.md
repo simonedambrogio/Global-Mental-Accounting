@@ -1,7 +1,7 @@
-<font size="8">Power Analysis</font><br>
-<font size="6">Replication Study JDMLab</font><br>
-<font size="3">Simone D’Ambrogio</font><br>
-<font size="3">2022-02-15</font><br>
+<font size="8"> Power Analysis </font><br>
+<font size="6"> Replication Study JDMLab </font><br>
+<font size="3"> Simone D’Ambrogio </font><br>
+<font size="3"> 2022-02-15 </font><br>
 
 <br><br> <font size="6"> **Introduction** </font> <br> One of the most
 difficult and important decisions in power analysis involves specifying
@@ -12,7 +12,7 @@ one these papers report.
 <br><br> <font size="4"> **Thaler, R. (1985). Mental accounting and
 consumer choice. Marketing science, 4(3), 199-214.** </font>
 
-<br><br><br> <font size="3"> **Scenario 1** </font>
+<br> <font size="3"> **Scenario 1** </font>
 
 <br> First, generate data assuming a multinomial distribution. The
 outcomes will be determined by a vector θ (called true_theta below in
