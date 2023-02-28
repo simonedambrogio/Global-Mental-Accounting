@@ -1,0 +1,26 @@
+{
+    "id": "500ABA89",
+    "path": "~/Dropbox/Ongoing/Mental Account Replication/Pilot Comparison/Report.Rmd",
+    "project_path": "Report.Rmd",
+    "type": "r_markdown",
+    "hash": "1940245588",
+    "contents": "",
+    "dirty": false,
+    "created": 1652973569867.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "557,0",
+        "scrollLine": "455"
+    },
+    "folds": "53|14|144|0|\n147|40|186|0|\n190|15|196|0|\n202|106|256|0|\n262|102|363|0|\n369|102|402|0|\n408|102|452|0|\n458|102|501|0|\n507|102|554|0|\n560|102|605|0|\n",
+    "lastKnownWriteTime": 1652975491,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1652975491805,
+    "read_only": false,
+    "read_only_alternatives": []
+}

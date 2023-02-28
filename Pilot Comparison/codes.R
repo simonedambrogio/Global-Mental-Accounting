@@ -1,0 +1,520 @@
+# Load libraries
+library(dplyr); library(purrr); library(stringr)
+library(ggplot2); library(ggpubr); library(jcolors)
+library(cowplot); library(reshape2); library(ggprism)
+library(svglite)
+
+pilot_type <- c('short', 'long')
+
+mytheme <- function (palette = "black_and_white", base_size = 14, base_family = "sans", 
+                     base_fontface = "plain", base_line_size = base_size/20, base_rect_size = base_size/14, 
+                     axis_text_angle = 0, border = FALSE) {
+  
+  is_bool <- function(x) {
+    is_logical(x, n = 1) && !is.na(x)
+  } 
+  angle <- axis_text_angle[1]
+  if (!angle %in% c(0, 45, 90, 270)) 
+    stop(sprintf("'axis_text_angle' must be one of [%s]", 
+                 paste(c(0, 45, 90, 270), collapse = ", ")), ".\nFor other angles, use the guide_axis() function in ggplot2 instead", 
+         call. = FALSE)
+  if (!palette %in% names(ggprism::ggprism_data$themes)) {
+    stop("The palette ", paste(palette), " does not exist.\n         See names(ggprism_data$themes) for valid palette names")
+  }
+  colours <- tibble::deframe(ggprism::ggprism_data$themes[[palette]])
+  if (!is_bool(border)) {
+    stop("border must be either: TRUE or FALSE")
+  }
+  else {
+    if (border) {
+      panel.border <- element_rect(fill = NA)
+      axis.line <- element_blank()
+    }
+    else if (!border) {
+      panel.border <- element_blank()
+      axis.line <- element_line()
+    }
+  }
+  t <- theme(line = element_line(colour = colours["axisColor"], 
+                                 size = base_line_size, linetype = 1, lineend = "square"), 
+             rect = element_rect(fill = "white", colour = colours["axisColor"], 
+                                 size = base_rect_size, linetype = 1), text = element_text(family = base_family, 
+                                                                                           face = base_fontface, colour = colours["graphTitleColor"], 
+                                                                                           size = base_size, lineheight = 0.9, hjust = 0.5, 
+                                                                                           vjust = 0.5, angle = 0, margin = margin(), debug = FALSE), 
+             prism.ticks.length = unit(base_size/50, "pt"), axis.line = axis.line, 
+             axis.line.x = NULL, axis.line.y = NULL, axis.text = element_text(size = rel(0.95), 
+                                                                              colour = colours["axisLabelColor"]), axis.text.x = element_text(margin = margin(t = 0.8 * 
+                                                                                                                                                                base_size/4), angle = axis_text_angle, hjust = ifelse(axis_text_angle %in% 
+                                                                                                                                                                                                                        c(45, 90, 270), 1, 0.5), vjust = ifelse(axis_text_angle %in% 
+                                                                                                                                                                                                                                                                  c(0, 90, 270), 0.5, 1)), axis.text.x.top = element_text(margin = margin(b = 0.8 * 
+                                                                                                                                                                                                                                                                                                                                            base_size/4), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.5 * 
+                                                                                                                                                                                                                                                                                                                                                                                                                   base_size/4), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.5 * 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                base_size/4), hjust = 0), axis.ticks = element_line(), 
+             axis.ticks.length = unit(3, "points"), axis.ticks.length.x = NULL, 
+             axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL, 
+             axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL, 
+             axis.ticks.length.y.right = NULL, axis.title = element_text(colour = colours["axisTitleColor"]), 
+             axis.title.x = element_text(margin = margin(t = base_size * 
+                                                           0.6), vjust = 1), axis.title.x.top = element_text(margin = margin(b = base_size * 
+                                                                                                                               0.6), vjust = 0), axis.title.y = element_text(angle = 90, 
+                                                                                                                                                                             margin = margin(r = base_size * 0.6), vjust = 1), 
+             axis.title.y.right = element_text(angle = -90, margin = margin(l = base_size * 
+                                                                              0.6), vjust = 0), legend.background = element_blank(), 
+             legend.spacing = unit(base_size, "pt"), legend.spacing.x = NULL, 
+             legend.spacing.y = NULL, legend.margin = margin(base_size/2, 
+                                                             base_size/2, base_size/2, base_size/2), legend.key = element_blank(), 
+             legend.key.size = unit(1.2, "lines"), legend.key.height = NULL, 
+             legend.key.width = unit(base_size * 1.8, "pt"), legend.text = element_text(size = rel(0.8), 
+                                                                                        face = "plain"), legend.text.align = NULL, legend.title = element_blank(), 
+             legend.title.align = NULL, legend.position = "right", 
+             legend.direction = NULL, legend.justification = "center", 
+             legend.box = NULL, legend.box.margin = margin(0, 0, 0, 
+                                                           0, "cm"), legend.box.background = element_blank(), 
+             legend.box.spacing = unit(base_size, "pt"), panel.background = element_rect(fill = ifelse(palette == 
+                                                                                                         "office", colours["plottingAreaColor"], NA), colour = NA), 
+             panel.border = panel.border, panel.grid = element_blank(), 
+             panel.grid.minor = element_blank(), panel.spacing = unit(base_size/2, 
+                                                                      "pt"), panel.spacing.x = NULL, panel.spacing.y = NULL, 
+             panel.ontop = FALSE, strip.background = element_blank(), 
+             strip.text = element_text(colour = colours["axisTitleColor"], 
+                                       size = rel(0.8), margin = margin(base_size/2.5, base_size/2.5, 
+                                                                        base_size/2.5, base_size/2.5)), strip.text.x = element_text(margin = margin(b = base_size/3)), 
+             strip.text.y = element_text(angle = -90, margin = margin(l = base_size/3)), 
+             strip.text.y.left = element_text(angle = 90), strip.placement = "inside", 
+             strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(base_size/4, 
+                                                                                              "pt"), strip.switch.pad.wrap = unit(base_size/4, 
+                                                                                                                                  "pt"), plot.background = element_rect(fill = colours["pageBackgroundColor"], 
+                                                                                                                                                                        colour = NA), plot.title = element_text(size = rel(1.2), 
+                                                                                                                                                                                                                hjust = 0.5, vjust = 1, margin = margin(b = base_size)), 
+             plot.title.position = "panel", plot.subtitle = element_text(hjust = 0.5, 
+                                                                         vjust = 1, margin = margin(b = base_size/2)), plot.caption = element_text(size = rel(0.8), 
+                                                                                                                                                   hjust = 1, vjust = 1, margin = margin(t = base_size/2)), 
+             plot.caption.position = "panel", plot.tag = element_text(size = rel(1.2), 
+                                                                      hjust = 0.5, vjust = 0.5), plot.tag.position = "topleft", 
+             plot.margin = margin(base_size/2, base_size/2, base_size/2, 
+                                  base_size/2), complete = TRUE)
+  ggprism::ggprism_data$themes[["all_null"]] %+replace% t
+}
+
+# -------------- Load data -------------- #
+
+load_data=TRUE
+if( load_data ){
+  # --- Short Version --- #
+  data_short <- readRDS("../Short Version/Data/data_short.rds")$data %>%
+    mutate(subject = 1:n()) %>%
+    rename(age = Age., A3 = A3.)
+  
+  data_short_MA <- data_short[, -(48:75)] # Remove final questionnaires
+  # Remove response time
+  idx_time <- str_detect(names(data_short_MA), "time_")
+  data_short_MA <- data_short_MA[, !idx_time]
+  
+  data_short_MA <- data_short_MA %>%
+    rename_with(~gsub(".", "", .x, fixed = TRUE)) %>%
+    rename_with(toupper, .cols = -contains("subject"))
+  
+  # --- Long Version --- #
+  data_long <- readRDS("../Long Version/Data/data_long.rds")$data %>%
+    mutate(subject = 1:n()) %>%
+    rename(age = Age_, A3=A3_)
+  
+  data_long_MA <- data_long[, -(48:75)] # Remove final questionnaires
+  # Remove response time
+  idx_time <- str_detect(names(data_long_MA), "time_")
+  data_long_MA <- data_long_MA[, !idx_time]
+  
+  data_long_MA <- data_long_MA %>%
+    rename_with(~gsub(".", "", .x, fixed = TRUE)) %>%
+    rename_with(~gsub("__", "_", .x, fixed = TRUE)) %>%
+    rename_with(toupper, .cols = -contains("subject")) %>% 
+    rename(D4=D4_)
+  
+}
+
+
+# ----------- Scenario 1 ----------- #
+# Create dataframe scenario 1
+dt_sh_s1 <-  data_short_MA %>% 
+  select(subject, contains('A', ignore.case = FALSE)) %>% 
+  # Recode response
+  mutate(`gain-gain VS gain` = case_when(A1=='A'~1, A1=='B'~2, T~3),
+         `loss-loss VS loss` = case_when(A2=='A'~1, A2=='B'~2, T~3),
+         `gain-loss VS gain` = case_when(A3=='A'~1, A3=='B'~2, T~3),
+         `loss-gain VS loss` = case_when(A4=='A'~1, A4=='B'~2, T~3)
+  ) %>% 
+  select(-contains('A', ignore.case=FALSE)) %>% 
+  melt(id.var='subject',
+       variable.name='scenario',
+       value.name='response')  %>% 
+  mutate(type='short')  %>% 
+  group_by(scenario, response) %>% 
+  mutate(count=n()) %>% 
+  filter(row_number()==1) %>% 
+  ungroup()
+
+
+dt_lg_s1 <-  data_long_MA %>% 
+  select(subject, contains('A', ignore.case = FALSE)) %>% 
+  # Recode response
+  mutate(`gain-gain VS gain` = A1,
+         `loss-loss VS loss` = A2,
+         `gain-loss VS gain` = A3,
+         `loss-gain VS loss` = A4 ) %>% 
+  select(-contains('A', ignore.case=FALSE)) %>% 
+  melt(id.var='subject',
+       variable.name='scenario',
+       value.name='response')  %>% 
+  mutate(type='long') %>% 
+  group_by(scenario, response) %>% 
+  mutate(count=n()) %>% 
+  filter(row_number()==1) %>% 
+  ungroup()
+  
+
+(pl1 <- rbind(dt_sh_s1, dt_lg_s1) %>% 
+  ggplot(aes(response, count, color=type)) +
+  scale_fill_brewer(palette = 'Set1') +
+  scale_color_brewer(palette = 'Set1') +
+  geom_point(aes(shape=type), size=3) +
+  geom_line(aes(group=type, color=type, linetype=type), size=1) +
+  mytheme() + labs(y='Response count', x=NULL, 
+                   title = '“MrAB” scenarios') +
+  facet_wrap(~scenario) + 
+    theme(legend.position='top') +
+  scale_x_continuous(breaks = 1:3, labels = c('A', 'B', 'Same'), 
+                     limits= c(0.5, 3.5) ))
+
+
+  # ggplot(aes(response, fill=type)) +
+  # geom_bar(aes(y = (..count..)/sum(..count..)),
+  #          position=position_dodge()) + 
+  # mytheme() + theme(legend.position = 'none', 
+  #                   axis.text.y=element_blank()) +
+  # scale_fill_brewer(palette = 'Set1') +
+  # scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+  # scale_x_continuous(guide = "prism_offset", breaks = 1:3, labels = c('A', 'B', 'Same')) +
+  # labs(y='Response count', x=NULL, title = '“MrAB” scenarios') +
+  # facet_wrap(~scenario)
+
+
+
+# ----------- Scenario 2 ----------- #
+n_sbj <- 50
+
+# --- Short --- #
+df <- data_short_MA %>% 
+  select(contains('B', ignore.case =  F))
+
+col_names <- names(df)
+cost <- rep(c(0, 5, 10), each=2)
+market_value <- rep(c(5, 10), 3)
+col_idx <- seq(1,ncol(df),2)
+df1 <- map_df(seq_along(col_idx), function(i){
+  
+  data.frame( response = c(df[,col_names[col_idx[i]]], df[,col_names[col_idx[i]+1]]),
+              cost = cost[i],
+              market_value = market_value[i],
+              buyer = c(rep('Friend', n_sbj), rep('Stranger', n_sbj)) )
+  
+}) 
+
+data_sh_s2 <- df1 %>% 
+  mutate(response=ifelse(response%in%unique(cost), response, 'Other'),
+         response = factor(response, levels = c('0', '5', '10', 'Other'))) %>% 
+  group_by(cost, market_value, buyer) %>% 
+  count(response, .drop = F) %>% 
+  mutate(type='short')
+
+# --- Short --- #
+df <- data_long_MA %>% 
+  select(contains('B', ignore.case =  F))
+
+col_names <- names(df)
+cost <- rep(c(0, 5, 10), each=2)
+market_value <- rep(c(5, 10), 3)
+col_idx <- seq(1,ncol(df),2)
+df1 <- map_df(seq_along(col_idx), function(i){
+  
+  data.frame( response = c(df[,col_names[col_idx[i]]], df[,col_names[col_idx[i]+1]]),
+              cost = cost[i],
+              market_value = market_value[i],
+              buyer = c(rep('Friend', n_sbj), rep('Stranger', n_sbj)) )
+  
+}) 
+
+data_lg_s2 <- df1 %>% 
+  mutate(response=ifelse(response%in%unique(cost), response, 'Other'),
+         response = factor(response, levels = c('0', '5', '10', 'Other'))) %>% 
+  group_by(cost, market_value, buyer) %>% 
+  count(response, .drop = F) %>% 
+  mutate(type='long')
+
+rbind( data_sh_s2, data_lg_s2) %>% 
+  ggplot(aes(response, n, color=buyer)) +
+  geom_point(aes(shape=type), size=3) + 
+  geom_line(aes(group=type), size=1) + 
+  mytheme() + 
+  scale_color_jcolors(palette = 'pal6') +
+  labs(y=NULL, x=NULL) +
+  facet_grid(cost~market_value)
+
+(pl2 <- ggplot() +
+  # Short 
+  geom_point(data=data_sh_s2, 
+             aes(response, n, color=buyer),
+             shape=16, size=3) + 
+  geom_line(data=data_sh_s2, 
+            aes(response, n, group=buyer, color=buyer),
+            size=1) + 
+  # Long 
+  geom_point(data=data_lg_s2, 
+             aes(response, n, color=buyer),
+             shape=17, size=3) + 
+  geom_line(data=data_lg_s2, 
+            aes(response, n, group=buyer, color=buyer),
+            size=1, linetype=2) + 
+  mytheme() + theme(legend.position= 'top' ) +
+  scale_color_jcolors(palette = 'pal6') +
+  labs(y='Response count', x=NULL, title = '“Game” scenarios') +
+  facet_grid(cost~market_value))
+
+
+# ----------- Scenario 3 ----------- #
+
+# Create dataframe scenario 3
+data_sh_s3 <- data_short_MA %>%
+  select(subject, contains("C", ignore.case = FALSE)) %>%
+  melt(id.var = "subject", variable.name = "store", value.name = "response") %>%
+  mutate(store = ifelse(store == "C1_1", "Resort\nHotel", "Grocery\nStore"), 
+         response = as.numeric(response),
+         type = 'short')
+
+data_lg_s3 <- data_long_MA %>%
+  select(subject, contains("C", ignore.case = FALSE)) %>%
+  melt(id.var = "subject", variable.name = "store", value.name = "response") %>%
+  mutate(store = ifelse(store == "C1_1", "Resort\nHotel", "Grocery\nStore"), 
+         response = as.numeric(response),
+         type= 'long')
+
+
+
+( pl3 <- rbind( data_sh_s3, data_lg_s3 )  %>%
+  group_by(store, type) %>% 
+  summarise(response = mean(response)) %>% 
+  ggplot(aes(store, response, color = type)) + 
+  scale_fill_brewer(palette = 'Set1') +
+  scale_color_brewer(palette = 'Set1') +
+  geom_point(aes(shape=type), size=3) +
+  geom_line(aes(group=type, color=type, linetype=type), size=1) +
+  mytheme() + theme(legend.position = 'none') +
+  labs(y='Mean response', x='Store', title = '“Drink” scenarios') )
+
+
+  # ggplot(aes(response, fill = store, color = store)) + 
+  # geom_density(aes(linetype=type), alpha = 0.4, adjust = 1.5, size = 2) + 
+  # mytheme() + theme(legend.position = c(0.7, 0.6)) +
+  # scale_fill_jcolors(palette = "pal6") + scale_color_jcolors(palette = "pal6") +
+  # # scale_y_continuous(labels=scales::percent, guide = 'prism_offset') +
+  # scale_x_continuous(breaks = seq(0, 40, 10), limits = c(0, 40)) +
+  # labs(y='Response density', x=NULL, title = '“Drink” scenarios')
+
+# ----------- Scenario 4 ----------- #
+data_sh_s4 <- data_short_MA %>% 
+  select(subject, contains('D', ignore.case = FALSE)) %>% 
+  rename(low_price2 = D3, low_price1 = D2_1,
+         high_price2 = D4, high_price1 = D2_2) %>% 
+  melt(id.var='subject',
+       variable.name='price',
+       value.name='response') %>% 
+  mutate(price=ifelse(str_detect(price, 'low'), 'Low\n', 'High\n'),
+         response=ifelse(response=='No', 1, 2)) %>% 
+  filter(response==2) %>% 
+  group_by(price) %>%
+  count(response, .drop = F) %>% 
+  ungroup() %>% 
+  mutate(type='short')
+
+data_lg_s4 <- data_long_MA %>% 
+  select(subject, contains('D', ignore.case = FALSE)) %>% 
+  rename(low_price2 = D3, low_price1 = D2_1,
+         high_price2 = D4, high_price1 = D2_2) %>% 
+  melt(id.var='subject',
+       variable.name='price',
+       value.name='response') %>% 
+  mutate(price=ifelse(str_detect(price, 'low'), 'Low\n', 'High\n')) %>% 
+  filter(response==1) %>% 
+  group_by(price) %>%
+  count(response, .drop = F) %>% 
+  ungroup() %>% 
+  mutate(type='long')
+
+(pl4 <- rbind( data_sh_s4, data_lg_s4) %>% 
+  ggplot(aes(price, n, color=type)) +
+  # geom_bar(stat = 'identity', 
+  #          position=position_dodge()) +
+  scale_fill_brewer(palette = 'Set1') +
+  scale_color_brewer(palette = 'Set1') +
+  geom_point(aes(shape=type), size=3) +
+  geom_line(aes(group=type, color=type, linetype=type), size=1) +
+  mytheme() + theme(legend.position = 'none') +
+  labs(y='Number of "Yes"', x='Price', title='“Jacket” scenarios') )
+
+
+# ----------- Scenario 5 ----------- #
+data_sh_s5 <- data_short_MA %>% 
+  select(subject, contains('E', ignore.case = FALSE)) %>%
+  rename(Ticket = E1, 
+         Cash = E2) %>% 
+  melt(id.var='subject',
+       variable.name='loss',
+       value.name='response') %>% 
+  mutate(response=ifelse(response=='No', 1, 2)) %>% 
+  filter(response==2) %>% 
+  group_by(loss) %>%
+  count(response, .drop = F) %>% 
+  ungroup() %>% 
+  mutate(type='short')
+
+data_lg_s5 <- data_long_MA %>% 
+  select(subject, contains('E', ignore.case = FALSE)) %>%
+  rename(Ticket = E1, 
+         Cash = E2) %>% 
+  melt(id.var='subject',
+       variable.name='loss',
+       value.name='response') %>% 
+  filter(response==1) %>% 
+  group_by(loss) %>%
+  count(response, .drop = F) %>% 
+  ungroup() %>% 
+  mutate(type='long')
+
+
+( pl5 <- rbind( data_sh_s5, data_lg_s5) %>% 
+  ggplot(aes(loss, n, color=type)) +
+  # geom_bar(stat = 'identity', 
+  #          position=position_dodge()) +
+  scale_fill_brewer(palette = 'Set1') +
+  scale_color_brewer(palette = 'Set1') +
+  geom_point(aes(shape=type), size=3) +
+  geom_line(aes(group=type, color=type, linetype=type), size=1) +
+  mytheme() + theme(legend.position = 'none') +
+  labs(y='Number of "Yes"', x='Loss', title='“Play” scenarios') )
+  
+
+
+# ----------- Scenario 6 ----------- #
+answers = c("I feel like I wasted $20", "I feel like I wasted something but no specific amount or measure comes to mind",
+            "I feel like I wasted nothing, since my visit had already been paid for")
+data_sh_s6 <- data_short_MA %>%
+  select(subject, contains("F", ignore.case = FALSE)) %>%
+  mutate(F1 = case_when(F1 == answers[1] ~ 1, 
+                        F1 == answers[2] ~ 0, 
+                        F1 == answers[3] ~ 0), 
+         F2 = case_when(F2 == answers[1] ~ 1, 
+                        F2 == answers[2] ~ 0, 
+                        F2 == answers[3] ~ 0)) %>%
+  rename(`Per-session` = F1, Yearly = F2) %>%
+  melt(id.var = "subject", variable.name = "frame", value.name = "response") %>% 
+  filter(response == 1) %>%
+  group_by(frame) %>%
+  count(response, .drop = F) %>%
+  ungroup() %>% 
+  mutate(type='short')
+  
+
+data_lg_s6 <- data_long_MA %>%
+  select(subject, contains("F", ignore.case = FALSE)) %>%
+  mutate(F1 = ifelse( F1==1, 1, 0), 
+         F2 = ifelse( F2==1, 1, 0)) %>%
+  rename(`Per-session` = F1, Yearly = F2) %>%
+  melt(id.var = "subject", variable.name = "frame", value.name = "response") %>% 
+  filter(response == 1) %>%
+  group_by(frame) %>%
+  count(response, .drop = F) %>%
+  ungroup() %>% 
+  mutate(type='long')
+
+
+( pl6 <- rbind( data_sh_s6, data_lg_s6) %>% 
+  ggplot(aes(frame, n, color=type)) +
+  # geom_bar(stat = 'identity', 
+  #          position=position_dodge()) +
+  scale_fill_brewer(palette = 'Set1') +
+  scale_color_brewer(palette = 'Set1') +
+  geom_point(aes(shape=type), size=3) +
+  geom_line(aes(group=type, color=type, linetype=type), size=1) +
+  mytheme() + theme(legend.position = 'none') +
+  labs(y="Number of \"Wasted $20\"", x='Frame', title='“Gym” scenarios') )
+
+
+# ----------- Scenario 7 ----------- #
+answers = c("Pay your friend $35 for the coupon.", 
+            "Pay some, but not the full amount for the coupon (for example, half the price).",
+            "Consider it a gift and not pay for the coupon.")
+
+data_sh_s7 <- data_short_MA %>%
+  select(subject, contains("G", ignore.case = FALSE)) %>%
+  mutate(G1 = case_when(G1 == answers[1] ~ 1, G1 == answers[2] ~ 0, G1 == answers[3] ~
+                          0), G2 = case_when(G2 == answers[1] ~ 1, G2 == answers[2] ~ 0, G2 == answers[3] ~
+                                               0)) %>%
+  rename(Purchased = G1, Free = G2) %>%
+  melt(id.var = "subject", variable.name = "coupon", value.name = "response") %>%
+  filter(response == 1) %>%
+  group_by(coupon) %>%
+  count(response, .drop = F) %>%
+  ungroup()%>%
+  ungroup() %>% 
+  mutate(type='short')
+
+data_lg_s7 <- data_long_MA %>%
+  select(subject, contains("G", ignore.case = FALSE)) %>%
+  mutate(G1 = ifelse( G1==1, 1, 0), 
+         G2 = ifelse( G2==1, 1, 0)) %>%
+  rename(Purchased = G1, Free = G2) %>%
+  melt(id.var = "subject", variable.name = "coupon", value.name = "response") %>%
+  filter(response == 1) %>%
+  group_by(coupon) %>%
+  count(response, .drop = F) %>%
+  ungroup()%>%
+  ungroup() %>% 
+  mutate(type='long')
+
+
+( pl7 <- rbind( data_sh_s7, data_lg_s7) %>% 
+  ggplot(aes(coupon, n, color=type)) +
+  scale_fill_brewer(palette = 'Set1') +
+  scale_color_brewer(palette = 'Set1') +
+  geom_point(aes(shape=type), size=3) +
+  geom_line(aes(group=type, color=type, linetype=type), size=1) +
+  mytheme() + theme(legend.position = 'none') +
+  labs(y='Number of “Pay $35”', x='Coupon', title='“Plane” scenarios') )
+
+
+plot_grid ( plot_grid( pl1, pl2, ncol=1), plot_grid(pl3, pl4, pl5, pl6, pl7, ncol=2), ncol=1 )
+
+ggsave(file="s1-2.png", plot=plot_grid( pl1, pl2, ncol=1, rel_heights = c(0.8, 1)), width=4, height=8)
+ggsave(file="s3-7.png", 
+       plot=plot_grid(pl3, pl4, pl5, pl6, pl7, ncol=2, rel_heights = c(1.1, 1, 1)), 
+       width=5, height=7)
+
+# ------ Save 
+ggsave(file="s1.svg", plot=pl1, width=4.5, height=4)
+ggsave(file="s2.svg", plot=pl2, width=4.5, height=4)
+ggsave(file="s3.svg", plot=pl3, width=3.5, height=3)
+ggsave(file="s4.svg", plot=pl4, width=3.5, height=3)
+ggsave(file="s5.svg", plot=pl5, width=3.5, height=3)
+ggsave(file="s6.svg", plot=pl6, width=3.5, height=3)
+ggsave(file="s7.svg", plot=pl7, width=3.5, height=3)
+
+
+ggsave(file="s1.png", plot=pl1, width=4.5, height=4)
+ggsave(file="s2.png", plot=pl2, width=4.5, height=4)
+ggsave(file="s3.png", plot=pl3, width=3.5, height=3)
+ggsave(file="s4.png", plot=pl4, width=3.5, height=3)
+ggsave(file="s5.png", plot=pl5, width=3.5, height=3)
+ggsave(file="s6.png", plot=pl6, width=3.5, height=3)
+ggsave(file="s7.png", plot=pl7, width=3.5, height=3)
+
+
