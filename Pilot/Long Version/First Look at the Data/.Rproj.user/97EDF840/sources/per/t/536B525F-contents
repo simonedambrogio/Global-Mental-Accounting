@@ -1,0 +1,171 @@
+# ---------------- Utils ---------------- #
+# - Home path: Analysis - #
+hp <- '../../'
+game_name <- 'The Last Duel 1'
+
+# Path From Home
+PaFH <- function(pt) paste0(hp, pt)
+
+# --- Set variables --- #
+# --- Set variables --- #
+nDots <- 100
+colL <- as.vector( jcolors::jcolors(palette = 'pal6')[4] )
+colC <- as.vector( jcolors::jcolors(palette = 'pal6')[2] )
+colR <- as.vector( jcolors::jcolors(palette = 'pal6')[3] )
+
+# ----------- Load libraries ------------ #
+library(dplyr); library(stringr); library(purrr)
+library(ggplot2); theme_set(ggpubr::theme_pubr()); library(jcolors)
+library(GGally); library(corrplot); library(ggpubr)
+library(effects); library(rjson)
+library(brms); library(bayesplot); rstan::rstan_options(auto_write = TRUE)
+
+# ----------- Create Functions ------------ #
+# String +
+'%+%' <- function(..., sep='') {
+  paste(..., sep=sep, collapse=sep)
+}
+
+seq_vector <- function(x){
+  idx <- c(which(diff(x) != 0), length(x))
+  time <- c(idx[1], diff(idx))
+  rep(x=1:length(idx), times=time)
+}
+
+gg_circle <- function(rx=aperture_width/2/screen_width, 
+                      ry=aperture_width/2/screen_height,
+                      xc, yc, 
+                      color="black", fill=NA,  ...) {
+  x <- xc + rx*cos(seq(0, pi, length.out=100))
+  ymax <- yc + ry*sin(seq(0, pi, length.out=100))
+  ymin <- yc + ry*sin(seq(0, -pi, length.out=100))
+  annotate("ribbon", x=x, ymin=ymin, ymax=ymax, color=color, fill=fill, ...)
+}
+
+plot_allEffects <- function(model, multiline=T){
+  plot(effects::allEffects(model), multiline=multiline)
+}
+
+df_frame <- read.csv( PaFH(game_name %+% '/Data/df_frame.csv') )
+tr_i <- filter(df_frame, trial==5) 
+
+ggplot(data=tr_i) +
+  geom_ribbon(aes(Time, ymin=EV_R-sqrt(U_R), ymax=EV_R+sqrt(U_R)), fill=colR, alpha=0.3) +
+  geom_ribbon(aes(Time, ymin=EV_L-sqrt(U_L), ymax=EV_L+sqrt(U_L)), fill=colL, alpha=0.3) +
+  geom_ribbon(aes(Time, ymin=EV_B-sqrt(U_B), ymax=EV_B+sqrt(U_B)), fill=colC, alpha=0.3) +
+  geom_line(aes(Time, EV_L), color=colL, size=0.8) +
+  geom_line(aes(Time, EV_R), color=colR, size=0.8) +
+  geom_line(aes(Time, EV_B), color=colC, size=0.8) +
+  
+  geom_vline(xintercept = df_pl$visit_start, color=df_pl$col) +
+  geom_vline(xintercept = df_pl$visit_end, color=df_pl$col, linetype=2) +
+  geom_point(data=df_point, aes(x, y), color=df_point$col, size=4)+
+  scale_y_continuous(limits = c(0, 1)) +
+  labs(subtitle=expression(EV~'['~P[red]~']'), y='') + 
+  theme_pubr() + theme(plot.subtitle = element_text(hjust = 0.5))
+
+library(ggjoy)
+
+x <- seq(0, 1, 0.0001)
+len <- length(x)
+dfPosterior <- tr_i %>% filter(row_number()==1 | NewInfoL+NewInfoR+NewInfoB!=0)
+
+dfPosteriorPlot <- map_dfr(1:nrow(dfPosterior), function(i){
+  data.frame(x, 
+             PostL = dbeta(x, dfPosterior$alpha_L[i], dfPosterior$beta_L[i]) + i*4,
+             PostR = dbeta(x, dfPosterior$alpha_R[i], dfPosterior$beta_R[i]) + i*4,
+             PostB = dbeta(x, dfPosterior$alpha_B[i], dfPosterior$beta_B[i]) + i*4,
+             yend = i*4,
+             i)
+})
+  
+ggplot(dfPosteriorPlot, aes(x = x, group=i)) +
+  
+  geom_line(aes(y = PostL), col=colL) +
+  geom_segment(aes(xend=x, y = PostL, yend=yend) ) +
+  
+  # geom_line(aes(y = PostR), col=colR) +
+  # geom_line(aes(y = PostB), col=colC) +
+  theme_joy() + theme_minimal() 
+
+
+
+
+
+df_glm <- read.csv( PaFH(game_name %+% '/Data/df_glm.csv') )
+
+# Study the effect of the uncertainty of the Blocked option on the 
+# Exploration strategy
+
+# Create dataframe to test the two predictions
+df <- df_frame %>%
+  # Select only some variables to track more easily the changes
+  dplyr::select(visit_type_relative, NewInfoL, NewInfoR, trial, 
+                nGreen, EV_L, EV_R, U_R, U_L) %>%
+  mutate(pGrayB= (nDots-nGreen)/nDots ) %>% 
+  # Select only a subset with only left - right, and when a new dot is
+  # sampled
+  filter(NewInfoL | NewInfoR) %>%
+  filter(visit_type_relative %in% c("left", 'right')) %>%
+  # --- Independent Variable --- # Decide type of uncertainty and code the
+  # Information rate of the attended option (rInfo)
+  mutate(U_b = ifelse(visit_type_relative == "left", U_R, U_L),
+         U_a = ifelse(visit_type_relative == "left", U_L, U_R), 
+         EV_a = ifelse(visit_type_relative == "left", EV_L, EV_R),
+         EV_b = ifelse(visit_type_relative == "left", EV_R, EV_L)) %>%
+  # Create visit number
+  mutate(visit_number = ifelse(visit_type_relative == "left", 1, 2)) %>%
+  group_by(trial) %>%
+  mutate(visit_number = seq_vector(visit_number)) %>%
+  
+  # Create Variables to test the First Prediction DV: Amount of Information
+  # Option (Uunatt) Initial Uncertainty Attended Option (Uatt) Absolute
+  # Difference between the Mean EV Attended and EV Unattended (deltaEV)
+  group_by(visit_number, trial) %>%
+  # --- Dependent Variable (First Prediction) --- #
+  mutate(nInfo = n()) %>%
+  # --- Independent Variable --- #
+  # mutate(deltaEV = abs(mean(EVatt) - EVunatt),
+  #        InitialUatt = first(Uatt), 
+  #        FinalUatt = last(Uatt),
+  #        meanUatt = mean(Uatt), 
+  #        deltaUatt = InitialUatt - FinalUatt) %>%
+  # --- Keep one number of each visit time --- #
+  group_by(trial, visit_number) %>%
+  filter(row_number() == 1) %>%
+  # --- Dependent Variable (Second Prediction) --- #
+  group_by(trial) %>%
+  # the last visit is the one where an option is selected
+  # mutate(dec = ifelse(row_number() == n(), 1, 0)) %>%
+  ungroup() %>%
+  select(-c(visit_type_relative, NewInfoL, NewInfoR, EV_L, EV_R))
+
+
+# Keep only non-last visit window
+df_pr1 <- df %>%
+  group_by(trial) %>%
+  filter(row_number() != n()) %>%
+  ungroup() %>%
+  select(nInfo, pGrayB, U_a, U_b) %>%
+  # Z-score Variables
+  mutate(U_b = as.vector(scale(U_b)), 
+         U_a = as.vector(scale(U_a)),
+         pGrayB = as.vector(scale(pGrayB)) )
+
+df_pr1 %>%
+  select(-c(nInfo)) %>%
+  ggpairs(., lower = list(continuous = wrap("smooth", alpha = 0.3, fill = colL,
+                                            color = "#E3D26F", size = 0.8)), diag = list(continuous = wrap("densityDiag",
+                                                                                                           fill = "#E3D26F", alpha = 0.8))) + theme_pubr()
+
+fit <- brm(nInfo ~ pGrayB + U_a + U_b, data = df_pr1, refresh = 0, family = poisson)
+
+mcmc_areas(
+  fit,
+  pars = c('b_pGrayB', 'b_U_a', 'b_U_b'),
+  #regex_pars = "b_",
+  prob = 0.89, 
+  point_est = "median",
+  area_method = "equal height"
+) +
+  geom_vline(xintercept = 0, color = "red", alpha = 0.6, lwd = .8, linetype = "dashed")

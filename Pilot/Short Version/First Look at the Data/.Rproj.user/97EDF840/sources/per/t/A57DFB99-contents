@@ -1,0 +1,809 @@
+---
+title: "The Last Duel Game - A first look at the data"
+author: "Simone D'Ambrogio"
+subtitle: "Sequential Information Gathering"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: united
+    highlight: tango
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, fig.align='left')
+library(knitr)
+## Global options
+options(max.print="75")
+opts_chunk$set(
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE
+               )
+opts_knit$set(width=75)
+```
+
+<style type="text/css">
+  body {
+    text-align: justify;
+    font-size: 16px;
+  }
+  img[src$="centerme"] {
+    display:block;
+    margin: 0 auto;
+  }
+</style>
+
+<br><br>
+
+## Mouse Dynamics
+In this section I will look at the evolution of the expected value and uncertainty of the three options during the information-gathering phase of the task.
+
+<br>
+**Task**
+
+In this version of the task, participant need to move the mouse pointer to learn about the dots' colour. One of the three option reveals only the color of the the green dots. The option with the highest proportion of red dots leads to a higher probability of getting a sword a winning the duel. The task ends after 100 trials. A duel is randomly extracted and if it was won, than the participant gets £3 bonus payment.
+
+<br>**Fig. 1**<br>
+
+<video width="80%" autoplay muted loop id="video" >
+    <source src="../../../Task/Online Task/Pavlovia/3alt_0.3/img/full.mp4" type="video/mp4">
+</video>
+                
+<a href='https://run.pavlovia.org/simonedambrogio/3alt_0.3/?__pilotToken=c20ad4d76fe97759aa27a0c99bff6710&__oauthToken=04d5e94af85f450d2c0cdf78d0d0a6ae9563c0107a18c6e275fe45fe9415a7c9'> Run Pilot </a>
+
+<br>
+**Mouse Allocation**
+
+Let's look at how the mouse is allocated during an example trial (first trial). The x axes shows the standardized mouse position on the horizontal axes of the screen. The mouse position is recorded every 16ms. The horizontal lines signal the time in which a new dot's color is revealed.  
+<br>**Fig. 2**<br>
+```{r fig.width=8, fig.height=5}
+# ---------------- Utils ---------------- #
+# - Home path: Analysis - #
+hp <- '../../'
+game_name <- 'The Last Duel 1'
+
+# Path From Home
+PaFH <- function(pt) paste0(hp, pt)
+
+# --- Set variables --- #
+nDots <- 100
+colL <- as.vector( jcolors::jcolors(palette = 'pal6')[4] )
+colC <- as.vector( jcolors::jcolors(palette = 'pal6')[2] )
+colR <- as.vector( jcolors::jcolors(palette = 'pal6')[3] )
+
+# ----------- Load libraries ------------ #
+library(dplyr); library(stringr); library(purrr)
+library(ggplot2); theme_set(ggpubr::theme_pubr()); library(jcolors)
+library(GGally); library(corrplot); library(ggpubr)
+library(effects); library(rjson)
+library(brms); library(bayesplot); rstan::rstan_options(auto_write = TRUE)
+
+# ----------- Create Functions ------------ #
+# String +
+'%+%' <- function(..., sep='') {
+  paste(..., sep=sep, collapse=sep)
+}
+
+seq_vector <- function(x){
+  idx <- c(which(diff(x) != 0), length(x))
+  time <- c(idx[1], diff(idx))
+  rep(x=1:length(idx), times=time)
+}
+
+gg_circle <- function(rx=aperture_width/2/screen_width, 
+                      ry=aperture_width/2/screen_height,
+                      xc, yc, 
+                      color="black", fill=NA,  ...) {
+  x <- xc + rx*cos(seq(0, pi, length.out=100))
+  ymax <- yc + ry*sin(seq(0, pi, length.out=100))
+  ymin <- yc + ry*sin(seq(0, -pi, length.out=100))
+  annotate("ribbon", x=x, ymin=ymin, ymax=ymax, color=color, fill=fill, ...)
+}
+
+plot_allEffects <- function(model, multiline=T){
+  plot(effects::allEffects(model), multiline=multiline)
+}
+
+df_frame <- read.csv( PaFH(game_name %+% '/Data/df_frame.csv') ) %>% 
+  filter(rt>0.2 & rt<15)
+tr_i <- filter(df_frame, trial==5 & sbj==1) 
+
+#Plot mouse allocation
+
+aperture_center_x <- c(tr_i$x_ap_center_L[1], tr_i$x_ap_center_C[1], tr_i$x_ap_center_R[1])
+aperture_center_y <- c(tr_i$y_ap_center_L[1], tr_i$y_ap_center_C[1], tr_i$y_ap_center_R[1])
+screen_width <- tr_i$screen_width[1]
+screen_height <- tr_i$screen_height[1]
+aperture_width <- tr_i$aperture_width
+
+ggplot() +
+      geom_point(aes(tr_i$x, tr_i$y, color=tr_i$visit_type),
+                 size=3
+                 ) +
+      gg_circle(xc=aperture_center_x[1]/screen_width,
+                color=colL, size=1,
+                yc=1-(aperture_center_y[1]/screen_height)) +
+      gg_circle(xc=aperture_center_x[2]/screen_width, 
+                color=colC, size=1,
+                yc=1-(aperture_center_y[2]/screen_height)) +
+      gg_circle(xc=aperture_center_x[3]/screen_width, 
+                color=colR, size=1,
+                yc=1-(aperture_center_y[3]/screen_height)) +
+      scale_x_continuous(limits=c(0, 1)) +
+      scale_y_continuous(limits=0:1) +
+      scale_color_manual(breaks = c('left','center', 'right', 'elsewhere'),
+                         values = c(colL, colC, colR, 'gray')) +
+      theme(legend.position = 'none') + labs(x=NULL, y=NULL) 
+```
+<br>
+**Expected Value Update**
+
+The belief about the expected probability of getting a red dot ($EV[P_{red}]$) updates when a new piece of information is acquired (Fig. 3A). The red line represents the expected value of the left option, the green line represents the expected value of the right one, and the yellow line represents the expected value of the blocked one. $EV[P_{red}]$ is computed as the Expected Value of the Beta Posterior distribution. Fig. 3B: The black line represents the difference between the expected value of the left and right option. Fig. 3C: The black line represents the sum of the expected value of the left and right option. Fig. 3D: The black line represents the sum of the expected value of the three options. The vertical lines indicate the time in which a new dot's color is revealed for the left (red?) and right (green) option. The vertical lines indicate the time in which a new dot's color is revealed for the left (red?) and right (green) option. 
+
+<br>**Fig. 3**
+```{r fig.width=9, fig.height=5}
+InfoL <- tr_i$Time[ tr_i$NewInfoL ]
+InfoR <- tr_i$Time[ tr_i$NewInfoR ]
+InfoB <- tr_i$Time[ tr_i$NewInfoB ]
+
+InfoLx <- tr_i$x[ c(0, diff(tr_i$nInfoL))==1 ]
+InfoRx <- tr_i$x[ c(0, diff(tr_i$nInfoR))==1 ]
+InfoLx <- lapply(InfoLx, function(x) c(x-0.03, x+0.03)) %>% unlist()
+InfoRx <- lapply(InfoRx, function(x) c(x-0.03, x+0.03)) %>% unlist()
+
+cowplot::plot_grid(
+    ggplot(data=tr_i) +
+      geom_vline(xintercept = InfoL, color=colL, alpha=0.4) +
+      geom_vline(xintercept = InfoR, color=colR, alpha=0.4) +
+      geom_vline(xintercept = InfoB, color=colC, alpha=0.4) +
+      geom_line(aes(Time, EV_L), color=colL, size=1) +
+      geom_line(aes(Time, EV_R), color=colR, size=1) +
+      geom_line(aes(Time, EV_B), color=colC, size=1) +
+      scale_y_continuous(limits = c(0, 1)) +
+      labs(subtitle=expression(EV~'['~P[red]~']'), y='') + 
+      theme_pubr() + theme(plot.subtitle = element_text(hjust = 0.5)),
+    ggplot(data=tr_i) +
+      geom_vline(xintercept = InfoR, color=colR, alpha=0.4) +
+      geom_vline(xintercept = InfoL, color=colL, alpha=0.4) +
+      geom_vline(xintercept = InfoB, color=colC, alpha=0.4) +
+      geom_line(aes(Time, deltaEV_LR), size=1) +
+      scale_y_continuous(limits = c(-1, 1)) +
+      labs(subtitle=expression(Delta~EV~'['~P[red]~']'), y='') +
+      theme_pubr() + theme(plot.subtitle = element_text(hjust = 0.5)),
+    ggplot(data=tr_i) +
+      geom_vline(xintercept = InfoR, color=colR, alpha=0.4) +
+      geom_vline(xintercept = InfoL, color=colL, alpha=0.4) +
+      geom_vline(xintercept = InfoB, color=colC, alpha=0.4) +
+      geom_line(aes(Time, sigmaEV_LR), size=1) +
+      #scale_y_continuous(limits = c(-1, 1)) +
+      labs(subtitle=expression(Sigma~EV[LR]~'['~P[red]~']'), y='') +
+      theme_pubr() + theme(plot.subtitle = element_text(hjust = 0.5)),
+    ggplot(data=tr_i) +
+      geom_vline(xintercept = InfoR, color=colR, alpha=0.4) +
+      geom_vline(xintercept = InfoL, color=colL, alpha=0.4) +
+      geom_vline(xintercept = InfoB, color=colC, alpha=0.4) +
+      geom_line(aes(Time, sigmaEV), size=1) +
+      labs(subtitle=expression(Sigma~EV~'['~P[red]~']'), y='') +
+      theme_pubr() + theme(plot.subtitle = element_text(hjust = 0.5)),
+  nrow=2,
+  labels = 'AUTO'
+)
+```
+
+<br>
+**Uncertainty Update**
+
+The uncertainty of $EV[P_{red}]$ decreases when a new piece of information is acquired (Fig. 4A). Such uncertainty is computed as the Variance of the Beta Posterior distribution. The black line in Fig. 4B represents the difference between the expected value of the left and right option. The black line in Fig 4C indicates the sum between the uncertainties of the left and right option. The black line in Fig 4D indicates the sum between the uncertainties of the three options.
+
+<br>**Fig. 4**
+```{r fig.width=9, fig.height=5}
+cowplot::plot_grid(
+  ggplot(data=tr_i) + 
+    geom_vline(xintercept = InfoR, color = colR, alpha = 0.4) + 
+    geom_vline(xintercept = InfoL, color = colL, alpha = 0.4) + 
+    geom_vline(xintercept = InfoB, color=colC, alpha=0.4) +
+    geom_line(aes(Time, U_L), color = colL, size = 1) + 
+    geom_line(aes(Time, U_R), color = colR, size = 1) +
+    labs(subtitle = expression(U ~ "[" ~ P[red] ~ "]"), y = "") + 
+    theme_pubr() + theme(plot.subtitle = element_text(hjust = 0.5)),
+  ggplot(data=tr_i) + 
+    geom_vline(xintercept = InfoR, color = colR, alpha = 0.4) + 
+    geom_vline(xintercept = InfoL, color = colL, alpha = 0.4) +
+    geom_vline(xintercept = InfoB, color=colC, alpha=0.4) +
+    geom_line(aes(Time, deltaU_LR), size = 1) + 
+    labs(subtitle = expression(Delta ~ U ~ "[" ~ P[red] ~ "]"), y = "") + 
+    theme_pubr() + 
+    theme(plot.subtitle = element_text(hjust = 0.5)),
+  ggplot(data=tr_i) + 
+    geom_vline(xintercept = InfoR, color = colR, alpha = 0.4) +
+    geom_vline(xintercept = InfoL, color = colL, alpha = 0.4) + 
+    geom_vline(xintercept = InfoB, color=colC, alpha=0.4) +
+    geom_line(aes(Time, sigmaU_LR), size = 1) + 
+    labs(subtitle = expression(Sigma ~ U[LR] ~ "[" ~ P[red] ~"]"), y = "") + 
+    theme_pubr() + 
+    theme(plot.subtitle = element_text(hjust = 0.5)),
+  ggplot(data=tr_i) + 
+    geom_vline(xintercept = InfoR, color = colR, alpha = 0.4) +
+    geom_vline(xintercept = InfoL, color = colL, alpha = 0.4) + 
+    geom_vline(xintercept = InfoB, color=colC, alpha=0.4) +
+    geom_line(aes(Time, sigmaU), size = 1) + 
+    labs(subtitle = expression(Sigma ~ U ~ "[" ~ P[red] ~"]"), y = "") + 
+    theme_pubr() + 
+    theme(plot.subtitle = element_text(hjust = 0.5))
+)
+```
+
+<br>
+
+**Total Uncertainty and Exploration Strategy**
+
+<br>**Fig. 5**
+```{r fig.width=8, fig.height=6}
+# Effect of total uncertainty on Exploration Strategy.
+# Compute the probability of committing to a choice 
+# give the level of total uncertainty
+df_glm <- read.csv( PaFH(game_name %+% '/Data/df_glm.csv') ) %>% 
+  filter(rt>0.2 & rt<15)
+
+nbins <- 20
+max_U <- max(df_frame$sigmaU_LR)
+
+main.plt <- ggplot() +
+  geom_density(data=df_glm, aes(rt, y=..density../5+max_U), 
+               fill='red', alpha=0.2) + 
+  geom_ribbon(aes(x=c(0,17), ymin=0, ymax=max_U), fill='white') +
+  geom_line(data=df_frame, aes(Time/1000, sigmaU_LR), alpha=0.1) +
+  geom_smooth(data=df_frame, color='black',aes(Time/1000, sigmaU_LR)) +
+  geom_hline(yintercept = seq(0, max_U, length.out=nbins ), alpha=0.2, linetype=2 ) +
+  geom_violin(data=df_glm, aes(x=17, sigmaU_LR), fill='white') +
+  geom_boxplot(data=df_glm, aes(x=17, sigmaU_LR), width=.2) +
+  geom_point(data=df_glm, aes(rt, sigmaU_LR), color='red') +
+  labs(x='Time [s]', y=expression(Sigma~U[LR])) +
+  scale_y_continuous(breaks = c(0.01, 0.02, 0.03, seq(0, .16, 0.04))) +
+  theme_pubr()
+  
+
+
+Ubins <- cut(df_frame$sigmaU_LR, nbins) %>% levels()
+UbinsNum <- 1:nbins
+
+df <- df_frame %>% 
+  select(sbj, trial, sigmaU_LR, resp) %>% 
+  mutate(sigmaUfct = cut(sigmaU_LR, nbins),
+         sigmaUnum = as.numeric(sigmaUfct)) %>% 
+  group_by(sbj, trial) %>% 
+  mutate(finalSigmaUnum=last(sigmaUnum))
+
+df_Pchoice_plot <- map_dfr(seq_along(Ubins), function(bin_i){
+  pr=df %>% 
+    group_by(sbj, trial, sigmaUfct) %>% 
+    mutate(is_bin = sigmaUfct==Ubins[bin_i] ) %>% 
+    group_by(sbj, trial) %>% 
+    mutate(any_bin=any(is_bin)) %>% 
+    filter(row_number()==1)
+  
+  # Number of trials with a total level of U contained in bin_i
+  nTrials <- nrow( pr[pr$any_bin, ] )
+  if(nTrials==0) nTrials=1
+  # Number of trials with a response in bin_i
+  nResp <- sum( UbinsNum[bin_i] == pr[pr$any_bin, ]$finalSigmaUnum )
+  
+  data.frame(Ubin=Ubins[bin_i], Pchoice = nResp/nTrials)
+})
+
+inst.plt <- df_Pchoice_plot[1:7, ] %>% 
+  mutate(Pchoice=ifelse(Ubin=='(0.0431,0.0513]', 0, Pchoice),
+         sigmaUbin=1:7) %>% 
+  ggplot(aes(sigmaUbin, Pchoice)) +
+  geom_point(size=c(2, 2, 2, 2, 2, 0, 2 )) +
+  geom_line() +
+  scale_y_continuous(limits = 0:1) +
+  scale_x_continuous(labels = c('.01', '.02', '.03', '...', '.16'),
+                     breaks = c(seq(1, 5, 2), 6, 7)) +
+  coord_flip() +
+  labs(y='P[choice]', x=expression(Sigma~U[LR]))  +
+  theme_pubr()
+
+library(cowplot)
+ggdraw() +
+  draw_plot(main.plt) +
+  draw_plot(inst.plt, x = 0.56, y = .4, width = .3, height = .3)
+```
+
+
+<br>**Fig. 5B**
+```{r fig.width=8, fig.height=6}
+# Effect of total uncertainty on Exploration Strategy.
+# Compute the probability of committing to a choice 
+# give the level of total uncertainty
+
+nbins <- 20
+max_U <- max(df_frame$sigmaU)
+
+main.plt <- ggplot() +
+  geom_density(data=df_glm, aes(rt, y=..density../5+max_U), 
+               fill='red', alpha=0.2) + 
+  geom_ribbon(aes(x=c(0,17), ymin=0, ymax=max_U), fill='white') +
+  geom_line(data=df_frame, aes(Time/1000, sigmaU), alpha=0.1) +
+  geom_smooth(data=df_frame, color='black',aes(Time/1000, sigmaU)) +
+  geom_hline(yintercept = seq(0, max_U, length.out=nbins ), alpha=0.2, linetype=2 ) +
+  geom_violin(data=df_glm, aes(x=17, sigmaU), fill='white') +
+  geom_boxplot(data=df_glm, aes(x=17, sigmaU), width=.2) +
+  geom_point(data=df_glm, aes(rt, sigmaU), color='red') +
+  labs(x='Time [s]', y=expression(Sigma~U)) +
+  scale_y_continuous(breaks = c(0.01, 0.02, 0.03, seq(0, .16, 0.04))) +
+  theme_pubr()
+  
+
+
+Ubins <- cut(df_frame$sigmaU, nbins) %>% levels()
+UbinsNum <- 1:nbins
+
+df <- df_frame %>% 
+  select(sbj, trial, sigmaU, resp) %>% 
+  mutate(sigmaUfct = cut(sigmaU, nbins),
+         sigmaUnum = as.numeric(sigmaUfct)) %>% 
+  group_by(sbj, trial) %>% 
+  mutate(finalSigmaUnum=last(sigmaUnum))
+
+df_Pchoice_plot <- map_dfr(seq_along(Ubins), function(bin_i){
+  pr=df %>% 
+    group_by(sbj, trial, sigmaUfct) %>% 
+    mutate(is_bin = sigmaUfct==Ubins[bin_i] ) %>% 
+    group_by(sbj, trial) %>% 
+    mutate(any_bin=any(is_bin)) %>% 
+    filter(row_number()==1)
+  
+  # Number of trials with a total level of U contained in bin_i
+  nTrials <- nrow( pr[pr$any_bin, ] )
+  if(nTrials==0) nTrials=1
+  # Number of trials with a response in bin_i
+  nResp <- sum( UbinsNum[bin_i] == pr[pr$any_bin, ]$finalSigmaUnum )
+  
+  data.frame(Ubin=Ubins[bin_i], Pchoice = nResp/nTrials)
+})
+
+inst.plt <- df_Pchoice_plot[1:7, ] %>% 
+  mutate(Pchoice=ifelse(Ubin=='(0.0431,0.0513]', 0, Pchoice),
+         sigmaUbin=1:7) %>% 
+  ggplot(aes(sigmaUbin, Pchoice)) +
+  geom_point(size=c(2, 2, 2, 2, 2, 0, 2 )) +
+  geom_line() +
+  scale_y_continuous(limits = 0:1) +
+  scale_x_continuous(labels = c('.01', '.02', '.03', '...', '.16'),
+                     breaks = c(seq(1, 5, 2), 6, 7)) +
+  coord_flip() +
+  labs(y='P[choice]', x=expression(Sigma~U))  +
+  theme_pubr()
+
+library(cowplot)
+ggdraw() +
+  draw_plot(main.plt) +
+  draw_plot(inst.plt, x = 0.56, y = .4, width = .3, height = .3)
+```
+
+<br>
+**Expected Value and Uncertainty Update**
+
+<br>**Fig. 6**
+```{r Expected-Value-Update, fig.width=6, fig.height=12.5}
+# Beta Posterior Update
+library(ggjoy)
+x <- seq(0, 1, 0.001)
+len <- length(x)
+dfPosterior <- tr_i %>% filter(row_number()==1 | NewInfoL+NewInfoR+NewInfoB!=0)
+
+dfPosteriorPlot <- map_dfr(1:nrow(dfPosterior), function(i){
+  data.frame(x, 
+             PostL = dbeta(x, dfPosterior$alpha_L[i], dfPosterior$beta_L[i]),
+             PostR = dbeta(x, dfPosterior$alpha_R[i], dfPosterior$beta_R[i]),
+             PostB = dbeta(x, dfPosterior$alpha_B[i], dfPosterior$beta_B[i]),
+             yend = i*4,
+             i) %>% 
+    mutate(PostL=PostL/max(PostL) + i*4,
+           PostR=PostR/max(PostR) + i*4,
+           PostB=PostB/max(PostB) + i*4)
+})
+  
+beta_update <- cowplot::plot_grid(
+  ggplot(dfPosteriorPlot, aes(x = x, group=i)) +
+    
+    geom_line(aes(y = PostL), col=colL) +
+    geom_segment(aes(xend=x, y = PostL, yend=yend), col=colL, alpha=0.2 ) +
+    
+    theme_joy() + theme_minimal() + labs(y=NULL) +
+    theme(axis.ticks.y = element_blank(),
+          axis.text.y = element_blank()), 
+  
+  ggplot(dfPosteriorPlot, aes(x = x, group=i)) +
+    
+    geom_line(aes(y = PostR), col=colR) +
+    geom_segment(aes(xend=x, y = PostR, yend=yend), col=colR, alpha=0.2 ) +
+
+    theme_joy() + theme_minimal() + labs(y=NULL) +
+    theme(axis.ticks.y = element_blank(),
+          axis.text.y = element_blank()),
+  
+  ggplot(dfPosteriorPlot, aes(x = x, group=i)) +
+    
+    geom_line(aes(y = PostB), col=colC) +
+    geom_segment(aes(xend=x, y = PostB, yend=yend), col=colC, alpha=0.2 ) +
+    
+    theme_joy() + theme_minimal() + labs(y=NULL) +
+    theme(axis.ticks.y = element_blank(),
+          axis.text.y = element_blank()),
+  nrow = 1
+)
+
+# Create data-frame to plot the start and end of a visit
+df_pl <- tr_i %>%
+    # Select only some variables to track more easily the changes
+    dplyr::select(Time, visit_type_relative, NewInfoL, NewInfoR, NewInfoB, trial) %>%
+    filter(visit_type_relative != "elsewhere") %>%
+    # Create visit number
+    mutate(visit_number = as.numeric(as.factor(visit_type_relative)) ) %>%
+    group_by(trial) %>%
+    mutate(visit_number = seq_vector(visit_number)) %>% 
+    group_by(trial, visit_number) %>%
+    mutate(visit_start = first(Time),
+           visit_end   = last(Time)) %>% 
+  # Select only a subset with only left - right, and when a new dot is
+  # sampled
+  filter(row_number()==1) %>% 
+  ungroup() %>% 
+  mutate(col=case_when(
+    visit_type_relative=='blocked'~colC,
+    visit_type_relative=='left'~colL,
+    visit_type_relative=='right'~colR
+  ))
+
+if(tr_i$resp==0){
+  df_point=data.frame(x=last(tr_i$Time), y=last(tr_i$EV_R), col=colR)
+} else if(tr_i$resp==1){
+  df_point=data.frame(x=last(tr_i$Time), y=last(tr_i$EV_L), col=colL)
+} else if(tr_i$resp==2){
+  df_point=data.frame(x=last(tr_i$Time), y=last(tr_i$EV_B), col=colC)
+} 
+
+cowplot::plot_grid(
+  beta_update, 
+  
+    ggplot(data=tr_i) +
+      geom_ribbon(aes(Time, ymin=EV_R-sqrt(U_R), ymax=EV_R+sqrt(U_R)), fill=colR, alpha=0.3) +
+      geom_ribbon(aes(Time, ymin=EV_L-sqrt(U_L), ymax=EV_L+sqrt(U_L)), fill=colL, alpha=0.3) +
+      geom_ribbon(aes(Time, ymin=EV_B-sqrt(U_B), ymax=EV_B+sqrt(U_B)), fill=colC, alpha=0.3) +
+      geom_line(aes(Time, EV_L), color=colL, size=0.8) +
+      geom_line(aes(Time, EV_R), color=colR, size=0.8) +
+      geom_line(aes(Time, EV_B), color=colC, size=0.8) +
+      
+      geom_vline(xintercept = df_pl$visit_start, color=df_pl$col) +
+      geom_vline(xintercept = df_pl$visit_end, color=df_pl$col, linetype=2) +
+      geom_point(data=df_point, aes(x, y), color=df_point$col, size=4)+
+      scale_y_continuous(limits = c(0, 1)) +
+      labs(subtitle=expression(EV~'['~P[red]~']'), y='') + 
+      theme_pubr() + theme(plot.subtitle = element_text(hjust = 0.5)),
+    
+    ggplot(data=tr_i) +
+      geom_ribbon(aes(Time, ymin=deltaEV_LR-(sqrt(U_R)+sqrt(U_L)), ymax=deltaEV_LR+sqrt(U_R)+sqrt(U_L)), alpha=0.3, fill='gray') +
+      
+      geom_hline(yintercept=0, linetype=2, color='gray') +
+      geom_line(aes(Time, deltaEV_LR), color='gray', size=0.8) +
+      geom_vline(xintercept = df_pl$visit_start, color=df_pl$col) +
+      geom_vline(xintercept = df_pl$visit_end, linetype=2, color=df_pl$col) +
+      #scale_y_continuous(limits = c(-1, 1)) +
+      labs(subtitle=expression(Delta~EV[LR]~'['~P[red]~']'), y='') +
+      theme_pubr() + theme(plot.subtitle = element_text(hjust = 0.5)),
+    nrow=3, rel_heights = c(3, 1, 1),
+    labels = 'AUTO'
+)
+```
+<br>
+
+<br><br><br>
+
+## Key Experimental Questions
+
+Is exploration guided by the uncertainty of the alternative option or by the blocked alternative?
+
+More specifically, we can test two hypotheses. Fist, higher levels of uncertainty of the unattended option and of the blocked option leads to higher levels of exploration of the attended option. In the context of our task, the "level of exploration" is measured by the number new dots for which the color has been revealed. Second, lower levels of uncertainty of the unattended option lead to a higher probability of stopping sampling and selecting an option.
+
+
+<br>
+
+**First Hypothesis: Level of Exploration**
+
+We used a Poisson regression to test the first hypothesis. 
+
+<br>
+
+Poisson Regression Model:<br>
+
+$Log(EV(Y|x)) = \beta_0 + \beta_1 U_{c} + \beta_2 U_{a} + \beta_3 U_{b}$
+
+<br>
+ 
+where: 
+
+$U_{c}$: Proportion of gray dots of the blocked option.<br>
+$U_{b}$: Uncertainty of the unattended option.<br>
+$U_{a}$: Uncertainty of the attended option.<br>
+
+
+```{r dataframe-to-fit-brm, fig.width=6, fig.height=5}
+# Create dataframe to test the two predictions
+df <- df_frame %>%
+  # Select only some variables to track more easily the changes
+  dplyr::select(visit_type_relative, NewInfoL, NewInfoR, trial, sigmaU_LR,
+                nGreen, EV_L, EV_R, EV_B, U_B, U_R, U_L, resp, last_visit) %>%
+  mutate(pGrayB=(nDots-nGreen)/nDots) %>% 
+  # Select only a subset with only left - right, and when a new dot is
+  # sampled
+  filter(NewInfoL | NewInfoR) %>%
+  filter(visit_type_relative %in% c("left", 'right')) %>%
+  # --- Independent Variable --- # Decide type of uncertainty and code the
+  # Information rate of the attended option (rInfo)
+  mutate(U_b = ifelse(visit_type_relative == "left", U_R, U_L),
+         U_a = ifelse(visit_type_relative == "left", U_L, U_R), 
+         U_c = pGrayB,
+         EV_a = ifelse(visit_type_relative == "left", EV_L, EV_R),
+         EV_b = ifelse(visit_type_relative == "left", EV_R, EV_L) ) %>%
+  # Create visit number
+  mutate(visit_number = ifelse(visit_type_relative == "left", 1, 2)) %>%
+  group_by(trial) %>%
+  mutate(visit_number = seq_vector(visit_number)) %>%
+  # Create Variables to test the First Prediction DV: Amount of Information
+  # Option (Uunatt) Initial Uncertainty Attended Option (Uatt) Absolute
+  # Difference between the Mean EV Attended and EV Unattended (deltaEV)
+  group_by(visit_number, trial) %>%
+  # --- Dependent Variable (First Prediction) --- #
+  mutate(nInfo = n()) %>%
+  # --- Independent Variable --- #
+  mutate(
+    # deltaEV = abs(mean(EVatt) - EVunatt),
+    InitialU_a = first(U_a),
+    FinalU_a = last(U_a),
+    meanU_a = mean(U_a),
+    deltaU_a = InitialU_a - FinalU_a,
+    deltaEV = abs( mean(EV_a) - mean( c(EV_b, EV_B) ))
+    ) %>%
+  # --- Keep one number of each visit time --- #
+  group_by(trial, visit_number) %>%
+  filter(row_number() == 1) %>%
+  # --- Dependent Variable (Second Prediction) --- #
+  group_by(trial) %>%
+  # the last visit is the one where an option is selected
+  mutate(dec = ifelse(row_number() == n(), 1, 0)) %>%
+  ungroup() %>%
+  select(-c(visit_type_relative, NewInfoL, NewInfoR, EV_L, EV_R))
+```
+
+Let's have a look at the correlation between the IVs before we fit the model. The reason why $U_{a}$, $U_{b}$ and $pGray_{blocked}$ have negative value is because they have been z-scored.
+
+
+<br>**Fig. 7**
+```{r fig.width=8, fig.height=6}
+# Keep only non-last visit window
+df_pr1 <- df %>%
+  group_by(trial) %>%
+  filter(row_number() != n()) %>%
+  ungroup() %>%
+  select(nInfo, pGrayB, U_a, U_b) %>%
+  # Z-score Variables
+  mutate(U_b = as.vector(scale(U_b)), 
+         U_a = as.vector(scale(U_a)),
+         U_c = as.vector(scale(pGrayB)) ) %>% 
+  select(-pGrayB)
+
+df_pr1 %>%
+  select(-c(nInfo)) %>%
+  ggpairs(., lower = list(continuous = wrap("smooth", alpha = 0.3, fill = colL, color = "#E3D26F", size = 0.8)), diag = list(continuous = wrap("densityDiag", fill = "#E3D26F", alpha = 0.8))) + 
+  theme_pubr()
+```
+
+<br><br>
+
+**Posterior Distribution of the Parameters included in the Poisson Regression**
+
+
+```{r fit-hp1-brm-poisson}
+#Fit model
+fit <- brm(nInfo ~ U_a + U_b + U_c, data = df_pr1, refresh = 0, family = poisson)
+```
+**Fig. 8**
+```{r plot-poisson-regression-pars, fig.width=8, fig.height=4}
+#Plot model
+mcmc_areas(
+  fit,
+  pars = c('b_U_c', 'b_U_a', 'b_U_b'),
+  #regex_pars = "b_",
+  prob = 0.89, 
+  point_est = "median",
+  area_method = "equal height"
+) +
+  geom_vline(xintercept = 0, color = "red", alpha = 0.6, lwd = .8, linetype = "dashed")
+```
+
+
+Higher uncertainty of the unattended option is associated with a lower level of exploration. A possible interpretation may be that the need to leave the current option (e.g., option A) to explore the alternative one (e.g., option B) is higher when the alternative option is more uncertain.
+
+<br><br>
+
+**Second Prediction: Probability of Selecting an Option.**
+
+<br>
+
+Logistic Regression Model:<br>
+
+$log\frac{p_{select}}{1 - p_{select}} = \beta_0 + \beta_1 U_{b} + \beta_2 InitialU_{a} + \beta_3 \Delta EV + \beta_4 InitialU_{a} \times U_c + \beta_5 U_{b} \times U_c$
+
+<br>
+ 
+where: 
+
+$U_{b}$: Uncertainty of the unattended option.<br>
+$InitialU_{a}$: Uncertainty of the attended option.<br>
+$U_c$: Uncertainty of the blocked option.<br>
+$\Delta EV$: Absolute value of the difference between the expected value of the unattended option and the mean expected value of the attended option.<br>
+
+The plot below looks at the correlation between the IVs.
+
+<br>**Fig. 9**
+```{r fig.width=8, fig.height=6}
+df_pr2 <- df %>%
+  filter((resp==1 & last_visit=='left') | 
+           (resp==0 & last_visit=='right') ) %>% 
+  select(dec, U_b, InitialU_a, U_c, deltaEV, sigmaU_LR, deltaU_a) %>%
+  # Z-score Variables
+  mutate(U_b = as.vector(scale(U_b)), 
+         deltaEV = as.vector(scale(deltaEV)),
+         deltaU_a = as.vector(scale(deltaU_a)),
+         InitialU_a = as.vector(scale(InitialU_a)),
+         U_c = as.vector(scale(U_c)),
+         sigmaU_LR = as.vector(scale(sigmaU_LR)))
+```
+
+<br><br>
+
+**Posterior Distribution of the Parameters included in the Logistic Regression**
+
+
+```{r fit-hp2-brm-logistic}
+#Fit model
+fit4 <- brm(dec ~ (U_b + InitialU_a)*U_c + deltaEV, 
+            data = df_pr2, 
+            refresh = 0,
+            family = bernoulli)
+```
+**Fig. 10**
+```{r plot-logistic-regression-pars, fig.width=8, fig.height=4}
+#Plot model
+mcmc_areas(
+  fit4,
+  pars = c( 'b_U_b', 'b_U_c', 'b_InitialU_a', 'b_deltaEV', 
+            'b_U_b:U_c', 'b_InitialU_a:U_c'
+            ),
+  #regex_pars = "b_",
+  prob = 0.89, 
+  point_est = "median",
+  area_method = "equal height"
+) +
+  geom_vline(xintercept = 0, color = "red", alpha = 0.6, lwd = .8, linetype = "dashed")
+```
+<br><br><br>
+
+
+## Basic Psychometrics
+
+<br>
+**Choice and Response Time**
+
+<br>**Fig. 15**
+```{r choice-resptime, fig.width=7, fig.height=3.5}
+# Choice
+ch_pl <- df_glm %>%
+  mutate(deltaEV = EV_L - mean(c(EV_R+EV_B)),
+         resp=ifelse(resp==1, 1, 0)) %>% 
+  ggplot(aes(deltaEV, resp)) +
+  geom_smooth(method='glm', method.args=list(family='binomial'),
+              color='black') +
+  labs(y='P(Left is Chosen)', x=expression(EV[Left]-mean(EV[Right], EV[Blocked]) )) +
+  theme_pubr()
+
+# RT
+rt_pl <- df_glm %>%
+  mutate(resp=case_when(resp==1~'Left', 
+                        resp==0~'Right',
+                        resp==2~'Blocked')) %>% 
+  ggplot(aes(rt, fill=resp ), alpha=0.5) +
+  geom_density() +
+  scale_fill_manual(values = c(colC, colR, colL)) +
+  theme_pubr() + labs(x='Reaction Time [s]') +
+  theme(legend.position='none') +
+  facet_wrap(~resp) 
+
+cowplot::plot_grid(ch_pl, rt_pl,
+                   nrow=1,
+                   labels = 'AUTO')
+
+```
+
+
+<br>
+**Effect of Uncertainty on Choice**
+
+
+<br>
+**Fig. 16**
+<br><br>
+$log\frac{p_{left}}{1 - p_{left}} = \beta_0 + \beta_1 \Delta EV + \beta_2 \Delta U$
+
+```{r uncertainty-visits-effect-on-choice, fig.width=7, fig.height=3.5}
+m <- glm(resp ~ deltaEV + deltaU,
+         data=df_glm %>%
+              mutate(deltaEV = EV_L - mean(c(EV_R+EV_B)),
+                     deltaU  = U_L - mean(c(U_R+U_B)),
+                     resp=ifelse(resp==1, 1, 0)),
+         family = 'binomial')
+ 
+df_m <- as.data.frame( effects::allEffects(m) )
+
+# Choice
+ch_pl1 <- df_m$deltaU %>%
+  ggplot(aes(deltaU, fit)) +
+  geom_ribbon(aes(ymin=lower, ymax=upper), alpha=0.3) +
+  geom_line(size=1) +
+  labs(y='P(Left Chosen)', x=expression(Delta~U)) +
+  theme_pubr()
+
+m2 <- glm(resp ~ deltaEV + LeftM_LR,
+         data=df_glm %>%
+              mutate(deltaEV = EV_L - mean(c(EV_R+EV_B)),
+                     deltaU  = U_L - mean(c(U_R+U_B)),
+                     resp=ifelse(resp==1, 1, 0)),
+         family = 'binomial')
+
+df_m2 <- as.data.frame( effects::allEffects(m2) )
+
+ch_pl2 <- df_m2$LeftM_LR %>%
+  ggplot(aes(LeftM_LR, fit)) +
+  geom_ribbon(aes(ymin=lower, ymax=upper), alpha=0.3) +
+  geom_line(size=1) +
+  labs(y='P(Left Chosen)', x='Prop Left Visits') +
+  scale_x_continuous(limits = 0:1) +
+  scale_y_continuous(limits = 0:1) +
+  theme_pubr()
+
+cowplot::plot_grid(ch_pl1, ch_pl2,
+                   nrow=1,
+                   labels = 'AUTO')
+
+```
+
+<br>
+**Mouse Position and Choice**
+<br>
+Consistently with one of the aDDM (Krajbich) main prediction, the last fixation (mouse position) predicts choice:
+
+<br>
+**Fig. 17**
+```{r fig.width=4, fig.height=4}
+df_glm %>%
+  mutate(last_is_left=ifelse(last_visit=='left','Last is Left', 'Last is not Left' ),
+         deltaEV = EV_L - mean(c(EV_R+EV_B)),
+         resp=ifelse(resp==1, 1, 0)) %>%
+  ggplot(aes(deltaEV, resp, color=last_is_left, fill=last_is_left)) +
+  geom_smooth(method='glm', method.args=list(family='binomial'), alpha=0.2) +
+  scale_color_manual(values = c(colR, colL)) +
+  scale_fill_manual(values = c(colR, colL)) +
+  labs(y='P(Left Chosen)', x='Δ EV', color='', fill='') +
+  theme_pubr() #+theme(legend.position = c(0.8, 0.25))
+```
+
+<br>

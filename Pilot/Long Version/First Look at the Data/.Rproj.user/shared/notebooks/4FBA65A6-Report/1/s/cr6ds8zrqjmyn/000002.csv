@@ -1,0 +1,45 @@
+"0",""
+"0","# Load libraries"
+"0","library(dplyr); library(purrr); library(stringr)"
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","library(ggplot2); library(ggpubr); library(jcolors)"
+"2","Want to understand how all the pieces fit together? Read R for Data Science:
+https://r4ds.had.co.nz/
+"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"0","library(cowplot)"
+"2","
+Attaching package: ‘cowplot’
+
+"
+"2","The following object is masked from ‘package:ggpubr’:
+
+    get_legend
+
+"
+"0","# Load data"
+"0","data_long <- readRDS('../Data/data_long.rds')$data"
+"0",""
+"0","# ----- Mental Accounting ----- #"
+"0","# Remove final questionnaires"
+"0","data_long_MA <- data_long[, -(48:75)]"
+"0","# Remove response time"
+"0","idx_time      <- str_detect( names(data_long_MA),  'time_')"
+"0","data_long_MA <- data_long_MA[, !idx_time]"
+"0",""
