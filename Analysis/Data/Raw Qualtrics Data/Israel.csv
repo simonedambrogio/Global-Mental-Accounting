@@ -1,0 +1,1784 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q_RecaptchaScore,Consent,MrAB1,Game1_1_1,Game1_1_2,Game1_2_1,Game1_2_2,Drink1,Gym1 _1,Gym1 _2,Gym1 _3,Jacket1,Game2_1_1,Game2_1_2,Game2_2_1,Game2_2_2,MrAB2,"Play2 ","Plane2 ",MrAB3,Game3_1 _1,Game3_1 _2,Game3_2_1,Game3_2_2,Jacket2,Gym2 _1,Gym2 _2,Gym2 _3,"MrAB4 ","Play1 ","Plane1 ",Drink2,fin_lit1,fin_lit2,fin_lit3,fin_lit4,Att_check,Gender,"Age ",Income,Education,Residence,Native language,Debriefing
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,Q_RecaptchaScore,"Dear Participant,    We invite you to take part in an online study with the purpose of investigating how people make decisions. The duration of the questionnaire is approximately 10 minutes. At the end of the questionnaire, you will be asked some personal demographic information.    Your data will be analyzed anonymously and processed according to the current international legislation for the protection of privacy (D. Lgs 196/2003 and EU GDPR 679/2016 on the protection of personal data and art. 9 of the Deontological Code of Italian Psychologists). Your data will be used solely for the purposes of the research itself. No information regarding you personally will be published or revealed in any way.    You are free to withdraw from the study at any point without giving any explanation. In this case your data will be deleted. You will not receive any payment or reimbursement of any sort for your participation in this study. There are no known risks associated with participating in this study.    Project Manager: Enrico Rubaltelli (Department of Development Psychology and Socialization -DPSS, University of Padua). The person responsible for this research agrees to comply with the obligations of current legislation in terms of collection, processing and storage of sensitive data.    I DECLARE THAT  • I am 18 years old or older  • I take part in this project voluntarily  • I am aware of the objectives and aims of this research project  • I am aware that the data obtained, in absolute anonymity, will be treated exclusively for educational and research purposes  • I am aware that it is not possible to withdraw the data I have provided once it has been submitted.    For any clarification you can contact Prof. Enrico Rubaltelli at jdmlab.multicountry@gmail.com.",Person A was given two tickets to the lottery. They won 400 ₪ with one ticket and 200 ₪  with the other ticket.      Person B was given a ticket to one lottery. They won 600 ₪.        Who is happier?,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 40 ₪ but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is 40 ₪. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 40 ₪ but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is 40 ₪. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was 80 ₪ instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 80 ₪ instead? - If they are a stranger,"You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a fancy resort hotel. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender.    What price do you tell them?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 80 ₪ (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 80 ₪","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 80 ₪ (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 80 ₪ (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind","You are about to purchase a jacket for 1300 ₪ and a Bluetooth speaker for 150 ₪. The salesman informs you that the speaker you wish to buy is on sale for 100 ₪ at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is 40 ₪ which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is 40 ₪. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is 40 ₪ which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is 40 ₪. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger",What price would you have asked for if you found out that the ticket’s face value price was 80 ₪ instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 80 ₪ instead? - If they are a stranger,Person A received a fine and owed 800 ₪. The same day they received a second fine and owed 400 ₪.    Person B received a fine and owed 1200 ₪.  Who is more upset?,"Imagine that you are on your way to a music event and intend to buy a ticket worth 400 ₪. On entering the venue, you realize that you have lost 400 ₪ in cash.   Would you still pay 400 ₪ for a ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth 150 ₪, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of 150 ₪ and received the other one for free. Just one coupon is required to upgrade your class on the current flight and your friend offers you the coupon which they got for free so that you can upgrade your ticket as well.    What do you think is the most appropriate thing to do?","Person A bought a lottery ticket and won 800 ₪. Also, they damaged one door in their apartment in an accident and had to pay the landlord 650 ₪.       Person B bought a lottery ticket and won 150 ₪.       Who is happier?",You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 40 ₪ but you paid 80 ₪ for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 40 ₪. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 40 ₪ but you paid 80 ₪ for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 40 ₪. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was 80 ₪ instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 80 ₪ instead? - If they are a stranger,"You are about to purchase a jacket for 150 ₪ and a Bluetooth speaker for 1300 ₪. The salesman informs you that the speaker you wish to buy is on sale for 1250 ₪ at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 4000 ₪ a year (i.e., roughly 80 ₪ per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 80 ₪","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 4000 ₪ a year (i.e., roughly 80 ₪ per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 4000 ₪ a year (i.e., roughly 80 ₪ per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind",Person A damaged their car in a parking lot. They had to spend 1700 ₪ to repair the damage. The same day they damaged the car they won 200 ₪ in a raffle.       Person B damaged their car in a parking lot. They had to spend 1500 ₪ to repair the damage.       Who is more upset?,"Imagine that you are on your way to a music event with a ticket for which you have paid 400 ₪. On entering the venue, you discover that you have lost the ticket.    Would you pay 400 ₪ for another ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth 150 ₪, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of 150 ₪ and received the other one for free. Just one coupon is required to upgrade your class on the current flight, and your friend offers you the coupon which they purchased so that you can upgrade as well.    What do you think is the most appropriate thing to do?","You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a small, run-down grocery store. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the store owner.    What price do you tell them?","Suppose that you have 100 ₪ in a savings account and the interest rate is 2% per year. After 5 years, how much do you think you would have in the account if you let the money grow?","Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, how much would you be able to buy with the money in this account?",Buying a single company's stock usually provides a safer return than a stock mutual fund.,"If interest rates rise, what would typically happen to bond prices?",To ensure the quality of our data we need to know if participants paid attention during the survey. Please tell us honestly how serious you were in completing the survey.   How serious have you been about filling in the survey?,What gender do you identify as?,What is your age (in numbers)?,Which of the following best describes your monthly gross household income last year (ILS)?,How many years of schooling have you completed? (from elementary school to doctoral degree or specialization if you have one),List of Countries,Which of the following is your native language?,"The survey you have completed aims to replicate the mental accounting effect. According to this phenomenon a person attributes different values to the same amount of money based on subjective criteria. Specifically, people tend to subjectively organize economic resources into different mental accounts. In addition, in this study, we measured some individual differences that might have an influence on mental accounting. In particular:   	  	   ●	Scale to measure financial literacy (Lusardi and Mitchell, 2014).  	 	 	  ●	Demographic data (e.g. gender, age or income level)	    Finally, we inform you that we have also used an attentional check to measure respondent engagement. The purpose of this study could not be fully revealed at the beginning of the study to avoid influencing your answers. Now that you have received this information, we ask you to confirm your consent to participate in this study or to withdraw it. In the latter case your data will not be used and will be deleted."
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""Q_RecaptchaScore""}","{""ImportId"":""QID1""}","{""ImportId"":""QID8""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID14_2""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID23_TEXT""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID44_2""}","{""ImportId"":""QID44_3""}","{""ImportId"":""QID34""}","{""ImportId"":""QID17_1""}","{""ImportId"":""QID17_2""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID18_2""}","{""ImportId"":""QID12""}","{""ImportId"":""QID78""}","{""ImportId"":""QID86""}","{""ImportId"":""QID10""}","{""ImportId"":""QID20_1""}","{""ImportId"":""QID20_2""}","{""ImportId"":""QID21_1""}","{""ImportId"":""QID21_2""}","{""ImportId"":""QID74""}","{""ImportId"":""QID82_1""}","{""ImportId"":""QID82_2""}","{""ImportId"":""QID82_3""}","{""ImportId"":""QID11""}","{""ImportId"":""QID40""}","{""ImportId"":""QID48""}","{""ImportId"":""QID70_TEXT""}","{""ImportId"":""QID59""}","{""ImportId"":""QID60""}","{""ImportId"":""QID61""}","{""ImportId"":""QID62""}","{""ImportId"":""QID51""}","{""ImportId"":""QID52""}","{""ImportId"":""QID53_TEXT""}","{""ImportId"":""QID54""}","{""ImportId"":""QID55_TEXT""}","{""ImportId"":""QID114""}","{""ImportId"":""QID57""}","{""ImportId"":""QID63""}"
+2022-09-15 11:14:33,2022-09-15 11:24:56,IP Address,100,623,True,2022-09-15 11:24:56,R_21upS0ciyHrEujW,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,12,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,30,50,30,100,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,50,100,60,100,Yes,2,3,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",12,More than 102 ₪,Less than today,False,I do not know,Moderately serious,Female,31,"20,800 - 25,000",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-15 11:09:14,2022-09-15 11:26:12,IP Address,100,1017,True,2022-09-15 11:26:12,R_2Qs30cioHq60Wsr,anonymous,HE,1,I agree to participate in the research,B,0,40,0,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,30,40,40,80,A,No,Consider it a gift and not pay for the coupon.,B,40,80,40,80,No,3,3,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Male,36,"8,100 - 12,500",16,Israel,English,I allow you to use the responses I provided in this study.
+2022-09-15 11:49:27,2022-09-15 12:00:31,IP Address,100,663,True,2022-09-15 12:00:32,R_1jDuWj3gEPnWaXi,anonymous,HE,1,I agree to participate in the research,A,40,50,80,100,20,"Strongly agree
+
+1
+",4,4,No,40,50,80,100,B,No,Pay your friend 150 ₪ for the coupon.,A,40,80,80,100,No,2,4,4,No difference,No,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,I do not know,They collapse,Absolutely serious,Female,29,"8,100 - 12,500",17,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-09-15 11:38:08,2022-09-15 12:15:51,IP Address,100,2262,True,2022-09-15 12:15:51,R_1PTdRBwy6tKFaNs,anonymous,HE,1,I agree to participate in the research,A,0,0,0,0,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,40,40,80,A,Yes,Pay your friend 150 ₪ for the coupon.,B,40,40,80,80,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,False,I do not know,Very serious,Female,31,"Less than 8,100",20,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-15 12:30:32,2022-09-15 13:01:56,IP Address,100,1883,True,2022-09-15 13:01:56,R_1nZ7FEraufWgi9i,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,A,80,80,80,80,No,3,3,4,B,Yes,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Female,66,Prefer not to answer,18,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-15 12:36:38,2022-09-15 13:10:42,IP Address,100,2044,True,2022-09-15 13:10:42,R_2zRQUE8gr14TDpH,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,A,80,80,80,80,Yes,3,4,2,B,Yes,Consider it a gift and not pay for the coupon.,15,More than 102 ₪,Less than today,False,They remain unchanged,Very serious,Male,28,"8,100 - 12,500",14,France,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-15 13:28:45,2022-09-15 13:41:28,IP Address,100,763,True,2022-09-15 13:41:28,R_3fcVkPsAnYwbyKM,anonymous,HE,1,I agree to participate in the research,"No difference ",40,40,80,80,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,40,40,40,40,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,80,80,80,80,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Female,32,"12,500 - 16,300",14,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-15 22:52:15,2022-09-15 22:59:46,IP Address,100,451,True,2022-09-15 22:59:47,R_2TGi4icpqiSQPoY,anonymous,HE,1,I agree to participate in the research,A,40,40,40,50,40,"Strongly agree
+
+1
+",4,3,No,40,40,40,50,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,40,40,40,50,No,"Strongly agree
+
+1
+",4,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20,I do not know,I do not know,I do not know,I do not know,Moderately serious,Female,31,"8,100 - 12,500",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-16 02:07:41,2022-09-16 02:19:37,IP Address,100,715,True,2022-09-16 02:19:38,R_231vBy6gUp9auZj,anonymous,HE,1,I agree to participate in the research,A,0,0,0,0,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,40,0,80,A,Yes,Pay your friend 150 ₪ for the coupon.,A,0,80,0,80,No,4,2,3,B,Yes,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,39,"More than 25,000",17,Ireland,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-16 02:39:47,2022-09-16 02:40:11,IP Address,100,23,True,2022-09-16 02:40:11,R_29stYz45qZU9pIw,anonymous,HE,0.8999999761581421,I do NOT agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 01:37:36,2022-09-16 02:50:13,IP Address,100,4357,True,2022-09-16 02:50:14,R_1H2JEg2W3kpKvwE,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,20,4,3,3,Yes,40,50,80,90,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,4,2,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than 102 ₪,Less than today,False,I do not know,Very serious,Female,28,"12,500 - 16,300",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-16 04:00:36,2022-09-16 04:11:08,IP Address,100,632,True,2022-09-16 04:11:09,R_22P4c1WiMxalNYI,anonymous,HE,1,I agree to participate in the research,B,40,60,60,80,20,4,4,3,No,40,60,60,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,60,60,80,No,4,3,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,I do not know,I do not know,False,I do not know,Absolutely serious,Female,38,"Less than 8,100",17,Italy,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-16 04:29:09,2022-09-16 04:40:20,IP Address,100,671,True,2022-09-16 04:40:20,R_3s0kV7ouG9URxFq,anonymous,HE,0.4000000059604645,I agree to participate in the research,A,0,0,0,0,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,0,40,0,40,No difference,Yes,Pay your friend 150 ₪ for the coupon.,B,40,80,80,80,No,"Strongly disagree
+
+5
+",2,4,No difference,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Female,32,"16,300 - 20,800",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-16 04:33:03,2022-09-16 04:44:32,IP Address,100,689,True,2022-09-16 04:44:32,R_1mf4iBZYLEjW1qi,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,30,4,"Strongly agree
+
+1
+",2,Yes,40,40,80,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,80,80,80,80,No,4,3,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",30,Less than 102 ₪,Less than today,False,They remain unchanged,Very serious,Male,30,"8,100 - 12,500",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-16 12:16:51,2022-09-16 12:38:37,IP Address,100,1306,True,2022-09-16 12:38:39,R_22DPoWepksAvcmW,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,40,55,80,90,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,Yes,3,3,3,No difference,Yes,Pay your friend 150 ₪ for the coupon.,8,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Female,36,"20,800 - 25,000",20,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-18 06:05:54,2022-09-18 06:24:01,IP Address,100,1087,True,2022-09-18 06:24:01,R_3CT984J2zXAdB40,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,80,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,40,80,80,No difference,Yes,Pay your friend 150 ₪ for the coupon.,B,80,80,80,80,No,4,"Strongly disagree
+
+5
+",4,No difference,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,There is no relationship,Absolutely serious,Female,57,"12,500 - 16,300",20,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 06:38:34,2022-09-18 06:51:09,IP Address,100,755,True,2022-09-18 06:51:10,R_3qE96WdMRZWJ6HU,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,0,40,0,80,A,Yes,Consider it a gift and not pay for the coupon.,A,0,80,0,80,Yes,4,2,3,B,No,Consider it a gift and not pay for the coupon.,15,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Male,28,"8,100 - 12,500",17,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 07:47:55,2022-09-18 08:00:34,IP Address,100,758,True,2022-09-18 08:00:34,R_OHB1Y1YhdhKcP2p,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,20,"Strongly agree
+
+1
+",4,4,No,0,40,0,80,A,Yes,Consider it a gift and not pay for the coupon.,B,0,40,0,80,No,4,2,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,20,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Female,34,"Less than 8,100",17,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 07:56:04,2022-09-18 08:04:10,IP Address,100,486,True,2022-09-18 08:04:12,R_vTzLG3q6USIMbQZ,anonymous,HE,1,I agree to participate in the research,A,0,40,0,40,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,40,40,A,No,Pay your friend 150 ₪ for the coupon.,A,80,80,80,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,Pay your friend 150 ₪ for the coupon.,18,More than 102 ₪,Less than today,False,There is no relationship,Absolutely serious,Female,31,"12,500 - 16,300",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-18 08:19:23,2022-09-18 08:31:57,IP Address,100,754,True,2022-09-18 08:31:58,R_1gMwzFAF8P0iiH6,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,40,60,80,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,A,No,Consider it a gift and not pay for the coupon.,B,40,40,80,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,I do not know,I do not know,Moderately serious,Female,34,"20,800 - 25,000",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-18 08:27:02,2022-09-18 08:38:55,IP Address,100,713,True,2022-09-18 08:38:56,R_r9ANdAqBC9REfyp,anonymous,HE,1,I agree to participate in the research,B,0,40,0,80,25,2,4,3,No,0,40,40,80,A,Yes,Pay your friend 150 ₪ for the coupon.,B,40,80,80,80,No,4,2,2,B,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Male,33,"More than 25,000",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-18 08:45:41,2022-09-18 08:56:13,IP Address,100,632,True,2022-09-18 08:56:15,R_3L5Ogk5c70G8GK9,anonymous,HE,0.800000011920929,I agree to participate in the research,A,40,40,80,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,A,No,Consider it a gift and not pay for the coupon.,B,80,80,80,80,No,"Strongly disagree
+
+5
+",4,2,B,Yes,Consider it a gift and not pay for the coupon.,17,More than 102 ₪,Less than today,False,They collapse,Very serious,Male,37,"More than 25,000",6,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-18 08:40:10,2022-09-18 08:58:05,IP Address,100,1075,True,2022-09-18 08:58:06,R_4Nmiprm41f2ZAm5,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,40,80,80,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,60,80,100,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,100,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,A,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,31,"More than 25,000",16,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 09:45:30,2022-09-18 09:52:12,IP Address,100,401,True,2022-09-18 09:52:13,R_vCzRtjeqqVDvcXL,anonymous,EN,1,I agree to participate in the research,A,0,40,0,80,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,40,0,80,B,Yes,Pay your friend 150 ₪ for the coupon.,A,40,80,0,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,I do not know,Moderately serious,Male,30,"12,500 - 16,300",16,Israel,English,I allow you to use the responses I provided in this study.
+2022-09-18 10:50:26,2022-09-18 11:01:03,IP Address,100,636,True,2022-09-18 11:01:04,R_1QMUYGZADJdJoJ6,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,40,15,2,3,4,No,40,40,40,40,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,40,80,80,No,3,4,3,No difference,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,I do not know,I do not know,They remain unchanged,Absolutely serious,Female,29,"Less than 8,100",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-18 10:47:37,2022-09-18 11:10:39,IP Address,100,1382,True,2022-09-18 11:10:40,R_RPJjHKyichepNbr,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,80,80,A,No,Consider it a gift and not pay for the coupon.,B,80,80,80,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,No,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Female,31,Prefer not to answer,17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-18 12:06:41,2022-09-18 12:16:45,IP Address,100,603,True,2022-09-18 12:16:45,R_1pQc9ldW8IRyfhl,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,A,Yes,Pay your friend 150 ₪ for the coupon.,B,40,40,80,80,Yes,4,2,2,B,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Female,31,"16,300 - 20,800",12,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 13:20:28,2022-09-18 13:47:04,IP Address,100,1595,True,2022-09-18 13:47:04,R_3LioP5YTJBjZG1j,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,60,40,100,60,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,80,40,80,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,80,40,80,No,4,2,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Male,60,"12,500 - 16,300",20,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 01:00:29,2022-09-19 01:18:45,IP Address,100,1096,True,2022-09-19 01:18:46,R_3M51e6n5fi9n5m8,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,40,80,80,15,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",Yes,40,40,80,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,60,80,80,80,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Male,25,"Less than 8,100",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-19 01:15:47,2022-09-19 01:27:45,IP Address,100,718,True,2022-09-19 01:27:45,R_3GCCv6uWFAt5die,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,80,40,100,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,80,100,80,120,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,25,"8,100 - 12,500",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-19 01:27:46,2022-09-19 01:35:13,IP Address,100,446,True,2022-09-19 01:35:14,R_9ZFfLPv0kl65pDj,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,15,3,3,2,Yes,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,B,80,80,80,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,Consider it a gift and not pay for the coupon.,10,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,27,"20,800 - 25,000",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-19 01:29:01,2022-09-19 01:37:32,IP Address,100,510,True,2022-09-19 01:37:32,R_zd3Jf2LFSFANXcl,anonymous,HE,0.800000011920929,I agree to participate in the research,"No difference ",0,40,0,80,15,2,4,3,No,0,40,0,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,80,0,80,No,2,3,"Strongly disagree
+
+5
+",B,No,Pay your friend 150 ₪ for the coupon.,8,More than 102 ₪,Less than today,False,They collapse,Moderately serious,Female,25,"8,100 - 12,500",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-18 07:22:40,2022-09-19 02:31:31,IP Address,100,68931,True,2022-09-19 02:31:32,R_3qsUPY5MxEFjeso,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,50,80,100,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,100,A,Yes,Pay your friend 150 ₪ for the coupon.,A,40,50,80,80,Yes,"Strongly disagree
+
+5
+",2,2,B,No,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Male,35,"16,300 - 20,800",21,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-19 01:19:02,2022-09-19 02:40:29,IP Address,100,4886,True,2022-09-19 02:40:29,R_2CBQXWXQLngJkVK,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,50,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,A,Yes,Pay your friend 150 ₪ for the coupon.,B,40,80,80,80,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 150 ₪ for the coupon.,10,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Female,28,Prefer not to answer,16,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 01:57:42,2022-09-19 02:41:59,IP Address,100,2656,True,2022-09-19 02:41:59,R_pzbQuPoQbsEgtZ7,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,80,30,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,40,40,No difference,Yes,Consider it a gift and not pay for the coupon.,B,80,80,80,80,No,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Female,32,"Less than 8,100",21,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 11:09:25,2022-09-19 11:18:58,IP Address,100,573,True,2022-09-19 11:18:59,R_2xFuHcRyiRSrTJT,anonymous,HE,1,I agree to participate in the research,"No difference ",20,40,20,80,20,2,4,2,Yes,20,40,20,80,No difference,No,Consider it a gift and not pay for the coupon.,B,20,40,20,80,Yes,2,4,2,No difference,No,Consider it a gift and not pay for the coupon.,20,More than 102 ₪,I do not know,I do not know,I do not know,Very serious,Female,45,"Less than 8,100",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-19 11:53:35,2022-09-19 12:06:07,IP Address,100,751,True,2022-09-19 12:06:07,R_2awNSKzCo5pso41,anonymous,HE,1,I agree to participate in the research,A,0,40,0,40,12,"Strongly agree
+
+1
+",4,2,Yes,0,40,0,80,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,0,40,0,80,No,4,2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",8,More than 102 ₪,Less than today,I do not know,I do not know,Moderately serious,Prefer not to say,32,"Less than 8,100",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-20 02:18:00,2022-09-20 02:32:46,IP Address,100,886,True,2022-09-20 02:32:47,R_2OP7wPDBXIWnVml,anonymous,HE,1,I agree to participate in the research,A,40,50,40,50,35,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,40,50,40,50,A,Yes,Pay your friend 150 ₪ for the coupon.,B,80,80,80,100,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,Pay your friend 150 ₪ for the coupon.,35,More than 102 ₪,Exactly the same as today,False,There is no relationship,Absolutely serious,Male,69,"More than 25,000",28,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-21 06:16:07,2022-09-21 06:25:53,IP Address,100,585,True,2022-09-21 06:25:53,R_2q4vE22IrPMqHW8,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,No difference,40,80,40,80,No,4,2,4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Female,30,"8,100 - 12,500",16,Italy,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-21 07:19:54,2022-09-21 07:53:48,IP Address,100,2033,True,2022-09-21 07:53:49,R_2e3xhGDL58ki28q,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,80,30,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,40,40,40,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,80,80,80,No,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Male,30,"16,300 - 20,800",14,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-21 08:46:52,2022-09-21 09:01:27,IP Address,100,875,True,2022-09-21 09:01:27,R_cIkJ8LynPJoaLsJ,anonymous,HE,0.800000011920929,I agree to participate in the research,"No difference ",0,40,0,80,12,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,40,0,80,A,Yes,Consider it a gift and not pay for the coupon.,B,40,80,0,80,No,4,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,No,Consider it a gift and not pay for the coupon.,12,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,29,"16,300 - 20,800",13,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-15 11:14:17,2022-09-15 11:14:30,Spam,3,12,False,2022-09-22 11:14:33,R_YYSaeKBzIMVoofL,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-15 11:17:33,2022-09-15 11:39:30,IP Address,44,1317,False,2022-09-22 11:39:33,R_2rMmbWaSbaUkNzK,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,40,40,80,80,A,Yes,Pay your friend 150 ₪ for the coupon.,B,80,80,80,80,No,,,,B,Yes,Pay your friend 150 ₪ for the coupon.,15,,,,,,,,,,,,
+2022-09-15 12:30:11,2022-09-15 12:30:48,IP Address,11,36,False,2022-09-22 12:30:50,R_BrexodBZcoBGraF,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-15 23:47:03,2022-09-16 00:07:11,IP Address,97,1208,False,2022-09-23 00:07:14,R_UEg1nxoqqFDOzjr,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,40,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,40,80,80,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,3,2,3,No difference,No,Pay your friend 150 ₪ for the coupon.,40,More than 102 ₪,Less than today,False,I do not know,Moderately serious,Female,38,Prefer not to answer,12,Israel,Hebrew,
+2022-09-16 02:40:18,2022-09-16 02:40:26,IP Address,3,8,False,2022-09-23 02:40:30,R_3nD9BzkhiEP2E4R,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 02:40:35,2022-09-16 02:41:22,Spam,3,47,False,2022-09-23 02:41:23,R_ulbYLQbDj1yMBd7,anonymous,HE,0.699999988079071,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-15 10:56:15,2022-09-16 03:41:41,IP Address,36,60326,False,2022-09-23 03:55:36,R_3qOk4xdgcsGcsg6,anonymous,HE,1,I agree to participate in the research,B,40,50,80,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,,,,,,,,A,50,80,80,100,Yes,,,,,,,,,,,,,,,,,,,
+2022-09-16 12:58:52,2022-09-16 13:01:27,IP Address,11,154,False,2022-09-23 13:01:29,R_1nSGa4vtF2LxcpS,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-24 22:57:34,2022-09-24 23:14:09,IP Address,100,995,True,2022-09-24 23:14:11,R_bws0E3FgL98LMS5,anonymous,HE,1,I agree to participate in the research,A,0,0,0,20,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,0,0,0,No,4,"Strongly agree
+
+1
+",2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",12,I do not know,I do not know,I do not know,I do not know,Very serious,Female,50,"8,100 - 12,500",20,Italy,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-25 00:07:38,2022-09-25 00:38:46,IP Address,100,1868,True,2022-09-25 00:38:46,R_Cf7VNe0ar2h3bbP,anonymous,EN,0.699999988079071,I agree to participate in the research,"No difference ",0,40,0,70,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,40,60,A,No,Consider it a gift and not pay for the coupon.,B,40,40,40,80,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Pay your friend 150 ₪ for the coupon.,3,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,29,Prefer not to answer,19,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-25 04:02:04,2022-09-25 04:12:45,IP Address,100,640,True,2022-09-25 04:12:45,R_Dw61p8F4OF4PNUB,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,80,40,150,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,40,80,40,150,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,120,80,150,No,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",A,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,They collapse,Very serious,Male,68,"More than 25,000",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-25 06:28:37,2022-09-25 06:46:28,IP Address,100,1070,True,2022-09-25 06:46:28,R_1OldygjRcLFEtW1,anonymous,HE,1,I agree to participate in the research,"No difference ",0,30,0,40,15,3,2,3,Yes,20,40,20,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,60,20,80,Yes,4,2,4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",8,More than 102 ₪,Less than today,False,They collapse,Very serious,Male,44,Prefer not to answer,15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-18 06:50:06,2022-09-18 06:50:48,IP Address,3,42,False,2022-09-25 06:50:55,R_puuyFf3AQCkMvJv,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 07:31:28,2022-09-18 07:32:35,IP Address,3,67,False,2022-09-25 07:47:01,R_r0TfYln9qkpHLgJ,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 07:49:25,2022-09-18 07:50:31,IP Address,3,65,False,2022-09-25 07:53:13,R_2Qml0f5eDOCiEKQ,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 08:33:36,2022-09-18 08:33:59,IP Address,3,22,False,2022-09-25 08:34:06,R_2zcF297fSUe8JRd,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 09:17:43,2022-09-18 09:18:15,IP Address,3,31,False,2022-09-25 09:18:17,R_24P39nQBEhfiSoX,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 09:19:02,2022-09-18 09:20:10,IP Address,11,68,False,2022-09-25 09:20:18,R_2dJTnf8y8tzuraH,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 10:16:05,2022-09-18 10:16:46,Spam,3,40,False,2022-09-25 10:16:49,R_3MoMypvCZbX01zW,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 10:44:30,2022-09-18 11:20:52,IP Address,3,2181,False,2022-09-25 11:20:59,R_2wH5jMzUby29Rgz,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 12:29:03,2022-09-18 12:32:40,IP Address,28,217,False,2022-09-25 12:32:41,R_2CHwrVHsGue6R4Z,anonymous,HE,1,I agree to participate in the research,"No difference ",40,100,80,200,50,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 01:04:18,2022-09-19 01:08:12,IP Address,44,233,False,2022-09-26 01:18:54,R_12x7nkIHKILgBi5,anonymous,HE,1,I agree to participate in the research,"No difference ",40,40,80,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,,,,,,,,B,40,40,80,80,,,,,B,No,Pay your friend 150 ₪ for the coupon.,15,,,,,,,,,,,,
+2022-09-19 03:16:09,2022-09-19 03:18:30,IP Address,11,140,False,2022-09-26 03:18:34,R_125aPsQun9XSm8S,anonymous,HE,1,I agree to participate in the research,"No difference ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 04:27:43,2022-09-19 04:34:40,IP Address,58,416,False,2022-09-26 05:15:31,R_25GVJcJSvMFR9Hy,anonymous,HE,1,I agree to participate in the research,B,0,0,0,0,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,80,80,80,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,80,80,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,A,No,,,,,,,,,,,,,,
+2022-09-26 05:53:17,2022-09-26 06:19:03,IP Address,100,1546,True,2022-09-26 06:19:03,R_2VkXN7Kw8S0JZv2,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,15,4,2,4,No,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,No difference,40,40,40,40,No,4,2,4,B,Yes,Pay your friend 150 ₪ for the coupon.,15,I do not know,Less than today,I do not know,I do not know,Absolutely serious,Male,30,"8,100 - 12,500",22,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-19 08:33:46,2022-09-19 08:34:34,IP Address,8,48,False,2022-09-26 08:34:36,R_2ZK6bZXzFP8bBcz,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 09:17:07,2022-09-19 09:18:05,IP Address,8,57,False,2022-09-26 09:18:12,R_27IElrxMTHcr5fF,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 10:43:51,2022-09-26 10:59:57,IP Address,100,965,True,2022-09-26 10:59:57,R_eh2IkI343QhFyZH,anonymous,HE,1,I agree to participate in the research,A,0,0,0,0,15,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,0,0,0,A,Yes,Pay your friend 150 ₪ for the coupon.,B,80,80,80,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,61,"More than 25,000",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-19 11:10:50,2022-09-19 11:12:49,Spam,3,119,False,2022-09-26 11:12:53,R_6MxmmxM85TV4v97,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 11:56:51,2022-09-26 12:10:22,IP Address,100,811,True,2022-09-26 12:10:23,R_2uPwbnAcjnjV3oA,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,40,40,A,Yes,Consider it a gift and not pay for the coupon.,A,80,80,80,80,No,4,2,"Strongly agree
+
+1
+",B,No,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Female,41,"More than 25,000",18,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-19 13:23:04,2022-09-19 13:32:03,IP Address,58,538,False,2022-09-26 13:32:05,R_2VHXJQf2AiJJB47,anonymous,HE,0.8999999761581421,I agree to participate in the research,B,40,50,80,100,40,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,40,50,40,80,No difference,No,Pay your friend 150 ₪ for the coupon.,A,80,80,80,80,No,4,3,"Strongly agree
+
+1
+",B,No,,,,,,,,,,,,,,
+2022-09-26 14:39:28,2022-09-26 14:53:55,IP Address,100,867,True,2022-09-26 14:53:56,R_1dmgAbi2LLrK58b,anonymous,HE,1,I agree to participate in the research,A,0,35,0,70,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,40,0,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,40,0,80,No,4,2,2,B,No,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,I do not know,False,I do not know,Absolutely serious,Non-binary / third gender,35,"8,100 - 12,500",20,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-26 15:26:22,2022-09-26 15:38:08,IP Address,100,706,True,2022-09-26 15:38:08,R_1ISgdKiMU8rHEBM,anonymous,HE,1,I agree to participate in the research,A,0,40,0,60,13,2,4,4,Yes,0,40,0,60,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,60,0,80,Yes,3,4,2,B,Yes,Pay your friend 150 ₪ for the coupon.,13,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Female,48,"12,500 - 16,300",24,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-26 23:28:42,2022-09-26 23:43:04,IP Address,100,861,True,2022-09-26 23:43:04,R_3ijKpKtUhc0OHLq,anonymous,EN,1,I agree to participate in the research,"No difference ",0,20,0,40,25,2,4,4,No,40,40,40,80,No difference,No,Pay your friend 150 ₪ for the coupon.,B,60,80,80,80,No,4,2,2,B,No,Pay your friend 150 ₪ for the coupon.,10,I do not know,Less than today,I do not know,I do not know,Very serious,Female,33,"16,300 - 20,800",16,Israel,Italian,I allow you to use the responses I provided in this study.
+2022-09-20 01:22:51,2022-09-20 01:32:11,IP Address,97,560,False,2022-09-27 01:42:06,R_1mgytomRQpImBwN,anonymous,HE,0.8999999761581421,I agree to participate in the research,B,0,0,0,0,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,40,40,A,Yes,Consider it a gift and not pay for the coupon.,B,40,40,40,40,No,3,3,"Strongly agree
+
+1
+",B,No,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Male,32,Prefer not to answer,15,Israel,Hebrew,
+2022-09-20 02:12:59,2022-09-20 02:13:55,IP Address,11,55,False,2022-09-27 02:14:00,R_10JCyOYz6AN7w5F,anonymous,HE,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 03:02:31,2022-09-20 03:07:18,IP Address,25,286,False,2022-09-27 03:07:24,R_2fJRoSM0xpdepxA,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,20,40,40,80,A,No,Consider it a gift and not pay for the coupon.,No difference,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 03:37:13,2022-09-20 03:37:37,IP Address,8,24,False,2022-09-27 03:53:22,R_2Xi0CyhmKFfWCDN,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 04:53:34,2022-09-27 05:42:20,IP Address,100,2926,True,2022-09-27 05:42:21,R_2YJrssRuTcgM7Oe,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,30,0,60,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,40,40,80,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,Yes,Pay your friend 150 ₪ for the coupon.,500,More than 102 ₪,I do not know,False,I do not know,Very serious,Female,40,"Less than 8,100",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-19 10:36:07,2022-09-20 06:03:12,IP Address,8,70025,False,2022-09-27 06:03:19,R_2b3lrWRtJ3T4xoq,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 15:06:36,2022-09-27 15:19:47,IP Address,100,790,True,2022-09-27 15:19:47,R_UGVFWTTsN2byPBv,anonymous,HE,1,I agree to participate in the research,"No difference ",40,40,40,40,23,2,3,3,No,40,40,80,80,No difference,No,Pay your friend 150 ₪ for the coupon.,No difference,40,80,40,80,No,3,3,4,No difference,Yes,Pay your friend 150 ₪ for the coupon.,12,Less than 102 ₪,Exactly the same as today,I do not know,They remain unchanged,Very serious,Male,38,Prefer not to answer,12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-27 21:28:42,2022-09-27 21:42:52,IP Address,100,850,True,2022-09-27 21:42:53,R_XpHv115RQiTUbmh,anonymous,HE,1,I agree to participate in the research,A,0,30,0,60,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,30,0,60,A,No,Pay your friend 150 ₪ for the coupon.,A,0,30,0,60,No,4,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",8,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,29,"8,100 - 12,500",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-20 23:28:34,2022-09-20 23:29:15,IP Address,8,40,False,2022-09-27 23:29:20,R_9pNEi6EyphXLFDj,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 00:20:35,2022-09-28 02:37:19,IP Address,100,8203,True,2022-09-28 02:37:19,R_1EZnPZoA7xKWox8,anonymous,EN,1,I agree to participate in the research,B,40,50,80,100,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,40,50,80,100,A,Yes,Pay your friend 150 ₪ for the coupon.,B,80,100,80,100,No,3,"Strongly agree
+
+1
+",3,B,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Male,77,Prefer not to answer,6,Israel,Italian,I allow you to use the responses I provided in this study.
+2022-09-28 02:50:44,2022-09-28 03:07:18,IP Address,100,993,True,2022-09-28 03:07:18,R_2OPg5PubOsv3rw6,anonymous,HE,1,I agree to participate in the research,"No difference ",0,50,0,90,20,2,4,3,Yes,40,50,40,90,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,40,50,80,90,Yes,2,4,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than 102 ₪,Less than today,False,They collapse,Moderately serious,Male,30,"Less than 8,100",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-28 08:44:30,2022-09-28 10:59:38,IP Address,100,8107,True,2022-09-28 10:59:39,R_3LdIJnmZh5qWsQT,anonymous,HE,1,I agree to participate in the research,B,20,40,40,100,12,4,2,2,Yes,20,40,40,80,No difference,Yes,Pay your friend 150 ₪ for the coupon.,A,40,80,80,100,No,4,"Strongly agree
+
+1
+",2,B,Yes,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,25,"Less than 8,100",14,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-28 10:51:39,2022-09-28 11:02:30,IP Address,100,650,True,2022-09-28 11:02:30,R_2wzzt4ZSu4wg6Ww,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,30,2,4,4,Yes,0,40,0,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,40,0,80,No,4,2,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,27,"8,100 - 12,500",14,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-28 13:14:34,2022-09-28 13:37:39,IP Address,100,1385,True,2022-09-28 13:37:39,R_2fm2gUabUYU12Tz,anonymous,HE,1,I agree to participate in the research,A,0,40,0,50,40,2,"Strongly disagree
+
+5
+",4,No,40,40,40,40,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,40,80,80,No,4,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",30,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Female,26,"Less than 8,100",14,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-28 13:17:02,2022-09-28 13:39:18,IP Address,100,1336,True,2022-09-28 13:39:18,R_2CJJ9gsYDIJYl12,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,40,80,80,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,40,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,80,80,80,No,"Strongly disagree
+
+5
+",3,4,B,Yes,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Female,26,"Less than 8,100",14,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-30 09:53:58,2022-09-30 10:03:57,IP Address,100,599,True,2022-09-30 10:03:57,R_12RnltT58vAAbBb,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,80,0,100,20,4,4,4,Yes,40,80,80,160,A,Yes,Pay your friend 150 ₪ for the coupon.,A,40,100,80,160,Yes,3,4,4,A,No,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,I do not know,Very serious,Male,48,"More than 25,000",20,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-24 14:19:52,2022-09-24 14:22:21,IP Address,31,149,False,2022-10-01 14:22:30,R_3nPLbPVRXVVYuFH,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,0,40,0,40,A,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,
+2022-09-24 21:16:46,2022-09-24 22:04:05,IP Address,22,2839,False,2022-10-01 22:04:07,R_3QFx8fNNzBxDwW2,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,0,80,0,80,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",2,,,,,,,,,,,,,,,,
+2022-10-02 00:16:03,2022-10-02 00:26:37,IP Address,100,633,True,2022-10-02 00:26:37,R_33sbFp49sRFnv0c,anonymous,HE,1,I agree to participate in the research,"No difference ",0,20,0,50,40,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,50,50,100,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,50,60,50,80,No,4,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,25,"Less than 8,100",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-02 00:37:16,2022-10-02 00:48:28,IP Address,100,671,True,2022-10-02 00:48:28,R_3Hq5xSE7b5GxDmo,anonymous,HE,0.800000011920929,I agree to participate in the research,B,0,40,20,80,60,3,4,3,No,40,40,40,80,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,80,80,80,80,No,2,4,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",50,More than 102 ₪,Less than today,I do not know,There is no relationship,Very serious,Female,23,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-02 02:02:57,2022-10-02 02:28:53,IP Address,100,1556,True,2022-10-02 02:28:54,R_r7GjX8LBCbbkvCx,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,40,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,80,80,80,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Female,40,"12,500 - 16,300",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-02 02:35:54,2022-10-02 02:53:38,IP Address,100,1063,True,2022-10-02 02:53:38,R_2ck1rLAwm4wR2e8,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,20,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,40,40,80,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,37,"More than 25,000",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-26 01:54:03,2022-09-26 01:55:17,IP Address,3,73,False,2022-10-03 02:08:31,R_1opSdBOpyTLqOQQ,anonymous,HE,0.800000011920929,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 02:50:43,2022-09-26 02:51:32,IP Address,11,49,False,2022-10-03 02:51:41,R_2dsxxhnlShiPdLV,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-03 05:31:33,2022-10-03 05:46:29,IP Address,100,895,True,2022-10-03 05:46:29,R_2dhweYqbHsgVzvx,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,40,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,40,40,B,No,Consider it a gift and not pay for the coupon.,A,80,80,80,80,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,40,"Less than 8,100",30,Italy,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-26 06:58:33,2022-09-26 07:05:31,IP Address,58,418,False,2022-10-03 07:05:34,R_1hAy4Y3rYf6QGXM,anonymous,HE,1,I agree to participate in the research,A,40,40,40,60,35,3,2,"Strongly agree
+
+1
+",No,40,40,40,60,A,Yes,Consider it a gift and not pay for the coupon.,A,1,1,1,1,No,4,2,2,No difference,Yes,,,,,,,,,,,,,,
+2022-09-26 07:04:39,2022-09-26 07:14:27,IP Address,33,587,False,2022-10-03 07:14:27,R_aXkYyW81vRhxa6Z,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,80,50,,,,,40,40,80,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 07:22:22,2022-09-26 07:23:24,IP Address,8,62,False,2022-10-03 07:23:28,R_b3eNfJxEd2xhhnz,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-03 07:27:58,2022-10-03 07:32:25,IP Address,100,267,True,2022-10-03 07:32:26,R_yF4XoCXDpc1XK5r,anonymous,HE,1,I agree to participate in the research,"No difference ",80,80,80,80,80,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,10,10,80,80,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,80,80,80,80,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,Yes,Pay your friend 150 ₪ for the coupon.,80,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Male,44,"More than 25,000",44,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-26 09:00:41,2022-09-26 09:00:49,IP Address,3,8,False,2022-10-03 09:01:03,R_z76IeKiLkjXELG9,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-22 13:45:52,2022-09-26 09:21:10,IP Address,50,329718,False,2022-10-03 09:21:10,R_1zwQGhbbCqkdx9T,anonymous,HE,1,I agree to participate in the research,A,,,,,,,,,,40,50,80,100,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,80,80,80,100,Yes,3,4,2,B,No,Pay your friend 150 ₪ for the coupon.,15,,,,,,,,,,,,
+2022-09-26 12:02:31,2022-09-26 12:05:07,IP Address,11,156,False,2022-10-03 12:05:13,R_3CZW8Lb4pJy4WVb,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 14:50:45,2022-09-26 14:57:48,IP Address,36,423,False,2022-10-03 14:57:51,R_1OoSbOjJy7EoIgP,anonymous,EN,0.800000011920929,I agree to participate in the research,A,0,40,0,80,40,"Strongly agree
+
+1
+",3,"Strongly disagree
+
+5
+",No,,,,,,,,,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",40,,,,,,,,,,,,
+2022-10-03 21:49:14,2022-10-03 22:12:33,IP Address,100,1398,True,2022-10-03 22:12:35,R_RJJx82CFEAiG1Md,anonymous,HE,1,I agree to participate in the research,"No difference ",0,50,80,100,40,2,"Strongly disagree
+
+5
+",3,No,40,50,80,100,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,60,80,100,No,4,"Strongly disagree
+
+5
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",12,More than 102 ₪,Less than today,I do not know,I do not know,Moderately serious,Male,32,"8,100 - 12,500",22,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-26 23:17:06,2022-09-26 23:18:35,IP Address,17,89,False,2022-10-03 23:18:40,R_3m1TJF829DH2UEH,anonymous,EN,1,I agree to participate in the research,A,40,50,80,90,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 23:28:13,2022-09-26 23:29:05,IP Address,8,51,False,2022-10-03 23:29:11,R_1GJNrVIDwwSH1kl,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 23:39:12,2022-09-26 23:39:31,IP Address,3,19,False,2022-10-03 23:39:38,R_yE12HXKuI7Smzpn,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 13:04:50,2022-09-27 13:05:07,IP Address,3,16,False,2022-10-04 13:05:11,R_23ZRMAtsSS3fFia,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 22:49:00,2022-09-27 22:50:59,IP Address,36,118,False,2022-10-04 22:51:00,R_2dR7HyeHtBHB67V,anonymous,HE,1,I agree to participate in the research,"No difference ",,,,,,,,,,30,30,70,70,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,B,Yes,Pay your friend 150 ₪ for the coupon.,8,,,,,,,,,,,,
+2022-09-28 10:18:13,2022-09-28 10:24:56,IP Address,33,403,False,2022-10-05 10:24:59,R_1Fi7mJHTCy42761,anonymous,HE,1,I agree to participate in the research,"No difference ",0,60,0,100,90,3,2,3,Yes,,,,,,,,,,,,,,,,,No difference,Yes,Pay your friend 150 ₪ for the coupon.,,,,,,,,,,,,,
+2022-09-28 11:39:05,2022-09-28 11:52:25,IP Address,42,799,False,2022-10-05 11:52:31,R_27jLn3g67oXo0YN,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,20,"Strongly agree
+
+1
+",4,3,Yes,40,60,80,100,A,Yes,Pay your friend 150 ₪ for the coupon.,A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 13:17:22,2022-09-28 13:35:49,IP Address,97,1106,False,2022-10-05 13:35:57,R_3DwrMRT3OxHBYnZ,anonymous,HE,0.8999999761581421,I agree to participate in the research,B,0,40,40,40,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,40,40,40,40,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,40,40,80,80,Yes,4,4,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than 102 ₪,Less than today,False,They remain unchanged,Very serious,Male,28,"16,300 - 20,800",14,Israel,Hebrew,
+2022-10-06 12:56:12,2022-10-06 13:13:00,IP Address,100,1007,True,2022-10-06 13:13:00,R_bjcndKnyWEv6mVr,anonymous,HE,1,I agree to participate in the research,A,0,20,0,50,20,4,"Strongly disagree
+
+5
+",2,No,40,40,40,80,A,No,Pay your friend 150 ₪ for the coupon.,B,40,80,80,80,No,4,"Strongly disagree
+
+5
+",2,A,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,False,They remain unchanged,Very serious,Female,42,"12,500 - 16,300",17,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-10-06 20:49:39,2022-10-06 21:07:34,IP Address,100,1074,True,2022-10-06 21:07:35,R_3q8rFt2vY5xvWyj,anonymous,HE,1,I agree to participate in the research,A,20,50,40,100,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,20,50,40,100,A,Yes,Consider it a gift and not pay for the coupon.,B,40,80,40,100,No,4,2,2,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,False,I do not know,Very serious,Male,41,"12,500 - 16,300",19,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-06 23:37:49,2022-10-06 23:49:11,IP Address,100,681,True,2022-10-06 23:49:11,R_2Rah8Vy65IJPsYd,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,25,2,4,4,Yes,40,40,40,80,A,Yes,Consider it a gift and not pay for the coupon.,B,80,80,80,80,Yes,4,2,"Strongly agree
+
+1
+",B,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,I do not know,Very serious,Male,35,"8,100 - 12,500",19,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-07 10:06:29,2022-10-07 10:18:29,IP Address,100,719,True,2022-10-07 10:18:31,R_1pWNLylxcI89tqe,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,20,40,50,80,12,2,4,"Strongly agree
+
+1
+",Yes,20,40,50,40,A,No,Pay your friend 150 ₪ for the coupon.,B,40,50,60,90,No,3,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than 102 ₪,Less than today,False,I do not know,Moderately serious,Female,19,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-07 11:04:29,2022-10-07 11:17:40,IP Address,100,791,True,2022-10-07 11:17:40,R_07n5vq9aaKwVj9f,anonymous,HE,0.8999999761581421,I agree to participate in the research,B,40,40,80,80,20,2,"Strongly disagree
+
+5
+",3,No,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,No difference,80,80,80,80,No,2,"Strongly disagree
+
+5
+",3,A,No,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,False,They collapse,Very serious,Male,36,"16,300 - 20,800",19,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-07 12:16:30,2022-10-07 12:26:01,IP Address,100,571,True,2022-10-07 12:26:02,R_3QLijoobDlwaKLw,anonymous,HE,1,I agree to participate in the research,A,40,40,40,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,40,40,40,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,40,40,40,80,No,"Strongly disagree
+
+5
+",2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than 102 ₪,Less than today,False,They collapse,Very serious,Male,40,"20,800 - 25,000",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-09-30 19:08:57,2022-09-30 19:09:21,IP Address,3,23,False,2022-10-07 19:09:29,R_VVWm5POirVV30id,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-07 20:39:25,2022-10-07 20:47:48,IP Address,100,503,True,2022-10-07 20:47:49,R_1gOcResFS8b1gJn,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,80,80,160,20,2,4,4,No,40,80,80,160,A,Yes,Pay your friend 150 ₪ for the coupon.,A,40,80,80,160,No,2,4,4,B,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Male,33,"16,300 - 20,800",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-07 22:34:41,2022-10-07 22:50:42,IP Address,100,960,True,2022-10-07 22:50:44,R_V20pekEg7nEARuF,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,60,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,40,80,80,80,No,2,4,4,No difference,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Exactly the same as today,I do not know,I do not know,Absolutely serious,Female,45,"More than 25,000",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-08 02:34:21,2022-10-08 02:48:21,IP Address,100,840,True,2022-10-08 02:48:22,R_33g6nuVyRXfGIou,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,60,0,100,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,60,0,100,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,100,0,100,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,B,Yes,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Exactly the same as today,I do not know,I do not know,Absolutely serious,Female,24,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-01 14:32:45,2022-10-01 14:33:08,IP Address,8,22,False,2022-10-08 14:33:14,R_31tk99th3rOamW2,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-08 15:00:44,2022-10-08 15:26:38,IP Address,100,1553,True,2022-10-08 15:26:38,R_3CJyid0k361AWo3,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,80,0,150,25,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,20,80,40,150,A,No,Consider it a gift and not pay for the coupon.,B,80,120,80,160,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,10,More than 102 ₪,Less than today,False,I do not know,Very serious,Female,70,Prefer not to answer,15,Israel,Italian,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-10-09 00:14:30,2022-10-09 00:22:42,IP Address,100,491,True,2022-10-09 00:22:43,R_UY1O00nidDJXGHn,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,80,50,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,0,40,0,80,No difference,No,Consider it a gift and not pay for the coupon.,No difference,0,40,0,80,Yes,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",No difference,No,Consider it a gift and not pay for the coupon.,50,I do not know,I do not know,I do not know,I do not know,Moderately serious,Female,40,"Less than 8,100",15,Israel,Italian,I allow you to use the responses I provided in this study.
+2022-10-02 00:35:04,2022-10-02 00:35:16,Spam,3,11,False,2022-10-09 00:35:24,R_2EodND2QHU747vm,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-02 02:15:28,2022-10-02 02:17:42,IP Address,14,133,False,2022-10-09 02:17:44,R_3DqhENCxXKByKFI,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,0,40,0,80,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-08 13:01:41,2022-10-09 12:35:59,IP Address,100,84858,True,2022-10-09 12:35:59,R_30cWq86dZzG8JHE,anonymous,HE,1,I agree to participate in the research,A,40,60,60,100,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,40,60,60,100,A,No,Pay your friend 150 ₪ for the coupon.,B,40,80,80,100,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend 150 ₪ for the coupon.,13,More than 102 ₪,I do not know,I do not know,I do not know,Very serious,Female,18,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 00:51:18,2022-10-10 01:06:26,IP Address,100,908,True,2022-10-10 01:06:26,R_1jODCrz1DmWnixK,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,40,3,3,3,No,0,40,0,80,A,No,Consider it a gift and not pay for the coupon.,No difference,0,40,0,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,More than today,I do not know,I do not know,Absolutely serious,Female,56,"16,300 - 20,800",16,Israel,English,I allow you to use the responses I provided in this study.
+2022-10-10 01:17:12,2022-10-10 01:25:40,IP Address,100,508,True,2022-10-10 01:25:41,R_p59kLokoRYMdqEh,anonymous,HE,1,I agree to participate in the research,"No difference ",40,40,80,80,20,4,"Strongly disagree
+
+5
+",4,No,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,A,40,40,80,80,Yes,"Strongly disagree
+
+5
+",4,"Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,20,More than 102 ₪,Less than today,I do not know,They remain unchanged,Very serious,Male,60,"12,500 - 16,300",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 01:23:49,2022-10-10 01:39:35,IP Address,100,946,True,2022-10-10 01:39:36,R_2P7oM8FzBDvQ5N5,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,12,3,"Strongly disagree
+
+5
+",2,No,40,40,80,80,A,No,Consider it a gift and not pay for the coupon.,B,40,40,80,80,No,"Strongly disagree
+
+5
+",3,3,B,No,Pay your friend 150 ₪ for the coupon.,12,More than 102 ₪,Less than today,False,They remain unchanged,Absolutely serious,Female,28,"8,100 - 12,500",19,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 01:40:15,2022-10-10 02:02:25,IP Address,100,1330,True,2022-10-10 02:02:25,R_2f428sDtWgJrghr,anonymous,HE,1,I agree to participate in the research,B,0,40,0,80,70,2,4,"Strongly disagree
+
+5
+",Yes,40,40,40,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,80,80,80,No,4,"Strongly agree
+
+1
+",2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,37,"12,500 - 16,300",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 01:56:44,2022-10-10 02:38:32,IP Address,100,2507,True,2022-10-10 02:38:32,R_1H19cb42OJ2bmZm,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",40,50,80,90,15,3,3,"Strongly agree
+
+1
+",Yes,40,50,80,90,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,80,80,80,80,Yes,4,3,"Strongly agree
+
+1
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,More than today,I do not know,I do not know,Very serious,Female,58,"More than 25,000",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 03:15:19,2022-10-10 03:23:54,IP Address,100,515,True,2022-10-10 03:23:55,R_2bT9OAZlnhp4ILG,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,15,2,4,4,No,40,40,40,40,A,Yes,Pay your friend 150 ₪ for the coupon.,B,80,80,80,80,No,"Strongly disagree
+
+5
+",2,4,B,No,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,There is no relationship,Absolutely serious,Female,30,Prefer not to answer,17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 04:04:13,2022-10-10 04:28:54,IP Address,100,1481,True,2022-10-10 04:28:54,R_21naCeU3G0gxvF7,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,20,2,4,2,Yes,40,40,80,80,A,No,Pay your friend 150 ₪ for the coupon.,B,40,40,80,80,No,2,4,2,B,No,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,60,"8,100 - 12,500",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 07:00:01,2022-10-10 07:19:53,IP Address,100,1191,True,2022-10-10 07:19:53,R_3NVeQXYkFaS4bD7,anonymous,HE,1,I agree to participate in the research,A,20,50,60,100,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,20,60,50,100,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,60,60,100,No,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",12,More than 102 ₪,Less than today,False,I do not know,Very serious,Male,31,"8,100 - 12,500",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 09:25:55,2022-10-10 09:35:07,IP Address,100,551,True,2022-10-10 09:35:08,R_1lgWE8PV7hJmXsP,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,80,80,60,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,B,0,40,80,80,No,4,"Strongly agree
+
+1
+",4,A,Yes,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,False,I do not know,Moderately serious,Female,34,"Less than 8,100",20,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 09:41:32,2022-10-10 09:50:10,IP Address,100,517,True,2022-10-10 09:50:11,R_3oZU6GUcIfleSno,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,20,4,4,3,No,0,50,80,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,4,3,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,I do not know,I do not know,Moderately serious,Male,34,"8,100 - 12,500",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 09:38:39,2022-10-10 09:53:31,IP Address,100,892,True,2022-10-10 09:53:32,R_2CkOOilk5dHdizX,anonymous,HE,1,I agree to participate in the research,A,0,0,0,0,40,2,4,2,Yes,40,40,80,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,4,2,3,B,Yes,Pay your friend 150 ₪ for the coupon.,40,More than 102 ₪,Less than today,False,There is no relationship,Absolutely serious,Male,38,Prefer not to answer,19,Italy,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-03 10:35:02,2022-10-03 10:35:44,IP Address,8,41,False,2022-10-10 10:35:49,R_2dEcQQFtQ7YY9Gc,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-03 11:47:59,2022-10-03 11:50:48,IP Address,22,168,False,2022-10-10 11:50:53,R_3FQWWlkGc1SlZTE,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",,,,,,,,,,,,,,,,,,,,,,,,,,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,,,,,,,,,,,,
+2022-10-10 12:13:34,2022-10-10 12:24:06,IP Address,100,631,True,2022-10-10 12:24:06,R_bHKmwRlQ3n3JvCF,anonymous,HE,1,I agree to participate in the research,B,0,40,0,90,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,80,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,80,80,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,False,I do not know,Very serious,Male,36,"12,500 - 16,300",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 13:34:36,2022-10-10 13:46:11,IP Address,100,694,True,2022-10-10 13:46:11,R_ZxTeLouTco2VB0l,anonymous,HE,0.800000011920929,I agree to participate in the research,A,40,40,80,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,A,80,80,80,80,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",12,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,40,"Less than 8,100",19,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 14:33:21,2022-10-10 14:46:07,IP Address,100,766,True,2022-10-10 14:46:07,R_32MmaSPLIJGc3tT,anonymous,HE,1,I agree to participate in the research,"No difference ",0,0,0,0,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,40,0,40,No difference,No,Pay your friend 150 ₪ for the coupon.,No difference,0,40,0,80,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,Pay your friend 150 ₪ for the coupon.,8,Less than 102 ₪,I do not know,False,There is no relationship,Very serious,Female,38,Prefer not to answer,16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 21:01:47,2022-10-10 21:12:47,IP Address,100,659,True,2022-10-10 21:12:47,R_2ci5aAC9K1OP9vg,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,15,2,"Strongly agree
+
+1
+",3,Yes,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,B,40,40,80,80,Yes,2,2,3,A,No,Consider it a gift and not pay for the coupon.,15,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Female,41,"12,500 - 16,300",18,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 00:55:08,2022-10-11 01:10:29,IP Address,100,921,True,2022-10-11 01:10:31,R_1KvTyaltLzL2dzR,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,20,40,40,80,10,2,4,2,No,20,40,40,80,A,Yes,Pay your friend 150 ₪ for the coupon.,A,60,80,40,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,False,They remain unchanged,Absolutely serious,Male,47,"16,300 - 20,800",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 02:19:23,2022-10-11 02:30:41,IP Address,100,677,True,2022-10-11 02:30:43,R_12tkdL3IwLYguGi,anonymous,HE,1,I agree to participate in the research,B,0,20,0,40,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,40,0,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,80,40,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Female,29,"More than 25,000",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-04 02:44:29,2022-10-04 02:45:10,IP Address,3,41,False,2022-10-11 02:45:11,R_8JpUtDaTR3hx3W1,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 02:41:39,2022-10-11 02:54:42,IP Address,100,782,True,2022-10-11 02:54:43,R_WujMrMbXxOwAwaR,anonymous,HE,1,I agree to participate in the research,"No difference ",0,0,0,0,60,3,"Strongly disagree
+
+5
+",4,Yes,40,40,40,40,A,Yes,Consider it a gift and not pay for the coupon.,B,80,80,80,80,No,"Strongly disagree
+
+5
+",2,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Male,31,"Less than 8,100",18,Italy,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 05:00:16,2022-10-11 05:12:58,IP Address,100,761,True,2022-10-11 05:12:58,R_wSFxabGvAFQPS6J,anonymous,EN,0.800000011920929,I agree to participate in the research,"No difference ",0,100,0,200,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,100,0,200,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,80,0,200,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Male,67,"Less than 8,100",15,Israel,English,I allow you to use the responses I provided in this study.
+2022-10-11 05:41:40,2022-10-11 05:56:43,IP Address,100,903,True,2022-10-11 05:56:44,R_1Lum9ECI74i5XYM,anonymous,EN,1,I agree to participate in the research,A,0,40,40,80,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,40,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,40,80,80,80,No,3,"Strongly disagree
+
+5
+",2,B,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,I do not know,I do not know,Moderately serious,Female,31,"Less than 8,100",16,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-10-11 06:01:48,2022-10-11 06:08:05,IP Address,100,376,True,2022-10-11 06:08:05,R_3D8cHw2qfH9PVaj,anonymous,HE,1,I agree to participate in the research,"No difference ",60,80,90,100,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,100,100,100,100,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,70,80,100,100,No,2,4,4,No difference,No,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,False,There is no relationship,Moderately serious,Male,27,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 06:05:14,2022-10-11 06:14:24,IP Address,100,549,True,2022-10-11 06:14:24,R_2rqPJnJIm8AX0XC,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,7,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,B,40,80,80,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,Pay your friend 150 ₪ for the coupon.,7,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Male,19,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 06:14:37,2022-10-11 06:23:24,IP Address,100,526,True,2022-10-11 06:23:25,R_1BR9KDMA5jDJlya,anonymous,HE,1,I agree to participate in the research,A,0,50,0,90,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,40,50,80,90,A,Yes,Consider it a gift and not pay for the coupon.,A,40,50,80,90,No,3,"Strongly agree
+
+1
+",2,B,Yes,Pay your friend 150 ₪ for the coupon.,8,More than 102 ₪,Less than today,False,I do not know,Very serious,Female,21,"Less than 8,100",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 06:34:08,2022-10-11 06:43:18,IP Address,100,550,True,2022-10-11 06:43:18,R_1rGIEu2Q41vBrrl,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,40,80,160,25,3,"Strongly disagree
+
+5
+",2,No,40,40,80,160,A,Yes,Consider it a gift and not pay for the coupon.,A,80,120,80,160,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,25,More than 102 ₪,Less than today,False,I do not know,Very serious,Male,48,"More than 25,000",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 06:36:57,2022-10-11 06:45:33,IP Address,100,516,True,2022-10-11 06:45:33,R_110JuVcxTb9dPhR,anonymous,HE,1,I agree to participate in the research,A,40,60,80,100,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,40,60,80,100,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,50,70,80,100,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than 102 ₪,Exactly the same as today,False,There is no relationship,Absolutely serious,Female,44,"Less than 8,100",12,Israel,English,I allow you to use the responses I provided in this study.
+2022-10-11 06:49:00,2022-10-11 07:02:15,IP Address,100,795,True,2022-10-11 07:02:16,R_2U92eicdYgI0mVQ,anonymous,HE,1,I agree to participate in the research,A,50,50,100,100,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,50,50,100,100,A,No,Consider it a gift and not pay for the coupon.,B,60,60,100,100,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,10,More than 102 ₪,Less than today,False,I do not know,Moderately serious,Female,68,"Less than 8,100",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 07:31:31,2022-10-11 07:43:54,IP Address,100,742,True,2022-10-11 07:43:55,R_3oWLfEiDDYemP47,anonymous,HE,1,I agree to participate in the research,"No difference ",20,50,30,100,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,50,40,100,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,90,40,100,No,3,4,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Female,31,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 07:47:57,2022-10-11 08:14:57,IP Address,100,1619,True,2022-10-11 08:14:57,R_3qdpqP0xqQ3j4VV,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,40,40,40,18,"Strongly disagree
+
+5
+",3,3,No,40,40,40,40,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,3,3,3,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",18,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,50,"8,100 - 12,500",16,Israel,Romanian,I allow you to use the responses I provided in this study.
+2022-10-11 09:24:58,2022-10-11 09:36:14,IP Address,100,675,True,2022-10-11 09:36:14,R_2CIg8H0XnhqKKEJ,anonymous,HE,1,I agree to participate in the research,A,0,0,0,0,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,40,0,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,0,0,0,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",30,More than 102 ₪,Less than today,False,There is no relationship,Very serious,Female,57,"More than 25,000",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 09:58:28,2022-10-11 10:12:01,IP Address,100,813,True,2022-10-11 10:12:01,R_3MAVjuW0uBvGcVs,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,40,40,40,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,40,80,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Exactly the same as today,I do not know,I do not know,Moderately serious,Female,36,"8,100 - 12,500",23,Israel,English,I allow you to use the responses I provided in this study.
+2022-10-11 10:51:16,2022-10-11 11:12:10,IP Address,100,1253,True,2022-10-11 11:12:10,R_UnMXTT7KmBfazip,anonymous,HE,1,I agree to participate in the research,A,40,40,40,80,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,40,80,No difference,Yes,Consider it a gift and not pay for the coupon.,A,40,80,40,80,No,"Strongly disagree
+
+5
+",3,"Strongly agree
+
+1
+",A,No,Pay your friend 150 ₪ for the coupon.,30,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Female,38,"20,800 - 25,000",22,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 11:48:04,2022-10-11 11:59:46,IP Address,100,701,True,2022-10-11 11:59:46,R_10B0lV73VGfMfKx,anonymous,HE,1,I agree to participate in the research,A,0,30,10,70,25,"Strongly agree
+
+1
+",4,4,No,0,30,20,70,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,40,20,70,No,3,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",17,More than 102 ₪,Less than today,I do not know,They collapse,Very serious,Female,22,"12,500 - 16,300",14,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 11:44:24,2022-10-11 12:06:43,IP Address,100,1339,True,2022-10-11 12:06:44,R_aiakDeg8g72Fnln,anonymous,HE,1,I agree to participate in the research,A,0,60,20,80,20,2,4,4,No,0,60,20,100,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,60,40,100,No,2,4,4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Female,28,"8,100 - 12,500",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 11:44:59,2022-10-11 12:11:39,IP Address,100,1599,True,2022-10-11 12:11:39,R_2pWCHrKuBQP99Ku,anonymous,EN,1,I agree to participate in the research,A,0,0,0,40,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,40,40,40,B,Yes,Pay your friend 150 ₪ for the coupon.,A,80,80,80,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Female,40,"20,800 - 25,000",21,Israel,English,I allow you to use the responses I provided in this study.
+2022-10-11 12:54:40,2022-10-11 13:36:56,IP Address,100,2535,True,2022-10-11 13:36:57,R_3FPQPqBfguNwJ85,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,80,30,2,"Strongly disagree
+
+5
+",4,No,0,40,0,80,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,80,40,80,No,3,4,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Female,41,"Less than 8,100",18,Israel,Other,I allow you to use the responses I provided in this study.
+2022-10-11 22:54:26,2022-10-11 23:05:34,IP Address,100,667,True,2022-10-11 23:05:36,R_PNhkqk1iKxemz1D,anonymous,HE,1,I agree to participate in the research,"No difference ",40,40,80,80,10,2,4,"Strongly disagree
+
+5
+",No,40,60,80,100,No difference,Yes,Pay your friend 150 ₪ for the coupon.,No difference,40,40,80,80,No,2,4,"Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,I do not know,I do not know,I do not know,I do not know,Very serious,Male,27,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 23:43:56,2022-10-11 23:52:57,IP Address,100,540,True,2022-10-11 23:52:58,R_2BwGSErHN1GfaWq,anonymous,HE,1,I agree to participate in the research,B,0,40,0,70,40,2,4,4,Yes,20,40,60,80,B,Yes,Pay your friend 150 ₪ for the coupon.,A,40,70,40,70,No,2,4,4,B,Yes,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Female,49,"More than 25,000",23,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-12 10:11:53,2022-10-12 10:20:03,IP Address,100,490,True,2022-10-12 10:20:04,R_ZmicV3Chm4wI21r,anonymous,HE,1,I agree to participate in the research,A,35,40,80,80,14,2,4,"Strongly disagree
+
+5
+",Yes,35,40,80,80,A,Yes,Pay your friend 150 ₪ for the coupon.,B,50,80,70,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,No difference,Yes,Pay your friend 150 ₪ for the coupon.,12,More than 102 ₪,I do not know,False,There is no relationship,Very serious,Female,27,"Less than 8,100",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-12 12:44:38,2022-10-12 12:57:39,IP Address,100,780,True,2022-10-12 12:57:41,R_2pPlAixUPC3h0eY,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,100,0,200,A,Yes,Pay your friend 150 ₪ for the coupon.,A,0,100,0,200,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Male,23,"16,300 - 20,800",13,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-09 02:09:04,2022-10-12 13:42:23,IP Address,100,300799,True,2022-10-12 13:42:24,R_2eWGCWPGhCRuWS0,anonymous,HE,1,I agree to participate in the research,A,45,78,67,89,50,"Strongly agree
+
+1
+",2,3,Yes,55,31,76,45,B,No,Consider it a gift and not pay for the coupon.,B,40,75,37,87,Yes,"Strongly agree
+
+1
+",2,"Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,55,I do not know,I do not know,I do not know,I do not know,Moderately serious,Female,31,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-13 01:38:31,2022-10-13 01:45:44,IP Address,100,432,True,2022-10-13 01:45:46,R_20O8gJkXuSsvoDr,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,40,50,80,90,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,25,"Less than 8,100",14,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-06 13:00:19,2022-10-06 13:00:52,IP Address,8,32,False,2022-10-13 13:01:00,R_3Pz6VB7W92hdeLD,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-13 23:25:00,2022-10-13 23:32:19,IP Address,100,438,True,2022-10-13 23:32:21,R_2Qm1Gqkcvr2WUi1,anonymous,HE,1,I agree to participate in the research,B,0,30,0,50,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,0,40,0,50,No difference,No,Consider it a gift and not pay for the coupon.,B,0,40,0,50,Yes,4,"Strongly agree
+
+1
+",4,No difference,No,Pay your friend 150 ₪ for the coupon.,30,More than 102 ₪,More than today,True,They collapse,Absolutely serious,Female,37,"8,100 - 12,500",20,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-06 23:32:01,2022-10-06 23:33:05,IP Address,8,63,False,2022-10-13 23:33:11,R_YRiuSnamONH86eR,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-14 04:31:27,2022-10-14 04:45:41,IP Address,100,854,True,2022-10-14 04:45:43,R_3ktaWB3WalQLJoA,anonymous,HE,1,I agree to participate in the research,"No difference ",0,0,0,0,10,3,4,"Strongly disagree
+
+5
+",No,0,40,0,80,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,80,80,80,80,No,4,3,4,No difference,Yes,Consider it a gift and not pay for the coupon.,10,More than 102 ₪,Less than today,False,They remain unchanged,Very serious,Male,58,"More than 25,000",24,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-14 06:11:31,2022-10-14 06:19:57,IP Address,100,505,True,2022-10-14 06:19:57,R_UAQ8UNDP6nKM7bX,anonymous,HE,1,I agree to participate in the research,A,20,40,20,80,15,2,4,2,Yes,40,60,80,100,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,60,80,80,80,No,4,3,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Female,21,Prefer not to answer,12,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-10-14 08:47:23,2022-10-14 08:57:59,IP Address,100,635,True,2022-10-14 08:57:59,R_1JQmM3P1oGiI4iK,anonymous,HE,1,I agree to participate in the research,A,40,40,80,80,25,2,4,"Strongly disagree
+
+5
+",Yes,40,40,80,80,No difference,No,Consider it a gift and not pay for the coupon.,A,40,80,80,80,No,2,4,4,B,No,Consider it a gift and not pay for the coupon.,25,More than 102 ₪,Less than today,False,There is no relationship,Absolutely serious,Male,56,"12,500 - 16,300",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-08 02:33:16,2022-10-08 02:33:46,IP Address,3,29,False,2022-10-15 02:33:49,R_3mfXOmEr0Z73LM6,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-15 03:49:14,2022-10-15 03:59:49,IP Address,100,634,True,2022-10-15 03:59:51,R_1f1PWxDWEjpFXq7,anonymous,HE,1,I agree to participate in the research,A,40,50,80,100,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,40,50,80,100,A,No,Pay your friend 150 ₪ for the coupon.,B,80,100,80,100,No,3,3,2,B,No,Pay your friend 150 ₪ for the coupon.,50,More than 102 ₪,Less than today,True,They collapse,Very serious,Male,63,"20,800 - 25,000",18,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-08 06:13:57,2022-10-08 06:14:16,IP Address,8,19,False,2022-10-15 06:14:24,R_r0XBTvALFHoVSHD,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-08 07:07:13,2022-10-08 07:07:53,IP Address,3,40,False,2022-10-15 07:07:56,R_BzjLpc7XwvSWVXz,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-08 08:17:13,2022-10-08 08:19:36,IP Address,19,142,False,2022-10-15 08:19:38,R_ptRofQtpgocjQxb,anonymous,EN,0.800000011920929,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,40,40,80,80,Yes,,,,,,,,,,,,,,,,,,,
+2022-10-15 10:34:42,2022-10-15 10:43:03,IP Address,100,500,True,2022-10-15 10:43:03,R_w17BSqpyomgS8IF,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,20,2,4,4,Yes,0,40,0,80,A,Yes,Consider it a gift and not pay for the coupon.,B,0,80,0,80,No,2,4,4,B,Yes,Consider it a gift and not pay for the coupon.,20,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,38,"8,100 - 12,500",18,Israel,English,I allow you to use the responses I provided in this study.
+2022-10-08 12:00:26,2022-10-08 12:07:13,IP Address,33,407,False,2022-10-15 12:07:19,R_d5vr1uVd933c3Gp,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,0,40,0,80,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,80,0,80,No,,,,,,,,,,,,,,,,,,,
+2022-10-08 12:08:03,2022-10-08 12:13:51,IP Address,50,347,False,2022-10-15 12:13:55,R_2akJOW9bqMASs06,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,,,,,,,,B,80,80,80,80,No,"Strongly agree
+
+1
+",2,3,B,No,Pay your friend 150 ₪ for the coupon.,20,,,,,,,,,,,,
+2022-10-08 12:49:35,2022-10-08 12:49:43,IP Address,3,8,False,2022-10-15 12:49:45,R_9TZRsOtUnmZh4BP,anonymous,HE,0.30000001192092896,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-15 14:53:58,2022-10-15 15:07:44,IP Address,100,826,True,2022-10-15 15:07:45,R_2D17yDgwX9Hsy1q,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,40,40,40,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,3,3,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,False,They collapse,Absolutely serious,Female,43,"More than 25,000",21,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-09 06:01:07,2022-10-09 06:01:15,IP Address,3,7,False,2022-10-16 06:01:20,R_1lfRc0bbCFoIimv,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-09 07:01:21,2022-10-09 07:01:40,IP Address,3,18,False,2022-10-16 07:01:41,R_2X0Vd59JSOSXKys,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-09 23:49:40,2022-10-09 23:54:40,IP Address,42,299,False,2022-10-16 23:54:41,R_3RgqXuDibWoueWt,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,25,"Strongly disagree
+
+5
+",3,"Strongly disagree
+
+5
+",Yes,0,40,0,80,,,,,,,,,,,,,No difference,No,Pay your friend 150 ₪ for the coupon.,15,,,,,,,,,,,,
+2022-10-10 00:40:50,2022-10-10 00:44:39,IP Address,33,228,False,2022-10-17 00:44:44,R_2eXWbi0ePWyPh4c,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,50,2,4,3,,,,,,,,,,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,40,,,,,,,,,,,,
+2022-10-10 01:31:20,2022-10-10 01:35:03,IP Address,3,223,False,2022-10-17 01:35:05,R_3lJlMfgeVD7uqOd,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-10 02:01:13,2022-10-10 02:02:01,IP Address,11,47,False,2022-10-17 02:02:03,R_1JRDNLXjTrY2I1R,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-17 02:34:18,2022-10-17 02:42:17,IP Address,100,479,True,2022-10-17 02:42:17,R_1f9jJDejstHSVB1,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,45,80,90,15,"Strongly agree
+
+1
+",4,3,Yes,40,45,80,90,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,40,80,80,90,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,36,"Less than 8,100",18,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-10 05:19:40,2022-10-10 05:20:45,IP Address,11,64,False,2022-10-17 05:20:47,R_1NxlkVoMWwJ5Hz2,anonymous,HE,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-10 09:05:20,2022-10-10 09:06:08,IP Address,8,47,False,2022-10-17 09:06:11,R_3m3sFZ4nPCyhMEi,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-10 10:04:52,2022-10-10 10:06:11,IP Address,8,79,False,2022-10-17 10:06:16,R_a9OrggMOhTYJRoB,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-10 13:43:01,2022-10-10 13:43:37,IP Address,3,35,False,2022-10-17 13:43:39,R_DNLTfycMO1Xnos1,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-08 18:05:38,2022-10-10 23:19:29,IP Address,39,191631,False,2022-10-17 23:19:38,R_1mLw6AmGJcQJN0d,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,40,60,80,100,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,40,60,80,100,Yes,"Strongly agree
+
+1
+",3,3,No difference,,,,,,,,,,,,,,,
+2022-10-10 23:31:47,2022-10-10 23:37:47,IP Address,56,360,False,2022-10-17 23:37:50,R_3nUyaGuFUMpT2S5,anonymous,HE,1,I agree to participate in the research,"No difference ",40,40,80,80,12,2,4,3,Yes,40,40,80,80,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,40,40,80,80,Yes,4,2,2,B,,,,,,,,,,,,,,,
+2022-10-11 00:45:34,2022-10-11 01:13:58,IP Address,22,1703,False,2022-10-18 01:14:00,R_2Sl7n70NSGH6fpg,anonymous,HE,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",6,,,,,,,,,,,,
+2022-10-11 01:39:34,2022-10-11 01:48:32,IP Address,58,537,False,2022-10-18 01:48:32,R_Zqmd0M8dmwLHbA5,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,40,40,80,80,15,4,3,3,No,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,B,40,80,8,80,No,4,3,2,A,Yes,,,,,,,,,,,,,,
+2022-10-18 01:51:21,2022-10-18 02:39:21,IP Address,100,2879,True,2022-10-18 02:39:22,R_1lh3BP1gXuB3PCV,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,25,"Strongly agree
+
+1
+",3,3,No,10,10,30,30,No difference,No,Consider it a gift and not pay for the coupon.,B,40,40,80,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No difference,No,Consider it a gift and not pay for the coupon.,20,More than 102 ₪,Exactly the same as today,I do not know,I do not know,Moderately serious,Male,42,"12,500 - 16,300",13,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 06:02:16,2022-10-11 06:02:52,IP Address,11,36,False,2022-10-18 06:02:58,R_2xCR2ayZuTYeuTu,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 07:29:30,2022-10-11 07:30:29,IP Address,11,58,False,2022-10-18 07:31:10,R_57ujz83p0nEHuKt,anonymous,HE,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-18 07:21:17,2022-10-18 07:31:43,IP Address,100,626,True,2022-10-18 07:31:43,R_6QDpTYqR1WK4kNj,anonymous,HE,1,I agree to participate in the research,B,0,40,0,80,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,40,40,80,80,A,Yes,Consider it a gift and not pay for the coupon.,A,40,80,80,80,No,3,2,3,No difference,Yes,Pay your friend 150 ₪ for the coupon.,30,More than 102 ₪,Less than today,False,I do not know,Very serious,Female,50,"12,500 - 16,300",25,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-11 07:31:04,2022-10-11 07:36:26,IP Address,36,322,False,2022-10-18 07:36:28,R_0VrnVS6klGIJa49,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,0,50,80,100,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,,,,,,,,,,,,
+2022-10-11 08:34:14,2022-10-11 08:34:45,IP Address,3,30,False,2022-10-18 08:34:54,R_1OZFA3N9ovSmflG,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 10:12:24,2022-10-11 10:18:39,IP Address,33,375,False,2022-10-18 10:18:40,R_1DU68L4V4YWPsso,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,40,10,,,,,,,,,,,,No difference,40,40,40,60,Yes,3,2,"Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-10-11 10:46:55,2022-10-11 11:12:03,IP Address,81,1508,False,2022-10-18 11:12:07,R_vSPO9rHXtoHBobL,anonymous,EN,1,I agree to participate in the research,"No difference ",0,40,0,40,12,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,40,80,80,No,4,3,2,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",12,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,,,,,,,
+2022-10-11 11:26:02,2022-10-11 11:26:15,Spam,3,13,False,2022-10-18 11:26:20,R_3KqhKNFEgdf4S9P,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 11:42:08,2022-10-11 11:42:19,Spam,3,11,False,2022-10-18 11:42:21,R_3n2iJtjg5qfdsXT,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 12:10:51,2022-10-11 12:19:41,IP Address,47,529,False,2022-10-18 12:19:42,R_2QKz90GDgKnAid4,anonymous,HE,1,I agree to participate in the research,A,40,60,80,110,15,3,3,"Strongly agree
+
+1
+",Yes,40,60,80,110,A,No,,,,,,,,,,,B,No,Pay your friend 150 ₪ for the coupon.,10,,,,,,,,,,,,
+2022-10-11 13:38:19,2022-10-11 13:38:57,IP Address,8,37,False,2022-10-18 13:38:57,R_xbXcwpCRI7MDiZb,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-18 14:32:36,2022-10-18 14:45:29,IP Address,100,773,True,2022-10-18 14:45:31,R_2TC8NTnvLKFOfD9,anonymous,HE,1,I agree to participate in the research,A,40,40,80,80,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,A,Yes,Pay your friend 150 ₪ for the coupon.,B,80,80,80,80,No,3,4,3,No difference,Yes,Pay your friend 150 ₪ for the coupon.,15,More than 102 ₪,Less than today,False,I do not know,Very serious,Female,42,Prefer not to answer,21,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-10-11 16:55:02,2022-10-11 16:55:14,IP Address,3,11,False,2022-10-18 16:55:17,R_PCJgAYPkrQNOaQ1,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 16:55:46,2022-10-11 16:55:56,Spam,3,9,False,2022-10-18 16:56:02,R_Y5KUa11z5rwfNo5,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-12 02:14:55,2022-10-12 02:15:03,IP Address,3,8,False,2022-10-19 02:15:08,R_WxLfhNajDZazhJL,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 03:33:05,2022-10-19 03:41:39,IP Address,100,514,True,2022-10-19 03:41:41,R_1QAyatGue0X9ExB,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,40,0,80,A,Yes,Consider it a gift and not pay for the coupon.,B,0,80,0,80,Yes,"Strongly disagree
+
+5
+",3,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,15,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Male,27,"Less than 8,100",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-12 06:07:18,2022-10-12 06:17:04,IP Address,31,585,False,2022-10-19 06:17:06,R_3k4Uwz7fRw1ZmjI,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,40,40,40,40,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,,,,
+2022-10-12 07:32:53,2022-10-12 07:35:14,IP Address,19,141,False,2022-10-19 07:35:54,R_O3zrhvW4mTfNANb,anonymous,HE,1,I agree to participate in the research,B,40,40,80,80,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 07:18:58,2022-10-19 07:39:56,IP Address,100,1257,True,2022-10-19 07:39:57,R_3no4gljLpOUmPju,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,40,2,4,"Strongly disagree
+
+5
+",No,30,40,70,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,70,80,70,80,No,3,4,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,I do not know,There is no relationship,Absolutely serious,Female,18,"Less than 8,100",12,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-12 08:16:15,2022-10-12 08:17:03,IP Address,8,48,False,2022-10-19 08:17:07,R_3NzkKS8bTYdj8OJ,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-12 13:16:53,2022-10-12 13:18:05,IP Address,11,71,False,2022-10-19 13:18:09,R_2QmlhBUq92GB8l5,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-12 15:11:35,2022-10-12 15:11:43,IP Address,3,7,False,2022-10-19 15:11:47,R_2Wxl4yzjvnWn2DX,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-13 01:18:09,2022-10-13 01:39:34,IP Address,78,1284,False,2022-10-20 01:39:36,R_1N3oHsI2YMFV2e3,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,12,2,"Strongly disagree
+
+5
+",4,Yes,20,40,40,80,A,Yes,Consider it a gift and not pay for the coupon.,A,40,80,40,80,Yes,2,"Strongly disagree
+
+5
+",4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",12,More than 102 ₪,Less than today,I do not know,I do not know,,,,,,,,
+2022-10-13 03:32:24,2022-10-13 03:32:45,IP Address,3,21,False,2022-10-20 03:32:51,R_1PbYee2vpgsbx9I,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-20 07:43:04,2022-10-20 07:51:56,IP Address,100,531,True,2022-10-20 07:51:58,R_1OCDj2DQ2WvI9n4,anonymous,HE,1,I agree to participate in the research,A,0,0,0,0,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,40,50,80,80,A,Yes,Pay your friend 150 ₪ for the coupon.,B,80,80,80,80,No,4,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend 150 ₪ for the coupon.,30,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,29,"8,100 - 12,500",21,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-08 10:04:29,2022-10-13 08:44:47,IP Address,31,427217,False,2022-10-20 08:44:52,R_3qxpjkzwCUvRaSH,anonymous,HE,1,I agree to participate in the research,"No difference ",30,45,60,85,40,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,,,,,,,,,,,,,,,,,No difference,No,,,,,,,,,,,,,,
+2022-10-13 12:18:10,2022-10-13 12:18:29,Spam,8,19,False,2022-10-20 12:18:30,R_1QaYRATttqt2tz1,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-13 15:45:48,2022-10-13 15:46:03,IP Address,3,15,False,2022-10-20 15:46:12,R_eF2JbkOtHSLyhAB,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-15 04:31:03,2022-10-15 04:32:29,IP Address,17,85,False,2022-10-22 04:32:32,R_12aR9V1LJgwwMi9,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,,,,
+2022-10-15 06:28:22,2022-10-15 06:29:44,IP Address,11,81,False,2022-10-22 06:29:48,R_1i8wGMRWKfSk55G,anonymous,EN,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-15 07:21:39,2022-10-15 07:27:30,IP Address,47,351,False,2022-10-22 07:27:32,R_9uyLT080gEFF5BL,anonymous,HE,1,I agree to participate in the research,"No difference ",40,40,80,80,7,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,,,,,,,,B,0,0,0,0,No,,,,B,No,Pay your friend 150 ₪ for the coupon.,7,,,,,,,,,,,,
+2022-10-15 09:29:31,2022-10-15 09:30:36,Spam,3,65,False,2022-10-22 09:30:40,R_3HXsGxge7oVkXRo,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-15 10:57:18,2022-10-15 11:08:03,IP Address,56,644,False,2022-10-22 11:08:07,R_1HioT9ZZRRRebPk,anonymous,HE,1,I agree to participate in the research,A,0,50,0,90,15,3,"Strongly disagree
+
+5
+",2,Yes,40,40,80,80,,,,A,40,90,80,90,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,A,No,Consider it a gift and not pay for the coupon.,10,,,,,,,,,,,,
+2022-10-15 14:13:24,2022-10-15 14:22:42,IP Address,61,557,False,2022-10-22 14:22:48,R_3kn51vCojttoQsk,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,30,80,50,80,30,4,2,4,No,20,40,40,80,A,Yes,,B,30,80,50,80,No,4,2,4,No difference,No,Pay your friend 150 ₪ for the coupon.,25,,,,,,,,,,,,
+2022-10-15 14:46:04,2022-10-15 14:46:23,Spam,3,18,False,2022-10-22 14:46:24,R_239OloeibFgaaoN,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-16 01:16:54,2022-10-16 01:17:01,Spam,3,6,False,2022-10-23 01:17:02,R_1F5mGDCiDOkna6E,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-23 02:47:56,2022-10-23 03:04:33,IP Address,100,996,True,2022-10-23 03:04:34,R_2w6aWXvq1DoLpoA,anonymous,HE,1,I agree to participate in the research,B,0,80,0,120,20,"Strongly agree
+
+1
+",3,"Strongly disagree
+
+5
+",Yes,0,80,0,120,No difference,Yes,Consider it a gift and not pay for the coupon.,B,80,120,80,150,No,4,2,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 150 ₪ for the coupon.,20,More than 102 ₪,Exactly the same as today,I do not know,I do not know,Absolutely serious,Male,27,"Less than 8,100",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-16 05:17:29,2022-10-16 05:24:16,IP Address,36,407,False,2022-10-23 05:24:21,R_322RgteZNTop5EK,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,40,40,80,80,A,No,Pay your friend 150 ₪ for the coupon.,A,,,,,,,,,B,No,Pay your friend 150 ₪ for the coupon.,5,,,,,,,,,,,,
+2022-10-23 13:35:53,2022-10-23 13:45:29,IP Address,100,576,True,2022-10-23 13:45:31,R_eFnl90u4k0PMR8d,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,12,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,0,0,0,0,A,No,Consider it a gift and not pay for the coupon.,B,0,0,0,0,No,3,3,2,B,No,Consider it a gift and not pay for the coupon.,10,More than 102 ₪,Less than today,I do not know,They collapse,Absolutely serious,Female,48,"More than 25,000",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-16 15:19:06,2022-10-16 15:19:29,IP Address,3,23,False,2022-10-23 15:19:33,R_tL3vSrySFtdl3fb,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-23 23:29:53,2022-10-23 23:43:58,IP Address,100,845,True,2022-10-23 23:43:59,R_1LOJYgwFts0KIwR,anonymous,HE,1,I agree to participate in the research,B,40,60,80,120,15,2,4,2,Yes,40,60,80,120,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,120,No,2,3,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,False,They remain unchanged,Very serious,Male,23,"Less than 8,100",14,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-17 00:49:18,2022-10-17 00:49:24,IP Address,3,5,False,2022-10-24 00:49:33,R_2o89sa8r2FK7JGp,anonymous,HE,0.800000011920929,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-17 01:28:35,2022-10-17 01:28:39,IP Address,3,3,False,2022-10-24 01:28:42,R_u96XKiP29Lt3E7n,anonymous,HE,0.800000011920929,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-24 13:54:59,2022-10-24 14:13:44,IP Address,100,1124,True,2022-10-24 14:13:44,R_3svkUaoSz7vSXph,anonymous,HE,1,I agree to participate in the research,A,0,20,0,40,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,30,40,30,40,A,No,Consider it a gift and not pay for the coupon.,B,0,20,0,40,No,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than 102 ₪,Less than today,I do not know,They remain unchanged,Very serious,Female,48,"20,800 - 25,000",22,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-25 04:13:23,2022-10-25 04:28:03,IP Address,100,880,True,2022-10-25 04:28:05,R_2wtPQeJ0vdl3PVE,anonymous,EN,1,I agree to participate in the research,A,0,40,0,80,80,2,"Strongly agree
+
+1
+",2,No,40,40,80,80,A,No,Pay your friend 150 ₪ for the coupon.,No difference,40,40,80,80,No,3,"Strongly agree
+
+1
+",2,B,No,Pay your friend 150 ₪ for the coupon.,80,I do not know,I do not know,I do not know,I do not know,Very serious,Female,70,Prefer not to answer,12,Israel,English,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-10-18 07:31:37,2022-10-18 07:31:54,IP Address,3,16,False,2022-10-25 08:11:34,R_2qxQr9gLNq28erd,anonymous,HE,0.699999988079071,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 07:53:23,2022-10-25 08:13:42,IP Address,100,1219,True,2022-10-25 08:13:43,R_1JFKuoPx8HeoqCd,anonymous,HE,0.8999999761581421,I agree to participate in the research,B,20,40,40,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,60,80,100,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,120,80,100,No,3,2,"Strongly agree
+
+1
+",A,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Female,52,"Less than 8,100",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-25 09:54:12,2022-10-25 10:02:07,IP Address,100,475,True,2022-10-25 10:02:08,R_1n2gRQSi8JRIQd6,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,80,80,A,No,Consider it a gift and not pay for the coupon.,No difference,40,80,80,80,Yes,"Strongly disagree
+
+5
+",3,4,B,No,Consider it a gift and not pay for the coupon.,12,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Female,26,"Less than 8,100",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-19 01:22:50,2022-10-19 01:23:15,IP Address,11,24,False,2022-10-26 01:23:23,R_6Sg7yZ9P84iIYfL,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,No difference,,,,,,,,,,,,,,,
+2022-10-19 07:18:11,2022-10-19 07:18:26,IP Address,3,14,False,2022-10-26 08:36:45,R_1IGxnDnaVqbIYpa,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 13:11:35,2022-10-19 20:51:18,IP Address,50,27583,False,2022-10-26 20:51:23,R_3j7ZX6OtiY9vLGm,anonymous,HE,0.8999999761581421,I agree to participate in the research,B,30,40,60,80,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,,,,,,,,B,50,60,50,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,,,,,,,,,,,,
+2022-10-20 13:03:16,2022-10-20 13:12:17,IP Address,36,541,False,2022-10-27 13:12:24,R_3nPghDEG2ELdtq4,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,80,80,130,130,A,No,Consider it a gift and not pay for the coupon.,A,,,,,,,,,B,No,Consider it a gift and not pay for the coupon.,20,,,,,,,,,,,,
+2022-10-28 12:26:14,2022-10-28 12:38:07,IP Address,100,712,True,2022-10-28 12:38:07,R_cHNR7GTMYU54ad3,anonymous,HE,1,I agree to participate in the research,A,20,40,30,80,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,40,40,50,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,80,80,80,80,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",2,A,No,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,False,I do not know,Absolutely serious,Female,28,"8,100 - 12,500",17,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-23 12:58:29,2022-10-23 13:01:30,IP Address,28,180,False,2022-10-30 13:01:34,R_2dNpVeq9R5Llxfp,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",20,40,60,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-23 13:30:23,2022-10-23 13:31:31,IP Address,3,67,False,2022-10-30 13:31:33,R_3stNSa1o7w8Y1dB,anonymous,HE,0.699999988079071,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-24 03:18:35,2022-10-24 03:18:59,IP Address,3,23,False,2022-10-31 03:36:13,R_Dq8SxCK5j06eoF3,anonymous,HE,0.800000011920929,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-24 05:06:27,2022-10-24 05:06:50,IP Address,3,23,False,2022-10-31 05:08:52,R_1Ed5rFymDb3SvXq,anonymous,HE,0.800000011920929,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-24 21:39:49,2022-10-24 21:47:02,IP Address,50,433,False,2022-10-31 21:47:08,R_3OdFTdUYjs8FbNk,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,40,40,40,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,40,80,80,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,,,,,,,,,,,,
+2022-10-25 00:23:18,2022-10-25 00:27:11,IP Address,28,233,False,2022-11-01 00:40:16,R_1LTIdVY8MY5gLmt,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",40,80,80,160,40,2,"Strongly disagree
+
+5
+",4,No,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 04:16:02,2022-10-25 04:22:02,IP Address,58,359,False,2022-11-01 04:37:43,R_3nko0MFEnUrQCJL,anonymous,HE,1,I agree to participate in the research,"No difference ",0,40,0,80,100,,,,,40,40,80,80,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,4,40,80,80,No,4,3,2,A,Yes,Pay your friend 150 ₪ for the coupon.,50,,,,,,,,,,,,
+2022-11-01 05:05:38,2022-11-01 05:17:36,IP Address,100,717,True,2022-11-01 05:17:38,R_1LetrM0nrdmoHSX,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,12,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,20,40,50,A,No,Consider it a gift and not pay for the coupon.,B,0,40,40,60,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Pay your friend 150 ₪ for the coupon.,7,More than 102 ₪,I do not know,I do not know,I do not know,Absolutely serious,Female,29,"12,500 - 16,300",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-11-01 06:12:44,2022-11-01 06:30:10,IP Address,100,1045,True,2022-11-01 06:30:10,R_2dSKCeoY0pqciDn,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,40,80,80,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,60,80,80,80,No,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,Less than today,I do not know,I do not know,Absolutely serious,Female,26,"8,100 - 12,500",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-11-01 09:46:28,2022-11-01 09:59:02,IP Address,100,754,True,2022-11-01 09:59:02,R_1IuzTMxamUFFZM9,anonymous,HE,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,10,2,"Strongly disagree
+
+5
+",4,No,40,60,80,100,A,No,Pay your friend 150 ₪ for the coupon.,B,40,100,80,100,No,"Strongly disagree
+
+5
+",2,2,No difference,Yes,Pay your friend 150 ₪ for the coupon.,10,More than 102 ₪,I do not know,I do not know,I do not know,Very serious,Female,27,"Less than 8,100",16,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-11-02 04:28:06,2022-11-02 04:36:41,IP Address,100,514,True,2022-11-02 04:36:42,R_1rMwQbEfIUX8WsM,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,20,"Strongly agree
+
+1
+",4,4,Yes,40,40,80,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,80,80,80,Yes,3,3,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 102 ₪,Less than today,I do not know,I do not know,Very serious,Female,27,"Less than 8,100",15,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-11-02 05:13:21,2022-11-02 05:26:12,IP Address,100,770,True,2022-11-02 05:26:12,R_eg4EhOdou5weiZ3,anonymous,HE,1,I agree to participate in the research,B,40,50,80,100,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,40,60,80,100,A,No,Consider it a gift and not pay for the coupon.,B,40,80,80,120,Yes,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,15,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Female,27,"Less than 8,100",16,Israel,Hebrew,I allow you to use the responses I provided in this study.
+2022-10-30 11:26:40,2022-10-30 11:29:31,IP Address,28,170,False,2022-11-03 02:15:53,R_32QnEEnxJpZ6rFS,anonymous,HE,0.8999999761581421,I agree to participate in the research,"No difference ",0,40,0,80,18,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-31 10:53:51,2022-10-31 10:54:21,IP Address,8,29,False,2022-11-03 02:15:53,R_2OTsKzPorD3QfYE,anonymous,HE,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-11-01 07:48:04,2022-11-01 07:59:47,IP Address,67,702,False,2022-11-03 02:15:54,R_3nIORDsHwriqDiS,anonymous,HE,1,I agree to participate in the research,A,0,40,0,80,60,2,3,4,Yes,40,40,80,80,No difference,Yes,Pay your friend 150 ₪ for the coupon.,B,40,40,80,80,Yes,2,3,4,B,Yes,Pay your friend 150 ₪ for the coupon.,30,,,,,,,,,,,,
+2022-11-01 05:10:48,2022-11-01 05:11:39,IP Address,3,51,False,2022-11-03 02:15:56,R_110LiBwVCpVvV6F,anonymous,HE,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

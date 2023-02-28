@@ -1,0 +1,696 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q_RecaptchaScore,Consent,MrAB1,Game1_1_1,Game1_1_2,Game1_2_1,Game1_2_2,Drink1,Gym1 _1,Gym1 _2,Gym1 _3,Jacket1,Game2_1_1,Game2_1_2,Game2_2_1,Game2_2_2,MrAB2,"Play2 ","Plane2 ",MrAB3,Game3_1 _1,Game3_1 _2,Game3_2_1,Game3_2_2,Jacket2,Gym2 _1,Gym2 _2,Gym2 _3,"MrAB4 ","Play1 ","Plane1 ",Drink2,fin_lit1,fin_lit2,fin_lit3,fin_lit4,Att_check,Gender,"Age ",Income,Education,Residence,Native language,Debriefing
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,Q_RecaptchaScore,"Dear Participant,    We invite you to take part in an online study with the purpose of investigating how people make decisions. The duration of the questionnaire is approximately 10 minutes. At the end of the questionnaire, you will be asked some personal demographic information.    Your data will be analyzed anonymously and processed according to the current international legislation for the protection of privacy (D. Lgs 196/2003 and EU GDPR 679/2016 on the protection of personal data and art. 9 of the Deontological Code of Italian Psychologists). Your data will be used solely for the purposes of the research itself. No information regarding you personally will be published or revealed in any way.    You are free to withdraw from the study at any point without giving any explanation. In this case your data will be deleted. You will not receive any payment or reimbursement of any sort for your participation in this study. There are no known risks associated with participating in this study.    Project Manager: Enrico Rubaltelli (Department of Development Psychology and Socialization -DPSS, University of Padua). The person responsible for this research agrees to comply with the obligations of current legislation in terms of collection, processing and storage of sensitive data.    I DECLARE THAT  • I am 18 years old or older  • I take part in this project voluntarily  • I am aware of the objectives and aims of this research project  • I am aware that the data obtained, in absolute anonymity, will be treated exclusively for educational and research purposes  • I am aware that it is not possible to withdraw the data I have provided once it has been submitted.    For any clarification you can contact Prof. Enrico Rubaltelli at jdmlab.multicountry@gmail.com.",Person A was given two tickets to the lottery. They won 9000 forint with one ticket and 5000 forint with the other ticket.      Person B was given a ticket to one lottery. They won 14 000 forint.        Who is happier?,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 8000 forint but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is 8000 forint. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 8000 forint but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is 8000 forint. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was 16 000 forint instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 16 000 forint instead? - If they are a stranger,"You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a fancy resort hotel. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender.    What price do you tell them?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 2000 forint (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 2000 forint","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 2000 forint (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 2000 forint (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind","You are about to purchase a sweater for 30 000 forint and a Bluetooth speaker for 7000 forint. The salesman informs you that the speaker you wish to buy is on sale for 5000 forint at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is 8000 forint which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is 8000 forint. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is 8000 forint which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is 8000 forint. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger",What price would you have asked for if you found out that the ticket’s face value price was 16 000 forint instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 16 000 forint instead? - If they are a stranger,Person A received a fine and owed 20 000 forint. The same day they received a second fine and owed 10 000 forint.    Person B received a fine and owed 30 000 forint.  Who is more upset?,"Imagine that you are on your way to a music event and intend to buy a ticket worth 10 000 forint. On entering the venue, you realize that you have lost 10 000 forint in cash.   Would you still pay 10 000 forint for a ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth 25 000 forint, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of 25 000 forint and received the other one for free. Just one coupon is required to upgrade your class on the current flight and your friend offers you the coupon which they got for free so that you can upgrade your ticket as well.    What do you think is the most appropriate thing to do?","Person A bought a lottery ticket and won 20 000 forint. Also, they damaged one door in their apartment in an accident and had to pay the landlord 15 000 forint.       Person B bought a lottery ticket and won 5000 forint.       Who is happier?",You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 8000 forint but you paid 16 000 forint for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 8000 forint. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 8000 forint but you paid 16 000 forint for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 8000 forint. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was 16 000 forint instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 16 000 forint instead? - If they are a stranger,"You are about to purchase a sweater for 7000 forint and a Bluetooth speaker for 30 000 forint. The salesman informs you that the speaker you wish to buy is on sale for 28 000 forint at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 80 000 forint a year (i.e., roughly 2000 forint per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 2000 forint","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 80 000 forint a year (i.e., roughly 2000 forint per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 80 000 forint a year (i.e., roughly 2000 forint per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind",Person A damaged their car in a parking lot. They had to spend 40 000 forint to repair the damage. The same day they damaged the car they won 5000 forint in a raffle.       Person B damaged their car in a parking lot. They had to spend 35 000 forint to repair the damage.       Who is more upset?,"Imagine that you are on your way to a music event with a ticket for which you have paid 10 000 forint. On entering the venue, you discover that you have lost the ticket.    Would you pay 10 000 forint for another ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth 25 000 forint, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of 25 000 forint and received the other one for free. Just one coupon is required to upgrade your class on the current flight, and your friend offers you the coupon which they purchased so that you can upgrade as well.    What do you think is the most appropriate thing to do?","You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a small, run-down grocery store. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the store owner.    What price do you tell them?","Suppose that you have 10 000 forint in a savings account and the interest rate is 2% per year. After 5 years, how much do you think you would have in the account if you let the money grow?","Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, how much would you be able to buy with the money in this account?",Buying a single company's stock usually provides a safer return than a stock mutual fund.,"If interest rates rise, what would typically happen to bond prices?",To ensure the quality of our data we need to know if participants paid attention during the survey. Please tell us honestly how serious you were in completing the survey.   How serious have you been about filling in the survey?,What gender do you identify as?,What is your age (in numbers)?,Which of the following best describes net monthly personal income?,How many years of schooling have you completed? (from elementary school to doctoral degree or specialization if you have one),List of Countries,Which of the following is your native language?,"The survey you have completed aims to replicate the mental accounting effect. According to this phenomenon a person attributes different values to the same amount of money based on subjective criteria. Specifically, people tend to subjectively organize economic resources into different mental accounts. In addition, in this study, we measured some individual differences that might have an influence on mental accounting. In particular:   	  	   ●	Scale to measure financial literacy (Lusardi and Mitchell, 2014).  	 	 	  ●	Demographic data (e.g. gender, age or income level)	    Finally, we inform you that we have also used an attentional check to measure respondent engagement. The purpose of this study could not be fully revealed at the beginning of the study to avoid influencing your answers. Now that you have received this information, we ask you to confirm your consent to participate in this study or to withdraw it. In the latter case your data will not be used and will be deleted."
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""Q_RecaptchaScore""}","{""ImportId"":""QID1""}","{""ImportId"":""QID8""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID14_2""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID23_TEXT""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID44_2""}","{""ImportId"":""QID44_3""}","{""ImportId"":""QID34""}","{""ImportId"":""QID17_1""}","{""ImportId"":""QID17_2""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID18_2""}","{""ImportId"":""QID12""}","{""ImportId"":""QID78""}","{""ImportId"":""QID86""}","{""ImportId"":""QID10""}","{""ImportId"":""QID20_1""}","{""ImportId"":""QID20_2""}","{""ImportId"":""QID21_1""}","{""ImportId"":""QID21_2""}","{""ImportId"":""QID74""}","{""ImportId"":""QID82_1""}","{""ImportId"":""QID82_2""}","{""ImportId"":""QID82_3""}","{""ImportId"":""QID11""}","{""ImportId"":""QID40""}","{""ImportId"":""QID48""}","{""ImportId"":""QID70_TEXT""}","{""ImportId"":""QID59""}","{""ImportId"":""QID60""}","{""ImportId"":""QID61""}","{""ImportId"":""QID62""}","{""ImportId"":""QID51""}","{""ImportId"":""QID52""}","{""ImportId"":""QID53_TEXT""}","{""ImportId"":""QID54""}","{""ImportId"":""QID55_TEXT""}","{""ImportId"":""QID114""}","{""ImportId"":""QID57""}","{""ImportId"":""QID63""}"
+2022-09-12 02:04:37,2022-09-12 03:23:41,IP Address,100,4744,True,2022-09-12 03:23:41,R_vGrcnuKEfyxykrD,anonymous,HU,1,I agree to participate in the research,B,5000,8000,8000,16000,1500,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,No,7000,8000,10000,16000,A,Yes,Consider it a gift and not pay for the coupon.,B,8000,16000,16000,16000,No,"Strongly disagree
+
+5
+",3,"Strongly agree
+
+1
+",A,No,Consider it a gift and not pay for the coupon.,500,More than 10 200 forint,Exactly the same as today,I do not know,They collapse,Absolutely serious,Female,28,More than 560 000 forint,19,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-12 02:24:38,2022-09-12 03:53:58,IP Address,100,5360,True,2022-09-12 03:53:58,R_23UF83vfVTpatMR,anonymous,HU,1,I agree to participate in the research,"No difference ",0,5000,0,10000,2000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,8000,8000,8000,16000,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,16000,16000,16000,16000,No,2,3,4,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",500,More than 10 200 forint,Less than today,I do not know,I do not know,Absolutely serious,Female,28,More than 560 000 forint,20,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-12 11:07:02,2022-09-12 11:18:18,IP Address,100,676,True,2022-09-12 11:18:19,R_2f9euccwpVc0K3L,anonymous,HU,1,I agree to participate in the research,A,0,5000,0,6000,1500,2,"Strongly disagree
+
+5
+",3,Yes,6000,7500,8000,13000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,7000,9000,8000,10000,No,4,2,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",500,More than 10 200 forint,Less than today,True,I do not know,Absolutely serious,Female,27,More than 560 000 forint,18,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-13 08:57:27,2022-09-13 09:12:39,IP Address,100,912,True,2022-09-13 09:12:41,R_1f2zw0kGcetHRC4,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,8000,0,16000,2000,"Strongly agree
+
+1
+",4,3,Yes,8000,8000,8000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,80000,15000,16000,16000,Yes,4,4,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1500,More than 10 200 forint,Less than today,I do not know,There is no relationship,Absolutely serious,Female,27,Prefer not to answer,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-13 09:04:55,2022-09-13 09:15:06,IP Address,100,610,True,2022-09-13 09:15:06,R_24qGJdHHJ4PJfOO,anonymous,HU,0.8999999761581421,I agree to participate in the research,B,8000,8000,8000,16000,1500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,8000,8000,8000,16000,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,8000,8000,8000,16000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1500,More than 10 200 forint,Less than today,False,I do not know,Absolutely serious,Female,39,375 000 – 470 000 forint,14,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-13 09:19:51,2022-09-13 09:33:35,IP Address,100,823,True,2022-09-13 09:33:35,R_111KYe2432lGPRl,anonymous,HU,1,I agree to participate in the research,"No difference ",8000,10000,15000,20000,1500,2,4,"Strongly disagree
+
+5
+",Yes,8000,10000,15000,20000,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,8000,20000,16000,20000,No,2,4,"Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,500,More than 10 200 forint,More than today,False,I do not know,Absolutely serious,Female,30,280 000 – 375 000 forint,18,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-13 10:54:24,2022-09-13 11:02:41,IP Address,100,497,True,2022-09-13 11:02:42,R_9sopgFVUYXggeFX,anonymous,HU,1,I agree to participate in the research,"No difference ",5000,8000,10000,16000,1500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,8000,8000,8000,16000,A,No,Consider it a gift and not pay for the coupon.,B,8000,16000,16000,16000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",1000,I do not know,I do not know,I do not know,I do not know,Very serious,Female,29,More than 560 000 forint,18,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-13 10:50:50,2022-09-13 11:06:09,IP Address,100,919,True,2022-09-13 11:06:10,R_2BlCySPr0dJHKFF,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,8000,8000,16000,16000,800,4,2,3,Yes,8000,8000,16000,16000,A,Yes,Pay your friend 25 000 forint for the coupon.,B,16000,16000,16000,16000,Yes,4,2,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 25 000 forint for the coupon.,400,Exactly 10 200 forint,Less than today,I do not know,I do not know,Absolutely serious,Prefer not to say,49,280 000 – 375 000 forint,14,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-13 11:41:57,2022-09-13 11:49:45,IP Address,100,467,True,2022-09-13 11:49:46,R_3nqPGJ9m3JqAJwj,anonymous,HU,1,I agree to participate in the research,A,4000,8000,8000,16000,2000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,8000,8000,16000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,16000,16000,16000,16000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1000,More than 10 200 forint,Less than today,I do not know,They collapse,Absolutely serious,Female,30,375 000 – 470 000 forint,16,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-14 03:12:33,2022-09-14 03:30:49,IP Address,100,1096,True,2022-09-14 03:30:50,R_ABVM1WDw6KV7gxH,anonymous,HU,1,I agree to participate in the research,"No difference ",0,8000,0,16000,1500,2,"Strongly disagree
+
+5
+",3,No,8000,8000,16000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,8000,8000,16000,No,4,4,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",500,More than 10 200 forint,Less than today,False,I do not know,Absolutely serious,Female,28,470 000 – 560 000 forint,21,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-15 00:11:09,2022-09-15 00:14:37,IP Address,100,207,True,2022-09-15 00:14:38,R_a3MVGF6uxvyEY1j,anonymous,HU,1,I agree to participate in the research,B,0,8000,8000,16000,1200,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,8000,0,8000,A,No,Consider it a gift and not pay for the coupon.,B,8000,16000,16000,16000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",700,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Female,24,375 000 – 470 000 forint,18,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-18 12:17:39,2022-09-18 12:49:43,IP Address,100,1924,True,2022-09-18 12:49:43,R_3mgC50o0k4yAFt5,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,8000,16000,16000,2000,"Strongly agree
+
+1
+",3,"Strongly disagree
+
+5
+",No,8000,8000,16000,16000,A,Yes,Consider it a gift and not pay for the coupon.,B,16000,16000,16000,16000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,No difference,No,Consider it a gift and not pay for the coupon.,500,More than 10 200 forint,Less than today,I do not know,I do not know,Absolutely serious,Female,52,Prefer not to answer,16,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-18 12:27:44,2022-09-18 12:49:46,IP Address,100,1321,True,2022-09-18 12:49:47,R_2RQSmfeOStdx7hj,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,1000,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,8000,0,8000,A,Yes,Consider it a gift and not pay for the coupon.,B,0,8000,0,8000,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,1000,More than 10 200 forint,Less than today,I do not know,There is no relationship,Absolutely serious,Male,57,More than 560 000 forint,14,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-12 02:07:48,2022-09-12 02:14:49,IP Address,11,421,False,2022-09-19 02:14:52,R_9GK8LrcKNpo5xLz,anonymous,HU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 05:03:33,2022-09-19 05:22:27,IP Address,100,1134,True,2022-09-19 05:22:27,R_3F4XRlhqtco5bNl,anonymous,HU,1,I agree to participate in the research,B,0,0,0,0,1000,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",Yes,8000,8000,8000,8000,A,Yes,Consider it a gift and not pay for the coupon.,A,8000,8000,16000,16000,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,1000,More than 10 200 forint,Less than today,I do not know,I do not know,Absolutely serious,Female,51,280 000 – 375 000 forint,13,Slovakia,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 05:06:43,2022-09-19 05:31:20,IP Address,100,1476,True,2022-09-19 05:31:20,R_2CqZyWkMM34VoKn,anonymous,HU,1,I agree to participate in the research,B,5000,6000,6000,8000,1500,"Strongly disagree
+
+5
+",2,2,Yes,4500,6000,6000,8000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,4000,6000,6000,8000,Yes,"Strongly disagree
+
+5
+",3,2,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1500,More than 10 200 forint,Less than today,False,There is no relationship,Absolutely serious,Female,35,375 000 – 470 000 forint,10,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 05:06:37,2022-09-19 05:35:24,IP Address,100,1727,True,2022-09-19 05:35:25,R_2WCmtzESGqTYwFz,anonymous,HU,1,I agree to participate in the research,A,5000,8000,5000,10000,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,8000,8000,8000,16000,A,No,Consider it a gift and not pay for the coupon.,A,7000,8000,16000,16000,Yes,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Pay your friend 25 000 forint for the coupon.,500,More than 10 200 forint,Less than today,False,I do not know,Absolutely serious,Female,30,375 000 – 470 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 05:19:45,2022-09-19 05:40:31,IP Address,100,1246,True,2022-09-19 05:40:32,R_24Nsae4zjTVAvrM,anonymous,HU,1,I agree to participate in the research,A,4500,7000,10000,14000,500,2,4,"Strongly disagree
+
+5
+",Yes,4500,7000,11000,14000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,4500,7000,10000,14000,Yes,2,4,"Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",500,More than 10 200 forint,Less than today,False,They remain unchanged,Very serious,Female,29,375 000 – 470 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 05:40:36,2022-09-19 05:55:32,IP Address,100,896,True,2022-09-19 05:55:33,R_1MKFZfHrDSBtNZ7,anonymous,HU,1,I agree to participate in the research,A,0,8000,0,16000,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,7000,8000,8000,16000,A,Yes,Consider it a gift and not pay for the coupon.,B,8000,8000,15000,16000,Yes,4,2,"Strongly agree
+
+1
+",No difference,Yes,Pay your friend 25 000 forint for the coupon.,500,More than 10 200 forint,Less than today,I do not know,I do not know,Very serious,Female,33,375 000 – 470 000 forint,20,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 05:47:36,2022-09-19 06:07:30,IP Address,100,1194,True,2022-09-19 06:07:30,R_9Lh5Azo0KZesEkF,anonymous,HU,1,I agree to participate in the research,A,0,8000,0,8000,1000,4,4,2,No,8000,8000,8000,16000,A,Yes,Consider it a gift and not pay for the coupon.,B,8000,16000,8000,16000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,No,Pay your friend 25 000 forint for the coupon.,600,More than 10 200 forint,Less than today,False,I do not know,Very serious,Female,46,More than 560 000 forint,20,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 05:56:52,2022-09-19 06:19:53,IP Address,100,1380,True,2022-09-19 06:19:53,R_3Gj1FJHBtUVL2tw,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,8000,1000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,0,8000,0,8000,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,0,1600,0,1600,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",1000,Exactly 10 200 forint,Less than today,True,I do not know,Absolutely serious,Female,75,375 000 – 470 000 forint,0,Slovakia,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 05:54:46,2022-09-19 06:20:45,IP Address,100,1559,True,2022-09-19 06:20:45,R_3m2iATuRbeZpijw,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",8000,8000,16000,16000,2000,"Strongly agree
+
+1
+",3,3,Yes,8000,8000,16000,16000,No difference,No,Pay your friend 25 000 forint for the coupon.,No difference,16000,16000,16000,16000,Yes,"Strongly agree
+
+1
+",3,3,No difference,No,Pay your friend 25 000 forint for the coupon.,1500,More than 10 200 forint,I do not know,True,There is no relationship,Very serious,Female,51,375 000 – 470 000 forint,18,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 06:15:02,2022-09-19 06:25:32,IP Address,100,629,True,2022-09-19 06:25:32,R_1rqR2AF15b3V2BL,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,8000,0,16000,1500,3,2,4,No,8000,8000,8000,16000,A,Yes,Consider it a gift and not pay for the coupon.,A,8000,16000,16000,16000,No,3,2,4,B,Yes,Pay your friend 25 000 forint for the coupon.,1000,More than 10 200 forint,I do not know,False,I do not know,Absolutely serious,Male,32,More than 560 000 forint,17,United States of America,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 06:17:36,2022-09-19 06:27:52,IP Address,100,616,True,2022-09-19 06:27:52,R_3OftrtmKNNyLUcz,anonymous,HU,1,I agree to participate in the research,B,0,8000,0,16000,1500,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,No,8000,8000,8000,8000,A,Yes,Consider it a gift and not pay for the coupon.,A,8000,8000,8000,8000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1500,More than 10 200 forint,Less than today,False,There is no relationship,Moderately serious,Female,30,More than 560 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 05:59:06,2022-09-19 06:30:21,IP Address,100,1874,True,2022-09-19 06:30:22,R_xnDJQ6YAau6ce2d,anonymous,HU,0.800000011920929,I agree to participate in the research,"No difference ",0,8000,0,8000,1000,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,0,8000,0,8000,No difference,No,Consider it a gift and not pay for the coupon.,No difference,0,16000,0,16000,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,Yes,Consider it a gift and not pay for the coupon.,500,More than 10 200 forint,Less than today,I do not know,I do not know,Absolutely serious,Female,60,Less than 190 000 forint,14,Slovakia,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 06:19:44,2022-09-19 06:46:58,IP Address,100,1634,True,2022-09-19 06:46:58,R_8BKIbvLTxtxRmvv,anonymous,HU,1,I agree to participate in the research,B,0,0,0,0,2000,4,2,4,Yes,4000,8000,4000,8000,B,No,Consider it a gift and not pay for the coupon.,B,8000,10000,16000,16000,Yes,4,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",500,More than 10 200 forint,Less than today,True,I do not know,Absolutely serious,Female,32,Less than 190 000 forint,16,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 06:34:45,2022-09-19 06:52:25,IP Address,100,1059,True,2022-09-19 06:52:25,R_2xMhROOeXL5clW7,anonymous,HU,0.8999999761581421,I agree to participate in the research,B,8000,8000,8000,8000,8000,4,2,"Strongly disagree
+
+5
+",Yes,8000,8000,8000,8000,B,No,Consider it a gift and not pay for the coupon.,B,8000,8000,16000,16000,No,4,3,"Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5000,Less than 10 200 forint,Less than today,I do not know,I do not know,Moderately serious,Female,74,190 000 – 280 000 forint,13,Slovakia,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 06:52:11,2022-09-19 07:08:35,IP Address,100,984,True,2022-09-19 07:08:36,R_dcMh3ie9tDeZc65,anonymous,HU,1,I agree to participate in the research,A,0,7000,0,15000,800,3,"Strongly disagree
+
+5
+",2,Yes,0,7000,0,15000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,7000,0,15000,Yes,2,4,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",800,More than 10 200 forint,Less than today,False,There is no relationship,Absolutely serious,Male,39,375 000 – 470 000 forint,20,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 07:00:19,2022-09-19 07:10:01,IP Address,100,581,True,2022-09-19 07:10:01,R_3sp2afRPo3VyFGG,anonymous,HU,1,I agree to participate in the research,A,0,8000,0,8000,9000,4,2,4,No,8000,8000,8000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,16000,16000,16000,No,4,"Strongly agree
+
+1
+",4,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2500,Exactly 10 200 forint,Less than today,False,There is no relationship,Very serious,Female,30,190 000 – 280 000 forint,19,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 07:05:50,2022-09-19 07:18:57,IP Address,100,787,True,2022-09-19 07:18:58,R_3paqMU37W3LQbDJ,anonymous,HU,1,I agree to participate in the research,B,0,8000,0,16000,400,"Strongly agree
+
+1
+",2,4,No,8000,8000,16000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,16000,16000,16000,16000,No,4,2,4,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,Less than 10 200 forint,Less than today,I do not know,I do not know,Absolutely serious,Female,32,470 000 – 560 000 forint,15,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 08:00:43,2022-09-19 08:13:31,IP Address,100,768,True,2022-09-19 08:13:32,R_1pGNo5xC4EauTRM,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,1500,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,8000,8000,8000,8000,A,Yes,Consider it a gift and not pay for the coupon.,A,8000,8000,16000,16000,No,4,2,3,B,Yes,Consider it a gift and not pay for the coupon.,1000,More than 10 200 forint,Less than today,I do not know,I do not know,Slightly serious,Female,33,190 000 – 280 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 08:28:06,2022-09-19 08:46:09,IP Address,100,1083,True,2022-09-19 08:46:10,R_3syu8ZTGmjsne1K,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",0,7000,0,14000,2000,3,4,3,Yes,4000,7000,7000,14000,No difference,No,Consider it a gift and not pay for the coupon.,B,7000,7000,8000,14000,Yes,3,4,3,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",1000,More than 10 200 forint,Less than today,False,I do not know,Very serious,Female,32,More than 560 000 forint,16,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 08:14:19,2022-09-19 08:54:16,IP Address,100,2397,True,2022-09-19 08:54:16,R_3Phjm4MHMWOpEsL,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",0,4000,0,8000,2500,4,3,3,Yes,0,4000,0,8000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,8000,0,10000,No,4,3,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2000,More than 10 200 forint,Less than today,I do not know,I do not know,Very serious,Female,46,470 000 – 560 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 08:50:48,2022-09-19 09:06:34,IP Address,100,945,True,2022-09-19 09:06:34,R_qLvMPa8nqTCVX7H,anonymous,HU,1,I agree to participate in the research,B,0,4000,0,8000,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,8000,8000,8000,12000,A,Yes,Consider it a gift and not pay for the coupon.,No difference,16000,16000,16000,16000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 25 000 forint for the coupon.,200,More than 10 200 forint,Less than today,False,I do not know,Absolutely serious,Female,56,More than 560 000 forint,19,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 08:47:46,2022-09-19 09:10:38,IP Address,100,1372,True,2022-09-19 09:10:39,R_22ul1UZcrqFletK,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,6500,0,14000,900,3,3,4,Yes,0,8000,0,16000,A,Yes,Consider it a gift and not pay for the coupon.,No difference,8000,13000,0,16000,Yes,4,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,650,Less than 10 200 forint,Less than today,False,I do not know,Very serious,Female,36,470 000 – 560 000 forint,18,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 09:30:56,2022-09-19 09:41:24,IP Address,100,627,True,2022-09-19 09:41:24,R_1GK3qFZUwi5uWiS,anonymous,HU,1,I agree to participate in the research,A,8000,10000,8000,16000,3000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,2000,8000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,16000,8000,16000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1500,I do not know,Less than today,True,I do not know,Very serious,Female,25,More than 560 000 forint,19,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 10:25:14,2022-09-19 10:45:00,IP Address,100,1185,True,2022-09-19 10:45:00,R_2vkOxb0k0s9gSns,anonymous,HU,1,I agree to participate in the research,A,8000,8000,16000,16000,2000,3,3,3,No,8000,8000,16000,16000,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,12000,14000,16000,16000,No,3,3,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2000,More than 10 200 forint,Less than today,False,I do not know,Very serious,Male,57,375 000 – 470 000 forint,12,Slovakia,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-12 10:50:29,2022-09-12 10:55:04,IP Address,81,274,False,2022-09-19 11:00:35,R_agiSs91pjpN9b1L,anonymous,HU,1,I agree to participate in the research,B,0,8000,0,16000,1300,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,6000,8000,8000,16000,A,No,Consider it a gift and not pay for the coupon.,B,16000,16000,16000,16000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,A,No,Pay your friend 25 000 forint for the coupon.,500,I do not know,I do not know,I do not know,I do not know,Absolutely serious,,,,,,,
+2022-09-19 12:05:25,2022-09-19 12:28:41,IP Address,100,1395,True,2022-09-19 12:28:42,R_xmcaNRtEtPgowIV,anonymous,HU,1,I agree to participate in the research,A,80000,80000,10000,10000,5000,2,4,"Strongly disagree
+
+5
+",Yes,8000,8000,10000,10000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,8000,10000,10000,Yes,2,4,"Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2000,Exactly 10 200 forint,Less than today,I do not know,I do not know,Moderately serious,Female,31,280 000 – 375 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 12:24:23,2022-09-19 12:45:51,IP Address,100,1287,True,2022-09-19 12:45:51,R_1pQnteFFQLHWbuT,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,6000,5000,13000,2000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,5000,8000,16000,16000,A,Yes,Consider it a gift and not pay for the coupon.,B,10000,16000,16000,16000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,Consider it a gift and not pay for the coupon.,500,More than 10 200 forint,Less than today,False,I do not know,Very serious,Female,60,375 000 – 470 000 forint,13,Slovakia,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 12:47:17,2022-09-19 13:00:27,IP Address,100,789,True,2022-09-19 13:00:28,R_2CO0TIBPbcIAfql,anonymous,HU,0.8999999761581421,I agree to participate in the research,B,0,0,0,0,10000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,8000,8000,8000,8000,B,Yes,Consider it a gift and not pay for the coupon.,A,8000,8000,8000,8000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,5000,More than 10 200 forint,Less than today,False,I do not know,Absolutely serious,Female,50,280 000 – 375 000 forint,15,Slovakia,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 12:51:22,2022-09-19 13:03:56,IP Address,100,754,True,2022-09-19 13:03:56,R_30k4CmwXZppY9BV,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,8000,10000,8000,16000,800,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,8000,12000,8000,16000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,8000,16000,16000,16000,Yes,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Pay your friend 25 000 forint for the coupon.,600,Exactly 10 200 forint,Less than today,False,They remain unchanged,Absolutely serious,Female,37,280 000 – 375 000 forint,15,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 13:15:03,2022-09-19 13:33:01,IP Address,100,1078,True,2022-09-19 13:33:01,R_3Gm7m0yWnUEFrub,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",8000,8000,16000,16000,1000,3,3,3,No,8000,8000,8000,8000,A,No,Pay your friend 25 000 forint for the coupon.,B,8000,8000,16000,16000,No,2,4,4,B,No,Pay your friend 25 000 forint for the coupon.,1000,More than 10 200 forint,Less than today,I do not know,I do not know,Very serious,Prefer not to say,30,Prefer not to answer,16,Hungary,Hungarian,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-09-19 13:16:42,2022-09-19 13:43:20,IP Address,100,1597,True,2022-09-19 13:43:20,R_1n0junL72rhzmXm,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,8000,8000,8000,8000,A,Yes,Consider it a gift and not pay for the coupon.,A,8000,8000,8000,8000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,Yes,Consider it a gift and not pay for the coupon.,1000,More than 10 200 forint,Less than today,I do not know,I do not know,Very serious,Female,64,190 000 – 280 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 17:55:12,2022-09-19 18:09:21,IP Address,100,848,True,2022-09-19 18:09:21,R_2zd53mwwkSZUJ89,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,8000,0,8000,2500,3,4,3,No,8000,8000,8000,8000,A,Yes,Consider it a gift and not pay for the coupon.,B,8000,8000,16000,16000,No,4,"Strongly agree
+
+1
+",2,B,Yes,Pay your friend 25 000 forint for the coupon.,1000,More than 10 200 forint,Less than today,I do not know,There is no relationship,Very serious,Female,32,375 000 – 470 000 forint,19,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 22:32:29,2022-09-19 22:48:41,IP Address,100,972,True,2022-09-19 22:48:43,R_3Dop7oxkASV2Q3D,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,8000,8000,8000,16000,1000,3,3,3,No,8000,8000,8000,16000,A,Yes,Consider it a gift and not pay for the coupon.,B,8000,16000,8000,16000,No,3,3,3,B,Yes,Consider it a gift and not pay for the coupon.,1000,I do not know,Less than today,False,I do not know,Very serious,Male,40,More than 560 000 forint,12,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 23:06:05,2022-09-20 00:48:14,IP Address,100,6128,True,2022-09-20 00:48:15,R_XzguT6EQN11RZND,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,8000,8000,8000,8000,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,8000,8000,8000,8000,A,Yes,Pay your friend 25 000 forint for the coupon.,B,16000,16000,16000,16000,No,4,3,3,B,Yes,Pay your friend 25 000 forint for the coupon.,500,More than 10 200 forint,Less than today,False,There is no relationship,Very serious,Female,33,470 000 – 560 000 forint,19,Slovakia,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-20 00:53:39,2022-09-20 01:08:14,IP Address,100,875,True,2022-09-20 01:08:14,R_2w1gGD4qsI2HcRr,anonymous,HU,1,I agree to participate in the research,"No difference ",0,5000,0,10000,1000,"Strongly agree
+
+1
+",4,4,No,8000,8000,16000,16000,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,8000,16000,16000,No,2,4,"Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1000,More than 10 200 forint,Less than today,False,I do not know,Absolutely serious,Female,32,375 000 – 470 000 forint,21,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-20 01:35:32,2022-09-20 01:49:10,IP Address,100,817,True,2022-09-20 01:49:10,R_73bEGu2zljc4rp7,anonymous,HU,1,I agree to participate in the research,A,0,8000,0,16000,2000,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,8000,8000,16000,16000,A,Yes,Consider it a gift and not pay for the coupon.,B,16000,16000,16000,16000,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 25 000 forint for the coupon.,600,More than 10 200 forint,Less than today,False,I do not know,Absolutely serious,Female,30,More than 560 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-20 02:23:46,2022-09-20 02:33:08,IP Address,100,561,True,2022-09-20 02:33:09,R_rorFTuTtmHc9alH,anonymous,HU,1,I agree to participate in the research,A,0,8000,0,16000,2000,2,"Strongly disagree
+
+5
+",2,Yes,0,8000,0,16000,A,No,Pay your friend 25 000 forint for the coupon.,B,0,1600,0,16000,Yes,2,"Strongly disagree
+
+5
+",2,No difference,Yes,Pay your friend 25 000 forint for the coupon.,2000,More than 10 200 forint,Less than today,False,There is no relationship,Absolutely serious,Male,34,More than 560 000 forint,22,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-20 02:51:37,2022-09-20 03:05:00,IP Address,100,803,True,2022-09-20 03:05:00,R_1cYsRzmZnqKqBIS,anonymous,HU,1,I agree to participate in the research,"No difference ",8000,8000,16000,16000,4000,3,3,3,No,8000,8000,8000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,8000,8000,16000,16000,No,3,3,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",500,I do not know,I do not know,I do not know,I do not know,Moderately serious,Female,32,280 000 – 375 000 forint,19,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-20 03:28:42,2022-09-20 03:43:47,IP Address,100,905,True,2022-09-20 03:43:48,R_3CJA29svh4HYxYY,anonymous,HU,1,I agree to participate in the research,"No difference ",0,0,0,0,400,4,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,8000,8000,16000,16000,No difference,Yes,Consider it a gift and not pay for the coupon.,B,7000,8000,10000,16000,Yes,"Strongly agree
+
+1
+",4,3,B,No,Pay your friend 25 000 forint for the coupon.,500,More than 10 200 forint,Less than today,I do not know,They collapse,Absolutely serious,Female,29,190 000 – 280 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-20 07:58:31,2022-09-20 08:40:16,IP Address,100,2505,True,2022-09-20 08:40:17,R_3jZHTWzQGuyzntT,anonymous,HU,1,I agree to participate in the research,A,0,4000,0,4000,500,2,4,4,No,5000,8000,5000,8000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,5000,8000,5000,8000,No,4,2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",500,Less than 10 200 forint,Less than today,False,I do not know,Very serious,Female,34,More than 560 000 forint,15,Belgium,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-13 09:27:19,2022-09-13 09:32:28,IP Address,50,308,False,2022-09-20 09:32:29,R_8rjHYcPfpKqOBVf,anonymous,HU,1,I agree to participate in the research,B,,,,,,,,,,0,8000,8000,16000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,8000,8000,16000,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",1000,,,,,,,,,,,,
+2022-09-13 09:37:31,2022-09-13 09:45:43,IP Address,58,492,False,2022-09-20 09:45:47,R_3JId5Z8J0DKPRTO,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",8000,8000,8000,8000,1000,,,,,8000,8000,8000,8000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,0,0,0,0,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",1000,,,,,,,,,,,,
+2022-09-13 09:15:43,2022-09-13 09:48:32,IP Address,17,1968,False,2022-09-20 09:48:34,R_3ke7wxnH3p2Iwgg,anonymous,HU,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,No,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,
+2022-09-20 10:05:50,2022-09-20 10:21:21,IP Address,100,931,True,2022-09-20 10:21:21,R_1Nnx0lfeHe6HxZD,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",8000,8000,8000,8000,350,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,8000,8000,8000,8000,No difference,Yes,Pay your friend 25 000 forint for the coupon.,No difference,0,0,16000,16000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 25 000 forint for the coupon.,350,More than 10 200 forint,Exactly the same as today,False,They remain unchanged,Absolutely serious,Female,32,190 000 – 280 000 forint,17.5,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-13 10:59:48,2022-09-13 11:10:27,IP Address,39,638,False,2022-09-20 11:10:34,R_1FtunzY6Z6wcjAQ,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",0,8000,8000,16000,2000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,,,,,,,,B,16000,20000,16000,24000,No,3,3,"Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-09-13 12:07:40,2022-09-13 12:10:55,IP Address,17,194,False,2022-09-20 12:10:58,R_WeZuSWNflxwJJn3,anonymous,HU,1,I agree to participate in the research,"No difference ",0,5000,0,10000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-13 12:17:12,2022-09-13 12:25:21,IP Address,58,489,False,2022-09-20 12:25:31,R_3npKhjBI22KCgT0,anonymous,HU,0.8999999761581421,I agree to participate in the research,B,0,8000,0,16000,2000,3,3,"Strongly disagree
+
+5
+",Yes,0,10000,8000,16000,B,Yes,Consider it a gift and not pay for the coupon.,A,16000,16000,16000,16000,No,3,3,3,A,No,,,,,,,,,,,,,,
+2022-09-13 12:34:19,2022-09-13 12:39:00,IP Address,39,280,False,2022-09-20 12:39:01,R_2OT2RHckgprSHn0,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,1000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,,,,,,,,B,,,,,,,,,B,Yes,Pay your friend 25 000 forint for the coupon.,1000,,,,,,,,,,,,
+2022-09-20 13:40:18,2022-09-20 13:52:30,IP Address,100,731,True,2022-09-20 13:52:30,R_VO5c6UsdqFpPWA9,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,10000,0,20000,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,8000,10000,8000,20000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,16000,8000,20000,No,3,3,"Strongly agree
+
+1
+",B,Yes,Pay your friend 25 000 forint for the coupon.,500,More than 10 200 forint,Less than today,False,There is no relationship,Absolutely serious,Male,47,280 000 – 375 000 forint,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-13 13:57:28,2022-09-13 13:57:54,Spam,3,25,False,2022-09-20 13:58:01,R_1QzNwhx3jdOAuhy,anonymous,HU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 16:35:24,2022-09-20 16:50:51,IP Address,100,927,True,2022-09-20 16:50:53,R_t0uz2yh4C6HESLn,anonymous,HU,0.8999999761581421,I agree to participate in the research,B,0,8000,0,16000,1000,2,"Strongly disagree
+
+5
+",4,Yes,8000,10000,8000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,16000,8000,16000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",500,More than 10 200 forint,Less than today,I do not know,There is no relationship,Absolutely serious,Female,26,More than 560 000 forint,16,United States of America,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-21 00:09:12,2022-09-21 00:21:24,IP Address,100,732,True,2022-09-21 00:21:24,R_vuDwR7CfMNkmWM9,anonymous,HU,1,I agree to participate in the research,"No difference ",4000,7000,8000,14000,1000,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",3,Yes,4000,7000,10000,14000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,8000,8000,14000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",500,More than 10 200 forint,Less than today,I do not know,I do not know,Absolutely serious,Non-binary / third gender,42,280 000 – 375 000 forint,20,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-21 03:12:29,2022-09-21 03:24:14,IP Address,100,704,True,2022-09-21 03:24:16,R_22s5DkmLIvvl12h,anonymous,HU,1,I agree to participate in the research,A,0,8000,0,16000,1500,4,"Strongly disagree
+
+5
+",2,No,0,8000,4000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,16000,4000,16000,No,4,3,2,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",600,Exactly 10 200 forint,Less than today,I do not know,I do not know,Very serious,Female,30,Less than 190 000 forint,18,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-14 11:54:10,2022-09-14 12:03:04,IP Address,33,533,False,2022-09-21 12:03:10,R_2xDA2Pfk39vUEVq,anonymous,HU,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,8000,8000,16000,16000,A,No,Consider it a gift and not pay for the coupon.,No difference,16000,16000,16000,16000,Yes,,,,,,,,,,,,,,,,,,,
+2022-09-15 00:01:51,2022-09-15 00:02:36,IP Address,11,44,False,2022-09-22 00:02:44,R_1rfdCnATOXM46Kg,anonymous,HU,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-23 01:03:40,2022-09-23 01:22:05,IP Address,100,1105,True,2022-09-23 01:22:06,R_1cYxr8iZbkdPhaQ,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",0,8000,5000,16000,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,5000,10000,10000,10000,No difference,No,Consider it a gift and not pay for the coupon.,B,8000,16000,8000,16000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",1000,More than 10 200 forint,Less than today,False,I do not know,Very serious,Female,37,375 000 – 470 000 forint,21,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-19 05:02:51,2022-09-19 05:04:14,IP Address,8,83,False,2022-09-26 05:21:04,R_2z8WBAMTD2piCpS,anonymous,HU,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 05:04:08,2022-09-19 05:08:38,IP Address,31,270,False,2022-09-26 05:32:34,R_1K781o8WSIlNkHg,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,6000,8000,12000,16000,550,,,,,,,,,,,,,,,,,,,,,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",500,,,,,,,,,,,,
+2022-09-19 05:08:58,2022-09-19 05:09:50,IP Address,11,51,False,2022-09-26 05:33:05,R_2bHv6YRYBXgruQv,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 06:24:24,2022-09-19 06:24:50,IP Address,8,25,False,2022-09-26 06:24:54,R_1Kg2brxPXmQCoBw,anonymous,HU,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 06:39:55,2022-09-19 06:40:45,IP Address,8,49,False,2022-09-26 06:40:46,R_3MN0Uiq3tYjTEfZ,anonymous,HU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 06:56:57,2022-09-19 07:01:41,IP Address,17,283,False,2022-09-26 07:01:46,R_3gSlUyH6eFeSu1r,anonymous,HU,1,I agree to participate in the research,A,0,8000,0,16000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 06:47:42,2022-09-19 07:28:26,IP Address,81,2443,False,2022-09-26 07:28:32,R_1lz395Yxt6dpG5w,anonymous,HU,0.800000011920929,I agree to participate in the research,A,0,8000,0,8000,2500,3,3,2,Yes,6000,8000,14000,16000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,8000,14000,16000,Yes,3,3,2,B,Yes,Pay your friend 25 000 forint for the coupon.,500,More than 10 200 forint,Less than today,True,I do not know,Absolutely serious,,,,,,,
+2022-09-19 07:53:24,2022-09-19 08:02:10,IP Address,50,525,False,2022-09-26 08:02:17,R_spxXg8CFNV0LecV,anonymous,HU,1,I agree to participate in the research,"No difference ",,,,,,,,,,7000,8000,8000,16000,No difference,Yes,Consider it a gift and not pay for the coupon.,B,10000,16000,10000,16000,No,4,4,4,B,No,Pay your friend 25 000 forint for the coupon.,3000,,,,,,,,,,,,
+2022-09-19 07:58:20,2022-09-19 08:06:18,IP Address,67,478,False,2022-09-26 08:06:21,R_1MYXaAzPir7oGVv,anonymous,HU,1,I agree to participate in the research,A,7000,7500,14000,15000,5000,3,2,3,Yes,6000,7000,14000,15000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,5000,7500,14000,15000,No,3,2,4,A,Yes,Consider it a gift and not pay for the coupon.,2000,,,,,,,,,,,,
+2022-09-19 08:20:26,2022-09-19 08:34:33,IP Address,22,846,False,2022-09-26 08:34:38,R_216SnGgFbPjH7iN,anonymous,HU,1,I agree to participate in the research,A,0,3000,0,5000,1000,3,4,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 08:35:29,2022-09-19 08:36:17,IP Address,3,48,False,2022-09-26 08:36:20,R_OMU59qR6hlb9eWR,anonymous,HU,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 09:23:58,2022-09-19 09:28:50,IP Address,44,292,False,2022-09-26 09:28:52,R_XM81aynJk9q2ZeV,anonymous,HU,0.8999999761581421,I agree to participate in the research,B,6000,8000,15000,18000,1500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,6000,8000,15000,16000,B,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,B,Yes,,,,,,,,,,,,,,
+2022-09-19 09:32:30,2022-09-19 09:37:10,IP Address,44,279,False,2022-09-26 09:37:17,R_voaCw4v9lyqSmMp,anonymous,HU,1,I agree to participate in the research,"No difference ",6000,8000,8000,16000,9000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,6000,8000,6000,16000,A,,,,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,6000,,,,,,,,,,,,
+2022-09-19 12:33:26,2022-09-19 12:35:19,IP Address,17,113,False,2022-09-26 12:35:25,R_3jdnQxtxngJBsGT,anonymous,HU,1,I agree to participate in the research,,,,,,,,,,,8000,8000,8000,12000,A,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 13:29:17,2022-09-19 13:30:25,IP Address,11,67,False,2022-09-26 13:30:29,R_Ut40S9ZF4pMdadX,anonymous,HU,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 12:47:35,2022-09-19 18:53:57,IP Address,58,21982,False,2022-09-26 18:54:06,R_3fH3HmzdXovEGaq,anonymous,HU,0.8999999761581421,I agree to participate in the research,B,4000,8000,16000,120000,2500,,,,,4000,8000,4000,16000,No difference,Yes,Consider it a gift and not pay for the coupon.,A,8000,20000,16000,25000,No,3,"Strongly agree
+
+1
+",4,B,Yes,Consider it a gift and not pay for the coupon.,1500,,,,,,,,,,,,
+2022-09-20 03:00:29,2022-09-20 03:07:16,IP Address,58,407,False,2022-09-27 03:07:17,R_28H4Uj8ohtvwqfx,anonymous,HU,1,I agree to participate in the research,A,2,2,2,2,2,3,2,3,No,2,2,1,1,B,No,Pay your friend 25 000 forint for the coupon.,A,2,2,2,2,No,"Strongly disagree
+
+5
+",4,3,A,No,,,,,,,,,,,,,,
+2022-09-20 06:14:45,2022-09-20 06:19:26,IP Address,28,281,False,2022-09-27 06:19:31,R_2TXdOnKB4k0Rgy8,anonymous,HU,0.8999999761581421,I agree to participate in the research,A,0,8000,0,8000,2000,3,2,"Strongly disagree
+
+5
+",No,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 09:42:15,2022-09-20 09:46:42,IP Address,44,267,False,2022-09-27 09:46:47,R_1F8HaUKiTbzisT2,anonymous,HU,1,I agree to participate in the research,B,0,5000,0,10000,5000,,,,,5000,7000,5000,10000,No difference,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,A,Yes,Consider it a gift and not pay for the coupon.,5000,,,,,,,,,,,,
+2022-09-20 09:49:31,2022-09-20 10:11:48,IP Address,67,1337,False,2022-09-27 10:11:49,R_YVnP4wzquG2yzzH,anonymous,HU,1,I agree to participate in the research,"No difference ",0,6000,0,12000,3000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,7000,8000,10000,12000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,8000,10000,10000,14000,No,2,"Strongly disagree
+
+5
+",2,B,No,Pay your friend 25 000 forint for the coupon.,1500,,,,,,,,,,,,
+2022-09-20 10:15:16,2022-09-20 10:21:13,IP Address,11,356,False,2022-09-27 10:21:19,R_XU6XcRBYbGATIZ3,anonymous,HU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,No difference,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 12:35:14,2022-09-20 12:38:17,IP Address,11,182,False,2022-09-27 12:38:21,R_3gZopaHeT5TVsCu,anonymous,HU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 13:08:54,2022-09-20 13:15:43,IP Address,8,409,False,2022-09-27 13:15:45,R_1dc18LKl4z3lIP9,anonymous,HU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 01:44:42,2022-09-28 01:57:36,IP Address,100,774,True,2022-09-28 01:57:36,R_1OrWgbnPoj0YwnU,anonymous,HU,1,I agree to participate in the research,"No difference ",0,4000,0,8000,1000,3,3,"Strongly disagree
+
+5
+",Yes,4000,6000,8000,10000,A,Yes,Consider it a gift and not pay for the coupon.,B,0,10000,0,10000,No,2,4,3,No difference,Yes,Consider it a gift and not pay for the coupon.,1000,More than 10 200 forint,More than today,True,There is no relationship,Moderately serious,Male,28,375 000 – 470 000 forint,16,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-29 02:12:50,2022-09-29 03:03:41,IP Address,100,3051,True,2022-09-29 03:03:42,R_55e70G2pKkx4S0V,anonymous,HU,0.8999999761581421,I agree to participate in the research,"No difference ",8000,8000,16000,16000,490,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,8000,8000,16000,16000,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,16000,16000,16000,16000,No,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,490,More than 10 200 forint,Less than today,False,I do not know,Very serious,Male,27,Prefer not to answer,17,Hungary,Hungarian,I allow you to use the responses I provided in this study.
+2022-09-22 12:53:01,2022-09-22 13:01:19,IP Address,33,497,False,2022-09-29 13:01:20,R_1DCq0mCX79b5Bne,anonymous,HU,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,8000,8000,8000,16000,A,Yes,Consider it a gift and not pay for the coupon.,B,8000,16000,8000,16000,Yes,,,,,,,,,,,,,,,,,,,
+2022-10-04 07:44:49,2022-10-04 07:45:01,IP Address,3,11,False,2022-10-11 07:45:03,R_1rANGWay4eS7coq,anonymous,HU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-05 07:09:56,2022-10-05 07:54:41,IP Address,11,2684,False,2022-10-12 07:54:46,R_3p46DZXFiMjsSxq,anonymous,HU,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-12 01:59:21,2022-10-12 03:14:57,IP Address,11,4535,False,2022-10-19 03:15:06,R_YQX4pZu782HWrAZ,anonymous,HU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,
+2022-10-24 08:08:20,2022-10-24 08:32:27,IP Address,100,1446,True,2022-10-24 08:32:27,R_1OqmoioKOYPhXU7,anonymous,HU,1,I agree to participate in the research,"No difference ",0,8000,0,16000,5000,2,"Strongly disagree
+
+5
+",4,Yes,0,8000,0,16000,A,Yes,Consider it a gift and not pay for the coupon.,B,0,16000,0,16000,Yes,2,3,3,A,Yes,Consider it a gift and not pay for the coupon.,5000,More than 10 200 forint,Less than today,False,They collapse,Moderately serious,Male,21,470 000 – 560 000 forint,16,Italy,Italian,I allow you to use the responses I provided in this study.

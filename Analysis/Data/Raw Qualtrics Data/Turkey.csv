@@ -1,0 +1,2506 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q_RecaptchaScore,Consent,MrAB1,Game1_1_1,Game1_1_2,Game1_2_1,Game1_2_2,Drink1,Gym1 _1,Gym1 _2,Gym1 _3,Jacket1,Game2_1_1,Game2_1_2,Game2_2_1,Game2_2_2,MrAB2,"Play2 ","Plane2 ",MrAB3,Game3_1 _1,Game3_1 _2,Game3_2_1,Game3_2_2,Jacket2,Gym2 _1,Gym2 _2,Gym2 _3,"MrAB4 ","Play1 ","Plane1 ",Drink2,fin_lit1,fin_lit2,fin_lit3,fin_lit4,Att_check,Gender,"Age ",Income,Education,Residence,Native language,Debriefing
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,Q_RecaptchaScore,"Dear Participant,   We invite you to take part in an online study with the purpose of investigating how people make decisions. The duration of the questionnaire is approximately 10 minutes. At the end of the questionnaire, you will be asked some personal demographic information.   Your data will be analyzed anonymously and processed according to the current international legislation for the protection of privacy (D. Lgs 196/2003 and EU GDPR 679/2016 on the protection of personal data and art. 9 of the Deontological Code of Italian Psychologists). Your data will be used solely for the purposes of the research itself. No information regarding you personally will be published or revealed in any way.   You are free to withdraw from the study at any point without giving any explanation. In this case your data will be deleted. You will not receive any payment or reimbursement of any sort for your participation in this study. There are no known risks associated with participating in this study.   Project Manager: Enrico Rubaltelli (Department of Development Psychology and Socialization -DPSS, University of Padua). The person responsible for this research agrees to comply with the obligations of current legislation in terms of collection, processing and storage of sensitive data.         I DECLARE  THAT  ● I am 18 years old or older ● I take part in this project voluntarily ● I am aware of the objectives and aims of this research project  ● I am aware that the data obtained, in absolute anonymity, will be treated exclusively for educational and research purposes ● I am aware that it is not possible to withdraw the data I have provided once it has been submitted.   For any clarification you can contact Prof. Enrico Rubaltelli at jdmlab.multicountry@gmail.com.",Person A was given two tickets to the lottery. They won 200 TL with one ticket and 100 TL the other ticket.    Person B was given a ticket to one lottery. They won 300 TL.     Who is happier?,You are going to a sold-out game of your favorite local sports team and you have an extra ticket.  The price marked on the ticket is 20 TL but this ticket has been offered to you by a friend for free.   You want to get rid of the extra ticket and you know the ticket’s face value price is 20 TL. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket.  The price marked on the ticket is 20 TL but this ticket has been offered to you by a friend for free.   You want to get rid of the extra ticket and you know the ticket’s face value price is 20 TL. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was 40 TL instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 40 TL instead? - If they are a stranger,"You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a fancy resort hotel. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender.   What price do you tell them?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 40 TL (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 40 TL","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 40 TL (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 40 TL (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind","You are about to purchase a jacket for 550 TL and a Bluetooth speaker for 70 TL. The salesman informs you that the speaker you wish to buy is on sale for 50 TL at the other branch store, located 20 minutes away.    Would you make the trip to the other store?",You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 20 TL which is what you paid for each ticket.  You want to get rid of the extra ticket and you know the ticket’s face value price is 20 TL. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.  What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 20 TL which is what you paid for each ticket.  You want to get rid of the extra ticket and you know the ticket’s face value price is 20 TL. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.  What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was 40 TL instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 40 TL instead? - If they are a stranger,Person A received a fine and owed 350TL. The same day they received a second fine and owed 200 TL.   Person B received a fine and owed 550 TL.   Who is more upset?,"Imagine that you are on your way to a music event and intend to buy a ticket worth 200 TL. On entering the venue, you realize that you have lost 200 TL in cash.   Would you still pay 200 TL for a ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth 50 TL, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of 50 TL and received the other one for free. Just one coupon is required to upgrade your class on the current flight and your friend offers you the coupon which they got for free so that you can upgrade your ticket as well.    What do you think is the most appropriate thing to do?","Person A bought a lottery ticket and won 350 TL. Also, they damaged one door in their apartment in an accident and had to pay the landlord 300 TL.       Person B bought a lottery ticket and won 50 TL.       Who is happier?",You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 20 TL but you paid 40 TL for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 20 TL. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 20 TL but you paid 40 TL for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 20 TL. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was 40 TL instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 40 TL instead? - If they are a stranger,"You are about to purchase a jacket for 70 TL and a Bluetooth speaker for 550 TL. The salesman informs you that the speaker you wish to buy is on sale for 530 TL at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 1800 TL a year (i.e., roughly 40 TL per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 40 TL","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 1800 TL a year (i.e., roughly 40 TL per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 1800 TL a year (i.e., roughly 40 TL per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind",Person A damaged their car in a parking lot. They had to spend 750 TL to repair the damage. The same day they damaged the car they won 100 TL in a raffle.       Person B damaged their car in a parking lot. They had to spend 650 TL to repair the damage.       Who is more upset?,"Imagine that you are on your way to a music event with a ticket for which you have paid 200 TL. On entering the venue, you discover that you have lost the ticket.   Would you pay 200 TL for another ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth 50 TL, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of 50 TL and received the other one for free. Just one coupon is required to upgrade your class on the current flight, and your friend offers you the coupon which he purchased so that you can upgrade as well.    What do you think is the most appropriate thing to do?","You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a small, run-down grocery store. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the store owner.    What price do you tell them?","Suppose that you have 1000 TL in a savings account and the interest rate is 2% per year. After 5 years, how much do you think you would have in the account if you let the money grow?","Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, how much would you be able to buy with the money in this account?",Buying a single company's stock usually provides a safer return than a stock mutual fund.,"If interest rates rise, what would typically happen to bond prices?",To ensure the quality of our data we need to know if participants paid attention during the survey. Please tell us honestly how serious you were in completing the survey.   How serious have you been about filling in the survey?,What gender do you identify as?,What is your age (in numbers)?,Which of the following best describes your annual household income last year?,"How many years of schooling have you completed?"" (from elementary school to doctoral degree or specialization if you have one)",List of Countries,Which language is your native language?,"Dear participant,   The survey you have completed aims to replicate the mental accounting effect. According to this phenomenon a person attributes different values to the same amount of money based on subjective criteria. Specifically, people tend to subjectively organize economic resources into different mental accounts. In addition in this study, we measured some individual differences that might have an influence on mental accounting. In particular:   	  	   ●	Scale to measure financial literacy (Lusardi and Mitchell, 2014).  	 	 	  ●	Demographic data (e.g. gender, age or income level)	    Finally, we inform you that we have also used an attentional check to measure respondent engagement. The purpose of this study could not be fully revealed at the beginning of the study to avoid influencing your answers. Now that you have received this information, we ask you to confirm your consent to participate in this study or to withdraw it. In the latter case your data will not be used and will be deleted."
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""Q_RecaptchaScore""}","{""ImportId"":""QID1""}","{""ImportId"":""QID8""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID14_2""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID23_TEXT""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID44_2""}","{""ImportId"":""QID44_3""}","{""ImportId"":""QID34""}","{""ImportId"":""QID17_1""}","{""ImportId"":""QID17_2""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID18_2""}","{""ImportId"":""QID12""}","{""ImportId"":""QID78""}","{""ImportId"":""QID86""}","{""ImportId"":""QID10""}","{""ImportId"":""QID20_1""}","{""ImportId"":""QID20_2""}","{""ImportId"":""QID21_1""}","{""ImportId"":""QID21_2""}","{""ImportId"":""QID74""}","{""ImportId"":""QID82_1""}","{""ImportId"":""QID82_2""}","{""ImportId"":""QID82_3""}","{""ImportId"":""QID11""}","{""ImportId"":""QID40""}","{""ImportId"":""QID48""}","{""ImportId"":""QID70_TEXT""}","{""ImportId"":""QID59""}","{""ImportId"":""QID60""}","{""ImportId"":""QID61""}","{""ImportId"":""QID62""}","{""ImportId"":""QID51""}","{""ImportId"":""QID52""}","{""ImportId"":""QID53_TEXT""}","{""ImportId"":""QID54""}","{""ImportId"":""QID55_TEXT""}","{""ImportId"":""QID114""}","{""ImportId"":""QID57""}","{""ImportId"":""QID63""}"
+2022-09-07 01:04:27,2022-09-07 01:04:41,IP Address,3,13,False,2022-09-14 01:07:20,R_1I71LcbObwwxJEA,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-14 14:40:01,2022-09-14 14:48:09,IP Address,100,488,True,2022-09-14 14:48:09,R_31ux06HthL4gVuk,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,50,0,100,150,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,50,0,100,A,Yes,Consider it a gift and not pay for the coupon.,A,0,100,0,100,No,3,3,"Strongly agree
+
+1
+",B,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,I do not know,I do not know,Absolutely serious,Female,26,Prefer not to answer,20,United States of America,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 10:11:14,2022-09-16 10:28:06,IP Address,100,1012,True,2022-09-16 10:28:06,R_3CJDadMZiiWQysD,anonymous,TR,1,I agree to participate in the research,A,0,25,0,45,30,2,4,3,Yes,0,25,0,45,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,40,20,45,No,3,4,2,B,Yes,Pay your friend 50 TL for the coupon.,20,More than 1020 TL,Less than today,False,They collapse,Moderately serious,Male,23,More than  135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 10:11:21,2022-09-16 10:29:00,IP Address,100,1059,True,2022-09-16 10:29:01,R_9ETTbhDklVxGFgt,anonymous,TR,0.6000000238418579,I agree to participate in the research,A,20,20,40,40,1,4,2,3,Yes,20,20,40,40,A,No,Pay your friend 50 TL for the coupon.,B,20,20,40,40,Yes,4,2,4,A,No,Pay your friend 50 TL for the coupon.,1,Less than 1020 TL,Less than today,I do not know,They collapse,Moderately serious,Male,45,Prefer not to answer,20,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 10:34:19,2022-09-16 10:51:05,IP Address,100,1005,True,2022-09-16 10:51:05,R_3e1W8TzG1w8uZ8V,anonymous,TR,1,I agree to participate in the research,A,0,20,0,40,30,3,2,"Strongly agree
+
+1
+",Yes,20,30,40,50,A,Yes,Consider it a gift and not pay for the coupon.,B,20,40,40,40,Yes,3,2,"Strongly agree
+
+1
+",B,Yes,Pay your friend 50 TL for the coupon.,10,More than 1020 TL,I do not know,I do not know,I do not know,Moderately serious,Female,58,More than  135000 TL,25,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 11:04:46,2022-09-16 11:10:49,IP Address,100,363,True,2022-09-16 11:10:50,R_2qeNDMdcF5Jt11a,anonymous,TR,1,I agree to participate in the research,A,50,30,50,30,67,"Strongly agree
+
+1
+",3,2,Yes,45,23,45,23,A,Yes,Pay your friend 50 TL for the coupon.,B,45,25,45,25,Yes,2,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,No,Pay your friend 50 TL for the coupon.,67,Exactly 1020 TL,Less than today,True,They remain unchanged,Not serious at all,Male,34,68000 TL – 90000 TL,15,United States of America,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 10:14:59,2022-09-16 11:14:05,IP Address,100,3546,True,2022-09-16 11:14:05,R_3fPpvPQuVIZgIWg,anonymous,TR,1,I agree to participate in the research,B,0,20,0,50,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,0,25,0,50,No Difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,50,0,50,Yes,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,Yes,Pay your friend 50 TL for the coupon.,20,More than 1020 TL,Less than today,False,They collapse,Absolutely serious,Male,27,More than  135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 11:35:34,2022-09-16 11:46:26,IP Address,100,651,True,2022-09-16 11:46:26,R_YYMFaO30bcMZYpH,anonymous,TR,0.4000000059604645,I agree to participate in the research,No difference,0,20,0,40,1000,3,3,3,Yes,0,20,0,20,No Difference,No,Consider it a gift and not pay for the coupon.,No difference,0,20,0,20,No,3,3,2,No difference,No,Pay your friend 50 TL for the coupon.,1000,I do not know,I do not know,True,They remain unchanged,Very serious,Male,49,Prefer not to answer,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 11:56:21,2022-09-16 12:19:12,IP Address,100,1371,True,2022-09-16 12:19:12,R_3EhgftJrZpIZ0xA,anonymous,TR,,I agree to participate in the research,A,0,20,0,30,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,20,20,40,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,35,40,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,Pay your friend 50 TL for the coupon.,5,Exactly 1020 TL,Less than today,I do not know,I do not know,Very serious,Female,31,More than  135000 TL,24,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 13:18:02,2022-09-16 13:25:39,IP Address,100,456,True,2022-09-16 13:25:39,R_aaEGQGd09v7Tu81,anonymous,TR,0.699999988079071,I agree to participate in the research,A,20,30,40,50,70,2,4,3,No,10,20,30,40,B,Yes,Consider it a gift and not pay for the coupon.,A,20,40,40,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,True,They collapse,Absolutely serious,Male,27,More than  135000 TL,21,Austria,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 15:23:53,2022-09-16 15:34:56,IP Address,100,662,True,2022-09-16 15:34:57,R_0JnMHuWmMuULb0d,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,40,40,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,20,20,40,40,A,No,Pay your friend 50 TL for the coupon.,B,20,20,40,40,Yes,4,4,3,B,No,Pay your friend 50 TL for the coupon.,100,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,23,Less than 45000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 01:10:01,2022-09-17 01:21:00,IP Address,100,659,True,2022-09-17 01:21:01,R_3MurXgjEipBoENk,anonymous,TR,1,I agree to participate in the research,A,0,40,0,80,60,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,20,40,40,A,Yes,Consider it a gift and not pay for the coupon.,A,20,40,40,60,No,3,4,"Strongly agree
+
+1
+",B,Yes,Pay your friend 50 TL for the coupon.,30,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,30,112000 TL – 135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 02:59:10,2022-09-17 03:12:12,IP Address,100,781,True,2022-09-17 03:12:12,R_3QMCrMY35vFWlLz,anonymous,TR,0.4000000059604645,I agree to participate in the research,A,0,30,0,50,100,4,2,2,Yes,20,30,30,60,A,Yes,Consider it a gift and not pay for the coupon.,B,0,30,0,50,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",50,More than 1020 TL,Less than today,False,I do not know,Very serious,Male,32,More than  135000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 05:30:26,2022-09-17 05:51:07,IP Address,100,1241,True,2022-09-17 05:51:08,R_z0BYUZM2ZHtxdDP,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,40,40,0,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,20,40,40,A,No,Pay your friend 50 TL for the coupon.,B,20,20,40,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,0,Exactly 1020 TL,Less than today,True,I do not know,Very serious,Male,61,45000 TL – 68000 TL,21,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 12:18:18,2022-09-17 05:52:48,IP Address,100,63270,True,2022-09-17 05:52:49,R_2zMcNcPiLPROzf2,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,40,40,50,4,2,3,No,20,20,40,40,B,Yes,Pay your friend 50 TL for the coupon.,B,40,40,40,40,No,"Strongly disagree
+
+5
+",2,3,A,No,Pay your friend 50 TL for the coupon.,30,More than 1020 TL,Less than today,I do not know,I do not know,Moderately serious,Female,57,112000 TL – 135000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 08:33:44,2022-09-17 08:48:06,IP Address,100,862,True,2022-09-17 08:48:07,R_UYLSTu8LlBiSA1z,anonymous,TR,1,I agree to participate in the research,B,0,20,0,40,90,3,4,"Strongly agree
+
+1
+",Yes,0,20,0,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,40,0,40,No,4,2,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",40,More than 1020 TL,I do not know,I do not know,I do not know,Very serious,Female,25,More than  135000 TL,20,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 08:48:23,2022-09-17 08:59:20,IP Address,100,656,True,2022-09-17 08:59:20,R_2cCKG7esSvtIu22,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,20,40,40,300,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,20,20,20,20,No Difference,Yes,Pay your friend 50 TL for the coupon.,No difference,20,20,40,40,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,Yes,Pay your friend 50 TL for the coupon.,300,More than 1020 TL,Less than today,True,They collapse,Absolutely serious,Male,30,Less than 45000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 09:40:44,2022-09-17 09:53:31,IP Address,100,767,True,2022-09-17 09:53:32,R_3IRTk9XambFsHgB,anonymous,TR,1,I agree to participate in the research,A,20,50,40,65,100,3,2,"Strongly disagree
+
+5
+",Yes,20,50,40,65,B,No,Pay your friend 50 TL for the coupon.,B,30,40,40,65,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,A,Yes,Pay your friend 50 TL for the coupon.,40,More than 1020 TL,I do not know,I do not know,I do not know,Absolutely serious,Female,22,112000 TL – 135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 09:41:28,2022-09-17 09:54:29,IP Address,100,781,True,2022-09-17 09:54:30,R_Z2VPzwAXj6TH1bX,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,0,0,0,20,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",Yes,0,0,0,0,No Difference,Yes,Pay your friend 50 TL for the coupon.,No difference,0,0,0,0,Yes,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 50 TL for the coupon.,20,I do not know,I do not know,I do not know,I do not know,Very serious,Female,26,Less than 45000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 09:40:58,2022-09-17 09:54:50,IP Address,100,832,True,2022-09-17 09:54:50,R_12bFdevObgIHZDS,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,20,20,20,40,200,2,3,"Strongly disagree
+
+5
+",Yes,20,20,20,40,A,No,Pay your friend 50 TL for the coupon.,B,20,20,20,40,Yes,3,4,"Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,200,I do not know,I do not know,True,I do not know,Absolutely serious,Female,22,Less than 45000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 10:05:42,2022-09-17 10:25:39,IP Address,100,1197,True,2022-09-17 10:25:39,R_2qwTNchZJobZuIQ,anonymous,TR,1,I agree to participate in the research,A,0,40,0,80,45,3,3,3,Yes,0,40,0,80,A,No,Consider it a gift and not pay for the coupon.,B,0,38,0,78,Yes,4,2,4,B,No,Consider it a gift and not pay for the coupon.,28,More than 1020 TL,Less than today,False,I do not know,Very serious,Male,30,90000 TL – 112000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 11:20:05,2022-09-17 11:28:51,IP Address,100,526,True,2022-09-17 11:28:51,R_3PaZjyCTh2wh57e,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,30,40,70,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",No,20,20,30,40,A,Yes,Pay your friend 50 TL for the coupon.,B,20,20,30,40,No,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",A,Yes,Pay your friend 50 TL for the coupon.,20,I do not know,I do not know,I do not know,I do not know,Very serious,Female,22,Less than 45000 TL,17,Cyprus,Turkish,I allow you to use the responses I provided in this study.
+2022-09-18 02:06:22,2022-09-18 02:12:32,IP Address,100,370,True,2022-09-18 02:12:32,R_aWAvGFjLaTpaiR3,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,21,21,41,41,50,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,21,21,41,41,A,No,Consider it a gift and not pay for the coupon.,B,21,21,41,41,No,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,50,More than 1020 TL,Less than today,False,They collapse,Very serious,Male,26,Less than 45000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-18 02:08:15,2022-09-18 02:30:15,IP Address,100,1319,True,2022-09-18 02:30:17,R_2VPHJPBfLYNwOVs,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,200,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,20,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,0,0,0,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,200,More than 1020 TL,Less than today,False,They collapse,Very serious,Female,34,45000 TL – 68000 TL,11,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-18 05:32:31,2022-09-18 06:03:04,IP Address,100,1832,True,2022-09-18 06:03:05,R_1IGA3xLEFBMuJX5,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,20,0,40,60,4,"Strongly agree
+
+1
+",2,No,20,20,20,40,A,Yes,Consider it a gift and not pay for the coupon.,B,40,40,40,40,No,"Strongly disagree
+
+5
+",2,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",25,More than 1020 TL,Less than today,False,They collapse,Moderately serious,Male,24,90000 TL – 112000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-17 11:32:14,2022-09-18 11:50:38,IP Address,100,87503,True,2022-09-18 11:50:39,R_3dMlsAfOOa9WxeK,anonymous,TR,1,I agree to participate in the research,A,0,20,0,40,200,"Strongly agree
+
+1
+",3,3,No,0,20,0,40,A,Yes,Pay your friend 50 TL for the coupon.,No difference,0,20,0,40,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No difference,Yes,Pay your friend 50 TL for the coupon.,70,More than 1020 TL,I do not know,False,I do not know,Absolutely serious,Female,26,68000 TL – 90000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-18 12:06:07,2022-09-18 12:17:54,IP Address,100,706,True,2022-09-18 12:17:55,R_3sAjuHtNJYp3uUR,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,40,500,100,600,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,100,500,200,600,A,Yes,Consider it a gift and not pay for the coupon.,A,100,500,200,600,No,"Strongly agree
+
+1
+",2,"Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,100,I do not know,I do not know,I do not know,I do not know,Moderately serious,Male,29,Prefer not to answer,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-18 12:28:52,2022-09-18 12:42:12,IP Address,100,800,True,2022-09-18 12:42:12,R_dnkpHLgxZHBZvtT,anonymous,TR,1,I agree to participate in the research,No difference,20,30,20,40,50,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,20,30,20,40,No Difference,Yes,Consider it a gift and not pay for the coupon.,B,20,30,20,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,Yes,Consider it a gift and not pay for the coupon.,50,I do not know,Less than today,I do not know,I do not know,Moderately serious,Female,26,Prefer not to answer,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-18 13:32:43,2022-09-18 13:43:34,IP Address,100,651,True,2022-09-18 13:43:35,R_8dMIbBfJBKMZY1X,anonymous,TR,1,I agree to participate in the research,A,50,100,100,160,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,50,100,100,160,A,No,Consider it a gift and not pay for the coupon.,B,50,100,100,160,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,B,No,Pay your friend 50 TL for the coupon.,30,More than 1020 TL,Exactly the same as today,I do not know,They collapse,Very serious,Female,23,68000 TL – 90000 TL,24,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-18 16:08:12,2022-09-18 16:18:14,IP Address,100,602,True,2022-09-18 16:18:14,R_xrvwZNO7vODduoN,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,15,0,30,100,2,4,4,Yes,0,15,0,35,A,No,Consider it a gift and not pay for the coupon.,B,0,35,0,35,Yes,4,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",40,More than 1020 TL,Less than today,True,I do not know,Very serious,Female,25,Prefer not to answer,19,Germany,Turkish,I allow you to use the responses I provided in this study.
+2022-09-19 04:40:10,2022-09-19 04:59:39,IP Address,100,1169,True,2022-09-19 04:59:40,R_2bHm50CgtBc79dw,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,20,0,40,100,3,3,3,No,0,20,0,40,No Difference,Yes,Consider it a gift and not pay for the coupon.,No difference,0,20,0,40,No,3,3,3,No difference,Yes,Consider it a gift and not pay for the coupon.,50,More than 1020 TL,Less than today,I do not know,I do not know,Moderately serious,Female,26,More than  135000 TL,20,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-20 03:01:57,2022-09-20 03:48:32,IP Address,100,2794,True,2022-09-20 03:48:32,R_1QcrCu3VGdR3ls7,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,30,20,50,80,3,4,2,Yes,20,30,20,50,No Difference,No,Pay your friend 50 TL for the coupon.,B,20,50,20,50,Yes,4,3,2,B,Yes,Pay your friend 50 TL for the coupon.,60,More than 1020 TL,Less than today,False,I do not know,Very serious,Female,29,Less than 45000 TL,26,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-20 06:50:47,2022-09-20 07:03:48,IP Address,100,780,True,2022-09-20 07:03:48,R_2fy6H51bd0JEpri,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,10,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,20,40,40,40,A,No,Consider it a gift and not pay for the coupon.,B,20,40,40,40,No,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,5,More than 1020 TL,Less than today,I do not know,I do not know,Absolutely serious,Male,54,More than  135000 TL,20,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 10:51:56,2022-09-16 10:55:57,IP Address,36,240,False,2022-09-23 10:55:57,R_3qpyHc0kPnotFez,anonymous,TR,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,A,0,40,0,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,200,,,,,,,,,,,,
+2022-09-16 11:57:53,2022-09-16 12:04:01,IP Address,58,368,False,2022-09-23 12:04:04,R_2AKlhzri8EiSN2k,anonymous,TR,0.4000000059604645,I agree to participate in the research,A,60,80,75,100,1000,3,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,60,80,75,100,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,40,60,75,100,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,,,,,,,,,,,,,,
+2022-09-16 12:02:49,2022-09-16 12:06:48,IP Address,53,239,False,2022-09-23 12:06:51,R_1gTQjk8Ifu65vin,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,10,30,30,50,10,3,2,2,No,10,30,30,50,A,Yes,Pay your friend 50 TL for the coupon.,A,,,,,,,,,B,Yes,Pay your friend 50 TL for the coupon.,10,,,,,,,,,,,,
+2022-09-16 13:06:01,2022-09-16 13:07:07,Spam,11,65,False,2022-09-23 13:07:09,R_1rpomAwd6RvyS8D,anonymous,TR,0.699999988079071,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 22:50:05,2022-09-16 22:59:39,IP Address,53,574,False,2022-09-23 22:59:45,R_3NxhlrtksuRHpNF,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,0,200,0,400,100,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",Yes,20,200,40,400,A,Yes,Pay your friend 50 TL for the coupon.,A,,,,,,,,,B,Yes,Pay your friend 50 TL for the coupon.,50,,,,,,,,,,,,
+2022-09-17 08:48:53,2022-09-17 08:55:25,IP Address,39,391,False,2022-09-24 08:55:31,R_3QMGWzCzJ5Gbs2B,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,10,20,20,40,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,,,,,,,,No difference,,,,,,,,,No difference,No,Pay your friend 50 TL for the coupon.,50,,,,,,,,,,,,
+2022-09-17 08:57:41,2022-09-17 09:10:11,IP Address,53,750,False,2022-09-24 09:10:12,R_1QuMKHKIGeX8mOf,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,0,0,0,0,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,20,20,35,35,A,No,Pay your friend 50 TL for the coupon.,B,,,,,,,,,B,No,Pay your friend 50 TL for the coupon.,50,,,,,,,,,,,,
+2022-09-17 09:21:03,2022-09-17 09:22:05,IP Address,6,62,False,2022-09-24 09:22:09,R_2RQU8XhbHZzgyOy,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 22:52:00,2022-09-18 22:54:08,IP Address,17,127,False,2022-09-25 22:54:14,R_3s7hP2uSM2oBJmE,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,No,Pay your friend 50 TL for the coupon.,,,,,,,,,,,,,
+2022-09-20 04:10:34,2022-09-20 04:11:14,IP Address,3,39,False,2022-09-27 04:13:32,R_ekTyISx5hXbIDdf,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 14:46:00,2022-09-20 14:46:41,IP Address,11,41,False,2022-09-27 14:46:50,R_2rx2HpMZUh4JP9C,anonymous,TR,1,I agree to participate in the research,No difference,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-22 04:40:42,2022-09-22 04:42:10,IP Address,11,88,False,2022-09-29 04:42:14,R_10GUoHM9erxpUQ9,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 13:55:39,2022-09-29 14:08:13,IP Address,100,753,True,2022-09-29 14:08:13,R_2fKdDv33whDWXAw,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,50,2,4,2,No,0,20,20,40,A,Yes,Pay your friend 50 TL for the coupon.,B,20,40,20,40,No,4,2,4,B,No,Pay your friend 50 TL for the coupon.,70,More than 1020 TL,Less than today,False,They collapse,Absolutely serious,Female,52,More than  135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-30 02:06:55,2022-09-30 02:19:07,IP Address,100,731,True,2022-09-30 02:19:07,R_2SlF0p00d8TSsiF,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,50,40,100,200,4,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,20,50,40,100,No Difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,50,40,100,Yes,4,4,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,26,More than  135000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-30 02:42:11,2022-09-30 03:00:37,IP Address,100,1105,True,2022-09-30 03:00:37,R_2zpX9p3eup44nio,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,40,0,80,80,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,40,40,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,50,40,90,No,4,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",30,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Female,28,More than  135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-30 02:33:39,2022-09-30 03:01:17,IP Address,100,1658,True,2022-09-30 03:01:18,R_UMycytWQnyExSQp,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,30,40,50,80,3,2,3,No,20,30,40,50,A,Yes,Consider it a gift and not pay for the coupon.,B,20,40,40,50,No,4,2,3,B,Yes,Consider it a gift and not pay for the coupon.,30,More than 1020 TL,Less than today,False,I do not know,Moderately serious,Female,23,90000 TL – 112000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 10:52:34,2022-09-23 05:07:53,IP Address,19,584118,False,2022-09-30 05:07:59,R_xymgnP1lZWdspfb,anonymous,TR,1,I agree to participate in the research,B,0,50,0,60,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 07:55:02,2022-09-30 08:35:07,IP Address,100,2405,True,2022-09-30 08:35:07,R_1C7xTUvVoadGe3X,anonymous,TR,1,I agree to participate in the research,A,0,20,0,40,70,2,4,2,Yes,10,20,20,40,A,No,Consider it a gift and not pay for the coupon.,A,20,30,20,40,Yes,3,3,2,B,Yes,Consider it a gift and not pay for the coupon.,45,I do not know,I do not know,I do not know,I do not know,Moderately serious,Female,22,68000 TL – 90000 TL,12,Italy,Turkish,I allow you to use the responses I provided in this study.
+2022-09-30 09:41:19,2022-09-30 09:48:11,IP Address,100,411,True,2022-09-30 09:48:12,R_RV9S1kWD2zssRxL,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,50,0,100,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,0,50,0,100,B,Yes,Consider it a gift and not pay for the coupon.,B,0,80,0,150,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,Yes,Consider it a gift and not pay for the coupon.,40,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,27,More than  135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-30 10:59:33,2022-09-30 11:13:42,IP Address,100,848,True,2022-09-30 11:13:42,R_2YuktGyh84quTj9,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,10,20,30,40,100,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",3,Yes,10,20,30,40,No Difference,Yes,Pay your friend 50 TL for the coupon.,No difference,10,20,30,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 50 TL for the coupon.,10,More than 1020 TL,Less than today,False,They collapse,Very serious,Male,27,Less than 45000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-30 10:59:41,2022-09-30 11:16:13,IP Address,100,991,True,2022-09-30 11:16:13,R_1C7MpJpspfGEhnl,anonymous,TR,1,I agree to participate in the research,A,0,20,0,20,100,2,4,4,No,0,20,0,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,20,0,20,No,3,4,"Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",50,More than 1020 TL,Less than today,I do not know,I do not know,Moderately serious,Female,27,More than  135000 TL,19,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-30 13:08:01,2022-09-30 13:26:02,IP Address,100,1080,True,2022-09-30 13:26:02,R_3eqn5lBRx0CVO1I,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,100,0,120,50,2,4,2,No,0,100,0,120,A,Yes,Pay your friend 50 TL for the coupon.,A,0,100,0,120,No,2,4,2,A,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,They collapse,Absolutely serious,Male,51,Less than 45000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-01 00:16:01,2022-10-01 00:27:49,IP Address,100,707,True,2022-10-01 00:27:49,R_2SpERgvgyPureDQ,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,20,150,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",4,No,20,30,20,40,B,Yes,Consider it a gift and not pay for the coupon.,No difference,20,30,20,40,No,4,4,3,B,Yes,Pay your friend 50 TL for the coupon.,80,I do not know,I do not know,I do not know,I do not know,Very serious,Female,27,Prefer not to answer,19,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-01 03:24:50,2022-10-01 03:41:03,IP Address,100,973,True,2022-10-01 03:41:04,R_1I4Yq5iHbBDzw5C,anonymous,TR,1,I agree to participate in the research,No difference,20,20,20,40,20,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,20,20,40,A,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,40,No,2,2,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,15,More than 1020 TL,Less than today,True,I do not know,Moderately serious,Female,34,Less than 45000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-01 03:41:52,2022-10-01 03:55:55,IP Address,100,842,True,2022-10-01 03:55:56,R_2bPf4ytkY6epob7,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,100,"Strongly disagree
+
+5
+",3,3,No,0,30,0,50,A,Yes,Consider it a gift and not pay for the coupon.,B,0,40,0,60,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",4,B,Yes,Pay your friend 50 TL for the coupon.,60,More than 1020 TL,Less than today,I do not know,They collapse,Moderately serious,Male,26,More than  135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-01 07:58:56,2022-10-01 08:14:47,IP Address,100,951,True,2022-10-01 08:14:48,R_vAComTm1HZPCJSp,anonymous,TR,1,I agree to participate in the research,A,20,20,40,40,20,4,2,4,Yes,20,20,40,40,A,No,Consider it a gift and not pay for the coupon.,A,20,20,40,40,Yes,4,4,4,B,No,Consider it a gift and not pay for the coupon.,20,More than 1020 TL,Less than today,False,I do not know,Moderately serious,Female,27,45000 TL – 68000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-01 09:55:31,2022-10-01 10:06:21,IP Address,100,649,True,2022-10-01 10:06:23,R_3NILb6Bnw2cSUA5,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,40,20,40,10,2,4,4,No,20,40,20,40,A,Yes,Pay your friend 50 TL for the coupon.,B,20,40,20,40,No,2,4,4,B,Yes,Pay your friend 50 TL for the coupon.,10,More than 1020 TL,Less than today,False,I do not know,Very serious,Female,27,More than  135000 TL,20,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-01 10:26:12,2022-10-01 10:46:58,IP Address,100,1246,True,2022-10-01 10:46:59,R_1GIhSAi4YUnmX73,anonymous,TR,0.800000011920929,I agree to participate in the research,No difference,0,20,0,40,100,3,4,4,Yes,0,20,0,40,No Difference,Yes,Pay your friend 50 TL for the coupon.,B,0,20,0,40,Yes,3,4,4,B,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Female,53,45000 TL – 68000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-02 01:50:46,2022-10-02 02:48:59,IP Address,100,3492,True,2022-10-02 02:48:59,R_1n9Og3DwcwXegay,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,0,20,0,40,50,3,"Strongly disagree
+
+5
+",3,Yes,0,20,0,40,A,Yes,Pay your friend 50 TL for the coupon.,B,0,20,0,40,No,3,3,2,A,Yes,Pay your friend 50 TL for the coupon.,50,I do not know,I do not know,True,They collapse,Moderately serious,Female,46,More than  135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-02 09:05:21,2022-10-02 09:20:48,IP Address,100,926,True,2022-10-02 09:20:48,R_2EiroFslARXlXag,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,80,3,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,20,0,40,A,No,Consider it a gift and not pay for the coupon.,B,20,40,40,40,No,3,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,I do not know,Moderately serious,Female,26,90000 TL – 112000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-02 14:59:37,2022-10-02 15:10:41,IP Address,100,664,True,2022-10-02 15:10:41,R_1IZ5xFpKTFz4onh,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,0,20,0,40,20,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,No,0,20,0,40,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,Consider it a gift and not pay for the coupon.,20,Exactly 1020 TL,Exactly the same as today,I do not know,They remain unchanged,Very serious,Female,41,45000 TL – 68000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-03 02:50:55,2022-10-03 03:13:51,IP Address,100,1375,True,2022-10-03 03:13:51,R_1dviYoRg7rWzcrp,anonymous,TR,1,I agree to participate in the research,A,20,30,40,60,35,2,4,"Strongly disagree
+
+5
+",No,20,30,40,60,A,Yes,Consider it a gift and not pay for the coupon.,B,20,30,40,60,No,3,"Strongly disagree
+
+5
+",2,B,Yes,Consider it a gift and not pay for the coupon.,30,More than 1020 TL,Less than today,False,They collapse,Moderately serious,Male,18,More than  135000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-03 04:30:32,2022-10-03 04:46:22,IP Address,100,950,True,2022-10-03 04:46:23,R_1K3bBADM9T5vaCI,anonymous,TR,1,I agree to participate in the research,A,0,500,20,600,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,500,20,600,A,No,Pay your friend 50 TL for the coupon.,B,0,500,20,600,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,Yes,Pay your friend 50 TL for the coupon.,20,More than 1020 TL,Less than today,I do not know,They collapse,Moderately serious,Male,25,Less than 45000 TL,15,Turkey,English,I allow you to use the responses I provided in this study.
+2022-10-03 07:29:15,2022-10-03 07:47:06,IP Address,100,1071,True,2022-10-03 07:47:06,R_2qlU3NaOgiWTHrM,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,20,0,40,A,No,Consider it a gift and not pay for the coupon.,B,0,20,0,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,15,More than 1020 TL,Less than today,I do not know,I do not know,Absolutely serious,Female,21,Less than 45000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-04 08:17:08,2022-10-04 08:26:02,IP Address,100,533,True,2022-10-04 08:26:02,R_2dtNsNNKR3wlWl1,anonymous,TR,0.800000011920929,I agree to participate in the research,No difference,0,20,0,40,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,20,0,40,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,20,0,40,Yes,3,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",50,More than 1020 TL,Less than today,False,I do not know,Very serious,Female,32,112000 TL – 135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-06 18:26:41,2022-10-06 18:37:17,IP Address,100,636,True,2022-10-06 18:37:18,R_1Q3kJ7PGJdpUoEH,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,100,4,2,3,No,0,20,0,40,B,Yes,Pay your friend 50 TL for the coupon.,B,20,40,40,40,No,4,2,3,B,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,I do not know,Very serious,Female,35,More than  135000 TL,19,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-09-30 02:17:57,2022-09-30 02:22:14,IP Address,39,256,False,2022-10-07 02:22:17,R_2ZEK0j0eVFQSZJp,anonymous,TR,1,I agree to participate in the research,A,0,0,0,20,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,,,,,,,,B,0,40,0,40,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,,,,,,,,,,,,,,,,
+2022-09-30 02:27:33,2022-09-30 02:33:10,IP Address,58,337,False,2022-10-07 02:33:15,R_2BlzQIUDqGpkYwG,anonymous,TR,1,I agree to participate in the research,No difference,0,20,0,40,100,,,,,30,40,40,50,A,Yes,Consider it a gift and not pay for the coupon.,A,40,50,40,50,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,50,,,,,,,,,,,,
+2022-09-30 03:00:56,2022-09-30 03:01:51,IP Address,11,54,False,2022-10-07 03:02:37,R_2tlMkdvDFfj5oGu,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 03:23:33,2022-09-30 03:23:58,IP Address,8,24,False,2022-10-07 03:35:41,R_wXBI1OjpxXN7Pah,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 03:35:37,2022-09-30 03:36:40,IP Address,6,63,False,2022-10-07 03:36:50,R_2WZK1yHQH7RTTDe,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 04:26:21,2022-09-30 04:27:46,IP Address,19,84,False,2022-10-07 04:27:50,R_393NY9JDDxIztOF,anonymous,TR,0.699999988079071,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,20,40,40,60,Yes,,,,,,,,,,,,,,,,,,,
+2022-09-30 06:03:13,2022-09-30 06:04:56,IP Address,11,102,False,2022-10-07 06:04:58,R_1E0R8H3dRW19APu,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 06:23:17,2022-09-30 06:41:35,IP Address,78,1098,False,2022-10-07 06:41:39,R_3p9erUVBzZtJUAQ,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,20,0,40,80,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,20,30,40,60,No Difference,Yes,Consider it a gift and not pay for the coupon.,B,20,30,40,50,No,2,4,"Strongly agree
+
+1
+",B,Yes,Pay your friend 50 TL for the coupon.,40,More than 1020 TL,Less than today,I do not know,They collapse,,,,,,,,
+2022-09-30 10:00:05,2022-09-30 10:00:57,IP Address,11,52,False,2022-10-07 10:00:58,R_pEIwJjmDYp1lqq5,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 09:55:54,2022-09-30 10:51:47,IP Address,81,3352,False,2022-10-07 11:31:37,R_2YX4e66e4ua9lOv,anonymous,TR,1,I agree to participate in the research,B,0,20,0,40,100,3,"Strongly disagree
+
+5
+",3,Yes,0,20,0,40,No Difference,Yes,Pay your friend 50 TL for the coupon.,B,0,20,0,40,Yes,3,3,3,A,Yes,Pay your friend 50 TL for the coupon.,75,More than 1020 TL,I do not know,False,I do not know,Moderately serious,,,,,,,
+2022-09-30 10:55:54,2022-09-30 11:00:41,IP Address,36,287,False,2022-10-07 12:15:57,R_zcI41H5xA7Qd5wR,anonymous,TR,1,I agree to participate in the research,A,,,,,,,,,,20,20,40,40,No Difference,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,50,,,,,,,,,,,,
+2022-09-30 23:35:24,2022-09-30 23:37:14,IP Address,3,109,False,2022-10-07 23:37:14,R_URXuQMBEfJAaXHr,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-08 01:13:56,2022-10-08 01:50:57,IP Address,100,2221,True,2022-10-08 01:50:58,R_1doRMPi2hGxg1bX,anonymous,TR,1,I agree to participate in the research,No difference,0,20,0,40,200,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,0,20,0,40,No Difference,No,Consider it a gift and not pay for the coupon.,No difference,0,20,0,40,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Consider it a gift and not pay for the coupon.,20,I do not know,Less than today,I do not know,They collapse,Moderately serious,Female,56,Less than 45000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-01 06:04:41,2022-10-01 06:11:32,IP Address,39,411,False,2022-10-08 06:11:34,R_1NkqGayXbZ8KRhO,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,20,40,40,60,,,,A,20,40,20,40,No,4,2,"Strongly agree
+
+1
+",No difference,No,Pay your friend 50 TL for the coupon.,50,,,,,,,,,,,,
+2022-10-01 06:10:38,2022-10-01 06:15:38,IP Address,17,300,False,2022-10-08 06:15:42,R_1hyyYt7nMK8BN1C,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,No difference,No,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,
+2022-10-08 06:22:43,2022-10-08 06:40:56,IP Address,100,1092,True,2022-10-08 06:40:56,R_3nwwfJQcDNTn5Gr,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,40,40,80,100,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",2,Yes,30,30,50,50,No Difference,Yes,Consider it a gift and not pay for the coupon.,No difference,40,40,40,40,Yes,"Strongly agree
+
+1
+",2,"Strongly agree
+
+1
+",No difference,Yes,Consider it a gift and not pay for the coupon.,30,I do not know,I do not know,I do not know,I do not know,Not serious at all,Female,55,Prefer not to answer,11,Turkey,Turkish,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-10-01 10:51:18,2022-10-01 10:53:09,IP Address,11,110,False,2022-10-08 10:53:11,R_1ik7wWvR4cZLo7M,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-09 01:57:14,2022-10-09 02:31:11,IP Address,100,2037,True,2022-10-09 02:31:12,R_2ARbDAr13QZuWo9,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,300,2,3,4,Yes,20,20,20,40,A,Yes,Pay your friend 50 TL for the coupon.,B,20,20,20,40,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",3,B,Yes,Pay your friend 50 TL for the coupon.,150,More than 1020 TL,Less than today,False,They collapse,Very serious,Female,53,Prefer not to answer,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-09 03:33:07,2022-10-09 03:43:30,IP Address,100,622,True,2022-10-09 03:43:31,R_1E06gQUL9Mz2qra,anonymous,TR,1,I agree to participate in the research,B,0,10,0,30,150,4,"Strongly disagree
+
+5
+",2,Yes,20,30,20,40,B,No,Pay your friend 50 TL for the coupon.,A,20,30,20,50,Yes,"Strongly disagree
+
+5
+",4,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",60,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Male,21,Less than 45000 TL,14,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-09 03:34:46,2022-10-09 03:50:47,IP Address,100,961,True,2022-10-09 03:50:47,R_2dKYCtiVVPiNdZZ,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,20,0,40,30,3,3,2,Yes,20,20,20,40,A,Yes,Pay your friend 50 TL for the coupon.,B,20,40,40,40,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 50 TL for the coupon.,20,Less than 1020 TL,Less than today,False,They collapse,Absolutely serious,Female,52,Less than 45000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-09 05:55:59,2022-10-09 06:09:11,IP Address,100,791,True,2022-10-09 06:09:11,R_3h4Tcc4VxTxdRGz,anonymous,TR,1,I agree to participate in the research,B,0,0,0,0,30,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,20,20,20,20,A,No,Pay your friend 50 TL for the coupon.,B,0,20,0,20,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,20,More than 1020 TL,Less than today,I do not know,I do not know,Absolutely serious,Female,52,45000 TL – 68000 TL,13,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-02 09:37:28,2022-10-02 09:38:00,IP Address,8,31,False,2022-10-09 09:38:01,R_2UgvBDj7p6i2sZP,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-02 10:09:52,2022-10-02 10:15:05,IP Address,36,312,False,2022-10-09 10:15:06,R_s6l1grQaeo7koo1,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,20,50,40,75,A,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,A,Yes,Consider it a gift and not pay for the coupon.,200,,,,,,,,,,,,
+2022-10-02 11:44:28,2022-10-02 11:44:55,IP Address,14,27,False,2022-10-09 11:44:58,R_2aK5LLlr5BYrTWK,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,No difference,No,,,,,,,,,,,,,,
+2022-10-03 01:12:17,2022-10-03 01:20:18,IP Address,67,480,False,2022-10-10 01:20:23,R_1HkotLscQ3JQr8I,anonymous,TR,1,I agree to participate in the research,B,0,20,0,40,20,3,2,3,Yes,0,20,0,40,No Difference,Yes,Pay your friend 50 TL for the coupon.,B,0,20,0,40,Yes,3,"Strongly disagree
+
+5
+",2,B,No,Pay your friend 50 TL for the coupon.,20,,,,,,,,,,,,
+2022-10-03 05:30:22,2022-10-03 05:41:36,IP Address,44,673,False,2022-10-10 05:41:56,R_2zTpXYEgDm6Pe1X,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,40,40,50,,,,,,,,,,,,B,20,20,40,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,Yes,Consider it a gift and not pay for the coupon.,50,,,,,,,,,,,,
+2022-10-03 06:03:41,2022-10-03 06:08:37,IP Address,44,296,False,2022-10-10 06:08:42,R_3D0loaCnVQXGLgR,anonymous,TR,1,I agree to participate in the research,B,40,100,60,120,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,40,100,60,120,,,,B,40,100,60,120,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,,,,,,,,,,,,,,,,
+2022-10-03 06:03:42,2022-10-03 06:20:41,IP Address,53,1018,False,2022-10-10 06:20:46,R_24wQYqbI4a3j1De,anonymous,TR,1,I agree to participate in the research,No difference,0,20,0,20,20,4,4,"Strongly disagree
+
+5
+",Yes,20,20,20,20,No Difference,No,Pay your friend 50 TL for the coupon.,B,,,,,,,,,A,No,Pay your friend 50 TL for the coupon.,10,,,,,,,,,,,,
+2022-10-03 13:59:51,2022-10-03 14:05:59,IP Address,50,368,False,2022-10-10 14:06:02,R_2YrZQ72EkgTyb1a,anonymous,TR,0.800000011920929,I agree to participate in the research,A,0,0,0,0,100,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",,20,20,40,40,A,Yes,Pay your friend 50 TL for the coupon.,B,40,40,40,40,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-10-04 13:14:47,2022-10-04 13:15:36,IP Address,8,48,False,2022-10-11 13:15:42,R_8uje8JiTlgKEkV3,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 13:36:59,2022-10-11 13:59:41,IP Address,100,1361,True,2022-10-11 13:59:41,R_1JKNJiHSoZ7675k,anonymous,TR,1,I agree to participate in the research,No difference,0,20,0,40,300,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,0,20,0,40,No Difference,No,Consider it a gift and not pay for the coupon.,No difference,0,40,0,40,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Consider it a gift and not pay for the coupon.,30,I do not know,I do not know,I do not know,I do not know,Very serious,Female,56,45000 TL – 68000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-12 02:21:48,2022-10-12 02:37:17,IP Address,100,929,True,2022-10-12 02:37:18,R_en9f5yigFPZYqSR,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,50,55,55,55,0,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,No,55,55,55,55,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,40,60,60,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",50,More than 1020 TL,Less than today,True,I do not know,Moderately serious,Male,29,112000 TL – 135000 TL,14,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-12 02:27:19,2022-10-12 03:06:19,IP Address,100,2339,True,2022-10-12 03:06:19,R_3MbsWAtFuC5ynPa,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,25,40,50,50,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,20,25,40,50,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,25,40,45,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,I do not know,Less than today,I do not know,I do not know,Very serious,Male,33,45000 TL – 68000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-12 11:56:31,2022-10-12 12:13:47,IP Address,100,1036,True,2022-10-12 12:13:48,R_29h8o7R0UM8ClJW,anonymous,TR,1,I agree to participate in the research,No difference,30,40,40,60,100,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,20,40,40,60,No Difference,Yes,Pay your friend 50 TL for the coupon.,B,30,40,40,60,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 50 TL for the coupon.,30,I do not know,I do not know,True,I do not know,Very serious,Female,65,45000 TL – 68000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 01:14:32,2022-10-13 01:32:26,IP Address,100,1073,True,2022-10-13 01:32:26,R_10Zfxwng0ds0smO,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,20,40,40,50,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,20,20,40,40,No Difference,Yes,Pay your friend 50 TL for the coupon.,B,20,20,40,40,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,Yes,Pay your friend 50 TL for the coupon.,50,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Female,51,More than  135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 01:59:14,2022-10-13 02:20:20,IP Address,100,1265,True,2022-10-13 02:20:20,R_2TAewHCDou6LIDa,anonymous,TR,0.800000011920929,I agree to participate in the research,A,0,50,0,50,200,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,Yes,20,50,20,100,A,Yes,Consider it a gift and not pay for the coupon.,B,20,100,20,100,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,Consider it a gift and not pay for the coupon.,20,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,21,112000 TL – 135000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 03:05:29,2022-10-13 03:17:18,IP Address,100,709,True,2022-10-13 03:17:19,R_1kY37CTwZqS9edc,anonymous,TR,1,I agree to participate in the research,No difference,20,20,20,40,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,20,20,40,No Difference,Yes,Pay your friend 50 TL for the coupon.,B,20,20,20,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 50 TL for the coupon.,30,Exactly 1020 TL,Less than today,I do not know,I do not know,Very serious,Female,29,More than  135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 03:00:53,2022-10-13 03:42:43,IP Address,100,2509,True,2022-10-13 03:42:44,R_796XYIGltn1vkdj,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,40,0,40,200,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,10,40,0,40,No Difference,Yes,Consider it a gift and not pay for the coupon.,No difference,20,40,40,40,Yes,"Strongly agree
+
+1
+",3,3,No difference,Yes,Consider it a gift and not pay for the coupon.,200,I do not know,I do not know,I do not know,I do not know,Moderately serious,Female,36,90000 TL – 112000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 03:21:49,2022-10-13 03:52:03,IP Address,100,1814,True,2022-10-13 03:52:03,R_b1IYG7TXO1OOPGp,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,0,40,40,80,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,20,40,40,No Difference,No,Pay your friend 50 TL for the coupon.,B,20,20,40,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,Pay your friend 50 TL for the coupon.,28,Exactly 1020 TL,Exactly the same as today,I do not know,They collapse,Moderately serious,Female,26,Less than 45000 TL,14,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 02:25:40,2022-10-13 04:48:13,IP Address,100,8553,True,2022-10-13 04:48:13,R_eXw8ft3XzNaPHvH,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,30,40,60,200,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,20,40,40,60,A,Yes,Pay your friend 50 TL for the coupon.,B,25,40,45,80,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,200,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Male,29,More than  135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 08:13:57,2022-10-13 08:31:04,IP Address,100,1026,True,2022-10-13 08:31:04,R_248ArNCusdmXnHm,anonymous,TR,1,I agree to participate in the research,A,0,20,0,40,100,3,4,3,No,0,20,0,40,A,Yes,Pay your friend 50 TL for the coupon.,B,0,20,0,20,No,3,2,3,B,Yes,Pay your friend 50 TL for the coupon.,50,I do not know,Less than today,I do not know,I do not know,Absolutely serious,Male,32,68000 TL – 90000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 09:13:39,2022-10-13 09:31:57,IP Address,100,1097,True,2022-10-13 09:31:58,R_u4hmiiXvtJ2qXK1,anonymous,TR,1,I agree to participate in the research,A,0,30,20,50,150,3,4,2,No,0,30,30,50,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,40,40,60,No,4,2,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",130,More than 1020 TL,Less than today,I do not know,I do not know,Moderately serious,Male,21,Prefer not to answer,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-06 12:22:24,2022-10-06 12:23:33,IP Address,11,68,False,2022-10-13 12:23:34,R_1hT11Hkhru4JAsb,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-13 13:12:00,2022-10-13 13:12:16,IP Address,100,15,True,2022-10-13 13:12:16,R_2sd2EQ48Vyqm8vx,anonymous,TR,1,I do NOT agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-13 22:37:17,2022-10-13 22:48:29,IP Address,100,671,True,2022-10-13 22:48:29,R_1MLjtGoSEZQs320,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,20,20,40,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,20,20,20,20,A,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,25,Less than 1020 TL,Less than today,False,They collapse,Absolutely serious,Male,54,More than  135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 01:14:58,2022-10-14 01:21:15,IP Address,100,377,True,2022-10-14 01:21:15,R_333zS17dZQzymAG,anonymous,TR,0.800000011920929,I agree to participate in the research,A,30,40,50,60,80,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,30,40,60,70,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,30,40,50,60,No,"Strongly disagree
+
+5
+",3,4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",30,Less than 1020 TL,Less than today,True,They remain unchanged,Moderately serious,Male,25,90000 TL – 112000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 01:21:34,2022-10-14 01:25:58,IP Address,100,263,True,2022-10-14 01:25:58,R_2UbUqSdr4EXF1bK,anonymous,TR,0.4000000059604645,I agree to participate in the research,A,30,50,50,80,160,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,No,30,50,50,80,A,No,Consider it a gift and not pay for the coupon.,A,30,50,50,80,No,"Strongly agree
+
+1
+",4,2,B,No,Consider it a gift and not pay for the coupon.,50,I do not know,Less than today,False,There is no relationship,Moderately serious,Male,28,112000 TL – 135000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 01:26:04,2022-10-14 01:46:24,IP Address,100,1219,True,2022-10-14 01:46:24,R_1FxIIq5tIhctIYG,anonymous,TR,0.800000011920929,I agree to participate in the research,A,0,20,0,30,250,"Strongly disagree
+
+5
+",3,"Strongly disagree
+
+5
+",No,20,50,40,80,A,Yes,Pay your friend 50 TL for the coupon.,B,20,50,40,60,No,"Strongly disagree
+
+5
+",3,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,200,More than 1020 TL,Less than today,False,They collapse,Absolutely serious,Male,34,90000 TL – 112000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 01:47:07,2022-10-14 01:58:51,IP Address,100,703,True,2022-10-14 01:58:52,R_2D6vcDVt2hbOCqh,anonymous,TR,0.4000000059604645,I agree to participate in the research,No difference,30,50,60,70,60,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,0,0,0,0,No Difference,No,Consider it a gift and not pay for the coupon.,A,40,60,60,80,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,A,No,Consider it a gift and not pay for the coupon.,15,I do not know,Less than today,I do not know,They remain unchanged,Very serious,Male,33,68000 TL – 90000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-07 02:01:40,2022-10-07 02:01:57,IP Address,3,17,False,2022-10-14 02:01:58,R_2Vwnm3gz3JWw3mj,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-14 01:58:54,2022-10-14 02:22:57,IP Address,100,1442,True,2022-10-14 02:22:58,R_D8lB6zgP4JBzsRz,anonymous,EN,0.699999988079071,I agree to participate in the research,A,20,40,40,60,90,2,4,2,Yes,20,40,20,40,A,Yes,Consider it a gift and not pay for the coupon.,B,20,40,40,60,Yes,2,4,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,30,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Female,28,Prefer not to answer,15,Turkey,Hungarian,I allow you to use the responses I provided in this study.
+2022-10-14 02:23:07,2022-10-14 02:42:17,IP Address,100,1149,True,2022-10-14 02:42:17,R_26mZ2YlhvXPZxRV,anonymous,TR,0.800000011920929,I agree to participate in the research,A,0,0,0,0,65,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,0,20,0,40,A,Yes,Pay your friend 50 TL for the coupon.,B,0,40,0,40,No,"Strongly disagree
+
+5
+",4,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,30,Less than 1020 TL,I do not know,False,They collapse,Very serious,Male,24,Less than 45000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 02:45:06,2022-10-14 02:52:01,IP Address,100,415,True,2022-10-14 02:52:02,R_33Dt8g2jD8w6qcy,anonymous,TR,0.800000011920929,I agree to participate in the research,B,50,50,100,100,200,"Strongly agree
+
+1
+",4,3,No,50,50,100,100,A,Yes,Pay your friend 50 TL for the coupon.,A,50,50,100,100,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No difference,Yes,Pay your friend 50 TL for the coupon.,200,More than 1020 TL,I do not know,False,They collapse,Absolutely serious,Female,22,More than  135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 03:09:22,2022-10-14 04:35:33,IP Address,100,5170,True,2022-10-14 04:35:33,R_SHj8egqm2ddLUPf,anonymous,TR,0.800000011920929,I agree to participate in the research,B,30,100,50,150,50,"Strongly agree
+
+1
+",4,3,Yes,30,50,50,75,B,No,Consider it a gift and not pay for the coupon.,B,25,35,50,75,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,Consider it a gift and not pay for the coupon.,30,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,35,68000 TL – 90000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 04:50:08,2022-10-14 04:50:30,IP Address,100,22,True,2022-10-14 04:50:30,R_271NQpFZIApLuJA,anonymous,TR,0.8999999761581421,I do NOT agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-14 05:20:39,2022-10-14 05:25:30,IP Address,100,290,True,2022-10-14 05:25:30,R_cCjsuO1dbimYAPn,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,80,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,20,40,40,80,A,No,Consider it a gift and not pay for the coupon.,B,20,40,40,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,40,Less than 1020 TL,I do not know,True,They remain unchanged,Moderately serious,Female,21,90000 TL – 112000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 05:25:17,2022-10-14 05:38:36,IP Address,100,799,True,2022-10-14 05:38:36,R_1ooSL9P9lKPtzpj,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,20,20,40,40,25,"Strongly agree
+
+1
+",4,2,Yes,20,20,40,40,A,Yes,Pay your friend 50 TL for the coupon.,B,40,40,40,40,No,3,3,3,B,Yes,Pay your friend 50 TL for the coupon.,15,More than 1020 TL,Exactly the same as today,I do not know,I do not know,Very serious,Female,28,68000 TL – 90000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 05:27:49,2022-10-14 05:54:08,IP Address,100,1578,True,2022-10-14 05:54:08,R_3M52RX9hTgQFPrt,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,100,0,120,2500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,100,0,100,A,No,Pay your friend 50 TL for the coupon.,B,0,100,0,100,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,No,Pay your friend 50 TL for the coupon.,100,More than 1020 TL,Less than today,True,I do not know,Moderately serious,Female,24,68000 TL – 90000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 05:41:00,2022-10-14 05:54:31,IP Address,100,810,True,2022-10-14 05:54:31,R_1C4w3rQtKxWuKYB,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,40,40,80,350,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,40,40,80,A,Yes,Pay your friend 50 TL for the coupon.,A,20,100,40,200,No,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend 50 TL for the coupon.,300,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,23,45000 TL – 68000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 05:44:50,2022-10-14 05:58:35,IP Address,100,825,True,2022-10-14 05:58:38,R_3KDDRXrB7KhamMg,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,15,20,30,40,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,30,40,40,50,No Difference,No,Pay your friend 50 TL for the coupon.,B,30,50,30,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 50 TL for the coupon.,30,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Female,25,Prefer not to answer,14,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 05:43:49,2022-10-14 06:05:14,IP Address,100,1284,True,2022-10-14 06:05:15,R_10vijo9KeNsUSAT,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,1000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,20,20,20,40,No Difference,Yes,Pay your friend 50 TL for the coupon.,B,20,20,40,40,Yes,4,"Strongly agree
+
+1
+",4,No difference,No,Pay your friend 50 TL for the coupon.,250,More than 1020 TL,Less than today,False,I do not know,Very serious,Female,27,68000 TL – 90000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 06:02:28,2022-10-14 06:06:59,IP Address,100,270,True,2022-10-14 06:06:59,R_cZwo0IZk6DUUdc5,anonymous,TR,0.800000011920929,I agree to participate in the research,A,0,20,0,40,100,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,Yes,20,20,40,40,A,No,Pay your friend 50 TL for the coupon.,B,40,40,40,40,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,No,Pay your friend 50 TL for the coupon.,60,Less than 1020 TL,Less than today,I do not know,I do not know,Very serious,Prefer not to say,30,112000 TL – 135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 06:07:07,2022-10-14 06:22:46,IP Address,100,938,True,2022-10-14 06:22:46,R_sMqcQUTI9YqHlK1,anonymous,TR,0.800000011920929,I agree to participate in the research,A,20,20,40,40,250,3,3,3,No,20,20,40,40,A,No,Consider it a gift and not pay for the coupon.,A,40,40,40,40,No,3,3,3,No difference,No,Consider it a gift and not pay for the coupon.,200,Exactly 1020 TL,More than today,True,I do not know,Moderately serious,Female,29,90000 TL – 112000 TL,14,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 06:23:00,2022-10-14 06:34:45,IP Address,100,705,True,2022-10-14 06:34:46,R_3HSQZRKAW0vgYGH,anonymous,TR,0.800000011920929,I agree to participate in the research,No difference,0,20,0,20,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,20,0,20,No Difference,No,Pay your friend 50 TL for the coupon.,No difference,0,20,0,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,No,Pay your friend 50 TL for the coupon.,100,Exactly 1020 TL,I do not know,I do not know,I do not know,Very serious,Female,38,Prefer not to answer,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 06:17:48,2022-10-14 06:41:15,IP Address,100,1406,True,2022-10-14 06:41:16,R_QlYZt7xoSxIR0cx,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,20,20,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,20,20,20,B,No,Pay your friend 50 TL for the coupon.,B,40,40,40,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,No,Pay your friend 50 TL for the coupon.,10,I do not know,I do not know,False,I do not know,Absolutely serious,Female,52,Prefer not to answer,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-10 06:06:24,2022-10-14 06:41:27,IP Address,100,347702,True,2022-10-14 06:41:27,R_CdHLZOtiWm3lgRz,anonymous,TR,1,I agree to participate in the research,No difference,50,20,40,50,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,20,30,20,30,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,40,60,40,60,Yes,"Strongly disagree
+
+5
+",4,"Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,70,I do not know,I do not know,I do not know,I do not know,Slightly serious,Female,47,Less than 45000 TL,13,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 06:38:22,2022-10-14 06:47:54,IP Address,100,572,True,2022-10-14 06:47:55,R_12sCahtuf6fbGVF,anonymous,TR,0.800000011920929,I agree to participate in the research,A,20,25,40,45,100,3,3,3,No,20,25,40,45,A,Yes,Consider it a gift and not pay for the coupon.,B,20,25,40,45,No,3,3,3,B,Yes,Consider it a gift and not pay for the coupon.,50,More than 1020 TL,I do not know,I do not know,I do not know,Moderately serious,Female,35,Less than 45000 TL,30,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 07:08:34,2022-10-14 07:12:43,IP Address,100,248,True,2022-10-14 07:12:44,R_3EswyRJZYFQEQqe,anonymous,TR,1,I agree to participate in the research,A,0,20,0,40,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,20,0,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,40,0,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,Exactly 1020 TL,Exactly the same as today,I do not know,I do not know,Very serious,Female,28,90000 TL – 112000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 06:46:43,2022-10-14 07:31:25,IP Address,100,2681,True,2022-10-14 07:31:25,R_30v0rimUnRAuFRb,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,400,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,0,40,0,40,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,400,Less than 1020 TL,Exactly the same as today,True,There is no relationship,Very serious,Male,27,45000 TL – 68000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 07:42:47,2022-10-14 07:45:44,IP Address,100,177,True,2022-10-14 07:45:45,R_3n7OFitvv9qJp5s,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,20,20,20,20,20,3,2,"Strongly agree
+
+1
+",No,20,20,20,20,B,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,20,I do not know,I do not know,I do not know,I do not know,Moderately serious,Male,23,112000 TL – 135000 TL,18,Germany,Chinese,I allow you to use the responses I provided in this study.
+2022-10-14 10:14:15,2022-10-14 10:35:30,IP Address,100,1275,True,2022-10-14 10:35:31,R_32RfVW9sVunqTvZ,anonymous,TR,1,I agree to participate in the research,A,20,20,40,40,100,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,20,20,40,40,A,Yes,Pay your friend 50 TL for the coupon.,B,20,20,40,40,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Pay your friend 50 TL for the coupon.,50,I do not know,Less than today,False,I do not know,Moderately serious,Female,55,Less than 45000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 12:34:41,2022-10-14 12:42:25,IP Address,100,463,True,2022-10-14 12:42:25,R_2zHoC7ILpSnSfc9,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,20,40,40,50,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,20,20,40,40,A,No,Consider it a gift and not pay for the coupon.,B,20,20,40,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,No,Consider it a gift and not pay for the coupon.,50,More than 1020 TL,I do not know,True,I do not know,Moderately serious,Male,26,Less than 45000 TL,16,Turkey,Turkish,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-10-14 12:33:56,2022-10-14 13:05:07,IP Address,100,1871,True,2022-10-14 13:05:08,R_D04KOpW3MXn1MtP,anonymous,TR,1,I agree to participate in the research,A,20,20,20,20,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,20,20,40,40,A,Yes,Consider it a gift and not pay for the coupon.,B,20,40,40,40,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Pay your friend 50 TL for the coupon.,25,More than 1020 TL,Less than today,True,They collapse,Moderately serious,Female,110,45000 TL – 68000 TL,11,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 07:31:39,2022-10-15 00:40:49,IP Address,100,61749,True,2022-10-15 00:40:49,R_1DC5qhfTDTywQ40,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,40,0,80,400,3,3,3,Yes,0,40,0,80,A,No,Pay your friend 50 TL for the coupon.,B,0,40,0,80,Yes,3,3,3,A,No,Pay your friend 50 TL for the coupon.,50,I do not know,I do not know,I do not know,I do not know,Very serious,Male,23,Prefer not to answer,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-15 00:41:27,2022-10-15 01:33:28,IP Address,100,3120,True,2022-10-15 01:33:28,R_28RNlFkZBeUZ13Q,anonymous,TR,0.800000011920929,I agree to participate in the research,No difference,0,20,0,40,300,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,0,20,0,40,A,Yes,Pay your friend 50 TL for the coupon.,B,0,20,0,40,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,100,Less than 1020 TL,Less than today,False,I do not know,Very serious,Female,39,68000 TL – 90000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-15 02:03:08,2022-10-15 02:16:52,IP Address,100,824,True,2022-10-15 02:16:53,R_bHPjC5gahoZOGGJ,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,20,20,40,100,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,20,20,0,A,No,Pay your friend 50 TL for the coupon.,B,20,20,20,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Exactly the same as today,False,They collapse,Moderately serious,Female,22,112000 TL – 135000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-15 01:34:19,2022-10-15 02:18:35,IP Address,100,2656,True,2022-10-15 02:18:36,R_2rGHrvji7GYgWPB,anonymous,TR,0.800000011920929,I agree to participate in the research,A,20,20,40,40,300,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,No,20,20,40,40,A,Yes,Pay your friend 50 TL for the coupon.,A,20,20,40,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,Yes,Pay your friend 50 TL for the coupon.,100,I do not know,I do not know,I do not know,I do not know,Very serious,Female,41,More than  135000 TL,18,Turkey,Persian,I allow you to use the responses I provided in this study.
+2022-10-15 02:18:46,2022-10-15 02:27:21,IP Address,100,514,True,2022-10-15 02:27:21,R_yKZiWrhz0pATl17,anonymous,TR,0.800000011920929,I agree to participate in the research,A,50,100,40,120,70,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,50,70,70,100,A,Yes,Pay your friend 50 TL for the coupon.,B,40,70,70,120,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",3,No difference,Yes,Pay your friend 50 TL for the coupon.,100,More than 1020 TL,Exactly the same as today,False,They remain unchanged,Moderately serious,Male,37,68000 TL – 90000 TL,5,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-15 02:17:32,2022-10-15 02:36:12,IP Address,100,1119,True,2022-10-15 02:36:13,R_2VOwJga1YXdvPWc,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,20,20,20,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,40,40,40,No,"Strongly disagree
+
+5
+",2,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",30,More than 1020 TL,Less than today,False,I do not know,Moderately serious,Male,24,68000 TL – 90000 TL,19,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-15 02:32:30,2022-10-15 02:41:35,IP Address,100,544,True,2022-10-15 02:41:35,R_VKDqUuHw2U5mAjT,anonymous,TR,0.4000000059604645,I agree to participate in the research,A,20,20,40,40,500,2,2,"Strongly agree
+
+1
+",Yes,20,20,40,40,A,No,Pay your friend 50 TL for the coupon.,A,20,20,40,40,Yes,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend 50 TL for the coupon.,400,Exactly 1020 TL,Less than today,False,There is no relationship,Absolutely serious,Female,35,More than  135000 TL,19,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-15 06:01:23,2022-10-15 06:11:03,IP Address,100,579,True,2022-10-15 06:11:03,R_3OohRE5BP2Tw8T3,anonymous,TR,0.800000011920929,I agree to participate in the research,No difference,20,30,40,50,20,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,Yes,20,30,40,50,A,No,Consider it a gift and not pay for the coupon.,B,20,30,40,50,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,No,Consider it a gift and not pay for the coupon.,20,Less than 1020 TL,Less than today,I do not know,They remain unchanged,Moderately serious,Male,39,45000 TL – 68000 TL,11,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-15 08:04:08,2022-10-15 08:17:09,IP Address,100,780,True,2022-10-15 08:17:10,R_2tmvqe2PhIV2BSh,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,30,40,60,30,2,4,3,No,20,40,40,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,40,40,40,No,2,4,3,B,Yes,Pay your friend 50 TL for the coupon.,20,I do not know,I do not know,I do not know,I do not know,Very serious,Female,23,68000 TL – 90000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-15 10:07:02,2022-10-15 10:20:06,IP Address,100,783,True,2022-10-15 10:20:06,R_vcx6koTkFIeEvzH,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,20,0,40,50,3,3,3,Yes,20,30,40,50,No Difference,No,Consider it a gift and not pay for the coupon.,B,20,20,40,40,No,3,3,2,No difference,No,Pay your friend 50 TL for the coupon.,30,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Female,28,Prefer not to answer,21,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-09 00:56:30,2022-10-09 00:56:39,IP Address,3,9,False,2022-10-16 00:56:42,R_3QW7CpAJhLrGQVE,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-09 01:14:34,2022-10-09 01:18:02,IP Address,25,207,False,2022-10-16 01:18:02,R_11ao8wavxNUHUGO,anonymous,TR,1,I agree to participate in the research,A,20,30,40,40,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-09 03:31:31,2022-10-09 03:31:53,IP Address,3,22,False,2022-10-16 03:31:55,R_WvAjO9kVoWp0LNn,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-09 12:18:12,2022-10-09 12:23:52,IP Address,53,339,False,2022-10-16 12:23:55,R_3EGdkkHuFaHtpqP,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,20,40,40,0,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,20,20,40,40,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",50,,,,,,,,,,,,
+2022-10-09 21:08:18,2022-10-09 21:09:09,IP Address,8,51,False,2022-10-16 21:09:14,R_27UzaxrYj3rDf2j,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-17 06:56:30,2022-10-17 07:00:13,IP Address,100,222,True,2022-10-17 07:00:13,R_3FRj67mXCCO3GZu,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,20,20,40,40,A,Yes,Pay your friend 50 TL for the coupon.,A,20,20,40,40,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Pay your friend 50 TL for the coupon.,100,I do not know,I do not know,I do not know,They collapse,Very serious,Prefer not to say,22,112000 TL – 135000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-17 07:00:21,2022-10-17 07:09:04,IP Address,100,523,True,2022-10-17 07:09:04,R_3nc7I7dPmJfsKMB,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,10,30,40,60,60,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,10,40,50,60,A,No,Consider it a gift and not pay for the coupon.,A,10,40,50,60,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,Consider it a gift and not pay for the coupon.,60,Exactly 1020 TL,Less than today,False,I do not know,Very serious,Female,22,90000 TL – 112000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-17 07:10:35,2022-10-17 07:28:29,IP Address,100,1074,True,2022-10-17 07:28:30,R_1k0oDEfNDcHb0F8,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,40,40,40,500,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,20,40,80,100,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,40,40,80,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,500,I do not know,I do not know,I do not know,I do not know,Moderately serious,Female,33,Prefer not to answer,17,Turkey,Russian,I allow you to use the responses I provided in this study.
+2022-10-17 07:27:38,2022-10-17 07:30:56,IP Address,100,198,True,2022-10-17 07:30:57,R_3piosFda2GJMLxD,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,500,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,20,0,40,A,Yes,Pay your friend 50 TL for the coupon.,A,0,20,0,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,200,I do not know,I do not know,True,I do not know,Very serious,Female,48,112000 TL – 135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 04:39:41,2022-10-18 02:05:16,IP Address,100,336334,True,2022-10-18 02:05:16,R_2XnSXMf2nDVRTxW,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,50,80,50,100,80,4,4,"Strongly disagree
+
+5
+",No,40,80,50,100,No Difference,Yes,Consider it a gift and not pay for the coupon.,A,50,80,60,100,No,4,4,"Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,30,I do not know,Less than today,I do not know,They remain unchanged,Very serious,Prefer not to say,18,68000 TL – 90000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-18 02:23:52,2022-10-18 02:40:50,IP Address,100,1017,True,2022-10-18 02:40:51,R_1mEoWZTe6Q1CJ72,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,100,200,200,500,200,3,4,2,Yes,100,200,200,500,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,100,200,200,500,No,3,4,2,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",50,More than 1020 TL,Less than today,False,I do not know,Very serious,Male,28,Less than 45000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-18 02:36:13,2022-10-18 02:43:44,IP Address,100,451,True,2022-10-18 02:43:44,R_2ScLFKaPYJj9jVj,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,30,40,60,80,1000,3,3,3,Yes,30,40,60,80,No Difference,Yes,Consider it a gift and not pay for the coupon.,A,30,40,60,80,No,3,3,3,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",150,Exactly 1020 TL,Less than today,I do not know,There is no relationship,Absolutely serious,Male,22,Less than 45000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-18 12:43:03,2022-10-18 12:50:54,IP Address,100,471,True,2022-10-18 12:50:55,R_3Rez7LA4qxrpIoJ,anonymous,TR,1,I agree to participate in the research,No difference,0,26,0,50,40,3,3,3,Yes,0,25,0,50,No Difference,Yes,Consider it a gift and not pay for the coupon.,No difference,0,39,0,39,Yes,3,3,3,No difference,Yes,Consider it a gift and not pay for the coupon.,30,More than 1020 TL,Less than today,False,They collapse,Very serious,Male,38,More than  135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-18 12:37:55,2022-10-18 13:58:29,IP Address,100,4834,True,2022-10-18 13:58:31,R_3nuA2RqO3nX7tHi,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,20,20,100,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",Yes,20,20,40,40,A,No,Pay your friend 50 TL for the coupon.,B,20,40,40,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend 50 TL for the coupon.,10,More than 1020 TL,Less than today,False,There is no relationship,Very serious,Female,59,Less than 45000 TL,12,Turkey,Turkish,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-10-11 14:52:52,2022-10-11 14:55:10,IP Address,3,137,False,2022-10-18 14:55:15,R_3D5zS6PWrj6ntPM,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 00:43:33,2022-10-19 00:50:56,IP Address,100,443,True,2022-10-19 00:50:57,R_1q3frOdOWOpjyZB,anonymous,TR,1,I agree to participate in the research,B,0,20,0,40,100,3,3,"Strongly agree
+
+1
+",No,0,20,0,40,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,40,No,3,3,"Strongly agree
+
+1
+",A,Yes,Consider it a gift and not pay for the coupon.,100,Less than 1020 TL,Less than today,False,There is no relationship,Very serious,Male,37,More than  135000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-12 02:12:15,2022-10-12 02:14:42,IP Address,19,147,False,2022-10-19 02:14:46,R_6haO2Dj4shGwvPH,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,No difference,20,50,40,100,No,,,,,,,,,,,,,,,,,,,
+2022-10-12 02:25:26,2022-10-12 02:29:04,IP Address,61,218,False,2022-10-19 02:29:10,R_1N2M55AxS1x5ft4,anonymous,TR,1,I agree to participate in the research,No difference,20,20,40,40,200,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,20,40,30,40,No Difference,No,,No difference,20,20,40,40,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,No,Pay your friend 50 TL for the coupon.,300,,,,,,,,,,,,
+2022-10-19 02:55:50,2022-10-19 03:16:22,IP Address,100,1231,True,2022-10-19 03:16:22,R_3nlbjFj7UGHfZRv,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,20,30,40,60,100,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,0,30,30,60,A,Yes,Pay your friend 50 TL for the coupon.,B,20,40,20,60,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,Pay your friend 50 TL for the coupon.,40,More than 1020 TL,Less than today,True,I do not know,Moderately serious,Male,42,45000 TL – 68000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-12 03:18:44,2022-10-12 03:26:47,IP Address,50,483,False,2022-10-19 03:26:48,R_3MQeTqbbYhIvpsl,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,40,40,60,60,A,Yes,Pay your friend 50 TL for the coupon.,B,40,40,60,60,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,Yes,Pay your friend 50 TL for the coupon.,50,,,,,,,,,,,,
+2022-10-19 03:54:28,2022-10-19 04:08:14,IP Address,100,825,True,2022-10-19 04:08:14,R_3qIm87JCHNXlrwp,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,40,40,50,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,20,20,40,40,A,Yes,Consider it a gift and not pay for the coupon.,B,20,20,40,40,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,50,I do not know,Less than today,False,I do not know,Moderately serious,Female,60,More than  135000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-19 07:53:24,2022-10-19 08:05:19,IP Address,100,714,True,2022-10-19 08:05:20,R_8Idq7YOYibLVsfD,anonymous,TR,1,I agree to participate in the research,B,25,35,45,55,500,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",Yes,6000,18000,31,69696969,A,No,Pay your friend 50 TL for the coupon.,B,25,35,45,50,Yes,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",A,No,Consider it a gift and not pay for the coupon.,400,I do not know,More than today,False,I do not know,Very serious,Male,21,Prefer not to answer,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-19 08:44:13,2022-10-19 08:55:06,IP Address,100,652,True,2022-10-19 08:55:06,R_2TSIrYKdtUup8I3,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,0,0,0,0,5000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,500,700,0,0,A,Yes,Pay your friend 50 TL for the coupon.,A,0,0,0,0,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Pay your friend 50 TL for the coupon.,500,More than 1020 TL,Less than today,False,They collapse,Very serious,Male,33,More than  135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-19 12:40:58,2022-10-19 12:49:58,IP Address,100,540,True,2022-10-19 12:49:59,R_ZysL3trnERv1s5j,anonymous,TR,1,I agree to participate in the research,A,0,50,0,70,150,4,2,3,Yes,20,50,40,80,A,No,Consider it a gift and not pay for the coupon.,B,20,50,40,80,Yes,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,20,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Female,22,Prefer not to answer,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-19 13:37:59,2022-10-19 13:42:30,IP Address,100,271,True,2022-10-19 13:42:32,R_1cZVUFIe783GjmF,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,100,0,200,100,4,4,"Strongly disagree
+
+5
+",Yes,0,40,0,50,A,No,Consider it a gift and not pay for the coupon.,B,0,40,0,50,Yes,4,4,"Strongly disagree
+
+5
+",A,No,Consider it a gift and not pay for the coupon.,50,I do not know,I do not know,I do not know,I do not know,Very serious,Female,21,Prefer not to answer,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-19 23:34:17,2022-10-19 23:44:50,IP Address,100,633,True,2022-10-19 23:44:51,R_3Of8DNGhbHggynw,anonymous,TR,1,I agree to participate in the research,A,20,20,40,40,50,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,30,40,40,40,A,No,Pay your friend 50 TL for the coupon.,B,30,40,40,40,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend 50 TL for the coupon.,50,I do not know,I do not know,I do not know,I do not know,Very serious,Female,49,68000 TL – 90000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-19 12:52:43,2022-10-20 00:59:41,IP Address,100,43618,True,2022-10-20 00:59:42,R_3hELpY44Fppb3NL,anonymous,TR,1,I agree to participate in the research,B,0,20,0,40,50,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,20,0,40,A,Yes,Pay your friend 50 TL for the coupon.,B,20,20,40,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,Yes,Pay your friend 50 TL for the coupon.,20,More than 1020 TL,Less than today,False,I do not know,Moderately serious,Male,58,112000 TL – 135000 TL,11,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 01:17:54,2022-10-13 01:18:34,IP Address,3,40,False,2022-10-20 01:18:38,R_28V6rYFzkFXwQJm,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-13 01:48:15,2022-10-13 01:53:14,IP Address,11,299,False,2022-10-20 01:53:15,R_3FRKO5YuqzSDO9q,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-13 02:18:51,2022-10-13 02:25:05,IP Address,42,373,False,2022-10-20 02:25:10,R_vPPRcPVGmm3OPyp,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,20,20,40,40,No Difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,40,40,,,,,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",40,,,,,,,,,,,,
+2022-10-19 02:32:19,2022-10-20 02:59:10,IP Address,100,88011,True,2022-10-20 02:59:11,R_din773FlonRD96N,anonymous,TR,1,I agree to participate in the research,A,20,20,20,20,200,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,20,40,40,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,I do not know,Less than today,I do not know,I do not know,Very serious,Female,57,Less than 45000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-20 11:04:50,2022-10-20 11:18:34,IP Address,100,823,True,2022-10-20 11:18:34,R_2pYQ565QkVY7wkB,anonymous,TR,1,I agree to participate in the research,A,0,0,0,40,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,0,20,40,40,A,Yes,Pay your friend 50 TL for the coupon.,B,0,20,40,40,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Pay your friend 50 TL for the coupon.,100,More than 1020 TL,Less than today,False,There is no relationship,Moderately serious,Male,24,45000 TL – 68000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-20 11:35:10,2022-10-20 11:52:52,IP Address,100,1061,True,2022-10-20 11:52:53,R_1MQFoFgYvR62s9g,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,100,3,"Strongly disagree
+
+5
+",3,Yes,0,20,0,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,0,20,0,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",30,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,44,More than  135000 TL,4,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-19 03:44:16,2022-10-20 15:46:55,IP Address,100,129759,True,2022-10-20 15:46:55,R_zdvQGJT0NlG23Kx,anonymous,TR,1,I agree to participate in the research,No difference,20,70,40,90,100,3,2,3,No,20,70,40,90,No Difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,70,40,90,No,"Strongly disagree
+
+5
+",3,3,B,No,Pay your friend 50 TL for the coupon.,50,Exactly 1020 TL,Less than today,True,I do not know,Very serious,Female,18,Prefer not to answer,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-20 23:36:01,2022-10-20 23:48:40,IP Address,100,758,True,2022-10-20 23:48:40,R_3ltpHO0RpEYK15T,anonymous,TR,1,I agree to participate in the research,A,20,30,30,40,200,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,No,20,30,40,50,A,Yes,Pay your friend 50 TL for the coupon.,B,30,40,40,50,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,Yes,Pay your friend 50 TL for the coupon.,100,More than 1020 TL,Less than today,False,They remain unchanged,Very serious,Female,47,68000 TL – 90000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-20 23:49:11,2022-10-20 23:57:22,IP Address,100,491,True,2022-10-20 23:57:23,R_3CHQV997JQ8p1rJ,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,20,50,3,3,3,No,0,20,0,20,B,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,No,4,3,3,B,Yes,Pay your friend 50 TL for the coupon.,50,I do not know,I do not know,I do not know,I do not know,Moderately serious,Male,41,112000 TL – 135000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-21 00:31:23,2022-10-21 00:57:07,IP Address,100,1544,True,2022-10-21 00:57:09,R_1r1faoVNRD0aPMP,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,20,20,40,40,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,20,40,40,A,Yes,Consider it a gift and not pay for the coupon.,A,20,20,40,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,They collapse,Moderately serious,Female,50,112000 TL – 135000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-21 01:03:35,2022-10-21 01:30:13,IP Address,100,1597,True,2022-10-21 01:30:13,R_22z95QnzgGgwm8H,anonymous,TR,1,I agree to participate in the research,A,20,20,40,40,20,4,3,3,Yes,20,20,40,40,A,No,Consider it a gift and not pay for the coupon.,A,20,20,40,40,Yes,3,2,3,No difference,No,Consider it a gift and not pay for the coupon.,20,More than 1020 TL,Less than today,False,They collapse,Slightly serious,Male,50,Prefer not to answer,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-13 11:59:36,2022-10-14 01:56:39,IP Address,81,50222,False,2022-10-21 01:56:41,R_3qZKqNsAetFjv38,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,0,20,0,40,300,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,0,20,0,40,No Difference,Yes,Consider it a gift and not pay for the coupon.,A,0,20,0,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend 50 TL for the coupon.,150,More than 1020 TL,Less than today,I do not know,I do not know,Moderately serious,,,,,,,
+2022-10-21 01:21:29,2022-10-21 02:09:39,IP Address,100,2889,True,2022-10-21 02:09:40,R_2VKlPB95XhHcSiw,anonymous,TR,0.800000011920929,I agree to participate in the research,No difference,0,20,0,40,50,3,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,20,0,40,No Difference,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,40,No,3,3,3,B,Yes,Consider it a gift and not pay for the coupon.,50,More than 1020 TL,Less than today,False,They collapse,Very serious,Male,63,More than  135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 02:42:11,2022-10-14 02:45:54,IP Address,8,222,False,2022-10-21 02:45:55,R_2dirubNQEvU1Hh7,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-14 05:51:12,2022-10-14 05:55:33,IP Address,53,261,False,2022-10-21 05:55:41,R_3DpzJflQtpz3ZG9,anonymous,TR,1,I agree to participate in the research,A,50,70,40,60,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,50,60,30,40,No Difference,No,Consider it a gift and not pay for the coupon.,No difference,,,,,,,,,B,No,Pay your friend 50 TL for the coupon.,50,,,,,,,,,,,,
+2022-10-21 12:43:01,2022-10-21 13:11:56,IP Address,100,1734,True,2022-10-21 13:11:56,R_pGj1cTZXBqPVyBr,anonymous,TR,1,I agree to participate in the research,No difference,20,40,20,40,50,3,3,3,No,20,20,20,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,40,20,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",30,More than 1020 TL,Less than today,False,They collapse,Very serious,Male,65,112000 TL – 135000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-14 14:26:38,2022-10-14 14:27:24,IP Address,8,46,False,2022-10-21 14:27:29,R_3eeP63qnsXCzomj,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-14 14:11:36,2022-10-14 14:40:35,IP Address,19,1738,False,2022-10-21 14:40:45,R_33vCP2RhsHNfczw,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,20,20,40,40,Yes,,,,,,,,,,,,,,,,,,,
+2022-10-15 09:21:11,2022-10-15 09:25:31,IP Address,36,260,False,2022-10-22 09:25:34,R_vl4xttFSTaonwA1,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,30,20,50,30,15,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,,,,,,,,,,,,,,,,,B,No,Pay your friend 50 TL for the coupon.,8,,,,,,,,,,,,
+2022-10-16 15:34:17,2022-10-16 15:44:42,IP Address,97,625,False,2022-10-23 15:44:50,R_31LRljJvD0LKD05,anonymous,TR,1,I agree to participate in the research,A,30,20,40,50,100,3,3,3,No,20,30,40,50,A,Yes,Consider it a gift and not pay for the coupon.,B,20,30,40,50,No,3,3,3,B,Yes,Pay your friend 50 TL for the coupon.,40,Less than 1020 TL,Less than today,False,I do not know,Very serious,Male,35,More than  135000 TL,16,Turkey,Turkish,
+2022-10-24 05:33:32,2022-10-24 05:36:50,IP Address,100,197,True,2022-10-24 05:36:51,R_3Rg9jvVtq4NCWua,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,0,0,0,0,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,0,0,0,A,Yes,Pay your friend 50 TL for the coupon.,B,0,0,0,0,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,150,I do not know,I do not know,I do not know,I do not know,Very serious,Prefer not to say,35,112000 TL – 135000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-24 05:36:53,2022-10-24 05:42:15,IP Address,100,321,True,2022-10-24 05:42:15,R_2WJd8haDU4XWkI0,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,0,40,0,80,150,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,0,40,0,80,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,40,0,80,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",80,Exactly 1020 TL,More than today,False,They collapse,Very serious,Female,28,68000 TL – 90000 TL,14,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-24 05:44:40,2022-10-24 05:47:15,IP Address,100,155,True,2022-10-24 05:47:17,R_3lKB54GzZ3lV2vs,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,20,20,40,40,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,20,40,40,A,No,Consider it a gift and not pay for the coupon.,B,0,20,0,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,100,I do not know,More than today,False,I do not know,Very serious,Male,43,112000 TL – 135000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-24 05:47:17,2022-10-24 05:49:56,IP Address,100,158,True,2022-10-24 05:49:56,R_1r9b8H8USKZWczZ,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,40,40,80,400,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,20,40,40,80,A,Yes,Pay your friend 50 TL for the coupon.,B,20,40,40,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,150,Less than 1020 TL,More than today,True,They remain unchanged,Moderately serious,Non-binary / third gender,25,90000 TL – 112000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-24 05:49:58,2022-10-24 05:54:04,IP Address,100,246,True,2022-10-24 05:54:04,R_3KvVhOHH5FIKBWn,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,500,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,20,20,40,40,B,Yes,Pay your friend 50 TL for the coupon.,B,20,20,40,40,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 50 TL for the coupon.,200,I do not know,More than today,False,They remain unchanged,Very serious,Non-binary / third gender,52,More than  135000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-24 05:54:18,2022-10-24 06:05:22,IP Address,100,663,True,2022-10-24 06:05:23,R_3oZzovbmQimyd4g,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,40,50,80,100,300,4,4,3,No,40,50,80,100,A,Yes,Pay your friend 50 TL for the coupon.,B,40,50,80,100,No,3,3,3,B,Yes,Pay your friend 50 TL for the coupon.,200,More than 1020 TL,Less than today,False,I do not know,Moderately serious,Male,22,45000 TL – 68000 TL,14,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-24 06:29:20,2022-10-24 06:32:04,IP Address,100,163,True,2022-10-24 06:32:05,R_Rk0TROipB60WInf,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,20,40,40,A,Yes,Pay your friend 50 TL for the coupon.,B,20,20,40,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,Pay your friend 50 TL for the coupon.,150,Less than 1020 TL,More than today,False,They collapse,Very serious,Female,54,More than  135000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-17 07:33:19,2022-10-17 07:39:18,IP Address,14,359,False,2022-10-24 08:34:34,R_214URnrQyckKkL8,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,30,50,50,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-18 02:05:37,2022-10-18 02:10:14,IP Address,42,276,False,2022-10-25 02:28:33,R_3e7X9fnMO3GSwSn,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,30,0,50,200,4,4,3,Yes,0,30,0,50,B,Yes,Consider it a gift and not pay for the coupon.,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 06:16:47,2022-10-25 06:24:42,IP Address,100,475,True,2022-10-25 06:24:42,R_11YCMC3GIs7JH7A,anonymous,EN,1,I agree to participate in the research,A,20,30,40,60,50,"Strongly agree
+
+1
+",4,4,No,20,40,40,60,A,Yes,Pay your friend 50 TL for the coupon.,B,40,40,40,60,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,Yes,Pay your friend 50 TL for the coupon.,20,More than 1020 TL,Less than today,False,I do not know,Very serious,Male,26,More than  135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-25 06:49:49,2022-10-25 07:04:57,IP Address,100,907,True,2022-10-25 07:04:57,R_3r1WDFq1GqBPwg0,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,20,50,40,100,10,2,3,"Strongly disagree
+
+5
+",No,20,50,40,100,A,Yes,Consider it a gift and not pay for the coupon.,B,20,50,40,100,No,2,3,4,B,Yes,Consider it a gift and not pay for the coupon.,15,More than 1020 TL,Less than today,I do not know,They remain unchanged,Moderately serious,Male,26,More than  135000 TL,24,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-25 07:33:19,2022-10-25 07:44:08,IP Address,100,649,True,2022-10-25 07:44:08,R_2V8CsphUfkW0qsH,anonymous,TR,1,I agree to participate in the research,A,20,40,20,60,130,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,50,40,70,A,Yes,Consider it a gift and not pay for the coupon.,B,20,40,40,60,No,"Strongly disagree
+
+5
+",4,"Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,40,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Male,20,68000 TL – 90000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-25 08:29:03,2022-10-25 08:38:40,IP Address,100,576,True,2022-10-25 08:38:40,R_28NXzcLPp5QSMfp,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,10,15,20,30,60,2,"Strongly disagree
+
+5
+",2,Yes,15,18,25,30,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,18,25,30,Yes,3,"Strongly disagree
+
+5
+",2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",35,More than 1020 TL,Less than today,False,I do not know,Very serious,Male,20,More than  135000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-25 09:53:49,2022-10-25 10:19:51,IP Address,100,1561,True,2022-10-25 10:19:51,R_2ZHnQ3y2QX7CpA6,anonymous,TR,1,I agree to participate in the research,A,0,50,40,100,150,2,"Strongly disagree
+
+5
+",3,Yes,20,100,40,150,A,No,Pay your friend 50 TL for the coupon.,B,30,100,40,200,No,4,2,"Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,50,Less than 1020 TL,I do not know,True,I do not know,Very serious,Female,20,Prefer not to answer,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-18 10:39:25,2022-10-18 10:41:42,IP Address,14,136,False,2022-10-25 11:16:02,R_3Hwc0dYkKuJvhun,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,,,,,,,,,,,,,,
+2022-10-25 10:35:24,2022-10-25 11:52:38,IP Address,100,4633,True,2022-10-25 11:52:40,R_1LhtqkYjSoI1e2h,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,25,35,45,60,20,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,25,35,45,55,A,No,Pay your friend 50 TL for the coupon.,B,25,40,45,55,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend 50 TL for the coupon.,10,More than 1020 TL,Less than today,I do not know,I do not know,Absolutely serious,Male,21,Less than 45000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-25 11:49:58,2022-10-25 12:05:17,IP Address,100,919,True,2022-10-25 12:05:17,R_1o89stH82e50nc0,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,40,50,150,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,30,50,45,70,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,45,40,50,No,4,2,3,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",300,I do not know,I do not know,True,I do not know,Moderately serious,Prefer not to say,18,Less than 45000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-25 12:49:38,2022-10-25 13:07:34,IP Address,100,1076,True,2022-10-25 13:07:34,R_10Vj09pK83d3bdC,anonymous,TR,1,I agree to participate in the research,A,0,0,0,0,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,30,0,50,A,Yes,Consider it a gift and not pay for the coupon.,B,0,30,0,50,No,4,2,2,B,Yes,Pay your friend 50 TL for the coupon.,10,I do not know,I do not know,False,I do not know,Very serious,Female,24,More than  135000 TL,16,Cyprus,Turkish,I allow you to use the responses I provided in this study.
+2022-10-18 13:20:48,2022-10-18 13:29:03,IP Address,50,495,False,2022-10-25 13:29:06,R_20UOpHQKlFHjVia,anonymous,TR,1,I agree to participate in the research,B,,,,,,,,,,20,50,40,100,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,50,40,100,Yes,2,4,2,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,,,,,,,,,,,,
+2022-10-25 13:21:33,2022-10-25 13:36:52,IP Address,100,919,True,2022-10-25 13:36:54,R_2zT20yjtBy1og9e,anonymous,TR,1,I agree to participate in the research,A,0,50,0,100,70,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,20,50,40,100,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,50,40,100,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,27,More than  135000 TL,21,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-25 14:08:30,2022-10-25 14:18:11,IP Address,100,581,True,2022-10-25 14:18:13,R_1mt5PXSAMzc5tKx,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,40,20,40,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,40,40,80,A,Yes,Consider it a gift and not pay for the coupon.,B,20,40,40,80,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,750,More than 1020 TL,Less than today,False,They collapse,Moderately serious,Male,21,45000 TL – 68000 TL,14,Malta,Turkish,I allow you to use the responses I provided in this study.
+2022-10-18 15:43:14,2022-10-18 15:45:05,IP Address,11,111,False,2022-10-25 15:45:09,R_9EOEB1I8KublPkl,anonymous,TR,1,I agree to participate in the research,No difference,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 17:18:43,2022-10-25 17:37:09,IP Address,100,1105,True,2022-10-25 17:37:10,R_1kGhFxOtyqusM5H,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,40,0,60,300,2,4,3,No,0,30,0,50,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,40,0,60,No,4,2,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",60,More than 1020 TL,Less than today,False,I do not know,Very serious,Male,21,45000 TL – 68000 TL,15,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-25 18:52:09,2022-10-25 19:04:07,IP Address,100,717,True,2022-10-25 19:04:09,R_sd2qnXoe2HX1CSd,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,20,4,2,2,Yes,20,20,20,30,No Difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,30,20,40,Yes,4,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than 1020 TL,Less than today,False,They collapse,Very serious,Non-binary / third gender,26,More than  135000 TL,16,United States of America,Turkish,I allow you to use the responses I provided in this study.
+2022-10-19 01:18:36,2022-10-19 01:19:12,Spam,3,35,False,2022-10-26 01:19:32,R_2U5YMKnwPUwH6rt,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 04:02:26,2022-10-19 04:02:57,IP Address,6,30,False,2022-10-26 04:59:47,R_qQH1df8lVud8mHL,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 09:16:04,2022-10-19 13:43:29,IP Address,11,16045,False,2022-10-26 13:43:30,R_27JeV8NOG0dpOJP,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 13:33:02,2022-10-19 13:44:35,IP Address,97,693,False,2022-10-26 13:44:38,R_tR66lvrS35rdNCx,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,20,0,20,150,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,20,0,20,A,No,Consider it a gift and not pay for the coupon.,B,20,40,40,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,50,Exactly 1020 TL,Less than today,I do not know,I do not know,Absolutely serious,Female,36,Less than 45000 TL,18,Turkey,Turkish,
+2022-10-27 02:54:11,2022-10-27 03:02:55,IP Address,100,523,True,2022-10-27 03:02:55,R_1LXWP9QSRFi5m0K,anonymous,EN,1,I agree to participate in the research,No difference,0,20,0,40,50,"Strongly agree
+
+1
+",3,2,No,20,20,40,40,A,Yes,Pay your friend 50 TL for the coupon.,A,40,40,40,40,No,3,3,"Strongly agree
+
+1
+",B,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,They collapse,Very serious,Male,35,More than  135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 02:46:06,2022-10-27 03:04:10,IP Address,100,1083,True,2022-10-27 03:04:10,R_1LqyuqmwO6IqWvp,anonymous,EN,1,I agree to participate in the research,A,0,20,0,40,40,"Strongly agree
+
+1
+",4,4,Yes,20,20,40,40,A,Yes,Consider it a gift and not pay for the coupon.,B,20,35,40,40,No,4,2,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,25,More than 1020 TL,Less than today,False,They collapse,Very serious,Male,26,112000 TL – 135000 TL,18,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 02:43:19,2022-10-27 03:12:18,IP Address,100,1738,True,2022-10-27 03:12:20,R_3qNnKqbZySBApnr,anonymous,EN,1,I agree to participate in the research,No difference,20,20,40,40,0,4,3,4,Yes,20,20,40,40,No Difference,Yes,Consider it a gift and not pay for the coupon.,A,20,40,40,40,Yes,"Strongly disagree
+
+5
+",2,4,B,Yes,Consider it a gift and not pay for the coupon.,100,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Male,30,More than  135000 TL,20,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 03:01:58,2022-10-27 03:12:55,IP Address,100,656,True,2022-10-27 03:12:55,R_1Kjytuu3VVfBMBS,anonymous,TR,1,I agree to participate in the research,A,0,20,0,40,150,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,20,20,40,40,A,Yes,Consider it a gift and not pay for the coupon.,B,20,40,20,40,No,3,"Strongly agree
+
+1
+",2,A,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,I do not know,I do not know,Very serious,Female,56,90000 TL – 112000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 03:45:51,2022-10-27 03:54:48,IP Address,100,537,True,2022-10-27 03:54:49,R_2ckE3Ggj9G1Fjiq,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,35,45,65,75,90,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",No,35,45,75,85,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,40,40,80,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",50,More than 1020 TL,Less than today,False,There is no relationship,Absolutely serious,Male,18,Prefer not to answer,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 04:04:39,2022-10-27 04:04:57,IP Address,100,18,True,2022-10-27 04:04:58,R_2VPAnjpzyDRwP13,anonymous,TR,0.8999999761581421,I do NOT agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 04:07:11,2022-10-27 04:22:19,IP Address,100,907,True,2022-10-27 04:22:19,R_d5S47nZpXq4Q6UV,anonymous,TR,1,I agree to participate in the research,A,0,0,0,0,0,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,0,0,0,B,Yes,Pay your friend 50 TL for the coupon.,A,0,0,0,0,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 50 TL for the coupon.,0,More than 1020 TL,Less than today,False,I do not know,Very serious,Male,18,90000 TL – 112000 TL,14,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 04:16:08,2022-10-27 04:34:46,IP Address,100,1118,True,2022-10-27 04:34:48,R_1d64tSg3xkINqo7,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,50,0,100,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,50,40,100,A,Yes,Consider it a gift and not pay for the coupon.,B,20,40,40,80,No,4,2,4,B,No,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,I do not know,Absolutely serious,Male,24,More than  135000 TL,16,Romania,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 04:31:51,2022-10-27 04:49:10,IP Address,100,1038,True,2022-10-27 04:49:11,R_1DNokVKsDQbiEwg,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,20,20,20,200,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,20,20,40,40,B,Yes,Consider it a gift and not pay for the coupon.,B,20,20,40,40,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,200,More than 1020 TL,Less than today,False,I do not know,Moderately serious,Male,19,Less than 45000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 05:52:20,2022-10-27 06:03:22,IP Address,100,662,True,2022-10-27 06:03:23,R_2c7KC7mgHNGrs7k,anonymous,TR,0.6000000238418579,I agree to participate in the research,A,0,20,0,40,100,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,Yes,0,20,0,40,A,Yes,Consider it a gift and not pay for the coupon.,A,20,40,20,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,No,Pay your friend 50 TL for the coupon.,40,More than 1020 TL,Less than today,I do not know,I do not know,Absolutely serious,Prefer not to say,999,Prefer not to answer,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 06:06:24,2022-10-27 06:14:52,IP Address,100,508,True,2022-10-27 06:14:54,R_3nAXaAdnmfJbq2P,anonymous,TR,1,I agree to participate in the research,A,20,40,40,60,100,4,2,"Strongly disagree
+
+5
+",Yes,20,40,40,60,A,Yes,Pay your friend 50 TL for the coupon.,B,20,40,40,60,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,A,Yes,Pay your friend 50 TL for the coupon.,100,More than 1020 TL,Less than today,True,There is no relationship,Very serious,Male,25,112000 TL – 135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 06:40:03,2022-10-27 06:53:09,IP Address,100,785,True,2022-10-27 06:53:09,R_3qrP2m0jOMeIs9d,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,30,40,50,100,3,2,4,No,30,40,50,60,A,Yes,Pay your friend 50 TL for the coupon.,A,30,40,50,60,No,2,2,3,B,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,I do not know,Very serious,Male,46,Prefer not to answer,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 06:57:20,2022-10-27 07:06:58,IP Address,100,578,True,2022-10-27 07:06:58,R_2f0QqodCgsGTULd,anonymous,TR,1,I agree to participate in the research,B,0,20,0,40,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,30,40,60,B,Yes,Pay your friend 50 TL for the coupon.,B,20,40,40,60,Yes,3,2,4,B,Yes,Pay your friend 50 TL for the coupon.,50,More than 1020 TL,Less than today,False,They collapse,Very serious,Male,39,45000 TL – 68000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 07:02:12,2022-10-27 07:13:26,IP Address,100,674,True,2022-10-27 07:13:27,R_2SDNJdw4vQtj0MQ,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,0,0,0,30,2,"Strongly disagree
+
+5
+",2,Yes,0,25,40,50,A,Yes,Consider it a gift and not pay for the coupon.,B,25,30,40,45,Yes,2,2,2,B,No,Consider it a gift and not pay for the coupon.,30,More than 1020 TL,Exactly the same as today,False,I do not know,Very serious,Male,18,Less than 45000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 07:26:15,2022-10-27 07:35:36,IP Address,100,560,True,2022-10-27 07:35:37,R_wSs23Xb5xmEO7yV,anonymous,TR,1,I agree to participate in the research,A,0,30,0,50,200,"Strongly disagree
+
+5
+",2,3,No,20,30,20,50,A,No,Pay your friend 50 TL for the coupon.,B,20,30,20,50,No,"Strongly disagree
+
+5
+",2,3,No difference,No,Pay your friend 50 TL for the coupon.,30,More than 1020 TL,Less than today,False,They collapse,Moderately serious,Male,27,112000 TL – 135000 TL,17,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-27 08:47:43,2022-10-27 09:07:19,IP Address,100,1175,True,2022-10-27 09:07:19,R_1GNtZOVSnj86KUq,anonymous,TR,1,I agree to participate in the research,B,0,20,0,40,250,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,0,20,0,40,A,Yes,Consider it a gift and not pay for the coupon.,B,0,40,0,40,No,2,3,2,B,Yes,Pay your friend 50 TL for the coupon.,150,More than 1020 TL,Less than today,False,They collapse,Moderately serious,Male,25,More than  135000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-20 11:17:10,2022-10-20 11:25:54,IP Address,67,524,False,2022-10-27 11:26:04,R_2QzWo4KG9WmVmHf,anonymous,TR,1,I agree to participate in the research,A,0,0,0,0,50,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",2,No,0,20,0,20,No Difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,20,0,20,No,3,2,"Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",40,,,,,,,,,,,,
+2022-10-27 12:07:32,2022-10-27 12:19:25,IP Address,100,713,True,2022-10-27 12:19:26,R_31KK6BZnh1Qrf8g,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,50,20,50,75,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,50,20,50,A,Yes,Consider it a gift and not pay for the coupon.,B,20,50,20,50,Yes,2,2,"Strongly disagree
+
+5
+",A,Yes,Consider it a gift and not pay for the coupon.,40,More than 1020 TL,Less than today,I do not know,I do not know,Moderately serious,Male,19,112000 TL – 135000 TL,13,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-20 23:54:00,2022-10-20 23:54:25,IP Address,8,25,False,2022-10-27 23:54:36,R_sj6kmvgwwts0UqR,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-21 00:14:24,2022-10-21 00:17:35,IP Address,22,190,False,2022-10-28 00:17:38,R_1Hco2kN8MTzdlcj,anonymous,TR,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,20,,,,,,,,,,,,
+2022-10-21 00:10:47,2022-10-21 00:30:11,IP Address,58,1163,False,2022-10-28 00:30:11,R_Or0VkWXTgYrZNkt,anonymous,TR,1,I agree to participate in the research,A,0,20,0,40,60,,,,,20,20,20,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,40,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",60,,,,,,,,,,,,
+2022-10-21 00:30:42,2022-10-21 00:37:40,IP Address,50,417,False,2022-10-28 00:37:42,R_3hxo8lhv0H3nZsB,anonymous,TR,1,I agree to participate in the research,A,20,25,40,45,500,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,,,,,,,,A,20,25,40,45,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Pay your friend 50 TL for the coupon.,500,,,,,,,,,,,,
+2022-10-28 07:18:14,2022-10-28 07:20:54,IP Address,100,159,True,2022-10-28 07:20:54,R_1qaNYxSzOBYKdhx,anonymous,TR,1,I agree to participate in the research,A,20,20,40,40,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,20,20,40,40,A,Yes,Pay your friend 50 TL for the coupon.,A,20,20,40,40,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,Pay your friend 50 TL for the coupon.,150,Less than 1020 TL,More than today,False,They remain unchanged,Moderately serious,Male,38,90000 TL – 112000 TL,12,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-28 07:15:05,2022-10-28 07:25:39,IP Address,100,634,True,2022-10-28 07:25:39,R_2Y359QQ7tiyvNmV,anonymous,EN,1,I agree to participate in the research,A,0,20,0,40,450,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,20,30,20,40,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,40,40,40,50,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",300,More than 1020 TL,Less than today,False,They collapse,Absolutely serious,Female,30,More than  135000 TL,20,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-29 01:31:34,2022-10-29 01:34:26,IP Address,100,172,True,2022-10-29 01:34:26,R_1Kwko83KUHitY0N,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,400,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,20,20,40,40,B,No,Pay your friend 50 TL for the coupon.,A,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,Pay your friend 50 TL for the coupon.,150,Exactly 1020 TL,I do not know,True,They remain unchanged,Moderately serious,Prefer not to say,25,68000 TL – 90000 TL,14,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-29 01:34:51,2022-10-29 01:37:10,IP Address,100,139,True,2022-10-29 01:37:12,R_1eDj1kpePaHn9C8,anonymous,TR,0.800000011920929,I agree to participate in the research,B,20,40,40,80,300,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,20,40,40,80,B,No,Consider it a gift and not pay for the coupon.,B,20,40,40,80,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,100,Exactly 1020 TL,I do not know,False,They remain unchanged,Very serious,Female,32,112000 TL – 135000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-29 01:37:13,2022-10-29 01:41:35,IP Address,100,261,True,2022-10-29 01:41:35,R_3rYXXYM5tlZXP6t,anonymous,TR,0.800000011920929,I agree to participate in the research,B,20,40,20,40,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,30,60,50,100,B,No,Consider it a gift and not pay for the coupon.,B,50,100,50,100,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,250,Exactly 1020 TL,More than today,I do not know,They collapse,Moderately serious,Male,43,112000 TL – 135000 TL,8,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-29 03:32:24,2022-10-29 03:49:54,IP Address,100,1049,True,2022-10-29 03:49:55,R_2AQe1te66sCv5MU,anonymous,TR,1,I agree to participate in the research,No difference,20,30,40,50,50,4,2,4,Yes,20,30,40,50,A,No,Consider it a gift and not pay for the coupon.,B,20,40,20,40,No,4,"Strongly agree
+
+1
+",4,B,Yes,Consider it a gift and not pay for the coupon.,30,More than 1020 TL,I do not know,I do not know,I do not know,Absolutely serious,Male,26,90000 TL – 112000 TL,16,Turkey,Turkish,I allow you to use the responses I provided in this study.
+2022-10-25 04:04:41,2022-10-25 04:09:06,IP Address,36,265,False,2022-11-01 04:20:23,R_pMFDaORHA2AfE3v,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,15,30,20,60,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,,,,,,,,,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,,,,,,,,,,,,
+2022-10-25 05:00:47,2022-10-25 05:04:08,IP Address,19,200,False,2022-11-01 05:17:51,R_1CpBV0q3oU7xYio,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,0,0,50,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 04:54:28,2022-10-25 04:56:45,IP Address,19,136,False,2022-11-01 05:19:51,R_25vzEoaNJKx6rRp,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,0,20,0,40,A,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 05:35:21,2022-10-25 05:36:10,IP Address,11,48,False,2022-11-01 05:36:12,R_3EbqXY67Waa5Xav,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 05:36:24,2022-10-25 05:53:19,IP Address,81,1015,False,2022-11-01 05:53:20,R_XU16IMb8WCNGK5j,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,15,40,30,50,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,30,60,50,80,A,No,Pay your friend 50 TL for the coupon.,B,15,40,35,40,Yes,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",B,No,Pay your friend 50 TL for the coupon.,40,More than 1020 TL,Less than today,False,I do not know,Very serious,,,,,,,
+2022-10-25 06:03:15,2022-10-25 06:05:06,IP Address,19,111,False,2022-11-01 06:09:29,R_25z8varCO1Y0iQa,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,15,30,15,60,No Difference,No,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 07:23:17,2022-10-25 07:23:37,IP Address,8,19,False,2022-11-01 07:37:46,R_23frnDfHUYV09o2,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 07:53:37,2022-10-25 07:56:33,IP Address,39,175,False,2022-11-01 07:56:36,R_3neHgBPDEEbTtk4,anonymous,TR,0.699999988079071,I agree to participate in the research,B,0,20,0,40,50,4,2,4,No,,,,,,,,B,,,,,,,,,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",35,,,,,,,,,,,,
+2022-10-25 08:49:25,2022-10-25 08:50:25,IP Address,11,59,False,2022-11-01 08:50:30,R_1Q0KZcQXbLXbjJE,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,No difference,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 09:09:19,2022-10-25 09:14:09,IP Address,19,289,False,2022-11-01 09:14:09,R_3MoPK4J7HJZE3hI,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,30,100,30,40,Yes,,,,,,,,,,,,,,,,,,,
+2022-10-25 09:12:55,2022-10-25 09:19:24,IP Address,39,388,False,2022-11-01 09:19:26,R_ZKPBQOa6gHI6QTL,anonymous,TR,1,I agree to participate in the research,A,0,20,40,40,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,,,,,,,,A,20,100,40,500,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-10-25 15:01:00,2022-10-25 15:05:32,IP Address,53,272,False,2022-11-01 15:05:36,R_1jOjuP11IJvUF4b,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,20,0,40,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,20,40,20,80,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,50,,,,,,,,,,,,
+2022-10-25 15:12:29,2022-10-25 15:17:37,IP Address,50,308,False,2022-11-01 15:17:38,R_2wGEVKOO2SfH6rV,anonymous,TR,1,I agree to participate in the research,B,,,,,,,,,,40,60,40,60,A,Yes,Pay your friend 50 TL for the coupon.,B,40,60,40,60,Yes,4,2,3,A,Yes,Pay your friend 50 TL for the coupon.,50,,,,,,,,,,,,
+2022-10-26 01:51:36,2022-10-26 02:41:36,IP Address,61,3000,False,2022-11-02 02:41:40,R_2VDdK7VELY8x6za,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,20,40,40,80,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,20,40,40,80,A,Yes,,B,20,40,40,80,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",40,,,,,,,,,,,,
+2022-10-26 04:29:07,2022-10-26 04:30:41,IP Address,17,93,False,2022-11-02 04:30:47,R_a2F8oIvgNQimQ25,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,A,No,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,
+2022-10-26 06:01:02,2022-10-26 06:01:30,IP Address,8,27,False,2022-11-02 06:01:35,R_3jUwhXJVvTWCJiO,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 02:34:31,2022-10-27 02:40:48,IP Address,67,377,False,2022-11-02 07:45:05,R_aia3HK8swoKbuuZ,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,10,20,25,40,80,2,2,"Strongly disagree
+
+5
+",Yes,10,20,25,40,A,Yes,Consider it a gift and not pay for the coupon.,A,10,20,25,40,No,2,2,4,B,Yes,Consider it a gift and not pay for the coupon.,50,,,,,,,,,,,,
+2022-10-27 02:50:58,2022-10-27 02:51:57,Spam,8,58,False,2022-11-02 07:45:08,R_1psaglr0E8nhVMO,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 03:44:11,2022-10-27 03:50:21,IP Address,53,369,False,2022-11-02 07:45:11,R_27fJnRG1SERW1iG,anonymous,TR,0.8999999761581421,I agree to participate in the research,B,15,30,35,50,40,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,18,30,35,50,No Difference,Yes,Pay your friend 50 TL for the coupon.,No difference,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,40,,,,,,,,,,,,
+2022-10-27 03:55:32,2022-10-27 04:21:26,IP Address,81,1553,False,2022-11-02 07:45:14,R_3QLSGXs1zmXHTLt,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,50,0,90,100,4,"Strongly disagree
+
+5
+",3,Yes,0,50,0,90,A,No,Consider it a gift and not pay for the coupon.,B,0,80,0,80,Yes,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,30,More than 1020 TL,Less than today,False,I do not know,Very serious,,,,,,,
+2022-10-27 03:57:02,2022-10-27 04:03:36,IP Address,61,394,False,2022-11-02 07:45:17,R_3iUYBgEXmCsN5Go,anonymous,TR,1,I agree to participate in the research,No difference,0,0,0,0,100,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",,0,10,0,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,0,10,0,20,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",40,,,,,,,,,,,,
+2022-10-27 04:04:16,2022-10-27 04:05:34,IP Address,19,78,False,2022-11-02 07:45:22,R_3P5zMrYNmjfmrwD,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,20,30,40,60,A,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 06:55:08,2022-10-27 06:55:53,IP Address,6,44,False,2022-11-02 07:45:23,R_ysihMkadR8zEHWp,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 07:20:33,2022-10-27 07:28:05,IP Address,97,452,False,2022-11-02 07:45:28,R_pcOQ6rGLtwG1AHL,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,0,20,0,40,60,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,20,20,40,40,A,Yes,Consider it a gift and not pay for the coupon.,B,40,40,40,40,Yes,"Strongly disagree
+
+5
+",2,3,B,Yes,Consider it a gift and not pay for the coupon.,32,More than 1020 TL,Less than today,False,I do not know,Very serious,Male,30,More than  135000 TL,19,Turkey,Turkish,
+2022-10-27 06:35:50,2022-10-27 06:36:22,IP Address,11,31,False,2022-11-02 07:45:32,R_3PtqeAeWGG4sZ62,anonymous,TR,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 13:34:19,2022-10-27 13:59:18,IP Address,67,1498,False,2022-11-02 07:45:34,R_0NC7uI4rU5H0yL7,anonymous,TR,0.8999999761581421,I agree to participate in the research,No difference,0,20,0,20,200,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,5,20,5,40,No Difference,Yes,Consider it a gift and not pay for the coupon.,No difference,5,40,5,40,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,50,,,,,,,,,,,,
+2022-10-27 14:42:28,2022-10-27 14:46:41,IP Address,33,252,False,2022-11-02 07:45:39,R_3qVWKorjn8kaWmO,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,25,25,45,45,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,50,,,,,,,,,,,,
+2022-10-27 09:45:52,2022-10-27 09:56:12,IP Address,47,619,False,2022-11-02 07:45:40,R_2rNR8puPBWaC8Hs,anonymous,TR,1,I agree to participate in the research,A,20,40,40,70,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,,,,,,,,A,20,40,40,70,No,,,,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",50,,,,,,,,,,,,
+2022-10-27 14:44:31,2022-10-27 14:45:39,IP Address,11,67,False,2022-11-02 07:45:46,R_8jlFjmjlLRmKIOB,anonymous,TR,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-11-01 04:55:36,2022-11-01 04:55:58,IP Address,11,21,False,2022-11-02 07:45:49,R_2YJ1oTHjtFtjAiR,anonymous,TR,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-31 06:13:13,2022-10-31 06:29:47,IP Address,81,993,False,2022-11-02 07:45:51,R_6QJc3hZdwXB6vEl,anonymous,TR,0.8999999761581421,I agree to participate in the research,A,10,20,20,40,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,20,20,40,A,No,Consider it a gift and not pay for the coupon.,B,0,30,0,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",50,More than 1020 TL,Less than today,False,I do not know,Very serious,,,,,,,

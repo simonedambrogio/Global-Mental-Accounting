@@ -1,0 +1,2041 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q_RecaptchaScore,Consent,MrAB1,Game1_1_1,Game1_1_2,Game1_2_1,Game1_2_2,Drink1,Gym1 _1,Gym1 _2,Gym1 _3,Jacket1,Game2_1_1,Game2_1_2,Game2_2_1,Game2_2_2,MrAB2,"Play2 ","Plane2 ",MrAB3,Game3_1 _1,Game3_1 _2,Game3_2_1,Game3_2_2,Jacket2,Gym2 _1,Gym2 _2,Gym2 _3,"MrAB4 ","Play1 ","Plane1 ",Drink2,fin_lit1,fin_lit2,fin_lit3,fin_lit4,Att_check,Gender,"Age ",Income,Education,Residence,Native language,Debriefing
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,Q_RecaptchaScore,"Dear Participant,    We invite you to take part in an online study with the purpose of investigating how people make decisions. The duration of the questionnaire is approximately 10 minutes. At the end of the questionnaire, you will be asked some personal demographic information.    Your data will be analyzed anonymously and processed according to the current international legislation for the protection of privacy (D. Lgs 196/2003 and EU GDPR 679/2016 on the protection of personal data and art. 9 of the Deontological Code of Italian Psychologists). Your data will be used solely for the purposes of the research itself. No information regarding you personally will be published or revealed in any way.    You are free to withdraw from the study at any point without giving any explanation. In this case your data will be deleted. You will not receive any payment or reimbursement of any sort for your participation in this study. There are no known risks associated with participating in this study.    Project Manager: Enrico Rubaltelli (Department of Development Psychology and Socialization -DPSS, University of Padua). The person responsible for this research agrees to comply with the obligations of current legislation in terms of collection, processing and storage of sensitive data.    I DECLARE THAT  • I am 18 years old or older  • I take part in this project voluntarily  • I am aware of the objectives and aims of this research project  • I am aware that the data obtained, in absolute anonymity, will be treated exclusively for educational and research purposes  • I am aware that it is not possible to withdraw the data I have provided once it has been submitted.    For any clarification you can contact Prof. Enrico Rubaltelli at jdmlab.multicountry@gmail.com.",Person A was given two lottery tickets. They won £70 with one ticket and £30 with the other ticket.      Person B was given one lottery ticket. They won £100.        Who is happier?,You are going to a sold-out game of your favourite local sports team and you have an extra ticket. The price marked on the ticket (or the ticket's 'face value') is £10 but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is £10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a friend,You are going to a sold-out game of your favourite local sports team and you have an extra ticket. The price marked on the ticket (or the ticket's 'face value') is £10 but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is £10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was £20 instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was £20 instead? - If they are a stranger,"You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a fancy resort hotel. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender.    What price do you tell them?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay £20 (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted £20","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay £20 (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay £20 (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind","You are about to purchase a jacket for £210 and a Bluetooth speaker for £25. The salesman informs you that the speaker you wish to buy is on sale for £15 at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine that you are going to a sold-out game of your favourite local sports team, and you have an extra ticket. The price marked on the ticket is £10 which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is £10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend","Imagine that you are going to a sold-out game of your favourite local sports team, and you have an extra ticket. The price marked on the ticket is £10 which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is £10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger",What price would you have asked for if you found out that the ticket’s face value price was £20 instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was £20 instead? - If they are a stranger,Person A received a fine and owed £140. The same day they received a second fine and owed £60.    Person B received a fine and owed £200.  Who is more upset?,"Imagine that you are on your way to a music event and intend to buy a ticket worth £70. On entering the venue, you realise that you have lost £70 in cash.   Would you still pay £70 for a ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth £30, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of £30 and received the other one for free. Just one coupon is required to upgrade your class on the current flight and your friend offers you the coupon which they got for free so that you can upgrade your ticket as well.    What do you think is the most appropriate thing to do?","Person A bought a lottery ticket and won £150. Also, they damaged one door in their apartment in an accident and had to pay the landlord £100.       Person B bought a lottery ticket and won £50.       Who is happier?",You are going to a sold-out game of your favourite local sports team and you have an extra ticket. The ticket’s face value price is £10 but you paid £20 for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is £10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend,You are going to a sold-out game of your favourite local sports team and you have an extra ticket. The ticket’s face value price is £10 but you paid £20 for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is £10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was £20 instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was £20 instead? - If they are a stranger,"You are about to purchase a jacket for £25 and a Bluetooth speaker for £210. The salesman informs you that the speaker you wish to buy is on sale for £200 at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you £700 a year (i.e., roughly £20 per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted £20","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you £700 a year (i.e., roughly £20 per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you £700 a year (i.e., roughly £20 per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind",Person A damaged their car in a parking lot. They had to spend £250 to repair the damage. The same day they damaged the car they won £30 in a raffle.       Person B damaged their car in a parking lot. They had to spend £220 to repair the damage.       Who is more upset?,"Imagine that you are on your way to a music event with a ticket for which you have paid £70. On entering the venue, you discover that you have lost the ticket.    Would you pay £70 for another ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth £30, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of £30 and received the other one for free. Just one coupon is required to upgrade your class on the current flight, and your friend offers you the coupon which they purchased so that you can upgrade as well.    What do you think is the most appropriate thing to do?","You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a small, run-down grocery store. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the store owner.    What price do you tell them?","Suppose that you have £100 in a savings account and the interest rate is 2% per year. After 5 years, how much do you think you would have in the account if you let the money grow?","Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, how much would you be able to buy with the money in this account?",Buying a single company's stock usually provides a safer return than a stock mutual fund.,"If interest rates rise, what would typically happen to bond prices?",To ensure the quality of our data we need to know if participants paid attention during the survey. Please tell us honestly how serious you were in completing the survey.   How serious have you been about filling in the survey?,What gender do you identify as?,What is your age (in numbers)?,Which of the following best describes your annual household income last year?,How many years of schooling have you completed? (from elementary school to doctoral degree or specialization if you have one),List of Countries,Which of the following is your native language?,"The survey you have completed aims to replicate the mental accounting effect. According to this phenomenon a person attributes different values to the same amount of money based on subjective criteria. Specifically, people tend to subjectively organize economic resources into different mental accounts. In addition, in this study, we measured some individual differences that might have an influence on mental accounting. In particular:   	  	   ●	Scale to measure financial literacy (Lusardi and Mitchell, 2014).  	 	 	  ●	Demographic data (e.g. gender, age or income level)	    Finally, we inform you that we have also used an attentional check to measure respondent engagement. The purpose of this study could not be fully revealed at the beginning of the study to avoid influencing your answers. Now that you have received this information, we ask you to confirm your consent to participate in this study or to withdraw it. In the latter case your data will not be used and will be deleted."
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""Q_RecaptchaScore""}","{""ImportId"":""QID1""}","{""ImportId"":""QID8""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID14_2""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID23_TEXT""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID44_2""}","{""ImportId"":""QID44_3""}","{""ImportId"":""QID34""}","{""ImportId"":""QID17_1""}","{""ImportId"":""QID17_2""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID18_2""}","{""ImportId"":""QID12""}","{""ImportId"":""QID78""}","{""ImportId"":""QID86""}","{""ImportId"":""QID10""}","{""ImportId"":""QID20_1""}","{""ImportId"":""QID20_2""}","{""ImportId"":""QID21_1""}","{""ImportId"":""QID21_2""}","{""ImportId"":""QID74""}","{""ImportId"":""QID82_1""}","{""ImportId"":""QID82_2""}","{""ImportId"":""QID82_3""}","{""ImportId"":""QID11""}","{""ImportId"":""QID40""}","{""ImportId"":""QID48""}","{""ImportId"":""QID70_TEXT""}","{""ImportId"":""QID59""}","{""ImportId"":""QID60""}","{""ImportId"":""QID61""}","{""ImportId"":""QID62""}","{""ImportId"":""QID51""}","{""ImportId"":""QID52""}","{""ImportId"":""QID53_TEXT""}","{""ImportId"":""QID54""}","{""ImportId"":""QID55_TEXT""}","{""ImportId"":""QID114""}","{""ImportId"":""QID57""}","{""ImportId"":""QID63""}"
+2022-09-12 11:27:22,2022-09-12 11:35:48,IP Address,100,506,True,2022-09-12 11:35:48,R_2e9AyjAdcTaxrRV,anonymous,EN,0.800000011920929,I agree to participate in the research,A,8,10,15,18,6,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,8,9,15,18,A,No,Consider it a gift and not pay for the coupon.,No difference,10,30,15,20,No,"Strongly disagree
+
+5
+",2,2,B,No,Consider it a gift and not pay for the coupon.,6,More than £102,Less than today,False,I do not know,Very serious,Female,23,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-13 00:57:28,2022-09-13 01:09:57,IP Address,100,749,True,2022-09-13 01:09:59,R_2qeHGr4Rvh9GMkm,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,15,20,30,10,2,4,4,Yes,10,15,20,25,A,Yes,Pay your friend £30 for the coupon.,B,20,20,20,25,Yes,2,4,4,B,Yes,Pay your friend £30 for the coupon.,10,More than £102,I do not know,True,I do not know,Very serious,Male,30,"£38,000 - £45,000",25,United Kingdom of Great Britain and Northern Ireland,Other,I allow you to use the responses I provided in this study.
+2022-09-13 07:48:09,2022-09-13 07:56:50,IP Address,100,520,True,2022-09-13 07:56:51,R_3plECdpEXOpwKKO,anonymous,EN,1,I agree to participate in the research,B,10,10,20,20,15,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,Pay your friend £30 for the coupon.,1.50,Less than £102,Less than today,False,They remain unchanged,Moderately serious,Female,61,"More than £45,000",22,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-13 13:23:38,2022-09-13 13:36:23,IP Address,100,764,True,2022-09-13 13:36:23,R_37wTS2bjCxzrDzP,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,A,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,No,Consider it a gift and not pay for the coupon.,6,More than £102,Less than today,False,I do not know,Very serious,Male,45,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,Italian,I allow you to use the responses I provided in this study.
+2022-09-13 13:30:41,2022-09-13 13:40:25,IP Address,100,583,True,2022-09-13 13:40:26,R_25H4SoCiR54nfms,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,15,10,25,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,25,20,25,No,3,3,2,B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Absolutely serious,Male,41,"More than £45,000",24,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-13 14:33:18,2022-09-13 14:45:19,IP Address,100,721,True,2022-09-13 14:45:19,R_1Cxys0VtLnkRT9s,anonymous,EN,1,I agree to participate in the research,B,0,0,0,0,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,10,10,20,No,3,2,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,They collapse,Absolutely serious,Female,38,"£38,000 - £45,000",199,United Kingdom of Great Britain and Northern Ireland,Italian,I allow you to use the responses I provided in this study.
+2022-09-14 03:23:01,2022-09-14 03:36:59,IP Address,100,837,True,2022-09-14 03:36:59,R_2QEAhN2BULDqeDI,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,20,0,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Pay your friend £30 for the coupon.,8,More than £102,Less than today,False,I do not know,Absolutely serious,Male,42,"£22,000 - £30,000",8,United Kingdom of Great Britain and Northern Ireland,Italian,I allow you to use the responses I provided in this study.
+2022-09-14 08:05:27,2022-09-14 08:18:39,IP Address,100,791,True,2022-09-14 08:18:39,R_1oHhasMpEpdur2o,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,10,2,"Strongly disagree
+
+5
+",4,Yes,10,10,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,I do not know,Absolutely serious,Male,24,"£22,000 - £30,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-14 14:32:04,2022-09-14 14:47:22,IP Address,100,918,True,2022-09-14 14:47:23,R_RxbJtzpA0p06DG9,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,2,"Strongly disagree
+
+5
+",4,Yes,10,10,20,20,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,10,20,20,20,No,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,No,Pay your friend £30 for the coupon.,3,More than £102,Less than today,I do not know,I do not know,Very serious,Female,24,"£15,000 - £22,000",17,United Kingdom of Great Britain and Northern Ireland,Italian,I allow you to use the responses I provided in this study.
+2022-09-16 10:22:26,2022-09-16 10:30:35,IP Address,100,488,True,2022-09-16 10:30:35,R_23GsTE4ylaMY7Gp,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,5,"Strongly agree
+
+1
+",4,2,No,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,10,20,20,No,4,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,I do not know,Very serious,Male,36,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-16 10:27:38,2022-09-16 10:38:31,IP Address,100,653,True,2022-09-16 10:38:31,R_1CwnTvmTYLM0lQ6,anonymous,EN,0.6000000238418579,I agree to participate in the research,A,0,0,0,0,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,10,15,A,Yes,Pay your friend £30 for the coupon.,B,10,15,20,20,No,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,There is no relationship,Very serious,Female,41,"More than £45,000",15,United Kingdom of Great Britain and Northern Ireland,French,I allow you to use the responses I provided in this study.
+2022-09-16 10:44:26,2022-09-16 11:02:44,IP Address,100,1098,True,2022-09-16 11:02:44,R_3nfxMw1b3uWDYMq,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,0,20,20,A,Yes,Pay your friend £30 for the coupon.,B,10,20,20,20,No,4,2,2,B,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They collapse,Absolutely serious,Male,27,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-16 10:44:46,2022-09-16 11:06:42,IP Address,100,1315,True,2022-09-16 11:06:42,R_UuW6atDmN8WnDQB,anonymous,EN,1,I agree to participate in the research,A,5,10,10,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,15,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,5,10,10,20,No,2,3,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3.5,More than £102,Less than today,False,I do not know,Very serious,Male,22,"£30,000 - £38,000",14,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-16 11:21:59,2022-09-16 11:29:44,IP Address,100,464,True,2022-09-16 11:29:44,R_2Xb8ojrru2BP0c9,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",15,15,25,25,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,20,40,40,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,25,25,25,25,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,They collapse,Very serious,Male,36,"More than £45,000",20,United Kingdom of Great Britain and Northern Ireland,Spanish,I allow you to use the responses I provided in this study.
+2022-09-16 13:40:06,2022-09-16 13:52:27,IP Address,100,741,True,2022-09-16 13:52:28,R_3QVqfTcJE45hHVD,anonymous,EN,1,I agree to participate in the research,B,0,10,0,20,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They collapse,Moderately serious,Male,44,"More than £45,000",22,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-16 14:40:18,2022-09-16 14:52:59,IP Address,100,761,True,2022-09-16 14:53:00,R_3LgJvBFjMokFpX1,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,7,"Strongly agree
+
+1
+",4,4,No,10,10,20,20,No difference,No,Consider it a gift and not pay for the coupon.,B,10,10,20,20,No,"Strongly agree
+
+1
+",4,3,No difference,Yes,Consider it a gift and not pay for the coupon.,4,More than £102,I do not know,False,I do not know,Absolutely serious,Female,25,"£15,000 - £22,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-12 10:41:45,2022-09-12 10:42:56,IP Address,11,70,False,2022-09-19 10:56:41,R_ZlpVFEh3t5P6nsZ,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-12 12:12:10,2022-09-12 12:23:29,IP Address,31,678,False,2022-09-19 12:23:33,R_e5UUcdggo3dVzhL,anonymous,EN,1,I agree to participate in the research,B,10,10,10,10,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,,,,,,,,,,,,,,,,,A,Yes,,,,,,,,,,,,,,
+2022-09-20 02:19:25,2022-09-20 02:25:24,IP Address,100,358,True,2022-09-20 02:25:25,R_1rOHBhw99qWM9wT,anonymous,EN,1,I agree to participate in the research,B,0,10,0,20,3,"Strongly agree
+
+1
+",4,3,Yes,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,Yes,4,2,3,B,Yes,Consider it a gift and not pay for the coupon.,3,More than £102,Less than today,False,They collapse,Moderately serious,Male,26,"More than £45,000",15,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 02:27:31,2022-09-20 02:41:23,IP Address,100,831,True,2022-09-20 02:41:23,R_1gqeZ553tVLi2WI,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,10,10,20,20,A,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,No,4,2,4,No difference,No,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,They collapse,Absolutely serious,Female,34,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 02:38:51,2022-09-20 02:50:25,IP Address,100,693,True,2022-09-20 02:50:25,R_2Bg2FWC2wReYh0f,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,15,"Strongly agree
+
+1
+",2,4,Yes,0,10,0,20,No difference,No,Consider it a gift and not pay for the coupon.,A,0,10,0,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,No difference,No,Pay your friend £30 for the coupon.,5,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Female,30,"£30,000 - £38,000",20,United Kingdom of Great Britain and Northern Ireland,French,I allow you to use the responses I provided in this study.
+2022-09-20 02:52:35,2022-09-20 03:01:56,IP Address,100,560,True,2022-09-20 03:01:57,R_73q1i0WgDexMhDX,anonymous,EN,1,I agree to participate in the research,"No difference ",10,30,20,40,9,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,20,20,40,B,No,Consider it a gift and not pay for the coupon.,B,10,30,20,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,2,More than £102,Less than today,False,They collapse,Very serious,Male,29,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-13 07:49:53,2022-09-20 03:37:59,IP Address,100,589686,True,2022-09-20 03:37:59,R_2RWy9lVivXh00DQ,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,0,20,A,No,Consider it a gift and not pay for the coupon.,A,10,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Consider it a gift and not pay for the coupon.,10,More than £102,Less than today,False,They remain unchanged,Very serious,Female,30,"£38,000 - £45,000",17,United Kingdom of Great Britain and Northern Ireland,Italian,I allow you to use the responses I provided in this study.
+2022-09-20 02:53:03,2022-09-20 03:40:17,IP Address,100,2834,True,2022-09-20 03:40:18,R_2SwVtvJPUjApxSN,anonymous,EN,1,I agree to participate in the research,A,0,10,10,20,13,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,5,10,10,20,B,No,Consider it a gift and not pay for the coupon.,B,10,10,10,20,No,4,"Strongly disagree
+
+5
+",2,B,No,Pay your friend £30 for the coupon.,8,More than £102,Less than today,False,They collapse,Very serious,Male,30,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,European Portuguese,I allow you to use the responses I provided in this study.
+2022-09-20 03:49:06,2022-09-20 03:57:14,IP Address,100,487,True,2022-09-20 03:57:14,R_3Mni9fsoGh4sJYi,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,5,10,15,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,15,20,No,2,2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,False,They remain unchanged,Absolutely serious,Male,34,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 03:54:14,2022-09-20 03:59:31,IP Address,100,316,True,2022-09-20 03:59:32,R_3PXMuYHM4McIRtT,anonymous,EN,1,I agree to participate in the research,B,0,5,0,10,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,0,10,10,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,10,20,10,20,No,4,3,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",1,Exactly £102,Less than today,False,I do not know,Very serious,Female,29,"More than £45,000",11,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 04:15:12,2022-09-20 04:21:50,IP Address,100,397,True,2022-09-20 04:21:50,R_RdZRg8zqAneKOK5,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,4,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,10,10,20,20,Yes,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,2,More than £102,Less than today,False,There is no relationship,Very serious,Male,33,"More than £45,000",20,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 04:38:16,2022-09-20 04:48:32,IP Address,100,615,True,2022-09-20 04:48:32,R_3ndSS7CUa9LtPQF,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,20,20,20,Yes,2,4,4,No difference,Yes,Pay your friend £30 for the coupon.,4,More than £102,Less than today,False,They collapse,Moderately serious,Male,22,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 05:14:19,2022-09-20 05:22:25,IP Address,100,486,True,2022-09-20 05:22:26,R_3ebksA0d7El1Iym,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,5,6,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,5,10,20,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,10,20,20,No,4,2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,I do not know,I do not know,Very serious,Male,23,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 05:21:44,2022-09-20 05:30:52,IP Address,100,547,True,2022-09-20 05:30:52,R_6ldTepTTjT3FsEp,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,2,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,0,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,10,0,20,No,"Strongly disagree
+
+5
+",3,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,They collapse,Absolutely serious,Male,45,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 05:23:35,2022-09-20 05:36:06,IP Address,100,751,True,2022-09-20 05:36:06,R_1pmlODqSCjCacB2,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,5,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,3,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,I do not know,Very serious,Male,23,"£30,000 - £38,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 05:26:50,2022-09-20 05:37:34,IP Address,100,643,True,2022-09-20 05:37:34,R_2OOckZlIYtwbPwv,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,5,20,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,8,10,10,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,15,15,20,No,2,4,3,B,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,I do not know,Very serious,Non-binary / third gender,25,"£22,000 - £30,000",12,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 05:29:51,2022-09-20 05:41:52,IP Address,100,721,True,2022-09-20 05:41:53,R_3RaVlHayGusasDl,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,4,2,"Strongly agree
+
+1
+",No,10,10,10,20,A,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,No,4,2,"Strongly agree
+
+1
+",A,Yes,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,They collapse,Absolutely serious,Male,32,"More than £45,000",19,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 05:35:51,2022-09-20 05:46:36,IP Address,100,645,True,2022-09-20 05:46:36,R_ZqkPuaPZieF7Zkt,anonymous,EN,1,I agree to participate in the research,B,0,5,0,10,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,0,20,A,No,Pay your friend £30 for the coupon.,B,0,10,0,20,No,4,2,"Strongly agree
+
+1
+",B,No,Pay your friend £30 for the coupon.,4,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Female,32,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 05:30:57,2022-09-20 05:49:22,IP Address,100,1104,True,2022-09-20 05:49:22,R_9QqyPXEZLcFsxPP,anonymous,EN,1,I agree to participate in the research,"No difference ",5,15,10,25,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,15,10,20,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,30,20,25,Yes,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",4,More than £102,Less than today,False,I do not know,Very serious,Female,35,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 05:46:59,2022-09-20 05:54:45,IP Address,100,465,True,2022-09-20 05:54:46,R_d5PAZwscfD9XI9b,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,20,2,4,4,Yes,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,No,4,2,3,B,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They collapse,Absolutely serious,Male,33,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 05:57:36,2022-09-20 06:09:51,IP Address,100,735,True,2022-09-20 06:09:52,R_73qFXuaxNfFfSE1,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,2,"Strongly agree
+
+1
+",4,3,No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,4,4,2,B,No,Consider it a gift and not pay for the coupon.,2,More than £102,Less than today,False,I do not know,Very serious,Male,34,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 06:05:23,2022-09-20 06:12:27,IP Address,100,423,True,2022-09-20 06:12:28,R_0d2778rCue1sYDL,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,8,2,4,4,No,0,10,0,10,No difference,Yes,Pay your friend £30 for the coupon.,B,0,10,0,20,No,2,4,4,B,No,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,They collapse,Very serious,Male,33,"More than £45,000",15,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 06:06:15,2022-09-20 06:19:12,IP Address,100,777,True,2022-09-20 06:19:13,R_3IY4fhSqJbMR5do,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,1.50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,5,10,10,20,No,3,3,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1.50,More than £102,Less than today,False,I do not know,Absolutely serious,Male,22,"More than £45,000",11,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 06:19:16,2022-09-20 06:36:39,IP Address,100,1043,True,2022-09-20 06:36:39,R_2SkmYmgHRyV0Hfj,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,12,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,4,2,2,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",4,More than £102,Less than today,False,They collapse,Absolutely serious,Male,38,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 06:27:17,2022-09-20 06:39:36,IP Address,100,739,True,2022-09-20 06:39:37,R_vknegOU0qjU9N5L,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,4,3,4,2,Yes,0,10,0,20,A,Yes,Pay your friend £30 for the coupon.,B,10,20,20,20,Yes,4,3,2,A,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,They collapse,Very serious,Male,50,"£30,000 - £38,000",14,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 06:33:45,2022-09-20 06:47:48,IP Address,100,842,True,2022-09-20 06:47:48,R_Td5klsRD4ECLiV3,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,5,4,2,2,No,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,They collapse,Slightly serious,Male,26,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 06:33:13,2022-09-20 06:48:37,IP Address,100,924,True,2022-09-20 06:48:38,R_23g8JNkT7si2AZ1,anonymous,EN,,I agree to participate in the research,B,0,10,0,20,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,10,10,20,20,No difference,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No difference,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Moderately serious,Male,37,"More than £45,000",5,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 06:30:14,2022-09-20 07:18:45,IP Address,100,2911,True,2022-09-20 07:18:46,R_8pm7AOKnf52Z16N,anonymous,EN,1,I agree to participate in the research,B,10,20,20,30,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,20,20,30,A,Yes,Consider it a gift and not pay for the coupon.,A,20,30,20,30,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,Yes,Consider it a gift and not pay for the coupon.,8,More than £102,Less than today,False,I do not know,Very serious,Male,28,"More than £45,000",13,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 07:07:51,2022-09-20 07:21:14,IP Address,100,802,True,2022-09-20 07:21:14,R_1M51uVfXCPSeQbt,anonymous,EN,1,I agree to participate in the research,A,10,20,20,30,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,20,20,30,A,Yes,Consider it a gift and not pay for the coupon.,B,20,30,20,30,No,3,"Strongly disagree
+
+5
+",3,B,No,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They collapse,Absolutely serious,Female,24,"More than £45,000",15,United Kingdom of Great Britain and Northern Ireland,German,I allow you to use the responses I provided in this study.
+2022-09-20 07:18:41,2022-09-20 07:29:53,IP Address,100,672,True,2022-09-20 07:29:53,R_3JD8aT5YpxxAdXJ,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0.00,10.00,0.00,20.00,4,2,4,2,No,5.00,15.00,10.00,25.00,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20.00,25.00,20.00,25.00,No,3,4,3,B,Yes,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,I do not know,Very serious,Prefer not to say,24,Prefer not to answer,16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 07:21:27,2022-09-20 07:35:51,IP Address,100,864,True,2022-09-20 07:35:52,R_1hR8UIGD6tkVdJA,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,2,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,0,10,0,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,20,Yes,4,4,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,I do not know,Very serious,Male,26,"£22,000 - £30,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-13 07:41:05,2022-09-13 07:41:59,IP Address,8,54,False,2022-09-20 07:42:06,R_2f6DVXRX88JXBvt,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 07:36:33,2022-09-20 07:46:10,IP Address,100,576,True,2022-09-20 07:46:10,R_0ugTicXEhTQP01X,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,1.5,4,"Strongly agree
+
+1
+",3,No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,No,4,"Strongly agree
+
+1
+",3,A,Yes,Pay your friend £30 for the coupon.,1.5,More than £102,Less than today,False,They collapse,Absolutely serious,Male,35,"More than £45,000",14,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 07:46:08,2022-09-20 07:58:39,IP Address,100,750,True,2022-09-20 07:58:39,R_2eUyXvQdhabCwvc,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,2,2,4,4,Yes,10,10,10,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,3,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,I do not know,Moderately serious,Female,54,"£38,000 - £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 07:52:37,2022-09-20 07:59:16,IP Address,100,399,True,2022-09-20 07:59:17,R_1inenSU95cduPA7,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,2,4,4,No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,10,20,20,No,4,3,2,B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Absolutely serious,Male,29,"£38,000 - £45,000",19,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 07:51:24,2022-09-20 08:00:33,IP Address,100,548,True,2022-09-20 08:00:33,R_wTLWY959ZYyX3ZD,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,"Strongly agree
+
+1
+",4,3,No,10,10,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,10,20,No,2,4,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,They remain unchanged,Very serious,Male,31,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 07:59:15,2022-09-20 08:09:54,IP Address,100,638,True,2022-09-20 08:09:55,R_277GdIVU6gwHyab,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,1.50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,20,10,20,No,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,1.50,More than £102,Less than today,False,I do not know,Absolutely serious,Female,22,"£22,000 - £30,000",12,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 08:11:24,2022-09-20 08:21:02,IP Address,100,577,True,2022-09-20 08:21:02,R_3Ook8UTe0nvipIn,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,10,2,4,3,No,10,10,20,20,No difference,Yes,Pay your friend £30 for the coupon.,B,10,20,10,20,No,2,4,3,No difference,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,I do not know,Very serious,Male,37,"More than £45,000",15,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 08:15:07,2022-09-20 08:29:54,IP Address,100,886,True,2022-09-20 08:29:54,R_32ShumjWPmpiXts,anonymous,EN,1,I agree to participate in the research,"No difference ",10,30,20,60,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,30,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,45,20,60,No,2,3,2,No difference,Yes,Pay your friend £30 for the coupon.,4,More than £102,Less than today,False,I do not know,Very serious,Non-binary / third gender,31,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 08:28:50,2022-09-20 08:35:18,IP Address,100,388,True,2022-09-20 08:35:20,R_2awMFzYKAuEssbZ,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,10,10,20,20,B,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,Pay your friend £30 for the coupon.,3,More than £102,I do not know,False,I do not know,Very serious,Female,34,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 08:34:37,2022-09-20 08:47:30,IP Address,100,772,True,2022-09-20 08:47:30,R_10vgHNaZEJc0rG8,anonymous,EN,1,I agree to participate in the research,"No difference ",10,60,20,70,5,4,2,3,Yes,10,60,20,70,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,20,70,20,70,No,4,2,3,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,They collapse,Very serious,Male,30,"More than £45,000",21,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 08:39:45,2022-09-20 08:49:37,IP Address,100,591,True,2022-09-20 08:49:37,R_1Qi5gmiopc7fb40,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,10,20,20,B,Yes,Consider it a gift and not pay for the coupon.,A,20,20,20,20,Yes,4,"Strongly agree
+
+1
+",3,B,No,Consider it a gift and not pay for the coupon.,2,More than £102,Less than today,False,I do not know,Very serious,Female,24,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 09:01:34,2022-09-20 09:15:37,IP Address,100,842,True,2022-09-20 09:15:37,R_3s5EcrFtVDXe0jP,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,10,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,20,No,"Strongly disagree
+
+5
+",4,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,I do not know,Very serious,Female,24,"£30,000 - £38,000",6,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 09:06:52,2022-09-20 09:17:35,IP Address,100,643,True,2022-09-20 09:17:35,R_2f0N38g1zDvtcgP,anonymous,EN,0.800000011920929,I agree to participate in the research,A,0,10,0,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Pay your friend £30 for the coupon.,B,10,20,20,20,No,3,2,2,No difference,No,Pay your friend £30 for the coupon.,5,More than £102,Less than today,I do not know,I do not know,Very serious,Male,28,"£22,000 - £30,000",14,United Kingdom of Great Britain and Northern Ireland,Romanian,I allow you to use the responses I provided in this study.
+2022-09-20 08:41:03,2022-09-20 09:18:01,IP Address,100,2218,True,2022-09-20 09:18:02,R_3nViW8ehWabnmly,anonymous,EN,1,I agree to participate in the research,B,0,500,0,500,6,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,500,10,500,A,Yes,Pay your friend £30 for the coupon.,B,20,500,20,500,No,"Strongly disagree
+
+5
+",4,3,B,No,Pay your friend £30 for the coupon.,4,More than £102,Less than today,False,I do not know,Very serious,Male,45,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-13 09:24:48,2022-09-13 09:25:04,IP Address,3,16,False,2022-09-20 09:25:05,R_3dGLi3RCoG2mZVs,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 09:23:12,2022-09-20 09:30:58,IP Address,100,466,True,2022-09-20 09:30:59,R_3nITraABSPwxyn1,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,20,20,20,Yes,3,3,2,No difference,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Very serious,Male,37,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 09:25:09,2022-09-20 09:31:19,IP Address,100,370,True,2022-09-20 09:31:20,R_6xnZvxdPezbWGul,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,10,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,A,20,20,20,20,Yes,4,2,2,No difference,No,Consider it a gift and not pay for the coupon.,3,More than £102,Less than today,False,They collapse,Very serious,Female,26,"More than £45,000",15,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 09:29:45,2022-09-20 09:41:54,IP Address,100,728,True,2022-09-20 09:41:54,R_RxCj866ln2WJgkN,anonymous,EN,1,I agree to participate in the research,"No difference ",20,20,20,20,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,20,20,20,20,No difference,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Moderately serious,Male,27,"£30,000 - £38,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 10:11:53,2022-09-20 10:22:33,IP Address,100,639,True,2022-09-20 10:22:33,R_30qToga8QAHxwqG,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,5,"Strongly agree
+
+1
+",4,4,No,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,10,20,20,20,No,2,4,3,B,Yes,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,They collapse,Very serious,Male,33,"More than £45,000",22,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 10:38:36,2022-09-20 10:46:11,IP Address,100,454,True,2022-09-20 10:46:11,R_es8DfUupSkDRtw5,anonymous,EN,1,I agree to participate in the research,A,0,20,0,40,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,0,20,0,40,A,Yes,Pay your friend £30 for the coupon.,A,0,20,0,40,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,B,Yes,Pay your friend £30 for the coupon.,4,More than £102,Less than today,False,I do not know,Very serious,Male,47,"£38,000 - £45,000",6,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 10:36:58,2022-09-20 10:47:29,IP Address,100,631,True,2022-09-20 10:47:30,R_3KHk7n3YqFesXNm,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,10,5,2,4,2,No,0,10,0,10,A,Yes,Consider it a gift and not pay for the coupon.,A,0,10,0,20,No,4,2,4,B,Yes,Consider it a gift and not pay for the coupon.,3,More than £102,Less than today,False,There is no relationship,Very serious,Male,33,"More than £45,000",20,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 11:08:09,2022-09-20 11:19:26,IP Address,100,676,True,2022-09-20 11:19:26,R_ZpN0o7CYcSIrhcJ,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,15,0,25,A,Yes,Pay your friend £30 for the coupon.,A,0,25,0,25,No,4,4,2,B,Yes,Pay your friend £30 for the coupon.,3.50,More than £102,Less than today,False,They collapse,Absolutely serious,Male,33,"More than £45,000",20,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 11:15:41,2022-09-20 11:24:43,IP Address,100,542,True,2022-09-20 11:24:44,R_bqR7sb95lhgYDtv,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,5,10,10,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,20,10,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,5,More than £102,More than today,False,There is no relationship,Absolutely serious,Male,35,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 11:19:31,2022-09-20 11:25:09,IP Address,100,338,True,2022-09-20 11:25:09,R_27rG1rC3EmG6FBY,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,20,0,40,5,"Strongly agree
+
+1
+",4,4,Yes,10,30,20,50,A,Yes,Consider it a gift and not pay for the coupon.,B,20,30,20,40,Yes,4,4,2,B,Yes,Consider it a gift and not pay for the coupon.,5,More than £102,Less than today,False,They collapse,Moderately serious,Female,29,"£38,000 - £45,000",25,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 11:23:13,2022-09-20 11:31:58,IP Address,100,525,True,2022-09-20 11:31:58,R_1FtyyByBAoFPQue,anonymous,EN,1,I agree to participate in the research,A,0,15,0,30,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,15,0,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,20,0,30,No,"Strongly disagree
+
+5
+",2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",1.50,More than £102,Less than today,False,They collapse,Moderately serious,Male,34,"£30,000 - £38,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 11:31:50,2022-09-20 11:40:14,IP Address,100,503,True,2022-09-20 11:40:14,R_1JEduwT7NAE6Y1T,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,8,"Strongly agree
+
+1
+",4,3,Yes,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,Yes,"Strongly disagree
+
+5
+",2,4,A,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,I do not know,Very serious,Female,33,"£30,000 - £38,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 11:40:33,2022-09-20 11:49:43,IP Address,100,549,True,2022-09-20 11:49:43,R_2Yi7D4jLpHmQ87I,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,3,"Strongly disagree
+
+5
+",2,No,0,10,0,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,10,0,20,No,3,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,They collapse,Absolutely serious,Male,37,"£30,000 - £38,000",11,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 11:46:03,2022-09-20 11:54:27,IP Address,100,503,True,2022-09-20 11:54:27,R_2c1rqUxSdU0SvkO,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,20,No,3,2,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,There is no relationship,Very serious,Male,38,"More than £45,000",5,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 11:47:37,2022-09-20 11:54:34,IP Address,100,416,True,2022-09-20 11:54:34,R_1BREl4PtGvIge8i,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,5,2,4,4,No,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,10,10,20,20,No,4,2,"Strongly disagree
+
+5
+",B,Yes,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,They collapse,Absolutely serious,Male,31,"£22,000 - £30,000",14,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 11:53:05,2022-09-20 12:02:15,IP Address,100,549,True,2022-09-20 12:02:15,R_AtSPLMfcTUniBlT,anonymous,EN,1,I agree to participate in the research,"No difference ",0,15,0,25,6,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,15,20,25,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,30,20,30,No,"Strongly disagree
+
+5
+",4,"Strongly disagree
+
+5
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,False,I do not know,Absolutely serious,Female,25,"£30,000 - £38,000",20,United Kingdom of Great Britain and Northern Ireland,Vietnamese,I allow you to use the responses I provided in this study.
+2022-09-20 12:06:58,2022-09-20 12:14:01,IP Address,100,422,True,2022-09-20 12:14:01,R_2uDn9y2OAl6c6bd,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,8,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,Yes,4,2,2,A,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,I do not know,I do not know,Moderately serious,Female,25,"£22,000 - £30,000",12,United Kingdom of Great Britain and Northern Ireland,French,I allow you to use the responses I provided in this study.
+2022-09-20 12:06:27,2022-09-20 12:19:03,IP Address,100,756,True,2022-09-20 12:19:04,R_tYEAHpw1YP2AU6d,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,15,20,25,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,15,20,25,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,10,20,20,20,No,3,3,"Strongly agree
+
+1
+",No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,False,They remain unchanged,Moderately serious,Male,36,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 12:23:09,2022-09-20 12:32:34,IP Address,100,564,True,2022-09-20 12:32:35,R_2Qfj2VB9ukdv9qR,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,20,20,B,Yes,Pay your friend £30 for the coupon.,B,0,10,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,They collapse,Absolutely serious,Male,29,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 13:04:57,2022-09-20 13:18:18,IP Address,100,800,True,2022-09-20 13:18:18,R_0kCGsdQpTncIwKt,anonymous,EN,1,I agree to participate in the research,A,0,10,10,20,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,10,10,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,3,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,False,I do not know,Very serious,Male,27,"£38,000 - £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 13:24:55,2022-09-20 13:32:17,IP Address,100,442,True,2022-09-20 13:32:18,R_URR2qVzkMyZbDYB,anonymous,EN,1,I agree to participate in the research,B,0,10,0,15,15,2,4,4,Yes,0,10,0,20,B,Yes,Pay your friend £30 for the coupon.,A,0,10,0,19,Yes,2,4,2,B,Yes,Pay your friend £30 for the coupon.,10,More than £102,Less than today,False,I do not know,Absolutely serious,Male,30,"More than £45,000",24,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 13:59:30,2022-09-20 14:13:00,IP Address,100,809,True,2022-09-20 14:13:00,R_3PzcGYt2jXokH2G,anonymous,EN,1,I agree to participate in the research,A,0,10,10,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2.00,More than £102,Less than today,False,They collapse,Absolutely serious,Male,55,"More than £45,000",14,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 14:04:10,2022-09-20 14:13:38,IP Address,100,567,True,2022-09-20 14:13:39,R_1qWXzoMBRCBX9qK,anonymous,EN,0.800000011920929,I agree to participate in the research,B,0,0,0,10,15,"Strongly agree
+
+1
+",4,4,No,0,10,0,15,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,20,0,20,No,"Strongly disagree
+
+5
+",2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than £102,Less than today,False,There is no relationship,Absolutely serious,Female,33,"More than £45,000",19,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 14:04:12,2022-09-20 14:13:40,IP Address,100,568,True,2022-09-20 14:13:40,R_9mI1uOzpLpmqFWx,anonymous,EN,0.800000011920929,I agree to participate in the research,B,0,10,0,20,5,"Strongly agree
+
+1
+",4,4,Yes,10,10,20,20,B,Yes,Consider it a gift and not pay for the coupon.,A,20,20,20,20,Yes,2,4,2,B,Yes,Consider it a gift and not pay for the coupon.,3,More than £102,Less than today,False,I do not know,Absolutely serious,Male,27,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 14:27:17,2022-09-20 14:35:15,IP Address,100,478,True,2022-09-20 14:35:15,R_1P79FoM4Xrcs93p,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,10,15,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,I do not know,Very serious,Female,26,"£30,000 - £38,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 14:29:46,2022-09-20 14:39:30,IP Address,100,583,True,2022-09-20 14:39:31,R_C1hycgUfvIc7FeN,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,10,10,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,3,3,"Strongly agree
+
+1
+",B,No,Pay your friend £30 for the coupon.,3,More than £102,Less than today,I do not know,I do not know,Very serious,Female,27,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 14:30:09,2022-09-20 14:39:55,IP Address,100,586,True,2022-09-20 14:39:56,R_0eb0cBh2k3IVeYF,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,20,No,2,4,"Strongly disagree
+
+5
+",No difference,No,Pay your friend £30 for the coupon.,5,More than £102,Less than today,I do not know,I do not know,Very serious,Male,26,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 14:48:35,2022-09-20 14:58:41,IP Address,100,605,True,2022-09-20 14:58:41,R_21nXPLsKyheUUH2,anonymous,EN,0.800000011920929,I agree to participate in the research,B,0,20,0,30,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,15,0,20,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,30,20,40,No,2,"Strongly disagree
+
+5
+",2,B,No,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They collapse,Very serious,Male,30,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 15:34:26,2022-09-20 15:45:43,IP Address,100,676,True,2022-09-20 15:45:43,R_31ZdZgl5K1BaqOK,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,5,2,4,3,Yes,10,10,10,10,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,20,20,20,20,Yes,4,2,3,No difference,No,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,I do not know,Very serious,Prefer not to say,25,"£15,000 - £22,000",19,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 15:42:44,2022-09-20 15:55:33,IP Address,100,768,True,2022-09-20 15:55:33,R_3n7V3RiCdtBbKZ0,anonymous,EN,1,I agree to participate in the research,B,0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,They collapse,Moderately serious,Male,32,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 15:48:50,2022-09-20 15:58:43,IP Address,100,592,True,2022-09-20 15:58:43,R_2tDOoXZvYNBhnCR,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,2,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,10,0,10,No,3,3,2,B,Yes,Consider it a gift and not pay for the coupon.,2,More than £102,Less than today,False,I do not know,Moderately serious,Prefer not to say,37,"More than £45,000",17,Italy,Afrikaans,I allow you to use the responses I provided in this study.
+2022-09-20 16:19:13,2022-09-20 16:27:30,IP Address,100,496,True,2022-09-20 16:27:30,R_3s4f16qRPDvakQ5,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,2.50,"Strongly agree
+
+1
+",4,3,No,10,10,20,20,A,No,Pay your friend £30 for the coupon.,B,10,20,20,20,No,"Strongly disagree
+
+5
+",2,3,B,No,Pay your friend £30 for the coupon.,2.50,More than £102,Less than today,False,I do not know,Very serious,Male,24,"£38,000 - £45,000",10,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 16:10:57,2022-09-20 16:27:53,IP Address,100,1015,True,2022-09-20 16:27:53,R_3FVUZbF4tXSilVj,anonymous,EN,1,I agree to participate in the research,A,5,8,10,10,3,3,2,3,No,10,8,15,15,A,Yes,Pay your friend £30 for the coupon.,B,10,10,15,15,No,3,2,3,B,No,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,They collapse,Absolutely serious,Male,51,"More than £45,000",22,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 15:58:21,2022-09-20 16:28:25,IP Address,100,1803,True,2022-09-20 16:28:25,R_b444Mc1iSvTFBSh,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,7,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,10,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",3.50,More than £102,Less than today,I do not know,I do not know,Very serious,Male,32,"£30,000 - £38,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 16:26:26,2022-09-20 16:34:09,IP Address,100,462,True,2022-09-20 16:34:10,R_21bkObtWvazxljt,anonymous,EN,1,I agree to participate in the research,A,0,50,0,60,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,30,0,30,A,No,Consider it a gift and not pay for the coupon.,B,20,50,20,50,Yes,4,"Strongly agree
+
+1
+",2,B,No,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Moderately serious,Female,44,"More than £45,000",13,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 16:38:17,2022-09-20 16:45:00,IP Address,100,402,True,2022-09-20 16:45:00,R_R454JMf872V30qZ,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,2,3,"Strongly agree
+
+1
+",No,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,No,3,3,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,1,More than £102,Less than today,False,They collapse,Absolutely serious,Female,33,"More than £45,000",20,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 16:34:06,2022-09-20 16:45:20,IP Address,100,673,True,2022-09-20 16:45:21,R_12EhetRSTKDDthP,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,10,20,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,10,10,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,I do not know,I do not know,Very serious,Female,28,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-21 00:27:09,2022-09-21 00:33:45,IP Address,100,396,True,2022-09-21 00:33:45,R_1hEHNhL8meph5sw,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,2,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,10,0,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,15,0,20,No,"Strongly disagree
+
+5
+",3,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,I do not know,Very serious,Female,30,"More than £45,000",19,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-21 01:22:32,2022-09-21 01:36:16,IP Address,100,824,True,2022-09-21 01:36:17,R_2fIKQhorYLqTdSl,anonymous,EN,1,I agree to participate in the research,"No difference ",0,15,10,30,5,2,"Strongly disagree
+
+5
+",2,Yes,10,20,15,35,A,No,Consider it a gift and not pay for the coupon.,B,20,30,25,40,No,4,2,3,B,No,Consider it a gift and not pay for the coupon.,3,More than £102,Less than today,False,I do not know,Very serious,Male,20,"£30,000 - £38,000",9,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-21 02:40:30,2022-09-21 02:51:03,IP Address,100,633,True,2022-09-21 02:51:04,R_1GQXmap5y7LwTDz,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,I do not know,They collapse,Absolutely serious,Male,44,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-21 04:31:14,2022-09-21 04:38:56,IP Address,100,462,True,2022-09-21 04:38:56,R_2zbEilIkyO052ev,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,3,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,20,No,4,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,I do not know,Very serious,Male,42,"More than £45,000",12,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-21 05:54:08,2022-09-21 06:04:56,IP Address,100,647,True,2022-09-21 06:04:56,R_2UfQJG93uNuAqdX,anonymous,EN,1,I agree to participate in the research,"No difference ",10,20,20,40,12,"Strongly agree
+
+1
+",4,3,No,10,20,20,40,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,20,30,20,40,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,There is no relationship,Moderately serious,Male,30,"More than £45,000",20,United Kingdom of Great Britain and Northern Ireland,Chinese,I allow you to use the responses I provided in this study.
+2022-09-21 06:01:42,2022-09-21 06:07:35,IP Address,100,352,True,2022-09-21 06:07:35,R_2TnOAgj3812docW,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,2.50,4,2,4,No,0,10,0,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,10,0,20,No,4,2,4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2.50,More than £102,Less than today,I do not know,I do not know,Very serious,Non-binary / third gender,37,"More than £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-14 06:31:01,2022-09-14 06:31:18,IP Address,8,17,False,2022-09-21 06:31:26,R_eXNzbMuuUkeZIGJ,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-21 06:07:46,2022-09-21 06:35:24,IP Address,100,1658,True,2022-09-21 06:35:24,R_31ix8aIeTNzMekh,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,4,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Very serious,Male,29,"£38,000 - £45,000",22,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-21 10:24:55,2022-09-21 10:33:41,IP Address,100,525,True,2022-09-21 10:33:41,R_3oNFXl1jCO5AhDK,anonymous,EN,1,I agree to participate in the research,B,0,10,10,20,12,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,0,10,10,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,20,No,4,2,"Strongly disagree
+
+5
+",B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Very serious,Female,26,"£38,000 - £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-21 14:33:04,2022-09-21 14:40:58,IP Address,100,474,True,2022-09-21 14:40:58,R_1gtnpcJz848ydQ4,anonymous,EN,1,I agree to participate in the research,A,10,20,10,30,5,"Strongly agree
+
+1
+",3,3,Yes,10,20,10,30,B,Yes,Pay your friend £30 for the coupon.,B,15,25,20,25,Yes,"Strongly agree
+
+1
+",3,3,No difference,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They remain unchanged,Very serious,Male,27,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,Other,I allow you to use the responses I provided in this study.
+2022-09-22 07:38:09,2022-09-22 07:48:14,IP Address,100,604,True,2022-09-22 07:48:14,R_pz9mg2tPVtbV8KR,anonymous,EN,1,I agree to participate in the research,"No difference ",5,10,10,20,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,5,10,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,10,20,Yes,3,4,4,B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Very serious,Male,30,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-22 08:48:11,2022-09-22 08:54:50,IP Address,100,398,True,2022-09-22 08:54:50,R_32Qpp8EHIuFJtdN,anonymous,EN,1,I agree to participate in the research,A,10,20,20,20,3,2,3,2,Yes,10,20,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,20,No,"Strongly agree
+
+1
+",4,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,False,I do not know,Very serious,Male,21,"£15,000 - £22,000",17,Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-15 12:29:17,2022-09-15 12:30:50,IP Address,11,92,False,2022-09-22 12:30:50,R_26njy5vM6oiYejF,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-22 12:58:46,2022-09-22 13:06:23,IP Address,100,456,True,2022-09-22 13:06:24,R_T6LdLLhMy71Htnz,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,0,0,0,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,10.00,20.00,20.00,40.00,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20.00,30.00,20.00,40.00,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Female,42,"More than £45,000",21,United Kingdom of Great Britain and Northern Ireland,Other,I allow you to use the responses I provided in this study.
+2022-09-22 13:24:26,2022-09-22 13:35:13,IP Address,100,646,True,2022-09-22 13:35:13,R_2PuGWM7uImSRqn3,anonymous,EN,1,I agree to participate in the research,"No difference ",0,15,0,20,1,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,15,10,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,30,20,30,Yes,2,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1,More than £102,Less than today,False,I do not know,Absolutely serious,Female,24,"£15,000 - £22,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-22 14:35:50,2022-09-22 14:50:50,IP Address,100,900,True,2022-09-22 14:50:52,R_1JOwNuZYyH28leZ,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,5,"Strongly disagree
+
+5
+",3,3,No,10,10,10,10,A,Yes,Pay your friend £30 for the coupon.,B,10,10,20,20,No,"Strongly disagree
+
+5
+",3,3,B,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,I do not know,Absolutely serious,Female,39,"£38,000 - £45,000",28,United Kingdom of Great Britain and Northern Ireland,Lithuanian,I allow you to use the responses I provided in this study.
+2022-09-16 05:12:09,2022-09-16 05:24:46,IP Address,56,756,False,2022-09-23 05:24:47,R_suiD7uWN0py9Yul,anonymous,EN,1,I agree to participate in the research,B,0,9,0,18,,,,,,0,9,0,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,9,0,19,Yes,4,3,"Strongly agree
+
+1
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",3.5,,,,,,,,,,,,
+2022-09-16 10:28:20,2022-09-16 10:39:08,IP Address,61,647,False,2022-09-23 10:39:10,R_1eQ02zBw6e48mAc,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,25,10,35,A,Yes,Pay your friend £30 for the coupon.,B,10,30,10,30,Yes,,,,B,Yes,Pay your friend £30 for the coupon.,2,,,,,,,,,,,,
+2022-09-16 14:32:21,2022-09-16 14:33:31,IP Address,11,70,False,2022-09-23 14:33:32,R_2z91gRbgibio5wl,anonymous,EN,0.6000000238418579,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-24 03:50:31,2022-09-24 04:06:32,IP Address,100,961,True,2022-09-24 04:06:32,R_3etAo9o5J9WxAtn,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,10,10,10,20,A,No,Pay your friend £30 for the coupon.,B,20,20,20,20,No,4,2,3,A,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,I do not know,Absolutely serious,Male,51,"More than £45,000",24,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-17 04:49:28,2022-09-17 04:49:50,IP Address,8,21,False,2022-09-24 04:49:53,R_2s1HShFSx18VF5P,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-24 04:53:16,2022-09-24 05:06:25,IP Address,100,788,True,2022-09-24 05:06:25,R_ClgDCKAvGSSaDiV,anonymous,EN,1,I agree to participate in the research,A,5,10,10,20,5,"Strongly agree
+
+1
+",4,3,No,5,10,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Very serious,Female,52,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-24 05:19:27,2022-09-24 05:33:25,IP Address,100,837,True,2022-09-24 05:33:26,R_3MbB0KqiHc1zwXR,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,8,2,4,3,No,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,3,3,3,B,No,Pay your friend £30 for the coupon.,4,More than £102,Less than today,False,They collapse,Moderately serious,Female,39,Prefer not to answer,19,South Africa,English,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-09-24 06:54:41,2022-09-24 07:09:42,IP Address,100,900,True,2022-09-24 07:09:42,R_1JVGhVixJmby7Hh,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,10,10,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Female,65,Prefer not to answer,13,Canada,English,I allow you to use the responses I provided in this study.
+2022-09-24 08:17:12,2022-09-24 08:30:26,IP Address,100,794,True,2022-09-24 08:30:27,R_Zr9UhXEaSdRvzUJ,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,0,20,No difference,Yes,Pay your friend £30 for the coupon.,B,0,20,0,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,A,Yes,Pay your friend £30 for the coupon.,8,More than £102,Less than today,False,They collapse,Very serious,Male,52,"More than £45,000",16,Canada,English,I allow you to use the responses I provided in this study.
+2022-09-24 11:35:20,2022-09-24 11:42:38,IP Address,100,438,True,2022-09-24 11:42:39,R_9HUaHsZTzYtlJ3H,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,5,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,No,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,No,"Strongly disagree
+
+5
+",2,3,B,Yes,Consider it a gift and not pay for the coupon.,3,More than £102,Less than today,False,They collapse,Absolutely serious,Female,49,"More than £45,000",17,Canada,English,I allow you to use the responses I provided in this study.
+2022-09-25 00:15:58,2022-09-25 00:33:32,IP Address,100,1054,True,2022-09-25 00:33:34,R_31L6e9DLUWuuPWv,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,10,0,20,A,Yes,Pay your friend £30 for the coupon.,A,0,20,0,20,No,4,3,2,No difference,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,I do not know,Very serious,Male,44,"More than £45,000",12,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-25 05:08:54,2022-09-25 05:22:24,IP Address,100,810,True,2022-09-25 05:22:25,R_1DIFXiRpKpMuzmt,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,10,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,10,10,20,A,Yes,Consider it a gift and not pay for the coupon.,No difference,0,20,10,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend £30 for the coupon.,10,Less than £102,Less than today,I do not know,They remain unchanged,Very serious,Female,31,"More than £45,000",14,United Kingdom of Great Britain and Northern Ireland,Lithuanian,I allow you to use the responses I provided in this study.
+2022-09-25 05:15:11,2022-09-25 05:27:59,IP Address,100,768,True,2022-09-25 05:27:59,R_3pszflQx7mt9foY,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,1,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,10,0,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,20,0,20,No,"Strongly disagree
+
+5
+",2,2,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1,More than £102,Less than today,False,I do not know,Absolutely serious,Female,27,"£22,000 - £30,000",14,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-25 08:43:09,2022-09-25 08:57:16,IP Address,100,847,True,2022-09-25 08:57:17,R_1QKEJU3JRJ1xfyI,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,20,20,35,8,2,"Strongly disagree
+
+5
+",3,No,10,20,10,35,A,No,Consider it a gift and not pay for the coupon.,B,20,40,20,35,No,3,"Strongly disagree
+
+5
+",4,A,No,Pay your friend £30 for the coupon.,4,More than £102,Less than today,I do not know,I do not know,Very serious,Male,29,"Less than £15,000",18,Italy,Spanish,I allow you to use the responses I provided in this study.
+2022-09-18 22:45:11,2022-09-18 22:48:33,IP Address,8,201,False,2022-09-25 22:48:35,R_3lLfSauNRCAmBNR,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 02:21:31,2022-09-20 02:21:45,IP Address,8,13,False,2022-09-27 02:21:46,R_2X0xxR5XUiuFJ0D,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 02:19:54,2022-09-20 02:22:08,IP Address,28,134,False,2022-09-27 02:22:16,R_2TZ61Q15Yn7iLhE,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,20,20,30,A,,,,,,,,,,,,B,No,Consider it a gift and not pay for the coupon.,2,,,,,,,,,,,,
+2022-09-20 02:22:24,2022-09-20 02:22:47,IP Address,8,22,False,2022-09-27 02:22:51,R_2AMRSo1t3nS5jUC,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 02:17:42,2022-09-20 02:24:20,IP Address,42,398,False,2022-09-27 02:24:23,R_2dipXUpMTbSVqzY,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,10,10,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,25,No,2,4,3,B,No,,,,,,,,,,,,,,
+2022-09-20 02:30:56,2022-09-20 02:31:23,IP Address,8,26,False,2022-09-27 02:31:23,R_2wjJGj754Cpa1CF,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 03:00:05,2022-09-20 03:08:31,IP Address,44,505,False,2022-09-27 03:08:33,R_2WwdKZ3FCtrPBNs,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,5,,,,,,,,,,,,B,0,10,0,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,Yes,Pay your friend £30 for the coupon.,3,,,,,,,,,,,,
+2022-09-20 03:19:07,2022-09-20 03:23:52,IP Address,50,285,False,2022-09-27 03:27:38,R_1l6pDvaB6WZsEuM,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,,,,,,,,,,0,5,0,5,A,Yes,Consider it a gift and not pay for the coupon.,B,5,10,5,20,No,2,"Strongly disagree
+
+5
+",4,B,No,Consider it a gift and not pay for the coupon.,2,,,,,,,,,,,,
+2022-09-20 03:53:29,2022-09-20 03:57:43,IP Address,36,254,False,2022-09-27 04:05:29,R_2s0SVuzfRwbkMe1,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,,,,,,,,,,,,
+2022-09-20 04:07:36,2022-09-20 04:07:53,IP Address,8,16,False,2022-09-27 04:08:55,R_3oNRyXBogqH4x6x,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 06:28:47,2022-09-20 06:33:28,IP Address,36,280,False,2022-09-27 06:33:29,R_eKwFGW34PZ5PnhL,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,,,,,,,,,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,,,,,,,,,,,,
+2022-09-20 06:58:26,2022-09-20 07:07:48,IP Address,56,562,False,2022-09-27 07:07:52,R_rqhzMUBeSy2sgA9,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,0,10,0,20,,,,B,0,10,0,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,,,,,,,,,,,,
+2022-09-20 07:24:05,2022-09-20 07:33:08,IP Address,53,543,False,2022-09-27 07:33:08,R_WBtkPWMlAwkXntT,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,3,3,3,Yes,0,10,0,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,,,,,,,,,,,,
+2022-09-20 07:37:50,2022-09-20 07:43:07,IP Address,44,317,False,2022-09-27 07:43:09,R_pnE8mXg3KO7oMlX,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,,,,,,,,,,,,No difference,0,10,0,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,Yes,Pay your friend £30 for the coupon.,5,,,,,,,,,,,,
+2022-09-27 07:51:07,2022-09-27 08:01:55,IP Address,100,648,True,2022-09-27 08:01:55,R_A6ECwz2o7WJb2uZ,anonymous,EN,1,I agree to participate in the research,B,8,10,20,20,5,3,3,2,Yes,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,10,20,20,Yes,3,3,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,I do not know,I do not know,I do not know,I do not know,Moderately serious,Non-binary / third gender,26,"Less than £15,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 08:02:47,2022-09-20 08:10:53,IP Address,44,485,False,2022-09-27 08:10:54,R_1Nbu3DVArN5Caoc,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,15,20,25,A,No,,B,20,30,20,30,Yes,2,4,3,B,No,Consider it a gift and not pay for the coupon.,2,,,,,,,,,,,,
+2022-09-27 08:13:57,2022-09-27 08:22:09,IP Address,100,491,True,2022-09-27 08:22:09,R_3ivPn1BLUzkh6Gr,anonymous,EN,0.800000011920929,I agree to participate in the research,"No difference ",10,10,10,10,10,"Strongly agree
+
+1
+",4,3,Yes,10,20,20,20,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,10,20,20,20,No,"Strongly disagree
+
+5
+",2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,I do not know,Moderately serious,Female,24,"£15,000 - £22,000",20,United Kingdom of Great Britain and Northern Ireland,French,I allow you to use the responses I provided in this study.
+2022-09-20 09:09:18,2022-09-20 09:13:23,IP Address,22,245,False,2022-09-27 09:13:24,R_2y1vZvfg4aN6PLn,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,10,20,15,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,,,,,,,,,,,,,,,,
+2022-09-20 09:35:25,2022-09-20 09:35:49,IP Address,11,24,False,2022-09-27 09:35:54,R_1PYJkrRKF4LtBhF,anonymous,EN,1,I agree to participate in the research,"No difference ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 09:29:12,2022-09-20 09:36:28,IP Address,50,435,False,2022-09-27 09:36:30,R_ByTsDyQxjyyMKOd,anonymous,EN,1,I agree to participate in the research,A,,,,,,,,,,10,20,20,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,10,20,20,30,No,4,4,4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,,,,,,,,,,,,
+2022-09-20 09:41:24,2022-09-20 09:43:17,IP Address,25,112,False,2022-09-27 09:43:18,R_2wdwrJOaL2yxYHb,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,,,,,,,,,,0,8,0,15,No difference,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 09:28:13,2022-09-20 10:01:30,IP Address,11,1996,False,2022-09-27 10:01:39,R_1j7ds11oiI0pjkC,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 10:58:06,2022-09-20 11:04:47,IP Address,58,401,False,2022-09-27 11:04:51,R_3iUnKo3kqmjPaRY,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,,,,,0,10,0,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,10,0,20,No,4,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,,,,,,,,,,,,
+2022-09-27 11:37:00,2022-09-27 11:55:09,IP Address,100,1089,True,2022-09-27 11:55:09,R_3OrlTEkQmNJ9rlM,anonymous,EN,1,I agree to participate in the research,B,10,10,20,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,No difference,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+",4,4,A,No,Consider it a gift and not pay for the coupon.,5,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Female,25,"Less than £15,000",23,United Kingdom of Great Britain and Northern Ireland,Other,I allow you to use the responses I provided in this study.
+2022-09-20 11:48:21,2022-09-20 11:56:29,IP Address,81,488,False,2022-09-27 11:56:34,R_2PvAFD2XVwzhXhV,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,5,0,10,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,5,10,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,5,10,10,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,They collapse,Very serious,,,,,,,
+2022-09-27 14:21:12,2022-09-27 14:52:41,IP Address,100,1888,True,2022-09-27 14:52:41,R_8eat3cQrDKhkIN3,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,3.50,2,4,4,No,0,10,0,15,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,15,0,20,No,2,4,4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,They collapse,Absolutely serious,Male,28,"£38,000 - £45,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-20 15:06:15,2022-09-20 15:06:22,IP Address,3,7,False,2022-09-27 15:06:24,R_2D60lFunuqZ99zw,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 15:44:01,2022-09-20 15:44:29,IP Address,8,28,False,2022-09-27 15:44:36,R_2pRURVdx4uFpDuO,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 15:45:38,2022-09-20 15:50:06,IP Address,50,267,False,2022-09-27 15:50:08,R_1ZwQZJW3ySzJ0uR,anonymous,EN,1,I agree to participate in the research,B,5,15,10,30,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,,,,,,,,B,10,18,18,30,No,2,3,2,B,No,Pay your friend £30 for the coupon.,3,,,,,,,,,,,,
+2022-09-20 16:15:48,2022-09-20 16:22:38,IP Address,31,410,False,2022-09-27 16:22:44,R_yIJQHyuq3bbul8t,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,,,,,,,,,,,,,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,1,,,,,,,,,,,,
+2022-09-20 18:15:18,2022-09-20 18:16:03,IP Address,8,45,False,2022-09-27 18:16:11,R_2e410IheJDyYVPn,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-20 19:25:37,2022-09-20 19:31:25,IP Address,42,347,False,2022-09-27 19:31:26,R_2WvPur4gxIlpA9x,anonymous,EN,1,I agree to participate in the research,B,0,10,10,20,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,10,10,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 00:22:27,2022-09-28 00:41:05,IP Address,100,1118,True,2022-09-28 00:41:05,R_1Q0InaHq4wZv82T,anonymous,EN,1,I agree to participate in the research,"No difference ",0,1,0,1,2,3,3,3,Yes,0,10,0,20,No difference,Yes,Pay your friend £30 for the coupon.,A,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Absolutely serious,Male,52,"£15,000 - £22,000",23,India,Other,I allow you to use the responses I provided in this study.
+2022-09-28 00:27:14,2022-09-28 02:23:09,IP Address,100,6955,True,2022-09-28 02:23:10,R_3oz6ohjPPG77LHQ,anonymous,EN,1,I agree to participate in the research,B,0,0,0,0,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,0,0,0,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,0,0,0,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",50,Exactly £102,Exactly the same as today,True,They collapse,Absolutely serious,Male,38,"£15,000 - £22,000",24,India,Other,I allow you to use the responses I provided in this study.
+2022-09-28 04:59:44,2022-09-28 05:11:20,IP Address,100,696,True,2022-09-28 05:11:21,R_2q9lEuTmFh4Pm4M,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,20,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than £102,Less than today,False,I do not know,Very serious,Male,38,"More than £45,000",18,United States of America,Other,I allow you to use the responses I provided in this study.
+2022-09-28 04:12:13,2022-09-28 05:14:00,IP Address,100,3706,True,2022-09-28 05:14:01,R_1ikeAdhCmmKmwi0,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,3,"Strongly agree
+
+1
+",4,2,Yes,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,10,10,20,20,Yes,2,4,2,No difference,Yes,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,I do not know,Very serious,Male,26,"£30,000 - £38,000",17,United Kingdom of Great Britain and Northern Ireland,Italian,I allow you to use the responses I provided in this study.
+2022-09-28 00:47:11,2022-09-28 06:00:41,IP Address,100,18809,True,2022-09-28 06:00:42,R_3JK94F9HCDu6oEK,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,10,10,3,3,3,No,10,10,20,20,No difference,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,No,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,No,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They collapse,Absolutely serious,Male,40,"£15,000 - £22,000",21,India,Other,I allow you to use the responses I provided in this study.
+2022-09-28 06:23:16,2022-09-28 06:29:38,IP Address,100,381,True,2022-09-28 06:29:38,R_3htjjwaHAUcRJ0B,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,10,10,20,A,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly disagree
+
+5
+",2,2,B,No,Consider it a gift and not pay for the coupon.,2,More than £102,Less than today,False,They collapse,Moderately serious,Female,26,"£30,000 - £38,000",21,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-21 08:32:57,2022-09-21 08:33:18,IP Address,8,21,False,2022-09-28 08:33:23,R_3qKY6SqbAsbxdmE,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 14:35:44,2022-09-28 15:05:43,IP Address,100,1799,True,2022-09-28 15:05:44,R_3KYLRQB7bJedtf9,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,10,"Strongly agree
+
+1
+",4,2,Yes,10,10,10,20,No difference,Yes,Pay your friend £30 for the coupon.,B,10,20,20,20,Yes,"Strongly agree
+
+1
+",4,2,No difference,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They remain unchanged,Very serious,Female,35,Prefer not to answer,18,United Kingdom of Great Britain and Northern Ireland,Lithuanian,I allow you to use the responses I provided in this study.
+2022-09-28 15:12:39,2022-09-28 15:21:06,IP Address,100,507,True,2022-09-28 15:21:06,R_24bMlaMNXhLU1Gz,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,50,20,100,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,50,20,100,A,No,Consider it a gift and not pay for the coupon.,B,20,60,20,100,Yes,4,2,3,B,No,Consider it a gift and not pay for the coupon.,4,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Female,26,"More than £45,000",17,United Kingdom of Great Britain and Northern Ireland,Italian,I allow you to use the responses I provided in this study.
+2022-09-28 19:08:24,2022-09-28 19:59:08,IP Address,100,3044,True,2022-09-28 19:59:09,R_0BwlLT6L7kFAexr,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,10,"Strongly agree
+
+1
+",2,2,Yes,10,10,20,20,A,Yes,Pay your friend £30 for the coupon.,A,20,20,20,20,Yes,2,3,2,A,Yes,Pay your friend £30 for the coupon.,10,More than £102,Less than today,I do not know,I do not know,Very serious,Female,54,"£15,000 - £22,000",20,India,English,I allow you to use the responses I provided in this study.
+2022-09-29 02:47:13,2022-09-29 03:00:39,IP Address,100,805,True,2022-09-29 03:00:40,R_DIx7Z9FyWMPyvux,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,10,20,20,5,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,10,10,20,20,A,Yes,Pay your friend £30 for the coupon.,A,10,10,20,20,Yes,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,I do not know,Absolutely serious,Female,47,"£30,000 - £38,000",17,India,Other,I allow you to use the responses I provided in this study.
+2022-09-22 09:50:18,2022-09-22 09:54:45,IP Address,19,267,False,2022-09-29 09:54:47,R_1NfQVysf1QkMsyV,anonymous,EN,1,I agree to participate in the research,A,5,10,10,20,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 10:31:12,2022-09-29 10:49:14,IP Address,100,1081,True,2022-09-29 10:49:14,R_1rqdLTauhjqWIbB,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,15,"Strongly agree
+
+1
+",4,4,No,0,10,0,20,A,Yes,Pay your friend £30 for the coupon.,B,0,20,0,20,No,"Strongly disagree
+
+5
+",2,2,B,Yes,Pay your friend £30 for the coupon.,4,More than £102,Less than today,False,They collapse,Very serious,Male,28,"More than £45,000",10,United Kingdom of Great Britain and Northern Ireland,French,I allow you to use the responses I provided in this study.
+2022-09-29 11:24:32,2022-09-29 11:34:31,IP Address,100,599,True,2022-09-29 11:34:32,R_1gBEeXFP1KMA4pN,anonymous,EN,1,I agree to participate in the research,A,0,15,0,25,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,10,20,20,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,15,25,15,30,Yes,4,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",1,More than £102,Less than today,I do not know,I do not know,Moderately serious,Female,26,"More than £45,000",15,United Kingdom of Great Britain and Northern Ireland,Dutch,I allow you to use the responses I provided in this study.
+2022-09-24 04:36:17,2022-09-24 06:46:18,IP Address,3,7801,False,2022-10-01 06:46:22,R_1DSatbdv4rckr8U,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 03:20:04,2022-09-26 03:25:10,IP Address,58,305,False,2022-10-03 03:30:54,R_3hnKT7T8BZuFuYN,anonymous,EN,1,I agree to participate in the research,"No difference ",10,15,20,30,3,,,,,10,15,20,30,No difference,No,Pay your friend £30 for the coupon.,No difference,10,15,20,30,Yes,"Strongly agree
+
+1
+",2,3,No difference,No,Pay your friend £30 for the coupon.,3,,,,,,,,,,,,
+2022-09-27 07:51:08,2022-09-27 07:55:14,IP Address,19,246,False,2022-10-04 07:55:17,R_3FeySNZpm8iGXjH,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,Pay your friend £30 for the coupon.,5,,,,,,,,,,,,
+2022-09-27 10:38:52,2022-09-27 10:40:03,IP Address,11,71,False,2022-10-04 10:40:06,R_2YuqltUODDKtScY,anonymous,EN,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 00:28:26,2022-09-28 00:33:59,IP Address,33,332,False,2022-10-05 00:34:04,R_1eXAx0oFDNMkZwA,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,10,10,10,,,,,10,10,10,10,A,Yes,Pay your friend £30 for the coupon.,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 02:32:27,2022-09-28 02:41:56,IP Address,50,569,False,2022-10-05 02:42:06,R_22tWgGlvFVO2Vmu,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,Yes,4,2,2,B,Yes,Pay your friend £30 for the coupon.,5,,,,,,,,,,,,
+2022-09-28 05:43:04,2022-09-28 05:43:23,IP Address,8,18,False,2022-10-05 05:43:24,R_WwUb0usCqJNeEP7,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 07:35:38,2022-09-28 07:37:12,IP Address,8,93,False,2022-10-05 07:38:19,R_2U3NiQDsV6d7DSt,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-05 07:58:30,2022-10-05 08:27:39,IP Address,100,1748,True,2022-10-05 08:27:40,R_22ziGIaAeXD6HRA,anonymous,EN,1,I agree to participate in the research,"No difference ",10.00,10.00,20.00,20.00,5.50,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",Yes,10.00,10.00,20.00,20.00,A,No,Consider it a gift and not pay for the coupon.,B,0.00,10,0.00,20.00,Yes,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",B,No,Pay your friend £30 for the coupon.,2.00,More than £102,Less than today,I do not know,They remain unchanged,Moderately serious,Male,22,"More than £45,000",14,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-05 08:21:18,2022-10-05 08:29:33,IP Address,100,494,True,2022-10-05 08:29:33,R_2CqQNJTi0eWd8XA,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,10,0,20,No difference,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,I do not know,Absolutely serious,Female,49,"£22,000 - £30,000",14,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-05 08:43:58,2022-10-05 09:03:07,IP Address,100,1149,True,2022-10-05 09:03:07,R_1rAOJLGS35JJ1FF,anonymous,EN,0.4000000059604645,I agree to participate in the research,A,0,10,0,10,4,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,10,0,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,20,0,20,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1.5,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Male,39,"£30,000 - £38,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-28 05:42:55,2022-09-28 09:06:20,IP Address,25,12205,False,2022-10-05 09:06:22,R_2CmlCaWT1TBrPyO,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,,,,,,,,,,,,,,,,,B,0,10,0,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,,,,,,,,,,,,,,,,
+2022-10-05 09:12:20,2022-10-05 09:31:41,IP Address,100,1160,True,2022-10-05 09:31:42,R_3L2cuO6HY9t0KWy,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,10,"Strongly agree
+
+1
+",3,4,No,10,10,10,10,No difference,Yes,Pay your friend £30 for the coupon.,No difference,15,15,20,20,No,"Strongly agree
+
+1
+",3,4,No difference,Yes,Pay your friend £30 for the coupon.,10,More than £102,Less than today,False,I do not know,Very serious,Female,20,"£38,000 - £45,000",15,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-09-28 10:09:26,2022-09-28 10:09:40,IP Address,8,13,False,2022-10-05 10:09:43,R_1FQjkGDFgY0wDMc,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-05 11:20:52,2022-10-05 12:50:37,IP Address,100,5385,True,2022-10-05 12:50:39,R_3siGjWkS5YSnepT,anonymous,EN,1,I agree to participate in the research,B,25,60,40,80,20,2,3,3,No,20,40,40,60,A,No,Consider it a gift and not pay for the coupon.,A,30,50,40,60,No,4,2,3,No difference,No,Consider it a gift and not pay for the coupon.,7,I do not know,I do not know,I do not know,I do not know,Very serious,Female,19,"£30,000 - £38,000",12,United Kingdom of Great Britain and Northern Ireland,Other,I allow you to use the responses I provided in this study.
+2022-09-28 08:22:53,2022-09-28 14:45:10,IP Address,81,22937,False,2022-10-05 14:45:15,R_2xYrvteCWESPSL8,anonymous,EN,1,I agree to participate in the research,B,10,10,10,10,10,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,10,10,20,20,No difference,No,Pay your friend £30 for the coupon.,No difference,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,No,Consider it a gift and not pay for the coupon.,10,More than £102,I do not know,I do not know,I do not know,Absolutely serious,,,,,,,
+2022-10-05 16:03:25,2022-10-05 16:12:29,IP Address,100,543,True,2022-10-05 16:12:29,R_1igolOjqkP4LWeg,anonymous,EN,1,I agree to participate in the research,"No difference ",10,20,20,30,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,10,20,20,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,30,No,4,2,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",1,More than £102,Less than today,False,I do not know,Moderately serious,Male,28,Prefer not to answer,18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-05 19:20:44,2022-10-05 19:31:30,IP Address,100,646,True,2022-10-05 19:31:31,R_POgOEeVb20mr9bH,anonymous,EN,1,I agree to participate in the research,A,10,15,20,25,5,2,"Strongly disagree
+
+5
+",2,Yes,10,15,20,25,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,15,20,25,Yes,2,4,"Strongly agree
+
+1
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2.50,More than £102,Less than today,I do not know,I do not know,Very serious,Female,18,"Less than £15,000",8,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-08 09:41:31,2022-10-08 09:54:21,IP Address,100,770,True,2022-10-08 09:54:21,R_20UMzQQAh3l9DKs,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,A,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+",4,3,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,I do not know,I do not know,Very serious,Female,39,"£15,000 - £22,000",15,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-09 11:48:35,2022-10-09 12:02:13,IP Address,100,817,True,2022-10-09 12:02:15,R_2z7OTT2KjxPUcwD,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,6,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,No,10,20,10,30,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,20,30,20,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Exactly the same as today,I do not know,I do not know,Very serious,Female,21,"£30,000 - £38,000",13,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-09 17:15:37,2022-10-12 05:57:35,IP Address,100,218518,True,2022-10-12 05:57:36,R_0NxFSvLl0nq4vkd,anonymous,EN,1,I agree to participate in the research,B,5,15,5,30,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,10,30,20,40,B,Yes,Pay your friend £30 for the coupon.,B,10,20,20,30,No,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,I do not know,I do not know,I do not know,I do not know,Very serious,Female,20,"£15,000 - £22,000",13,United Kingdom of Great Britain and Northern Ireland,Brazilian Portuguese,I allow you to use the responses I provided in this study.
+2022-10-05 07:56:17,2022-10-05 07:58:01,IP Address,11,104,False,2022-10-12 07:58:02,R_1Kj3o5etwxFL6RZ,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-05 08:07:57,2022-10-05 08:08:53,IP Address,14,55,False,2022-10-12 08:08:59,R_2ZWXIhkiFcdwl2p,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,No,,,,,,,,,,,,,,
+2022-10-12 08:05:20,2022-10-12 08:14:05,IP Address,100,524,True,2022-10-12 08:14:05,R_3qmqq58FJyL95BL,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,10,13,"Strongly agree
+
+1
+",4,4,No,10,13,20,23,No difference,Yes,Consider it a gift and not pay for the coupon.,B,20,25,20,25,No,3,"Strongly disagree
+
+5
+",2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Female,43,"More than £45,000",20,United Kingdom of Great Britain and Northern Ireland,Danish,I allow you to use the responses I provided in this study.
+2022-10-12 07:41:12,2022-10-12 09:27:42,IP Address,100,6389,True,2022-10-12 09:27:42,R_2YAhNltOJ3xBKg9,anonymous,EN,1,I agree to participate in the research,B,10,10,20,20,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,20,No,4,2,3,B,Yes,Consider it a gift and not pay for the coupon.,2,More than £102,Less than today,False,They remain unchanged,Very serious,Male,25,"£30,000 - £38,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-12 12:56:58,2022-10-12 13:11:18,IP Address,100,859,True,2022-10-12 13:11:19,R_277fv7qgM6xlA5I,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,10,10,20,5,"Strongly agree
+
+1
+",4,4,Yes,10,20,10,20,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,30,20,30,No,3,2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,There is no relationship,Very serious,Female,51,Prefer not to answer,17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-13 06:38:16,2022-10-13 06:47:04,IP Address,100,527,True,2022-10-13 06:47:05,R_2BrsolWnof1LpuC,anonymous,EN,1,I agree to participate in the research,"No difference ",0,5,5,15,5,4,"Strongly disagree
+
+5
+",2,Yes,5,10,10,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,10,20,No,3,4,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,False,I do not know,Very serious,Male,27,"£22,000 - £30,000",22,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-10 01:03:31,2022-10-10 01:22:50,IP Address,81,1159,False,2022-10-17 01:22:51,R_2wzwUZl43U3yYac,anonymous,EN,1,I agree to participate in the research,"No difference ",10,20,20,29,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,10,15,20,27,A,No,Consider it a gift and not pay for the coupon.,B,25,35,30,39,No,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",B,No,Pay your friend £30 for the coupon.,3,More than £102,I do not know,I do not know,I do not know,Absolutely serious,,,,,,,
+2022-10-11 03:54:50,2022-10-11 04:38:33,IP Address,8,2622,False,2022-10-18 04:38:36,R_D0EmBe7Gpvppq3T,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-18 07:30:53,2022-10-18 07:39:56,IP Address,100,542,True,2022-10-18 07:39:56,R_1j8sdmPXCWblAPq,anonymous,EN,1,I agree to participate in the research,"No difference ",5,5,10,10,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,5,5,10,10,No difference,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,No,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They collapse,Absolutely serious,Female,33,"£30,000 - £38,000",22,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-18 09:17:40,2022-10-18 09:31:09,IP Address,100,808,True,2022-10-18 09:31:09,R_31GcrUB5RL87Pg0,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,10,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,15,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,20,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They collapse,Absolutely serious,Female,49,"More than £45,000",20,United Kingdom of Great Britain and Northern Ireland,Brazilian Portuguese,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-10-19 07:07:40,2022-10-19 07:16:02,IP Address,100,501,True,2022-10-19 07:16:02,R_1JCn3GYkCu5BTaN,anonymous,EN,1,I agree to participate in the research,A,10,12,20,25,3.00,"Strongly agree
+
+1
+",4,4,Yes,10,12,20,25,A,No,Consider it a gift and not pay for the coupon.,B,15,25,20,25,No,4,2,3,B,No,Consider it a gift and not pay for the coupon.,2.00,More than £102,Less than today,I do not know,I do not know,Very serious,Male,21,"More than £45,000",14,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-12 08:56:22,2022-10-12 08:57:41,IP Address,11,78,False,2022-10-19 08:57:49,R_Ti7tMbkMM97mUgx,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 10:42:18,2022-10-19 22:39:09,IP Address,100,43011,True,2022-10-19 22:39:11,R_xlrj9flbvoxdKVj,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,10,10,20,20,No difference,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No difference,No,Pay your friend £30 for the coupon.,1,More than £102,Less than today,I do not know,I do not know,Moderately serious,Female,53,"£38,000 - £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-13 08:45:34,2022-10-13 08:46:40,IP Address,8,66,False,2022-10-20 08:46:43,R_31H2WbfGVshflMt,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-20 16:51:25,2022-10-20 17:07:51,IP Address,100,986,True,2022-10-20 17:07:53,R_29hS7Av8TFJtLlf,anonymous,EN,1,I agree to participate in the research,B,0,10,0,15,7,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,15,20,25,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,15,25,20,25,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",3.5,More than £102,Less than today,False,I do not know,Absolutely serious,Male,20,"£30,000 - £38,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-23 08:07:58,2022-10-23 08:18:11,IP Address,100,613,True,2022-10-23 08:18:12,R_3nCTzxszqnu1drP,anonymous,EN,1,I agree to participate in the research,A,5,15,10,30,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,5,15,10,30,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,30,No,4,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,I do not know,Absolutely serious,Male,25,"£15,000 - £22,000",13,United Kingdom of Great Britain and Northern Ireland,Brazilian Portuguese,I allow you to use the responses I provided in this study.
+2022-10-24 12:05:30,2022-10-24 12:13:42,IP Address,100,492,True,2022-10-24 12:13:43,R_2wnSOk9loNtQBP8,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,5,"Strongly agree
+
+1
+",3,4,Yes,0,10,0,10,A,No,Pay your friend £30 for the coupon.,B,0,20,0,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,No,Pay your friend £30 for the coupon.,2,Exactly £102,I do not know,I do not know,I do not know,Very serious,Female,22,"£22,000 - £30,000",15,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 02:31:44,2022-10-25 02:41:12,IP Address,100,567,True,2022-10-25 02:41:13,R_Z3HcXcB1P3PHF4J,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,10,20,20,4,4,3,3,No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,10,20,20,No,4,3,3,B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Male,33,"More than £45,000",15,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 02:29:24,2022-10-25 02:43:32,IP Address,100,847,True,2022-10-25 02:43:32,R_sdJgJwoNZvsjBg5,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,10,20,12,2,4,3,No,10,10,10,20,A,No,Consider it a gift and not pay for the coupon.,B,10,20,20,20,Yes,3,2,2,No difference,Yes,Consider it a gift and not pay for the coupon.,6,More than £102,I do not know,I do not know,I do not know,Moderately serious,Female,18,Prefer not to answer,13,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 02:44:39,2022-10-25 02:44:50,IP Address,100,10,True,2022-10-25 02:44:50,R_2rCQM7fvfuGYlbT,anonymous,EN,1,I do NOT agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 02:34:01,2022-10-25 02:49:05,IP Address,100,904,True,2022-10-25 02:49:06,R_2R2nGDLpymwI4Wu,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,10,"Strongly agree
+
+1
+",4,4,No,10,10,10,10,A,Yes,Pay your friend £30 for the coupon.,B,20,20,20,20,No,"Strongly disagree
+
+5
+",2,2,B,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,False,They collapse,Moderately serious,Female,28,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 02:43:32,2022-10-25 02:52:12,IP Address,100,520,True,2022-10-25 02:52:13,R_NX518z0dGD6jXzP,anonymous,EN,1,I agree to participate in the research,A,0,10,0,15,6,3,4,"Strongly agree
+
+1
+",Yes,10,15,10,20,B,Yes,Consider it a gift and not pay for the coupon.,No difference,10,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,No,Consider it a gift and not pay for the coupon.,5,More than £102,Less than today,I do not know,I do not know,Moderately serious,Female,20,Prefer not to answer,17,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 02:43:08,2022-10-25 02:56:38,IP Address,100,810,True,2022-10-25 02:56:40,R_2pPISW8Ys4wQ7SY,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,0,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,"Strongly disagree
+
+5
+",2,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,I do not know,Absolutely serious,Male,36,"£38,000 - £45,000",19,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 03:02:05,2022-10-25 03:08:58,IP Address,100,413,True,2022-10-25 03:08:58,R_21bpdvil2tdLeaO,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,20,5,35,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,20,20,35,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,30,0,40,Yes,2,3,3,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",6,More than £102,Less than today,False,I do not know,Very serious,Female,30,"£30,000 - £38,000",11,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 02:52:51,2022-10-25 03:13:25,IP Address,100,1234,True,2022-10-25 03:13:27,R_RK67W9Z41KOp9iF,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,1.5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,10,10,20,A,No,Pay your friend £30 for the coupon.,A,0,15,0,15,Yes,3,2,2,No difference,No,Pay your friend £30 for the coupon.,1.50,More than £102,Less than today,False,I do not know,Absolutely serious,Male,19,"£22,000 - £30,000",13,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 03:24:26,2022-10-25 03:33:10,IP Address,100,524,True,2022-10-25 03:33:10,R_1lhKuvgJeN2rR6T,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,4,3,4,"Strongly disagree
+
+5
+",No,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,20,No,4,2,2,B,Yes,Pay your friend £30 for the coupon.,4,More than £102,Less than today,False,I do not know,Very serious,Female,49,"More than £45,000",18,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 03:35:20,2022-10-25 03:44:21,IP Address,100,541,True,2022-10-25 03:44:22,R_ZaVodfyb5ZOofAd,anonymous,EN,1,I agree to participate in the research,B,8,12,15,25,5,2,4,3,Yes,10,15,20,25,A,Yes,Pay your friend £30 for the coupon.,B,20,25,20,25,Yes,3,2,4,B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,There is no relationship,Very serious,Male,57,"Less than £15,000",16,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 03:35:50,2022-10-25 03:46:59,IP Address,100,669,True,2022-10-25 03:47:00,R_2usU1NWQdWxwjyv,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,1,3,3,2,Yes,0,7,0,15,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,10,0,20,Yes,3,3,3,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,They collapse,Absolutely serious,Male,38,"£15,000 - £22,000",24,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 03:34:49,2022-10-25 03:49:06,IP Address,100,856,True,2022-10-25 03:49:06,R_bwNujJIZd7ej7hv,anonymous,EN,1,I agree to participate in the research,B,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,15,20,20,20,No,4,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,False,They collapse,Absolutely serious,Male,26,"More than £45,000",20,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-25 06:13:05,2022-10-25 06:25:10,IP Address,100,725,True,2022-10-25 06:25:10,R_2XapmpPzNPXNXuV,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,8,10,15,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,15,20,No,4,4,"Strongly agree
+
+1
+",B,No,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,I do not know,Absolutely serious,Female,44,"More than £45,000",21,United Kingdom of Great Britain and Northern Ireland,European Portuguese,I allow you to use the responses I provided in this study.
+2022-10-25 07:27:21,2022-10-25 07:56:13,IP Address,100,1732,True,2022-10-25 07:56:14,R_8G2VS5RntVUeoLf,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,15,20,25,20,"Strongly agree
+
+1
+",4,4,No,10,15,20,25,A,No,Consider it a gift and not pay for the coupon.,B,10,15,20,25,No,2,4,3,No difference,No,Consider it a gift and not pay for the coupon.,1.50,More than £102,Exactly the same as today,False,I do not know,Absolutely serious,Female,18,"£15,000 - £22,000",15,United Kingdom of Great Britain and Northern Ireland,English,I allow you to use the responses I provided in this study.
+2022-10-26 08:01:00,2022-10-26 08:10:41,IP Address,100,580,True,2022-10-26 08:10:42,R_tXkVplt0Vx3dHc5,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,10,10,20,20,No difference,Yes,Pay your friend £30 for the coupon.,B,10,20,0,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Pay your friend £30 for the coupon.,10,More than £102,Less than today,I do not know,I do not know,Very serious,Male,65,"£15,000 - £22,000",16,Germany,English,I allow you to use the responses I provided in this study.
+2022-10-26 08:04:47,2022-10-26 08:16:42,IP Address,100,715,True,2022-10-26 08:16:43,R_3e3thFH7VE3EfSi,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,2,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,0,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,10,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",2,More than £102,Less than today,False,They collapse,Slightly serious,Female,58,"More than £45,000",17,Germany,English,I allow you to use the responses I provided in this study.
+2022-10-19 08:37:56,2022-10-19 08:38:21,IP Address,6,25,False,2022-10-26 09:38:45,R_1N5tgijbkBnxpZo,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 14:10:13,2022-10-19 14:13:40,IP Address,25,207,False,2022-10-26 14:13:41,R_1dv4fT0DnJYWDgz,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,5,20,10,40,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 09:55:54,2022-10-27 10:05:22,IP Address,100,567,True,2022-10-27 10:05:24,R_1Dxb2iFuL7oXfcR,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,10,20,20,30,No difference,Yes,Consider it a gift and not pay for the coupon.,B,20,30,20,30,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,False,They remain unchanged,Moderately serious,Male,54,"More than £45,000",10,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-27 12:52:49,2022-10-27 13:01:22,IP Address,100,513,True,2022-10-27 13:01:24,R_BXsJIe4fHvEgNup,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,10,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend £30 for the coupon.,5,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Female,38,"£38,000 - £45,000",13,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-27 13:02:32,2022-10-27 13:15:23,IP Address,100,770,True,2022-10-27 13:15:24,R_2V462smTKDsicys,anonymous,EN,1,I agree to participate in the research,"No difference ",5,5,10,10,2,2,4,3,No,7,7,17,17,No difference,Yes,Pay your friend £30 for the coupon.,B,10,10,10,10,No,4,2,"Strongly agree
+
+1
+",No difference,Yes,Pay your friend £30 for the coupon.,1.50,More than £102,Less than today,False,There is no relationship,Very serious,Male,41,"More than £45,000",11,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-27 13:34:52,2022-10-27 13:41:13,IP Address,100,380,True,2022-10-27 13:41:14,R_1Cgt8WNHiCWGsLI,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,5,3,3,3,Yes,0,10,0,20,No difference,No,Pay your friend £30 for the coupon.,No difference,0,0,0,0,Yes,2,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend £30 for the coupon.,3,More than £102,Less than today,False,They collapse,Absolutely serious,Female,48,"£15,000 - £22,000",13,Germany,English,I allow you to use the responses I provided in this study.
+2022-10-27 14:09:50,2022-10-27 14:23:51,IP Address,100,840,True,2022-10-27 14:23:52,R_1QchDSvjlUmvlXz,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,3,2,4,3,Yes,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,10,0,20,Yes,2,4,3,B,Yes,Consider it a gift and not pay for the coupon.,2,More than £102,Less than today,False,I do not know,Very serious,Male,55,Prefer not to answer,23,Germany,English,I allow you to use the responses I provided in this study.
+2022-10-27 14:37:49,2022-10-27 14:47:09,IP Address,100,560,True,2022-10-27 14:47:09,R_agiq5s2bsbf5cXv,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,10,"Strongly agree
+
+1
+",3,3,Yes,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,20,20,20,20,Yes,3,2,2,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than £102,Less than today,False,They collapse,Very serious,Male,34,"£22,000 - £30,000",18,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-28 00:49:00,2022-10-28 00:57:58,IP Address,100,537,True,2022-10-28 00:57:59,R_3EzZ3Udier3WPBa,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,10,0,10,2,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,10,10,20,20,B,No,Consider it a gift and not pay for the coupon.,A,20,20,20,20,Yes,"Strongly agree
+
+1
+",4,3,A,No,Consider it a gift and not pay for the coupon.,1.50,More than £102,Less than today,False,They collapse,Absolutely serious,Female,40,"£22,000 - £30,000",18,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-28 03:30:18,2022-10-28 03:38:42,IP Address,100,503,True,2022-10-28 03:38:42,R_2yfoIWuqnBlO1kR,anonymous,EN,0.699999988079071,I agree to participate in the research,A,0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,20,20,40,A,No,Consider it a gift and not pay for the coupon.,A,20,20,20,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Male,51,"£30,000 - £38,000",16,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-28 04:49:27,2022-10-28 05:01:29,IP Address,100,721,True,2022-10-28 05:01:29,R_2PomFdHeddN6NGT,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,No,4,"Strongly agree
+
+1
+",4,B,Yes,Pay your friend £30 for the coupon.,2,More than £102,Less than today,False,They collapse,Very serious,Male,36,"More than £45,000",18,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-26 12:13:23,2022-10-28 09:51:46,IP Address,100,164302,True,2022-10-28 09:51:47,R_Oes2mKOuoc31nPz,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,5,2,4,2,Yes,0,0,0,10,No difference,Yes,Pay your friend £30 for the coupon.,A,10,10,10,20,No,3,3,2,B,Yes,Pay your friend £30 for the coupon.,5,More than £102,Less than today,I do not know,I do not know,Moderately serious,Female,52,"£22,000 - £30,000",8,Germany,English,I allow you to use the responses I provided in this study.
+2022-10-28 04:57:20,2022-10-28 11:26:43,IP Address,100,23362,True,2022-10-28 11:26:43,R_p46763oBj1NV5RL,anonymous,EN,1,I agree to participate in the research,A,0,10,10,20,5,2,4,3,Yes,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,Yes,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,They collapse,Very serious,Male,45,"More than £45,000",17,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-28 14:12:02,2022-10-28 14:22:27,IP Address,100,625,True,2022-10-28 14:22:29,R_2trEg3qHMQ2TMyO,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,10,0,20,5,2,"Strongly disagree
+
+5
+",4,Yes,0,10,0,20,A,No,Consider it a gift and not pay for the coupon.,B,0,20,0,20,No,3,"Strongly agree
+
+1
+",2,B,No,Consider it a gift and not pay for the coupon.,2,More than £102,Less than today,I do not know,They collapse,Moderately serious,Female,54,"Less than £15,000",17,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-28 15:21:17,2022-10-28 15:37:39,IP Address,100,981,True,2022-10-28 15:37:39,R_2OSVafxanyBV7At,anonymous,EN,1,I agree to participate in the research,A,10,20,20,40,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,20,20,40,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,40,20,40,No,3,4,4,B,Yes,Pay your friend £30 for the coupon.,4,More than £102,Less than today,False,They collapse,Very serious,Male,56,"More than £45,000",12,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-29 08:29:00,2022-10-29 08:38:37,IP Address,100,577,True,2022-10-29 08:38:38,R_T0gx0T7VztLxXgJ,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,10,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,No difference,Yes,Pay your friend £30 for the coupon.,B,10,10,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend £30 for the coupon.,4,More than £102,Less than today,I do not know,I do not know,Absolutely serious,Female,34,"More than £45,000",14,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-29 09:11:24,2022-10-29 09:26:50,IP Address,100,926,True,2022-10-29 09:26:52,R_20MpBYc21RK5VAm,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,2,4,"Strongly agree
+
+1
+",Yes,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,30,No,3,2,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than £102,Less than today,False,They collapse,Very serious,Male,41,"More than £45,000",17,Czech Republic,English,I allow you to use the responses I provided in this study.
+2022-10-29 13:00:11,2022-10-29 13:10:03,IP Address,100,592,True,2022-10-29 13:10:04,R_2wGeuRKxVoVRYq5,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,5,2,4,3,No,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,No difference,10,10,20,20,No,4,2,3,B,No,Pay your friend £30 for the coupon.,3,More than £102,Less than today,I do not know,I do not know,Very serious,Female,56,"£15,000 - £22,000",11,Germany,English,I allow you to use the responses I provided in this study.
+2022-10-24 05:09:34,2022-10-24 05:15:15,IP Address,36,341,False,2022-10-31 05:15:22,R_3096ymKfyNFjrMl,anonymous,EN,0.800000011920929,I agree to participate in the research,,,,,,,,,,,10,10,20,20,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,,,,,,,,,,,,
+2022-10-25 02:30:48,2022-10-25 02:32:17,IP Address,17,88,False,2022-11-01 02:35:21,R_1BYtvjrGsg9iCny,anonymous,EN,1,I agree to participate in the research,A,10,15,20,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 02:31:28,2022-10-25 02:37:03,IP Address,39,335,False,2022-11-01 02:37:04,R_tM1dyrzYrwvJ2lr,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",,,,,,,,,,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,20,20,20,20,No,3,3,3,,,,,,,,,,,,,,,,
+2022-10-25 02:44:43,2022-10-25 02:45:43,IP Address,6,60,False,2022-11-01 02:45:44,R_1P1uHQWEMwe7BGl,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 02:35:40,2022-10-25 02:46:42,IP Address,78,661,False,2022-11-01 02:46:48,R_1hYI3LOoZ6n1pYB,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,5,2,4,2,Yes,5,10,5,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,10,20,10,20,Yes,3,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than £102,Less than today,False,I do not know,,,,,,,,
+2022-10-25 02:46:54,2022-10-25 02:52:42,IP Address,53,348,False,2022-11-01 02:52:47,R_1C1hVfREH5qMcss,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,10,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,,,,,,,,,,,,
+2022-10-25 02:56:53,2022-10-25 02:58:18,IP Address,19,84,False,2022-11-01 02:58:20,R_3ez3nLCpJFzRGIL,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,0,10,0,0,A,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 02:54:52,2022-10-25 02:58:28,IP Address,42,216,False,2022-11-01 02:58:29,R_3ReCaM311EJyxyZ,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,10,20,20,No difference,No,Consider it a gift and not pay for the coupon.,B,10,10,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,,,,,,,,,,,,,,
+2022-10-25 03:04:28,2022-10-25 03:07:53,IP Address,31,205,False,2022-11-01 03:09:04,R_3oLtOQbgWAbyOWq,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,10,15,10,25,No,,,,No difference,No,Pay your friend £30 for the coupon.,10,,,,,,,,,,,,
+2022-10-25 03:13:18,2022-10-25 03:17:26,IP Address,50,247,False,2022-11-01 03:18:39,R_DNqupa6f7ksbggV,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,5,2,4,3,No,500000,50000,500000,50000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,20,0,20,No,,,,,,,,,,,,,,,,,,,
+2022-10-25 03:22:56,2022-10-25 03:25:26,IP Address,25,149,False,2022-11-01 03:25:31,R_2Vey76JMKjLCRtu,anonymous,EN,0.800000011920929,I agree to participate in the research,,,,,,,,,,,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,No difference,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 03:33:48,2022-10-25 03:34:44,IP Address,11,56,False,2022-11-01 03:34:46,R_QaG5nPCuMXNblwl,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-26 08:18:38,2022-10-26 08:34:17,IP Address,50,938,False,2022-11-02 07:45:09,R_2PuuzyIjWzzsmWO,anonymous,EN,0.800000011920929,I agree to participate in the research,B,,,,,,,,,,10,10,20,20,B,Yes,Pay your friend £30 for the coupon.,No difference,20,20,20,20,Yes,4,2,4,B,Yes,Pay your friend £30 for the coupon.,5,,,,,,,,,,,,
+2022-10-29 03:28:29,2022-10-29 03:32:18,IP Address,33,229,False,2022-11-02 07:45:09,R_2dMhmlAUzn20deM,anonymous,EN,1,I agree to participate in the research,B,0,0,0,0,20,,,,,,,,,,,,B,20,20,20,20,No,"Strongly disagree
+
+5
+",3,"Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-10-26 08:44:02,2022-10-26 12:14:46,IP Address,53,12644,False,2022-11-02 07:45:12,R_3IXH48lwUQLnINL,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,10,20,20,5,4,4,4,Yes,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,,,,,,,,,,,,
+2022-10-26 10:51:00,2022-10-26 10:58:13,IP Address,44,433,False,2022-11-02 07:45:14,R_1gbA1rW11WtLfdH,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,5,,,,,10,10,10,10,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,,,,,,,,,,,,
+2022-10-26 12:04:04,2022-10-26 12:05:13,IP Address,11,68,False,2022-11-02 07:45:17,R_50ZN6yGuAdJqPOV,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-26 12:31:30,2022-10-26 12:34:49,IP Address,31,198,False,2022-11-02 07:45:19,R_3HOcEjrw4ynfD9J,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,15,0,25,12,,,,,,,,,,,,,,,,,,,,,B,Yes,Pay your friend £30 for the coupon.,2,,,,,,,,,,,,
+2022-10-26 15:08:28,2022-10-26 15:14:41,IP Address,50,373,False,2022-11-02 07:45:24,R_eCYFDsy5xU6mjAd,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,0,10,10,20,A,Yes,Consider it a gift and not pay for the coupon.,A,15,20,20,15,Yes,3,2,"Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,2,,,,,,,,,,,,
+2022-10-26 13:41:49,2022-10-26 13:43:23,IP Address,11,94,False,2022-11-02 07:45:27,R_1CdnzIex6rpCXTu,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-28 20:10:14,2022-10-28 20:13:21,IP Address,17,187,False,2022-11-02 07:45:33,R_12m22IKOfRdU2as,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-28 00:44:28,2022-10-28 00:45:14,Spam,11,46,False,2022-11-02 07:45:42,R_DuyehvqP3bzY6Ot,anonymous,EN,1,I agree to participate in the research,"No difference ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-28 04:22:51,2022-10-28 04:23:27,Spam,8,36,False,2022-11-02 07:45:52,R_2EtowYi3hha8nGv,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-28 05:51:21,2022-10-28 05:55:14,IP Address,44,233,False,2022-11-02 07:46:05,R_ONGES1vxldZM8ox,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,10,15,20,B,No,Consider it a gift and not pay for the coupon.,B,10,20,20,20,Yes,,,,B,No,Pay your friend £30 for the coupon.,1,,,,,,,,,,,,
+2022-10-29 06:59:15,2022-10-29 07:01:27,IP Address,17,131,False,2022-11-02 07:46:10,R_3dLLAdpSDqdgVhU,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,,,,

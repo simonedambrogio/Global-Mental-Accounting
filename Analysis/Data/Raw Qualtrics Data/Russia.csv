@@ -1,0 +1,2198 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q_RecaptchaScore,Consent,MrAB1,Game1_1_1,Game1_1_2,Game1_2_1,Game1_2_2,Drink1,Gym1 _1,Gym1 _2,Gym1 _3,Jacket1,Game2_1_1,Game2_1_2,Game2_2_1,Game2_2_2,MrAB2,Play2 ,Plane2 ,MrAB3,Game3_1 _1,Game3_1 _2,Game3_2_1,Game3_2_2,Jacket2,Gym2 _1,Gym2 _2,Gym2 _3,MrAB4 ,Play1 ,Plane1 ,Drink2,fin_lit1,fin_lit2,fin_lit3,fin_lit4,Att_check,Gender,Age ,Income,Education,Residence,Native language,Debriefing
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,Q_RecaptchaScore,"Dear Participant,    We invite you to take part in an online study with the purpose of investigating how people make decisions. The duration of the questionnaire is approximately 10 minutes. At the end of the questionnaire, you will be asked some personal demographic information.    Your data will be analyzed anonymously and processed according to the current international legislation for the protection of privacy (D. Lgs 196/2003 and EU GDPR 679/2016 on the protection of personal data and art. 9 of the Deontological Code of Italian Psychologists). Your data will be used solely for the purposes of the research itself. No information regarding you personally will be published or revealed in any way.    You are free to withdraw from the study at any point without giving any explanation. In this case your data will be deleted. You will not receive any payment or reimbursement of any sort for your participation in this study. There are no known risks associated with participating in this study.    Project Manager: Enrico Rubaltelli (Department of Development Psychology and Socialization -DPSS, University of Padua). The person responsible for this research agrees to comply with the obligations of current legislation in terms of collection, processing and storage of sensitive data.    I DECLARE THAT  • I am 18 years old or older  • I take part in this project voluntarily  • I am aware of the objectives and aims of this research project  • I am aware that the data obtained, in absolute anonymity, will be treated exclusively for educational and research purposes  • I am aware that it is not possible to withdraw the data I have provided once it has been submitted.    For any clarification you can contact Prof. Enrico Rubaltelli at jdmlab.multicountry@gmail.com.",Person A was given two tickets to the lottery. They won 2 000 ₽ with one ticket and 1 000 ₽ with the other ticket.      Person B was given a ticket to one lottery. They won 3 000 ₽.        Who is happier?,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 220 ₽ but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is 220 ₽. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 220 ₽ but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is 220 ₽. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was 440 ₽ instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 440 ₽ instead? - If they are a stranger,"You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a fancy resort hotel. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender.    What price do you tell them?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 400 ₽ (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 400 ₽","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 400 ₽ (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 400 ₽ (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind","You are about to purchase a jacket for 6 600 ₽ and a Bluetooth speaker for 800 ₽. The salesman informs you that the speaker you wish to buy is on sale for 600 ₽ at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is 220 ₽ which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is 220 ₽. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is 220 ₽ which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is 220 ₽. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger",What price would you have asked for if you found out that the ticket’s face value price was 440 ₽ instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 440 ₽ instead? - If they are a stranger,Person A received a fine and owed 4 300 ₽. The same day they received a second fine and owed 2 100 ₽.    Person B received a fine and owed 6 400 ₽.    Who is more upset?,"Imagine that you are on your way to a music event and intend to buy a ticket worth 2 100 ₽. On entering the venue, you realize that you have lost 2 100 ₽ in cash.   Would you still pay 2 100 ₽ for a ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth 700 ₽, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of 700 ₽ and received the other one for free. Just one coupon is required to upgrade your class on the current flight and your friend offers you the coupon which they got for free so that you can upgrade your ticket as well.    What do you think is the most appropriate thing to do?","Person A bought a lottery ticket and won 4 300 ₽. Also, they damaged one door in their apartment in an accident and had to pay the landlord 3 400 ₽.       Person B bought a lottery ticket and won 900 ₽.       Who is happier?",You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 220 ₽ but you paid 440 ₽ for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 220 ₽. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 220 ₽ but you paid 440 ₽ for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 220 ₽. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was 440 ₽ instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was 440 ₽ instead? - If they are a stranger,"You are about to purchase a jacket for 800 ₽ and a Bluetooth speaker for 6 600 ₽. The salesman informs you that the speaker you wish to buy is on sale for 6 400 ₽ at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 21 000 ₽ a year (i.e., roughly 400 ₽ per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 400 ₽","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 21 000 ₽ a year (i.e., roughly 400 ₽ per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 21 000 ₽ a year (i.e., roughly 400 ₽ per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind",Person A damaged their car in a parking lot. They had to spend 8 500 ₽ to repair the damage. The same day they damaged the car they won 1 000 ₽ in a raffle.       Person B damaged their car in a parking lot. They had to spend 7 500 ₽ to repair the damage.       Who is more upset?,"Imagine that you are on your way to a music event with a ticket for which you have paid 2 100 ₽. On entering the venue, you discover that you have lost the ticket.    Would you pay 2 100 ₽ for another ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth 700 ₽, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of 700 ₽ and received the other one for free. Just one coupon is required to upgrade your class on the current flight, and your friend offers you the coupon which they purchased for 700 ₽ so that you can upgrade as well.    What do you think is the most appropriate thing to do?","You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a small, run-down grocery store. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the store owner.    What price do you tell them?","Suppose that you have 1 000 ₽ in a savings account and the interest rate is 2% per year. After 5 years, how much do you think you would have in the account if you let the money grow?","Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, how much would you be able to buy with the money in this account?",Buying a single company's stock usually provides a safer return than a stock mutual fund.,"If interest rates rise, what would typically happen to bond prices?",To ensure the quality of our data we need to know if participants paid attention during the survey. Please tell us honestly how serious you were in completing the survey.   How serious have you been about filling in the survey?,What gender do you identify as?,What is your age (in numbers)?,Which of the following best describes your monthly income after tax?,How many years of schooling have you completed? (from elementary school to doctoral degree or specialization if you have one),List of Countries,Which of the following is your native language?,"The survey you have completed aims to replicate the mental accounting effect. According to this phenomenon a person attributes different values to the same amount of money based on subjective criteria. Specifically, people tend to subjectively organize economic resources into different mental accounts. In addition, in this study, we measured some individual differences that might have an influence on mental accounting. In particular:       ● Scale to measure financial literacy (Lusardi and Mitchell, 2014).    ● Demographic data (e.g. gender, age or income level)       Finally, we inform you that we have also used an attentional check to measure respondent engagement. The purpose of this study could not be fully revealed at the beginning of the study to avoid influencing your answers. Now that you have received this information, we ask you to confirm your consent to participate in this study or to withdraw it. In the latter case your data will not be used and will be deleted."
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""Q_RecaptchaScore""}","{""ImportId"":""QID1""}","{""ImportId"":""QID8""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID14_2""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID23_TEXT""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID44_2""}","{""ImportId"":""QID44_3""}","{""ImportId"":""QID34""}","{""ImportId"":""QID17_1""}","{""ImportId"":""QID17_2""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID18_2""}","{""ImportId"":""QID12""}","{""ImportId"":""QID78""}","{""ImportId"":""QID86""}","{""ImportId"":""QID10""}","{""ImportId"":""QID20_1""}","{""ImportId"":""QID20_2""}","{""ImportId"":""QID21_1""}","{""ImportId"":""QID21_2""}","{""ImportId"":""QID74""}","{""ImportId"":""QID82_1""}","{""ImportId"":""QID82_2""}","{""ImportId"":""QID82_3""}","{""ImportId"":""QID11""}","{""ImportId"":""QID40""}","{""ImportId"":""QID48""}","{""ImportId"":""QID70_TEXT""}","{""ImportId"":""QID59""}","{""ImportId"":""QID60""}","{""ImportId"":""QID61""}","{""ImportId"":""QID62""}","{""ImportId"":""QID51""}","{""ImportId"":""QID52""}","{""ImportId"":""QID53_TEXT""}","{""ImportId"":""QID54""}","{""ImportId"":""QID55_TEXT""}","{""ImportId"":""QID114""}","{""ImportId"":""QID57""}","{""ImportId"":""QID63""}"
+2022-09-11 23:20:08,2022-09-12 00:07:20,IP Address,100,2831,True,2022-09-12 00:07:20,R_3LdL6yIGxIWP2Iy,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,220,0,440,150,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,440,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,660,440,660,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend 700 ₽ for the coupon.,60,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,29,34 000 ₽ - 51 000 ₽,7,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-12 00:58:14,2022-09-12 01:25:30,IP Address,100,1636,True,2022-09-12 01:25:32,R_x5Aq2nq2d3BVj3j,anonymous,RU,1,I agree to participate in the research,A,0,440,0,880,200,4,2,"Strongly agree
+
+1
+",No,220,440,440,880,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,880,440,880,Yes,4,2,3,No difference,Yes,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,50,Less than 17 000 ₽,19,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-12 01:37:02,2022-09-12 01:50:32,IP Address,100,810,True,2022-09-12 01:50:32,R_2f2phxPQCiCGNYM,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,500,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",3,Yes,220,220,220,220,A,Yes,Pay your friend 700 ₽ for the coupon.,B,220,220,440,440,Yes,3,"Strongly agree
+
+1
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,Exactly 1 020 ₽,Less than today,False,They collapse,Absolutely serious,Female,36,17 000 ₽ - 34 000 ₽,3,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-12 04:05:54,2022-09-12 04:33:05,IP Address,100,1630,True,2022-09-12 04:33:06,R_3MF25oADAch68Ob,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,0,0,0,700,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,48,68 000 ₽ - 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-12 10:26:01,2022-09-12 10:37:07,IP Address,100,666,True,2022-09-12 10:37:08,R_AnVTRhZoOPb5rCV,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,400,4,3,2,No,220,220,440,440,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,220,220,440,440,No,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,26,Prefer not to answer,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-12 11:26:50,2022-09-12 11:41:21,IP Address,100,870,True,2022-09-12 11:41:21,R_3KBZRypeinGlly7,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,220,220,440,440,No difference,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Pay your friend 700 ₽ for the coupon.,300,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Female,50,More than 85 000 ₽,24,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-13 02:33:21,2022-09-13 02:50:53,IP Address,100,1051,True,2022-09-13 02:50:54,R_cU7i74AWAcCqTvj,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,225,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,220,440,440,No difference,Yes,Pay your friend 700 ₽ for the coupon.,No difference,440,440,440,440,Yes,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 700 ₽ for the coupon.,150,More than 1 020 ₽,Less than today,False,They collapse,Very serious,Male,34,More than 85 000 ₽,16,Austria,Russian,I allow you to use the responses I provided in this study.
+2022-09-13 03:23:54,2022-09-13 03:31:47,IP Address,100,473,True,2022-09-13 03:31:48,R_3DwkTXX9oNbNufO,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,200,4,2,3,Yes,220,500,440,600,A,No,Pay your friend 700 ₽ for the coupon.,No difference,220,440,440,440,Yes,3,2,3,B,No,Pay your friend 700 ₽ for the coupon.,50,Exactly 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,34,More than 85 000 ₽,16,Austria,Russian,I allow you to use the responses I provided in this study.
+2022-09-13 03:40:21,2022-09-13 03:56:57,IP Address,100,996,True,2022-09-13 03:56:59,R_2B97ZFhD1Plqxw3,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,220,300,220,440,A,Yes,Pay your friend 700 ₽ for the coupon.,B,440,500,440,500,No,4,2,4,B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Not serious at all,Female,30,More than 85 000 ₽,15,Finland,Russian,I allow you to use the responses I provided in this study.
+2022-09-13 04:03:48,2022-09-13 04:17:30,IP Address,100,822,True,2022-09-13 04:17:31,R_0pMqiPoxD8jXSW5,anonymous,RU,1,I agree to participate in the research,A,0,250,0,450,150,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,250,440,450,A,Yes,Pay your friend 700 ₽ for the coupon.,B,440,450,440,450,Yes,"Strongly disagree
+
+5
+",4,"Strongly agree
+
+1
+",B,Yes,Pay your friend 700 ₽ for the coupon.,150,More than 1 020 ₽,Less than today,False,There is no relationship,Absolutely serious,Male,33,51 000 ₽ - 68 000 ₽,18,Austria,Russian,I allow you to use the responses I provided in this study.
+2022-09-13 05:29:12,2022-09-13 06:27:42,IP Address,100,3509,True,2022-09-13 06:27:43,R_aY3sCc8FC1R6edz,anonymous,RU,1,I agree to participate in the research,A,220,440,440,440,200,2,4,2,No,220,440,440,440,B,Yes,Consider it a gift and not pay for the coupon.,B,220,440,440,440,No,2,4,2,B,Yes,Consider it a gift and not pay for the coupon.,200,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Male,34,68 000 ₽ - 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-14 03:26:28,2022-09-14 03:58:41,IP Address,100,1933,True,2022-09-14 03:58:42,R_AtEeezUygNxHnmV,anonymous,RU,1,I agree to participate in the research,No difference ,0,200,0,440,400,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,220,220,440,500,B,Yes,Consider it a gift and not pay for the coupon.,B,440,660,440,440,No,4,"Strongly agree
+
+1
+",4,B,No,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,False,They remain unchanged,Moderately serious,Female,76,34 000 ₽ - 51 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-13 14:16:48,2022-09-16 12:40:49,IP Address,100,253441,True,2022-09-16 12:40:52,R_1q2Hy4xQYfwEbOV,anonymous,RU,0.600000023841858,I agree to participate in the research,A,100,220,200,440,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,300,440,500,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,80,More than 1 020 ₽,Exactly the same as today,I do not know,I do not know,Moderately serious,Female,56,17 000 ₽ - 34 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 09:54:09,2022-09-18 10:09:24,IP Address,100,915,True,2022-09-18 10:09:26,R_3J7TvbqQhV90HX5,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,400,2,3,3,No,220,220,220,220,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,2,3,2,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Male,24,68 000 ₽ - 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:01:53,2022-09-18 10:15:38,IP Address,100,824,True,2022-09-18 10:15:39,R_2YDLNyXLgQKc5jq,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,220,220,440,440,B,No,Pay your friend 700 ₽ for the coupon.,B,220,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",500,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,32,More than 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:05:09,2022-09-18 10:19:18,IP Address,100,848,True,2022-09-18 10:19:18,R_eYb6U7BbDvO8b0l,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,380,4,3,2,No,220,400,440,650,No difference,No,Pay your friend 700 ₽ for the coupon.,B,220,440,400,600,No,4,2,2,A,No,Pay your friend 700 ₽ for the coupon.,300,Exactly 1 020 ₽,Exactly the same as today,I do not know,I do not know,Very serious,Female,24,34 000 ₽ - 51 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:09:14,2022-09-18 10:21:10,IP Address,100,715,True,2022-09-18 10:21:10,R_3CWbWXD7x45sBIq,anonymous,RU,1,I agree to participate in the research,A,0,220,0,220,300,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,220,220,A,Yes,Consider it a gift and not pay for the coupon.,B,0,440,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,100,Less than 1 020 ₽,Less than today,False,There is no relationship,Very serious,Female,37,More than 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:06:32,2022-09-18 10:24:02,IP Address,100,1049,True,2022-09-18 10:24:02,R_1CxpJaohuCbegsz,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,220,0,440,100,2,2,2,No,0,220,0,220,A,Yes,Consider it a gift and not pay for the coupon.,B,0,440,0,440,No,2,2,2,B,Yes,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,47,Prefer not to answer,25,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:15:37,2022-09-18 10:32:53,IP Address,100,1035,True,2022-09-18 10:32:53,R_vSMJVbqgnhg5VO9,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,100,2,4,4,No,220,220,440,440,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,440,440,440,440,No,3,3,2,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,50,17 000 ₽ - 34 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:20:21,2022-09-18 10:38:32,IP Address,100,1091,True,2022-09-18 10:38:32,R_1Cp89AuFND4KZFW,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,No difference,440,440,440,440,Yes,"Strongly disagree
+
+5
+",2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,False,They collapse,Absolutely serious,Female,36,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:17:41,2022-09-18 10:39:13,IP Address,100,1292,True,2022-09-18 10:39:13,R_1FtEME9erxgFmTB,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,0,440,0,660,A,No,Pay your friend 700 ₽ for the coupon.,B,0,440,0,660,Yes,3,4,2,B,No,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,21,Less than 17 000 ₽,14,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:26:12,2022-09-18 10:39:30,IP Address,100,798,True,2022-09-18 10:39:30,R_DI7S8agrbkaBBId,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,200,4,3,2,Yes,220,220,440,440,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,220,440,440,440,Yes,"Strongly disagree
+
+5
+",2,4,B,No,Pay your friend 700 ₽ for the coupon.,100,Exactly 1 020 ₽,Less than today,True,I do not know,Very serious,Female,40,34 000 ₽ - 51 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:30:14,2022-09-18 10:41:24,IP Address,100,669,True,2022-09-18 10:41:24,R_1jjEQsJw98mMN4G,anonymous,RU,0.899999976158142,I agree to participate in the research,B,220,300,440,600,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,220,300,440,600,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,440,500,440,600,Yes,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,True,There is no relationship,Moderately serious,Female,19,Less than 17 000 ₽,13,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:46:15,2022-09-18 10:55:02,IP Address,100,527,True,2022-09-18 10:55:03,R_2v1SN8rn9A5O7Io,anonymous,RU,1,I agree to participate in the research,A,220,300,440,500,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,220,300,440,500,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,440,440,440,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,Less than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,26,Prefer not to answer,14,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:38:21,2022-09-18 10:55:27,IP Address,100,1025,True,2022-09-18 10:55:27,R_1DBXVqg5SNCYI0e,anonymous,RU,1,I agree to participate in the research,A,220,300,440,500,400,2,4,"Strongly disagree
+
+5
+",No,220,300,440,500,A,No,Consider it a gift and not pay for the coupon.,A,440,500,440,500,No,3,2,3,A,No,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,29,17 000 ₽ - 34 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:29:59,2022-09-18 11:01:12,IP Address,100,1872,True,2022-09-18 11:01:14,R_21napjZ2CXwMjnJ,anonymous,EN,1,I agree to participate in the research,A,0,220,0,220,500,2,3,2,No,220,220,220,350,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,440,440,440,440,No,4,3,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,19,Less than 17 000 ₽,12,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:55:02,2022-09-18 11:05:14,IP Address,100,611,True,2022-09-18 11:05:14,R_1HkJ06ljwMtrzUM,anonymous,RU,1,I agree to participate in the research,A,220,220,220,440,100,3,2,"Strongly agree
+
+1
+",Yes,440,440,440,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,220,440,440,440,Yes,3,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",50,Less than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,56,68 000 ₽ - 85 000 ₽,20,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:53:38,2022-09-18 11:15:20,IP Address,100,1302,True,2022-09-18 11:15:21,R_24cl0dBQCbfQzuV,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,350,2,4,4,Yes,200,220,400,440,A,Yes,Consider it a gift and not pay for the coupon.,B,400,440,400,440,Yes,"Strongly disagree
+
+5
+",2,4,B,Yes,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,25,17 000 ₽ - 34 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 11:05:46,2022-09-18 11:16:17,IP Address,100,630,True,2022-09-18 11:16:18,R_vCCIPeziklUU5X3,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,220,0,440,No difference,Yes,Consider it a gift and not pay for the coupon.,B,0,440,0,440,Yes,4,"Strongly agree
+
+1
+",2,B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,27,More than 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 11:16:36,2022-09-18 11:27:07,IP Address,100,631,True,2022-09-18 11:27:08,R_3pnnesYAvRQ1lMB,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,300,0,600,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,220,320,220,600,A,Yes,Consider it a gift and not pay for the coupon.,B,440,600,440,220,No,3,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",40,More than 1 020 ₽,I do not know,I do not know,I do not know,Very serious,Female,18,Prefer not to answer,11,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 10:27:52,2022-09-18 11:35:38,IP Address,100,4066,True,2022-09-18 11:35:38,R_RlPZMKaNWPYor61,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,220,500,3,3,3,No,220,220,440,440,No difference,No,Consider it a gift and not pay for the coupon.,B,220,220,440,440,No,3,2,3,B,No,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,They collapse,Moderately serious,Female,29,More than 85 000 ₽,22,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 11:30:09,2022-09-18 11:39:24,IP Address,100,554,True,2022-09-18 11:39:26,R_1OovVONxNoLNt7r,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,1200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,0,440,A,Yes,Consider it a gift and not pay for the coupon.,A,0,440,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,60,More than 1 020 ₽,Less than today,I do not know,I do not know,Slightly serious,Male,21,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 11:23:16,2022-09-18 11:45:29,IP Address,100,1332,True,2022-09-18 11:45:30,R_1JCMkTn7Mjy0rme,anonymous,RU,0.899999976158142,I agree to participate in the research,A,220,220,440,440,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,220,500,440,800,A,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,800,Yes,2,3,3,B,No,Pay your friend 700 ₽ for the coupon.,50,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Female,25,Less than 17 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 11:33:10,2022-09-18 11:45:44,IP Address,100,753,True,2022-09-18 11:45:44,R_8AnLa2jsleLGP6x,anonymous,RU,0.800000011920929,I agree to participate in the research,A,220,220,440,440,400,2,4,"Strongly disagree
+
+5
+",Yes,220,220,440,440,A,Yes,Pay your friend 700 ₽ for the coupon.,B,220,220,440,440,Yes,2,4,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,150,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,22,Less than 17 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 11:09:34,2022-09-18 11:54:09,IP Address,100,2675,True,2022-09-18 11:54:10,R_plr7wsfMHBcj70t,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,220,220,220,220,B,No,Consider it a gift and not pay for the coupon.,B,440,440,440,440,Yes,"Strongly disagree
+
+5
+",2,3,B,No,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,24,Less than 17 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 11:44:19,2022-09-18 11:55:06,IP Address,100,646,True,2022-09-18 11:55:06,R_2AQJZssSqVtqDq0,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,300,0,500,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,300,440,500,A,Yes,Consider it a gift and not pay for the coupon.,B,220,440,440,880,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Pay your friend 700 ₽ for the coupon.,150,More than 1 020 ₽,Less than today,I do not know,There is no relationship,Absolutely serious,Male,18,17 000 ₽ - 34 000 ₽,11,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 11:55:30,2022-09-18 12:07:34,IP Address,100,724,True,2022-09-18 12:07:35,R_6A33jETBw8C8n29,anonymous,RU,1,I agree to participate in the research,B,220,220,440,440,200,2,3,3,No,220,220,440,440,A,No,Consider it a gift and not pay for the coupon.,B,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,No,Pay your friend 700 ₽ for the coupon.,50,More than 1 020 ₽,Less than today,False,There is no relationship,Very serious,Male,18,Less than 17 000 ₽,12,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:06:33,2022-09-18 12:17:24,IP Address,100,650,True,2022-09-18 12:17:24,R_3G0towYKJS4vVVN,anonymous,RU,0.899999976158142,I agree to participate in the research,A,100,350,100,550,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,100,300,100,550,A,Yes,Consider it a gift and not pay for the coupon.,B,100,350,100,550,Yes,2,"Strongly disagree
+
+5
+",3,B,Yes,Consider it a gift and not pay for the coupon.,200,More than 1 020 ₽,Less than today,False,There is no relationship,Absolutely serious,Male,18,Prefer not to answer,12,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:16:04,2022-09-18 12:28:34,IP Address,100,750,True,2022-09-18 12:28:35,R_2AKcVUIjJDbngV7,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,220,0,440,1000,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,220,220,440,440,A,Yes,Pay your friend 700 ₽ for the coupon.,A,440,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,Yes,Pay your friend 700 ₽ for the coupon.,100,I do not know,Less than today,False,They collapse,Absolutely serious,Female,25,More than 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:18:41,2022-09-18 12:29:15,IP Address,100,634,True,2022-09-18 12:29:16,R_bCu4g0QPc1YNtD3,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,400,"Strongly agree
+
+1
+",4,3,No,220,220,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,440,440,440,440,No,2,4,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",150,More than 1 020 ₽,Less than today,I do not know,There is no relationship,Very serious,Female,44,More than 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:31:47,2022-09-18 12:41:51,IP Address,100,604,True,2022-09-18 12:41:52,R_39ONbe0eav81XXP,anonymous,RU,1,I agree to participate in the research,No difference ,0,300,0,500,850,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,300,0,500,A,Yes,Consider it a gift and not pay for the coupon.,B,0,440,0,500,No,3,2,4,B,Yes,Consider it a gift and not pay for the coupon.,150,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Male,26,68 000 ₽ - 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:23:55,2022-09-18 12:45:50,IP Address,100,1315,True,2022-09-18 12:45:51,R_1Q3gAtXOtesyXJR,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,0,0,0,600,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,500,440,500,B,No,Consider it a gift and not pay for the coupon.,B,440,440,440,600,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,A,No,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,27,51 000 ₽ - 68 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:23:15,2022-09-18 12:59:37,IP Address,100,2181,True,2022-09-18 12:59:37,R_3FLGKUh5DWPXYlr,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,0,0,0,1000,3,"Strongly agree
+
+1
+",3,No,0,220,0,440,A,Yes,Consider it a gift and not pay for the coupon.,B,0,440,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,500,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,35,More than 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:50:16,2022-09-18 13:00:25,IP Address,100,608,True,2022-09-18 13:00:27,R_sZE01P63wY6SeU9,anonymous,RU,0.899999976158142,I agree to participate in the research,A,220,220,300,500,500,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",4,No,220,220,300,500,A,Yes,Consider it a gift and not pay for the coupon.,A,500,500,500,500,No,"Strongly agree
+
+1
+",2,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,I do not know,I do not know,I do not know,I do not know,Very serious,Female,39,68 000 ₽ - 85 000 ₽,10,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:50:39,2022-09-18 13:04:31,IP Address,100,832,True,2022-09-18 13:04:31,R_2wRZsCpBdQAlERH,anonymous,RU,0.800000011920929,I agree to participate in the research,No difference ,0,0,0,0,150,3,3,3,No,0,220,0,220,No difference,No,Consider it a gift and not pay for the coupon.,B,0,440,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,Pay your friend 700 ₽ for the coupon.,150,More than 1 020 ₽,I do not know,False,I do not know,Very serious,Female,46,51 000 ₽ - 68 000 ₽,16,Russian Federation,Russian,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-09-18 12:59:18,2022-09-18 13:11:45,IP Address,100,746,True,2022-09-18 13:11:45,R_21uFUBdWC0LzRc2,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,200,0,400,600,"Strongly agree
+
+1
+",2,2,No,0,200,0,400,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,400,0,400,No,4,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,20,51 000 ₽ - 68 000 ₽,13,Russian Federation,Other,I allow you to use the responses I provided in this study.
+2022-09-18 12:49:19,2022-09-18 13:12:42,IP Address,100,1403,True,2022-09-18 13:12:43,R_3Ldum6QPfoIkS6M,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,220,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,220,220,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,37,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 13:01:50,2022-09-18 13:13:26,IP Address,100,695,True,2022-09-18 13:13:26,R_1kFd8dAvA0NVdME,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,220,449,400,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,No,Consider it a gift and not pay for the coupon.,B,220,440,440,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,They collapse,Very serious,Female,36,34 000 ₽ - 51 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:55:56,2022-09-18 13:16:25,IP Address,100,1228,True,2022-09-18 13:16:25,R_3ENczSMzdl5SCPP,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,110,0,110,250,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,440,440,500,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,500,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",150,Less than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,29,Less than 17 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:38:31,2022-09-18 13:19:01,IP Address,100,2430,True,2022-09-18 13:19:01,R_RXBFiXZk9jUKYDL,anonymous,RU,0.800000011920929,I agree to participate in the research,A,0,0,0,0,0,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",0,More than 1 020 ₽,Less than today,True,They collapse,Absolutely serious,Male,65,Prefer not to answer,25,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 12:58:01,2022-09-18 13:21:08,IP Address,100,1386,True,2022-09-18 13:21:08,R_2qly5e8u4JiMMEP,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,150,"Strongly agree
+
+1
+",4,3,Yes,220,220,220,440,A,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,440,No,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",B,No,Pay your friend 700 ₽ for the coupon.,150,More than 1 020 ₽,Less than today,False,They collapse,Very serious,Female,40,Prefer not to answer,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 13:17:23,2022-09-18 13:29:23,IP Address,100,720,True,2022-09-18 13:29:24,R_2qrz9J5V6q9LESn,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,220,440,440,880,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,440,440,880,A,Yes,Consider it a gift and not pay for the coupon.,A,440,500,440,880,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,150,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,19,34 000 ₽ - 51 000 ₽,14,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 13:27:02,2022-09-18 13:49:17,IP Address,100,1335,True,2022-09-18 13:49:19,R_2uvrdh6Ac9ngPAJ,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,350,2,2,2,No,0,220,0,440,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,0,440,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",150,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,27,More than 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 13:51:51,2022-09-18 14:04:01,IP Address,100,730,True,2022-09-18 14:04:01,R_2ebqB2Ux9kenU54,anonymous,RU,1,I agree to participate in the research,A,0,0,0,0,300,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,440,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,200,More than 1 020 ₽,Less than today,False,They collapse,Very serious,Female,38,68 000 ₽ - 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 13:52:51,2022-09-18 14:07:28,IP Address,100,876,True,2022-09-18 14:07:29,R_2zAOEwFrzQLJeFR,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,220,0,440,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,220,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,440,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Male,29,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 13:56:43,2022-09-18 14:15:53,IP Address,100,1150,True,2022-09-18 14:15:54,R_ZfTBin6ef61Xh4d,anonymous,RU,1,I agree to participate in the research,A,0,120,0,340,400,4,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,200,220,400,440,A,Yes,Consider it a gift and not pay for the coupon.,B,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,33,34 000 ₽ - 51 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 14:10:55,2022-09-18 14:30:14,IP Address,100,1159,True,2022-09-18 14:30:14,R_w10DHzANgnUUmAh,anonymous,RU,1,I agree to participate in the research,A,0,100,0,150,300,2,3,4,Yes,150,200,220,450,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,200,220,200,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,Exactly 1 020 ₽,I do not know,I do not know,They collapse,Moderately serious,Female,26,34 000 ₽ - 51 000 ₽,7,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 14:12:27,2022-09-18 14:30:54,IP Address,100,1106,True,2022-09-18 14:30:54,R_3sCQk1Ncv4SnMIN,anonymous,RU,1,I agree to participate in the research,No difference ,0,0,0,0,200,2,2,3,No,0,0,0,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,0,220,0,440,No,3,3,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,I do not know,There is no relationship,Absolutely serious,Female,67,Prefer not to answer,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 14:31:06,2022-09-18 14:52:48,IP Address,100,1302,True,2022-09-18 14:52:49,R_3J9H8tARUJcFiCF,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,No difference,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,65,17 000 ₽ - 34 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 15:03:35,2022-09-18 15:23:01,IP Address,100,1166,True,2022-09-18 15:23:02,R_21BO7kuhLULsfdy,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,200,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,220,220,440,440,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,440,440,440,440,Yes,4,4,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,I do not know,False,I do not know,Absolutely serious,Female,48,More than 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 15:09:22,2022-09-18 15:24:15,IP Address,100,892,True,2022-09-18 15:24:15,R_3JIwaWguoSgiNl0,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,400,2,3,"Strongly agree
+
+1
+",Yes,220,220,440,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,440,440,440,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",150,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,43,51 000 ₽ - 68 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 16:15:08,2022-09-18 16:30:30,IP Address,100,922,True,2022-09-18 16:30:30,R_3JydWin0ovQ81eY,anonymous,RU,1,I agree to participate in the research,A,0,0,0,0,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,1000,0,1000,A,No,Pay your friend 700 ₽ for the coupon.,B,0,1000,0,1000,No,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Exactly the same as today,I do not know,I do not know,Absolutely serious,Female,29,51 000 ₽ - 68 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 20:29:58,2022-09-18 20:45:01,IP Address,100,903,True,2022-09-18 20:45:03,R_3qvUwdWDQpI3tPD,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,500,220,600,700,"Strongly agree
+
+1
+",3,3,No,220,220,440,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",300,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,23,51 000 ₽ - 68 000 ₽,17,Russian Federation,Other,I allow you to use the responses I provided in this study.
+2022-09-18 21:52:14,2022-09-18 22:06:20,IP Address,100,845,True,2022-09-18 22:06:20,R_wYMIOEHlYSmhTRT,anonymous,RU,1,I agree to participate in the research,No difference ,220,220,220,220,200,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",3,No,220,220,220,220,No difference,No,Consider it a gift and not pay for the coupon.,No difference,220,440,220,440,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",4,B,No,Consider it a gift and not pay for the coupon.,200,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,43,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 22:08:52,2022-09-18 22:27:33,IP Address,100,1120,True,2022-09-18 22:27:33,R_1rB96M4wxGESyeN,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,500,2,"Strongly disagree
+
+5
+",2,No,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,B,0,440,440,440,No,3,"Strongly disagree
+
+5
+",2,B,No,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,I do not know,I do not know,I do not know,Moderately serious,Female,28,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 22:15:50,2022-09-18 22:31:35,IP Address,100,944,True,2022-09-18 22:31:36,R_1MZhV0ERVRDallh,anonymous,RU,1,I agree to participate in the research,A,0,220,0,220,200,"Strongly agree
+
+1
+",3,3,Yes,220,220,220,440,No difference,Yes,Consider it a gift and not pay for the coupon.,A,440,440,440,440,Yes,3,3,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,50,34 000 ₽ - 51 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 22:37:26,2022-09-18 22:52:24,IP Address,100,897,True,2022-09-18 22:52:24,R_3kuCcqVXhuFPog8,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,1000,0,2000,700,2,4,4,No,220,1000,220,1500,A,Yes,Consider it a gift and not pay for the coupon.,A,440,1000,440,1000,No,2,4,4,B,Yes,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,False,There is no relationship,Very serious,Female,48,More than 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 23:14:12,2022-09-18 23:25:48,IP Address,100,696,True,2022-09-18 23:25:49,R_3MSBJy9zMAxSVFT,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,400,3,"Strongly disagree
+
+5
+",3,No,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,B,220,440,440,440,No,4,3,4,B,Yes,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,False,There is no relationship,Slightly serious,Female,40,Less than 17 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 00:06:10,2022-09-19 00:18:51,IP Address,100,761,True,2022-09-19 00:18:51,R_1f0XjK3zOVnAJg0,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,400,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,A,440,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,150,More than 1 020 ₽,Less than today,False,There is no relationship,Absolutely serious,Female,28,34 000 ₽ - 51 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 00:44:44,2022-09-19 00:56:49,IP Address,100,725,True,2022-09-19 00:56:49,R_0j5nppuiNdZj2eZ,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,500,600,3,2,2,No,0,220,0,500,A,Yes,Consider it a gift and not pay for the coupon.,B,0,500,0,500,No,3,2,2,B,Yes,Consider it a gift and not pay for the coupon.,300,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Male,30,More than 85 000 ₽,20,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 00:45:53,2022-09-19 00:58:07,IP Address,100,733,True,2022-09-19 00:58:09,R_XTHNQwuqZkD4lO1,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,220,440,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,500,440,500,No,2,3,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",150,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,39,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 01:00:57,2022-09-19 01:09:27,IP Address,100,510,True,2022-09-19 01:09:28,R_1GhtujUSOMeS0jT,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,220,220,440,440,750,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,220,220,440,440,No difference,No,Pay your friend 700 ₽ for the coupon.,No difference,220,220,440,440,No,"Strongly disagree
+
+5
+",3,"Strongly disagree
+
+5
+",B,No,Pay your friend 700 ₽ for the coupon.,200,Exactly 1 020 ₽,I do not know,I do not know,I do not know,Slightly serious,Female,24,More than 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 00:47:36,2022-09-19 01:09:55,IP Address,100,1338,True,2022-09-19 01:09:55,R_2bN8vuFxAJT5QIY,anonymous,RU,1,I agree to participate in the research,A,0,100,0,250,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,150,200,400,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",150,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,29,Prefer not to answer,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 02:26:48,2022-09-19 02:37:46,IP Address,100,658,True,2022-09-19 02:37:47,R_2qD8iKt1cKvSBQA,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,220,220,220,220,500,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,220,220,220,No difference,Yes,Consider it a gift and not pay for the coupon.,B,220,220,440,440,Yes,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,200,Exactly 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,29,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 04:14:22,2022-09-19 04:27:53,IP Address,100,811,True,2022-09-19 04:27:53,R_zZl3nVZWqJDW7Rf,anonymous,RU,0.899999976158142,I agree to participate in the research,A,220,440,440,440,200,"Strongly agree
+
+1
+",4,2,Yes,220,220,220,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,220,440,440,440,Yes,"Strongly agree
+
+1
+",4,2,No difference,No,Consider it a gift and not pay for the coupon.,100,Less than 1 020 ₽,I do not know,I do not know,There is no relationship,Moderately serious,Female,54,Less than 17 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 04:55:46,2022-09-19 05:09:19,IP Address,100,813,True,2022-09-19 05:09:21,R_3QoKiZOiSn8aiCR,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,300,220,440,No difference,Yes,Consider it a gift and not pay for the coupon.,A,440,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend 700 ₽ for the coupon.,50,More than 1 020 ₽,Exactly the same as today,False,I do not know,Moderately serious,Female,21,Prefer not to answer,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 05:49:55,2022-09-19 06:08:31,IP Address,100,1116,True,2022-09-19 06:08:33,R_09B7KSxN1Nh1MNX,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,200,0,400,500,3,2,"Strongly agree
+
+1
+",Yes,180,220,400,440,A,Yes,Consider it a gift and not pay for the coupon.,No difference,300,400,300,400,No,4,2,4,B,No,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,24,17 000 ₽ - 34 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 05:59:01,2022-09-19 06:16:22,IP Address,100,1041,True,2022-09-19 06:16:23,R_10o4eiRcvAEY8cl,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,500,220,1000,500,"Strongly disagree
+
+5
+",3,2,No,220,500,220,1000,No difference,Yes,Consider it a gift and not pay for the coupon.,B,220,500,220,1000,No,"Strongly disagree
+
+5
+",3,2,B,Yes,Pay your friend 700 ₽ for the coupon.,500,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,34,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 06:24:27,2022-09-19 06:38:05,IP Address,100,818,True,2022-09-19 06:38:05,R_1PSDmSPzi7w2XBZ,anonymous,RU,0.899999976158142,I agree to participate in the research,A,220,350,350,500,250,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,350,400,500,No difference,No,Consider it a gift and not pay for the coupon.,B,440,600,440,600,No,2,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",150,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,25,34 000 ₽ - 51 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 07:24:58,2022-09-19 07:47:15,IP Address,100,1336,True,2022-09-19 07:47:15,R_Cm16yrY4X7776q5,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,220,220,220,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,440,440,440,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Pay your friend 700 ₽ for the coupon.,100,Exactly 1 020 ₽,Less than today,False,I do not know,Moderately serious,Female,54,17 000 ₽ - 34 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 08:19:44,2022-09-19 08:34:44,IP Address,100,899,True,2022-09-19 08:34:45,R_bJj5E8QsEpTAhkR,anonymous,RU,1,I agree to participate in the research,B,0,500,0,900,350,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,220,500,440,900,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,900,440,900,No,2,4,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,30,34 000 ₽ - 51 000 ₽,19,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 08:48:50,2022-09-19 09:18:42,IP Address,100,1791,True,2022-09-19 09:18:43,R_3nBneMeCcDC6fAB,anonymous,RU,1,I agree to participate in the research,No difference ,220,220,440,440,300,"Strongly agree
+
+1
+",2,"Strongly agree
+
+1
+",Yes,220,220,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,"Strongly agree
+
+1
+",2,"Strongly agree
+
+1
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,I do not know,Less than today,False,I do not know,Moderately serious,Female,60,51 000 ₽ - 68 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-12 06:27:09,2022-09-12 09:45:49,IP Address,19,11919,False,2022-09-19 10:23:02,R_3FUPOJLkCCLe1E1,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,200,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 10:23:00,2022-09-19 10:34:40,IP Address,100,699,True,2022-09-19 10:34:40,R_2TmXE7DFgCWy29J,anonymous,RU,1,I agree to participate in the research,No difference ,110,220,220,440,150,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,250,250,440,A,No,Consider it a gift and not pay for the coupon.,B,440,440,440,440,No,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,True,They collapse,Very serious,Female,41,More than 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 11:10:37,2022-09-19 11:22:43,IP Address,100,726,True,2022-09-19 11:22:44,R_2aJihDhDXWHbkvT,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,250,2,"Strongly disagree
+
+5
+",4,No,200,220,400,440,A,Yes,Consider it a gift and not pay for the coupon.,No difference,200,220,400,440,No,2,"Strongly disagree
+
+5
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,Exactly 1 020 ₽,I do not know,True,There is no relationship,Very serious,Female,35,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-19 11:46:45,2022-09-19 11:59:05,IP Address,100,739,True,2022-09-19 11:59:05,R_eJKtCoL9Naz2b2V,anonymous,RU,0.800000011920929,I agree to participate in the research,No difference ,0,220,0,440,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,220,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Male,42,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-20 02:38:13,2022-09-20 02:54:54,IP Address,100,1001,True,2022-09-20 02:54:55,R_PIfjdYlqXb22YcV,anonymous,RU,0.800000011920929,I agree to participate in the research,A,0,220,0,440,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,440,No,4,"Strongly disagree
+
+5
+",3,B,Yes,Consider it a gift and not pay for the coupon.,150,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,41,Prefer not to answer,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-20 05:35:38,2022-09-20 05:52:36,IP Address,100,1017,True,2022-09-20 05:52:36,R_XSRDP7ZO7SjEoWB,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,200,"Strongly agree
+
+1
+",4,3,No,0,220,0,220,No difference,Yes,Consider it a gift and not pay for the coupon.,B,0,220,0,220,No,4,2,4,A,No,Pay your friend 700 ₽ for the coupon.,30,Exactly 1 020 ₽,I do not know,True,There is no relationship,Moderately serious,Female,26,51 000 ₽ - 68 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-20 06:32:42,2022-09-20 06:57:16,IP Address,100,1474,True,2022-09-20 06:57:16,R_2VfEuEfcgiWTrxS,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,220,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,509,440,1000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,1000,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",300,More than 1 020 ₽,I do not know,I do not know,I do not know,Very serious,Female,43,Prefer not to answer,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-20 14:16:20,2022-09-20 14:30:48,IP Address,100,868,True,2022-09-20 14:30:49,R_2zC5d0LW29qoj4e,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,220,0,440,200,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,220,220,220,220,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,3,3,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,100,I do not know,I do not know,I do not know,I do not know,Not serious at all,Female,37,17 000 ₽ - 34 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-21 12:44:36,2022-09-21 13:02:19,IP Address,100,1063,True,2022-09-21 13:02:20,R_BJ0W8ghZRekhHgZ,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,200,0,200,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,440,500,440,500,No,3,4,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",70,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Male,51,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-21 15:39:00,2022-09-21 15:49:10,IP Address,100,610,True,2022-09-21 15:49:12,R_3EoJf82KotCzQ49,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,300,0,500,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,0,300,0,500,A,No,Consider it a gift and not pay for the coupon.,B,440,500,0,440,No,2,3,2,B,No,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,More than today,False,They collapse,Moderately serious,Female,22,51 000 ₽ - 68 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-22 09:46:47,2022-09-22 10:13:41,IP Address,100,1614,True,2022-09-22 10:13:42,R_5AYykZFZerSDXEt,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,500,"Strongly agree
+
+1
+",4,4,No,0,300,0,440,A,Yes,Consider it a gift and not pay for the coupon.,B,0,440,0,500,No,3,2,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,22,34 000 ₽ - 51 000 ₽,14,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-22 13:02:16,2022-09-22 13:14:00,IP Address,100,703,True,2022-09-22 13:14:00,R_1FEY06BqEaX0z5m,anonymous,RU,1,I agree to participate in the research,No difference ,110,220,220,440,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,220,220,440,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,500,440,440,No,4,3,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",150,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,18,Less than 17 000 ₽,11,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-22 13:39:09,2022-09-22 14:01:58,IP Address,100,1369,True,2022-09-22 14:01:58,R_1IbniNDE7hAdYz3,anonymous,RU,,I agree to participate in the research,A,0,100,0,100,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,0,440,A,No,Consider it a gift and not pay for the coupon.,B,0,200,0,200,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,B,No,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,22,34 000 ₽ - 51 000 ₽,12,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-23 16:59:09,2022-09-23 17:13:51,IP Address,100,881,True,2022-09-23 17:13:51,R_5bAYpdRmFuEpoNb,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,400,2,3,2,Yes,220,320,440,600,A,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,600,No,2,3,2,A,No,Consider it a gift and not pay for the coupon.,90,Exactly 1 020 ₽,I do not know,I do not know,I do not know,Very serious,Female,18,Prefer not to answer,12,Russian Federation,Other,I allow you to use the responses I provided in this study.
+2022-09-24 09:55:01,2022-09-25 04:30:14,IP Address,100,66913,True,2022-09-25 04:30:14,R_33qWZlssaqikbT2,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,200,0,220,270,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,220,330,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,440,440,440,No,"Strongly agree
+
+1
+",3,3,B,No,Pay your friend 700 ₽ for the coupon.,150,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,32,Prefer not to answer,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 09:52:59,2022-09-18 09:53:31,IP Address,8,32,False,2022-09-25 09:53:33,R_2Xhtth1OKcn4V5V,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 10:23:52,2022-09-18 10:24:29,IP Address,3,36,False,2022-09-25 10:24:35,R_1QAhyrlO2bH8cij,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 10:21:44,2022-09-18 10:33:21,IP Address,33,696,False,2022-09-25 10:33:29,R_3MhP2cyexHjHHxM,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,440,500,440,500,No,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",500,,,,,,,,,,,,
+2022-09-18 11:13:24,2022-09-18 11:13:59,IP Address,8,34,False,2022-09-25 11:14:08,R_t0bNPoJELBWa0Fz,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 11:29:54,2022-09-18 11:32:51,IP Address,19,176,False,2022-09-25 11:32:56,R_27BbHFdv5j7IJXs,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,No,Pay your friend 700 ₽ for the coupon.,100,,,,,,,,,,,,
+2022-09-18 11:52:32,2022-09-18 11:55:21,IP Address,28,168,False,2022-09-25 11:55:22,R_3n9kBzFn5x4CDqz,anonymous,RU,1,I agree to participate in the research,No difference ,0,200,200,400,750,3,2,3,No,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 11:49:35,2022-09-18 12:01:18,IP Address,42,703,False,2022-09-25 12:01:22,R_Q02XqFkYzBdzuhj,anonymous,RU,1,I agree to participate in the research,No difference ,0,250,0,450,200,"Strongly agree
+
+1
+",4,4,No,0,250,0,450,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 11:58:48,2022-09-18 12:11:19,IP Address,61,750,False,2022-09-25 12:11:21,R_30vgIz9AtYEcabq,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,440,0,660,450,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,220,440,440,660,A,No,,B,220,880,440,880,Yes,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",250,,,,,,,,,,,,
+2022-09-18 12:39:25,2022-09-18 12:42:31,IP Address,17,185,False,2022-09-25 12:42:35,R_WprNko126ptfv5n,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,No difference,No,Pay your friend 700 ₽ for the coupon.,,,,,,,,,,,,,
+2022-09-18 12:49:09,2022-09-18 12:58:25,IP Address,53,556,False,2022-09-25 12:58:28,R_2CTGmll1GjSmLjS,anonymous,RU,0.400000005960465,I agree to participate in the research,B,0,220,0,440,500,3,3,3,No,0,220,0,440,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,,,,,,,,,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",500,,,,,,,,,,,,
+2022-09-18 13:24:42,2022-09-18 13:27:17,IP Address,3,154,False,2022-09-25 13:27:23,R_2tgR1ZPjORHW5uI,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 13:32:13,2022-09-18 13:33:22,IP Address,11,68,False,2022-09-25 13:33:23,R_10IshPLeHg8NPQb,anonymous,RU,0.899999976158142,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 13:20:34,2022-09-18 13:36:04,IP Address,81,929,False,2022-09-25 13:36:06,R_3nCQJPYogNP3NjY,anonymous,RU,1,I agree to participate in the research,A,0,500,0,800,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,220,500,440,800,A,Yes,Consider it a gift and not pay for the coupon.,No difference,220,500,440,800,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,They collapse,Very serious,,,,,,,
+2022-09-18 11:46:28,2022-09-18 13:54:06,IP Address,36,7657,False,2022-09-25 13:54:11,R_2ToaaRjT9IDX989,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,220,220,440,440,500,4,3,3,No,,,,,,,,,,,,,,,,,B,No,Consider it a gift and not pay for the coupon.,200,,,,,,,,,,,,
+2022-09-18 14:02:58,2022-09-18 14:03:53,IP Address,6,54,False,2022-09-25 14:03:54,R_2y7UI9jl8chfKvQ,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 15:21:00,2022-09-18 15:24:45,IP Address,19,224,False,2022-09-25 15:24:45,R_1QoKB9ngQDTfdEy,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,1,220,1,400,No,,,,,,,,,,,,,,,,,,,
+2022-09-18 15:19:49,2022-09-18 15:29:15,IP Address,28,566,False,2022-09-25 15:29:19,R_2QimJlp3XCp3u2G,anonymous,RU,1,I agree to participate in the research,No difference ,220,350,0,550,1000,2,"Strongly disagree
+
+5
+",3,Yes,,,,,,,,A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 16:36:38,2022-09-18 16:41:24,IP Address,33,285,False,2022-09-25 16:41:28,R_9zRcWmWmEDvfdUB,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,220,230,220,440,B,Yes,,A,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-09-18 17:02:57,2022-09-18 17:13:20,IP Address,61,622,False,2022-09-25 17:13:25,R_3n8xXBAkueNYmzq,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,100,220,200,440,200,"Strongly disagree
+
+5
+",4,"Strongly agree
+
+1
+",No,220,250,440,500,B,No,Consider it a gift and not pay for the coupon.,B,300,440,440,500,No,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,
+2022-09-18 23:44:58,2022-09-18 23:51:23,IP Address,47,384,False,2022-09-25 23:51:25,R_12bEIJ41SynAnF7,anonymous,RU,1,I agree to participate in the research,A,220,250,400,450,600,3,2,2,,,,,,,,,A,440,460,440,460,No,"Strongly disagree
+
+5
+",3,2,No difference,Yes,Pay your friend 700 ₽ for the coupon.,200,,,,,,,,,,,,
+2022-09-18 23:52:07,2022-09-18 23:55:43,IP Address,11,216,False,2022-09-25 23:55:46,R_Wk4DDzrwwci127L,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 00:05:03,2022-09-19 00:09:00,IP Address,22,236,False,2022-09-26 00:09:00,R_3NKv7v7ULNBzE29,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,0,220,220,220,Yes,"Strongly agree
+
+1
+",3,"Strongly disagree
+
+5
+",,,,,,,,,,,,,,,,
+2022-09-26 06:25:14,2022-09-26 06:34:51,IP Address,100,576,True,2022-09-26 06:34:52,R_1OuvPEuM6uuAhtr,anonymous,RU,1,I agree to participate in the research,B,0,220,0,440,500,4,"Strongly agree
+
+1
+",3,Yes,0,220,0,440,A,No,Pay your friend 700 ₽ for the coupon.,B,0,440,0,440,Yes,4,2,3,B,Yes,Pay your friend 700 ₽ for the coupon.,500,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,27,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-18 06:53:02,2022-09-19 10:44:45,IP Address,8,100303,False,2022-09-26 10:44:47,R_2AQftTYly2hBgPD,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 13:39:59,2022-09-19 13:46:39,IP Address,36,400,False,2022-09-26 13:46:43,R_1CwtQ9qKBj7tQt2,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,220,220,220,220,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",200,,,,,,,,,,,,
+2022-09-27 14:26:38,2022-09-27 15:51:27,IP Address,100,5089,True,2022-09-27 16:06:28,R_3q7FiLxTf6DLG3Q,anonymous,EN,1,I agree to participate in the research,No difference ,0,220,0,440,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,220,220,440,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,500,440,440,No,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",400,More than 1 020 ₽,I do not know,I do not know,There is no relationship,Very serious,Female,31,Prefer not to answer,21,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-26 06:24:58,2022-09-30 01:48:50,IP Address,100,329031,True,2022-09-30 01:48:50,R_3nPJjSuToY7Ypk0,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,500,2,3,4,No,150,240,350,500,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,440,440,400,440,No,4,"Strongly agree
+
+1
+",2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",120,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,26,68 000 ₽ - 85 000 ₽,17,Italy,Russian,I allow you to use the responses I provided in this study.
+2022-09-30 01:55:34,2022-09-30 02:08:24,IP Address,100,769,True,2022-09-30 02:08:24,R_wSgYB7sSyCfjGA9,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,500,3,"Strongly agree
+
+1
+",3,No,220,220,220,220,A,No,Consider it a gift and not pay for the coupon.,A,440,440,440,440,No,3,"Strongly agree
+
+1
+",3,B,No,Pay your friend 700 ₽ for the coupon.,300,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,26,More than 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-30 02:08:48,2022-09-30 02:34:20,IP Address,100,1532,True,2022-09-30 02:34:21,R_1nUc7ktnKzax3IX,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,500,3,3,3,No,0,220,0,220,No difference,Yes,Consider it a gift and not pay for the coupon.,B,0,220,0,440,No,3,2,3,No difference,Yes,Pay your friend 700 ₽ for the coupon.,300,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,26,68 000 ₽ - 85 000 ₽,16.5,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-09-23 17:13:59,2022-09-23 17:14:19,IP Address,11,20,False,2022-09-30 17:14:20,R_2xK2Qe8b32ATjqM,anonymous,RU,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 22:34:31,2022-09-30 23:18:45,IP Address,100,2654,True,2022-09-30 23:18:46,R_3HODCoCuHDHiZ9C,anonymous,EN,1,I agree to participate in the research,B,220,220,440,440,4,2,3,"Strongly agree
+
+1
+",Yes,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,440,Yes,"Strongly agree
+
+1
+",2,2,B,Yes,Consider it a gift and not pay for the coupon.,4,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,42,34 000 ₽ - 51 000 ₽,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-25 04:27:13,2022-09-25 04:30:59,IP Address,33,226,False,2022-10-02 04:31:07,R_1odJH3MQlUy5H2W,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,0,0,0,2000,,,,,,,,,,,,A,220,220,440,440,No,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-09-30 01:52:02,2022-09-30 03:00:43,IP Address,3,4120,False,2022-10-07 03:01:31,R_3rHeTEX1FuaubFP,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 06:39:54,2022-09-30 06:41:47,IP Address,11,113,False,2022-10-07 06:41:48,R_1JR89deCkwCSkJE,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-04 21:50:19,2022-10-04 21:50:42,IP Address,6,22,False,2022-10-11 21:50:47,R_vjhrdpvK2KzWzIJ,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-06 00:27:23,2022-10-06 00:28:01,IP Address,8,37,False,2022-10-13 00:28:04,R_296Z99wRgypEqrN,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-16 12:22:20,2022-10-16 13:05:59,IP Address,100,2618,True,2022-10-16 13:05:59,R_2uCjEWF4MSJ6icM,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,250,440,450,B,Yes,Consider it a gift and not pay for the coupon.,B,220,440,440,440,No,3,3,"Strongly agree
+
+1
+",B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Female,18,Less than 17 000 ₽,11,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-10 16:02:31,2022-10-10 16:04:48,IP Address,11,136,False,2022-10-17 16:04:55,R_3PENFqwANAlAI4Q,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-18 09:23:46,2022-10-18 09:39:49,IP Address,100,962,True,2022-10-18 09:39:50,R_1ltzETT4igHWD6X,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,220,0,440,1000,3,3,3,No,220,500,440,800,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,440,800,440,800,No,"Strongly disagree
+
+5
+",3,3,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,False,They remain unchanged,Absolutely serious,Male,22,34 000 ₽ - 51 000 ₽,13,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-18 09:37:51,2022-10-18 09:50:38,IP Address,100,766,True,2022-10-18 09:50:39,R_10DCFeFI92fCdyN,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,220,440,1000,4,4,4,Yes,0,220,220,440,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,0,220,220,440,Yes,2,4,4,No difference,No,Pay your friend 700 ₽ for the coupon.,300,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,22,68 000 ₽ - 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-18 09:56:09,2022-10-18 10:06:49,IP Address,100,640,True,2022-10-18 10:06:50,R_3IT5u4vzLtz3G4p,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,220,220,440,440,A,Yes,Pay your friend 700 ₽ for the coupon.,B,440,440,440,440,No,2,"Strongly disagree
+
+5
+",3,B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,26,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-18 09:19:48,2022-10-18 10:12:05,IP Address,100,3137,True,2022-10-18 10:12:07,R_3Odm9RpmgNM1hai,anonymous,RU,1,I agree to participate in the research,A,0,300,0,600,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,200,400,400,800,A,Yes,Consider it a gift and not pay for the coupon.,B,400,500,400,800,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,150,More than 1 020 ₽,Less than today,False,There is no relationship,Absolutely serious,Male,21,68 000 ₽ - 85 000 ₽,11,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-18 10:16:49,2022-10-18 10:31:26,IP Address,100,877,True,2022-10-18 10:31:28,R_2TyNff1aAWpAi2i,anonymous,RU,1,I agree to participate in the research,No difference ,0,0,0,0,1500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,350,0,600,A,Yes,Consider it a gift and not pay for the coupon.,B,0,350,0,550,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,300,More than 1 020 ₽,I do not know,I do not know,I do not know,Absolutely serious,Female,20,17 000 ₽ - 34 000 ₽,13,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-18 09:20:22,2022-10-18 10:32:35,IP Address,100,4332,True,2022-10-18 10:32:35,R_pgzuXpussX7eHpD,anonymous,RU,1,I agree to participate in the research,No difference ,220,400,440,700,1000,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,220,500,440,800,B,No,Consider it a gift and not pay for the coupon.,A,220,500,440,1000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,100,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Female,20,34 000 ₽ - 51 000 ₽,14,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-18 10:02:18,2022-10-18 10:34:37,IP Address,100,1939,True,2022-10-18 10:34:37,R_1f7dSg4zYDFiGdR,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,800,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,0,220,0,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,440,220,440,No,3,3,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",500,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Female,30,Prefer not to answer,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-18 12:57:39,2022-10-18 13:38:05,IP Address,100,2425,True,2022-10-18 13:38:05,R_3lubSQw8FlNoHwK,anonymous,RU,1,I agree to participate in the research,No difference ,200,220,400,440,400,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,200,220,400,440,No difference,Yes,Pay your friend 700 ₽ for the coupon.,A,220,440,400,440,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Male,21,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-19 06:19:57,2022-10-19 06:32:29,IP Address,100,752,True,2022-10-19 06:32:31,R_O3FdT04ZuLW0OFb,anonymous,RU,1,I agree to participate in the research,A,220,220,220,440,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,220,220,220,440,A,Yes,Consider it a gift and not pay for the coupon.,B,220,220,440,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,100,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Male,61,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-19 11:43:01,2022-10-19 12:02:57,IP Address,100,1196,True,2022-10-19 12:02:59,R_qx4EsJvyphJpZXr,anonymous,RU,1,I agree to participate in the research,No difference ,220,220,440,440,200,2,4,2,Yes,220,220,220,440,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,440,660,440,440,Yes,3,2,2,B,Yes,Pay your friend 700 ₽ for the coupon.,50,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,74,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-20 11:13:04,2022-10-20 11:32:29,IP Address,100,1164,True,2022-10-20 11:32:29,R_12MxGUg61Py0pxf,anonymous,RU,1,I agree to participate in the research,A,0,0,0,0,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,0,220,A,No,Consider it a gift and not pay for the coupon.,B,0,440,0,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,1000,More than 1 020 ₽,Less than today,False,They remain unchanged,Absolutely serious,Male,42,34 000 ₽ - 51 000 ₽,7,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-22 01:27:19,2022-10-22 01:39:28,IP Address,100,728,True,2022-10-22 01:39:28,R_3fiwmw6p2SkX883,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,300,3,4,"Strongly disagree
+
+5
+",No,0,220,0,440,A,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,440,No,2,4,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,300,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Male,48,More than 85 000 ₽,28,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-23 04:41:57,2022-10-23 04:49:08,IP Address,100,431,True,2022-10-23 04:49:09,R_3NOsUWrL2QDSvZR,anonymous,RU,0.899999976158142,I agree to participate in the research,A,220,440,440,880,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,220,440,440,880,A,No,Pay your friend 700 ₽ for the coupon.,B,440,880,440,880,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Pay your friend 700 ₽ for the coupon.,50,More than 1 020 ₽,Less than today,True,They collapse,Absolutely serious,Male,74,34 000 ₽ - 51 000 ₽,19,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 12:26:57,2022-10-26 12:39:04,IP Address,100,726,True,2022-10-26 12:39:06,R_1NepOqNJZojHBmT,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,500,"Strongly agree
+
+1
+",3,3,No,0,220,0,220,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,0,200,100,400,No,3,3,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,False,There is no relationship,Absolutely serious,Female,36,More than 85 000 ₽,22,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 12:34:12,2022-10-26 12:46:14,IP Address,100,722,True,2022-10-26 12:46:14,R_1rBb3hkarvwY5wS,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,0,0,0,200,2,4,2,No,220,220,440,440,No difference,Yes,Pay your friend 700 ₽ for the coupon.,No difference,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Female,44,More than 85 000 ₽,19,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 12:39:09,2022-10-26 12:48:53,IP Address,100,583,True,2022-10-26 12:48:53,R_2pQeZtJUxn2VxdQ,anonymous,RU,1,I agree to participate in the research,No difference ,0,0,0,0,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,0,220,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,220,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,46,More than 85 000 ₽,18,United States of America,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 12:49:58,2022-10-26 13:00:22,IP Address,100,624,True,2022-10-26 13:00:24,R_2vZheIHRofvRZTK,anonymous,RU,0.699999988079071,I agree to participate in the research,No difference ,0,220,0,440,500,"Strongly agree
+
+1
+",3,"Strongly disagree
+
+5
+",Yes,220,220,440,440,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,4,2,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",300,More than 1 020 ₽,Less than today,False,They collapse,Moderately serious,Female,40,More than 85 000 ₽,20,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 12:56:35,2022-10-26 13:11:53,IP Address,100,918,True,2022-10-26 13:11:54,R_2SqAcx4SnQUNNFf,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,0,0,0,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,0,200,200,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,500,Less than 1 020 ₽,Less than today,True,I do not know,Very serious,Female,40,More than 85 000 ₽,6,Italy,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 13:02:55,2022-10-26 13:14:48,IP Address,100,713,True,2022-10-26 13:14:49,R_3Pq48BajlvBM8AU,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,0,0,0,700,4,2,"Strongly disagree
+
+5
+",No,220,220,220,220,B,Yes,Consider it a gift and not pay for the coupon.,A,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,100,I do not know,I do not know,I do not know,I do not know,Not serious at all,Female,32,More than 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 13:11:43,2022-10-26 13:22:33,IP Address,100,650,True,2022-10-26 13:22:35,R_1OZzZ0q6EUkNcgg,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,220,220,440,440,No,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,I do not know,I do not know,I do not know,Absolutely serious,Female,31,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 13:44:57,2022-10-26 13:52:35,IP Address,100,458,True,2022-10-26 13:52:35,R_u21JKwy0vcrOwUh,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,220,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,45,More than 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 14:06:16,2022-10-26 14:13:20,IP Address,100,424,True,2022-10-26 14:13:21,R_Q6rrSjyB6Me18eB,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,1000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,Yes,0,220,0,440,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,440,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,31,More than 85 000 ₽,19,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 15:04:08,2022-10-26 15:10:53,IP Address,100,405,True,2022-10-26 15:10:55,R_0p8geysyObishIR,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,500,440,800,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,440,800,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,B,No,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,34,34 000 ₽ - 51 000 ₽,19,Israel,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 15:04:30,2022-10-26 15:18:59,IP Address,100,868,True,2022-10-26 15:19:00,R_3pByv3WtXIzRHPP,anonymous,RU,1,I agree to participate in the research,A,0,0,0,0,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,220,0,440,B,Yes,Pay your friend 700 ₽ for the coupon.,B,220,220,440,440,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,False,They collapse,Absolutely serious,Male,49,More than 85 000 ₽,22,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 15:34:28,2022-10-26 15:47:29,IP Address,100,780,True,2022-10-26 15:47:31,R_Os87tiEOqsj7nd7,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,350,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,No difference,220,220,440,440,No,3,3,3,No difference,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,44,More than 85 000 ₽,19,Germany,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 18:44:24,2022-10-26 19:00:30,IP Address,100,966,True,2022-10-26 19:00:31,R_2Qm4Mj97S5zb8ho,anonymous,RU,0.899999976158142,I agree to participate in the research,A,110,440,220,880,500,2,4,4,Yes,0,440,440,880,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,880,880,1720,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",150,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,45,More than 85 000 ₽,21,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 18:48:12,2022-10-26 19:03:34,IP Address,100,922,True,2022-10-26 19:03:34,R_XkckmNsQPS5oFu9,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,200,4,4,"Strongly agree
+
+1
+",No,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,No difference,220,220,440,440,No,4,2,2,B,Yes,Pay your friend 700 ₽ for the coupon.,120,More than 1 020 ₽,Less than today,I do not know,There is no relationship,Very serious,Female,25,51 000 ₽ - 68 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 19:08:07,2022-10-26 19:17:41,IP Address,100,574,True,2022-10-26 19:17:43,R_2larvWpQPlT98Bz,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,220,220,440,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,0,220,220,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,220,440,440,440,Yes,3,2,3,A,Yes,Pay your friend 700 ₽ for the coupon.,150,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,32,More than 85 000 ₽,18,Canada,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 21:25:25,2022-10-26 21:38:27,IP Address,100,781,True,2022-10-26 21:38:28,R_2ykfYFoOPmVUOtG,anonymous,RU,0.699999988079071,I agree to participate in the research,A,0,0,0,0,10000,4,2,2,No,220,220,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,440,440,440,440,No,4,"Strongly agree
+
+1
+",2,B,Yes,Pay your friend 700 ₽ for the coupon.,1000,More than 1 020 ₽,Less than today,False,They collapse,Moderately serious,Female,37,More than 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 00:25:12,2022-10-27 00:36:53,IP Address,100,700,True,2022-10-27 00:36:53,R_2scnRClblNQp7MB,anonymous,RU,1,I agree to participate in the research,A,0,220,0,220,300,2,4,"Strongly agree
+
+1
+",No,200,220,200,220,A,Yes,Pay your friend 700 ₽ for the coupon.,B,200,220,200,220,No,4,"Strongly agree
+
+1
+",2,B,Yes,Pay your friend 700 ₽ for the coupon.,150,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,43,34 000 ₽ - 51 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 02:17:49,2022-10-27 02:32:35,IP Address,100,886,True,2022-10-27 02:32:35,R_2TFqo0aYPTLs8QM,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,500,2,3,3,Yes,0,220,0,220,A,Yes,Consider it a gift and not pay for the coupon.,A,0,440,0,440,No,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,False,I do not know,Not serious at all,Female,36,68 000 ₽ - 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 03:02:01,2022-10-27 03:20:11,IP Address,100,1090,True,2022-10-27 03:20:12,R_2Uf5H056OMARjk8,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,220,0,440,200,"Strongly agree
+
+1
+",4,4,No,220,220,220,440,A,No,Pay your friend 700 ₽ for the coupon.,B,440,440,440,440,No,"Strongly disagree
+
+5
+",4,2,B,No,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,More than today,False,There is no relationship,Moderately serious,Female,23,Prefer not to answer,12,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-20 03:39:27,2022-10-20 03:40:29,Spam,3,61,False,2022-10-27 03:41:55,R_Tjb4eRL5OswyiIx,anonymous,RU,0.699999988079071,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 07:55:05,2022-10-27 08:25:58,IP Address,100,1852,True,2022-10-27 08:25:58,R_3GBa4XP3qNcNVqc,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,500,2,4,"Strongly disagree
+
+5
+",No,0,220,0,440,A,Yes,Consider it a gift and not pay for the coupon.,B,0,220,0,440,No,4,2,"Strongly disagree
+
+5
+",A,Yes,Consider it a gift and not pay for the coupon.,500,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Female,27,68 000 ₽ - 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 10:58:00,2022-10-27 11:10:06,IP Address,100,725,True,2022-10-27 11:10:06,R_2XmSjhDaMVNes1m,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,220,440,440,No difference,Yes,Consider it a gift and not pay for the coupon.,B,400,400,400,400,No,"Strongly disagree
+
+5
+",2,2,B,No,Pay your friend 700 ₽ for the coupon.,120,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Male,32,34 000 ₽ - 51 000 ₽,13,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 11:18:23,2022-10-27 11:37:45,IP Address,100,1162,True,2022-10-27 11:37:45,R_3lKquuYidKxULGw,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,420,0,840,400,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,0,440,0,640,A,Yes,Consider it a gift and not pay for the coupon.,B,0,840,0,1040,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,A,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,False,There is no relationship,Moderately serious,Female,27,68 000 ₽ - 85 000 ₽,16,Turkey,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 11:36:02,2022-10-27 11:43:28,IP Address,100,445,True,2022-10-27 11:43:29,R_1pyhxrMFbcuRDde,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,200,0,400,120,"Strongly agree
+
+1
+",4,4,No,110,220,220,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,440,220,440,No,"Strongly agree
+
+1
+",4,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",60,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Male,23,Less than 17 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 11:12:43,2022-10-27 12:09:42,IP Address,100,3418,True,2022-10-27 12:09:42,R_1Dv6HkoQ2hCuXze,anonymous,RU,1,I agree to participate in the research,A,200,500,400,1000,1000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,400,440,1000,A,Yes,Consider it a gift and not pay for the coupon.,B,440,1000,440,1000,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,50,More than 1 020 ₽,Less than today,False,There is no relationship,Very serious,Male,33,More than 85 000 ₽,19,Germany,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 12:03:58,2022-10-27 12:11:42,IP Address,100,463,True,2022-10-27 12:11:42,R_22Wy6m70fO1aiWj,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,0,0,0,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,220,220,220,B,No,Consider it a gift and not pay for the coupon.,B,440,440,440,440,Yes,3,2,2,B,No,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,False,There is no relationship,Moderately serious,Female,27,68 000 ₽ - 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 12:05:40,2022-10-27 12:39:28,IP Address,100,2027,True,2022-10-27 12:39:28,R_1d06irqlkWLr1N1,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,300,"Strongly agree
+
+1
+",4,4,No,220,220,220,440,No difference,No,Consider it a gift and not pay for the coupon.,B,220,440,440,440,No,2,3,3,B,No,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,30,Prefer not to answer,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 12:34:39,2022-10-27 12:43:04,IP Address,100,505,True,2022-10-27 12:43:04,R_2scZZoqkgWmQ3d5,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,500,3,2,4,No,0,220,0,220,No difference,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,27,68 000 ₽ - 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 12:29:05,2022-10-27 12:46:51,IP Address,100,1066,True,2022-10-27 12:46:52,R_1jUIYoQxWNg7eDa,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,500,2,4,"Strongly agree
+
+1
+",Yes,0,220,0,220,B,Yes,Consider it a gift and not pay for the coupon.,B,0,440,0,440,Yes,3,4,2,B,No,Consider it a gift and not pay for the coupon.,150,More than 1 020 ₽,Less than today,False,They collapse,Absolutely serious,Female,27,34 000 ₽ - 51 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 12:48:03,2022-10-27 13:02:06,IP Address,100,842,True,2022-10-27 13:02:06,R_3JCxAzTBo2zddxq,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,200,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,220,0,440,A,Yes,Consider it a gift and not pay for the coupon.,A,0,220,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,45,68 000 ₽ - 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 12:58:59,2022-10-27 13:11:10,IP Address,100,731,True,2022-10-27 13:11:10,R_2PjNxQWXGr3Yru7,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,400,2,"Strongly disagree
+
+5
+",4,No,0,220,0,440,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,440,0,440,No,4,2,3,B,No,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,35,68 000 ₽ - 85 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 13:48:45,2022-10-27 14:05:04,IP Address,100,978,True,2022-10-27 14:05:04,R_2xRDlnPVuubyrCT,anonymous,RU,1,I agree to participate in the research,No difference ,0,0,0,0,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,220,220,220,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,440,440,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,31,34 000 ₽ - 51 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 14:03:47,2022-10-27 14:16:16,IP Address,100,749,True,2022-10-27 14:16:16,R_qFt0g3uFu7EJI6B,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,220,400,3,3,3,Yes,220,320,220,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,Yes,3,3,3,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,False,They remain unchanged,Very serious,Female,34,Prefer not to answer,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 14:31:18,2022-10-27 14:45:49,IP Address,100,870,True,2022-10-27 14:45:51,R_1jKiri5t2Zx7Pf9,anonymous,RU,1,I agree to participate in the research,A,0,0,0,0,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,0,220,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,440,0,440,No,2,4,"Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Female,37,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 15:02:41,2022-10-27 15:37:29,IP Address,100,2087,True,2022-10-27 15:37:30,R_3kwcb0MavH7VGym,anonymous,RU,0.899999976158142,I agree to participate in the research,A,150,220,150,220,500,4,"Strongly agree
+
+1
+",3,No,150,220,150,220,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,150,220,150,300,No,"Strongly disagree
+
+5
+",4,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,False,They collapse,Moderately serious,Female,30,More than 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 20:00:41,2022-10-27 20:26:10,IP Address,100,1528,True,2022-10-27 20:26:10,R_3HThq5lCRnnjikl,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,300,0,500,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,220,300,440,500,No difference,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,500,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,Pay your friend 700 ₽ for the coupon.,500,More than 1 020 ₽,Less than today,I do not know,I do not know,Moderately serious,Female,31,51 000 ₽ - 68 000 ₽,15,Kazakhstan,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 22:10:46,2022-10-27 22:24:10,IP Address,100,804,True,2022-10-27 22:24:11,R_3PzXW6BXqr1m5B8,anonymous,RU,1,I agree to participate in the research,A,0,200,0,440,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,220,220,220,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,3,2,2,No difference,No,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,False,There is no relationship,Very serious,Female,43,34 000 ₽ - 51 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 22:48:54,2022-10-27 23:04:25,IP Address,100,931,True,2022-10-27 23:04:27,R_1pDqy6CEKODaLMs,anonymous,RU,0.400000005960465,I agree to participate in the research,No difference ,0,220,0,440,150,2,4,2,Yes,220,220,440,440,No difference,No,Consider it a gift and not pay for the coupon.,B,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,No difference,No,Consider it a gift and not pay for the coupon.,150,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,38,68 000 ₽ - 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 23:00:16,2022-10-27 23:17:27,IP Address,100,1030,True,2022-10-27 23:17:27,R_1zXiyoTDZqWALjH,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,500,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,220,220,220,220,No difference,Yes,Pay your friend 700 ₽ for the coupon.,B,300,440,440,440,No,3,2,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Non-binary / third gender,43,More than 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 23:34:30,2022-10-27 23:45:29,IP Address,100,658,True,2022-10-27 23:45:29,R_abJcSrZrVssAHoB,anonymous,RU,1,I agree to participate in the research,B,0,220,0,440,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,A,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,500,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,32,68 000 ₽ - 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 23:39:20,2022-10-28 00:01:46,IP Address,100,1345,True,2022-10-28 00:01:46,R_1IcKZdVHuegPIUq,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,220,500,"Strongly disagree
+
+5
+",4,"Strongly disagree
+
+5
+",No,0,0,0,0,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,0,440,0,440,No,"Strongly disagree
+
+5
+",4,"Strongly disagree
+
+5
+",No difference,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,False,There is no relationship,Moderately serious,Prefer not to say,37,Prefer not to answer,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 00:33:40,2022-10-28 00:44:44,IP Address,100,664,True,2022-10-28 00:44:45,R_1hzeFhqW8h6c8M7,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,440,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,440,440,440,No,3,4,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,64,17 000 ₽ - 34 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 00:40:59,2022-10-28 00:48:43,IP Address,100,464,True,2022-10-28 00:48:43,R_1Hq1SuGKC0hIfMe,anonymous,RU,0.899999976158142,I agree to participate in the research,B,0,220,0,440,600,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,220,0,440,B,Yes,Pay your friend 700 ₽ for the coupon.,B,0,220,0,440,No,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",B,Yes,Pay your friend 700 ₽ for the coupon.,600,More than 1 020 ₽,Less than today,I do not know,I do not know,Not serious at all,Female,43,68 000 ₽ - 85 000 ₽,14,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 01:16:10,2022-10-28 01:29:44,IP Address,100,814,True,2022-10-28 01:29:44,R_2WAnraeuohwbTw7,anonymous,EN,0.699999988079071,I agree to participate in the research,No difference ,0,220,0,440,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,0,440,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,0,440,0,440,No,4,"Strongly agree
+
+1
+",4,B,No,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,They collapse,Absolutely serious,Female,38,68 000 ₽ - 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 02:16:36,2022-10-28 02:37:14,IP Address,100,1237,True,2022-10-28 02:37:14,R_2TWUNhCCMScTyuv,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,250,0,450,400,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,250,0,450,No difference,No,Consider it a gift and not pay for the coupon.,B,0,450,0,450,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,42,68 000 ₽ - 85 000 ₽,6,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 01:50:19,2022-10-28 02:48:31,IP Address,100,3492,True,2022-10-28 02:48:31,R_eExiR1iv3MC22Zz,anonymous,RU,1,I agree to participate in the research,A,0,0,0,0,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,220,220,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,440,440,440,440,No,4,2,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Very serious,Female,30,34 000 ₽ - 51 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 02:44:32,2022-10-28 03:08:20,IP Address,100,1427,True,2022-10-28 03:08:20,R_29bTDochmMSdXRT,anonymous,RU,1,I agree to participate in the research,A,220,220,220,440,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,220,440,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,220,220,440,No,"Strongly disagree
+
+5
+",4,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",300,More than 1 020 ₽,Less than today,False,I do not know,Moderately serious,Female,36,68 000 ₽ - 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 03:54:14,2022-10-28 04:06:53,IP Address,100,758,True,2022-10-28 04:06:53,R_6YzXAL56ZkWqC1r,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,200,220,400,440,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,440,440,440,Yes,3,4,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,34,More than 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 04:30:16,2022-10-28 04:44:41,IP Address,100,865,True,2022-10-28 04:44:41,R_3mb24KaQgFZdORj,anonymous,RU,0.899999976158142,I agree to participate in the research,A,110,300,220,500,500,4,3,"Strongly disagree
+
+5
+",Yes,220,300,440,500,A,Yes,Consider it a gift and not pay for the coupon.,A,440,440,440,500,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",2,B,No,Consider it a gift and not pay for the coupon.,300,I do not know,I do not know,I do not know,I do not know,Very serious,Female,33,Prefer not to answer,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 00:19:42,2022-10-28 04:57:53,IP Address,100,16690,True,2022-10-28 04:57:53,R_2TC8w04VW2BXfW6,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,500,4,2,2,Yes,0,220,0,440,A,Yes,Consider it a gift and not pay for the coupon.,B,0,440,0,440,Yes,4,2,"Strongly agree
+
+1
+",B,No,Pay your friend 700 ₽ for the coupon.,250,More than 1 020 ₽,Less than today,True,There is no relationship,Moderately serious,Male,47,68 000 ₽ - 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 04:54:48,2022-10-28 05:06:02,IP Address,100,674,True,2022-10-28 05:06:03,R_1gIr3iUyCNWpE6W,anonymous,RU,1,I agree to participate in the research,No difference ,0,220,0,440,350,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,220,220,440,440,A,No,Consider it a gift and not pay for the coupon.,A,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,I do not know,I do not know,There is no relationship,Absolutely serious,Female,22,34 000 ₽ - 51 000 ₽,14,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 05:27:27,2022-10-28 05:37:10,IP Address,100,583,True,2022-10-28 05:37:10,R_3Eu4d3j5oMYt1Wl,anonymous,RU,1,I agree to participate in the research,A,110,220,220,440,550,3,3,2,No,220,300,440,500,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,350,440,500,No,3,3,"Strongly agree
+
+1
+",B,Yes,Pay your friend 700 ₽ for the coupon.,100,More than 1 020 ₽,Less than today,I do not know,They collapse,Very serious,Female,27,More than 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 06:47:27,2022-10-28 06:59:03,IP Address,100,696,True,2022-10-28 06:59:03,R_2urN37UZuRNiTrT,anonymous,RU,1,I agree to participate in the research,No difference ,0,200,0,300,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,200,220,200,300,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,200,220,300,400,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",300,More than 1 020 ₽,Less than today,False,There is no relationship,Moderately serious,Female,38,More than 85 000 ₽,16,Kazakhstan,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 06:47:58,2022-10-28 07:04:14,IP Address,100,975,True,2022-10-28 07:04:14,R_3nlt8FsFTE3BvGy,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,300,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,100,220,100,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,200,300,200,500,Yes,4,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,There is no relationship,Very serious,Female,27,68 000 ₽ - 85 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 06:50:57,2022-10-28 07:09:19,IP Address,100,1102,True,2022-10-28 07:09:21,R_1F8r4B5G1Do9FG5,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,150,2,4,3,No,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,B,220,220,440,440,No,4,"Strongly agree
+
+1
+",3,B,No,Consider it a gift and not pay for the coupon.,150,More than 1 020 ₽,Less than today,False,They collapse,Absolutely serious,Female,33,More than 85 000 ₽,14,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 07:10:13,2022-10-28 07:20:38,IP Address,100,625,True,2022-10-28 07:20:40,R_VP6RQFpXnyosGWJ,anonymous,RU,1,I agree to participate in the research,No difference ,0,100,0,200,400,2,4,"Strongly disagree
+
+5
+",No,0,220,0,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,440,0,440,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",2,No difference,No,Consider it a gift and not pay for the coupon.,100,I do not know,Less than today,False,I do not know,Moderately serious,Female,27,34 000 ₽ - 51 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 07:26:17,2022-10-28 07:40:15,IP Address,100,837,True,2022-10-28 07:40:16,R_29goWXiT1Nxnt9d,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,220,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,200,220,220,440,A,No,Consider it a gift and not pay for the coupon.,A,440,440,440,440,Yes,3,4,"Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",80,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,26,17 000 ₽ - 34 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-21 07:50:14,2022-10-21 08:20:27,IP Address,97,1813,False,2022-10-28 08:52:36,R_CeRmVOy3uoTMXYt,anonymous,RU,0.899999976158142,I agree to participate in the research,A,220,440,440,880,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,220,440,440,880,A,No,Pay your friend 700 ₽ for the coupon.,B,440,880,440,880,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Pay your friend 700 ₽ for the coupon.,50,More than 1 020 ₽,Less than today,True,They collapse,Absolutely serious,Male,74,34 000 ₽ - 51 000 ₽,19,Russian Federation,Russian,
+2022-10-21 09:02:34,2022-10-21 09:12:01,IP Address,19,567,False,2022-10-28 09:12:07,R_22Qax3vi82qmvqq,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,No difference,440,440,440,440,No,,,,,,,,,,,,,,,,,,,
+2022-10-28 09:14:01,2022-10-28 09:14:12,IP Address,100,11,True,2022-10-28 09:14:13,R_2xzWbHBT5RqlUCE,anonymous,RU,0.899999976158142,I do NOT agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-28 09:14:16,2022-10-28 11:24:27,IP Address,100,7811,True,2022-10-28 11:24:29,R_32RSvjQam8IeHNQ,anonymous,RU,0.899999976158142,I agree to participate in the research,A,50,220,50,440,100,2,4,2,No,220,220,220,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,4,2,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Male,26,68 000 ₽ - 85 000 ₽,17,Armenia,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 13:29:44,2022-10-28 13:44:01,IP Address,100,857,True,2022-10-28 13:44:02,R_2fs6UfqJkKA2YpA,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,300,0,500,300,4,4,3,No,220,300,220,500,No difference,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,500,No,3,4,3,B,Yes,Pay your friend 700 ₽ for the coupon.,300,More than 1 020 ₽,Less than today,False,I do not know,Not serious at all,Female,37,More than 85 000 ₽,16,Turkey,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 14:50:54,2022-10-28 15:18:35,IP Address,100,1660,True,2022-10-28 15:18:35,R_3fHPoxbgmh0kP5D,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,150,0,500,200,2,3,2,Yes,100,250,220,500,A,No,Consider it a gift and not pay for the coupon.,B,400,500,200,500,No,3,2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,32,Less than 17 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 15:20:48,2022-10-28 15:31:26,IP Address,100,638,True,2022-10-28 15:31:28,R_3kdpmSGb6ygUK4E,anonymous,RU,0.699999988079071,I agree to participate in the research,No difference ,220,220,440,440,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,200,300,300,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,300,450,400,450,Yes,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",200,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,19,Less than 17 000 ₽,13,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-28 14:33:35,2022-10-28 15:52:38,IP Address,100,4742,True,2022-10-28 15:52:38,R_a3md9cT8yORKaC5,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,150,"Strongly agree
+
+1
+",4,3,Yes,220,235,220,300,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,No,4,4,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",150,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Prefer not to say,22,34 000 ₽ - 51 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-27 12:17:01,2022-10-29 00:09:54,IP Address,100,129172,True,2022-10-29 00:09:55,R_1ghfdfwfZdfrof1,anonymous,RU,1,I agree to participate in the research,A,0,440,0,800,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,440,440,880,A,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,880,No,"Strongly disagree
+
+5
+",2,4,B,Yes,Consider it a gift and not pay for the coupon.,150,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,32,More than 85 000 ₽,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-29 00:41:22,2022-10-29 01:02:56,IP Address,100,1294,True,2022-10-29 01:02:57,R_5pYoQI7SqriC25P,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,0,0,0,400,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,220,0,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,0,440,0,440,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",300,More than 1 020 ₽,I do not know,I do not know,I do not know,Absolutely serious,Female,33,More than 85 000 ₽,15,Georgia,Russian,I allow you to use the responses I provided in this study.
+2022-10-29 08:28:03,2022-10-29 08:48:09,IP Address,100,1205,True,2022-10-29 08:48:10,R_1r9tOHMXWyALIp6,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,220,0,440,250,2,4,4,No,220,220,220,220,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,220,440,440,440,No,4,3,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Absolutely serious,Female,38,51 000 ₽ - 68 000 ₽,20,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-29 14:39:52,2022-10-29 15:07:53,IP Address,100,1681,True,2022-10-29 15:07:55,R_22DZNBki0sr1Yky,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,0,0,0,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,220,0,220,A,No,Consider it a gift and not pay for the coupon.,A,0,440,0,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,I do not know,Less than today,I do not know,I do not know,Absolutely serious,Female,29,68 000 ₽ - 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-29 15:48:32,2022-10-29 16:16:30,IP Address,100,1677,True,2022-10-29 16:16:30,R_1mPIl8hd0PUbDDn,anonymous,RU,1,I agree to participate in the research,A,220,300,220,550,300,2,4,"Strongly disagree
+
+5
+",Yes,220,300,220,550,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,440,550,440,650,Yes,2,4,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",300,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Male,37,More than 85 000 ₽,16,Germany,Russian,I allow you to use the responses I provided in this study.
+2022-10-30 06:15:17,2022-10-30 06:35:56,IP Address,100,1238,True,2022-10-30 06:35:57,R_1K2VstAbjRuf11H,anonymous,RU,1,I agree to participate in the research,A,0,0,0,0,350,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,220,440,440,440,Yes,"Strongly agree
+
+1
+",4,4,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,Less than 1 020 ₽,Less than today,I do not know,There is no relationship,Moderately serious,Female,41,51 000 ₽ - 68 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-31 02:29:16,2022-10-31 02:39:07,IP Address,100,590,True,2022-10-31 02:39:07,R_eYgBd9Emltt3UOJ,anonymous,RU,0.800000011920929,I agree to participate in the research,No difference ,0,220,0,440,800,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,0,440,No difference,Yes,Consider it a gift and not pay for the coupon.,B,220,440,440,440,No,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,False,They collapse,Slightly serious,Female,29,51 000 ₽ - 68 000 ₽,17,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-31 12:54:32,2022-10-31 13:13:00,IP Address,100,1108,True,2022-10-31 13:13:02,R_1H7ty85dNWHlioU,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,0,0,0,0,500,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,220,0,440,A,No,Pay your friend 700 ₽ for the coupon.,B,0,440,0,440,No,4,2,4,B,No,Pay your friend 700 ₽ for the coupon.,200,More than 1 020 ₽,Less than today,I do not know,They collapse,Very serious,Female,34,68 000 ₽ - 85 000 ₽,16,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-30 00:42:23,2022-10-31 13:34:16,IP Address,100,132712,True,2022-10-31 13:34:16,R_2E0sycGTmv0xr75,anonymous,RU,0.699999988079071,I agree to participate in the research,A,0,220,0,440,200,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,B,440,440,440,440,No,4,3,2,B,No,Consider it a gift and not pay for the coupon.,100,More than 1 020 ₽,Less than today,False,I do not know,Absolutely serious,Female,35,Prefer not to answer,15,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-31 14:40:11,2022-10-31 15:07:46,IP Address,100,1655,True,2022-10-31 15:07:47,R_vqo7eC4WU5JPRFD,anonymous,RU,1,I agree to participate in the research,A,0,220,0,220,300,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,0,220,0,220,A,Yes,Consider it a gift and not pay for the coupon.,B,0,440,0,440,No,3,3,2,B,Yes,Consider it a gift and not pay for the coupon.,200,More than 1 020 ₽,Less than today,False,I do not know,Very serious,Female,28,34 000 ₽ - 51 000 ₽,18,Russian Federation,Russian,I allow you to use the responses I provided in this study.
+2022-10-26 12:25:23,2022-10-26 12:31:32,IP Address,42,368,False,2022-11-02 07:44:17,R_3EtnnRxgakVweIT,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,,,,,,,,,,,,,A,440,440,440,440,Yes,2,4,2,B,No,Consider it a gift and not pay for the coupon.,200,,,,,,,,,,,,
+2022-10-27 16:59:50,2022-10-27 17:06:09,IP Address,19,378,False,2022-11-02 07:44:18,R_2dm3wq44Xn6rHzF,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,1000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-26 12:15:18,2022-10-26 12:16:13,IP Address,8,54,False,2022-11-02 07:44:19,R_3MaHZMANqjhekgT,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-26 16:40:48,2022-10-26 16:41:16,Spam,8,27,False,2022-11-02 07:44:20,R_2qdtqsWbSNaxPqU,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-26 12:19:03,2022-10-26 12:19:35,Spam,3,32,False,2022-11-02 07:44:22,R_1lAiTNLZhArftKY,anonymous,RU,,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 11:40:34,2022-10-27 11:42:22,IP Address,14,107,False,2022-11-02 07:44:24,R_1opCIf4sdt9aBBs,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,200,220,400,440,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-26 12:21:34,2022-10-26 12:22:35,Spam,8,60,False,2022-11-02 07:44:25,R_O7OOZb2J6BnTj0t,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-27 13:28:57,2022-10-27 13:37:54,IP Address,44,537,False,2022-11-02 07:44:27,R_28SdHwSUaYZL0ZK,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,200,"Strongly agree
+
+1
+",3,2,Yes,,,,,,,,B,220,440,440,440,No,4,2,"Strongly disagree
+
+5
+",B,No,,,,,,,,,,,,,,
+2022-10-26 12:38:09,2022-10-26 12:49:56,IP Address,50,707,False,2022-11-02 07:44:35,R_32LMfxlcYzC0pmg,anonymous,RU,0.899999976158142,I agree to participate in the research,A,220,220,440,440,100,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",,220,440,440,440,A,No,Consider it a gift and not pay for the coupon.,A,220,440,440,440,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",,,,,,,,,,,,,,,,
+2022-10-26 12:54:11,2022-10-26 13:28:08,IP Address,36,2037,False,2022-11-02 07:44:37,R_3JyO1QxkuheL2Di,anonymous,RU,1,I agree to participate in the research,No difference ,,,,,,,,,,,,,,,,,No difference,220,220,440,440,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,No difference,Yes,Pay your friend 700 ₽ for the coupon.,100,,,,,,,,,,,,
+2022-10-27 23:01:38,2022-10-27 23:03:52,IP Address,19,134,False,2022-11-02 07:44:38,R_3huvK5SUddpg718,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,No difference,220,440,440,440,Yes,,,,,,,,,,,,,,,,,,,
+2022-10-28 00:01:04,2022-10-28 08:14:02,IP Address,39,29578,False,2022-11-02 07:44:42,R_2DNbMPuyQOxCiww,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,220,220,440,440,A,Yes,Consider it a gift and not pay for the coupon.,No difference,440,440,440,440,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,,,,,,,,,,,,,,,
+2022-10-26 13:14:14,2022-10-26 13:15:25,IP Address,11,70,False,2022-11-02 07:44:43,R_2ckdwRJWHJlhoIi,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-28 06:13:46,2022-10-28 06:19:11,IP Address,17,325,False,2022-11-02 07:44:44,R_3PpBAk156aSF1EH,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,220,0,440,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-26 13:34:45,2022-10-26 13:46:31,IP Address,50,705,False,2022-11-02 07:44:51,R_XHEwALiHhrAxs1X,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,,,,,,,,,,220,220,220,440,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,Yes,3,3,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",200,,,,,,,,,,,,
+2022-10-28 06:27:56,2022-10-28 06:37:02,IP Address,50,545,False,2022-11-02 07:44:54,R_vJjM5rHKc1wiAvv,anonymous,RU,0.899999976158142,I agree to participate in the research,No difference ,150,200,200,350,350,2,4,3,No,200,250,300,400,A,Yes,,B,200,220,400,440,No,3,2,3,,,,,,,,,,,,,,,,
+2022-10-27 11:38:17,2022-10-27 11:38:52,Spam,8,34,False,2022-11-02 07:44:57,R_2S04ivArFrx4VyK,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-28 06:02:22,2022-10-28 07:35:22,Spam,8,5580,False,2022-11-02 07:44:59,R_4PdhA6UeiDhRWY9,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-30 11:12:47,2022-10-30 11:22:22,IP Address,44,575,False,2022-11-02 07:45:02,R_1eM14zVnIa0umEK,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,300,,,,,,,,,,,,No difference,0,220,0,440,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend 700 ₽ for the coupon.,100,,,,,,,,,,,,
+2022-10-27 14:15:33,2022-10-27 14:31:10,IP Address,81,936,False,2022-11-02 07:45:05,R_1DZoCCHLgLN6FPF,anonymous,RU,0.899999976158142,I agree to participate in the research,A,0,0,0,0,500,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,200,220,400,440,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,200,220,400,440,No,3,4,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",100,More than 1 020 ₽,Less than today,I do not know,I do not know,Not serious at all,,,,,,,
+2022-10-28 00:42:41,2022-10-28 07:21:32,Spam,8,23931,False,2022-11-02 07:45:19,R_2Pp51naDRRnuuzB,anonymous,RU,0.899999976158142,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-28 04:13:59,2022-10-28 04:27:32,IP Address,58,812,False,2022-11-02 07:45:26,R_2wnSKGnS2NWCOJV,anonymous,RU,1,I agree to participate in the research,A,0,220,0,440,400,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,220,220,220,440,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,440,440,440,440,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,,,,,,,,,,,,,,
+2022-10-28 08:19:46,2022-10-28 08:31:27,IP Address,33,700,False,2022-11-02 07:45:37,R_6szjfLKfqtzulax,anonymous,RU,1,I agree to participate in the research,,,,,,,,,,,220,220,440,440,No difference,Yes,,A,220,660,440,660,No,2,3,"Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-10-29 15:35:15,2022-10-29 15:39:36,IP Address,25,261,False,2022-11-02 07:45:46,R_b2fSfT9fDJB42zL,anonymous,RU,0.800000011920929,I agree to participate in the research,A,,,,,,,,,,,,,,,,,B,220,440,440,440,No,3,3,2,,,,,,,,,,,,,,,,
+2022-10-29 16:16:28,2022-10-29 16:17:26,IP Address,11,58,False,2022-11-02 07:45:53,R_3eh5XpSj4JNhYwY,anonymous,RU,0.400000005960465,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

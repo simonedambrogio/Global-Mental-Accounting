@@ -1,0 +1,1967 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q_RecaptchaScore,Consent,MrAB1,Game1_1_1,Game1_1_2,Game1_2_1,Game1_2_2,Drink1,Gym1 _1,Gym1 _2,Gym1 _3,Jacket1,Game2_1_1,Game2_1_2,Game2_2_1,Game2_2_2,MrAB2,Play2,"Plane2 ",MrAB3,Game3_1 _1,Game3_1 _2,Game3_2_1,Game3_2_2,Jacket2,Gym2 _1,Gym2 _2,Gym2 _3,"MrAB4 ","Play1 ","Plane1 ",Drink2,fin_lit1,fin_lit2,fin_lit3,fin_lit4,Att_check,Gender,"Age ",Income,Education,Residence,Native language,Debriefing
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,Q_RecaptchaScore,"Dear Participant,    We invite you to take part in an online study with the purpose of investigating how people make decisions. The duration of the questionnaire is approximately 10 minutes. At the end of the questionnaire, you will be asked some personal demographic information.    Your data will be analyzed anonymously and processed according to the current international legislation for the protection of privacy (D. Lgs 196/2003 and EU GDPR 679/2016 on the protection of personal data and art. 9 of the Deontological Code of Italian Psychologists). Your data will be used solely for the purposes of the research itself. No information regarding you personally will be published or revealed in any way.    You are free to withdraw from the study at any point without giving any explanation. In this case your data will be deleted. You will not receive any payment or reimbursement of any sort for your participation in this study. There are no known risks associated with participating in this study.    Project Manager: Enrico Rubaltelli (Department of Development Psychology and Socialization -DPSS, University of Padua). The person responsible for this research agrees to comply with the obligations of current legislation in terms of collection, processing and storage of sensitive data.    I DECLARE THAT  • I am 18 years old or older  • I take part in this project voluntarily  • I am aware of the objectives and aims of this research project  • I am aware that the data obtained, in absolute anonymity, will be treated exclusively for educational and research purposes  • I am aware that it is not possible to withdraw the data I have provided once it has been submitted.    For any clarification you can contact Prof. Enrico Rubaltelli at jdmlab.multicountry@gmail.com.",Person A was given two tickets to the lottery. They won GHS70 with one ticket and GHS30 with the other ticket.      Person B was given a ticket to one lottery. They won GHS100.        Who is happier?,You are going to a sold-out game of your favourite rite local sports team and you have an extra ticket. The price marked on the ticket is GHS10 but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is GHS10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a friend,You are going to a sold-out game of your favourite rite local sports team and you have an extra ticket. The price marked on the ticket is GHS10 but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is GHS10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was GHS 20 instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was GHS 20 instead? - If they are a stranger,"You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a fancy resort hotel. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender.    What price do you tell them?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay GHS20 (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted GHS20","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay GHS20 (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay GHS20 (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind","You are about to purchase a jacket for GHS230 and a Bluetooth speaker for GHS30. The salesman informs you that the speaker you wish to buy is on sale for GHS20 at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is GHS10 which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is GHS10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is GHS10 which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is GHS10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger",What price would you have asked for if you found out that the ticket’s face value price was GHS20 instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was GHS20 instead? - If they are a stranger,Person A received a fine and owed GHS150. The same day they received a second fine and owed GHS70.    Person B received a fine and owed GHS220.    Who is more upset?,"Imagine that you are on your way to a music event and intend to buy a ticket worth GHS70. On entering the venue, you realize that you have lost GHS70 in cash.    Would you still pay GHS70 for a ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth GHS30, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of GHS30 and received the other one for free. Just one coupon is required to upgrade your class on the current flight and your friend offers you the coupon which they got for free so that you can upgrade your ticket as well.    What do you think is the most appropriate thing to do?","Person A bought a lottery ticket and won GHS150. Also, they damaged one door in their apartment in an accident and had to pay the landlord GHS120.       Person B bought a lottery ticket and won GHS30.      Who is happier?",You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is GHS10 but you paid GHS20 for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is GHS10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend,You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is GHS10 but you paid GHS20 for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is GHS10. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger,What price would you have asked for if you found out that the ticket’s face value price was GHS20 instead? - If they are a friend,What price would you have asked for if you found out that the ticket’s face value price was GHS20 instead? - If they are a stranger,"You are about to purchase a jacket for GHS30 and a Bluetooth speaker for GHS230. The salesman informs you that the speaker you wish to buy is on sale for GHS220 at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you GHS700 a year (i.e., roughly GHS20 per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted GHS20","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you GHS700 a year (i.e., roughly GHS20 per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you GHS700 a year (i.e., roughly GHS20 per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind",Person A damaged their car in a parking lot. They had to spend GHS300 to repair the damage. The same day they damaged the car they won GHS50 in a raffle.       Person B damaged their car in a parking lot. They had to spend GHS250 to repair the damage.       Who is more upset?,"Imagine that you are on your way to a music event with a ticket for which you have paid GHS70. On entering the venue, you discover that you have lost the ticket.    Would you pay GHS70 for another ticket?","You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth GHS30, which could be used to upgrade your ticket from economy to business class. They purchased one coupon for the standard price of GHS30 and received the other one for free. Just one coupon is required to upgrade your class on the current flight, and your friend offers you the coupon which they purchased so that you can upgrade as well.    What do you think is the most appropriate thing to do?","You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a small, run-down grocery store. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the store owner.    What price do you tell them?","Suppose that you have GHS100 in a savings account and the interest rate is 2% per year. After 5 years, how much do you think you would have in the account if you let the money grow?","Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, how much would you be able to buy with the money in this account?",Buying a single company's stock usually provides a safer return than a stock mutual fund.,"If interest rates rise, what would typically happen to bond prices?",To ensure the quality of our data we need to know if participants paid attention during the survey. Please tell us honestly how serious you were in completing the survey.   How serious have you been about filling in the survey?,What gender do you identify as?,What is your age (in numbers)?,Which of the following best describes your annual household income last year?,How many years of schooling have you completed? (from elementary school to doctoral degree or specialization if you have one),List of Countries,Which of the following is your native language?,"The survey you have completed aims to replicate the mental accounting effect. According to this phenomenon a person attributes different values to the same amount of money based on subjective criteria. Specifically, people tend to subjectively organize economic resources into different mental accounts. In addition, in this study, we measured some individual differences that might have an influence on mental accounting. In particular:   	  	   ●	Scale to measure financial literacy (Lusardi and Mitchell, 2014).  	 	 	  ●	Demographic data (e.g. gender, age or income level)	    Finally, we inform you that we have also used an attentional check to measure respondent engagement. The purpose of this study could not be fully revealed at the beginning of the study to avoid influencing your answers. Now that you have received this information, we ask you to confirm your consent to participate in this study or to withdraw it. In the latter case your data will not be used and will be deleted."
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""Q_RecaptchaScore""}","{""ImportId"":""QID1""}","{""ImportId"":""QID8""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID14_2""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID23_TEXT""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID44_2""}","{""ImportId"":""QID44_3""}","{""ImportId"":""QID34""}","{""ImportId"":""QID17_1""}","{""ImportId"":""QID17_2""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID18_2""}","{""ImportId"":""QID123""}","{""ImportId"":""QID124""}","{""ImportId"":""QID86""}","{""ImportId"":""QID10""}","{""ImportId"":""QID20_1""}","{""ImportId"":""QID20_2""}","{""ImportId"":""QID21_1""}","{""ImportId"":""QID21_2""}","{""ImportId"":""QID74""}","{""ImportId"":""QID82_1""}","{""ImportId"":""QID82_2""}","{""ImportId"":""QID82_3""}","{""ImportId"":""QID11""}","{""ImportId"":""QID40""}","{""ImportId"":""QID48""}","{""ImportId"":""QID70_TEXT""}","{""ImportId"":""QID59""}","{""ImportId"":""QID60""}","{""ImportId"":""QID61""}","{""ImportId"":""QID62""}","{""ImportId"":""QID51""}","{""ImportId"":""QID52""}","{""ImportId"":""QID53_TEXT""}","{""ImportId"":""QID54""}","{""ImportId"":""QID55_TEXT""}","{""ImportId"":""QID114""}","{""ImportId"":""QID57""}","{""ImportId"":""QID63""}"
+2022-09-12 06:52:08,2022-09-12 07:07:35,IP Address,100,927,True,2022-09-12 07:07:36,R_2xMrhBj5ebMSunR,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,10,20,3,3,"Strongly disagree
+
+5
+",2,Yes,10,10,10,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,20,20,20,Yes,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2,Exactly GHS102,I do not know,I do not know,I do not know,Absolutely serious,Female,27,GHS 17 000 - GHS 26 000,16,Germany,German,I allow you to use the responses I provided in this study.
+2022-09-12 07:19:53,2022-09-12 07:32:22,IP Address,100,749,True,2022-09-12 07:32:25,R_3dLYtZ98QMPOXba,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,15,10,15,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,15,10,15,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,15,10,15,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,More than GHS102,Less than today,False,They collapse,Absolutely serious,Female,32,Less than GHS 17 000,18,Germany,German,I allow you to use the responses I provided in this study.
+2022-09-12 07:04:56,2022-09-12 08:49:21,IP Address,100,6265,True,2022-09-12 08:49:22,R_ST1JganI0jU2xNf,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,10,15,10,20,A,Yes,Pay your friend GHS30 for the coupon.,A,20,25,20,25,Yes,2,4,4,A,Yes,Pay your friend GHS30 for the coupon.,5,More than GHS102,Less than today,False,They remain unchanged,Moderately serious,Male,60,More than GHS 53 000,22,Germany,German,I allow you to use the responses I provided in this study.
+2022-09-12 09:28:37,2022-09-12 09:38:02,IP Address,100,564,True,2022-09-12 09:38:03,R_3m3riK8qp6IDJHO,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,5,10,10,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,10,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than GHS102,Less than today,False,I do not know,Absolutely serious,Female,54,More than GHS 53 000,15,Germany,German,I allow you to use the responses I provided in this study.
+2022-09-12 09:35:51,2022-09-12 09:46:45,IP Address,100,653,True,2022-09-12 09:46:45,R_Q9DvKBjMWNfiKkN,anonymous,EN,1,I agree to participate in the research,B,0,0,0,0,6,4,3,2,Yes,0,10,0,10,B,Yes,Consider it a gift and not pay for the coupon.,A,10,10,0,20,Yes,"Strongly disagree
+
+5
+",3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",4,More than GHS102,Less than today,False,I do not know,Very serious,Female,26,GHS 26 000 - GHS 35 000,18,Germany,German,I allow you to use the responses I provided in this study.
+2022-09-12 08:09:46,2022-09-12 08:10:03,IP Address,3,17,False,2022-09-19 08:10:08,R_1mdTr2XoAsndYCV,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-12 09:31:25,2022-09-12 09:31:40,IP Address,8,14,False,2022-09-19 09:51:17,R_2xWCV384jueflWB,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-12 10:30:57,2022-09-12 10:36:01,IP Address,31,303,False,2022-09-19 10:51:36,R_1LRvh21LOi5EpC1,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,20,20,20,20,Yes,3,3,3,No difference,No,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,
+2022-09-12 10:03:09,2022-09-12 11:46:22,IP Address,50,6193,False,2022-09-19 11:46:26,R_3G6BMMGSaLjHFbv,anonymous,EN,1,I agree to participate in the research,"No difference ",,,,,,,,,,10,20,20,30,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,30,No,4,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",3,,,,,,,,,,,,
+2022-09-27 09:52:36,2022-09-27 10:03:11,IP Address,100,635,True,2022-09-27 10:03:12,R_2DXOBzHvgcn859N,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,10,"Strongly disagree
+
+5
+",3,3,No,10,10,20,20,No difference,No,Pay your friend GHS30 for the coupon.,No difference,20,20,20,20,No,"Strongly disagree
+
+5
+",2,2,No difference,No,Pay your friend GHS30 for the coupon.,5,More than GHS102,Less than today,False,I do not know,Absolutely serious,Female,47,More than GHS 53 000,25,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 09:31:12,2022-09-27 10:04:43,IP Address,100,2010,True,2022-09-27 10:04:43,R_1LwB2kVJcJKuaM2,anonymous,EN,1,I agree to participate in the research,A,0,15,0,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,15,20,20,A,Yes,Consider it a gift and not pay for the coupon.,A,20,30,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,I do not know,They remain unchanged,Very serious,Female,61,More than GHS 53 000,31,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 09:46:32,2022-09-27 10:05:29,IP Address,100,1136,True,2022-09-27 10:05:29,R_3gUfHdJErQaBi7G,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,10,4,"Strongly agree
+
+1
+",3,No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,2,"Strongly disagree
+
+5
+",4,B,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,False,They remain unchanged,Very serious,Male,46,More than GHS 53 000,17,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 10:02:23,2022-09-27 10:12:13,IP Address,100,589,True,2022-09-27 10:12:13,R_1hKz6Vdo9qwrDlI,anonymous,EN,1,I agree to participate in the research,"No difference ",10,20,20,30,50,3,3,2,No,10,20,20,30,B,Yes,Consider it a gift and not pay for the coupon.,A,10,20,20,20,No,3,3,2,B,Yes,Consider it a gift and not pay for the coupon.,20,Exactly GHS102,Less than today,False,I do not know,Very serious,Male,44,More than GHS 53 000,14,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 09:55:41,2022-09-27 10:24:49,IP Address,100,1747,True,2022-09-27 10:24:49,R_1OrS4QtPvl3k9Iy,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,6,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend GHS30 for the coupon.,5,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Female,33,GHS 44 000 - GHS 53 000,20,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 10:18:55,2022-09-27 10:38:00,IP Address,100,1145,True,2022-09-27 10:38:01,R_3khNpeLkHEqbSU9,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,10,10,10,10,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,20,20,20,20,No,3,"Strongly disagree
+
+5
+",4,No difference,No,Consider it a gift and not pay for the coupon.,100,More than GHS102,Less than today,False,I do not know,Moderately serious,Female,46,More than GHS 53 000,25,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 10:31:39,2022-09-27 10:53:53,IP Address,100,1334,True,2022-09-27 10:53:53,R_3qaFFUIBSTVfk4X,anonymous,EN,1,I agree to participate in the research,B,0,20,0,30,35,"Strongly disagree
+
+5
+",3,4,No,10,50,20,50,No difference,No,Pay your friend GHS30 for the coupon.,No difference,20,30,20,30,No,2,"Strongly agree
+
+1
+",2,No difference,No,Pay your friend GHS30 for the coupon.,35,More than GHS102,Less than today,I do not know,I do not know,Very serious,Female,25,GHS 17 000 - GHS 26 000,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 10:41:49,2022-09-27 10:59:33,IP Address,100,1064,True,2022-09-27 10:59:34,R_2ylbDnGYRqOCTEL,anonymous,EN,1,I agree to participate in the research,B,10,20,20,30,30,2,4,3,No,10,20,20,30,A,No,Pay your friend GHS30 for the coupon.,B,20,30,20,30,No,2,4,2,A,No,Pay your friend GHS30 for the coupon.,10,More than GHS102,More than today,False,They collapse,Very serious,Male,26,Less than GHS 17 000,18,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 10:45:33,2022-09-27 11:00:43,IP Address,100,910,True,2022-09-27 11:00:44,R_3IRxjMvYjycjmed,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,0,10,0,10,B,Yes,Consider it a gift and not pay for the coupon.,B,0,10,0,20,No,4,2,"Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,False,I do not know,Absolutely serious,Male,39,More than GHS 53 000,15,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 10:54:38,2022-09-27 11:07:42,IP Address,100,783,True,2022-09-27 11:07:42,R_x4vQ9ETZfsK7VtL,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,10,10,5,3,3,3,Yes,10,10,20,20,No difference,Yes,Pay your friend GHS30 for the coupon.,No difference,20,20,20,20,Yes,3,"Strongly agree
+
+1
+",3,B,Yes,Pay your friend GHS30 for the coupon.,5,I do not know,I do not know,I do not know,I do not know,Very serious,Female,42,GHS 44 000 - GHS 53 000,24,Ghana,Afrikaans,I allow you to use the responses I provided in this study.
+2022-09-27 10:47:08,2022-09-27 11:10:13,IP Address,100,1384,True,2022-09-27 11:10:13,R_1CEI7tc3JxOKUh2,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,15,2,"Strongly disagree
+
+5
+",2,No,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than GHS102,I do not know,False,I do not know,Absolutely serious,Female,59,Prefer not to answer,17,United Kingdom of Great Britain and Northern Ireland,Other,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-09-27 10:44:10,2022-09-27 11:11:29,IP Address,100,1638,True,2022-09-27 11:11:30,R_2t06ltNtYwtcEqh,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,35,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,10,10,20,20,No difference,No,Pay your friend GHS30 for the coupon.,B,10,10,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,No,Pay your friend GHS30 for the coupon.,15,Exactly GHS102,Less than today,I do not know,I do not know,Absolutely serious,Male,26,Less than GHS 17 000,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 10:46:17,2022-09-27 11:15:15,IP Address,100,1738,True,2022-09-27 11:15:16,R_u98SBEbkdp5ViHD,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,0,4,"Strongly agree
+
+1
+",4,No,10,10,20,20,A,Yes,Pay your friend GHS30 for the coupon.,B,10,10,20,20,No,4,4,"Strongly agree
+
+1
+",No difference,Yes,Pay your friend GHS30 for the coupon.,0,More than GHS102,Less than today,False,I do not know,Very serious,Male,56,GHS 44 000 - GHS 53 000,25,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 09:06:22,2022-09-27 11:18:01,IP Address,100,7898,True,2022-09-27 11:18:02,R_1DUQRmGs5jGQOMW,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,10,10,A,No,Consider it a gift and not pay for the coupon.,B,10,10,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Pay your friend GHS30 for the coupon.,8.00,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Female,37,GHS 17 000 - GHS 26 000,17,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 10:46:09,2022-09-27 11:40:52,IP Address,100,3283,True,2022-09-27 11:40:52,R_5A6inbUXhkpS7WV,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,50,2,4,4,No,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,2,2,"Strongly disagree
+
+5
+",B,Yes,Pay your friend GHS30 for the coupon.,50,More than GHS102,Less than today,I do not know,They collapse,Very serious,Female,40,More than GHS 53 000,22,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 11:33:01,2022-09-27 11:42:15,IP Address,100,553,True,2022-09-27 11:42:15,R_3I4dTRZ9LBe0yGk,anonymous,EN,1,I agree to participate in the research,B,20,40,40,40,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,20,20,30,B,No,Pay your friend GHS30 for the coupon.,B,10,40,50,60,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,No,Pay your friend GHS30 for the coupon.,10,More than GHS102,I do not know,I do not know,I do not know,Very serious,Female,18,Prefer not to answer,12,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 11:09:55,2022-09-27 11:42:29,IP Address,100,1954,True,2022-09-27 11:42:29,R_9SJTQL8PgooF37b,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,20,3,4,4,Yes,5,10,0,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,5,10,10,20,Yes,3,3,3,No difference,No,Consider it a gift and not pay for the coupon.,20,More than GHS102,I do not know,True,I do not know,Very serious,Male,27,Less than GHS 17 000,7,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 11:27:48,2022-09-27 11:45:23,IP Address,100,1054,True,2022-09-27 11:45:23,R_1eUBzu6sdhOphlQ,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,50,"Strongly agree
+
+1
+",3,3,No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,A,10,10,20,20,No,3,"Strongly agree
+
+1
+",3,B,Yes,Consider it a gift and not pay for the coupon.,50,More than GHS102,Less than today,False,I do not know,Absolutely serious,Male,34,More than GHS 53 000,22,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 11:22:10,2022-09-27 11:56:23,IP Address,100,2053,True,2022-09-27 11:56:23,R_2Xb2vFdKNMh23VS,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,7,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend GHS30 for the coupon.,7,More than GHS102,Less than today,False,They remain unchanged,Absolutely serious,Female,42,GHS 35 000 - GHS 44 000,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 11:16:53,2022-09-27 12:00:24,IP Address,100,2611,True,2022-09-27 12:00:25,R_1HeivwOc9QB5FIk,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,40,3,3,3,No,0,0,0,0,A,Yes,Consider it a gift and not pay for the coupon.,B,10,10,0,0,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,No,Pay your friend GHS30 for the coupon.,15,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Female,21,Prefer not to answer,15,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 11:28:23,2022-09-27 12:01:08,IP Address,100,1965,True,2022-09-27 12:01:08,R_2zzKzlZQAEk5J3R,anonymous,EN,0.800000011920929,I agree to participate in the research,B,10,20,20,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,20,20,20,B,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Consider it a gift and not pay for the coupon.,20,More than GHS102,Less than today,False,They remain unchanged,Very serious,Male,36,GHS 17 000 - GHS 26 000,22,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 11:30:00,2022-09-27 12:06:34,IP Address,100,2194,True,2022-09-27 12:06:35,R_2YfvCXT43epvaui,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,50,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,20,20,20,20,No difference,Yes,Pay your friend GHS30 for the coupon.,B,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend GHS30 for the coupon.,30,More than GHS102,Less than today,False,They collapse,Moderately serious,Female,60,More than GHS 53 000,16,United States of America,Afrikaans,I allow you to use the responses I provided in this study.
+2022-09-27 11:49:26,2022-09-27 12:11:44,IP Address,100,1338,True,2022-09-27 12:11:44,R_1Q6ClZCA4pGWhEE,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,10,4,4,4,No,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,20,20,20,20,No,3,4,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than GHS102,Less than today,I do not know,I do not know,Very serious,Male,32,More than GHS 53 000,20,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 12:10:45,2022-09-27 12:29:21,IP Address,100,1116,True,2022-09-27 12:29:22,R_2aFvHYAB6gUyPE9,anonymous,EN,1,I agree to participate in the research,"No difference ",20,20,25,30,15,4,3,2,Yes,20,20,25,30,A,Yes,Pay your friend GHS30 for the coupon.,No difference,20,20,25,30,Yes,4,3,2,B,No,Pay your friend GHS30 for the coupon.,15,More than GHS102,Less than today,I do not know,I do not know,Moderately serious,Male,18,Prefer not to answer,17,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 13:08:16,2022-09-27 13:18:33,IP Address,100,617,True,2022-09-27 13:18:34,R_1LtZgg4NvYU0w2k,anonymous,EN,1,I agree to participate in the research,B,10,20,20,40,40,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,20,20,30,B,No,Consider it a gift and not pay for the coupon.,B,10,20,20,40,No,"Strongly disagree
+
+5
+",4,2,A,No,Consider it a gift and not pay for the coupon.,5,More than GHS102,Less than today,False,They collapse,Very serious,Female,47,More than GHS 53 000,20,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 13:16:01,2022-09-27 13:39:33,IP Address,100,1411,True,2022-09-27 13:39:34,R_bJFClzvWjXVpAw9,anonymous,EN,1,I agree to participate in the research,"No difference ",0,100,0,100,15,2,2,"Strongly agree
+
+1
+",Yes,50,100,50,100,A,Yes,Consider it a gift and not pay for the coupon.,B,50,120,50,120,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,15,Less than GHS102,I do not know,I do not know,They remain unchanged,Very serious,Male,18,Prefer not to answer,15,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 10:43:03,2022-09-27 13:47:56,IP Address,100,11093,True,2022-09-27 13:47:57,R_1pMOsH3EpWBRYNs,anonymous,EN,1,I agree to participate in the research,B,10,10,20,20,30,4,4,4,No,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,4,4,4,A,Yes,Consider it a gift and not pay for the coupon.,30,More than GHS102,Less than today,True,They remain unchanged,Very serious,Female,50,GHS 26 000 - GHS 35 000,44,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 14:29:50,2022-09-27 14:54:14,IP Address,100,1464,True,2022-09-27 14:54:15,R_2CkUvlEmPOm1NZM,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,10,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,0,10,0,20,A,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,"Strongly disagree
+
+5
+",3,"Strongly agree
+
+1
+",No difference,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,False,They remain unchanged,Very serious,Male,54,More than GHS 53 000,28,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 14:38:14,2022-09-27 15:14:35,IP Address,100,2180,True,2022-09-27 15:14:35,R_AzKh9Qr7CgcmMUx,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,B,10,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,Exactly GHS102,Less than today,True,I do not know,Very serious,Female,23,Less than GHS 17 000,3,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 15:03:24,2022-09-27 15:26:58,IP Address,100,1414,True,2022-09-27 15:26:59,R_2OIT4GusgJ9tlfN,anonymous,EN,1,I agree to participate in the research,B,0,10,0,10,18,2,4,2,No,10,10,10,10,No difference,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,4,2,4,No difference,No,Pay your friend GHS30 for the coupon.,18,More than GHS102,Less than today,I do not know,I do not know,Very serious,Female,42,More than GHS 53 000,21,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 15:42:33,2022-09-27 15:54:58,IP Address,100,744,True,2022-09-27 15:54:58,R_2zP8y6oEq6eVq14,anonymous,EN,,I agree to participate in the research,B,10,10,20,20,50,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,10,10,20,20,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,10,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",30,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Male,22,Less than GHS 17 000,17,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 15:34:54,2022-09-27 16:02:37,IP Address,100,1662,True,2022-09-27 16:02:37,R_3rS3O0xzcvVh3GK,anonymous,EN,0.800000011920929,I agree to participate in the research,"No difference ",0.00,0.00,0.00,0.00,10.00,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0.00,10.00,0.00,15.00,B,Yes,Consider it a gift and not pay for the coupon.,A,0.00,10.00,0.00,10.00,No,4,2,3,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5.00,More than GHS102,Less than today,I do not know,They collapse,Absolutely serious,Female,38,More than GHS 53 000,24,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 16:32:24,2022-09-27 16:55:01,IP Address,100,1357,True,2022-09-27 16:55:01,R_6f0RZJNDh8PdMWJ,anonymous,EN,1,I agree to participate in the research,A,20,20,20,20,20,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,20,30,20,30,A,Yes,Pay your friend GHS30 for the coupon.,A,10,30,10,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Pay your friend GHS30 for the coupon.,20,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Male,18,Prefer not to answer,4,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 19:18:44,2022-09-27 19:45:05,IP Address,100,1581,True,2022-09-27 19:45:07,R_122MTIQnp6QrjHp,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,15,3,4,2,No,10,10,20,20,No difference,No,Pay your friend GHS30 for the coupon.,No difference,10,10,20,20,No,3,"Strongly disagree
+
+5
+",2,No difference,No,Pay your friend GHS30 for the coupon.,10,More than GHS102,Less than today,I do not know,They remain unchanged,Very serious,Female,60,More than GHS 53 000,30,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 19:29:35,2022-09-27 19:54:31,IP Address,100,1495,True,2022-09-27 19:54:31,R_V4GyjOmKQe8HRSN,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,30,More than GHS102,Less than today,False,They collapse,Absolutely serious,Female,37,More than GHS 53 000,22,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 20:25:46,2022-09-27 20:49:57,IP Address,100,1451,True,2022-09-27 20:49:57,R_20Vh6X4YZEiIr5h,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,10,10,5,3,3,3,No,10,10,10,10,No difference,Yes,Pay your friend GHS30 for the coupon.,No difference,10,10,10,10,No,3,3,3,No difference,Yes,Consider it a gift and not pay for the coupon.,5,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Male,36,More than GHS 53 000,23,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 21:13:44,2022-09-27 21:30:20,IP Address,100,995,True,2022-09-27 21:30:20,R_W3v6SVY0I2DY5tn,anonymous,EN,0.800000011920929,I agree to participate in the research,B,0,0,0,10,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,0,0,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,I do not know,Less than today,False,I do not know,Very serious,Male,33,GHS 35 000 - GHS 44 000,31,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 21:58:51,2022-09-27 22:17:05,IP Address,100,1093,True,2022-09-27 22:17:06,R_5j7b06cgi5MF7nX,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,20,3,3,3,Yes,10,10,20,20,No difference,No,Pay your friend GHS30 for the coupon.,No difference,10,10,20,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,Pay your friend GHS30 for the coupon.,10,I do not know,Exactly the same as today,False,I do not know,Very serious,Female,23,Prefer not to answer,19,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 00:10:01,2022-09-28 00:23:25,IP Address,100,804,True,2022-09-28 00:23:25,R_3IYSmnltrp1qGAR,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,10,2,4,4,No,10,10,10,10,No difference,No,Pay your friend GHS30 for the coupon.,B,10,10,20,20,No,3,4,3,No difference,Yes,Pay your friend GHS30 for the coupon.,10,More than GHS102,I do not know,I do not know,I do not know,Very serious,Female,21,Prefer not to answer,18,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 00:11:28,2022-09-28 00:26:01,IP Address,100,873,True,2022-09-28 00:26:03,R_1gckR94dV40bDJV,anonymous,EN,1,I agree to participate in the research,"No difference ",8,12,18,22,50,3,4,2,Yes,8,12,18,22,A,No,Consider it a gift and not pay for the coupon.,B,12,18,18,25,No,4,2,2,B,No,Pay your friend GHS30 for the coupon.,20,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Female,21,Prefer not to answer,15,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 22:30:14,2022-09-28 01:31:22,IP Address,100,10867,True,2022-09-28 01:31:22,R_1IWPg5OM3tW7fgw,anonymous,EN,1,I agree to participate in the research,"No difference ",10,15,20,25,100,"Strongly disagree
+
+5
+",2,2,No,10,15,20,25,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,20,20,20,25,No,2,"Strongly disagree
+
+5
+",2,A,No,Consider it a gift and not pay for the coupon.,50,I do not know,I do not know,I do not know,I do not know,Moderately serious,Female,22,Prefer not to answer,22,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 01:09:50,2022-09-28 01:40:28,IP Address,100,1838,True,2022-09-28 01:40:29,R_2AFjQumFk0x9kfe,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,20,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,10,10,10,10,No difference,No,Consider it a gift and not pay for the coupon.,A,10,10,20,20,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend GHS30 for the coupon.,20,More than GHS102,Less than today,False,I do not know,Very serious,Male,44,Prefer not to answer,17,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 20:39:11,2022-09-28 02:05:01,IP Address,100,19549,True,2022-09-28 02:05:01,R_3oL9sK6BMBw0Lp9,anonymous,EN,1,I agree to participate in the research,B,10,10,20,20,5,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,20.00,30.00,20.00,30.00,No difference,No,Consider it a gift and not pay for the coupon.,B,20.00,20.00,20.00,20.00,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,Consider it a gift and not pay for the coupon.,5.00,Less than GHS102,Less than today,False,They collapse,Absolutely serious,Male,30,Less than GHS 17 000,18,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 01:53:32,2022-09-28 02:13:46,IP Address,100,1213,True,2022-09-28 02:13:47,R_2VehWEJGGNmAY2i,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,30,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,10,20,20,30,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,30,20,30,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No difference,No,Consider it a gift and not pay for the coupon.,20,More than GHS102,Less than today,False,They remain unchanged,Absolutely serious,Female,24,More than GHS 53 000,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 02:17:59,2022-09-28 02:42:00,IP Address,100,1441,True,2022-09-28 02:42:00,R_2AXcIWxA1v4HVz5,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,A,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,False,They collapse,Absolutely serious,Female,43,More than GHS 53 000,24,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 02:17:59,2022-09-28 02:45:07,IP Address,100,1628,True,2022-09-28 02:45:07,R_3L7FrqMeevSEKuo,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,20,4,2,3,No,0,10,0,10,A,Yes,Consider it a gift and not pay for the coupon.,B,0,10,0,20,No,4,2,2,No difference,Yes,Consider it a gift and not pay for the coupon.,15,More than GHS102,Less than today,False,They remain unchanged,Very serious,Male,39,More than GHS 53 000,24,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 02:39:53,2022-09-28 03:20:01,IP Address,100,2407,True,2022-09-28 03:20:02,R_1fkEq6pfyPav3E2,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,10,10,20,20,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,15,20,Yes,3,3,2,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than GHS102,Less than today,I do not know,They collapse,Absolutely serious,Male,24,Less than GHS 17 000,15,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 03:08:15,2022-09-28 03:24:40,IP Address,100,984,True,2022-09-28 03:24:40,R_2VjsGTCfoszXwzD,anonymous,EN,1,I agree to participate in the research,"No difference ",10,19,20,29,20,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,10,20,20,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,Less than GHS102,I do not know,I do not know,They collapse,Very serious,Female,24,Less than GHS 17 000,23,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 02:58:55,2022-09-28 03:27:30,IP Address,100,1715,True,2022-09-28 03:27:30,R_2sYHvAc0uUMfAY7,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,15,20,25,30,No difference,No,Consider it a gift and not pay for the coupon.,A,10,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,B,No,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Male,21,Prefer not to answer,13,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 21:46:17,2022-09-28 03:47:17,IP Address,100,21660,True,2022-09-28 03:47:18,R_pzOecKDyvQYJrDb,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,10,0,20,A,No,Pay your friend GHS30 for the coupon.,B,0,20,0,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,A,No,Pay your friend GHS30 for the coupon.,10,Less than GHS102,Less than today,True,I do not know,Very serious,Male,34,GHS 44 000 - GHS 53 000,26,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 03:22:51,2022-09-28 03:47:49,IP Address,100,1498,True,2022-09-28 03:47:50,R_2YWZs6XHQ060OUN,anonymous,EN,1,I agree to participate in the research,B,0,15,0,25,20,4,3,2,Yes,10,15,10,20,A,No,Consider it a gift and not pay for the coupon.,A,15,20,15,25,Yes,4,3,3,No difference,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,More than today,False,They remain unchanged,Very serious,Male,24,Prefer not to answer,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 03:41:20,2022-09-28 04:11:08,IP Address,100,1787,True,2022-09-28 04:11:08,R_3dE0RuMXASHRAns,anonymous,EN,1,I agree to participate in the research,B,0,10,0,20,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,10,10,20,20,A,Yes,Pay your friend GHS30 for the coupon.,B,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No difference,Yes,Consider it a gift and not pay for the coupon.,30,More than GHS102,Less than today,False,They collapse,Absolutely serious,Male,44,More than GHS 53 000,21,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 03:55:32,2022-09-28 04:14:55,IP Address,100,1162,True,2022-09-28 04:14:55,R_Zq9ao0D1PLO3dIZ,anonymous,EN,1,I agree to participate in the research,A,1,1,1,1,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than GHS102,Less than today,False,I do not know,Very serious,Male,49,More than GHS 53 000,22,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 03:58:00,2022-09-28 04:16:23,IP Address,100,1102,True,2022-09-28 04:16:23,R_25zwAxJqbQ9K2ap,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,10,2,3,3,No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,10,20,20,No,2,2,2,B,Yes,Consider it a gift and not pay for the coupon.,10,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Male,29,Less than GHS 17 000,16,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 03:34:03,2022-09-28 04:21:36,IP Address,100,2852,True,2022-09-28 04:21:36,R_2w5FX6uk6WprfhD,anonymous,EN,1,I agree to participate in the research,A,10,20,10,40,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,20,10,40,A,No,Consider it a gift and not pay for the coupon.,B,20,40,20,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,Consider it a gift and not pay for the coupon.,5,More than GHS102,Less than today,False,They collapse,Absolutely serious,Male,44,More than GHS 53 000,29,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 03:55:07,2022-09-28 04:24:18,IP Address,100,1750,True,2022-09-28 04:24:18,R_2BlF17e3qTrszlF,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,10,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",2,No,10,10,10,10,A,Yes,Pay your friend GHS30 for the coupon.,B,20,20,20,20,No,2,4,"Strongly disagree
+
+5
+",B,Yes,Pay your friend GHS30 for the coupon.,10,More than GHS102,I do not know,False,I do not know,Absolutely serious,Male,37,GHS 26 000 - GHS 35 000,21,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 03:25:59,2022-09-28 04:28:29,IP Address,100,3750,True,2022-09-28 04:28:29,R_1QsEPK96rdC9Dn3,anonymous,EN,1,I agree to participate in the research,B,0,10,0,20,50,2,3,3,No,10,20,20,30,A,Yes,Pay your friend GHS30 for the coupon.,B,25,30,25,30,No,2,2,"Strongly agree
+
+1
+",A,No,Pay your friend GHS30 for the coupon.,5,More than GHS102,More than today,True,There is no relationship,Slightly serious,Female,21,GHS 17 000 - GHS 26 000,15,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 04:39:05,2022-09-28 04:52:08,IP Address,100,782,True,2022-09-28 04:52:08,R_1pzZZp3fKGCAmyn,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,10,10,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,10,10,No difference,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,5,More than GHS102,Less than today,I do not know,I do not know,Very serious,Female,28,GHS 44 000 - GHS 53 000,13,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 03:31:41,2022-09-28 05:01:33,IP Address,100,5392,True,2022-09-28 05:01:34,R_2robpZlYDOTLpsU,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5.00,Less than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Female,58,GHS 35 000 - GHS 44 000,11,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 02:37:50,2022-09-28 05:05:20,IP Address,100,8850,True,2022-09-28 05:05:20,R_RQOzFg5Pq6aYGk1,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,10,10,20,3,2,2,No,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,20,No,3,3,2,No difference,Yes,Consider it a gift and not pay for the coupon.,10,I do not know,I do not know,True,They remain unchanged,Very serious,Female,20,Prefer not to answer,6,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 04:46:50,2022-09-28 05:10:13,IP Address,100,1402,True,2022-09-28 05:10:13,R_pAd93H3EySlbrTb,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,15,20,25,20,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",Yes,10,15,15,30,A,No,Consider it a gift and not pay for the coupon.,A,20,30,20,40,Yes,3,4,4,B,No,Pay your friend GHS30 for the coupon.,20,More than GHS102,Less than today,False,I do not know,Very serious,Male,32,GHS 26 000 - GHS 35 000,4,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 04:55:21,2022-09-28 05:13:40,IP Address,100,1099,True,2022-09-28 05:13:41,R_1mOBc6EEiPm3PxL,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,20,30,20,20,B,No,Consider it a gift and not pay for the coupon.,A,20,30,20,20,Yes,4,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,I do not know,I do not know,Very serious,Male,40,More than GHS 53 000,22,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 04:02:10,2022-09-28 05:45:36,IP Address,100,6205,True,2022-09-28 05:45:37,R_1eCBdOpq0T5cwU7,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,10,20,20,30,A,No,Pay your friend GHS30 for the coupon.,A,20,30,20,30,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,No,Pay your friend GHS30 for the coupon.,5,More than GHS102,Less than today,False,They collapse,Very serious,Male,21,More than GHS 53 000,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 05:17:27,2022-09-28 05:48:14,IP Address,100,1846,True,2022-09-28 05:48:14,R_2vdprAR2caVTlmo,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,3,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,12,12,20,20,A,No,Consider it a gift and not pay for the coupon.,B,10,10,20,20,No,"Strongly disagree
+
+5
+",3,"Strongly agree
+
+1
+",No difference,No,Consider it a gift and not pay for the coupon.,3,More than GHS102,More than today,I do not know,They collapse,Very serious,Male,37,Prefer not to answer,20,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 05:31:37,2022-09-28 06:11:10,IP Address,100,2373,True,2022-09-28 06:11:11,R_1jSRYZZigsg0VXK,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,9,10,19,20,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,10,15,20,25,A,Yes,Consider it a gift and not pay for the coupon.,B,10,15,20,25,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",2,A,Yes,Consider it a gift and not pay for the coupon.,15,More than GHS102,Less than today,False,I do not know,Absolutely serious,Male,31,GHS 26 000 - GHS 35 000,20,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 05:09:27,2022-09-28 06:12:46,IP Address,100,3799,True,2022-09-28 06:12:46,R_1hKL5blE8o0XllF,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,10,10,20,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,25,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Consider it a gift and not pay for the coupon.,20.00,More than GHS102,Less than today,False,They collapse,Moderately serious,Male,33,Less than GHS 17 000,20,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 05:21:03,2022-09-28 06:22:32,IP Address,100,3688,True,2022-09-28 06:22:32,R_1rCZjYUFoBHxk0B,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than GHS102,Less than today,False,They collapse,Absolutely serious,Male,44,GHS 35 000 - GHS 44 000,20,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 05:32:38,2022-09-28 07:38:34,IP Address,100,7556,True,2022-09-28 07:38:36,R_DGH2ztzZkYXJMTD,anonymous,EN,1,I agree to participate in the research,B,12,15,20,25,10,2,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,12,15,20,25,No difference,No,Consider it a gift and not pay for the coupon.,B,10,10,20,20,Yes,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,No,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,True,There is no relationship,Moderately serious,Male,28,Less than GHS 17 000,3,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 09:23:38,2022-09-28 09:36:44,IP Address,100,785,True,2022-09-28 09:36:45,R_3Pn7BiYlKDCpeZC,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,10,20,20,30,30,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,20,20,40,40,A,Yes,Pay your friend GHS30 for the coupon.,B,20,20,30,30,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,Yes,Pay your friend GHS30 for the coupon.,30,More than GHS102,Less than today,True,They collapse,Very serious,Male,43,GHS 17 000 - GHS 26 000,33,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 09:19:25,2022-09-28 09:44:22,IP Address,100,1496,True,2022-09-28 09:44:22,R_323zg8gpTX8WNjo,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,10,"Strongly disagree
+
+5
+",4,4,Yes,10,10,10,10,No difference,No,Pay your friend GHS30 for the coupon.,No difference,10,10,20,20,Yes,3,3,3,B,No,Pay your friend GHS30 for the coupon.,6.00,More than GHS102,Less than today,False,I do not know,Absolutely serious,Female,43,GHS 17 000 - GHS 26 000,18,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 09:31:59,2022-09-28 10:08:21,IP Address,100,2181,True,2022-09-28 10:08:21,R_3mmjK9Gvo2mZIsw,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,20,3,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,No difference,No,Consider it a gift and not pay for the coupon.,B,10,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Pay your friend GHS30 for the coupon.,20,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Male,22,Prefer not to answer,16,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 10:13:34,2022-09-28 10:30:45,IP Address,100,1031,True,2022-09-28 10:30:46,R_3Oe5es37Zv3Cm5Z,anonymous,EN,1,I agree to participate in the research,A,10,10,10,10,20,"Strongly disagree
+
+5
+",2,4,No,10,10,10,10,B,No,Pay your friend GHS30 for the coupon.,No difference,10,20,20,20,No,4,2,"Strongly disagree
+
+5
+",B,No,Pay your friend GHS30 for the coupon.,20,I do not know,I do not know,False,They remain unchanged,Moderately serious,Female,44,Less than GHS 17 000,20,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 11:17:11,2022-09-28 11:49:14,IP Address,100,1922,True,2022-09-28 11:49:14,R_31KpRqF1znuPDl7,anonymous,EN,1,I agree to participate in the research,B,10,10,20,20,15,"Strongly agree
+
+1
+",3,3,Yes,10,20,20,30,A,Yes,Consider it a gift and not pay for the coupon.,B,20,30,20,30,Yes,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,10,Exactly GHS102,I do not know,I do not know,They collapse,Very serious,Female,66,GHS 35 000 - GHS 44 000,15,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 11:40:57,2022-09-28 12:00:44,IP Address,100,1186,True,2022-09-28 12:00:44,R_2yrzQz4VM9lhRGV,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,30,0,40,40,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,30,0,45,No difference,No,Pay your friend GHS30 for the coupon.,No difference,0,30,0,50,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend GHS30 for the coupon.,10,More than GHS102,Less than today,I do not know,They collapse,Moderately serious,Female,23,Prefer not to answer,17,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 11:26:45,2022-09-28 12:03:57,IP Address,100,2232,True,2022-09-28 12:03:58,R_2VvS7ntlq8avLoJ,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,0,0,0,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,10,10,No difference,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Pay your friend GHS30 for the coupon.,8,More than GHS102,Less than today,I do not know,They remain unchanged,Very serious,Female,40,GHS 26 000 - GHS 35 000,18,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 07:49:31,2022-09-28 13:01:50,IP Address,100,18738,True,2022-09-28 13:01:50,R_OBaMgDBo1PUwuUp,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,100,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,10,10,20,20,No difference,No,Consider it a gift and not pay for the coupon.,B,10,10,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",A,No,Pay your friend GHS30 for the coupon.,100,More than GHS102,Less than today,True,I do not know,Moderately serious,Female,20,Prefer not to answer,15,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 14:04:37,2022-09-28 14:21:07,IP Address,100,990,True,2022-09-28 14:21:09,R_2WZmMifSB649sU1,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,10,10,10,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,10,10,10,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,10,10,10,10,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than GHS102,Less than today,False,I do not know,Absolutely serious,Female,42,More than GHS 53 000,21,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-28 14:00:51,2022-09-28 14:30:27,IP Address,100,1775,True,2022-09-28 14:30:27,R_2382XYgZVEWepzv,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,10,0,20,10,4,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,10,10,20,20,A,Yes,Pay your friend GHS30 for the coupon.,B,10,20,20,20,Yes,4,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,Yes,Pay your friend GHS30 for the coupon.,8,More than GHS102,Less than today,False,I do not know,Very serious,Male,53,More than GHS 53 000,22,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 14:24:50,2022-09-28 14:56:26,IP Address,100,1895,True,2022-09-28 14:56:26,R_1QmybYsCM0zo4bK,anonymous,EN,,I agree to participate in the research,A,10,10,10,10,0,3,3,3,Yes,10,10,10,10,No difference,Yes,Pay your friend GHS30 for the coupon.,B,10,20,10,20,No,3,3,3,B,Yes,Pay your friend GHS30 for the coupon.,0,More than GHS102,Less than today,False,They collapse,Moderately serious,Female,40,Prefer not to answer,17,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 23:29:16,2022-09-28 23:45:59,IP Address,100,1003,True,2022-09-28 23:46:00,R_Y47uIXVJIG6QKMF,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,B,No,Consider it a gift and not pay for the coupon.,20,Less than GHS102,Less than today,False,I do not know,Moderately serious,Female,37,More than GHS 53 000,25,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-29 04:45:46,2022-09-29 05:04:18,IP Address,100,1112,True,2022-09-29 05:04:19,R_3OoVglSyHVub6XN,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,No difference,No,Consider it a gift and not pay for the coupon.,A,10,10,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,20,More than GHS102,Less than today,I do not know,They remain unchanged,Absolutely serious,Female,21,Prefer not to answer,13,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 00:59:50,2022-09-29 05:09:45,IP Address,100,101394,True,2022-09-29 05:09:45,R_32XyKEYQvhY5NUv,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,13,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,10,20,20,No difference,Yes,Pay your friend GHS30 for the coupon.,B,20,20,30,30,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend GHS30 for the coupon.,10,I do not know,I do not know,I do not know,I do not know,Very serious,Male,22,Prefer not to answer,3,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-29 05:51:10,2022-09-29 06:06:51,IP Address,100,940,True,2022-09-29 06:06:51,R_cYoaPiBp8J7SgDL,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,10,20,20,5,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,10,10,20,20,A,Yes,Pay your friend GHS30 for the coupon.,B,10,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend GHS30 for the coupon.,5,More than GHS102,More than today,I do not know,I do not know,Absolutely serious,Female,33,More than GHS 53 000,18,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-29 06:07:29,2022-09-29 06:40:11,IP Address,100,1962,True,2022-09-29 06:40:12,R_1Lp5AnFUPZvDODK,anonymous,EN,1,I agree to participate in the research,B,10,10,10,10,20,2,4,3,No,50,50,50,50,B,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,2,4,3,No difference,No,Consider it a gift and not pay for the coupon.,20,More than GHS102,I do not know,I do not know,I do not know,Absolutely serious,Female,34,GHS 26 000 - GHS 35 000,28,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-29 06:35:04,2022-09-29 06:49:42,IP Address,100,878,True,2022-09-29 06:49:42,R_2sWQc7QqZloJb7S,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,10,0,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,10,20,20,40,B,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,30,No,3,3,3,B,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,I do not know,I do not know,Very serious,Female,33,GHS 35 000 - GHS 44 000,25,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-29 06:09:11,2022-09-29 07:32:59,IP Address,100,5027,True,2022-09-29 07:33:00,R_3HMsCKYiaF8LnVp,anonymous,EN,1,I agree to participate in the research,B,10,10,20,20,20,"Strongly agree
+
+1
+",2,"Strongly agree
+
+1
+",Yes,10,10,10,10,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,No,Pay your friend GHS30 for the coupon.,5.00,More than GHS102,Less than today,True,I do not know,Very serious,Female,68,More than GHS 53 000,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-29 08:06:33,2022-09-29 08:40:04,IP Address,100,2010,True,2022-09-29 08:40:05,R_3kFCHehVAwIG431,anonymous,EN,1,I agree to participate in the research,B,0,10,0,10,5,"Strongly agree
+
+1
+",4,4,Yes,10,10,10,10,A,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,20,Yes,2,"Strongly disagree
+
+5
+",3,B,No,Pay your friend GHS30 for the coupon.,4,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Female,24,Prefer not to answer,18,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-29 09:01:44,2022-09-29 10:35:25,IP Address,100,5621,True,2022-09-29 10:35:25,R_3n0gTZyjiuWTPKf,anonymous,EN,1,I agree to participate in the research,B,0,10,0,10,10,3,3,3,Yes,20,30,20,30,A,Yes,Pay your friend GHS30 for the coupon.,B,20,30,20,30,Yes,3,"Strongly agree
+
+1
+",3,A,Yes,Pay your friend GHS30 for the coupon.,5,I do not know,I do not know,I do not know,There is no relationship,Very serious,Female,52,GHS 26 000 - GHS 35 000,30,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-29 10:39:00,2022-09-29 10:59:11,IP Address,100,1211,True,2022-09-29 10:59:12,R_3kFOybDd8ByhiQF,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,10,20,20,3,3,4,No,10,10,10,20,No difference,Yes,Pay your friend GHS30 for the coupon.,B,10,10,10,20,No,3,3,4,B,Yes,Pay your friend GHS30 for the coupon.,20,I do not know,I do not know,False,I do not know,Moderately serious,Male,45,Prefer not to answer,15,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-29 10:52:32,2022-09-29 11:28:17,IP Address,100,2144,True,2022-09-29 11:28:17,R_1dH9uH050oQOloB,anonymous,EN,0.800000011920929,I agree to participate in the research,"No difference ",0,0,0,0,5,2,"Strongly disagree
+
+5
+",2,No,10,10,10,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,10,10,10,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than GHS102,Exactly the same as today,I do not know,I do not know,Very serious,Female,59,GHS 26 000 - GHS 35 000,18,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-29 11:00:02,2022-09-29 11:30:37,IP Address,100,1835,True,2022-09-29 11:30:38,R_24vmtInP0KqjBqA,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,10,10,20,20,No difference,Yes,Pay your friend GHS30 for the coupon.,B,20,30,20,30,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,Yes,Pay your friend GHS30 for the coupon.,8.00,More than GHS102,Less than today,False,They remain unchanged,Very serious,Male,74,Less than GHS 17 000,22,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-29 11:11:50,2022-09-29 11:37:49,IP Address,100,1558,True,2022-09-29 11:37:49,R_2OMtUUQAuVIhgUO,anonymous,EN,,I agree to participate in the research,B,10,15,20,20,50,"Strongly agree
+
+1
+",3,"Strongly disagree
+
+5
+",No,10,15,20,20,A,No,Consider it a gift and not pay for the coupon.,B,20,30,20,30,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Consider it a gift and not pay for the coupon.,30,More than GHS102,Less than today,True,I do not know,Very serious,Male,25,Prefer not to answer,15,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-29 13:32:11,2022-09-29 14:02:01,IP Address,100,1789,True,2022-09-29 14:02:01,R_2TR9F8wSK36BHE7,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,10,3,3,3,No,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,No difference,10,10,20,20,Yes,3,3,3,A,No,Consider it a gift and not pay for the coupon.,10,I do not know,I do not know,I do not know,I do not know,Moderately serious,Female,52,Prefer not to answer,23,Ghana,Afrikaans,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-09-29 20:07:36,2022-09-29 20:18:34,IP Address,100,658,True,2022-09-29 20:18:35,R_3EiiDtI5Wil69AF,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,20,"Strongly agree
+
+1
+",3,2,No,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,"Strongly agree
+
+1
+",3,3,B,Yes,Consider it a gift and not pay for the coupon.,15,More than GHS102,Less than today,False,They collapse,Very serious,Female,21,Less than GHS 17 000,17,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-30 02:18:47,2022-09-30 02:32:42,IP Address,100,835,True,2022-09-30 02:32:43,R_UyaYyuNKmzXOvYZ,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,30,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,10,10,20,20,No difference,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No difference,No,Consider it a gift and not pay for the coupon.,7,I do not know,Less than today,True,I do not know,Very serious,Female,28,GHS 35 000 - GHS 44 000,22,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-30 05:13:05,2022-09-30 05:31:42,IP Address,100,1116,True,2022-09-30 05:31:43,R_3I5yvmxTTwKFZDq,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,10,10,20,20,10,2,"Strongly disagree
+
+5
+",2,Yes,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,10,20,20,Yes,"Strongly agree
+
+1
+",2,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,False,I do not know,Moderately serious,Male,43,More than GHS 53 000,20,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-29 12:12:26,2022-09-30 07:04:44,IP Address,100,67938,True,2022-09-30 07:04:45,R_2zJeO6xNLI53LM4,anonymous,EN,1,I agree to participate in the research,B,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,0,20,B,Yes,Consider it a gift and not pay for the coupon.,B,0,20,0,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,I do not know,They collapse,Absolutely serious,Male,47,More than GHS 53 000,22,Ghana,Afrikaans,I allow you to use the responses I provided in this study.
+2022-09-30 07:57:05,2022-09-30 08:13:04,IP Address,100,959,True,2022-09-30 08:13:05,R_21pr7zFnzkOQi1T,anonymous,EN,1,I agree to participate in the research,A,10,15,20,25,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,15,20,25,A,No,Consider it a gift and not pay for the coupon.,A,10,10,20,20,No,"Strongly agree
+
+1
+",3,3,B,No,Consider it a gift and not pay for the coupon.,5,More than GHS102,Less than today,False,They collapse,Very serious,Male,27,Less than GHS 17 000,17,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-30 08:25:06,2022-09-30 08:37:59,IP Address,100,772,True,2022-09-30 08:37:59,R_1kXN0GnXx0DkZTv,anonymous,EN,1,I agree to participate in the research,"No difference ",10,12,20,25,5,"Strongly agree
+
+1
+",3,4,No,10,12,20,25,No difference,No,Pay your friend GHS30 for the coupon.,B,10,12,20,25,No,"Strongly agree
+
+1
+",3,4,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than GHS102,Less than today,False,There is no relationship,Absolutely serious,Male,34,More than GHS 53 000,23,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-30 09:09:11,2022-09-30 09:32:23,IP Address,100,1391,True,2022-09-30 09:32:24,R_3p3BIkSxtcdS0gg,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,10.00,10.00,10.00,10.00,10.00,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,10.00,10.00,10.00,10.00,B,Yes,Pay your friend GHS30 for the coupon.,B,20.00,20.00,20.00,20.00,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend GHS30 for the coupon.,10.00,I do not know,I do not know,I do not know,They collapse,Very serious,Female,55,GHS 44 000 - GHS 53 000,20,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-30 09:23:44,2022-09-30 10:05:01,IP Address,100,2476,True,2022-09-30 10:05:02,R_2YFY7JIYeiFBbl3,anonymous,EN,1,I agree to participate in the research,B,10,10,10,10,20,"Strongly agree
+
+1
+",4,2,Yes,10,10,10,10,A,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,20,No,2,2,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,15,More than GHS102,Less than today,False,I do not know,Very serious,Male,66,More than GHS 53 000,19,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-30 09:24:25,2022-09-30 10:51:56,IP Address,100,5251,True,2022-09-30 10:52:06,R_3xDCvxhuDTaRaiB,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,10,2,4,3,Yes,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,B,10,10,20,20,Yes,2,4,3,B,No,Pay your friend GHS30 for the coupon.,5,More than GHS102,Less than today,True,They collapse,Moderately serious,Male,46,More than GHS 53 000,21,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-30 12:19:44,2022-09-30 12:54:59,IP Address,100,2114,True,2022-09-30 12:54:59,R_21pGHwqsBpgNYDJ,anonymous,EN,1,I agree to participate in the research,B,0,10,0,20,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,A,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend GHS30 for the coupon.,15,More than GHS102,Less than today,I do not know,I do not know,Very serious,Male,58,Prefer not to answer,18,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-30 12:41:16,2022-09-30 13:56:24,IP Address,100,4508,True,2022-09-30 13:56:25,R_0OfDsouhxQc5HZT,anonymous,EN,1,I agree to participate in the research,A,10,15,20,25,5,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10.00,15.00,20.00,25.00,A,No,Pay your friend GHS30 for the coupon.,B,10,15,20,25,No,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend GHS30 for the coupon.,5.00,More than GHS102,I do not know,I do not know,I do not know,Absolutely serious,Male,22,More than GHS 53 000,7,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-30 14:53:05,2022-09-30 15:47:35,IP Address,100,3270,True,2022-09-30 15:47:35,R_1FaIMvxVhWO5Hx5,anonymous,EN,1,I agree to participate in the research,"No difference ",10.00,10.00,20.00,20.00,5.00,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10.00,10,20,20,No difference,No,Consider it a gift and not pay for the coupon.,No difference,10,10,20.00,20.00,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend GHS30 for the coupon.,5.00,Exactly GHS102,I do not know,I do not know,I do not know,Very serious,Female,39,Prefer not to answer,4,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-01 05:53:16,2022-10-01 06:27:25,IP Address,100,2049,True,2022-10-01 06:27:26,R_V4HUxi5680wbvKV,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,15,2,2,3,No,20,20,30,30,A,Yes,Pay your friend GHS30 for the coupon.,B,20,30,20,20,No,"Strongly agree
+
+1
+",2,"Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,15,More than GHS102,Less than today,I do not know,I do not know,Very serious,Female,2,Prefer not to answer,19,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-01 10:25:57,2022-10-01 11:02:03,IP Address,100,2166,True,2022-10-01 11:02:03,R_3G6rZdOr4Oki0Kj,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,Yes,Consider it a gift and not pay for the coupon.,A,20,20,20,20,No,4,2,2,A,No,Consider it a gift and not pay for the coupon.,6,More than GHS102,Less than today,False,I do not know,Very serious,Female,42,More than GHS 53 000,19,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-02 08:47:45,2022-10-02 09:41:43,IP Address,100,3238,True,2022-10-02 09:41:45,R_20Vgvol5rQg0NJV,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,20,20,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,20,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,No,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,I do not know,They collapse,Absolutely serious,Female,60,GHS 17 000 - GHS 26 000,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-02 09:26:59,2022-10-02 10:17:06,IP Address,100,3006,True,2022-10-02 10:17:06,R_33wls8v9aWvfemF,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,6,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,A,Yes,Pay your friend GHS30 for the coupon.,A,10,10,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Pay your friend GHS30 for the coupon.,6,More than GHS102,Less than today,I do not know,They remain unchanged,Very serious,Female,55,More than GHS 53 000,22,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-30 03:08:34,2022-10-03 00:22:40,IP Address,100,249246,True,2022-10-03 00:22:41,R_wSm7t42Sin7m7x7,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,10,0,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,15,20,25,No difference,No,Consider it a gift and not pay for the coupon.,A,10,25,20,25,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,Consider it a gift and not pay for the coupon.,5,More than GHS102,I do not know,False,I do not know,Moderately serious,Male,34,Less than GHS 17 000,19,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-01 08:02:15,2022-10-03 00:47:13,IP Address,100,146697,True,2022-10-03 00:47:13,R_2CNhIfOLmZ6ry09,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,20,20,20,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,A,No,Pay your friend GHS30 for the coupon.,A,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend GHS30 for the coupon.,20,More than GHS102,Less than today,I do not know,They collapse,Very serious,Female,20,Less than GHS 17 000,15,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-03 02:01:18,2022-10-03 02:19:29,IP Address,100,1090,True,2022-10-03 02:19:31,R_3nv2ex48oGTk0Kw,anonymous,EN,1,I agree to participate in the research,"No difference ",15,20,20,25,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,15,20,20,25,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,15,20,20,25,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,More than GHS102,Less than today,False,They collapse,Very serious,Female,25,Less than GHS 17 000,16,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-03 03:30:14,2022-10-03 03:52:55,IP Address,100,1361,True,2022-10-03 03:52:56,R_3r3e96H3htzdwW5,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,20,25,25,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than GHS102,I do not know,I do not know,I do not know,Moderately serious,Female,35,Less than GHS 17 000,15,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-03 04:20:44,2022-10-03 04:45:42,IP Address,100,1498,True,2022-10-03 04:45:42,R_2VxVAqb1tFT2NYB,anonymous,EN,1,I agree to participate in the research,"No difference ",13,15,25,30,15,3,4,2,No,13,15,25,30,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,30,35,30,35,No,4,4,4,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",8,More than GHS102,Less than today,False,I do not know,Absolutely serious,Male,33,GHS 17 000 - GHS 26 000,18,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-03 05:09:14,2022-10-03 05:31:51,IP Address,100,1356,True,2022-10-03 05:31:51,R_2dLlUhEdn6al0R2,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,10,10,20,20,10,"Strongly disagree
+
+5
+",3,2,No,10,10,20,20,A,Yes,Pay your friend GHS30 for the coupon.,B,10,10,20,20,No,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",A,Yes,Pay your friend GHS30 for the coupon.,5,More than GHS102,Less than today,False,They remain unchanged,Very serious,Male,47,More than GHS 53 000,21,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-03 05:42:01,2022-10-03 06:06:12,IP Address,100,1450,True,2022-10-03 06:06:12,R_1GE8acncSym7Uu6,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,10,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,10,10,20,20,B,Yes,Consider it a gift and not pay for the coupon.,No difference,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,5,More than GHS102,Less than today,I do not know,I do not know,Very serious,Female,60,GHS 44 000 - GHS 53 000,20,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-03 05:44:18,2022-10-03 06:08:13,IP Address,100,1435,True,2022-10-03 06:08:15,R_3st3fSNYPrqaQyV,anonymous,EN,0.800000011920929,I agree to participate in the research,B,10,10,20,20,20,4,4,"Strongly agree
+
+1
+",No,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,No,4,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,5,More than GHS102,Less than today,False,They collapse,Absolutely serious,Female,25,GHS 35 000 - GHS 44 000,23,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-03 06:16:09,2022-10-03 06:44:07,IP Address,100,1678,True,2022-10-03 06:44:07,R_1KuSBuyN94SU4PL,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,25,3,"Strongly disagree
+
+5
+",4,No,10,10,20,20,A,No,Pay your friend GHS30 for the coupon.,B,20,20,20,20,No,3,"Strongly disagree
+
+5
+",4,B,No,Pay your friend GHS30 for the coupon.,20,More than GHS102,Less than today,I do not know,I do not know,Very serious,Female,27,GHS 44 000 - GHS 53 000,18,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-03 04:41:10,2022-10-03 07:11:54,IP Address,100,9044,True,2022-10-03 07:11:55,R_OJ39rg43ewW5wHv,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,10,20,10,20,10,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,10,20,20,25,B,No,Pay your friend GHS30 for the coupon.,B,10,20,10,20,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,No,Consider it a gift and not pay for the coupon.,10,More than GHS102,More than today,True,I do not know,Very serious,Female,55,Prefer not to answer,10,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 10:04:29,2022-09-27 10:05:29,IP Address,8,59,False,2022-10-04 10:05:34,R_3QRiamxA45qVFIL,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 10:42:58,2022-09-27 10:43:56,IP Address,3,58,False,2022-10-04 10:44:02,R_a92k86kgDP0Zorv,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 10:43:42,2022-09-27 10:49:50,IP Address,50,367,False,2022-10-04 10:49:59,R_31gZSnXn8B310qt,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,25,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,10,0,20,A,No,Pay your friend GHS30 for the coupon.,B,0,20,0,30,No,,,,,,,,,,,,,,,,,,,
+2022-09-27 11:13:34,2022-09-27 11:14:22,IP Address,8,47,False,2022-10-04 11:14:27,R_4TrKLjpwdVEcUmd,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 11:09:37,2022-09-27 11:14:27,IP Address,39,290,False,2022-10-04 11:14:28,R_3iCfAp16sxaVO61,anonymous,EN,1,I agree to participate in the research,B,,,,,,,,,,10,20,30,20,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,30,30,20,20,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-09-27 11:16:02,2022-09-27 11:16:22,IP Address,8,19,False,2022-10-04 11:16:23,R_2sXgIO3bl0dPl3x,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 11:19:39,2022-09-27 11:19:48,Spam,3,9,False,2022-10-04 11:19:53,R_bHoBpJFLRga4kNj,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 11:29:45,2022-09-27 11:30:03,Spam,3,17,False,2022-10-04 11:30:12,R_ZjYQFcwaKdjAjSN,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 11:38:10,2022-09-27 11:40:15,IP Address,14,125,False,2022-10-04 11:40:21,R_2Cg49kbnAu4iHu9,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,,,,,,,,,,,,,,
+2022-09-27 12:06:24,2022-09-27 12:16:28,IP Address,33,604,False,2022-10-04 12:16:32,R_xxEmF16fzROsTQJ,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,20,20,30,B,No,,B,20,30,20,30,Yes,3,3,2,,,,,,,,,,,,,,,,
+2022-09-27 11:08:11,2022-09-27 12:32:17,IP Address,58,5045,False,2022-10-04 12:32:19,R_1rPqop8JQpUSwjU,anonymous,EN,1,I agree to participate in the research,A,10,10,10,20,30,,,,,10,10,20,20,A,Yes,Pay your friend GHS30 for the coupon.,B,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",2,B,Yes,Pay your friend GHS30 for the coupon.,20,,,,,,,,,,,,
+2022-09-27 12:38:23,2022-09-27 12:39:07,Spam,3,44,False,2022-10-04 12:39:11,R_2XdO8z0Auw7KbZw,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 10:31:40,2022-09-27 13:55:43,IP Address,33,12243,False,2022-10-04 13:55:45,R_RkLW2LLtPsYhKs9,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,20,30,20,30,Yes,2,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,No,Pay your friend GHS30 for the coupon.,10,,,,,,,,,,,,
+2022-09-27 14:07:04,2022-09-27 14:10:59,Spam,3,234,False,2022-10-04 14:11:01,R_2uWmRgEIOoyoA5u,anonymous,EN,,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 13:40:47,2022-09-27 14:15:24,IP Address,25,2076,False,2022-10-04 14:15:25,R_RIg92H1YEAABJSx,anonymous,EN,1,I agree to participate in the research,"No difference ",,,,,,,,,,10,12,20,22,A,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 14:19:02,2022-09-27 14:19:36,IP Address,8,33,False,2022-10-04 14:19:37,R_2AKEITPZKNaKpH7,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 14:23:09,2022-09-27 14:28:41,IP Address,39,332,False,2022-10-04 14:28:46,R_20TEKI3pcJzb9Ev,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",22,25,22,25,35,3,2,3,No,,,,,,,,No difference,22,25,22,25,No,3,2,3,,,,,,,,,,,,,,,,
+2022-09-27 14:35:11,2022-09-27 14:35:17,IP Address,3,5,False,2022-10-04 14:35:18,R_Z9NX8uDp40IbMwp,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-04 16:02:14,2022-10-04 16:26:14,IP Address,100,1440,True,2022-10-04 16:26:14,R_26ohJZySwuDI2d3,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,More than GHS102,Exactly the same as today,True,They remain unchanged,Very serious,Female,61,GHS 35 000 - GHS 44 000,18,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-27 16:19:07,2022-09-27 16:59:22,IP Address,58,2414,False,2022-10-04 16:59:23,R_1dNsw2pfjeytRV7,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,15,20,25,30,A,Yes,Consider it a gift and not pay for the coupon.,B,10,30,30,40,,,,,A,Yes,Consider it a gift and not pay for the coupon.,50,,,,,,,,,,,,
+2022-09-27 17:33:42,2022-09-27 17:46:14,IP Address,64,751,False,2022-10-04 17:46:22,R_a8WgWGRwyQKYktH,anonymous,EN,1,I agree to participate in the research,B,10,10,10,10,20,"Strongly agree
+
+1
+",2,2,Yes,10,10,10,10,A,No,Pay your friend GHS30 for the coupon.,B,20,20,20,20,No,"Strongly agree
+
+1
+",2,2,A,No,Pay your friend GHS30 for the coupon.,20,,,,,,,,,,,,
+2022-09-27 17:47:46,2022-09-27 17:52:54,IP Address,39,307,False,2022-10-04 17:53:01,R_3NJIZP214t1OXek,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,30,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,,,,,,,,B,,,,,,,,,B,No,Consider it a gift and not pay for the coupon.,10,,,,,,,,,,,,
+2022-09-27 22:46:36,2022-09-27 22:54:46,Spam,3,489,False,2022-10-04 22:54:48,R_2qjuONwE7nPZqH3,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-04 23:24:42,2022-10-04 23:45:32,IP Address,100,1250,True,2022-10-04 23:45:33,R_1i1Y7yZfcgFhEPg,anonymous,EN,0.800000011920929,I agree to participate in the research,"No difference ",10,10,20,20,10,4,2,2,No,10,10,10,10,No difference,No,Consider it a gift and not pay for the coupon.,A,10,20,20,20,No,3,4,2,B,Yes,Pay your friend GHS30 for the coupon.,10,More than GHS102,More than today,True,They remain unchanged,Very serious,Male,33,GHS 26 000 - GHS 35 000,10,Ghana,French,I allow you to use the responses I provided in this study.
+2022-09-27 23:46:36,2022-09-27 23:55:03,IP Address,50,506,False,2022-10-04 23:55:06,R_124lh7RU0Garunh,anonymous,EN,1,I agree to participate in the research,A,20,50,30,60,40,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",3,Yes,,,,,,,,B,20,30,30,60,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Pay your friend GHS30 for the coupon.,20,,,,,,,,,,,,
+2022-09-27 23:55:30,2022-09-27 23:59:44,IP Address,22,253,False,2022-10-04 23:59:48,R_2ts32n4bjz1STQV,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,,,,,,,,,A,Yes,Consider it a gift and not pay for the coupon.,10,,,,,,,,,,,,
+2022-09-30 02:06:26,2022-10-05 00:04:54,IP Address,100,424708,True,2022-10-05 00:04:54,R_p43wvGXq2JLGG1r,anonymous,EN,1,I agree to participate in the research,B,0,0,0,0,30,2,3,3,Yes,10,10,20,20,B,No,Consider it a gift and not pay for the coupon.,B,10,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,B,No,Pay your friend GHS30 for the coupon.,10,More than GHS102,Less than today,False,I do not know,Moderately serious,Male,29,GHS 44 000 - GHS 53 000,6,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-27 23:34:30,2022-09-28 00:10:52,IP Address,33,2181,False,2022-10-05 00:11:00,R_2rMasvIBbPHaOa5,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,10,20,20,A,Yes,Pay your friend GHS30 for the coupon.,,,,,,,,,,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,,,,,,,,,,,,
+2022-09-28 01:17:12,2022-09-28 01:23:07,IP Address,17,355,False,2022-10-05 01:24:48,R_3kAI38FwXtb5Vwt,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,A,Yes,Pay your friend GHS30 for the coupon.,,,,,,,,,,,,,
+2022-09-27 10:37:34,2022-09-28 01:57:08,IP Address,11,55174,False,2022-10-05 02:07:40,R_4OD3PE7hVeLEpe9,anonymous,EN,1,I agree to participate in the research,"No difference ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 03:15:37,2022-09-28 03:15:49,Spam,3,11,False,2022-10-05 03:15:57,R_2Pd8LrrjwiYtRtI,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 03:24:05,2022-09-28 03:26:13,IP Address,3,128,False,2022-10-05 03:35:13,R_2YK9gzBmqMd6WGs,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-27 10:43:11,2022-09-28 03:33:18,IP Address,6,60607,False,2022-10-05 03:56:02,R_2c2dPIokwK3LBKk,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 04:07:02,2022-09-28 04:13:40,IP Address,61,398,False,2022-10-05 04:13:43,R_1l9K2mMv1pt417F,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,4,6,10,10,100,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,4,6,5,15,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,5,5,10,10,Yes,,,,No difference,Yes,Consider it a gift and not pay for the coupon.,10,,,,,,,,,,,,
+2022-09-28 04:19:15,2022-09-28 04:53:46,IP Address,58,2070,False,2022-10-05 04:53:51,R_3CZUVUN28tpnUBO,anonymous,EN,1,I agree to participate in the research,B,10,20,20,40,5,3,3,4,Yes,20,40,40,60,A,,,B,20,40,20,40,Yes,3,4,2,A,Yes,Consider it a gift and not pay for the coupon.,50,,,,,,,,,,,,
+2022-09-28 04:49:41,2022-09-28 04:54:29,IP Address,17,287,False,2022-10-05 04:54:29,R_1gthJkA7bRX903H,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,No difference,Yes,Pay your friend GHS30 for the coupon.,,,,,,,,,,,,,
+2022-09-28 04:54:24,2022-09-28 04:55:09,IP Address,3,44,False,2022-10-05 04:55:14,R_By7Z9dkmyyvTkbf,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 04:50:29,2022-09-28 04:55:54,IP Address,8,325,False,2022-10-05 04:55:56,R_2YEu08LVwmEwIxf,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 04:05:17,2022-09-28 04:57:22,IP Address,36,3125,False,2022-10-05 04:57:28,R_1KeReblxC9mzWzx,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,100,"Strongly agree
+
+1
+",2,2,Yes,,,,,,,,,,,,,,,,,A,Yes,Pay your friend GHS30 for the coupon.,50,,,,,,,,,,,,
+2022-09-28 05:06:41,2022-09-28 05:12:33,IP Address,50,351,False,2022-10-05 05:12:35,R_12AnZf48LWUMQrQ,anonymous,EN,1,I agree to participate in the research,"No difference ",,,,,,,,,,10,10,10,20,A,No,Pay your friend GHS30 for the coupon.,B,10,10,10,20,Yes,3,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,No,Consider it a gift and not pay for the coupon.,20,,,,,,,,,,,,
+2022-09-28 05:11:08,2022-09-28 05:38:48,IP Address,44,1660,False,2022-10-05 05:38:51,R_1cZGTgwYQReR9i6,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,10,10,20,20,No difference,No,Pay your friend GHS30 for the coupon.,No difference,20,20,20,20,No,,,,No difference,Yes,Pay your friend GHS30 for the coupon.,20,,,,,,,,,,,,
+2022-09-28 05:40:37,2022-09-28 05:45:24,IP Address,25,287,False,2022-10-05 05:45:41,R_1FIHaoRxr1es28f,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,10,10,10,A,Yes,Consider it a gift and not pay for the coupon.,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 05:46:13,2022-09-28 05:49:51,IP Address,11,218,False,2022-10-05 05:49:55,R_DhN1foJBnz3onZf,anonymous,EN,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 05:41:09,2022-09-28 05:54:02,IP Address,8,773,False,2022-10-05 05:54:08,R_1GMMiS44Zwk9sEF,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 06:08:11,2022-09-28 06:10:06,Spam,3,114,False,2022-10-05 06:10:09,R_215r92mZY7iqEh5,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 06:29:31,2022-09-28 06:48:04,IP Address,58,1113,False,2022-10-05 06:48:07,R_XStFt1HE5KiM11v,anonymous,EN,1,I agree to participate in the research,A,10,15,20,25,25,"Strongly agree
+
+1
+",3,4,Yes,10,15,22,25,B,Yes,Consider it a gift and not pay for the coupon.,B,20,25,20,25,,,,,B,No,Consider it a gift and not pay for the coupon.,10,,,,,,,,,,,,
+2022-09-28 07:11:42,2022-09-28 07:12:11,IP Address,8,28,False,2022-10-05 07:12:13,R_xf7MpfWyit6DIs1,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 07:48:05,2022-09-28 08:05:32,IP Address,53,1046,False,2022-10-05 08:05:34,R_rdxl1Khv80kulGN,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,10,2,"Strongly disagree
+
+5
+",4,No,0,10,0,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,,,,,,,,,No difference,No,Pay your friend GHS30 for the coupon.,10,,,,,,,,,,,,
+2022-09-28 08:34:17,2022-09-28 08:53:16,IP Address,39,1139,False,2022-10-05 08:53:22,R_33x7diA5QTre8Bo,anonymous,EN,,I agree to participate in the research,A,,,,,,,,,,15,15,25,25,No difference,No,Consider it a gift and not pay for the coupon.,A,10,10,25,25,No,2,"Strongly agree
+
+1
+","Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-09-28 08:58:21,2022-09-28 09:14:34,IP Address,11,972,False,2022-10-05 09:14:37,R_2CJGR3h67Dh6QXb,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 09:55:34,2022-09-28 09:58:22,IP Address,19,167,False,2022-10-05 09:58:22,R_3RfT7C5i0bW6GYo,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,30,35,20,25,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 10:49:42,2022-09-28 10:50:25,Spam,3,43,False,2022-10-05 10:50:28,R_296spbw7aLIFrbu,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 06:21:32,2022-09-28 11:43:19,IP Address,11,19306,False,2022-10-05 11:43:23,R_1DGPY1i9B4t9ORb,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,
+2022-09-28 06:23:35,2022-09-28 12:35:26,IP Address,56,22310,False,2022-10-05 12:35:30,R_BEXxcaSWb2oelnb,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,10,10,,,,,,10,10,10,10,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,20,20,20,20,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Pay your friend GHS30 for the coupon.,10,,,,,,,,,,,,
+2022-09-28 05:08:36,2022-09-28 13:58:55,IP Address,67,31819,False,2022-10-05 13:59:00,R_29iycYRobAl75to,anonymous,EN,1,I agree to participate in the research,B,10,10,10,20,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,10,20,A,No,Consider it a gift and not pay for the coupon.,B,30,30,20,20,Yes,2,4,4,B,No,Pay your friend GHS30 for the coupon.,100,,,,,,,,,,,,
+2022-09-28 05:32:56,2022-09-28 14:20:07,IP Address,8,31630,False,2022-10-05 14:20:13,R_3OiZxInMiPohkrZ,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 14:16:52,2022-09-28 14:29:58,IP Address,56,786,False,2022-10-05 14:30:04,R_qFnIucR4qu469PP,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,15,15,10,"Strongly agree
+
+1
+",2,"Strongly agree
+
+1
+",Yes,10,10,15,15,,,,B,10,10,15,15,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,No,Consider it a gift and not pay for the coupon.,4.00,,,,,,,,,,,,
+2022-09-28 15:55:37,2022-09-28 22:12:32,IP Address,81,22614,False,2022-10-05 22:12:33,R_2B8OL8hkMTpe96S,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,0,10,0,20,15,"Strongly agree
+
+1
+",3,"Strongly disagree
+
+5
+",Yes,10,10,20,20,A,No,Consider it a gift and not pay for the coupon.,A,20,20,20,20,Yes,2,4,4,No difference,No,Consider it a gift and not pay for the coupon.,30,More than GHS102,I do not know,I do not know,I do not know,Very serious,,,,,,,
+2022-09-29 00:49:04,2022-09-29 01:16:03,IP Address,97,1619,False,2022-10-06 01:32:15,R_2tzIxHiUneoXd7J,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,20,3,4,2,No,10,10,20,20,No difference,Yes,Pay your friend GHS30 for the coupon.,No difference,10,10,20,20,No,2,3,2,No difference,Yes,Pay your friend GHS30 for the coupon.,10,Exactly GHS102,Less than today,False,I do not know,Very serious,Female,30,More than GHS 53 000,24,Ghana,English,
+2022-09-29 02:11:19,2022-09-29 02:21:19,IP Address,33,599,False,2022-10-06 02:21:23,R_3JmN3BuPepRHs53,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,20,20,20,20,Yes,"Strongly disagree
+
+5
+",2,4,A,No,Pay your friend GHS30 for the coupon.,10,,,,,,,,,,,,
+2022-09-27 10:58:50,2022-09-29 03:04:08,IP Address,22,144317,False,2022-10-06 03:04:08,R_T7qzeUSLB3fTkvn,anonymous,EN,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,Pay your friend GHS30 for the coupon.,50,,,,,,,,,,,,
+2022-09-29 06:39:38,2022-09-29 06:40:28,IP Address,3,49,False,2022-10-06 06:40:30,R_scYoPlHgxUqqz3H,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 05:11:59,2022-09-29 08:56:50,IP Address,67,13491,False,2022-10-06 08:56:53,R_eVQ7xQdvI4XlDfX,anonymous,EN,1,I agree to participate in the research,"No difference ",0.00,15,0.00,30,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,0.00,15,0.00,30,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,20,20,20,20,No,"Strongly disagree
+
+5
+",4,4,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,,,,,,,,,,,,
+2022-09-29 09:08:36,2022-09-29 09:10:05,Spam,8,88,False,2022-10-06 09:10:06,R_3qCicYFvvgMKlDS,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 10:56:36,2022-09-29 11:20:47,IP Address,67,1451,False,2022-10-06 11:20:48,R_1hSzuPEv8a8vSXI,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,20,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,10,10,20,20,No difference,No,Consider it a gift and not pay for the coupon.,B,20,20,20,20,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,20,,,,,,,,,,,,
+2022-09-29 12:50:21,2022-09-29 12:52:09,IP Address,14,107,False,2022-10-06 12:52:13,R_3iWQ0l4KqNOA1oJ,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,10,20,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 12:58:05,2022-09-29 13:05:40,IP Address,39,455,False,2022-10-06 13:05:44,R_3QY8Jt4AFD0YMZ0,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,20,20,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,30,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,,,,,,,,,,,,,,,
+2022-10-06 13:38:58,2022-10-06 13:59:38,IP Address,100,1239,True,2022-10-06 13:59:38,R_2y3kKvlyOivJG5C,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,10,10,20,20,10,3,3,"Strongly disagree
+
+5
+",No,10,10,20,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,10,10,20,20,No,3,3,"Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,10,I do not know,I do not know,I do not know,I do not know,Very serious,Female,52,Prefer not to answer,29,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-29 15:19:12,2022-09-29 15:21:24,IP Address,17,131,False,2022-10-06 15:21:27,R_1gHGuYo8sAQQgMe,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,
+2022-09-29 15:42:54,2022-09-29 15:57:36,IP Address,33,881,False,2022-10-06 15:57:40,R_ZesdltZ9euL4exX,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,10,20,20,20,No,3,3,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10,,,,,,,,,,,,
+2022-09-27 13:08:08,2022-09-29 21:49:28,IP Address,19,204080,False,2022-10-06 21:49:37,R_2uyeb5fIcNnRVed,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,20,20,20,20,A,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 02:23:27,2022-09-30 02:34:33,IP Address,33,666,False,2022-10-07 02:34:41,R_263I1OLTfPRjuAB,anonymous,EN,1,I agree to participate in the research,A,0,10,0,20,20,,,,,0,10,0,20,B,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 02:26:48,2022-09-30 02:35:25,IP Address,22,517,False,2022-10-07 02:35:26,R_3haSXzZrYl7DoKv,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,No difference,,,,,,,,,B,Yes,Pay your friend GHS30 for the coupon.,20,,,,,,,,,,,,
+2022-09-30 03:07:42,2022-09-30 03:18:29,IP Address,39,646,False,2022-10-07 03:32:39,R_2Sq2tPvHIBDwITD,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,5,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,,,,,,,,A,10,10,20,20,No,2,2,2,,,,,,,,,,,,,,,,
+2022-09-30 02:45:27,2022-09-30 03:42:54,IP Address,11,3446,False,2022-10-07 03:45:57,R_1DORz5RnGqFOmkC,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 05:37:19,2022-09-30 06:09:21,IP Address,64,1921,False,2022-10-07 06:09:29,R_1mO5gVTmPW0hoPi,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,20,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",No,0,10,20,20,A,No,Consider it a gift and not pay for the coupon.,B,0,10,20,20,No,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,No,Pay your friend GHS30 for the coupon.,10,,,,,,,,,,,,
+2022-09-30 05:19:25,2022-09-30 06:47:51,IP Address,28,5305,False,2022-10-07 06:47:54,R_1oHcOYw4L1Y9ImA,anonymous,EN,0.30000001192092896,I agree to participate in the research,,,,,,,,,,,10,10.5,10,10.5,B,,,,,,,,,,,,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5.00,,,,,,,,,,,,
+2022-09-30 06:45:49,2022-09-30 07:12:38,IP Address,33,1609,False,2022-10-07 07:12:44,R_WjtiQqBjm1PZf4B,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,10,10,20,20,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,,,,,,,,,,,,,,,,,No difference,Yes,Pay your friend GHS30 for the coupon.,,,,,,,,,,,,,
+2022-09-29 14:47:58,2022-09-30 07:28:40,IP Address,17,60042,False,2022-10-07 07:28:45,R_20T0MdHWveN4jEy,anonymous,EN,1,I agree to participate in the research,B,10,15,25,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 11:56:09,2022-09-30 12:10:57,IP Address,67,887,False,2022-10-07 12:18:56,R_3PdkqmWBN0YuEEC,anonymous,EN,1,I agree to participate in the research,B,10,15,25,30,15,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,15,20,25,30,B,No,Pay your friend GHS30 for the coupon.,B,25,30,30,40,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No difference,Yes,Pay your friend GHS30 for the coupon.,10,,,,,,,,,,,,
+2022-09-30 11:56:52,2022-09-30 11:57:27,IP Address,3,34,False,2022-10-07 12:44:00,R_1jqg2Dcm4XUu91x,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-01 00:38:23,2022-10-01 00:38:41,IP Address,8,18,False,2022-10-08 00:38:49,R_1N84szAQckyeA6c,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-01 02:28:34,2022-10-01 02:45:27,IP Address,19,1012,False,2022-10-08 02:45:36,R_2tfoETvGp23EWOX,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-01 07:44:43,2022-10-01 07:52:06,IP Address,25,442,False,2022-10-08 07:52:10,R_2uwUzFZT2BwaFdz,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,,,,,,,,,,10,10,20,20,B,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-08 08:10:23,2022-10-08 08:36:34,IP Address,100,1571,True,2022-10-08 08:36:35,R_3lS0zRskNidbGkL,anonymous,EN,0.800000011920929,I agree to participate in the research,"No difference ",0,0,0,0,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,No difference,No,Pay your friend GHS30 for the coupon.,B,20,20,20,20,Yes,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend GHS30 for the coupon.,6,More than GHS102,Less than today,False,I do not know,Absolutely serious,Male,36,GHS 44 000 - GHS 53 000,22,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-09-30 01:28:43,2022-10-01 13:45:50,IP Address,44,130627,False,2022-10-08 13:45:54,R_1IaxY4br38SISkT,anonymous,EN,1,I agree to participate in the research,A,10,10,20,20,20,,,,,,,,,,,,A,10,10,20,20,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,20,,,,,,,,,,,,
+2022-10-02 07:22:42,2022-10-02 07:23:56,IP Address,11,73,False,2022-10-09 07:23:57,R_3Opo1M18clUFKhI,anonymous,EN,1,I agree to participate in the research,"No difference ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-09 13:10:20,2022-10-09 14:15:22,IP Address,100,3902,True,2022-10-09 14:15:23,R_3L6duqJN3TNda8M,anonymous,EN,1,I agree to participate in the research,"No difference ",0,0,0,0,5,4,4,2,No,11,11,22,22,No difference,No,Consider it a gift and not pay for the coupon.,B,22,22,22,22,No,4,4,2,A,No,Consider it a gift and not pay for the coupon.,5,More than GHS102,Less than today,False,They collapse,Absolutely serious,Male,30,GHS 44 000 - GHS 53 000,19,Ghana,English,I allow you to use the responses I provided in this study.
+2022-09-28 02:45:13,2022-10-02 16:12:53,IP Address,8,394059,False,2022-10-09 16:13:02,R_2c2EHYJFUY6c2yR,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-02 23:58:45,2022-10-02 23:59:34,IP Address,8,49,False,2022-10-09 23:59:35,R_Wep9FhUufd41dgl,anonymous,EN,0.800000011920929,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-03 03:03:16,2022-10-03 03:22:40,IP Address,44,1163,False,2022-10-10 03:22:41,R_3k5P8Da5yVeqYz7,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,20,20,20,,,,,,,,,,,,No difference,10,10,20,20,No,3,3,3,No difference,Yes,Pay your friend GHS30 for the coupon.,20.00,,,,,,,,,,,,
+2022-10-03 04:35:43,2022-10-03 04:36:19,IP Address,8,35,False,2022-10-10 05:02:09,R_3oYHLW8BuZUEJNT,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-03 05:03:01,2022-10-03 05:18:56,IP Address,50,954,False,2022-10-10 05:30:30,R_Rht6A3d3j5xaXxT,anonymous,EN,1,I agree to participate in the research,B,15,20,15,18,100,3,"Strongly agree
+
+1
+",2,,12,15,15,18,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,25,30,15,18,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,,,,,,,,,,,,,,,,
+2022-10-03 07:13:09,2022-10-03 07:28:25,IP Address,56,916,False,2022-10-10 07:28:28,R_3ESaqQ7EZ11jRCb,anonymous,EN,,I agree to participate in the research,A,10,10,10,10,,,,,,10,10,20,20,B,Yes,Pay your friend GHS30 for the coupon.,B,20,20,20,20,No,3,3,3,B,Yes,Pay your friend GHS30 for the coupon.,20,,,,,,,,,,,,
+2022-10-03 03:59:25,2022-10-03 07:44:08,IP Address,8,13483,False,2022-10-10 07:44:09,R_12m49PTP0Oy5FlR,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-10 08:45:36,2022-10-10 09:14:01,IP Address,100,1705,True,2022-10-10 09:14:01,R_C3wJT83b9YLBeOB,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,40,"Strongly disagree
+
+5
+",3,2,No,10,15,20,25,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,15,20,25,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,Yes,Pay your friend GHS30 for the coupon.,10,More than GHS102,Exactly the same as today,I do not know,They remain unchanged,Moderately serious,Female,44,More than GHS 53 000,18,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-10 08:56:24,2022-10-10 09:19:03,IP Address,100,1358,True,2022-10-10 09:19:04,R_3hG9hKoXcXI6Unl,anonymous,EN,1,I agree to participate in the research,"No difference ",5,10,15,20,10,4,"Strongly agree
+
+1
+",4,No,10,10,20,20,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,15,20,25,No,"Strongly agree
+
+1
+",3,2,B,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,I do not know,I do not know,Very serious,Male,47,More than GHS 53 000,19,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-10 15:22:35,2022-10-10 15:43:29,IP Address,100,1254,True,2022-10-10 15:43:31,R_1FRhqXVoqw3LUlX,anonymous,EN,1,I agree to participate in the research,"No difference ",10,10,20,20,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,10,20,20,No difference,Yes,Pay your friend GHS30 for the coupon.,No difference,10,10,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,Pay your friend GHS30 for the coupon.,10,More than GHS102,Less than today,False,There is no relationship,Absolutely serious,Female,45,GHS 35 000 - GHS 44 000,18,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-10 15:57:43,2022-10-10 16:36:41,IP Address,100,2338,True,2022-10-10 16:36:41,R_1lftGCTCWrFJsOW,anonymous,EN,,I agree to participate in the research,A,0,10,0,20,20,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,10,20,A,No,Consider it a gift and not pay for the coupon.,B,10,20,20,20,No,"Strongly disagree
+
+5
+",2,2,B,Yes,Consider it a gift and not pay for the coupon.,8,More than GHS102,Less than today,False,They remain unchanged,Absolutely serious,Female,31,GHS 35 000 - GHS 44 000,19,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-10 16:37:13,2022-10-10 16:51:25,IP Address,100,852,True,2022-10-10 16:51:27,R_umhuXJ0MNDKxbO1,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,10,10,10,20,3,3,3,No,10,10,10,10,No difference,Yes,Pay your friend GHS30 for the coupon.,No difference,20,20,20,20,No,3,3,3,No difference,Yes,Pay your friend GHS30 for the coupon.,20,More than GHS102,Less than today,False,They remain unchanged,Very serious,Female,47,More than GHS 53 000,25,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-10 23:13:02,2022-10-10 23:49:08,IP Address,100,2166,True,2022-10-10 23:49:10,R_3VOtr9rXC8qnREl,anonymous,EN,1,I agree to participate in the research,B,0,10,0,20,10,2,4,2,No,0,10,0,20,No difference,Yes,Consider it a gift and not pay for the coupon.,B,10,10,10,10,No,4,2,2,A,Yes,Consider it a gift and not pay for the coupon.,8,More than GHS102,Less than today,I do not know,I do not know,Absolutely serious,Male,31,GHS 26 000 - GHS 35 000,23,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-11 05:18:47,2022-10-11 06:07:04,IP Address,100,2897,True,2022-10-11 06:07:04,R_2EhOpme4o7tQxh3,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",0,15,0,25,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,10,15,20,25,A,Yes,Consider it a gift and not pay for the coupon.,A,20,25,20,25,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,Pay your friend GHS30 for the coupon.,10,More than GHS102,Less than today,True,They collapse,Very serious,Male,36,More than GHS 53 000,19,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-11 03:54:10,2022-10-11 06:29:10,IP Address,100,9299,True,2022-10-11 06:29:10,R_2xE1zxOxsjXYlyX,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",10,20,20,40,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,20,20,40,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,10,20,20,40,Yes,4,4,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,More than GHS102,Exactly the same as today,False,They collapse,Absolutely serious,Male,31,GHS 17 000 - GHS 26 000,22,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-11 07:35:59,2022-10-11 08:10:59,IP Address,100,2099,True,2022-10-11 08:10:59,R_3I6OpDbIZBHR06b,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,10,20,20,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,10,10,20,20,B,Yes,Consider it a gift and not pay for the coupon.,A,20,20,20,20,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,15,More than GHS102,Less than today,False,I do not know,Absolutely serious,Male,33,GHS 26 000 - GHS 35 000,19,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-11 06:13:00,2022-10-11 15:59:33,IP Address,100,35192,True,2022-10-11 15:59:33,R_O0YIDdHW9QM5b33,anonymous,EN,1,I agree to participate in the research,A,10,20,10,30,40,2,4,2,No,10,20,20,30,A,Yes,Consider it a gift and not pay for the coupon.,B,20,25,20,25,No,2,4,"Strongly agree
+
+1
+",B,No,Consider it a gift and not pay for the coupon.,15,More than GHS102,Less than today,False,I do not know,Moderately serious,Male,40,More than GHS 53 000,18,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-05 02:07:15,2022-10-05 02:07:36,IP Address,3,20,False,2022-10-12 02:07:40,R_qPcrKThvhlFSfWV,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-12 15:59:55,2022-10-12 16:23:39,IP Address,100,1423,True,2022-10-12 16:23:39,R_XHO51wDxh5CRV7j,anonymous,EN,0.8999999761581421,I agree to participate in the research,B,15,20,25,30,50,2,4,2,Yes,10,15,20,25,No difference,No,Consider it a gift and not pay for the coupon.,B,30,35,25,30,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,A,No,Pay your friend GHS30 for the coupon.,7,More than GHS102,Less than today,I do not know,They collapse,Very serious,Female,24,Less than GHS 17 000,16,Ghana,English,I allow you to use the responses I provided in this study.
+2022-10-10 10:43:42,2022-10-10 11:05:26,IP Address,67,1304,False,2022-10-17 11:05:28,R_2ZNBIRQ4A1hYFkD,anonymous,EN,1,I agree to participate in the research,A,0,0,0,0,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,10,10,10,10,A,No,Consider it a gift and not pay for the coupon.,No difference,20,20,10,10,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,No,Pay your friend GHS30 for the coupon.,5,,,,,,,,,,,,
+2022-10-10 13:21:22,2022-10-10 13:23:01,IP Address,11,99,False,2022-10-17 13:23:05,R_uyVfC6AlmWeOD3r,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-10 09:33:31,2022-10-10 13:28:14,IP Address,81,14083,False,2022-10-17 13:28:17,R_2v16VH36FvN9Hb4,anonymous,EN,1,I agree to participate in the research,"No difference ",0,10,0,20,10,4,4,"Strongly agree
+
+1
+",No,10,12,20,25,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,20,25,20,25,No,"Strongly agree
+
+1
+",4,4,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,More than GHS102,Less than today,I do not know,I do not know,Very serious,,,,,,,
+2022-10-10 16:04:23,2022-10-10 16:11:04,IP Address,19,400,False,2022-10-17 16:11:08,R_6QEtOHgf56lAzrX,anonymous,EN,1,I agree to participate in the research,"No difference ",20,40,40,60,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 03:43:57,2022-10-11 03:47:24,IP Address,8,206,False,2022-10-18 03:47:30,R_xubFff2NODku7Rv,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 06:18:48,2022-10-11 06:33:13,IP Address,50,864,False,2022-10-18 06:33:16,R_2yjFWZ5JuBdV26h,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,10,10,20,20,20,4,4,"Strongly agree
+
+1
+",Yes,,,,,,,,B,10,10,20,20,Yes,4,4,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,,,,,,,,,,,,
+2022-10-19 00:02:49,2022-10-19 00:21:50,IP Address,100,1140,True,2022-10-19 00:21:51,R_3fraqFAgf4IGR2m,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,0,10,0,20,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,10,20,20,20,A,Yes,Consider it a gift and not pay for the coupon.,B,10,20,20,20,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,B,Yes,Consider it a gift and not pay for the coupon.,10,More than GHS102,Less than today,I do not know,They collapse,Very serious,Male,50,More than GHS 53 000,22,Ghana,Other,I allow you to use the responses I provided in this study.
+2022-10-12 15:29:15,2022-10-12 15:29:32,IP Address,3,16,False,2022-10-19 15:29:37,R_291gEFRiEwLEC4V,anonymous,EN,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 08:24:39,2022-10-13 03:47:36,IP Address,22,156177,False,2022-10-20 03:47:41,R_2zDbQjCXupiq6TW,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,10,15,20,25,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-28 07:04:00,2022-10-28 07:12:22,IP Address,61,501,False,2022-11-02 07:42:57,R_2EafQxOcJvyt36r,anonymous,EN,1,I agree to participate in the research,"No difference ",5,5,5,5,5,3,3,3,No,5,5,5,5,No difference,No,,B,6,7,6,7,Yes,3,3,3,A,No,Pay your friend GHS30 for the coupon.,70,,,,,,,,,,,,

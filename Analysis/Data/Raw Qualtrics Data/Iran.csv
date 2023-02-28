@@ -1,0 +1,1583 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q_RecaptchaScore,Consent,MrAB1,Game1_1_1,Game1_1_2,Game1_2_1,Game1_2_2,Drink1,Gym1 _1,Gym1 _2,Gym1 _3,Jacket1,Game2_1_1,Game2_1_2,Game2_2_1,Game2_2_2,MrAB2,"Play2 ","Plane2 ",MrAB3,Game3_1 _1,Game3_1 _2,Game3_2_1,Game3_2_2,Jacket2,Gym2 _1,Gym2 _2,Gym2 _3,"MrAB4 ","Play1 ","Plane1 ",Drink2,fin_lit1,fin_lit2,fin_lit3,fin_lit4,Att_check,Gender,"Age ",Income,Education,Residence,Native language,Debriefing
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,Q_RecaptchaScore,"Dear Participant,    We invite you to take part in an online study with the purpose of investigating how people make decisions. The duration of the questionnaire is approximately 10 minutes. At the end of the questionnaire, you will be asked some personal demographic information.    Your data will be analyzed anonymously and processed according to the current international legislation for the protection of privacy (D. Lgs 196/2003 and EU GDPR 679/2016 on the protection of personal data and art. 9 of the Deontological Code of Italian Psychologists). Your data will be used solely for the purposes of the research itself. No information regarding you personally will be published or revealed in any way.    You are free to withdraw from the study at any point without giving any explanation. In this case your data will be deleted. You will not receive any payment or reimbursement of any sort for your participation in this study. There are no known risks associated with participating in this study.    Project Manager: Enrico Rubaltelli (Department of Development Psychology and Socialization -DPSS, University of Padua). The person responsible for this research agrees to comply with the obligations of current legislation in terms of collection, processing and storage of sensitive data.    I DECLARE THAT  • I am 18 years old or older  • I take part in this project voluntarily  • I am aware of the objectives and aims of this research project  • I am aware that the data obtained, in absolute anonymity, will be treated exclusively for educational and research purposes  • I am aware that it is not possible to withdraw the data I have provided once it has been submitted.    For any clarification you can contact Prof. Enrico Rubaltelli at jdmlab.multicountry@gmail.com.","Person A was given two tickets to the lucky draw. They won 160,000 Tomans with one ticket and 80,000 Tomans with the other ticket.      Person B was given a ticket to one lucky draw. They won 240,000 Tomans.        Who is happier?","You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 15,000 Tomans but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is 15,000 Tomans. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a friend","You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The price marked on the ticket is 15,000 Tomans but this ticket has been offered to you by a friend for free.       You want to get rid of the extra ticket and you know the ticket’s face value price is 15,000 Tomans. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to... ? - Is a stranger","What price would you have asked for if you found out that the ticket’s face value price was 30,000 Tomans instead? - If they are a friend","What price would you have asked for if you found out that the ticket’s face value price was 30,000 Tomans instead? - If they are a stranger","You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a fancy resort hotel. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender.    What price do you tell them?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 30,000 Tomans (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 30,000 Tomans","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 30,000 Tomans (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership to the gym allows you to pay 30,000 Tomans (non-refundable) per session. One Monday, just after you have paid and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.  How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind","You are about to purchase a jacket for 490,000 Tomans and a Bluetooth speaker for 60,000 Tomans. The salesman informs you that the speaker you wish to buy is on sale for 40,000 Tomans at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is 15,000 Tomans which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is 15,000 Tomans. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend","Imagine you are going to a sold-out game of your favorite local sports team, and you have an extra ticket. The price marked on the ticket is 15,000 Tomans which is what you paid for each ticket.    You want to get rid of the extra ticket and you know the ticket's face value price is 15,000 Tomans. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.   What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger","What price would you have asked for if you found out that the ticket’s face value price was 30,000 Tomans instead? - If they are a friend","What price would you have asked for if you found out that the ticket’s face value price was 30,000 Tomans instead? - If they are a stranger","Person A received a fine and owed 320,000 Tomans. The same day they received a second fine and owed 160,000 Tomans.    Person B received a fine and owed 480,000 Tomans.  Who is more upset?","Imagine that you are on your way to a music event and intend to buy a ticket worth 160,000 Tomans. On entering the venue, you realize that you have lost 160,000 Tomans in cash.   Would you still pay 160,000 Tomans for a ticket?","You are travelling with a friend who has upgraded their bus ticket to VIP class and has two coupons, each worth 50,000 Tomans, which could be used to upgrade your ticket from regular to VIP class. They purchased one coupon for the standard price of 50,000 Tomans and received the other one for free. Just one coupon is required to upgrade your ticket on the current bus and your friend offers you the coupon which they got for free so that you can upgrade your ticket as well.    What do you think is the most appropriate thing to do?","Person A bought a lucky draw ticket and won 315,000 Tomans. Also, they damaged one door in their apartment in an accident and had to pay the landlord 250,000 Tomans.       Person B bought a lucky draw ticket and won 65,000 Tomans.       Who is happier?","You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 15,000 Tomans but you paid 30,000 Tomans for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 15,000 Tomans. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a friend","You are going to a sold-out game of your favorite local sports team and you have an extra ticket. The ticket’s face value price is 15,000 Tomans but you paid 30,000 Tomans for each ticket when you bought them from another person.    You want to get rid of the extra ticket and you know the ticket’s face value price is 15,000 Tomans. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.    What price do you ask for selling the extra ticket if the person you sell it to...? - Is a stranger","What price would you have asked for if you found out that the ticket’s face value price was 30,000 Tomans instead? - If they are a friend","What price would you have asked for if you found out that the ticket’s face value price was 30,000 Tomans instead? - If they are a stranger","You are about to purchase a jacket for 60,000 Tomans and a Bluetooth speaker for 490,000 Tomans. The salesman informs you that the speaker you wish to buy is on sale for 470,000 Tomans at the other branch store, located 20 minutes away.    Would you make the trip to the other store?","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 1,550,000 Tomans a year (i.e., roughly 30,000 Tomans per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted 30,000 Tomans","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 1,550,000 Tomans a year (i.e., roughly 30,000 Tomans per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted nothing, since my visit had already been paid for","Imagine that you go to the gym on a regular basis. Due to your busy working schedule, you can only go on Monday nights. The membership costs you 1,550,000 Tomans a year (i.e., roughly 30,000 Tomans per visit). One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forgo your exercise that evening.    How well does each of the following statements capture your feelings about the cost of the missed workout? - I feel like I wasted something, but no specific amount or measure comes to mind","Person A damaged their car in a parking lot. They had to spend 630,000 Tomans to repair the damage. The same day they damaged the car they won 80,000 Tomans in a raffle.       Person B damaged their car in a parking lot. They had to spend 550,000 Tomans to repair the damage.       Who is more upset?","Imagine that you are on your way to a music event with a ticket for which you have paid 160,000 Tomans. On entering the venue, you discover that you have lost the ticket.    Would you pay 160,000 Tomans for another ticket?","You are travelling with a friend who has upgraded their bus ticket to VIP class and has two coupons, each worth 50,000 Tomans, which could be used to upgrade your ticket from regular to VIP class. They purchased one coupon for the standard price of 50,000 Tomans and received the other one for free. Just one coupon is required to upgrade your ticket on the current bus and your friend offers you the coupon which he purchased so that you can upgrade your ticket as well.  What do you think is the most appropriate thing to do?","You are on the beach on a hot day, and you would really like a cold drink. A friend offers to go buy the drink from a small, run-down grocery store. They ask how much you are willing to pay for the drink: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the store owner.    What price do you tell them?","Suppose that you have 100,000 Tomans in a savings account and the interest rate is 2% per year. After 5 years, how much do you think you would have in the account if you let the money grow?","Imagine that the interest rate on your savings account was 1% per year and inflation was 2% per year. After 1 year, how much would you be able to buy with the money in this account?",Buying a single company's stock usually provides a safer return than a stock mutual fund.,"If interest rates rise, what would typically happen to bond prices?",To ensure the quality of our data we need to know if participants paid attention during the survey. Please tell us honestly how serious you were in completing the survey.   How serious have you been about filling in the survey?,What gender do you identify as?,What is your age (in numbers)?,Which of the following best describes your monthly household income?,How many years of schooling have you completed? (from elementary school to doctoral degree or specialization if you have one),List of Countries,Which of the following is your native language?,"The survey you have completed aims to replicate the mental accounting effect. According to this phenomenon a person attributes different values to the same amount of money based on subjective criteria. Specifically, people tend to subjectively organize economic resources into different mental accounts. In addition, in this study, we measured some individual differences that might have an influence on mental accounting. In particular:   	  	   ●	Scale to measure financial literacy (Lusardi and Mitchell, 2014).  	 	 	  ●	Demographic data (e.g. gender, age or income level)	    Finally, we inform you that we have also used an attentional check to measure respondent engagement. The purpose of this study could not be fully revealed at the beginning of the study to avoid influencing your answers. Now that you have received this information, we ask you to confirm your consent to participate in this study or to withdraw it. In the latter case your data will not be used and will be deleted."
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""Q_RecaptchaScore""}","{""ImportId"":""QID1""}","{""ImportId"":""QID8""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID14_2""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID23_TEXT""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID44_2""}","{""ImportId"":""QID44_3""}","{""ImportId"":""QID34""}","{""ImportId"":""QID17_1""}","{""ImportId"":""QID17_2""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID18_2""}","{""ImportId"":""QID12""}","{""ImportId"":""QID78""}","{""ImportId"":""QID86""}","{""ImportId"":""QID10""}","{""ImportId"":""QID20_1""}","{""ImportId"":""QID20_2""}","{""ImportId"":""QID21_1""}","{""ImportId"":""QID21_2""}","{""ImportId"":""QID74""}","{""ImportId"":""QID82_1""}","{""ImportId"":""QID82_2""}","{""ImportId"":""QID82_3""}","{""ImportId"":""QID11""}","{""ImportId"":""QID40""}","{""ImportId"":""QID48""}","{""ImportId"":""QID70_TEXT""}","{""ImportId"":""QID59""}","{""ImportId"":""QID60""}","{""ImportId"":""QID61""}","{""ImportId"":""QID62""}","{""ImportId"":""QID51""}","{""ImportId"":""QID52""}","{""ImportId"":""QID53_TEXT""}","{""ImportId"":""QID54""}","{""ImportId"":""QID55_TEXT""}","{""ImportId"":""QID114""}","{""ImportId"":""QID57""}","{""ImportId"":""QID63""}"
+2022-09-13 05:18:50,2022-09-13 05:50:38,IP Address,100,1908,True,2022-09-13 05:50:38,R_ulYBlU8qWVVXI77,anonymous,FA,1,I agree to participate in the research,"No difference ",0,15000,15000,30000,25000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,15000,15000,30000,30000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,15000,30000,30000,30000,No,"Strongly agree
+
+1
+",4,2,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",25000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Very serious,Male,23,"More than 9,300,000 Tomans",17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 02:47:26,2022-09-15 03:01:48,IP Address,100,861,True,2022-09-15 03:01:49,R_2TuZ86fddbo77c7,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15000,20000,30000,35000,20000,2,4,4,Yes,15000,20000,30000,35000,A,Yes,Consider it a gift and not pay for the coupon.,B,15000,15000,30000,30000,Yes,3,3,4,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",15000,"More than 102,000 Tomans",Less than today,False,I do not know,Very serious,Male,21,"More than 9,300,000 Tomans",15,Iran,Turkish,I allow you to use the responses I provided in this study.
+2022-09-15 03:10:21,2022-09-15 03:20:15,IP Address,100,594,True,2022-09-15 03:20:15,R_vIWMxpZpctLkW1H,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,10000,15000,10000,30000,30000,4,2,3,No,0,0,0,0,A,Yes,Consider it a gift and not pay for the coupon.,B,5000,15000,10000,30000,No,4,4,3,A,Yes,Consider it a gift and not pay for the coupon.,15000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Moderately serious,Male,24,"More than 9,300,000 Tomans",17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 03:12:01,2022-09-15 03:27:24,IP Address,100,922,True,2022-09-15 03:27:24,R_3kBNx3u7vxB0qCi,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15,20,30,40,30000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,15,20,30,40,A,No,"Pay your friend 50,000 Tomans for the coupon.",B,15,30,30,40,No,2,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,"Pay your friend 50,000 Tomans for the coupon.",15000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Absolutely serious,Female,29,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 03:09:10,2022-09-15 03:34:30,IP Address,100,1519,True,2022-09-15 03:34:30,R_3fGLQdeIkztjutI,anonymous,FA,1,I agree to participate in the research,B,0,15000,0,30000,15000,"Strongly agree
+
+1
+",4,3,No,0,0,0,0,A,No,"Pay your friend 50,000 Tomans for the coupon.",B,15000,15000,30000,30000,Yes,"Strongly agree
+
+1
+",4,3,B,No,"Pay your friend 50,000 Tomans for the coupon.",7000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Slightly serious,Female,25,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 03:26:35,2022-09-15 03:41:08,IP Address,100,873,True,2022-09-15 03:41:09,R_3P4VgP1MmI37Imy,anonymous,FA,1,I agree to participate in the research,B,15,15,15,15,20000,2,4,4,Yes,0,0,0,0,A,Yes,Consider it a gift and not pay for the coupon.,B,15,15,15,15,Yes,4,2,4,A,Yes,Consider it a gift and not pay for the coupon.,20000,"More than 102,000 Tomans",Less than today,True,I do not know,Moderately serious,Male,17,"More than 9,300,000 Tomans",11,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 03:35:40,2022-09-15 03:46:26,IP Address,100,645,True,2022-09-15 03:46:26,R_2CwSCMSWkHFKqpX,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15000,30000,30000,40000,20000,3,3,2,No,0,15000,0,30000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,30000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10000,"More than 102,000 Tomans",Less than today,False,I do not know,Very serious,Female,22,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 03:42:15,2022-09-15 03:54:04,IP Address,100,708,True,2022-09-15 03:54:04,R_3rCCfB3KNdFiNtn,anonymous,FA,1,I agree to participate in the research,A,15000,30000,25000,50000,50000,"Strongly agree
+
+1
+",4,4,No,20000,30000,40000,60000,A,Yes,Consider it a gift and not pay for the coupon.,B,40000,80000,40000,80000,No,2,4,2,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",40000,"More than 102,000 Tomans",Less than today,False,I do not know,Very serious,Male,25,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 03:53:27,2022-09-15 04:07:05,IP Address,100,817,True,2022-09-15 04:07:05,R_1GEo0vekgoDnUey,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,5000,0,10000,50000,4,3,3,No,0,5000,0,10000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,15000,0,30000,No,4,3,3,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",15000,"More than 102,000 Tomans",Less than today,False,I do not know,Very serious,Male,36,"Less than 3,100,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 04:08:27,2022-09-15 04:22:19,IP Address,100,831,True,2022-09-15 04:22:19,R_AzawwMvlzlY5BrH,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,15,0,30,8,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,0,15,0,30,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,15,30,30,30,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",4,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Female,21,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 04:11:36,2022-09-15 04:27:15,IP Address,100,939,True,2022-09-15 04:27:15,R_Rhqc81PX60YBhUl,anonymous,FA,1,I agree to participate in the research,B,0,0,0,30,50,4,2,4,Yes,0,0,0,30,B,Yes,Consider it a gift and not pay for the coupon.,A,30,30,30,30,No,4,"Strongly agree
+
+1
+",4,A,No,Consider it a gift and not pay for the coupon.,20,"More than 102,000 Tomans",Less than today,False,They collapse,Very serious,Female,21,"More than 9,300,000 Tomans",15,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 04:46:03,2022-09-15 04:58:03,IP Address,100,719,True,2022-09-15 04:58:03,R_3oMdjRTW8971FCn,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,50,4,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,0,15,0,30,B,Yes,Consider it a gift and not pay for the coupon.,B,15,15,15,15,Yes,4,"Strongly agree
+
+1
+",3,A,No,"Pay your friend 50,000 Tomans for the coupon.",30,"Less than 102,000 Tomans",Less than today,False,They remain unchanged,Very serious,Female,22,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 05:01:10,2022-09-15 05:13:43,IP Address,100,752,True,2022-09-15 05:13:43,R_1d9QySmfnKcl7Hp,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,5000,0,10000,25000,2,4,2,No,0,5000,0,10000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,24000,30000,30000,30000,Yes,3,2,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15000,"More than 102,000 Tomans",Less than today,False,I do not know,Moderately serious,Male,22,Prefer not to answer,15,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 05:00:35,2022-09-15 05:22:05,IP Address,100,1289,True,2022-09-15 05:22:07,R_2zo2LR86HU8vgox,anonymous,FA,1,I agree to participate in the research,A,15000,25000,30000,45000,15000,4,2,4,Yes,15000,25000,30000,45000,A,Yes,Consider it a gift and not pay for the coupon.,B,30000,40000,40000,50000,No,4,2,4,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",10000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Very serious,Male,23,Prefer not to answer,17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 05:58:44,2022-09-15 06:23:33,IP Address,100,1489,True,2022-09-15 06:23:34,R_r6mgTaxQzXIGNwJ,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,15,0,30,100000,2,4,4,Yes,0,0,0,0,No difference,Yes,Consider it a gift and not pay for the coupon.,A,15000,30000,0,30000,Yes,2,4,"Strongly disagree
+
+5
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",30000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Very serious,Female,26,"More than 9,300,000 Tomans",17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 07:01:07,2022-09-15 07:14:59,IP Address,100,831,True,2022-09-15 07:14:59,R_UAMJfgJnXviL1Lj,anonymous,FA,1,I agree to participate in the research,A,15,15,30,30,30,3,"Strongly disagree
+
+5
+",4,No,15,15,30,30,A,Yes,Consider it a gift and not pay for the coupon.,B,15,30,30,30,No,2,"Strongly disagree
+
+5
+",3,No difference,Yes,Consider it a gift and not pay for the coupon.,10,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,22,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 07:00:13,2022-09-15 07:16:00,IP Address,100,946,True,2022-09-15 07:16:00,R_OoHRkYil8h6NvjP,anonymous,FA,0.699999988079071,I agree to participate in the research,B,0,15000,0,30000,15000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,15000,15000,30000,30000,No difference,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,30000,30000,30000,30000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",15000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Male,31,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 07:06:15,2022-09-15 07:21:51,IP Address,100,936,True,2022-09-15 07:21:52,R_1Nfu7PdPBUBhuz7,anonymous,FA,1,I agree to participate in the research,B,15,15,30,30,10000,"Strongly agree
+
+1
+",4,3,Yes,15,15,30,30,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30,30,30,30,Yes,"Strongly agree
+
+1
+",3,3,A,No,"Pay your friend 50,000 Tomans for the coupon.",10000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Male,30,"4,700,000 - 6,200,000 Tomans",15,Uruguay,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 07:14:43,2022-09-15 07:29:02,IP Address,100,859,True,2022-09-15 07:29:03,R_ApJ3FNpgV6wujHX,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15,15,15,15,70,2,3,4,Yes,15,15,15,15,A,Yes,Consider it a gift and not pay for the coupon.,B,30,40,30,40,No,4,3,4,B,Yes,Consider it a gift and not pay for the coupon.,30,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Moderately serious,Female,23,"More than 9,300,000 Tomans",17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 07:31:46,2022-09-15 07:42:26,IP Address,100,640,True,2022-09-15 07:42:26,R_2EHuW8kNgPm6Bw7,anonymous,FA,1,I agree to participate in the research,A,5000,10000,15000,25000,10000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,0,10000,0,20000,A,Yes,Consider it a gift and not pay for the coupon.,B,10000,15000,20000,30000,No,2,2,2,B,No,Consider it a gift and not pay for the coupon.,5000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Moderately serious,Female,22,"More than 9,300,000 Tomans",15,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 08:49:27,2022-09-15 09:06:30,IP Address,100,1022,True,2022-09-15 09:06:30,R_2rjUPWC5Bq42dzb,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,0,45,0,90,30,"Strongly agree
+
+1
+",4,4,Yes,0,30,0,60,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30,60,30,60,No,"Strongly agree
+
+1
+",4,4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",30,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Absolutely serious,Female,20,"More than 9,300,000 Tomans",14,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 14:37:35,2022-09-15 14:50:25,IP Address,100,769,True,2022-09-15 14:50:26,R_3KqngsLTa2ptAQQ,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,15000,30000,0,30000,"Strongly disagree
+
+5
+",2,3,No,0,15000,0,30000,No difference,Yes,Consider it a gift and not pay for the coupon.,B,0,30000,0,30000,No,3,3,2,No difference,Yes,"Pay your friend 50,000 Tomans for the coupon.",20000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Moderately serious,Male,33,"3,100,000 - 4,700,000 Tomans",26,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 16:54:49,2022-09-15 17:05:20,IP Address,100,631,True,2022-09-15 17:05:21,R_27vxjUfVLrbFTsh,anonymous,FA,1,I agree to participate in the research,B,0,15,0,30,20,"Strongly agree
+
+1
+",4,"Strongly agree
+
+1
+",Yes,0,15,0,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30,50,30,60,No,2,4,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Very serious,Male,25,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 01:15:27,2022-09-16 01:38:20,IP Address,100,1373,True,2022-09-16 01:38:21,R_3ER09F1U9a4qLQF,anonymous,FA,0.699999988079071,I agree to participate in the research,A,0,0,0,0,50,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,10,20,20,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,15,30,30,No,2,"Strongly disagree
+
+5
+",4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20,"More than 102,000 Tomans",Less than today,True,They collapse,Absolutely serious,Female,33,"7,700,000 - 9,300,000 Tomans",19,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 01:23:33,2022-09-16 01:49:13,IP Address,100,1540,True,2022-09-16 01:49:14,R_uh1muzdDfMP42lj,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,10000,20000,25000,40000,15000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,7500,1000,20000,25000,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,35000,30000,35000,No,"Strongly agree
+
+1
+",4,3,No difference,Yes,"Pay your friend 50,000 Tomans for the coupon.",1000,"More than 102,000 Tomans",Less than today,I do not know,They remain unchanged,Very serious,Male,36,"More than 9,300,000 Tomans",22,Germany,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 01:49:14,2022-09-16 02:02:36,IP Address,100,801,True,2022-09-16 02:02:36,R_1gkA3m9WLOzZ9RP,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15,15,30,30,15,3,3,2,No,15,15,30,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,15,30,30,No,3,3,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,"More than 102,000 Tomans",Less than today,True,They collapse,Very serious,Male,24,"More than 9,300,000 Tomans",17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 01:47:35,2022-09-16 02:03:39,IP Address,100,964,True,2022-09-16 02:03:40,R_2sYXvZOG03I2t9A,anonymous,FA,0.699999988079071,I agree to participate in the research,"No difference ",0,15000,0,30000,50000,4,2,"Strongly agree
+
+1
+",No,0,15000,0,30000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,30000,30000,30000,No,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",50000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Moderately serious,Male,41,"More than 9,300,000 Tomans",20,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 02:46:53,2022-09-16 03:13:18,IP Address,100,1585,True,2022-09-16 03:13:19,R_8A4co2yN1Veim0V,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,15,0,30,80,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",Yes,0,15,0,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,15,0,30,Yes,4,2,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15,"More than 102,000 Tomans",Less than today,False,I do not know,Absolutely serious,Female,28,Prefer not to answer,20,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 05:08:34,2022-09-16 05:36:23,IP Address,100,1669,True,2022-09-16 05:36:24,R_3MbPqbJnQ1yowN0,anonymous,FA,1,I agree to participate in the research,A,15,15,30,30,10000,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,15000,15000,30000,30000,No difference,No,Consider it a gift and not pay for the coupon.,B,30,30,30,30,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,Consider it a gift and not pay for the coupon.,10000,"More than 102,000 Tomans",Less than today,False,I do not know,Absolutely serious,Male,65,"6,200,000 - 7,700,000 Tomans",24,Iran,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 08:38:27,2022-09-16 09:04:23,IP Address,100,1555,True,2022-09-16 09:04:23,R_2COocsSkPvA3f1V,anonymous,FA,1,I agree to participate in the research,"No difference ",15,15,30,30,100,4,3,2,No,0,0,0,0,No difference,Yes,Consider it a gift and not pay for the coupon.,B,15,15,30,30,No,4,3,2,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",50,"More than 102,000 Tomans",I do not know,I do not know,They collapse,Very serious,Female,32,"7,700,000 - 9,300,000 Tomans",20,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 08:50:58,2022-09-16 09:13:44,IP Address,100,1366,True,2022-09-16 09:13:44,R_2ANlrwzYjeEyaaH,anonymous,FA,0.4000000059604645,I agree to participate in the research,"No difference ",15000,15000,30000,30000,50000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,0,15000,0,30000,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,30000,30000,30000,30000,No,3,2,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",30000,"More than 102,000 Tomans",Less than today,False,I do not know,Very serious,Female,38,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 08:41:28,2022-09-16 09:38:00,IP Address,100,3392,True,2022-09-16 09:38:00,R_3EmSxp6HxfaxdAt,anonymous,FA,0.699999988079071,I agree to participate in the research,A,0,15000,0,30000,10000,"Strongly agree
+
+1
+",3,"Strongly disagree
+
+5
+",No,0,15000,0,30000,A,Yes,Consider it a gift and not pay for the coupon.,B,0,15000,0,30000,No,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,10,I do not know,I do not know,I do not know,I do not know,Absolutely serious,Male,29,"More than 9,300,000 Tomans",19,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 10:21:41,2022-09-16 10:50:36,IP Address,100,1734,True,2022-09-16 10:50:36,R_PStbLlkq32jqpOx,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",15,15,30,30,0,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,15,15,30,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,15,30,30,30,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,Yes,"Pay your friend 50,000 Tomans for the coupon.",0,"Exactly 102,000 Tomans",Less than today,I do not know,I do not know,Moderately serious,Female,72,Prefer not to answer,16,United States of America,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 10:36:53,2022-09-16 10:53:57,IP Address,100,1023,True,2022-09-16 10:53:57,R_2PBtAjvVROSaxLk,anonymous,FA,1,I agree to participate in the research,A,15,15,30,30,15,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,30,30,30,30,A,No,Consider it a gift and not pay for the coupon.,A,15,30,30,30,Yes,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,No,"Pay your friend 50,000 Tomans for the coupon.",15,"Exactly 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,34,"4,700,000 - 6,200,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 11:09:04,2022-09-16 11:27:12,IP Address,100,1087,True,2022-09-16 11:27:12,R_9TbJ07IUhwblGLL,anonymous,FA,0.6000000238418579,I agree to participate in the research,A,0,0,0,0,2000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,0,0,0,A,No,"Pay your friend 50,000 Tomans for the coupon.",No difference,30000,30000,30000,30000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",1000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,52,Prefer not to answer,19,United States of America,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 10:53:34,2022-09-16 11:30:06,IP Address,100,2191,True,2022-09-16 11:30:06,R_3FXs27NzokYi9Yh,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,0,15000,15000,30000,15000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,0,15000,15000,30000,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,30000,30000,30000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Absolutely serious,Male,75,"More than 9,300,000 Tomans",22,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 11:07:20,2022-09-16 11:40:29,IP Address,100,1988,True,2022-09-16 11:40:29,R_rjQDBVMTpSP7olj,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,50000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,0,0,0,0,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,30000,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",50000,I do not know,Less than today,I do not know,I do not know,Very serious,Female,44,Prefer not to answer,17,Iran,Turkish,I allow you to use the responses I provided in this study.
+2022-09-16 11:50:00,2022-09-16 12:04:44,IP Address,100,884,True,2022-09-16 12:04:45,R_2Vfix66I52ZU3Eg,anonymous,FA,1,I agree to participate in the research,A,0,0,0,0,0,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",No,00,00,00,00,A,Yes,Consider it a gift and not pay for the coupon.,B,000,000,000,000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,0000,"More than 102,000 Tomans",Less than today,False,They collapse,Absolutely serious,Male,38,Prefer not to answer,16,Austria,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 12:58:26,2022-09-16 13:13:00,IP Address,100,873,True,2022-09-16 13:13:01,R_1gTQFB1O8zfazYK,anonymous,FA,1,I agree to participate in the research,A,15,15,30,30,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,15,15,30,30,A,Yes,Consider it a gift and not pay for the coupon.,B,15,30,30,30,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,Consider it a gift and not pay for the coupon.,30,"Less than 102,000 Tomans",Less than today,True,I do not know,Absolutely serious,Male,38,"More than 9,300,000 Tomans",25,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 13:18:53,2022-09-16 13:32:59,IP Address,100,846,True,2022-09-16 13:32:59,R_3hH2xwnXnbG10dC,anonymous,FA,0.699999988079071,I agree to participate in the research,A,0,15000,0,30000,50000,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,15000,0,30000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,0,30000,0,30000,No,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,"Pay your friend 50,000 Tomans for the coupon.",50000,"More than 102,000 Tomans",Less than today,False,There is no relationship,Very serious,Male,43,"More than 9,300,000 Tomans",14,Iran,Other,I allow you to use the responses I provided in this study.
+2022-09-16 13:26:18,2022-09-16 13:41:04,IP Address,100,885,True,2022-09-16 13:41:04,R_2QLPqPFJTU8fcz3,anonymous,FA,1,I agree to participate in the research,"No difference ",0,15000,0,30000,50000,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,0,15000,0,30000,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,15000,30000,30000,30000,No,4,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,Yes,"Pay your friend 50,000 Tomans for the coupon.",25000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Very serious,Male,37,"More than 9,300,000 Tomans",20,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 13:28:07,2022-09-16 13:42:10,IP Address,100,843,True,2022-09-16 13:42:11,R_1IT2kpr62zrEbgM,anonymous,FA,0.6000000238418579,I agree to participate in the research,"No difference ",10000,10000,20000,20000,5000,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,10000,10000,20000,20000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,10000,10000,20000,20000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",2000,"More than 102,000 Tomans",Exactly the same as today,False,I do not know,Moderately serious,Male,40,Prefer not to answer,16,United Kingdom of Great Britain and Northern Ireland,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 13:08:39,2022-09-16 14:17:10,IP Address,100,4111,True,2022-09-16 14:17:11,R_3nVI3CRyOqV6FJd,anonymous,FA,1,I agree to participate in the research,B,15000,15000,30000,30000,5,"Strongly agree
+
+1
+",2,2,Yes,15000,15000,30000,30000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,30000,30000,30000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,A,No,Consider it a gift and not pay for the coupon.,5,"Less than 102,000 Tomans",Exactly the same as today,I do not know,I do not know,Absolutely serious,Female,45,Prefer not to answer,16,United Kingdom of Great Britain and Northern Ireland,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 14:05:21,2022-09-16 14:37:49,IP Address,100,1948,True,2022-09-16 14:37:50,R_Ptkw4tJzhLTA3hD,anonymous,FA,1,I agree to participate in the research,A,0,15000,0,30000,10000,3,3,3,Yes,0,15000,0,15000,A,Yes,Consider it a gift and not pay for the coupon.,B,30000,30000,30000,30000,No,4,2,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5000,I do not know,Less than today,I do not know,They collapse,Moderately serious,Female,44,"3,100,000 - 4,700,000 Tomans",16,Germany,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 08:00:18,2022-09-16 15:54:32,IP Address,100,28453,True,2022-09-16 15:54:32,R_2dAAR5TvtoHp3TN,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,15,15,15,15,120,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,15,15,15,15,B,Yes,Consider it a gift and not pay for the coupon.,B,15,15,15,15,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,100,"Less than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,54,"4,700,000 - 6,200,000 Tomans",12,United Kingdom of Great Britain and Northern Ireland,Persian,I allow you to use the responses I provided in this study.
+2022-09-17 01:19:32,2022-09-17 01:32:41,IP Address,100,789,True,2022-09-17 01:32:42,R_AAKLz0lkY7Z9mDf,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,15000,0,30000,50000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,15000,0,30000,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,30000,30000,30000,30000,No,3,4,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",25000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,36,"6,200,000 - 7,700,000 Tomans",20,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-17 02:45:26,2022-09-17 02:56:36,IP Address,100,670,True,2022-09-17 02:56:36,R_3GCH3RSyUvT6amx,anonymous,FA,1,I agree to participate in the research,A,00,15000,00,30000,100,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,00,15000,00,30000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,00,15000,00,3000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",100,"More than 102,000 Tomans",More than today,False,I do not know,Moderately serious,Male,40,"More than 9,300,000 Tomans",24,United States of America,Persian,I allow you to use the responses I provided in this study.
+2022-09-17 12:43:44,2022-09-17 13:03:54,IP Address,100,1210,True,2022-09-17 13:03:55,R_TuSjvNcvgkkHTA5,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,15000,0,15000,1000000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,15000,0,30000,A,No,Consider it a gift and not pay for the coupon.,B,10000,15000,20000,30000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Consider it a gift and not pay for the coupon.,100000,"More than 102,000 Tomans",Less than today,False,They collapse,Very serious,Male,27,"More than 9,300,000 Tomans",19,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-17 12:58:48,2022-09-17 13:15:30,IP Address,100,1002,True,2022-09-17 13:15:31,R_WCXf0rbSfVvt9E5,anonymous,FA,1,I agree to participate in the research,B,15000,20000,30000,40000,20000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,15000,15000,30000,30000,A,Yes,Consider it a gift and not pay for the coupon.,B,20000,30000,30000,30000,No,3,"Strongly disagree
+
+5
+",2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15000,"More than 102,000 Tomans",Less than today,True,There is no relationship,Very serious,Female,20,"More than 9,300,000 Tomans",14,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 04:10:39,2022-09-18 12:39:41,IP Address,100,203341,True,2022-09-18 12:39:41,R_RP2xnLHxmepID61,anonymous,FA,1,I agree to participate in the research,B,3,8,8,8,7,2,4,4,No,15,15,3,3,No difference,No,Consider it a gift and not pay for the coupon.,B,8,8,8,8,No,"Strongly agree
+
+1
+",3,3,B,No,Consider it a gift and not pay for the coupon.,8,I do not know,I do not know,I do not know,I do not know,Not serious at all,Male,22,"More than 9,300,000 Tomans",2,Jordan,Russian,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-09-18 12:39:51,2022-09-18 12:48:26,IP Address,100,514,True,2022-09-18 12:48:26,R_yKg4shL66pdazcJ,anonymous,FA,1,I agree to participate in the research,A,0,15,20,30,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,15,15,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,30,30,30,No,2,2,2,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",30000,"More than 102,000 Tomans",Less than today,False,They collapse,Absolutely serious,Male,21,"More than 9,300,000 Tomans",15,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 03:11:04,2022-09-21 03:26:11,IP Address,100,906,True,2022-09-21 03:26:11,R_2UhcCLXBUrBFkHb,anonymous,FA,1,I agree to participate in the research,A,10000,15000,20000,30000,50000,"Strongly agree
+
+1
+",4,3,Yes,10000,20000,20000,30000,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,30000,No,3,2,2,B,Yes,Consider it a gift and not pay for the coupon.,50000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Very serious,Female,28,"More than 9,300,000 Tomans",21,Germany,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 03:12:13,2022-09-21 03:26:44,IP Address,100,871,True,2022-09-21 03:26:44,R_3Rj2UlhcJnpuIs9,anonymous,FA,1,I agree to participate in the research,A,0,15,0,30,50,2,4,"Strongly agree
+
+1
+",Yes,0,15,0,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,30,30,30,Yes,2,4,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,"More than 102,000 Tomans",I do not know,False,I do not know,Absolutely serious,Female,29,"More than 9,300,000 Tomans",20,Germany,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 03:43:01,2022-09-21 04:02:17,IP Address,100,1156,True,2022-09-21 04:02:18,R_1FCG7wjubxSHVod,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,10,3,4,"Strongly agree
+
+1
+",No,0,0,0,0,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,0,0,0,0,No,3,3,"Strongly agree
+
+1
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",10,"More than 102,000 Tomans",Less than today,True,I do not know,Absolutely serious,Female,54,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 03:37:17,2022-09-21 04:38:40,IP Address,100,3682,True,2022-09-21 04:38:40,R_738kpHeaLQLr68x,anonymous,FA,1,I agree to participate in the research,A,15000,20000,30000,35000,50000,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,15000,20000,30000,35000,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,15000,20000,30000,35000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",50000,"More than 102,000 Tomans",Exactly the same as today,True,They collapse,Moderately serious,Female,33,"7,700,000 - 9,300,000 Tomans",14,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 03:55:39,2022-09-21 05:59:56,IP Address,100,7457,True,2022-09-21 05:59:56,R_1mEIgpSpzzilGLU,anonymous,FA,1,I agree to participate in the research,B,0,0,0,0,20000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,0,0,0,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,15000,30000,30000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20000,"More than 102,000 Tomans",Less than today,True,They remain unchanged,Very serious,Female,30,Prefer not to answer,18,United Arab Emirates,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 06:02:08,2022-09-21 06:20:55,IP Address,100,1127,True,2022-09-21 06:20:56,R_2uNG7B6f90MYHUb,anonymous,FA,1,I agree to participate in the research,"No difference ",15000,30000,30000,60000,50000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,15000,30000,30000,60000,A,No,Consider it a gift and not pay for the coupon.,No difference,15000,30000,30000,60000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,No,Consider it a gift and not pay for the coupon.,10000,I do not know,Less than today,False,They collapse,Very serious,Male,30,"6,200,000 - 7,700,000 Tomans",۱۷,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 06:25:07,2022-09-21 06:42:24,IP Address,100,1036,True,2022-09-21 06:42:25,R_3dvkpYUZHJEiqqZ,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",۱۵,۱۵,۳۰,۳۰,۸۰,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",Yes,۱۵,۱۵,۳۰,۳۰,No difference,Yes,Consider it a gift and not pay for the coupon.,B,۳۰,۳۰,۳۰,۳۰,Yes,"Strongly agree
+
+1
+",3,2,No difference,Yes,Consider it a gift and not pay for the coupon.,۸۰,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Moderately serious,Female,۴۰,"4,700,000 - 6,200,000 Tomans",۱۶,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 06:29:33,2022-09-21 06:50:24,IP Address,100,1251,True,2022-09-21 06:50:24,R_1PUCIN0EIOlaL2m,anonymous,FA,1,I agree to participate in the research,A,0,0,0,0,1000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,0,0,0,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,0,0,0,0,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",10,"More than 102,000 Tomans",Less than today,False,There is no relationship,Moderately serious,Male,42,Prefer not to answer,18,United Kingdom of Great Britain and Northern Ireland,Persian,I allow you to use the responses I provided in this study.
+2022-09-14 07:08:52,2022-09-14 07:11:39,IP Address,8,167,False,2022-09-21 07:11:39,R_1JQ3U4xV5WfbC6b,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-21 07:20:48,2022-09-21 07:39:42,IP Address,100,1134,True,2022-09-21 07:39:42,R_tKfV1Akt1rHR841,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",15000,15000,30000,30000,15000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,15000,15000,30000,30000,A,No,Consider it a gift and not pay for the coupon.,B,15000,30000,30000,30000,No,"Strongly disagree
+
+5
+",3,3,No difference,No,Consider it a gift and not pay for the coupon.,15000,I do not know,Less than today,False,I do not know,Very serious,Male,24,Prefer not to answer,18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 07:37:30,2022-09-21 07:53:02,IP Address,100,931,True,2022-09-21 07:53:04,R_Zs0AVJjdH90Ztsd,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,15000,0,30000,15000,2,4,2,Yes,0,15000,0,30000,A,No,Consider it a gift and not pay for the coupon.,B,30000,30000,30000,30000,No,3,4,2,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",5000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Moderately serious,Male,39,Prefer not to answer,22,United Kingdom of Great Britain and Northern Ireland,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 11:28:31,2022-09-21 11:46:48,IP Address,100,1096,True,2022-09-21 11:46:48,R_O8SO0JX7MYlXur7,anonymous,FA,0.800000011920929,I agree to participate in the research,"No difference ",0,0,0,0,20,3,4,3,Yes,0,0,0,0,A,Yes,Consider it a gift and not pay for the coupon.,No difference,0,15,0,0,Yes,3,4,3,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",20,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Prefer not to say,20,Prefer not to answer,14,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 11:59:27,2022-09-21 12:08:11,IP Address,100,524,True,2022-09-21 12:08:11,R_vNC8qoxWDUJxenL,anonymous,FA,0.800000011920929,I agree to participate in the research,B,15000,15000,30000,30000,10000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,0,0,0,No difference,Yes,Consider it a gift and not pay for the coupon.,B,30000,30000,30000,30000,No,3,"Strongly disagree
+
+5
+",2,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",10000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Male,27,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 12:12:17,2022-09-21 12:30:40,IP Address,100,1103,True,2022-09-21 12:30:41,R_1hR7TsEpdZUxZny,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,15000,0,30000,15000,2,4,"Strongly disagree
+
+5
+",Yes,15000,25000,30000,50000,B,Yes,Consider it a gift and not pay for the coupon.,B,30000,60000,30000,90000,Yes,2,4,"Strongly disagree
+
+5
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",15000,"More than 102,000 Tomans",Less than today,False,I do not know,Absolutely serious,Male,28,"6,200,000 - 7,700,000 Tomans",20,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 12:38:46,2022-09-21 13:02:46,IP Address,100,1439,True,2022-09-21 13:02:47,R_3lKYIgbT3yGQoP1,anonymous,FA,1,I agree to participate in the research,A,15000,17000,30000,34000,17000,2,"Strongly disagree
+
+5
+",4,Yes,15000,17000,30000,34000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,30000,35000,30000,32000,Yes,2,"Strongly disagree
+
+5
+",4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15000,"More than 102,000 Tomans",Less than today,False,They collapse,Moderately serious,Male,32,"7,700,000 - 9,300,000 Tomans",21,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 13:05:58,2022-09-21 13:38:32,IP Address,100,1954,True,2022-09-21 13:38:32,R_6fJAOQrZevvIJJT,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,15000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,0,0,0,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",B,30000,30000,30000,30000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,No,"Pay your friend 50,000 Tomans for the coupon.",15000,I do not know,I do not know,True,I do not know,Very serious,Female,35,Prefer not to answer,16,Denmark,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 13:26:04,2022-09-21 13:40:16,IP Address,100,851,True,2022-09-21 13:40:16,R_3D0lDiLYun22qKs,anonymous,FA,1,I agree to participate in the research,"No difference ",0,0,0,0,5,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,0,0,0,0,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,15,30,30,Yes,3,3,3,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Moderately serious,Female,37,Prefer not to answer,۲۴,United Kingdom of Great Britain and Northern Ireland,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 14:23:04,2022-09-21 14:34:39,IP Address,100,694,True,2022-09-21 14:34:40,R_VQdXUJYC1Ogrclj,anonymous,FA,1,I agree to participate in the research,A,15000,15000,30000,30000,10000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,0,15000,0,30000,A,Yes,Consider it a gift and not pay for the coupon.,A,15000,30000,300000,30000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,5000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Very serious,Female,45,Prefer not to answer,۲۰,United Kingdom of Great Britain and Northern Ireland,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 00:33:40,2022-09-15 00:38:48,IP Address,36,308,False,2022-09-22 00:38:49,R_1kYvFzP3SaRrNhd,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,10,12,20,25,25000,2,"Strongly disagree
+
+5
+",2,No,,,,,,,,B,15000,15000,25000,30000,No,,,,,,,,,,,,,,,,,,,
+2022-09-22 00:50:51,2022-09-22 01:04:55,IP Address,100,843,True,2022-09-22 01:04:55,R_9X48a52JDinqzq9,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",15000,15000,30000,30000,15000,4,2,2,Yes,15000,15000,30000,30000,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",B,30000,30000,30000,30000,Yes,3,4,2,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",10000,"More than 102,000 Tomans",Less than today,False,They collapse,Absolutely serious,Male,22,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 00:57:27,2022-09-15 01:11:54,IP Address,47,867,False,2022-09-22 01:11:57,R_21B354pDTUPrFPS,anonymous,FA,1,I agree to participate in the research,A,15000,15000,30000,30000,20000,,,,,15000,15000,30000,30000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",No difference,15000,15000,30000,30000,No,2,"Strongly agree
+
+1
+",3,,,,,,,,,,,,,,,,
+2022-09-15 02:22:49,2022-09-15 02:34:47,IP Address,50,717,False,2022-09-22 02:34:50,R_1DGcmaPEixfBdi3,anonymous,FA,1,I agree to participate in the research,B,,,,,,,,,,15,15,30,30,A,Yes,Consider it a gift and not pay for the coupon.,A,15,15,30,30,Yes,2,"Strongly disagree
+
+5
+",2,B,Yes,Consider it a gift and not pay for the coupon.,15000,,,,,,,,,,,,
+2022-09-15 03:09:39,2022-09-15 03:14:27,IP Address,25,288,False,2022-09-22 03:14:30,R_rewNs6YvaUvCxlD,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,0,15,0,30,B,No,Consider it a gift and not pay for the coupon.,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-15 03:09:16,2022-09-15 03:14:38,IP Address,25,322,False,2022-09-22 03:30:24,R_2ducmBnmxLihWHL,anonymous,FA,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,B,22500,30000,30000,30000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,,,,,,,,,,,,,,,,
+2022-09-22 02:10:56,2022-09-22 03:32:38,IP Address,100,4902,True,2022-09-22 03:32:38,R_21t7boVQee5N1LE,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",15000,20000,30000,35000,10000,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",Yes,15000,20000,30000,40000,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,40000,30000,40000,Yes,"Strongly agree
+
+1
+",3,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",5000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,45,"4,700,000 - 6,200,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 03:42:47,2022-09-15 03:44:13,IP Address,11,86,False,2022-09-22 03:44:19,R_3nitlCBQhufMlpv,anonymous,FA,0.699999988079071,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-15 03:51:19,2022-09-15 03:52:08,IP Address,8,48,False,2022-09-22 04:07:33,R_1MQJLp64lWOAhjv,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-15 04:37:58,2022-09-15 04:39:38,IP Address,17,100,False,2022-09-22 04:52:23,R_2ye0G5EKvlrBIMm,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,
+2022-09-15 04:57:42,2022-09-15 05:06:50,IP Address,50,547,False,2022-09-22 05:06:51,R_1F5tmVKr3PVWWq8,anonymous,FA,1,I agree to participate in the research,"No difference ",,,,,,,,,,15000,30000,30000,60000,A,No,"Pay your friend 50,000 Tomans for the coupon.",A,15000,30000,30000,60000,No,3,"Strongly disagree
+
+5
+",3,B,No,"Pay your friend 50,000 Tomans for the coupon.",10000,,,,,,,,,,,,
+2022-09-15 05:00:46,2022-09-15 05:07:16,IP Address,11,390,False,2022-09-22 05:07:17,R_RsQ7W6ssuRRydBT,anonymous,FA,,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-15 05:07:54,2022-09-15 05:10:23,IP Address,14,149,False,2022-09-22 05:21:46,R_3hih7xC4lnp4pZk,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,No,,,,,,,,,,,,,,
+2022-09-15 05:38:46,2022-09-15 05:40:10,IP Address,11,84,False,2022-09-22 05:43:19,R_268VMVjGHdpTB7H,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-15 07:32:30,2022-09-15 07:37:53,IP Address,36,322,False,2022-09-22 07:37:58,R_1kTAsBVHiDm2XOa,anonymous,FA,1,I agree to participate in the research,A,15000,30000,30000,100000,60000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,,,,,,,,,,,,,,,,,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",20000,,,,,,,,,,,,
+2022-09-15 08:22:42,2022-09-15 08:23:27,IP Address,8,44,False,2022-09-22 08:23:30,R_1jfwR2SuBY0ohDu,anonymous,FA,0.699999988079071,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-15 08:33:51,2022-09-15 08:55:53,IP Address,8,1322,False,2022-09-22 08:55:53,R_2wsmE0dyHc7VN6M,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-22 09:07:38,2022-09-22 09:30:21,IP Address,100,1363,True,2022-09-22 09:30:22,R_zeTmiYcaWNuifvj,anonymous,FA,1,I agree to participate in the research,A,0,15000,0,30000,50000,4,3,2,Yes,0,15000,0,30000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,30000,Yes,4,3,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20000,"More than 102,000 Tomans",Less than today,True,I do not know,Absolutely serious,Female,24,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-15 19:22:16,2022-09-15 19:31:15,IP Address,53,539,False,2022-09-22 19:31:18,R_2fp8TbnoNoJlHFB,anonymous,FA,1,I agree to participate in the research,A,0,0,0,0,20000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,0,0,0,0,A,Yes,Consider it a gift and not pay for the coupon.,No difference,,,,,,,,,A,Yes,Consider it a gift and not pay for the coupon.,10000,,,,,,,,,,,,
+2022-09-16 00:35:46,2022-09-16 00:46:14,IP Address,36,628,False,2022-09-23 00:46:15,R_tFlEXCNLpJhND57,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15,15,30,30,12,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,15,15,30,30,A,Yes,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 01:31:29,2022-09-16 01:40:30,IP Address,33,541,False,2022-09-23 01:40:31,R_3iK04iUZ3kB7CRr,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,0,15,0,30,A,Yes,Consider it a gift and not pay for the coupon.,A,0,30,0,30,No,,,,,,,,,,,,,,,,,,,
+2022-09-16 02:04:24,2022-09-16 02:05:20,IP Address,11,55,False,2022-09-23 02:05:22,R_2eXZC0boXhK79b0,anonymous,FA,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 02:12:34,2022-09-16 02:13:28,IP Address,8,54,False,2022-09-23 02:13:38,R_25LBmDbWRWiKLal,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 01:21:30,2022-09-16 02:21:00,IP Address,39,3569,False,2022-09-23 02:21:01,R_1DG21ZDzLkJ7ASy,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,0,0,0,30000,"Strongly disagree
+
+5
+",3,2,No,,,,,,,,B,,,,,,,,,A,No,Consider it a gift and not pay for the coupon.,15000,,,,,,,,,,,,
+2022-09-16 03:51:59,2022-09-16 03:52:26,IP Address,11,26,False,2022-09-23 03:52:27,R_3kNxMHflbww2lDE,anonymous,FA,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 04:09:32,2022-09-16 04:12:18,IP Address,67,165,False,2022-09-23 04:14:23,R_WjK2CR5OAXCrkRP,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,22,22,22,22,1000,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,22,22,22,22,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",A,22,33,22,33,Yes,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",A,Yes,"Pay your friend 50,000 Tomans for the coupon.",45,,,,,,,,,,,,
+2022-09-16 04:55:16,2022-09-16 05:04:30,IP Address,17,553,False,2022-09-23 05:04:39,R_3HYO2LlnjJh8Mhz,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,,,,
+2022-09-16 09:36:11,2022-09-16 09:38:29,IP Address,17,138,False,2022-09-23 09:38:31,R_AnfKbyYJmAa5vgJ,anonymous,FA,0.699999988079071,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",,,,,,,,,,,,,
+2022-09-23 09:23:58,2022-09-23 09:53:24,IP Address,100,1766,True,2022-09-23 09:53:25,R_BthUUKnPlXYIUAF,anonymous,FA,1,I agree to participate in the research,A,0,15,0,30,30,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,15,15,15,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,30,30,30,No,4,4,"Strongly agree
+
+1
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",25,"More than 102,000 Tomans",Less than today,False,They collapse,Absolutely serious,Male,34,Prefer not to answer,16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 10:14:49,2022-09-16 10:29:52,IP Address,50,902,False,2022-09-23 10:29:55,R_3hGQ2kdKnUXxYR1,anonymous,FA,1,I agree to participate in the research,B,15,100,30,200,20,2,4,"Strongly agree
+
+1
+",Yes,,,,,,,,B,15,60,30,80,Yes,2,2,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,10,,,,,,,,,,,,
+2022-09-16 10:42:37,2022-09-16 10:44:38,IP Address,14,120,False,2022-09-23 10:44:39,R_238G1nO0sZhiKZb,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,,,,,,,,,,,,,,
+2022-09-16 04:12:46,2022-09-16 13:08:58,IP Address,44,32171,False,2022-09-23 13:08:59,R_3gZZtlkPtwEtVoQ,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,99,99,99,99,99,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",Yes,88,88,88,88,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,B,No,,,,,,,,,,,,,,
+2022-09-16 13:33:10,2022-09-16 13:34:33,IP Address,11,83,False,2022-09-23 13:34:42,R_qJAdEnerprgVmmZ,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,No difference,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 13:59:39,2022-09-16 14:00:04,Spam,3,24,False,2022-09-23 14:00:11,R_1mUghv8avvARZRm,anonymous,FA,0.6000000238418579,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 13:44:52,2022-09-16 14:12:44,IP Address,11,1671,False,2022-09-23 14:12:48,R_2trM6HGbuNJaHBB,anonymous,FA,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 15:52:51,2022-09-16 15:54:23,IP Address,6,92,False,2022-09-23 15:54:29,R_3JLsqjPJxoYczjP,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 17:06:19,2022-09-16 17:06:46,IP Address,3,26,False,2022-09-23 17:06:50,R_2UYg4oSTGXPOJeW,anonymous,FA,,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-16 17:16:52,2022-09-16 17:24:46,IP Address,44,474,False,2022-09-23 17:24:49,R_7aIoblGGjsIfC5H,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,15000,15000,30000,30000,B,Yes,,B,30000,30000,30000,30000,Yes,4,2,4,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",0,,,,,,,,,,,,
+2022-09-17 01:05:56,2022-09-17 01:31:08,IP Address,25,1511,False,2022-09-24 01:31:16,R_2B5TPrRI5F2dX0o,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,15000,15000,30000,30000,A,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-17 01:29:47,2022-09-17 01:33:39,IP Address,19,231,False,2022-09-24 01:33:41,R_1obwe0Gp2PaiV7z,anonymous,EN,0.8999999761581421,I agree to participate in the research,"No difference ",15000,15000,15000,15000,500000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-17 04:12:56,2022-09-17 04:15:03,IP Address,11,126,False,2022-09-24 04:18:56,R_3ebmayMhe4mKmcb,anonymous,FA,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-17 04:23:27,2022-09-17 04:32:26,IP Address,47,539,False,2022-09-24 04:32:28,R_3JaBJSbN8JH8zsU,anonymous,EN,0.8999999761581421,I agree to participate in the research,A,15000,30000,30000,35000,20000,,,,,15000,30000,30000,35000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,15000,30000,30000,30000,No,"Strongly disagree
+
+5
+",3,"Strongly agree
+
+1
+",,,,,,,,,,,,,,,,
+2022-09-24 06:53:28,2022-09-24 07:06:52,IP Address,100,803,True,2022-09-24 07:06:52,R_3kh3S1EMXgN0ABj,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,50000,0,80000,20000,2,4,"Strongly disagree
+
+5
+",Yes,0,30000,0,80000,A,Yes,Consider it a gift and not pay for the coupon.,A,0,30000,0,80000,Yes,4,2,"Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,20000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Very serious,Male,21,"3,100,000 - 4,700,000 Tomans",15,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-17 08:03:44,2022-09-17 08:05:54,IP Address,11,130,False,2022-09-24 08:05:59,R_29giSCUjMxtygBI,anonymous,FA,1,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-24 08:51:46,2022-09-24 09:03:04,IP Address,100,677,True,2022-09-24 09:03:05,R_suToCK8pdEJMFQR,anonymous,FA,1,I agree to participate in the research,"No difference ",0,15,0,30,15000,2,4,"Strongly agree
+
+1
+",No,0,15000,0,30000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,0,30000,0,30000,No,2,4,"Strongly agree
+
+1
+",No difference,No,"Pay your friend 50,000 Tomans for the coupon.",10000,I do not know,I do not know,I do not know,I do not know,Moderately serious,Male,23,"Less than 3,100,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-18 02:56:42,2022-09-18 02:57:01,IP Address,8,19,False,2022-09-25 02:57:04,R_27fXxFB6e9rdI8g,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 04:10:15,2022-09-18 04:24:26,IP Address,58,850,False,2022-09-25 04:24:31,R_3qNVmqim1ACHdaq,anonymous,FA,1,I agree to participate in the research,"No difference ",0,15000,0,30000,5000,,,,,0,15000,0,30000,No difference,Yes,Consider it a gift and not pay for the coupon.,No difference,30000,30000,30000,30000,Yes,3,2,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5000,,,,,,,,,,,,
+2022-09-18 04:37:58,2022-09-18 04:38:40,IP Address,6,41,False,2022-09-25 04:38:42,R_27rjF1H8G1zfmtk,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-18 13:07:50,2022-09-18 13:11:21,IP Address,14,210,False,2022-09-25 13:11:23,R_3PjH6uehckrslfT,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,Yes,,,,,,,,,,,,,,
+2022-09-18 16:25:14,2022-09-18 16:25:51,IP Address,8,36,False,2022-09-25 16:25:53,R_UWLsSnF5fVUza3n,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-25 16:57:13,2022-09-25 17:12:51,IP Address,100,937,True,2022-09-25 17:12:51,R_3nAH6Md6NhLqyaA,anonymous,FA,0.699999988079071,I agree to participate in the research,A,15000,15000,30000,30000,10000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,15000,15000,30000,30000,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,15000,15000,30000,30000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",10000,I do not know,I do not know,I do not know,I do not know,Very serious,Female,20,"More than 9,300,000 Tomans",12,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-19 00:50:02,2022-09-19 00:51:02,IP Address,8,60,False,2022-09-26 00:51:10,R_1jrpclpEzXgmFe3,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 01:58:07,2022-09-19 01:59:51,IP Address,11,103,False,2022-09-26 01:59:56,R_3mh4Sk7maHoMbzv,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,No difference,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-19 05:49:51,2022-09-19 07:41:24,IP Address,17,6692,False,2022-09-26 07:41:25,R_1CjAohHwDeaWyVX,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",,,,,,,,,,,,,
+2022-09-19 07:42:40,2022-09-19 07:43:52,IP Address,14,72,False,2022-09-26 07:44:00,R_1q8SbvudPxzEsRr,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,۱۲۳۳۳,۱۲۳۴۴۴,۱۲۲۳۳,۱۲۳۳۴,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 15:36:03,2022-09-26 15:57:03,IP Address,100,1260,True,2022-09-26 15:57:04,R_UtBQHwzNqdb81jj,anonymous,FA,1,I agree to participate in the research,A,0,15,0,30,20,3,4,3,No,0,15,0,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30,30,30,30,No,4,4,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,"More than 102,000 Tomans",Less than today,True,They collapse,Very serious,Male,24,"More than 9,300,000 Tomans",15,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-20 02:14:08,2022-09-20 04:22:53,IP Address,50,7724,False,2022-09-27 04:22:55,R_RUixOyacVdkBnH3,anonymous,FA,1,I agree to participate in the research,A,7500,15000,7500,15000,10000,4,3,"Strongly agree
+
+1
+",No,,,,,,,,B,30000,30000,30000,30000,No,4,2,2,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10000,,,,,,,,,,,,
+2022-09-21 03:01:02,2022-09-27 12:05:54,IP Address,100,551091,True,2022-09-27 12:05:56,R_2S7Vw4bf7z4qMLg,anonymous,FA,1,I agree to participate in the research,A,15,30,25,35,35,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,10,15,20,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,15,30,30,No,2,3,2,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",30,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Very serious,Female,33,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-27 12:17:45,2022-09-27 12:25:56,IP Address,100,491,True,2022-09-27 12:25:56,R_1rogppWABlpkzsp,anonymous,FA,1,I agree to participate in the research,B,15,15,30,35,30,"Strongly agree
+
+1
+",4,4,Yes,15,15,30,30,No difference,No,Consider it a gift and not pay for the coupon.,B,15,35,30,35,No,3,2,2,B,No,"Pay your friend 50,000 Tomans for the coupon.",35,"Exactly 102,000 Tomans",Less than today,False,I do not know,Very serious,Female,18,"More than 9,300,000 Tomans",12,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 03:39:30,2022-09-21 03:48:42,IP Address,17,551,False,2022-09-28 04:08:51,R_7NGYQoAMX2VW84F,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,30,30,30,30,,,,,,,,,,,,,,,,,,,,
+2022-09-28 04:47:17,2022-09-28 05:27:29,IP Address,100,2412,True,2022-09-28 05:27:30,R_1rdj7abkJ2yd6l7,anonymous,FA,1,I agree to participate in the research,A,0,10000,0,20000,20000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,10000,15000,15000,20000,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,30000,Yes,3,4,"Strongly agree
+
+1
+",B,No,"Pay your friend 50,000 Tomans for the coupon.",15000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Male,23,Prefer not to answer,16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-21 06:06:03,2022-09-21 06:07:06,IP Address,3,63,False,2022-09-28 06:07:12,R_3iqF6k2ATlxpW0h,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-21 06:05:55,2022-09-21 06:09:06,IP Address,11,190,False,2022-09-28 06:09:09,R_3h48Cu3C6uIM4fP,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-21 06:56:35,2022-09-21 07:12:50,IP Address,50,974,False,2022-09-28 07:12:58,R_1od69F64N72zPC9,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",30,30,45,45,10,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,,,,,,,,No difference,30,30,45,45,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10,,,,,,,,,,,,
+2022-09-21 06:48:14,2022-09-21 08:13:35,IP Address,61,5121,False,2022-09-28 08:13:38,R_30oeD2fWEdfPsou,anonymous,FA,1,I agree to participate in the research,"No difference ",15,15,30,30,50,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly agree
+
+1
+",,30,30,30,30,No difference,Yes,Consider it a gift and not pay for the coupon.,B,30,30,30,30,Yes,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No difference,Yes,Consider it a gift and not pay for the coupon.,50,,,,,,,,,,,,
+2022-09-21 07:38:59,2022-09-21 08:32:51,IP Address,22,3231,False,2022-09-28 08:32:52,R_2UhLHMI8tDufw6F,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,No difference,,,,,,,,,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",10000,,,,,,,,,,,,
+2022-09-21 12:10:12,2022-09-21 12:17:44,IP Address,31,452,False,2022-09-28 12:17:46,R_0BV2MYfB5JEElIB,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,A,15,15,30,30,Yes,4,3,3,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",,,,,,,,,,,,,
+2022-09-21 13:01:28,2022-09-21 13:03:01,IP Address,11,93,False,2022-09-28 13:03:05,R_1P1xG8Ef5yhhKT4,anonymous,FA,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-21 15:29:45,2022-09-21 19:24:24,IP Address,8,14079,False,2022-09-28 19:24:25,R_3HoicL9KcUhrbY9,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-28 20:55:30,2022-09-28 21:27:59,IP Address,100,1949,True,2022-09-28 21:28:00,R_3CPji4z6GcARklw,anonymous,FA,1,I agree to participate in the research,A,15000,15000,30000,30000,20000,4,"Strongly agree
+
+1
+",2,No,15000,15000,30000,30000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,15000,30000,30000,30000,No,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",15000,"More than 102,000 Tomans",Less than today,False,They collapse,Moderately serious,Male,53,"More than 9,300,000 Tomans",17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-28 22:15:03,2022-09-28 22:28:51,IP Address,100,828,True,2022-09-28 22:28:52,R_yEJFBOQ6CIhGg25,anonymous,FA,1,I agree to participate in the research,B,15000,15000,15000,25000,12000,3,3,3,No,0,15000,15000,25000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,25000,15000,30000,No,3,2,3,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",12000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Very serious,Male,47,Prefer not to answer,16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-28 22:39:19,2022-09-28 22:54:04,IP Address,100,885,True,2022-09-28 22:54:05,R_1d3O3qLVm8rkGdv,anonymous,FA,,I agree to participate in the research,A,15000,15000,30000,30000,15000,4,3,"Strongly agree
+
+1
+",Yes,15000,15000,30000,30000,A,No,Consider it a gift and not pay for the coupon.,B,15000,15000,30000,30000,Yes,"Strongly agree
+
+1
+",3,3,B,No,Consider it a gift and not pay for the coupon.,15000,"More than 102,000 Tomans",Less than today,False,They collapse,Very serious,Male,50,"More than 9,300,000 Tomans",27,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-22 01:37:21,2022-09-22 01:38:55,IP Address,14,94,False,2022-09-29 01:47:48,R_XsJzcuv9alSuKFb,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,B,No,,,,,,,,,,,,,,
+2022-09-22 05:10:03,2022-09-22 05:33:10,IP Address,50,1387,False,2022-09-29 05:33:13,R_1l5yOUZFjIgPxJh,anonymous,FA,1,I agree to participate in the research,"No difference ",۰,۰,۰,۰,۰,3,"Strongly agree
+
+1
+",3,Yes,۰,۰,۰,۰,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",No difference,۰,۰,۰,۰,Yes,,,,,,,,,,,,,,,,,,,
+2022-09-29 06:31:02,2022-09-29 06:41:28,IP Address,100,626,True,2022-09-29 06:41:29,R_2AMTjwtC7ANAP8G,anonymous,FA,1,I agree to participate in the research,"No difference ",15,15,30,35,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,15,15,30,35,No difference,No,Consider it a gift and not pay for the coupon.,No difference,25,35,30,35,No,2,4,4,No difference,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20,I do not know,Less than today,True,I do not know,Moderately serious,Female,25,"Less than 3,100,000 Tomans",19,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-29 07:41:38,2022-09-29 07:56:07,IP Address,100,869,True,2022-09-29 07:56:07,R_2wGIvivj5oiA8PT,anonymous,FA,1,I agree to participate in the research,B,00000,15000,00000,30000,20000,4,2,3,Yes,00000,15000,00000,30000,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,50000,30000,50000,Yes,4,2,3,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",20000,"More than 102,000 Tomans",Less than today,False,I do not know,Absolutely serious,Male,24,"4,700,000 - 6,200,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-29 05:41:38,2022-09-29 08:00:07,IP Address,100,8308,True,2022-09-29 08:00:07,R_2fa0gnYEcveqKWX,anonymous,FA,1,I agree to participate in the research,A,15000,30000,30000,50000,10000,2,4,2,No,15000,20000,20000,40000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,35000,30000,35000,Yes,2,4,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10000,"More than 102,000 Tomans",Less than today,False,I do not know,Very serious,Male,34,"More than 9,300,000 Tomans",20,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-29 08:01:54,2022-09-29 08:19:51,IP Address,100,1076,True,2022-09-29 08:19:51,R_2Epll1BHhYRn2FL,anonymous,FA,1,I agree to participate in the research,B,0,15000,0,30000,30000,2,4,4,No,0,15000,0,30000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",A,30000,30000,30000,30000,No,"Strongly disagree
+
+5
+",2,4,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",15000,"More than 102,000 Tomans",Less than today,False,They collapse,Absolutely serious,Male,49,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-29 07:49:23,2022-09-29 08:36:15,IP Address,100,2811,True,2022-09-29 08:36:15,R_3h416d6lGRqOcjm,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15000,25000,30000,40000,50000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,15000,25000,30000,40000,B,Yes,Consider it a gift and not pay for the coupon.,B,30000,30000,30000,40000,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,Consider it a gift and not pay for the coupon.,40000,"More than 102,000 Tomans",Less than today,False,They collapse,Very serious,Male,37,"4,700,000 - 6,200,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-22 09:44:35,2022-09-22 09:52:21,IP Address,31,465,False,2022-09-29 09:52:25,R_3J9jIn4J5Gx9bDw,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,5000,15000,20000,30000,60000,4,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,5000,20000,20000,30000,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 10:15:20,2022-09-29 10:30:54,IP Address,100,933,True,2022-09-29 10:30:54,R_dnXgXmIiPh6wJZ7,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15000,25000,30000,50000,25000,2,4,2,Yes,۱۵۰۰۰,۲۵۰۰۰,۳۰۰۰۰,۵۰۰۰۰,A,Yes,Consider it a gift and not pay for the coupon.,A,30000,40000,30000,50000,Yes,4,3,2,B,Yes,Consider it a gift and not pay for the coupon.,15000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Moderately serious,Male,23,"3,100,000 - 4,700,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-29 14:50:35,2022-09-29 15:08:18,IP Address,100,1063,True,2022-09-29 15:08:20,R_5z2tszu3sqO9QYh,anonymous,FA,1,I agree to participate in the research,B,0,0,0,0,0,2,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,۰,۰,۰,۰,A,Yes,Consider it a gift and not pay for the coupon.,B,15000,15000,30000,30000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,Yes,Consider it a gift and not pay for the coupon.,0,"More than 102,000 Tomans",Less than today,False,They collapse,Moderately serious,Male,59,"More than 9,300,000 Tomans",19,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-29 13:00:30,2022-09-29 15:14:12,IP Address,100,8022,True,2022-09-29 15:14:13,R_2YWzp5jSlZepNJU,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,15000,0,15000,20000,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",4,Yes,0,15000,0,15000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,0,15000,0,15000,Yes,"Strongly disagree
+
+5
+",2,"Strongly disagree
+
+5
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",20000,"More than 102,000 Tomans",Less than today,True,They collapse,Very serious,Male,60,"More than 9,300,000 Tomans",20,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-28 21:46:40,2022-09-29 23:51:10,IP Address,100,93869,True,2022-09-29 23:51:10,R_3GqVEQDvCXF9DD7,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,15000,0,30000,200000,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,15000,0,30000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,0,30000,0,30000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",50000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Moderately serious,Male,۴۶,"More than 9,300,000 Tomans",۱۸,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-16 02:04:59,2022-09-23 02:05:03,IP Address,39,604803,False,2022-09-30 02:05:05,R_3lDGpTwI83vU4ZK,anonymous,FA,1,I agree to participate in the research,"No difference ",22,22,22,22,22,3,3,3,No,22,22,22,22,B,No,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 06:22:45,2022-09-30 06:42:07,IP Address,100,1161,True,2022-09-30 06:42:07,R_3iwMouybvyVUQYM,anonymous,FA,1,I agree to participate in the research,"No difference ",0,15000,0,30000,40000,"Strongly agree
+
+1
+",4,2,No,0,15000,0,30000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,40000,No,3,2,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",15000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,24,"More than 9,300,000 Tomans",18,Iran,Turkish,I allow you to use the responses I provided in this study.
+2022-09-30 08:36:30,2022-09-30 09:05:37,IP Address,100,1747,True,2022-09-30 09:05:37,R_3sceKn7s9GhZ9jU,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,15000,0,30000,20000,4,4,"Strongly disagree
+
+5
+",No,0,15000,0,30000,A,No,"Pay your friend 50,000 Tomans for the coupon.",B,0,30000,0,30000,No,4,2,"Strongly disagree
+
+5
+",No difference,No,"Pay your friend 50,000 Tomans for the coupon.",20000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Moderately serious,Male,43,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-30 18:40:41,2022-09-30 18:52:49,IP Address,100,728,True,2022-09-30 18:52:49,R_1jDRahiWV7b43kh,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,60000,0,90000,50000,3,4,2,No,0,60000,0,90000,A,Yes,Consider it a gift and not pay for the coupon.,B,1,60000,1,90000,No,3,"Strongly disagree
+
+5
+",2,B,Yes,Consider it a gift and not pay for the coupon.,20000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Male,20,"More than 9,300,000 Tomans",15,Iran,Other,I allow you to use the responses I provided in this study.
+2022-09-30 23:11:09,2022-09-30 23:47:54,IP Address,100,2205,True,2022-09-30 23:47:55,R_1kTQP8vTjiTxOxi,anonymous,FA,1,I agree to participate in the research,A,15000,15000,30000,30000,10000,3,3,3,Yes,15000,15000,30000,30000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,30000,Yes,3,3,3,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",10000,"More than 102,000 Tomans",Less than today,False,They collapse,Moderately serious,Male,42,"3,100,000 - 4,700,000 Tomans",16,Iran,Persian,"I do NOT allow you to use the responses I provided in this study, and I want them to be deleted."
+2022-10-01 02:15:16,2022-10-01 02:34:42,IP Address,100,1166,True,2022-10-01 02:34:43,R_3jfJ4tvP1qOqiT7,anonymous,FA,1,I agree to participate in the research,A,15000,15000,30000,30000,20000,2,"Strongly disagree
+
+5
+",2,Yes,15000,15000,30000,30000,A,No,Consider it a gift and not pay for the coupon.,B,20000,20000,30000,30000,Yes,2,4,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Male,22,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-24 06:43:07,2022-09-24 06:43:30,IP Address,3,22,False,2022-10-01 06:43:35,R_a5ULCbschWxB8XL,anonymous,FA,0.10000000149011612,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-24 09:32:49,2022-09-24 09:35:00,IP Address,11,130,False,2022-10-01 09:35:04,R_1GVOsHmb23pLhAV,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-24 15:24:35,2022-09-24 15:25:20,IP Address,3,45,False,2022-10-01 15:25:23,R_cOe17Ni8Ik8DnTb,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-01 20:49:22,2022-10-01 21:07:31,IP Address,100,1089,True,2022-10-01 21:07:33,R_1Nq3DjJ67n250IP,anonymous,FA,1,I agree to participate in the research,B,15000,15000,30000,30000,50000,3,3,"Strongly agree
+
+1
+",No,15000,15000,30000,30000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,15000,15000,30000,30000,No,3,3,"Strongly agree
+
+1
+",A,Yes,"Pay your friend 50,000 Tomans for the coupon.",50000,"More than 102,000 Tomans",Less than today,False,I do not know,Very serious,Male,53,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-26 01:46:56,2022-09-26 01:47:23,IP Address,8,26,False,2022-10-03 02:05:07,R_1r7WBp3yx7xVOAV,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-26 05:23:42,2022-09-26 05:24:22,IP Address,8,39,False,2022-10-03 05:24:25,R_271XKM3btUvQx1a,anonymous,EN,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-03 11:25:05,2022-10-03 12:01:01,IP Address,100,2156,True,2022-10-03 12:01:01,R_12orYEOvnMqDfgN,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15000,30000,30000,60000,30000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,15000,30000,30000,60000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,30000,60000,30000,60000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10000,"More than 102,000 Tomans",I do not know,I do not know,They collapse,Absolutely serious,Male,56,"More than 9,300,000 Tomans",17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-09-28 22:05:28,2022-09-28 22:17:18,IP Address,53,709,False,2022-10-05 22:17:19,R_egs6UO8wsoOVAaJ,anonymous,FA,1,I agree to participate in the research,B,0,15000,0,30000,50000,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,15000,0,30000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",A,,,,,,,,,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",50000,,,,,,,,,,,,
+2022-09-28 22:22:20,2022-09-28 22:23:33,IP Address,3,73,False,2022-10-05 22:23:33,R_22tg0umAgv5jTkv,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 01:18:56,2022-09-29 01:22:32,IP Address,11,215,False,2022-10-06 01:39:26,R_3RaOJZDQPKAtaDb,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 03:24:39,2022-09-29 03:25:13,IP Address,6,33,False,2022-10-06 03:25:21,R_a2FSBc3jNqKQQc9,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 03:25:27,2022-09-29 03:26:32,Spam,3,65,False,2022-10-06 03:26:34,R_1pYFIm8MYdEw7DI,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 03:23:37,2022-09-29 03:24:23,IP Address,8,46,False,2022-10-06 03:41:34,R_z7IJumRLXIMjuIV,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 03:34:58,2022-09-29 03:35:55,IP Address,3,56,False,2022-10-06 03:50:20,R_1r6zjkFkNlYo3MB,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 04:30:15,2022-09-29 04:37:21,IP Address,19,426,False,2022-10-06 04:40:12,R_21nbNFWc93Im1GU,anonymous,FA,1,I agree to participate in the research,A,0,15000,0,30000,100000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 04:42:25,2022-09-29 04:43:33,IP Address,11,68,False,2022-10-06 04:43:38,R_0P17z77SNz6s0FP,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 04:22:51,2022-09-29 04:47:39,IP Address,81,1488,False,2022-10-06 04:47:41,R_3D2x2cKJJJuZOyI,anonymous,FA,1,I agree to participate in the research,B,15000,15000,30000,30000,100000,3,"Strongly agree
+
+1
+",3,No,15000,15000,15000,30000,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,30000,No,3,2,"Strongly disagree
+
+5
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",50000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Absolutely serious,,,,,,,
+2022-09-29 05:30:46,2022-09-29 05:32:18,IP Address,11,91,False,2022-10-06 05:32:22,R_28ODJQtxGp9bcrY,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-29 05:32:42,2022-09-29 05:38:50,IP Address,36,368,False,2022-10-06 05:38:55,R_2TsXAMtLO3ECJxh,anonymous,FA,1,I agree to participate in the research,"No difference ",150000,15000,30000,30000,10000,3,2,3,,,,,,,,,B,30000,30000,30000,30000,No,3,"Strongly disagree
+
+5
+",3,,,,,,,,,,,,,,,,
+2022-09-29 05:46:25,2022-09-29 06:06:37,IP Address,61,1211,False,2022-10-06 06:06:38,R_1EXWzGDtwCP3ndn,anonymous,EN,0.699999988079071,I agree to participate in the research,A,0,15000,0,30000,60000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,0,15000,0,30000,B,Yes,Consider it a gift and not pay for the coupon.,A,0,15000,0,30000,Yes,,,,B,Yes,Consider it a gift and not pay for the coupon.,60000,,,,,,,,,,,,
+2022-09-29 21:11:58,2022-09-29 21:23:12,IP Address,31,673,False,2022-10-06 21:23:14,R_BWVq5j4wNIq7kxb,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,0,15000,0,30000,A,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,,,,,,,,,,,,,
+2022-09-30 03:44:27,2022-09-30 04:07:39,IP Address,67,1392,False,2022-10-07 04:07:41,R_1dFSF0YjXGE8Rtt,anonymous,FA,1,I agree to participate in the research,B,0,15000,0,30000,40000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,15000,0,30000,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,30000,30000,60000,No,4,"Strongly disagree
+
+5
+",4,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",20000,,,,,,,,,,,,
+2022-09-30 06:37:22,2022-09-30 06:37:40,IP Address,3,18,False,2022-10-07 06:37:49,R_2R3L1NOL13BUrGa,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-09-30 07:21:15,2022-09-30 08:54:03,IP Address,19,5567,False,2022-10-07 08:54:06,R_Xv2ytrXIskWrG6t,anonymous,FA,1,I agree to participate in the research,A,20,30,40,60,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-08 13:13:10,2022-10-08 13:31:41,IP Address,100,1111,True,2022-10-08 13:31:41,R_2ziRAd1RBna9xH9,anonymous,FA,0.699999988079071,I agree to participate in the research,A,15,15,30,30,15,4,4,2,Yes,15,15,30,30,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",A,30,30,30,30,No,4,2,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Absolutely serious,Male,25,"6,200,000 - 7,700,000 Tomans",16,Iran,Other,I allow you to use the responses I provided in this study.
+2022-10-08 13:22:59,2022-10-08 13:43:14,IP Address,100,1214,True,2022-10-08 13:43:14,R_2xKkywGMjogTtvF,anonymous,FA,0.800000011920929,I agree to participate in the research,A,0,30000,0,50000,20000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,0,30000,0,50000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,40000,30000,50000,No,3,"Strongly disagree
+
+5
+",4,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",15000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Male,20,"More than 9,300,000 Tomans",14,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-08 13:30:33,2022-10-08 13:43:42,IP Address,100,788,True,2022-10-08 13:43:43,R_3ItcYOSsgdQvWc9,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,0,0,0,0,5000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,0,0,0,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,15,15,30,30,Yes,"Strongly agree
+
+1
+",4,2,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",5000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Moderately serious,Non-binary / third gender,20,Prefer not to answer,12,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-08 13:54:03,2022-10-08 14:01:20,IP Address,100,437,True,2022-10-08 14:01:22,R_UF6X6PO4xBBMlUJ,anonymous,FA,0.800000011920929,I agree to participate in the research,B,15,50,30,80,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,Yes,15,50,30,80,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,50,50,100,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",8,"Exactly 102,000 Tomans",Exactly the same as today,True,They remain unchanged,Very serious,Male,22,"4,700,000 - 6,200,000 Tomans",14,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-08 14:01:59,2022-10-08 14:18:25,IP Address,100,985,True,2022-10-08 14:18:26,R_zTFeTWuubsk8hkB,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,10000,20000,20000,40000,30000,4,2,3,No,10000,20000,20000,40000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,30000,20000,40000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",20000,"More than 102,000 Tomans",Less than today,False,They collapse,Moderately serious,Male,19,"More than 9,300,000 Tomans",13,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-10 03:57:41,2022-10-10 04:12:04,IP Address,100,863,True,2022-10-10 04:12:05,R_1N8nzwbgUFxx41X,anonymous,FA,1,I agree to participate in the research,A,15,15,30,30,5000,4,3,3,Yes,15,15,30,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,15,30,30,Yes,3,3,3,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",5000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Very serious,Male,28,"More than 9,300,000 Tomans",20,Italy,Persian,I allow you to use the responses I provided in this study.
+2022-10-10 03:57:12,2022-10-10 04:14:47,IP Address,100,1054,True,2022-10-10 04:14:48,R_6z1o8qLRgp7ncSB,anonymous,FA,1,I agree to participate in the research,"No difference ",0,0,0,0,50000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No,0,0,0,0,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,15000,0,30000,No,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20000,"More than 102,000 Tomans",Less than today,True,I do not know,Absolutely serious,Female,27,"More than 9,300,000 Tomans",19,Italy,Persian,I allow you to use the responses I provided in this study.
+2022-10-10 03:54:31,2022-10-10 04:15:16,IP Address,100,1245,True,2022-10-10 04:15:17,R_25RZWI4Jsc3fh4q,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,0,15,0,30,5000,2,4,4,Yes,0,15,0,30,No difference,Yes,Consider it a gift and not pay for the coupon.,B,30,30,30,30,Yes,2,4,4,B,Yes,Consider it a gift and not pay for the coupon.,3000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Male,33,"3,100,000 - 4,700,000 Tomans",24,Italy,Persian,I allow you to use the responses I provided in this study.
+2022-10-10 04:12:06,2022-10-10 04:35:06,IP Address,100,1380,True,2022-10-10 04:35:07,R_3Ic3aEGVqbsaOfo,anonymous,FA,1,I agree to participate in the research,A,14000,14000,29000,29000,150000,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",Yes,0,0,0,0,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,14000,14000,29000,29000,No,"Strongly disagree
+
+5
+",2,"Strongly agree
+
+1
+",No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",150000,"More than 102,000 Tomans",Less than today,False,They collapse,Absolutely serious,Prefer not to say,32,"More than 9,300,000 Tomans",26,Italy,Persian,I allow you to use the responses I provided in this study.
+2022-10-10 08:25:44,2022-10-10 08:44:26,IP Address,100,1122,True,2022-10-10 08:44:27,R_30tWLnPhiwhWHBj,anonymous,FA,1,I agree to participate in the research,B,0,15,0,30,5,3,3,2,Yes,0,15,0,30,A,Yes,Consider it a gift and not pay for the coupon.,B,30,30,30,30,Yes,3,3,2,B,No,Consider it a gift and not pay for the coupon.,3,"Less than 102,000 Tomans",I do not know,I do not know,I do not know,Very serious,Female,32,Prefer not to answer,25,Italy,Persian,I allow you to use the responses I provided in this study.
+2022-09-27 13:39:33,2022-10-03 09:18:01,IP Address,25,502707,False,2022-10-10 09:18:03,R_e3VYuSNLWEVBwHL,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,10,15,15,25,A,Yes,Consider it a gift and not pay for the coupon.,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-03 16:58:58,2022-10-03 16:59:51,IP Address,8,52,False,2022-10-10 16:59:56,R_2ZIcIe6SVyRHqUu,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-11 07:52:12,2022-10-11 08:14:01,IP Address,100,1308,True,2022-10-11 08:14:01,R_2CTU19McPEQ8rAh,anonymous,FA,1,I agree to participate in the research,A,15000,100000,30000,300000,20000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,15000,10000,30000,300000,B,Yes,Consider it a gift and not pay for the coupon.,B,30000,300000,30000,300000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",A,Yes,Consider it a gift and not pay for the coupon.,20000,"More than 102,000 Tomans",Less than today,False,They collapse,Absolutely serious,Male,23,"4,700,000 - 6,200,000 Tomans",17,Iran,Turkish,I allow you to use the responses I provided in this study.
+2022-10-12 13:34:22,2022-10-12 13:46:35,IP Address,100,732,True,2022-10-12 13:46:37,R_wYNBHU7YDqh4bVn,anonymous,FA,1,I agree to participate in the research,"No difference ",0,15,0,30,50,2,4,3,Yes,0,15,0,30,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,30,30,30,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20,I do not know,I do not know,False,I do not know,Slightly serious,Female,19,"7,700,000 - 9,300,000 Tomans",13,Iran,Turkish,I allow you to use the responses I provided in this study.
+2022-10-12 14:01:30,2022-10-12 14:14:27,IP Address,100,777,True,2022-10-12 14:14:27,R_2ON2wTUfQj3Pa2K,anonymous,FA,1,I agree to participate in the research,B,0,0,0,0,12000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",2,No,0,15000,0,30000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",A,30000,30000,30000,30000,No,2,"Strongly disagree
+
+5
+",2,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",8000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Non-binary / third gender,19,"Less than 3,100,000 Tomans",13,Iran,Other,I allow you to use the responses I provided in this study.
+2022-10-12 14:27:18,2022-10-12 14:35:38,IP Address,100,500,True,2022-10-12 14:35:39,R_2tFjO0wpMJE0Iqd,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15,30,15,30,30,"Strongly agree
+
+1
+",4,4,Yes,0,15,20,35,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,30000,30000,35000,No,2,2,2,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",30,"Less than 102,000 Tomans",Less than today,False,They collapse,Absolutely serious,Female,35,"7,700,000 - 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-13 10:46:48,2022-10-13 11:06:18,IP Address,100,1169,True,2022-10-13 11:06:18,R_3Pz2GiO6zLDYqH6,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15,25,30,40,18,2,"Strongly disagree
+
+5
+",3,Yes,8,20,15,35,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30,40,30,45,Yes,3,4,"Strongly agree
+
+1
+",B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",12,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,19,Prefer not to answer,13,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-14 05:10:40,2022-10-14 05:26:50,IP Address,100,969,True,2022-10-14 05:26:51,R_SQdt1hPFXMYgJKF,anonymous,FA,1,I agree to participate in the research,A,15000,15000,15000,30000,15000,"Strongly agree
+
+1
+",4,2,No,0,15000,0,30000,A,Yes,Consider it a gift and not pay for the coupon.,B,15000,30000,15000,30000,No,3,4,"Strongly agree
+
+1
+",B,Yes,Consider it a gift and not pay for the coupon.,10000,I do not know,Less than today,I do not know,I do not know,Moderately serious,Male,20,"More than 9,300,000 Tomans",14,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-14 05:36:54,2022-10-14 05:49:16,IP Address,100,741,True,2022-10-14 05:49:16,R_sHJKH6tHXnoCaM9,anonymous,FA,,I agree to participate in the research,A,0,15,0,30,45,"Strongly agree
+
+1
+",4,4,Yes,0,15,0,30,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,30,30,30,No,2,3,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",40,"Less than 102,000 Tomans",Less than today,I do not know,They collapse,Absolutely serious,Female,26,"More than 9,300,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-14 05:51:11,2022-10-14 06:09:43,IP Address,100,1112,True,2022-10-14 06:09:44,R_1QKhmclQm2q0RCu,anonymous,FA,1,I agree to participate in the research,A,0,15,10,35,35,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,15,0,30,A,Yes,Consider it a gift and not pay for the coupon.,B,30,35,30,35,No,3,2,"Strongly agree
+
+1
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",30,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Very serious,Male,31,Prefer not to answer,21,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-14 08:28:00,2022-10-14 08:41:02,IP Address,100,782,True,2022-10-14 08:41:02,R_2XjMQdwb5h9INYr,anonymous,FA,0.800000011920929,I agree to participate in the research,B,15,15,30,15,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",No,15,15,30,30,B,No,"Pay your friend 50,000 Tomans for the coupon.",B,15,30,30,30,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,"Pay your friend 50,000 Tomans for the coupon.",5,"More than 102,000 Tomans",I do not know,I do not know,I do not know,Moderately serious,Female,25,"More than 9,300,000 Tomans",17,Italy,Persian,I allow you to use the responses I provided in this study.
+2022-10-08 13:17:17,2022-10-08 13:18:31,Spam,3,74,False,2022-10-15 13:18:39,R_2X0DENFJe6BgLaw,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-16 08:06:35,2022-10-16 08:32:30,IP Address,100,1554,True,2022-10-16 08:32:31,R_2fybjP27HOut581,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15,20,15,30,30,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,Yes,10,15,20,30,A,No,Consider it a gift and not pay for the coupon.,B,15,35,30,35,No,3,2,2,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",28,"More than 102,000 Tomans",Less than today,False,I do not know,Absolutely serious,Female,18,Prefer not to answer,13,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-16 14:28:51,2022-10-16 14:48:35,IP Address,100,1183,True,2022-10-16 14:48:37,R_217nhSRIOaMfslr,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,15,15,25,35,22,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",4,No,10,15,25,30,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",No difference,30,50,30,45,No,3,2,2,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",18,"Exactly 102,000 Tomans",Less than today,False,I do not know,Absolutely serious,Male,19,"7,700,000 - 9,300,000 Tomans",13,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-10 03:02:17,2022-10-10 03:20:48,IP Address,53,1110,False,2022-10-17 03:55:19,R_1Ka75tYVYGhNM6i,anonymous,FA,1,I agree to participate in the research,A,15,15,30,30,10,4,2,2,No,15000,15000,30000,30000,A,Yes,Consider it a gift and not pay for the coupon.,B,,,,,,,,,B,Yes,Consider it a gift and not pay for the coupon.,15000,,,,,,,,,,,,
+2022-10-10 03:55:51,2022-10-10 04:00:36,IP Address,17,284,False,2022-10-17 04:29:42,R_bjbcXYjvmainm01,anonymous,FA,1,I agree to participate in the research,A,15,20,20,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-10 04:15:49,2022-10-10 04:16:46,IP Address,3,57,False,2022-10-17 04:46:18,R_3QEuA2QVufy2muW,anonymous,FA,,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-10 04:20:22,2022-10-10 04:21:39,IP Address,8,76,False,2022-10-17 04:49:01,R_271eI1GxajVvRuO,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-17 14:18:32,2022-10-17 14:52:23,IP Address,100,2030,True,2022-10-17 14:52:23,R_2P1p6pDPcOenARU,anonymous,FA,,I agree to participate in the research,"No difference ",0,0,0,0,25,"Strongly agree
+
+1
+",4,2,Yes,0,15,0,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,0,30,0,30,No,"Strongly agree
+
+1
+",4,2,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",13,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Absolutely serious,Male,23,"More than 9,300,000 Tomans",17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-18 02:30:44,2022-10-18 02:46:13,IP Address,100,929,True,2022-10-18 02:46:14,R_3HTGMTGJUWtNMdZ,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,0,50,0,70,20,3,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",Yes,0,50,0,70,B,Yes,Consider it a gift and not pay for the coupon.,B,30,60,30,60,No,4,4,2,No difference,Yes,"Pay your friend 50,000 Tomans for the coupon.",10,"More than 102,000 Tomans",I do not know,I do not know,I do not know,Absolutely serious,Female,30,"6,200,000 - 7,700,000 Tomans",18,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-18 05:25:04,2022-10-18 05:46:30,IP Address,100,1285,True,2022-10-18 05:46:30,R_3qwDVZeLZdtiXDm,anonymous,FA,1,I agree to participate in the research,A,10000,15000,20000,30000,10000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,No,10000,15000,20000,30000,A,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15000,15000,30000,30000,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",B,No,"Pay your friend 50,000 Tomans for the coupon.",5000,"More than 102,000 Tomans",I do not know,I do not know,I do not know,Absolutely serious,Female,37,"More than 9,300,000 Tomans",18,Germany,Persian,I allow you to use the responses I provided in this study.
+2022-10-18 05:37:00,2022-10-18 05:49:42,IP Address,100,761,True,2022-10-18 05:49:42,R_30pCuxWxnVTGej4,anonymous,FA,1,I agree to participate in the research,A,0,0,0,0,50000,3,3,2,No,0,0,0,0,A,Yes,Consider it a gift and not pay for the coupon.,B,15000,30000,30000,30000,No,"Strongly disagree
+
+5
+",4,"Strongly disagree
+
+5
+",A,Yes,"Pay your friend 50,000 Tomans for the coupon.",30000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,23,"6,200,000 - 7,700,000 Tomans",15,Germany,German,I allow you to use the responses I provided in this study.
+2022-10-18 08:25:24,2022-10-18 08:56:02,IP Address,100,1838,True,2022-10-18 08:56:04,R_3kApW994yvovjlN,anonymous,FA,0.699999988079071,I agree to participate in the research,A,0,0,0,0,30000,2,"Strongly disagree
+
+5
+",3,No,0,0,0,0,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,30000,No,2,"Strongly disagree
+
+5
+",3,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",10000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,39,Prefer not to answer,16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-18 08:26:16,2022-10-18 08:58:56,IP Address,100,1960,True,2022-10-18 08:58:58,R_PIfRWrly9GSZlQt,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,0,0,0,20000,"Strongly disagree
+
+5
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,0,0,0,0,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",A,0,0,0,0,Yes,2,2,"Strongly disagree
+
+5
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",20000,I do not know,Less than today,I do not know,I do not know,Absolutely serious,Female,65,"More than 9,300,000 Tomans",12,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-11 10:05:41,2022-10-11 10:07:52,IP Address,11,130,False,2022-10-18 10:07:58,R_2wBkNpyh6hTomh8,anonymous,FA,1,I agree to participate in the research,B,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-18 09:59:27,2022-10-18 12:06:25,IP Address,100,7618,True,2022-10-18 12:06:27,R_3iWHj7PBb994pvk,anonymous,FA,0.8999999761581421,I agree to participate in the research,"No difference ",0,10000,0,20000,30000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",4,Yes,0,10000,0,20000,No difference,Yes,"Pay your friend 50,000 Tomans for the coupon.",A,0,10000,0,20000,Yes,3,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,"Pay your friend 50,000 Tomans for the coupon.",15000,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,40,Prefer not to answer,17,Germany,Persian,I allow you to use the responses I provided in this study.
+2022-10-18 12:23:24,2022-10-18 12:41:09,IP Address,100,1065,True,2022-10-18 12:41:10,R_1f1tp7qwSg29Fkh,anonymous,FA,1,I agree to participate in the research,A,0,15000,0,30000,50000,3,4,2,Yes,0,15000,0,30000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,30000,30000,30000,Yes,4,2,2,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",10000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Very serious,Female,38,"More than 9,300,000 Tomans",20,Germany,Persian,I allow you to use the responses I provided in this study.
+2022-10-18 03:26:50,2022-10-18 13:13:47,IP Address,100,35217,True,2022-10-18 13:13:48,R_3MDs5nKfrvTmdlE,anonymous,FA,1,I agree to participate in the research,B,10000,12000,28000,30000,15000,2,4,"Strongly disagree
+
+5
+",Yes,15000,16000,30000,30000,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",No difference,25000,28000,30000,30000,No,3,"Strongly agree
+
+1
+",3,A,Yes,Consider it a gift and not pay for the coupon.,12000,"More than 102,000 Tomans",Less than today,I do not know,They collapse,Very serious,Male,24,"More than 9,300,000 Tomans",17,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-11 11:09:35,2022-10-11 23:35:08,IP Address,8,44733,False,2022-10-18 23:35:14,R_331Iyir9H3pudJ0,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-12 04:26:07,2022-10-12 04:29:26,IP Address,17,198,False,2022-10-19 04:29:32,R_26hGE8yfLySTHiR,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,0,0,0,0,No difference,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 10:36:41,2022-10-19 10:51:42,IP Address,100,900,True,2022-10-19 10:51:43,R_27vqsuB7IOCaGsc,anonymous,FA,1,I agree to participate in the research,A,0,15,0,30,15,3,2,2,Yes,0,15,0,30,No difference,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30,32,30,32,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",13,"More than 102,000 Tomans",Less than today,I do not know,I do not know,Absolutely serious,Female,37,"7,700,000 - 9,300,000 Tomans",25,Germany,Persian,I allow you to use the responses I provided in this study.
+2022-10-12 13:20:30,2022-10-12 13:27:10,IP Address,22,400,False,2022-10-19 13:27:13,R_26lNIsoBKbwSkTW,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,15,50,30,50,15,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-12 18:18:45,2022-10-12 18:23:08,IP Address,50,263,False,2022-10-19 18:23:09,R_1mxirYl8Ar8Az26,anonymous,FA,0.10000000149011612,I agree to participate in the research,B,,,,,,,,,,۵۵,۶۶,۵۴,۴۳۳,A,No,Consider it a gift and not pay for the coupon.,B,۴۴,۵۵,۴۴,۵۵,No,"Strongly agree
+
+1
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,Yes,Consider it a gift and not pay for the coupon.,۱۵۰۰۰,,,,,,,,,,,,
+2022-10-13 09:30:18,2022-10-13 09:31:29,Spam,3,71,False,2022-10-20 09:31:33,R_elzNOcLrJ1O71gl,anonymous,FA,,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-14 06:10:40,2022-10-14 06:12:38,IP Address,11,117,False,2022-10-21 06:12:42,R_RPKM57W9swhZZbX,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-19 12:39:44,2022-10-21 07:19:13,IP Address,100,153569,True,2022-10-21 07:19:13,R_1dFYRiLSsmULqUF,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,10,15,30,50,25,"Strongly agree
+
+1
+",3,3,Yes,15,25,15,30,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,15,30,30,30,No,3,2,2,B,No,"Pay your friend 50,000 Tomans for the coupon.",22,"Exactly 102,000 Tomans",Less than today,False,They collapse,Absolutely serious,Male,22,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-21 18:34:04,2022-10-21 18:46:24,IP Address,100,739,True,2022-10-21 18:46:24,R_3fphwQfMuafa7ay,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,0,15000,0,30000,10000,4,2,4,Yes,0,15000,0,30000,A,Yes,Consider it a gift and not pay for the coupon.,B,15000,15000,30000,30000,Yes,"Strongly disagree
+
+5
+",2,4,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",8000,"More than 102,000 Tomans",Less than today,False,I do not know,Absolutely serious,Female,35,"7,700,000 - 9,300,000 Tomans",20,Italy,Persian,I allow you to use the responses I provided in this study.
+2022-10-16 09:11:36,2022-10-16 09:16:16,IP Address,19,280,False,2022-10-23 09:16:19,R_oZCIBA8RiAvLSE1,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,B,۳۰۰۰۰,۳۰۰۰۰,۳۰۰۰۰۰,۳۰۰۰۰,Yes,,,,,,,,,,,,,,,,,,,
+2022-10-23 09:06:00,2022-10-23 09:20:28,IP Address,100,868,True,2022-10-23 09:20:28,R_1DqkKE6PfBWnqFQ,anonymous,FA,1,I agree to participate in the research,"No difference ",۰,۱۵,۰,۳۰,۵۰,2,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+",No,۰,۱۵,۰,۱۵,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,۱۵,۳۰,۰,۳۰,No,2,"Strongly disagree
+
+5
+",2,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",۵۰,"More than 102,000 Tomans",Less than today,True,I do not know,Very serious,Female,33,Prefer not to answer,16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-17 13:36:22,2022-10-17 14:11:08,IP Address,42,2086,False,2022-10-24 14:11:15,R_tDTBx8DmolQL9WF,anonymous,FA,1,I agree to participate in the research,,,,,,,,,,,30,35,60,65,A,,,A,35,40,40,45,Yes,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,B,Yes,"Pay your friend 50,000 Tomans for the coupon.",20,,,,,,,,,,,,
+2022-10-25 02:43:59,2022-10-25 02:50:22,IP Address,100,383,True,2022-10-25 02:50:22,R_3EuUj157yKT0Taa,anonymous,FA,1,I agree to participate in the research,A,15,19,30,50,24,"Strongly agree
+
+1
+",4,4,Yes,10,30,25,50,A,Yes,Consider it a gift and not pay for the coupon.,B,25,35,30,50,Yes,2,2,"Strongly agree
+
+1
+",B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",18,"More than 102,000 Tomans",Less than today,False,I do not know,Absolutely serious,Male,28,"More than 9,300,000 Tomans",16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-25 03:04:03,2022-10-25 03:14:51,IP Address,100,648,True,2022-10-25 03:14:51,R_3t9onG3bVOi7Zlf,anonymous,FA,1,I agree to participate in the research,A,0,15,20,60,18,"Strongly agree
+
+1
+",4,"Strongly disagree
+
+5
+",Yes,15,25,30,50,A,Yes,Consider it a gift and not pay for the coupon.,B,30,60,30,50,Yes,3,2,"Strongly agree
+
+1
+",B,Yes,"Pay your friend 50,000 Tomans for the coupon.",15,"More than 102,000 Tomans",Less than today,True,I do not know,Absolutely serious,Prefer not to say,18,Prefer not to answer,12,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-18 04:11:23,2022-10-18 04:12:44,IP Address,8,80,False,2022-10-25 04:12:52,R_p0m6Ljjbx52GmSB,anonymous,FA,0.8999999761581421,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-18 04:03:44,2022-10-18 04:13:52,IP Address,44,607,False,2022-10-25 04:13:57,R_33DbF3Sv2CirdcE,anonymous,FA,1,I agree to participate in the research,A,۱۵,۱۵,۱۵,۳۰,,,,,,۱۵,۱۵,۳۰,۳۰,B,No,"Pay some, but not the full amount for the coupon (for example, half the price).",B,۱۵,۱۵,۳۰,۳۰,No,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",,,,,,,,,,,,,,,,
+2022-10-18 02:31:20,2022-10-18 04:54:51,IP Address,42,8610,False,2022-10-25 04:59:30,R_1DGvnwZA5vLEAq9,anonymous,FA,1,I agree to participate in the research,A,0,30,0,50,20000,3,3,4,Yes,0,30000,0,50000,A,Yes,"Pay your friend 50,000 Tomans for the coupon.",A,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-18 06:52:12,2022-10-18 07:03:56,IP Address,78,704,False,2022-10-25 07:13:04,R_24GkbiS3TD7WYCb,anonymous,FA,1,I agree to participate in the research,"No difference ",0,10000,0,15000,1000,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",Yes,0,10000,0,15000,No difference,No,"Pay your friend 50,000 Tomans for the coupon.",No difference,0,10000,0,15000,Yes,"Strongly disagree
+
+5
+","Strongly agree
+
+1
+","Strongly disagree
+
+5
+",No difference,No,"Pay your friend 50,000 Tomans for the coupon.",1000,"More than 102,000 Tomans",Less than today,False,I do not know,,,,,,,,
+2022-10-18 10:26:07,2022-10-18 10:33:58,IP Address,81,470,False,2022-10-25 11:12:07,R_0SOYB5B8rIwcx8J,anonymous,FA,1,I agree to participate in the research,"No difference ",15000,20000,30000,35000,500000,3,3,2,No,15000,20000,30000,35000,No difference,Yes,"Pay your friend 50,000 Tomans for the coupon.",B,15000,20000,30000,35000,Yes,3,3,3,A,No,"Pay your friend 50,000 Tomans for the coupon.",500000,I do not know,I do not know,I do not know,I do not know,Slightly serious,,,,,,,
+2022-10-20 12:00:59,2022-10-20 12:17:21,IP Address,50,982,False,2022-10-27 12:17:24,R_23gkrFjNaCeCy9d,anonymous,FA,0.8999999761581421,I agree to participate in the research,B,15000,15000,30000,30000,10000,2,4,3,Yes,,,,,,,,A,30000,30000,30000,30000,Yes,2,4,2,A,No,"Pay your friend 50,000 Tomans for the coupon.",10000,,,,,,,,,,,,
+2022-10-28 13:33:32,2022-10-28 13:51:21,IP Address,100,1069,True,2022-10-28 13:51:22,R_3EcJbtFO5krI2aY,anonymous,FA,0.8999999761581421,I agree to participate in the research,A,17000,20000,35000,38000,35000,3,3,4,Yes,17000,20000,35000,40000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,30000,35000,35000,38000,Yes,4,2,3,B,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",25000,I do not know,Exactly the same as today,True,They collapse,Very serious,Male,21,Prefer not to answer,16,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-30 20:25:48,2022-10-31 23:58:50,IP Address,100,99181,True,2022-10-31 23:58:51,R_2awY06C1nz0pJcs,anonymous,FA,1,I agree to participate in the research,A,000,15000,15000,30000,100000,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+",3,Yes,000,15000,15000,30000,A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",B,7500,15000,15000,30000,No,3,4,"Strongly agree
+
+1
+",A,Yes,"Pay some, but not the full amount for the coupon (for example, half the price).",20000,"Less than 102,000 Tomans",I do not know,I do not know,I do not know,Absolutely serious,Male,21,"6,200,000 - 7,700,000 Tomans",15,Iran,Persian,I allow you to use the responses I provided in this study.
+2022-10-25 05:59:56,2022-10-25 06:00:56,IP Address,3,59,False,2022-11-01 06:00:58,R_1lrQWPR0gNuCjXC,anonymous,FA,,I agree to participate in the research,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2022-10-25 06:02:35,2022-10-25 06:15:03,IP Address,39,747,False,2022-11-01 06:25:38,R_3HZdjKZ0TMRIXnm,anonymous,FA,1,I agree to participate in the research,A,0,15,20,40,18,"Strongly agree
+
+1
+","Strongly disagree
+
+5
+","Strongly disagree
+
+5
+",Yes,,,,,,,,B,30,70,30,70,No,4,"Strongly agree
+
+1
+",2,,,,,,,,,,,,,,,,
