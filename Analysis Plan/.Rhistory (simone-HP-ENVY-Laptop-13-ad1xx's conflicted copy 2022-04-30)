@@ -1,0 +1,512 @@
+data_s1 %>%
+ggplot(aes(response, fill=as.factor(response))) +
+geom_bar(aes(y = (..count..)/sum(..count..))) +
+mytheme() + theme(legend.position = 'none') +
+scale_fill_jcolors(palette = 'pal6') +
+scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+scale_x_continuous(guide = "prism_offset") +
+labs(y=NULL, x=NULL)
+data_s1 %>%
+ggplot(aes(response, fill=as.factor(response))) +
+geom_bar(aes(y = (..count..)/sum(..count..))) +
+mytheme() + theme(legend.position = 'none') +
+scale_fill_jcolors(palette = 'pal6') +
+scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+scale_x_continuous(guide = "prism_offset") +
+labs(y=NULL, x=NULL) +
+facet_wrap(~scenario)
+# Create dataframe scenario 1
+data_s1 <- data_short %>%
+select(subject, contains('A', ignore.case = FALSE)) %>%
+# Recode response
+mutate(`win-win` = case_when(A1=='A'~0, A1=='B'~1, T~2),
+`lose-lose` = case_when(A2=='A'~0, A2=='B'~1, T~2),
+`win-lose` = case_when(A3=='A'~0, A3=='B'~1, T~2),
+`lose-win` = case_when(A4=='A'~0, A4=='B'~1, T~2)
+) %>%
+melt(id.var='subject',
+variable.name='scenario',
+value.name='response')
+data_s1 %>%
+ggplot(aes(response, fill=as.factor(response))) +
+geom_bar(aes(y = (..count..)/sum(..count..))) +
+mytheme() + theme(legend.position = 'none') +
+scale_fill_jcolors(palette = 'pal6') +
+scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+scale_x_continuous(guide = "prism_offset") +
+labs(y=NULL, x=NULL) +
+facet_wrap(~scenario)
+# Create dataframe scenario 1
+data_s1 <- data_short %>%
+select(subject, contains('A', ignore.case = FALSE)) %>%
+# Recode response
+mutate(`win-win VS win` = case_when(A1=='A'~0, A1=='B'~1, T~2),
+`loss-loss VS loss` = case_when(A2=='A'~0, A2=='B'~1, T~2),
+`win-loss VS win` = case_when(A3=='A'~0, A3=='B'~1, T~2),
+`loss-win VS loss` = case_when(A4=='A'~0, A4=='B'~1, T~2)
+) %>%
+melt(id.var='subject',
+variable.name='scenario',
+value.name='response')
+data_s1 %>%
+ggplot(aes(response, fill=as.factor(response))) +
+geom_bar(aes(y = (..count..)/sum(..count..))) +
+mytheme() + theme(legend.position = 'none') +
+scale_fill_jcolors(palette = 'pal6') +
+scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+scale_x_continuous(guide = "prism_offset") +
+labs(y=NULL, x=NULL) +
+facet_wrap(~scenario)
+# Create dataframe scenario 1
+data_s1 <- data_short %>%
+select(subject, contains('A', ignore.case = FALSE)) %>%
+# Recode response
+mutate(`win-win VS win` = case_when(A1=='A'~0, A1=='B'~1, T~2),
+`loss-loss VS loss` = case_when(A2=='A'~0, A2=='B'~1, T~2),
+`win-loss VS win` = case_when(A3=='A'~0, A3=='B'~1, T~2),
+`loss-win VS loss` = case_when(A4=='A'~0, A4=='B'~1, T~2)
+) %>%
+select(-contrasts('A', ignore.case=FALSE)) %>%
+melt(id.var='subject',
+variable.name='scenario',
+value.name='response')
+# Create dataframe scenario 1
+data_s1 <- data_short %>%
+select(subject, contains('A', ignore.case = FALSE)) %>%
+# Recode response
+mutate(`win-win VS win` = case_when(A1=='A'~0, A1=='B'~1, T~2),
+`loss-loss VS loss` = case_when(A2=='A'~0, A2=='B'~1, T~2),
+`win-loss VS win` = case_when(A3=='A'~0, A3=='B'~1, T~2),
+`loss-win VS loss` = case_when(A4=='A'~0, A4=='B'~1, T~2)
+) %>%
+select(-contains('A', ignore.case=FALSE)) %>%
+melt(id.var='subject',
+variable.name='scenario',
+value.name='response')
+data_s1 %>%
+ggplot(aes(response, fill=as.factor(response))) +
+geom_bar(aes(y = (..count..)/sum(..count..))) +
+mytheme() + theme(legend.position = 'none') +
+scale_fill_jcolors(palette = 'pal6') +
+scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+scale_x_continuous(guide = "prism_offset") +
+labs(y=NULL, x=NULL) +
+facet_wrap(~scenario)
+# Create dataframe scenario 1
+data_s1 <- data_short %>%
+select(subject, contains('A', ignore.case = FALSE)) %>%
+# Recode response
+mutate(`gain-gain VS gain` = case_when(A1=='A'~0, A1=='B'~1, T~2),
+`loss-loss VS loss` = case_when(A2=='A'~0, A2=='B'~1, T~2),
+`gain-loss VS gain` = case_when(A3=='A'~0, A3=='B'~1, T~2),
+`loss-gain VS loss` = case_when(A4=='A'~0, A4=='B'~1, T~2)
+) %>%
+select(-contains('A', ignore.case=FALSE)) %>%
+melt(id.var='subject',
+variable.name='scenario',
+value.name='response')
+data_s1 %>%
+ggplot(aes(response, fill=as.factor(response))) +
+geom_bar(aes(y = (..count..)/sum(..count..))) +
+mytheme() + theme(legend.position = 'none') +
+scale_fill_jcolors(palette = 'pal6') +
+scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+scale_x_continuous(guide = "prism_offset") +
+labs(y=NULL, x=NULL) +
+facet_wrap(~scenario)
+data_short
+View(data_s1)
+# ---- Fit Model ---- #
+library(rstan)
+library(tidybayes)
+options(mc.cores = 4)
+rstan_options(auto_write = TRUE)
+# ------------- Intercept Model ------------- #
+# Create Stan Data
+X <- model.matrix(~ 1, data_s1)
+X
+#Stan Data
+stan_data <- list(
+N        = nrow(data_s1),
+Y        = data_s1$response,
+X_ds     = X,
+X_ds     = X,
+K_cA     = ncol(X),
+K_cA     = ncol(X),
+prior_only = 0
+)
+mental_accounting_stan <- rstan::stan_model(file = 'mental_accounting.stan')
+# Fit the model
+fitMAS <- rstan::sampling(mental_accounting_stan,
+iter = 2000,
+cores = 4,
+data = stan_data,
+save_warmup = FALSE)
+#Stan Data
+stan_data <- list(
+N        = nrow(data_s1),
+Y        = data_s1$response,
+X_ds     = X,
+X_cA     = X,
+K_ds     = ncol(X),
+K_cA     = ncol(X),
+prior_only = 0
+)
+# Fit the model
+fitMAS <- rstan::sampling(mental_accounting_stan,
+iter = 2000,
+cores = 4,
+data = stan_data,
+save_warmup = FALSE)
+table( data_s1$response ) / length(data_s1$response)
+sum(tb[1:2]) / length(data_s1$response)
+tb <- table( data_s1$response )
+sum(tb[1:2]) / length(data_s1$response)
+plot(fitSSS)
+fitMAS
+plogis(0.43)
+tb[1:2]
+tb[1] / sum(tb[1:2])
+plogis(-0.5)
+data_s1
+# ------------- ~ scenario ------------- #
+# Create Stan Data
+X <- model.matrix(~ scenario, data_s1)
+#Stan Data
+stan_data <- list(
+N        = nrow(data_s1),
+Y        = data_s1$response,
+X_ds     = X,
+X_cA     = X,
+K_ds     = ncol(X),
+K_cA     = ncol(X),
+prior_only = 0
+)
+# ------------- ~ scenario ------------- #
+# Create Stan Data
+X <- model.matrix(~ scenario, data_s1)
+#Stan Data
+stan_data <- list(
+N        = nrow(data_s1),
+Y        = data_s1$response,
+X_ds     = X,
+X_cA     = X,
+K_ds     = ncol(X),
+K_cA     = ncol(X),
+prior_only = 0
+)
+# Fit the model
+fitMAS <- rstan::sampling(mental_accounting_stan,
+iter = 2000,
+cores = 4,
+data = stan_data,
+save_warmup = FALSE)
+draws <- extract(fitMAS)
+colnames(draws$b_ds) <- colnames(X)
+colnames(draws$b_cA) <- colnames(X)
+colnames(X)
+# ------------- ~ scenario ------------- #
+# Create Stan Data
+X <- model.matrix(~ 0 + scenario, data_s1)
+#Stan Data
+stan_data <- list(
+N        = nrow(data_s1),
+Y        = data_s1$response,
+X_ds     = X,
+X_cA     = X,
+K_ds     = ncol(X),
+K_cA     = ncol(X),
+prior_only = 0
+)
+# Fit the model
+fitMAS <- rstan::sampling(mental_accounting_stan,
+iter = 2000,
+cores = 4,
+data = stan_data,
+save_warmup = FALSE)
+draws <- extract(fitMAS)
+colnames(draws$b_ds) <- colnames(X)
+colnames(draws$b_cA) <- colnames(X)
+colnames(X)
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]')) %>%
+mutate(Var2 = factor(Var2, levels = rev(unique(.$Var2))),
+type = factor(type, levels = rev(unique(.$type)))) %>%
+ggplot(aes(x = value, y = Var2)) +
+stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6],
+color = jcolors::jcolors(palette = "pal8")[12]) +
+mytheme() +
+geom_vline(xintercept = 0, linetype = 2) +
+labs(y = NULL, x = "Posterior Probability") +
+facet_grid(~type)
+words_replace <- function(variable, words_to_replace, replace_with = "") {
+library(dplyr)
+if (!require(dplyr)) {
+install.packages("dplyr")
+library(dplyr)
+}
+# variable <- enquo(variable) var <- select(data, !!variable) %>% .[,]
+if (!is.character(variable))
+variable <- as.character(variable)
+for (word_i in 1:length(words_to_replace)) {
+word_to_rm_index <- which(str_detect(variable, fixed(words_to_replace[word_i])))
+if (any(word_to_rm_index)) {
+words_to_replace_i <- words_to_replace[word_i]
+new_words <- sapply(seq_along(word_to_rm_index), function(i) {
+variable[word_to_rm_index][i] <- gsub(words_to_replace_i, replace_with,
+variable[word_to_rm_index][i], fixed = TRUE)
+})
+variable[word_to_rm_index] <- new_words
+} else {
+warning(paste0("Sting '", words_to_replace, "' not found"))
+}
+}
+return(variable)
+}
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]')) %>%
+mutate(Var2 = factor(Var2, levels = rev(unique(.$Var2))),
+type = factor(type, levels = rev(unique(.$type))))
+colnames(X)
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]'))
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]')) %>%
+mutate(Var2 = factor(Var2, levels = rev(unique(.$Var2))),
+type = factor(type, levels = rev(unique(.$type))),
+Var2 = words_replace(Var, words_to_replace = 'scenario')) %>%
+ggplot(aes(x = value, y = Var2)) +
+stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6],
+color = jcolors::jcolors(palette = "pal8")[12]) +
+mytheme() +
+geom_vline(xintercept = 0, linetype = 2) +
+labs(y = NULL, x = "Posterior Probability") +
+facet_grid(~type)
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]')) %>%
+mutate(Var2 = factor(Var2, levels = rev(unique(.$Var2))),
+type = factor(type, levels = rev(unique(.$type))),
+Var2 = words_replace(Var2, words_to_replace = 'scenario')) %>%
+ggplot(aes(x = value, y = Var2)) +
+stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6],
+color = jcolors::jcolors(palette = "pal8")[12]) +
+mytheme() +
+geom_vline(xintercept = 0, linetype = 2) +
+labs(y = NULL, x = "Posterior Probability") +
+facet_grid(~type)
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]'))
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]')) %>%
+mutate(Var2 = factor(Var2, levels = rev(unique(.$Var2))),
+type = factor(type, levels = rev(unique(.$type))),
+Var2 = words_replace(Var2, words_to_replace = 'scenario'))
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]')) %>%
+mutate(Var2 = words_replace(Var2, words_to_replace = 'scenario'),
+Var2 = factor(Var2, levels = rev(unique(.$Var2))),
+type = factor(type, levels = rev(unique(.$type))))
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]'))
+colnames(X)
+words_replace(colnames(X)
+words_replace(colnames(X), 'scenario')
+draws <- extract(fitMAS)
+colnames(draws$b_ds) <- words_replace(colnames(X), 'scenario')
+colnames(draws$b_cA) <- words_replace(colnames(X), 'scenario')
+rbind(draws$b_ds %>% melt() %>% mutate(type='P[Different vs Same]'),
+draws$b_cA %>% melt() %>% mutate(type='P[A vs B | Different]')) %>%
+mutate(Var2 = factor(Var2, levels = rev(unique(.$Var2))),
+type = factor(type, levels = rev(unique(.$type)))) %>%
+ggplot(aes(x = value, y = Var2)) +
+stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6],
+color = jcolors::jcolors(palette = "pal8")[12]) +
+mytheme() +
+geom_vline(xintercept = 0, linetype = 2) +
+labs(y = NULL, x = "Posterior Probability") +
+facet_grid(~type)
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, fig.align='left')
+library(knitr)
+## Global options
+options(max.print="75")
+opts_chunk$set(
+cache=TRUE,
+prompt=FALSE,
+tidy=TRUE,
+comment=NA,
+message=FALSE,
+warning=FALSE
+)
+opts_knit$set(width=75)
+# Load libraries
+library(dplyr); library(purrr); library(stringr)
+library(ggplot2); library(ggpubr); library(jcolors)
+library(cowplot); library(ggprism)
+library(reshape2)
+# Functions
+words_replace <- function(variable, words_to_replace, replace_with = "") {
+library(dplyr)
+if (!require(dplyr)) {
+install.packages("dplyr")
+library(dplyr)
+}
+# variable <- enquo(variable) var <- select(data, !!variable) %>% .[,]
+if (!is.character(variable))
+variable <- as.character(variable)
+for (word_i in 1:length(words_to_replace)) {
+word_to_rm_index <- which(str_detect(variable, fixed(words_to_replace[word_i])))
+if (any(word_to_rm_index)) {
+words_to_replace_i <- words_to_replace[word_i]
+new_words <- sapply(seq_along(word_to_rm_index), function(i) {
+variable[word_to_rm_index][i] <- gsub(words_to_replace_i, replace_with,
+variable[word_to_rm_index][i], fixed = TRUE)
+})
+variable[word_to_rm_index] <- new_words
+} else {
+warning(paste0("Sting '", words_to_replace, "' not found"))
+}
+}
+return(variable)
+}
+# Load data
+data_short <- readRDS('../Data/data_short.rds')$data %>%
+mutate(subject=1:n()) %>%
+rename(age=`Age.`, A3=`A3.`)
+questions  <- readRDS('../Data/data_short.rds')$question
+# ----- Mental Accounting ----- #
+# Remove final questionnaires
+data_short_MA <- data_short[, -(48:75)]
+# Remove response time
+idx_time      <- str_detect( names(data_short_MA),  'time_')
+data_short_MA <- data_short_MA[, !idx_time]
+# Load libraries
+library(dplyr); library(purrr); library(stringr)
+library(ggplot2); library(ggpubr); library(jcolors)
+library(cowplot); library(ggprism)
+library(reshape2)
+# Functions
+words_replace <- function(variable, words_to_replace, replace_with = "") {
+library(dplyr)
+if (!require(dplyr)) {
+install.packages("dplyr")
+library(dplyr)
+}
+# variable <- enquo(variable) var <- select(data, !!variable) %>% .[,]
+if (!is.character(variable))
+variable <- as.character(variable)
+for (word_i in 1:length(words_to_replace)) {
+word_to_rm_index <- which(str_detect(variable, fixed(words_to_replace[word_i])))
+if (any(word_to_rm_index)) {
+words_to_replace_i <- words_to_replace[word_i]
+new_words <- sapply(seq_along(word_to_rm_index), function(i) {
+variable[word_to_rm_index][i] <- gsub(words_to_replace_i, replace_with,
+variable[word_to_rm_index][i], fixed = TRUE)
+})
+variable[word_to_rm_index] <- new_words
+} else {
+warning(paste0("Sting '", words_to_replace, "' not found"))
+}
+}
+return(variable)
+}
+# Load data
+data_short <- readRDS('../Data/data_short.rds')$data %>%
+mutate(subject=1:n()) %>%
+rename(age=`Age.`, A3=`A3.`)
+questions  <- readRDS('../Data/data_short.rds')$question
+# ----- Mental Accounting ----- #
+# Remove final questionnaires
+data_short_MA <- data_short[, -(48:75)]
+# Remove response time
+idx_time      <- str_detect( names(data_short_MA),  'time_')
+data_short_MA <- data_short_MA[, !idx_time]
+# Create dataframe scenario 1
+data_s1 <- data_short %>%
+select(subject, contains('A', ignore.case = FALSE)) %>%
+# Recode response
+mutate(`gain-gain VS gain` = case_when(A1=='A'~0, A1=='B'~1, T~2),
+`loss-loss VS loss` = case_when(A2=='A'~0, A2=='B'~1, T~2),
+`gain-loss VS gain` = case_when(A3=='A'~0, A3=='B'~1, T~2),
+`loss-gain VS loss` = case_when(A4=='A'~0, A4=='B'~1, T~2)
+) %>%
+select(-contains('A', ignore.case=FALSE)) %>%
+melt(id.var='subject',
+variable.name='scenario',
+value.name='response')
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, fig.align='left')
+library(knitr)
+## Global options
+options(max.print="75")
+opts_chunk$set(
+cache=TRUE,
+prompt=FALSE,
+tidy=TRUE,
+comment=NA,
+message=FALSE,
+warning=FALSE
+)
+opts_knit$set(width=75)
+# Load libraries
+library(dplyr); library(purrr); library(stringr)
+library(ggplot2); library(ggpubr); library(jcolors)
+library(cowplot); library(ggprism)
+library(reshape2)
+# Functions
+words_replace <- function(variable, words_to_replace, replace_with = "") {
+library(dplyr)
+if (!require(dplyr)) {
+install.packages("dplyr")
+library(dplyr)
+}
+# variable <- enquo(variable) var <- select(data, !!variable) %>% .[,]
+if (!is.character(variable))
+variable <- as.character(variable)
+for (word_i in 1:length(words_to_replace)) {
+word_to_rm_index <- which(str_detect(variable, fixed(words_to_replace[word_i])))
+if (any(word_to_rm_index)) {
+words_to_replace_i <- words_to_replace[word_i]
+new_words <- sapply(seq_along(word_to_rm_index), function(i) {
+variable[word_to_rm_index][i] <- gsub(words_to_replace_i, replace_with,
+variable[word_to_rm_index][i], fixed = TRUE)
+})
+variable[word_to_rm_index] <- new_words
+} else {
+warning(paste0("Sting '", words_to_replace, "' not found"))
+}
+}
+return(variable)
+}
+# Load data
+data_short <- readRDS('../Data/data_short.rds')$data %>%
+mutate(subject=1:n()) %>%
+rename(age=`Age.`, A3=`A3.`)
+questions  <- readRDS('../Data/data_short.rds')$question
+# ----- Mental Accounting ----- #
+# Remove final questionnaires
+data_short_MA <- data_short[, -(48:75)]
+# Remove response time
+idx_time      <- str_detect( names(data_short_MA),  'time_')
+data_short_MA <- data_short_MA[, !idx_time]
+data.frame( resp = c(data_short_MA$B1_1_1,
+data_short_MA$B1_1_2))
+data.frame( resp = c(data_short_MA$B1_1_1,
+data_short_MA$B1_1_2),
+ques = c(rep('He is a friend',   50),
+rep('He is a stranger', 50)))
+# Create dataframe scenario 1
+plot_b1_1 <- data.frame( resp = c(data_short_MA$B1_1_1,
+data_short_MA$B1_1_2),
+buyer = c(rep('Friend',   50),
+rep('Stranger', 50)))
+plot_b1_1
+n_sbj <- nrow( data_short )
+# Create dataframe scenario 1
+plot_b1_1 <- data.frame( response = c(data_short_MA$B1_1_1,
+data_short_MA$B1_1_2),
+cost = 0,
+market_value = 5,
+buyer = c(rep('Friend',   n_sbj),
+rep('Stranger', n_sbj)) )
+data_short_MA$B2_1_1
+data_short_MA$B2_1_2
+data_short_MA

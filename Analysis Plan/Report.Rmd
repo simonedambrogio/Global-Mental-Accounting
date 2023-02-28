@@ -1,0 +1,1112 @@
+---
+title: "Analysis Plan"
+author: "Simone D'Ambrogio"
+subtitle: ""
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    fig_caption: true
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: united
+    highlight: tango
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, fig.align='left')
+library(knitr)
+## Global options
+options(max.print="75")
+opts_chunk$set(
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE
+               )
+opts_knit$set(width=75)
+```
+
+<style type="text/css">
+  body {
+    text-align: justify;
+    font-size: 16px;
+  }
+  img[src$="centerme"] {
+    display:block;
+    margin: 0 auto;
+  }
+  
+  p.comment {
+    background-color: #DBDBDB;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+</style>
+
+<br><br>
+
+```{r mytheme}
+mytheme <- function (palette = "black_and_white", base_size = 14, base_family = "sans", 
+                     base_fontface = "plain", base_line_size = base_size/20, base_rect_size = base_size/14, 
+                     axis_text_angle = 0, border = FALSE) {
+  
+  is_bool <- function(x) {
+    is_logical(x, n = 1) && !is.na(x)
+  } 
+  angle <- axis_text_angle[1]
+   if (!angle %in% c(0, 45, 90, 270)) 
+     stop(sprintf("'axis_text_angle' must be one of [%s]", 
+                  paste(c(0, 45, 90, 270), collapse = ", ")), ".\nFor other angles, use the guide_axis() function in ggplot2 instead", 
+          call. = FALSE)
+   if (!palette %in% names(ggprism::ggprism_data$themes)) {
+     stop("The palette ", paste(palette), " does not exist.\n         See names(ggprism_data$themes) for valid palette names")
+   }
+   colours <- tibble::deframe(ggprism::ggprism_data$themes[[palette]])
+   if (!is_bool(border)) {
+     stop("border must be either: TRUE or FALSE")
+   }
+   else {
+     if (border) {
+       panel.border <- element_rect(fill = NA)
+       axis.line <- element_blank()
+     }
+     else if (!border) {
+       panel.border <- element_blank()
+       axis.line <- element_line()
+     }
+   }
+   t <- theme(line = element_line(colour = colours["axisColor"], 
+                                  size = base_line_size, linetype = 1, lineend = "square"), 
+              rect = element_rect(fill = "white", colour = colours["axisColor"], 
+                                  size = base_rect_size, linetype = 1), text = element_text(family = base_family, 
+                                                                                            face = base_fontface, colour = colours["graphTitleColor"], 
+                                                                                            size = base_size, lineheight = 0.9, hjust = 0.5, 
+                                                                                            vjust = 0.5, angle = 0, margin = margin(), debug = FALSE), 
+              prism.ticks.length = unit(base_size/50, "pt"), axis.line = axis.line, 
+              axis.line.x = NULL, axis.line.y = NULL, axis.text = element_text(size = rel(0.95), 
+                                                                               colour = colours["axisLabelColor"]), axis.text.x = element_text(margin = margin(t = 0.8 * 
+                                                                                                                                                                 base_size/4), angle = axis_text_angle, hjust = ifelse(axis_text_angle %in% 
+                                                                                                                                                                                                                         c(45, 90, 270), 1, 0.5), vjust = ifelse(axis_text_angle %in% 
+                                                                                                                                                                                                                                                                   c(0, 90, 270), 0.5, 1)), axis.text.x.top = element_text(margin = margin(b = 0.8 * 
+                                                                                                                                                                                                                                                                                                                                             base_size/4), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.5 * 
+                                                                                                                                                                                                                                                                                                                                                                                                                    base_size/4), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.5 * 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 base_size/4), hjust = 0), axis.ticks = element_line(), 
+              axis.ticks.length = unit(3, "points"), axis.ticks.length.x = NULL, 
+              axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL, 
+              axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL, 
+              axis.ticks.length.y.right = NULL, axis.title = element_text(colour = colours["axisTitleColor"]), 
+              axis.title.x = element_text(margin = margin(t = base_size * 
+                                                            0.6), vjust = 1), axis.title.x.top = element_text(margin = margin(b = base_size * 
+                                                                                                                                0.6), vjust = 0), axis.title.y = element_text(angle = 90, 
+                                                                                                                                                                              margin = margin(r = base_size * 0.6), vjust = 1), 
+              axis.title.y.right = element_text(angle = -90, margin = margin(l = base_size * 
+                                                                               0.6), vjust = 0), legend.background = element_blank(), 
+              legend.spacing = unit(base_size, "pt"), legend.spacing.x = NULL, 
+              legend.spacing.y = NULL, legend.margin = margin(base_size/2, 
+                                                              base_size/2, base_size/2, base_size/2), legend.key = element_blank(), 
+              legend.key.size = unit(1.2, "lines"), legend.key.height = NULL, 
+              legend.key.width = unit(base_size * 1.8, "pt"), legend.text = element_text(size = rel(0.8), 
+                                                                                         face = "plain"), legend.text.align = NULL, legend.title = element_blank(), 
+              legend.title.align = NULL, legend.position = "right", 
+              legend.direction = NULL, legend.justification = "center", 
+              legend.box = NULL, legend.box.margin = margin(0, 0, 0, 
+                                                            0, "cm"), legend.box.background = element_blank(), 
+              legend.box.spacing = unit(base_size, "pt"), panel.background = element_rect(fill = ifelse(palette == 
+                                                                                                          "office", colours["plottingAreaColor"], NA), colour = NA), 
+              panel.border = panel.border, panel.grid = element_blank(), 
+              panel.grid.minor = element_blank(), panel.spacing = unit(base_size/2, 
+                                                                       "pt"), panel.spacing.x = NULL, panel.spacing.y = NULL, 
+              panel.ontop = FALSE, strip.background = element_blank(), 
+              strip.text = element_text(colour = colours["axisTitleColor"], 
+                                        size = rel(0.8), margin = margin(base_size/2.5, base_size/2.5, 
+                                                                         base_size/2.5, base_size/2.5)), strip.text.x = element_text(margin = margin(b = base_size/3)), 
+              strip.text.y = element_text(angle = -90, margin = margin(l = base_size/3)), 
+              strip.text.y.left = element_text(angle = 90), strip.placement = "inside", 
+              strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(base_size/4, 
+                                                                                               "pt"), strip.switch.pad.wrap = unit(base_size/4, 
+                                                                                                                                   "pt"), plot.background = element_rect(fill = colours["pageBackgroundColor"], 
+                                                                                                                                                                         colour = NA), plot.title = element_text(size = rel(1.2), 
+                                                                                                                                                                                                                 hjust = 0.5, vjust = 1, margin = margin(b = base_size)), 
+              plot.title.position = "panel", plot.subtitle = element_text(hjust = 0.5, 
+                                                                          vjust = 1, margin = margin(b = base_size/2)), plot.caption = element_text(size = rel(0.8), 
+                                                                                                                                                    hjust = 1, vjust = 1, margin = margin(t = base_size/2)), 
+              plot.caption.position = "panel", plot.tag = element_text(size = rel(1.2), 
+                                                                       hjust = 0.5, vjust = 0.5), plot.tag.position = "topleft", 
+              plot.margin = margin(base_size/2, base_size/2, base_size/2, 
+                                   base_size/2), complete = TRUE)
+   ggprism::ggprism_data$themes[["all_null"]] %+replace% t
+ }
+```
+
+
+```{r load-data&library, results='hide'}
+
+# Load libraries
+library(dplyr); library(purrr); library(stringr)
+library(ggplot2); library(ggpubr); library(jcolors)
+library(cowplot); library(ggprism); library(tidybayes)
+library(reshape2); library(parallel); library(rstan)
+
+
+effect_size = c("Paper Effect Size",
+                "Paper Effect Size/2",
+                "Paper Effect Size/3",
+                "Paper Effect Size/4")
+# Functions
+psoftmax <- function(b) exp(c(0, b)) / sum(exp( c(0, b) ))
+
+words_replace <- function(variable, words_to_replace, replace_with = "") {
+
+    library(dplyr)
+    if (!require(dplyr)) {
+        install.packages("dplyr")
+        library(dplyr)
+    }
+
+    # variable <- enquo(variable) var <- select(data, !!variable) %>% .[,]
+
+    if (!is.character(variable))
+        variable <- as.character(variable)
+
+    for (word_i in 1:length(words_to_replace)) {
+        word_to_rm_index <- which(str_detect(variable, fixed(words_to_replace[word_i])))
+
+        if (any(word_to_rm_index)) {
+            words_to_replace_i <- words_to_replace[word_i]
+            new_words <- sapply(seq_along(word_to_rm_index), function(i) {
+                variable[word_to_rm_index][i] <- gsub(words_to_replace_i, replace_with,
+                  variable[word_to_rm_index][i], fixed = TRUE)
+            })
+            variable[word_to_rm_index] <- new_words
+        } else {
+            warning(paste0("Sting '", words_to_replace, "' not found"))
+        }
+    }
+
+    return(variable)
+}
+
+seq_vector <- function(x) {
+    idx <- c(which(diff(x) != 0), length(x))
+    time <- c(idx[1], diff(idx))
+    rep(x = 1:length(idx), times = time)
+}
+
+# Load data
+data_short <- readRDS('../Pilot/Short Version/Data/data_short.rds')$data %>% 
+  mutate(subject=1:n()) %>% 
+  rename(age=`Age.`, A3=`A3.`)
+
+questions  <- readRDS('../Pilot/Short Version/Data/data_short.rds')$question
+
+# ----- Mental Accounting ----- #
+# Remove final questionnaires
+data_short_MA <- data_short[, -(48:75)]
+# Remove response time
+idx_time      <- str_detect( names(data_short_MA),  'time_')
+data_short_MA <- data_short_MA[, !idx_time] 
+
+data_short_MA <- data_short_MA %>% 
+  rename_with(~gsub('.', '', .x, fixed = TRUE)) %>% 
+  rename_with(toupper, .cols = -contains('subject'))
+
+n_sbj <- nrow( data_short_MA )
+```
+
+<br><br>
+
+## Introduction
+To test the replicability of the effects reported in the original papers we will run Bayesian modeling. We analyze the pilot data (short version) following the same procedure that we will follow to analyze the experimental data.
+
+<br><br>
+
+## Mr. A vs Mr. B2
+
+We analyze the data from the first study (“MrAB” scenarios)  using a Bayesian binomial mixture regression model. We fit this model first to estimate the probability of choosing option A or B for each scenario and second, to estimate the conditional probability of choosing option A for each scenario.
+
+<br>
+
+### {.tabset}
+
+#### (Short) Pilot Data
+
+```{r plot-empirical-data-S1, message=F, warning=F, fig.width=6, fig.height=5, fig.align='center'}
+
+# ---------- Mr. A vs Mr. B2 Scenario ---------- #
+
+# Coding legend:
+# response: 0 (Happier/More upset);  
+#           1 (Less Happy/Less upset)
+#           2 (No difference)
+
+# Create dataframe scenario 1
+data_s1 <- data_short %>% 
+  select(subject, contains('A', ignore.case = FALSE)) %>% 
+  # Recode response
+  mutate(`gain-gain VS gain` = case_when(A1=='A'~0, A1=='B'~1, T~2),
+         `loss-loss VS loss` = case_when(A2=='A'~0, A2=='B'~1, T~2),
+         `gain-loss VS gain` = case_when(A3=='A'~0, A3=='B'~1, T~2),
+         `loss-gain VS loss` = case_when(A4=='A'~0, A4=='B'~1, T~2) ) %>% 
+  select(-contains('A', ignore.case=FALSE)) %>% 
+  melt(id.var='subject',
+       variable.name='scenario',
+       value.name='response') %>% 
+  mutate(scenario_group = ifelse(
+    scenario=='gain-gain VS gain' | scenario=='gain-loss VS gain', 'gain', 'loss'
+  ))
+
+data_s1 %>% 
+  ggplot(aes(response)) +
+  geom_bar(aes(y = (..count..)/sum(..count..)), 
+           fill=jcolors::jcolors(palette = 'pal6')[1]) + 
+  mytheme() + theme(legend.position = 'none', 
+                    axis.title.y=element_blank(),
+                    axis.text.y=element_blank()) +
+  scale_fill_brewer(palette = 'Set1') +
+  scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+  scale_x_continuous(guide = "prism_offset", breaks = 0:2, labels = c('A', 'B', 'Same')) +
+  labs(y=NULL, x=NULL) +
+  facet_wrap(~scenario)
+```
+
+#### Questions
+
+<br>
+<p class="comment">
+<b>Gain-Gain VS Gain</b> <br><br>
+Mr. A was given two tickets to the Regional lottery. He won &#36;50 in one lottery and &#36;25 in the other.  <br><br>
+Mr. B was given a ticket to a single, larger Regional lottery. He won &#36;75.  <br><br>
+Who is happier? 
+</p>
+
+<div class="alert alert-info">
+  A/B/No difference
+</div>
+
+<br><br>
+<p class="comment">
+<b>Loss-Loss VS Loss</b> <br><br>
+Mr. A received a letter from the IRS saying that he made a minor arithmetical mistake on his tax return and owed &#36;100. He received a similar letter the same day from his state income tax authority saying he owed &#36;50. There were no other repercussions from either mistake. <br><br>
+Mr. B received a letter from the IRS saying he made a minor arithmetical mistake on his tax return and owed &#36;150. There were no other repercussions from this mistake. <br><br>
+Who more upset? 
+</p>
+
+<div class="alert alert-info">
+  A/B/No difference
+</div>
+
+<br><br>
+<p class="comment">
+<b>Gain-Loss VS Gain</b> <br><br>
+Mr. A bought his first National lottery ticket and won &#36;100. Also, in a freak accident, he damaged the rug in his apartment and had to pay the landlord &#36;80. <br><br>
+Mr. B bought his first National lottery ticket and won &#36;20.<br><br>
+Who is happier?
+</p>
+
+<div class="alert alert-info">
+  A/B/No difference
+</div>
+
+<br><br>
+<p class="comment">
+<b>Loss-Gain VS Loss</b> <br><br>
+Mr. A’s car was damaged in a parking lot. He had to spend &#36;200 to repair the damage. The same day the car was damaged, he won &#36;25 in the office holiday raffle. <br><br>
+Mr. B’s car was damaged in a parking lot. He had to spend &#36;175 to repair the damage.<br><br>
+Who is more upset? 
+</p>
+
+<div class="alert alert-info">
+  A/B/No difference
+</div>
+
+#### Stan Code
+
+```{stan stan-code-S1, output.var='mixture_scenario_1', code=readLines('mental_accounting.stan'), cache=TRUE} 
+    
+```
+
+
+```{r print-stan-code-S1, eval = TRUE, echo = FALSE}
+cat(get_stancode(mixture_scenario_1)) 
+```
+
+#### Fit
+
+```{r fit-stan-model-S1, message=F, warning=F, fig.width=6, fig.height=5, fig.align='center'}
+# ---- Fit Model ---- #
+library(rstan)
+library(tidybayes)
+options(mc.cores = 4)
+rstan_options(auto_write = TRUE)
+
+# ------------- ~ scenario ------------- #
+# Create Stan Data
+X <- model.matrix(~ 0 + scenario, data_s1 %>% filter)
+ 
+#Stan Data
+stan_data <- list(
+    N        = nrow(data_s1),
+    Y        = data_s1$response,
+    X_ds     = X,
+    X_cA     = X,
+    K_ds     = ncol(X),
+    K_cA     = ncol(X),
+    
+    N_sbj    = n_sbj,
+    J_sbj    = data_s1$subject,
+    
+    prior_only = 0
+  )
+
+# Fit the model
+fit_S1 <- rstan::sampling(mixture_scenario_1, 
+                          iter = 2000, 
+                          cores = 4, 
+                          data = stan_data, 
+                          save_warmup = FALSE)
+```
+
+**Plot Model Posteriors**
+
+```{r plot-posteriors-stan-model-S1, message=F, warning=F, fig.width=5, fig.height=4, fig.align='center'} 
+draws <- extract(fit_S1) 
+colnames(draws$b_ds) <- words_replace(colnames(X), 'scenario')
+colnames(draws$b_cA) <- words_replace(colnames(X), 'scenario')
+df <- as.data.frame( draws$b_cA )
+
+rbind(
+  data.frame( post = with( df, `gain-gain VS gain` - `gain-loss VS gain` ),
+              effect = 'gain-gain VS gain\n-\ngain-loss VS gain'),
+  data.frame( post = with( df, `loss-loss VS loss` - `loss-gain VS loss` ),
+              effect = 'loss-loss VS loss\n-\nloss-gain VS loss')
+) %>% 
+  ggplot(aes(x = post, y = effect)) + 
+  stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6],
+               color = jcolors::jcolors(palette = "pal8")[12]) + 
+  mytheme() + theme(axis.text.y = NULL) +
+  geom_vline(xintercept = 0, linetype = 2) + 
+  labs(y = NULL, x = "Posterior Probability")
+```
+
+
+
+### {-}
+
+<br><br>
+
+## The Sold-Out Ticket
+
+To analyze the data from the second study (“Game” scenarios) we use a Bayesian multinomial regression model in order to estimate the probability of choosing each of the four options for each scenario.
+
+<br>
+
+### {.tabset}
+
+#### (Short) Pilot Data
+
+```{r plot-empirical-data-S2, message=F, warning=F, fig.width=8, fig.height=6, fig.align='center'}
+# --------- Coding legend: --------- #
+# -- Dependent Variable -- #
+# response: 0
+#           5 
+#           10 
+#           Other
+# -- Explanatory Variables -- #
+# cost: 0, 5, 10 (defined as p in Thaler 1985) 
+#      [cost influence the "fair price" (p_star), which is operationalized
+#       with the price asked to a friend]
+# market_value : 5, 10
+# buyer: friend (proxy for a fair price), stranger
+
+
+# Create dataframe scenario 2
+df <- data_short_MA %>% 
+  select(contains('B', ignore.case =  F))
+
+col_names <- names(df)
+cost <- rep(c(0, 5, 10), each=2)
+market_value <- rep(c(5, 10), 3)
+col_idx <- seq(1,ncol(df),2)
+df1 <- map_df(seq_along(col_idx), function(i){
+  
+  data.frame( response = c(df[,col_names[col_idx[i]]], df[,col_names[col_idx[i]+1]]),
+              cost = cost[i],
+              market_value = market_value[i],
+              buyer = c(rep('Friend', n_sbj), rep('Stranger', n_sbj)) )
+  
+}) 
+
+data_s2 <- df1 %>% 
+  mutate(response=ifelse(response%in%unique(cost), response, 'Other'),
+         response = factor(response, levels = c('0', '5', '10', 'Other')))
+
+data_s2%>% 
+  group_by(cost, market_value, buyer) %>% 
+  count(response, .drop = F) %>% 
+  ggplot(aes(response, n, fill=buyer)) +
+  geom_bar(stat="identity", position=position_dodge(), color="black") + 
+  mytheme() + 
+  scale_fill_jcolors(palette = 'pal6') +
+  labs(y=NULL, x=NULL) +
+  facet_grid(cost~market_value)
+```
+
+```{r plot2-empirical-data-S2, message=F, warning=F, fig.width=3.5, fig.height=4, fig.align='center'}
+data_s2 <- df1 %>% mutate(response = ifelse(response>=market_value, 1, 0)) 
+
+data_s2 %>% 
+    group_by(buyer) %>% 
+    summarise( m = mean(response) ) %>% 
+    ggplot(aes(buyer, m, fill=buyer)) +
+    geom_bar(stat="identity", position=position_dodge(), color="black") +
+    scale_fill_jcolors(palette = 'pal6') +
+    labs(y='P(Price ≥ Market Value)', x='Buyer') +
+    mytheme() +
+    theme(legend.position = 'none') +
+    scale_y_continuous(limits = 0:1) 
+``` 
+
+#### Questions
+
+<br>
+<p class="comment">
+You are going to a sold-out game of your favorite local sport-team, and you have an extra ticket. The price marked on the ticket is &#36;5 but [you were given your tickets for free by a friend / which is what you paid for each ticket / but you paid &#36;10 for each ticket when you bought them from another student]. <br><br>
+You want to get rid of the extra ticket and you know the going price is $5. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.
+</p>
+
+<div class="alert alert-info">
+  What price do you ask for if... <br>
+  a) He is a friend <br>
+  b) He is a stranger
+</div>
+
+<div class="alert alert-info">
+  What would you have said if you found out that the going market price was $10 instead? <br>
+  a) He is a friend <br>
+  b) He is a stranger
+</div>
+
+#### Stan Code
+
+```{r stan-code-S2, cache=TRUE}
+ bernoulli_scenario_2 <- rstan::stan_model('bernoulli_scenario_4.stan')    
+```
+
+```{r print-stan-code-S2, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_2))   
+``` 
+
+#### Fit
+
+```{r fit-stan-model-S2, message=F, warning=F, fig.width=6, fig.height=5, fig.align='center'}
+# Create Stan Data
+X <- model.matrix(~ buyer, data_s2)
+  
+#Stan Data
+stan_data <- list(
+  N       = nrow(data_s2),
+  Y       = data_s2$response,
+  K       = ncol(X),
+  X       = X,
+  
+  prior_only = 0
+)
+
+# Fit the model
+fit_S2 <- rstan::sampling(bernoulli_scenario_2, 
+                          iter = 2000, 
+                          cores = 4, 
+                          data = stan_data, 
+                          save_warmup = FALSE)  
+
+```
+
+**Plot Model Posteriors**
+
+```{r plot-posteriors-stan-model-S2, message=F, warning=F, fig.width=8, fig.height=6, fig.align='center'}
+extract(fit_S2)$b %>%
+    melt(value.name = "post") %>%
+    mutate(Var2 = ifelse(Var2 == 1, "Intercept", "")) %>%
+    filter(Var2 != "Intercept") %>%
+    ggplot(aes(x = post, y = Var2)) + stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6],
+    color = jcolors::jcolors(palette = "pal8")[12]) + mytheme() + geom_vline(xintercept = 0,
+    linetype = 2) + labs(y = NULL, x = "Posterior Probability", title = "Stranger - Friend")
+```
+
+### {-}
+
+<br><br>
+
+## Beer on the Beach
+
+To analyze the data from the third study (“Drink” scenarios) we fit a Bayesian gamma regression model. We estimate the mean offer difference between the “fancy resort hotel” and the “rundown grocery store” scenario. 
+
+<br>
+
+### {.tabset}
+
+#### (Short) Pilot Data
+
+```{r plot-empirical-data-S3, message=F, warning=F, fig.width=6, fig.height=3.6, fig.align='center'}
+# --------- Coding legend: --------- #
+  # -- Dependent Variable -- #
+  # response 
+  # -- Explanatory Variables -- #
+  # store: Resort hotel vs Grocery store
+  
+  # Create dataframe scenario 3
+  data_s3 <- data_short_MA %>% 
+    select(subject, contains('C', ignore.case = FALSE)) %>% 
+    melt(id.var='subject',
+         variable.name='store',
+         value.name='response') %>% 
+    mutate(store=ifelse(store=='C1_1', 'Resort Hotel', 'Grocery Store'),
+           response=as.numeric(response))
+  
+  data_s3 %>% 
+    ggplot(aes(response, fill=store, color=store)) +
+    geom_density(alpha=.4, adjust=1.5, size=2) + 
+    mytheme() + 
+    theme(legend.position = c(0.7, 0.8)) +
+    scale_fill_jcolors(palette = 'pal6') +
+    scale_color_jcolors(palette = 'pal6') +
+    # scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+    scale_x_continuous(breaks = seq(0, 40, 10), limits = c(0, 40) ) +
+    labs(y=NULL, x=NULL) 
+```
+
+#### Questions
+
+<br>
+<p class="comment">
+You are on the beach on a hot day, and you would really like a cold bottle of beer. A friend offers to go buy the beer from [a fancy resort hotel / a small, run-down grocery store]. They ask how much you are willing to pay for the beer: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender. 
+</p>
+
+<div class="alert alert-info">
+  What price do you tell them?
+</div>
+
+#### Stan Code
+```{stan stan-code-S3, output.var='gamma_scenario_3', code=readLines('gamma_scenario_3.stan'), cache = TRUE} 
+
+```
+
+```{r print-stan-code-S3, eval = TRUE, echo = FALSE}
+cat(get_stancode(gamma_scenario_3))  
+```
+
+#### Fit
+
+```{r fit-stan-model-S3, message=F, warning=F, fig.width=5, fig.height=3.5, fig.align='center'}
+# Create Stan Data
+X <- model.matrix(~ store, data_s3) 
+
+#Stan Data
+stan_data <- list(
+  N = nrow(data_s3),
+  Y = data_s3$response,
+  X = X,
+  K = ncol(X),
+  
+  N_sbj    = n_sbj,
+  J_sbj    = data_s3$subject,
+  
+  prior_only = 0
+)
+
+# Fit the model
+fit_S3 <- rstan::sampling(gamma_scenario_3, 
+                          iter = 2000, 
+                          cores = 4, 
+                          data = stan_data, 
+                          save_warmup = FALSE)
+```
+
+**Plot Model Posteriors**
+
+```{r plot-posteriors-stan-model-S3, message=F, warning=F, fig.width=4.5, fig.height=3.5, fig.align='center'}
+draws <- extract(fit_S3) 
+
+draws$b %>%
+  melt(value.name = 'post') %>%
+  mutate(Var2=ifelse(Var2==1, 'Intercept', '')) %>%
+  filter(Var2!='Intercept') %>%
+  ggplot(aes(x = post, y = Var2)) +
+  stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6],
+               color = jcolors::jcolors(palette = "pal8")[12]) +
+  mytheme() + geom_vline(xintercept = 0, linetype = 2) +
+  labs(y = NULL, x = "Posterior Probability", title='Resort Hotel - Grocery Store') 
+```
+
+### {-}
+
+<br><br>
+
+## Jacket-Calculator
+
+We will analyze the data from the Jacket-Calculator study using a Bayesian binomial regression model in order to estimate the probability to respond 'Yes' in the two scenarios. 
+
+<br>
+
+### {.tabset}
+
+#### (Short) Pilot Data
+
+```{r plot-empirical-data-S4, message=F, warning=F, fig.width=3, fig.height=4, fig.align='center'}
+# --------- Coding legend: --------- #
+  # -- Dependent Variable -- #
+  # response 
+  # -- Explanatory Variables -- #
+  # store: Resort hotel vs Grocery store
+  
+  # Create dataframe scenario 3
+  data_s4 <- data_short_MA %>% 
+    select(subject, contains('D', ignore.case = FALSE)) %>% 
+    rename(low_price2 = D3, low_price1 = D2_1,
+           high_price2 = D4, high_price1 = D2_2) %>% 
+    melt(id.var='subject',
+         variable.name='price',
+         value.name='response') %>% 
+    mutate(price=ifelse(str_detect(price, 'low'), 'low', 'high'),
+           response=ifelse(response=='No', 0, 1))
+  
+  data_s4 %>% 
+    filter(response==1) %>% 
+    group_by(price) %>%
+    count(response, .drop = F) %>% 
+    ungroup() %>% 
+    ggplot(aes(price, n, fill=price)) +
+    geom_bar(stat = "identity", 
+             # aes(y = (..count..)/sum(..count..)),
+             position = position_dodge()) +
+    mytheme() + theme(legend.position = 'none') +
+    scale_fill_jcolors(palette = 'pal6') +
+    scale_color_jcolors(palette = 'pal6') +
+    # scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+    labs(y='Number of "Yes"', x='Price') 
+```
+
+#### Questions
+
+<br>
+<p class="comment">
+You are about to purchase a jacket for [&#36;125 / &#36;15] and a Bluetooth speaker for [&#36;15 / &#36;125]. The salesman informs you that the speaker you wish to buy is on sale for [&#36;10 / &#36;120] at the other branch store, located 20 minutes away.
+</p>
+
+<div class="alert alert-info">
+Would you make the trip to the other store?
+ a) Yes
+ a) No 
+</div>
+
+<p class="comment">
+Imagine that you are about to purchase a jacket for [&#36;125 / &#36;15] and a calculator for [&#36;15 / &#36;125]. The salesman informs you that the calculator you wish to buy is on sale for [&#36;10 / &#36;120] at the other branch store, located 20 minutes away. 
+</p>
+
+<div class="alert alert-info">
+Would you make the trip to the other store?
+ a) Yes
+ a) No 
+</div>
+
+#### Stan Code
+```{r stan-code-S4, cache=TRUE}
+ bernoulli_scenario_4 <- rstan::stan_model('bernoulli_scenario_4.stan')  
+```
+
+```{r print-stan-code-S4, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_4))  
+``` 
+
+#### Fit
+
+```{r fit-stan-model-S4, message=F, warning=F, fig.width=6, fig.height=5, fig.align='center'}
+# Create Stan Data
+X <- model.matrix(~ price, data_s4) 
+
+#Stan Data
+stan_data <- list(
+  N = nrow(data_s4),
+  Y = data_s4$response,
+  X = X,
+  K = ncol(X),
+  
+  N_sbj    = n_sbj,
+  J_sbj    = data_s4$subject,
+  
+  prior_only = 0
+)
+
+# Fit the model
+fit_S4 <- rstan::sampling(bernoulli_scenario_4, 
+                          iter = 2000, 
+                          cores = 4, 
+                          save_warmup = FALSE,
+                          data = stan_data, 
+                          save_warmup = FALSE)
+
+```
+
+**Plot Model Posteriors**
+
+```{r plot-posteriors-stan-model-S4, message=F, warning=F, fig.width=4.5, fig.height=3.5, fig.align='center'}
+extract(fit_S4)$b %>% 
+  melt(value.name = 'post') %>% 
+  mutate(Var2=ifelse(Var2==1, 'Intercept', '')) %>% 
+  filter(Var2!='Intercept') %>%
+  ggplot(aes(x = post, y = Var2)) +  
+  stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6], 
+               color = jcolors::jcolors(palette = "pal8")[12]) + 
+  mytheme() + geom_vline(xintercept = 0, linetype = 2) + 
+  labs(y = NULL, x = "Posterior Probability", title='Low - High')
+
+```
+
+### {-}
+
+## Lost Ticket
+
+We analyze the data from the Lost Ticket study using a Bayesian binomial regression model in order to estimate the probability to respond 'Yes' in the two scenarios. 
+
+<br>
+
+### {.tabset}
+
+#### (Short) Pilot Data
+
+```{r plot-empirical-data-S5, message=F, warning=F, fig.width=3, fig.height=4, fig.align='center'}
+# --------- Coding legend: --------- #
+# -- Dependent Variable -- #
+# response 
+# -- Explanatory Variables -- #
+# loss: ticket vs cash
+
+# Create dataframe scenario 3
+data_s5 <- data_short_MA %>% 
+  select(subject, contains('E', ignore.case = FALSE)) %>%
+  rename(ticket = E1, 
+         cash = E2) %>% 
+  melt(id.var='subject',
+       variable.name='loss',
+       value.name='response') %>% 
+  mutate(response=ifelse(response=='No', 0, 1))
+
+data_s5 %>% 
+  filter(response==1) %>% 
+  group_by(loss) %>%
+  count(response, .drop = F) %>% 
+  ungroup() %>% 
+  ggplot(aes(loss, n, fill=loss)) +
+  geom_bar(stat = "identity", 
+           # aes(y = (..count..)/sum(..count..)),
+           position = position_dodge()) +
+  mytheme() + theme(legend.position = 'none') +
+  scale_fill_jcolors(palette = 'pal6') +
+  scale_color_jcolors(palette = 'pal6') +
+  # scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+  labs(y='Number of "Yes"', x='Loss') 
+```
+
+#### Questions
+
+<br>
+<p class="comment">
+Imagine you are on your way to a play with [a pair of tickets for which you have paid &#36;40 / the intention of buying two tickets worth &#36;40 in total]. On entering the theater, you discover that [you have lost the tickets / you have lost &#36;40 in cash].
+</p>
+
+<div class="alert alert-info">
+Would you pay $40 for another pair of tickets?
+ a) Yes
+ b) No
+</div>
+
+#### Stan Code
+
+```{r print-stan-code-S5, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_4))  
+```
+
+#### Fit
+
+```{r fit-stan-model-S5, message=F, warning=F, fig.width=6, fig.height=5, fig.align='center'}
+# Create Stan Data
+X <- model.matrix(~ loss, data_s5) 
+
+#Stan Data
+stan_data <- list(
+  N = nrow(data_s5),
+  Y = data_s5$response,
+  X = X,
+  K = ncol(X),
+  
+  N_sbj    = n_sbj,
+  J_sbj    = data_s3$subject,
+  
+  prior_only = 0
+)
+
+# Fit the model
+fit_S5 <- rstan::sampling(bernoulli_scenario_4, 
+                          iter = 2000, 
+                          cores = 4, 
+                          save_warmup = FALSE,
+                          data = stan_data, 
+                          save_warmup = FALSE)
+```
+
+**Plot Model Posteriors**
+
+```{r plot-posteriors-stan-model-S5, message=F, warning=F, fig.width=4.5, fig.height=3.5, fig.align='center'} 
+extract(fit_S5)$b %>%
+    melt(value.name = 'post') %>% 
+    mutate(Var2=ifelse(Var2==1, 'Intercept', '')) %>% 
+    filter(Var2!='Intercept') %>%
+    ggplot(aes(x = post, y = Var2)) + 
+    stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6], 
+                 color = jcolors::jcolors(palette = "pal8")[12]) + 
+    mytheme() + geom_vline(xintercept = 0, linetype = 2) + 
+    labs(y = NULL, x = "Posterior Probability", title='Ticket - Cash') 
+
+```
+
+### {-}
+
+
+
+## Membership Gym
+
+We analyze the data from the Membership Gym study using a Bayesian binomial regression model in order to estimate the probability to respond 'Wasted $20' in the two scenarios. 
+
+<br>
+
+### {.tabset}
+
+#### (Short) Pilot Data
+
+```{r plot-empirical-data-S6, message=F, warning=F, fig.width=3, fig.height=4, fig.align='center'}
+answers = c(
+    'I feel like I wasted $20',
+    'I feel like I wasted something but no specific amount or measure comes to mind',
+    'I feel like I wasted nothing, since my visit had already been paid for'
+  )
+  # Create dataframe scenario 3
+  data_s6 <- data_short_MA %>% 
+    select(subject, contains('F', ignore.case = FALSE)) %>%
+    mutate(
+      F1 = case_when( F1==answers[1]~1, F1==answers[2]~0, F1==answers[3]~0),
+      F2 = case_when( F2==answers[1]~1, F2==answers[2]~0, F2==answers[3]~0)
+      ) %>% 
+    rename(`Per-session` = F1, 
+           Yearly = F2) %>% 
+    melt(id.var='subject',
+         variable.name='frame',
+         value.name='response')
+  
+  data_s6 %>% 
+    filter(response==1) %>% 
+    group_by(frame) %>%
+    count(response, .drop = F) %>% 
+    ungroup() %>% 
+    ggplot(aes(frame, n, fill=frame)) +
+    geom_bar(stat = "identity", 
+             position = position_dodge()) +
+    mytheme() + theme(legend.position = 'none') +
+    scale_fill_jcolors(palette = 'pal6') +
+    scale_color_jcolors(palette = 'pal6') +
+    # scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+    labs(y='Number of "Wasted $20"', x='Frame')
+```
+
+#### Questions
+
+<br>
+<p class="comment">
+You have a gym membership in a nearby town that you travel to on a regular basis. You go to this gym every single Monday night. The membership allows you to pay [&#36;20 (non-refundable) per session / &#36;1000 a year (i.e., roughly &#36;20 per visit)]. One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forego your exercise that evening.
+</p>
+
+<div class="alert alert-info">
+Which of the following statements better captures your feelings about the cost of the missed workout?
+ a) I feel like I wasted $20
+ b) I feel like I wasted nothing, since my visit had already been paid for
+ c) I feel like I wasted something, but no specific amount or measure comes to mind
+</div>
+
+#### Stan Code
+
+```{r stan-code-S6, cache=TRUE, results='hide'}
+bernoulli_scenario_6 <- rstan::stan_model('bernoulli_scenario_6.stan') 
+```
+
+```{r print-stan-code-S6, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_6)) 
+```
+
+#### Fit
+
+```{r fit-stan-model-S6, message=F, warning=F, fig.width=6, fig.height=5, fig.align='center'}
+# Create Stan Data
+X <- model.matrix(~ frame, data_s6 %>% mutate(frame=ifelse(frame=='Per-session', 1, 0 )))
+
+#Stan Data
+stan_data <- list(
+  N = nrow(data_s6),
+  Y = data_s6$response,
+  X = X,
+  K = ncol(X),
+  
+  N_sbj    = n_sbj,
+  J_sbj    = data_s6$subject,
+  
+  prior_only = 0
+)
+
+# Fit the model
+fit_S6 <- rstan::sampling(bernoulli_scenario_6, 
+                          iter = 2000, 
+                          cores = 4, 
+                          pars    = c('b'),
+                          save_warmup = FALSE,
+                          data = stan_data, 
+                          save_warmup = FALSE)
+```
+
+**Plot Model Posteriors**
+
+```{r plot-posteriors-stan-model-S6, message=F, warning=F, fig.width=4.5, fig.height=3.5, fig.align='center'}
+extract(fit_S6)$b %>%
+    as.data.frame() %>% 
+    mutate(post=V2,
+           type = '') %>% 
+    ggplot(aes(x = post, y = type)) + 
+    stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6], 
+                 color = jcolors::jcolors(palette = "pal8")[12]) + 
+    mytheme() + geom_vline(xintercept = 0, linetype = 2) + 
+    labs(y = NULL, x = "Posterior Probability", title='Per-session - Yearly')
+
+```
+
+### {-}
+
+
+
+## Airplanes Coupons
+
+We analyze the data from the Membership Airplanes Coupons using a Bayesian binomial regression model in order to estimate the probability to respond 'Pay your friend $35 for the coupon' in the two scenarios. 
+
+<br>
+
+### {.tabset}
+
+#### (Short) Pilot Data
+
+```{r plot-empirical-data-S7, message=F, warning=F, fig.width=3, fig.height=4, fig.align='center'}
+# --------- Coding legend: --------- #
+  # -- Dependent Variable -- #
+  # response 
+  # -- Explanatory Variables -- #
+  # coupon: purchased vs free
+  
+  answers = c(
+    'Pay your friend $35 for the coupon.',
+    'Pay some, but not the full amount for the coupon (for example, half the price).',
+    'Consider it a gift and not pay for the coupon.'
+  )
+  # Create dataframe scenario 3
+  data_s7 <- data_short_MA %>% 
+    select(subject, contains('G', ignore.case = FALSE)) %>%
+    mutate(
+      G1 = case_when( G1==answers[1]~1, G1==answers[2]~0, G1==answers[3]~0),
+      G2 = case_when( G2==answers[1]~1, G2==answers[2]~0, G2==answers[3]~0)
+    ) %>% 
+    rename(purchased = G1, 
+           free = G2) %>% 
+    melt(id.var='subject',
+         variable.name='coupon',
+         value.name='response')
+  
+  data_s7 %>% 
+    filter(response==1) %>% 
+    group_by(coupon) %>%
+    count(response, .drop = F) %>% 
+    ungroup() %>% 
+    ggplot(aes(coupon, n, fill=coupon)) +
+    geom_bar(stat = "identity", 
+             position = position_dodge()) +
+    mytheme() + theme(legend.position = 'none') +
+    scale_fill_jcolors(palette = 'pal6') +
+    scale_color_jcolors(palette = 'pal6') +
+    # scale_y_continuous(labels=scales::percent, guide = "prism_offset") +
+    labs(y='Pay your friend $35 for the coupon', x='')
+```
+
+#### Questions
+
+<br>
+<p class="comment">
+You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth &#36;35, which can be used to upgrade your ticket/seat from economy to business class. They purchased one coupon for the standard price of &#36;35 and received the other one for free. Just one coupon is required to upgrade your class on the current flight, and your friend offers you the coupon [which he purchased / which he got for free] so that you can upgrade as well.
+</p>
+
+<div class="alert alert-info">
+What do you think is the most appropriate thing to do?
+ a) Pay your friend $35 for the coupon.
+ b) Consider it a gift and not pay for the coupon.
+ c) Pay some, but not the full amount for the coupon (for example, half the price).
+</div>
+
+#### Stan Code
+
+```{r print-stan-code-S7, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_6)) 
+```
+
+#### Fit
+
+```{r fit-stan-model-S7, message=F, warning=F, fig.width=6, fig.height=5, fig.align='center'}
+# Create Stan Data
+  X <- model.matrix(~ coupon, data_s7)
+  
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_s7),
+    Y = data_s7$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n_sbj,
+    J_sbj    = data_s7$subject,
+    
+    prior_only = 0
+  )
+  
+  # Fit the model
+  fit_S7 <- rstan::sampling(bernoulli_scenario_6, 
+                            iter = 2000, 
+                            cores = 4, 
+                            pars    = c('b'),
+                            save_warmup = FALSE,
+                            data = stan_data, 
+                            save_warmup = FALSE)
+```
+
+**Plot Model Posteriors**
+
+```{r plot-posteriors-stan-model-S7, message=F, warning=F, fig.width=4.5, fig.height=3.5, fig.align='center'}
+extract(fit_S7)$b %>%
+    as.data.frame() %>% 
+    mutate(post=V2,
+           type = '') %>% 
+    ggplot(aes(x = post, y = type)) + 
+    stat_halfeye(fill = jcolors::jcolors(palette = "pal8")[6], 
+                 color = jcolors::jcolors(palette = "pal8")[12]) + 
+    mytheme() + geom_vline(xintercept = 0, linetype = 2) + 
+    labs(y = NULL, x = "Posterior Probability", title='Per-session - Yearly')
+
+```
+
+### {-}

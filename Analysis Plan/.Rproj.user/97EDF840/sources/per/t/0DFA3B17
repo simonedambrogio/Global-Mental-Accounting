@@ -1,0 +1,28 @@
+{
+    "id": "0DFA3B17",
+    "path": "~/Dropbox/Ongoing/Mental Account Replication/Analysis Plan/Report.Rmd",
+    "project_path": "Report.Rmd",
+    "type": "r_markdown",
+    "hash": "4112316773",
+    "contents": "",
+    "dirty": false,
+    "created": 1651442313515.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "531,104",
+        "scrollLine": "523",
+        "last_setup_crc32": "",
+        "chunk_output_type": "console"
+    },
+    "folds": "53|14|144|0|\n147|40|219|0|\n223|15|227|0|\n228|18|401|0|\n236|23|276|0|\n238|98|275|0|\n277|14|326|0|\n327|14|337|0|\n338|8|397|0|\n412|98|457|0|\n459|101|472|0|\n474|14|493|0|\n545|20|649|0|\n553|23|582|0|\n583|14|593|0|\n594|14|602|0|\n603|8|645|0|\n605|95|628|0|\n632|109|644|0|\n658|23|693|0|\n694|14|716|0|\n718|31|720|0|\n726|8|769|0|\n728|93|753|0|\n757|109|768|0|\n772|14|880|0|\n780|23|814|0|\n815|14|827|0|\n828|14|833|0|\n834|8|876|0|\n836|93|860|0|\n864|110|875|0|\n881|17|996|0|\n887|13|992|0|\n889|23|924|0|\n925|14|938|0|\n939|14|948|0|\n949|8|992|0|\n997|20|1112|0|\n1005|23|1046|0|\n1047|14|1060|0|\n1061|14|1066|0|\n1067|8|1110|0|\n",
+    "lastKnownWriteTime": 1661536534,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1661536534797,
+    "read_only": false,
+    "read_only_alternatives": []
+}
