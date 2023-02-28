@@ -1,0 +1,28 @@
+{
+    "id": "CC2ACF6D",
+    "path": "~/Dropbox/Ongoing/Mental Account Replication/Power Analysis/Report.Rmd",
+    "project_path": "Report.Rmd",
+    "type": "r_markdown",
+    "hash": "1866007535",
+    "contents": "",
+    "dirty": false,
+    "created": 1661536600100.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "803,0",
+        "scrollLine": "797",
+        "last_setup_crc32": "",
+        "chunk_output_type": "console"
+    },
+    "folds": "16|27|30|0|\n53|14|144|0|\n147|40|219|0|\n230|18|563|0|\n235|19|506|0|\n237|110|239|0|\n241|86|425|0|\n427|94|447|0|\n449|94|469|0|\n471|110|504|0|\n507|14|552|0|\n553|14|559|0|\n571|61|573|0|\n575|86|758|0|\n654|33|669|0|\n672|30|713|0|\n715|31|756|0|\n824|14|843|0|\n844|14|850|0|\n855|20|1258|0|\n860|19|1233|0|\n1266|84|1486|0|\n1488|94|1507|0|\n1509|94|1528|0|\n1530|94|1549|0|\n1551|94|1570|0|\n1572|111|1624|0|\n1627|14|1649|0|\n1650|14|1659|0|\n",
+    "lastKnownWriteTime": 1661539040,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1661539040139,
+    "read_only": false,
+    "read_only_alternatives": []
+}

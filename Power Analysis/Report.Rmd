@@ -1,0 +1,2817 @@
+---
+title: "Power Analysis"
+author: "Simone D'Ambrogio"
+subtitle: ""
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    fig_caption: true
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: united
+    highlight: tango
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, fig.align='left')
+library(knitr)
+## Global options
+options(max.print="75")
+opts_chunk$set(
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE
+               )
+opts_knit$set(width=75)
+```
+
+<style type="text/css">
+  body {
+    text-align: justify;
+    font-size: 16px;
+  }
+  img[src$="centerme"] {
+    display:block;
+    margin: 0 auto;
+  }
+  
+  p.comment {
+    background-color: #DBDBDB;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+</style>
+
+<br><br>
+
+```{r mytheme}
+mytheme <- function (palette = "black_and_white", base_size = 14, base_family = "sans", 
+                     base_fontface = "plain", base_line_size = base_size/20, base_rect_size = base_size/14, 
+                     axis_text_angle = 0, border = FALSE) {
+  
+  is_bool <- function(x) {
+    is_logical(x, n = 1) && !is.na(x)
+  } 
+  angle <- axis_text_angle[1]
+   if (!angle %in% c(0, 45, 90, 270)) 
+     stop(sprintf("'axis_text_angle' must be one of [%s]", 
+                  paste(c(0, 45, 90, 270), collapse = ", ")), ".\nFor other angles, use the guide_axis() function in ggplot2 instead", 
+          call. = FALSE)
+   if (!palette %in% names(ggprism::ggprism_data$themes)) {
+     stop("The palette ", paste(palette), " does not exist.\n         See names(ggprism_data$themes) for valid palette names")
+   }
+   colours <- tibble::deframe(ggprism::ggprism_data$themes[[palette]])
+   if (!is_bool(border)) {
+     stop("border must be either: TRUE or FALSE")
+   }
+   else {
+     if (border) {
+       panel.border <- element_rect(fill = NA)
+       axis.line <- element_blank()
+     }
+     else if (!border) {
+       panel.border <- element_blank()
+       axis.line <- element_line()
+     }
+   }
+   t <- theme(line = element_line(colour = colours["axisColor"], 
+                                  size = base_line_size, linetype = 1, lineend = "square"), 
+              rect = element_rect(fill = "white", colour = colours["axisColor"], 
+                                  size = base_rect_size, linetype = 1), text = element_text(family = base_family, 
+                                                                                            face = base_fontface, colour = colours["graphTitleColor"], 
+                                                                                            size = base_size, lineheight = 0.9, hjust = 0.5, 
+                                                                                            vjust = 0.5, angle = 0, margin = margin(), debug = FALSE), 
+              prism.ticks.length = unit(base_size/50, "pt"), axis.line = axis.line, 
+              axis.line.x = NULL, axis.line.y = NULL, axis.text = element_text(size = rel(0.95), 
+                                                                               colour = colours["axisLabelColor"]), axis.text.x = element_text(margin = margin(t = 0.8 * 
+                                                                                                                                                                 base_size/4), angle = axis_text_angle, hjust = ifelse(axis_text_angle %in% 
+                                                                                                                                                                                                                         c(45, 90, 270), 1, 0.5), vjust = ifelse(axis_text_angle %in% 
+                                                                                                                                                                                                                                                                   c(0, 90, 270), 0.5, 1)), axis.text.x.top = element_text(margin = margin(b = 0.8 * 
+                                                                                                                                                                                                                                                                                                                                             base_size/4), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.5 * 
+                                                                                                                                                                                                                                                                                                                                                                                                                    base_size/4), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.5 * 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 base_size/4), hjust = 0), axis.ticks = element_line(), 
+              axis.ticks.length = unit(3, "points"), axis.ticks.length.x = NULL, 
+              axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL, 
+              axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL, 
+              axis.ticks.length.y.right = NULL, axis.title = element_text(colour = colours["axisTitleColor"]), 
+              axis.title.x = element_text(margin = margin(t = base_size * 
+                                                            0.6), vjust = 1), axis.title.x.top = element_text(margin = margin(b = base_size * 
+                                                                                                                                0.6), vjust = 0), axis.title.y = element_text(angle = 90, 
+                                                                                                                                                                              margin = margin(r = base_size * 0.6), vjust = 1), 
+              axis.title.y.right = element_text(angle = -90, margin = margin(l = base_size * 
+                                                                               0.6), vjust = 0), legend.background = element_blank(), 
+              legend.spacing = unit(base_size, "pt"), legend.spacing.x = NULL, 
+              legend.spacing.y = NULL, legend.margin = margin(base_size/2, 
+                                                              base_size/2, base_size/2, base_size/2), legend.key = element_blank(), 
+              legend.key.size = unit(1.2, "lines"), legend.key.height = NULL, 
+              legend.key.width = unit(base_size * 1.8, "pt"), legend.text = element_text(size = rel(0.8), 
+                                                                                         face = "plain"), legend.text.align = NULL, legend.title = element_blank(), 
+              legend.title.align = NULL, legend.position = "right", 
+              legend.direction = NULL, legend.justification = "center", 
+              legend.box = NULL, legend.box.margin = margin(0, 0, 0, 
+                                                            0, "cm"), legend.box.background = element_blank(), 
+              legend.box.spacing = unit(base_size, "pt"), panel.background = element_rect(fill = ifelse(palette == 
+                                                                                                          "office", colours["plottingAreaColor"], NA), colour = NA), 
+              panel.border = panel.border, panel.grid = element_blank(), 
+              panel.grid.minor = element_blank(), panel.spacing = unit(base_size/2, 
+                                                                       "pt"), panel.spacing.x = NULL, panel.spacing.y = NULL, 
+              panel.ontop = FALSE, strip.background = element_blank(), 
+              strip.text = element_text(colour = colours["axisTitleColor"], 
+                                        size = rel(0.8), margin = margin(base_size/2.5, base_size/2.5, 
+                                                                         base_size/2.5, base_size/2.5)), strip.text.x = element_text(margin = margin(b = base_size/3)), 
+              strip.text.y = element_text(angle = -90, margin = margin(l = base_size/3)), 
+              strip.text.y.left = element_text(angle = 90), strip.placement = "inside", 
+              strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(base_size/4, 
+                                                                                               "pt"), strip.switch.pad.wrap = unit(base_size/4, 
+                                                                                                                                   "pt"), plot.background = element_rect(fill = colours["pageBackgroundColor"], 
+                                                                                                                                                                         colour = NA), plot.title = element_text(size = rel(1.2), 
+                                                                                                                                                                                                                 hjust = 0.5, vjust = 1, margin = margin(b = base_size)), 
+              plot.title.position = "panel", plot.subtitle = element_text(hjust = 0.5, 
+                                                                          vjust = 1, margin = margin(b = base_size/2)), plot.caption = element_text(size = rel(0.8), 
+                                                                                                                                                    hjust = 1, vjust = 1, margin = margin(t = base_size/2)), 
+              plot.caption.position = "panel", plot.tag = element_text(size = rel(1.2), 
+                                                                       hjust = 0.5, vjust = 0.5), plot.tag.position = "topleft", 
+              plot.margin = margin(base_size/2, base_size/2, base_size/2, 
+                                   base_size/2), complete = TRUE)
+   ggprism::ggprism_data$themes[["all_null"]] %+replace% t
+ }
+```
+
+
+```{r load-data&library, results='hide'}
+
+# Load libraries
+library(dplyr); library(purrr); library(stringr)
+library(ggplot2); library(ggpubr); library(jcolors)
+library(cowplot); library(ggprism); library(tidybayes)
+library(reshape2); library(parallel); library(rstan)
+
+
+effect_size = c("Paper Effect Size",
+                "Paper Effect Size/2",
+                "Paper Effect Size/3",
+                "Paper Effect Size/4")
+# Functions
+psoftmax <- function(b) exp(c(0, b)) / sum(exp( c(0, b) ))
+
+words_replace <- function(variable, words_to_replace, replace_with = "") {
+
+    library(dplyr)
+    if (!require(dplyr)) {
+        install.packages("dplyr")
+        library(dplyr)
+    }
+
+    # variable <- enquo(variable) var <- select(data, !!variable) %>% .[,]
+
+    if (!is.character(variable))
+        variable <- as.character(variable)
+
+    for (word_i in 1:length(words_to_replace)) {
+        word_to_rm_index <- which(str_detect(variable, fixed(words_to_replace[word_i])))
+
+        if (any(word_to_rm_index)) {
+            words_to_replace_i <- words_to_replace[word_i]
+            new_words <- sapply(seq_along(word_to_rm_index), function(i) {
+                variable[word_to_rm_index][i] <- gsub(words_to_replace_i, replace_with,
+                  variable[word_to_rm_index][i], fixed = TRUE)
+            })
+            variable[word_to_rm_index] <- new_words
+        } else {
+            warning(paste0("Sting '", words_to_replace, "' not found"))
+        }
+    }
+
+    return(variable)
+}
+
+seq_vector <- function(x) {
+    idx <- c(which(diff(x) != 0), length(x))
+    time <- c(idx[1], diff(idx))
+    rep(x = 1:length(idx), times = time)
+}
+
+# Load data
+data_short <- readRDS('../Pilot/Short Version/Data/data_short.rds')$data %>% 
+  mutate(subject=1:n()) %>% 
+  rename(age=`Age.`, A3=`A3.`)
+
+questions  <- readRDS('../Pilot/Short Version/Data/data_short.rds')$question
+
+# ----- Mental Accounting ----- #
+# Remove final questionnaires
+data_short_MA <- data_short[, -(48:75)]
+# Remove response time
+idx_time      <- str_detect( names(data_short_MA),  'time_')
+data_short_MA <- data_short_MA[, !idx_time] 
+
+data_short_MA <- data_short_MA %>% 
+  rename_with(~gsub('.', '', .x, fixed = TRUE)) %>% 
+  rename_with(toupper, .cols = -contains('subject'))
+
+n_sbj <- nrow( data_short_MA )
+```
+
+<br><br>
+
+## Introduction
+
+Here we conduct a simulation-based power analysis using the software environment R and the probabilistic programming language Stan for Bayesian statistical inference. For each scenario, we define the target effect size as half of the effect size found in the original reference papers in order to minimize the risk of performing the analysis on inflated effect sizes. Our goal is to obtain 0.8 power to detect the target effect size for each scenario at the standard 0.05 alpha error probability. We estimate the power for each sample ranging from 50 to 300 participants in increments of 50. We find that a sample of 250 participants per country is needed to achieve 80% power in all scenarios.
+
+<br><br>
+
+
+## Mr. A vs Mr. B2
+
+<br>
+
+### {.tabset}
+#### Power Analysis
+
+```{stan stan-code-S1, output.var='mixture_scenario_1', code=readLines('mental_accounting.stan'), cache=TRUE} 
+    
+```
+
+```{r power-analysis-S1, message=F, warning=F, fig.width=6, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+nModels <- 4 
+nChains <- 2
+nClusters <- nModels*nChains
+
+n_sim <- 200
+n_sbj_range <- c(10, 50, 100, 150) 
+
+# Calculate the probability of responding 'different'
+logit = function(p) log(p/(1-p))
+
+# Effect found in the paper Thaler 1985
+n_sbj    = 87
+scenario = 1:4
+A        = c(56, 66, 22, 19)
+B        = c(16, 14, 61, 63)
+ds       = (A+B)/n_sbj # Probability to choose Different
+cA       = A/(A+B)
+
+effect_ds = logit(ds)
+effect_cA = logit(cA)
+
+sim_y <- function(sbj, mu_ds, mu_cA){
+  
+  std      = 0.5
+  n_sbj    = 87
+  scenario = 1:4
+  A        = c(56, 66, 22, 19)
+  B        = c(16, 14, 61, 63)
+  ds       = (A+B)/n_sbj # Probability to choose Different
+  cA       = A/(A+B)
+
+  # Probability of 'Different' and Conditional Probability of 'A'
+  p_ds <- plogis(mu_ds)
+  p_cA <- plogis(mu_cA)
+  
+  response <- sapply( scenario, function(i){
+    y_ds <- rbinom( 1, 1, p_ds[i])
+    if( y_ds==1 ){
+      response = rbinom(1, 1, (1-cA[i]) )
+    } else {
+      response = 2
+    }
+    response
+  })
+  
+  return( data.frame(subject=sbj, response, scenario=paste0('s', scenario)) )
+}
+
+
+samplingfunction <- function(x){
+  
+  
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), 
+                             sim_y, mu_ds=effect_ds, 
+                             mu_cA=effect_cA)
+  
+  ## Create Stan Data
+  X <- model.matrix(~ 0 + scenario, data_sim)
+  
+  #Stan Data
+  stan_data <- list(
+    N        = nrow(data_sim),
+    Y        = data_sim$response,
+    X_ds     = X,
+    X_cA     = X,
+    K_ds     = ncol(X),
+    K_cA     = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+  
+  # Fit the model
+  fit <- rstan::sampling(mixture_scenario_1, 
+                         iter   = 2000, 
+                         cores  = 2, 
+                         chains = 2,
+                         pars   = c('b_ds', 'b_cA'),
+                         data   = stan_data, 
+                         refresh = 0,
+                         save_warmup = FALSE)
+  efit <- rstan::extract(fit)
+  colnames(efit$b_cA) <- c(
+                            'gain-gain VS gain',
+                            'loss-loss VS loss',
+                            'gain-loss VS gain',
+                            'loss-gain VS loss'
+                          )
+  
+  df <- as.data.frame(efit$b_cA)
+  gain <- with(df, `gain-gain VS gain` - `gain-loss VS gain`)
+  loss <- with(df, `loss-loss VS loss` - `loss-gain VS loss`)
+  
+  rbind(
+    data.frame(
+      estimate = mean(gain),
+      lwr      = quantile(gain, probs=0.025),
+      upr      = quantile(gain, probs=0.975),
+      type     = 'gain',
+      N        = n
+    ),
+  
+    data.frame(
+      estimate = mean(loss),
+      lwr      = quantile(loss, probs=0.025),
+      upr      = quantile(loss, probs=0.975),
+      type     = 'loss',
+      N        = n
+    )
+  )
+  
+}
+
+samplingfunction2 <- function(x){
+  
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), 
+                             sim_y, mu_ds=effect_ds/2, 
+                             mu_cA=effect_cA/2)
+  
+  ## Create Stan Data
+  X <- model.matrix(~ 0 + scenario, data_sim)
+  
+  #Stan Data
+  stan_data <- list(
+    N        = nrow(data_sim),
+    Y        = data_sim$response,
+    X_ds     = X,
+    X_cA     = X,
+    K_ds     = ncol(X),
+    K_cA     = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+  
+  # Fit the model
+  fit <- rstan::sampling(mixture_scenario_1, 
+                         iter   = 2000, 
+                         cores  = 2, 
+                         chains = 2,
+                         pars   = c('b_ds', 'b_cA'),
+                         data   = stan_data, 
+                         refresh = 0,
+                         save_warmup = FALSE)
+  efit <- rstan::extract(fit)
+  colnames(efit$b_cA) <- c(
+                            'gain-gain VS gain',
+                            'loss-loss VS loss',
+                            'gain-loss VS gain',
+                            'loss-gain VS loss'
+                          )
+  
+  df <- as.data.frame(efit$b_cA)
+  gain <- with(df, `gain-gain VS gain` - `gain-loss VS gain`)
+  loss <- with(df, `loss-loss VS loss` - `loss-gain VS loss`)
+  
+  rbind(
+    data.frame(
+      estimate = mean(gain),
+      lwr      = quantile(gain, probs=0.025),
+      upr      = quantile(gain, probs=0.975),
+      type     = 'gain',
+      N        = n
+    ),
+  
+    data.frame(
+      estimate = mean(loss),
+      lwr      = quantile(loss, probs=0.025),
+      upr      = quantile(loss, probs=0.975),
+      type     = 'loss',
+      N        = n
+    )
+  )
+  
+}
+
+```
+
+```{r power-analysis-computation-effsize1-S1, message=F, warning=F, results='hide', eval=TRUE}
+power <- data.frame()   
+for(n in n_sbj_range) {  
+  message('\n\nN Subjects: ', n, '\n')
+  
+  message('Setting up Clusters...')
+  cl <- parallel::makeCluster(nClusters, outfile = "")
+  parallel::clusterExport(cl, c('mixture_scenario_1', 'n_sbj_range',
+                                'sim_y', 'effect_ds', 'effect_cA', 
+                                'n'))
+  
+  out <- map_dfr(seq_len( round(n_sim/nModels) ), function(i){
+    message( '\r', 'Simulation: ', i*nModels, '/', n_sim, appendLF = FALSE)
+    parallel::parLapply(cl, 1:nModels, samplingfunction)
+  })
+  power <- rbind(power, out)
+  
+  message('Shutting down Clusters...')
+  parallel::stopCluster(cl)
+}
+```
+
+```{r power-analysis-computation-effsize2-S1, message=F, warning=F, results='hide', eval=TRUE}
+power2 <- data.frame() 
+for(n in n_sbj_range){  
+  message('\n\nN Subjects: ', n, '\n')
+  
+  message('Setting up Clusters...')
+  cl <- parallel::makeCluster(nClusters, outfile = "")
+  parallel::clusterExport(cl, c('mixture_scenario_1', 'n_sbj_range',
+                                'sim_y', 'effect_ds', 'effect_cA', 
+                                'n'))
+  
+  out <- map_dfr(seq_len( round(n_sim/nModels) ), function(i){
+    message( '\r', 'Simulation: ', i*nModels, '/', n_sim, appendLF = FALSE)
+    parallel::parLapply(cl, 1:nModels, samplingfunction2)
+  })
+  power2 <- rbind(power2, out)
+  
+  message('Shutting down Clusters...')
+  parallel::stopCluster(cl)
+}
+```
+
+```{r plot-power-S1, eval=TRUE, fig.align='center', fig.height=3.3, fig.width=7, message=FALSE, warning=FALSE}
+ 
+pw1 <- power %>%  
+  mutate(sim_n = rep(rep(1:n_sim, each=2), length(n_sbj_range))) %>% 
+  mutate(is_sign = ifelse(lwr>0, TRUE, FALSE)) %>% 
+  group_by(sim_n, N) %>% 
+  mutate(is_significant = all(is_sign)) %>% 
+  filter(row_number()==1) %>% 
+  group_by(N) %>% 
+  summarise(power=mean(is_significant)) %>% 
+  mutate(effsize='Paper Effect Size')
+
+pw2 <- power2 %>%  
+  mutate(sim_n = rep(rep(1:n_sim, each=2), length(n_sbj_range))) %>% 
+  mutate(is_sign = ifelse(lwr>0, TRUE, FALSE)) %>% 
+  group_by(sim_n, N) %>% 
+  mutate(is_significant = all(is_sign)) %>% 
+  filter(row_number()==1) %>% 
+  group_by(N) %>% 
+  summarise(power=mean(is_significant)) %>% 
+  mutate(effsize='Paper Effect Size/2')
+
+rbind(pw1, pw2) %>% 
+  ggplot(aes(N, power, color=effsize, linetype = effsize)) +
+  geom_line(size=1) +
+  geom_point(size=3) +
+  geom_hline(yintercept=0.8, linetype=2) +
+  scale_y_continuous(limits = c(0,1), labels=scales::percent) +
+  scale_x_continuous(breaks = n_sbj_range) +
+  labs(x='Sample Size', y='1-β', title = 'Original Paper Effect Size') +
+  scale_color_jcolors(palette = "pal6") +
+  mytheme()
+
+```
+
+
+#### Questions
+
+<br>
+<p class="comment">
+Mr. A was given two tickets to the Regional lottery. He won &#36;50 in one lottery and &#36;25 in the other.  <br><br>
+Mr. B was given a ticket to a single, larger Regional lottery. He won &#36;75.  <br><br>
+Who is happier? 
+</p>
+
+<div class="alert alert-info">
+  A/B/No difference
+</div>
+
+<br><br>
+<p class="comment">
+Mr. A received a letter from the IRS saying that he made a minor arithmetical mistake on his tax return and owed &#36;100. He received a similar letter the same day from his state income tax authority saying he owed &#36;50. There were no other repercussions from either mistake. <br><br>
+Mr. B received a letter from the IRS saying he made a minor arithmetical mistake on his tax return and owed &#36;150. There were no other repercussions from this mistake. <br><br>
+Who more upset? 
+</p>
+
+<div class="alert alert-info">
+  A/B/No difference
+</div>
+
+<br><br>
+<p class="comment">
+Mr. A bought his first National lottery ticket and won &#36;100. Also, in a freak accident, he damaged the rug in his apartment and had to pay the landlord &#36;80. <br><br>
+Mr. B bought his first National lottery ticket and won &#36;20.<br><br>
+Who is happier?
+</p>
+
+<div class="alert alert-info">
+  A/B/No difference
+</div>
+
+<br><br>
+<p class="comment">
+Mr. A’s car was damaged in a parking lot. He had to spend &#36;200 to repair the damage. The same day the car was damaged, he won &#36;25 in the office holiday raffle. <br><br>
+Mr. B’s car was damaged in a parking lot. He had to spend &#36;175 to repair the damage.<br><br>
+Who is more upset? 
+</p>
+
+<div class="alert alert-info">
+  A/B/No difference
+</div>
+
+#### Stan Code
+
+```{r print-stan-code-S1, eval = TRUE, echo = FALSE}
+cat(get_stancode(mixture_scenario_1)) 
+```
+
+
+### {-}
+
+<br><br>
+
+## The sold-out ticket
+
+<br>
+
+### {.tabset}
+#### Power Analysis
+
+```{r stan-code-S2, cache=TRUE, echo = FALSE, results='hide'}
+ bernoulli_scenario_4 <- rstan::stan_model('bernoulli_scenario_4.stan')  
+```
+
+```{r power-analysis-S2, message=F, warning=F, fig.width=6, results='hide', eval=TRUE}
+nModels <- 4
+nChains <- 2
+nClusters <- nModels*nChains
+
+n_sim <- 200
+n_sbj_range <- c(10, 50, 100, 150, 200) 
+
+data_paper <- rbind(
+  # Buyer
+  rbind(
+    # Market Value = 5
+    data.frame(
+      market_value = 5, buyer = 'Friend',
+      response = c(rep(0, round(31*0.68)), rep(5, round(31*0.26)), rep(10, round(31*0.03)))
+    ),
+    data.frame(
+      market_value = 5, buyer = 'Friend',
+      response = c(rep(0, round(28*0.14)), rep(5, round(28*0.79)), rep(10, round(28*0.0)))
+    ),
+    data.frame(
+      market_value = 5, buyer = 'Friend',
+      response = c(rep(0, round(26*0.0)), rep(5, round(26*0.69)), rep(10, round(26*0.23)))
+    ),
+    # Market Value = 10
+    data.frame(
+      market_value = 10, buyer = 'Friend',
+      response = c(rep(0, round(31*0.66)), rep(5, round(31*0.26)), rep(10, round(31*0.06)))
+    ),
+    data.frame(
+      market_value = 10, buyer = 'Friend',
+      response = c(rep(0, round(28*0.07)), rep(5, round(28*0.79)), rep(10, round(28*0.04)))
+    ),
+    data.frame(
+      market_value = 10, buyer = 'Friend',
+      response = c(rep(0, round(26*0.0)), rep(5, round(26*0.15)), rep(10, round(26*0.69)))
+    )
+  ),
+  # Stranger
+  rbind(
+    # Market Value = 5
+    data.frame(
+      market_value = 5, buyer = 'Stranger',
+      response = c(rep(0, round(31*0.06)), rep(5, round(31*0.77)), rep(10, round(31*0.10)))
+    ),
+    data.frame(
+      market_value = 5, buyer = 'Stranger',
+      response = c(rep(0, round(28*0.0)), rep(5, round(28*0.79)), rep(10, round(28*0.07)))
+    ),
+    data.frame(
+      market_value = 5, buyer = 'Stranger',
+      response = c(rep(0, round(26*0.0)), rep(5, round(26*0.42)), rep(10, round(26*0.46)))
+    ),
+    # Market Value = 10
+    data.frame(
+        market_value = 10, buyer = 'Stranger',
+        response = c(rep(0, round(31*0.06)), rep(5, round(31*0.16)), rep(10, round(31*0.58)))
+    ),
+    data.frame(
+      market_value = 10, buyer = 'Stranger',
+      response = c(rep(0, round(28*0.0)), rep(5, round(28*0.14)), rep(10, round(28*0.57)))
+    ),
+    data.frame(
+      market_value = 10, buyer = 'Stranger',
+      response = c(rep(0, round(26*0.0)), rep(5, round(26*0.0)), rep(10, round(26*0.73)))
+    )
+  )
+) %>% 
+  mutate(response = ifelse(response >= market_value, 1, 0))
+
+
+
+logit    = function(p) log(p/(1-p)) 
+p_effect = data_paper %>% group_by(buyer) %>% summarise(mean(response)) %>% .[,2,drop=T]
+linear_effect <- logit( p_effect )
+eff_size = p_effect[2] - p_effect[1]
+eff_size = linear_effect[2] - linear_effect[1]
+
+
+sim_y <- function(sbj, eff_size){
+  
+  logit = function(p) log(p/(1-p)) 
+  
+  p_effect    = c(0.48, 0.9)
+  buyer       = c('Friend', 'Stranger')
+  linear_effect <- logit( p_effect )
+  linear_effect[2]  <- linear_effect[1]+eff_size
+  
+  # Population Effect
+  theta  <- plogis(linear_effect)
+  response = rbinom(2, 1, theta)
+
+  data.frame(subject=sbj, buyer, response)
+  
+}
+
+# -- Run Models in Parallel -- #
+samplingfunction<-function(x){ 
+    
+  buyer   = c('Friend', 'Stranger')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ buyer, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0(buyer[1], ' - ', buyer[2]),
+    N        = n
+    # Rhat_ok  = all(base::summary(fit)[['summary']][,'Rhat']<1.05)
+  )
+      
+}
+
+samplingfunction2<-function(x){ 
+    
+  buyer   = c('Friend', 'Stranger')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/2)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ buyer, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0(buyer[1], ' - ', buyer[2]),
+    N        = n
+    # Rhat_ok  = all(base::summary(fit)[['summary']][,'Rhat']<1.05)
+  )
+      
+}
+
+```
+
+```{r power-analysis-computation-effsize-S2, message=F, warning=F, results='hide', eval=TRUE}
+power <- data.frame()
+for (n in n_sbj_range) {
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction)
+    })
+    power <- rbind(power, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}
+```
+
+```{r power-analysis-computation-effsize2-S2, message=F, warning=F, results='hide', eval=TRUE}
+power2 <- data.frame()     
+for (n in n_sbj_range) {
+    message("\n\nN Subjects: ", n)  
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction2)
+    })
+    power2 <- rbind(power2, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+
+```{r plot-power-S2, eval=TRUE, fig.align='center', fig.height=3.3, fig.width=7, message=FALSE, warning=FALSE, eval=TRUE}
+
+rbind(    
+  power  %>% mutate(effsize = "Paper Effect Size"),
+  power2 %>% mutate(effsize = "Paper Effect Size/2")  ) %>% 
+  mutate(effsize = factor(effsize, levels = effect_size)) %>% 
+    mutate( is_significant = ifelse(lwr>0, TRUE, FALSE) ) %>% 
+    group_by(N, effsize) %>% 
+    summarise(power = mean(is_significant)) %>% 
+    ungroup() %>%  
+    ggplot(aes(N, power)) +
+    geom_line(aes(linetype=effsize, color=effsize), size=1) +
+    geom_point(aes(color=effsize), size=3) +
+    geom_hline(yintercept=0.8, linetype=2) +
+    scale_y_continuous(limits = c(0,1), labels=scales::percent) +
+    scale_x_continuous(breaks = n_sbj_range) +
+    labs(x='Sample Size', y='1-β') +
+    scale_color_jcolors(palette = "pal6") +
+    mytheme() + theme(legend.position='right')
+
+```
+
+
+#### Questions
+
+<br>
+<p class="comment">
+You are going to a sold-out game of your favorite local sport-team, and you have an extra ticket. The price marked on the ticket is &#36;5 but [you were given your tickets for free by a friend / which is what you paid for each ticket / but you paid &#36;10 for each ticket when you bought them from another student]. <br><br>
+You want to get rid of the extra ticket and you know the going price is $5. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.
+</p>
+
+<div class="alert alert-info">
+  What price do you ask for if... <br>
+  a) He is a friend <br>
+  b) He is a stranger
+</div>
+
+<div class="alert alert-info">
+  What would you have said if you found out that the going market price was $10 instead? <br>
+  a) He is a friend <br>
+  b) He is a stranger
+</div>
+
+#### Stan Code
+
+```{r print-stan-code-S2, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_4))
+```
+
+
+### {-}
+
+<br><br>
+
+## Beer on the beach
+
+<br>
+
+### {.tabset}
+#### Power Analysis
+
+```{r power-analysis-S3, message=F, warning=F, fig.width=6, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+nModels <- 5
+nChains <- 2
+nClusters <- nModels*nChains
+
+n_sim <- 200 
+n_sbj_range <- c(10, 50, 100, 150, 200, 250, 300) 
+
+# Effect found in the paper Thaler 1985
+# n_sbj_paper    = 87
+store   = c('Resort Hotel', 'Grocery Store')
+resort  = 2.65
+grocery = 1.5
+
+eff_size = resort - grocery
+
+sim_y <- function(sbj, eff_size){
+  
+  resort  = 2.65
+  linear_effect <- c( log(resort), log(resort-eff_size) )
+  
+  # Calculate the probability of responding 'different'
+  inv_link = function(linear_predictor, shape) shape*exp(-linear_predictor)   
+
+  store   = c('Resort Hotel', 'Grocery Store')
+  
+  # Population Effect
+  shape_gamma <- 25
+  rate_gamma  <- inv_link(linear_effect, shape_gamma) 
+  
+  data.frame(subject=sbj, store, response = rgamma(2, shape_gamma, rate_gamma))
+}
+
+# -- Run Models in Parallel -- #
+samplingfunction<-function(x){ 
+    
+  store   = c('Resort Hotel', 'Grocery Store')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size)
+
+  ## Create Stan Data
+  X <- model.matrix(~ store, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(gamma_scenario_3,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(store[1], ' - ', store[2]),
+      N        = n
+    )
+  # }
+      
+}
+
+samplingfunction2<-function(x){ 
+    
+  store   = c('Resort Hotel', 'Grocery Store')
+
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/2)
+
+  ## Create Stan Data
+  X <- model.matrix(~ store, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(gamma_scenario_3,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+  
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(store[1], ' - ', store[2]),
+      N        = n
+    )
+  # }
+      
+}
+
+samplingfunction3<-function(x){ 
+    
+  store   = c('Resort Hotel', 'Grocery Store')
+
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/3)
+  
+  ## Create Stan Data
+  X <- model.matrix(~ store, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(gamma_scenario_3,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+  
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(store[1], ' - ', store[2]),
+      N        = n
+    )
+  # }
+      
+}
+
+samplingfunction4<-function(x){ 
+    
+  store   = c('Resort Hotel', 'Grocery Store')
+
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/4)
+
+  ## Create Stan Data
+  X <- model.matrix(~ store, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(gamma_scenario_3,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+  
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(store[1], ' - ', store[2]),
+      N        = n
+    )
+  # }
+      
+}
+
+```
+
+```{r power-analysis-computation-effsize1-S3, message=F, warning=F, results='hide', eval=TRUE}
+power <- data.frame()    
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("gamma_scenario_3", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction)
+    })
+    power <- rbind(power, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+} 
+```
+
+```{r power-analysis-computation-effsize2-S3, message=F, warning=F, results='hide', eval=TRUE}
+power2 <- data.frame()  
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n") 
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("gamma_scenario_3", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction2)
+    })
+    power2 <- rbind(power2, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+} 
+```
+
+```{r power-analysis-computation-effsize3-S3, message=F, warning=F, results='hide', eval=TRUE}
+power3 <- data.frame()  
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n") 
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("gamma_scenario_3", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction3)
+    })
+    power3 <- rbind(power3, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+} 
+```
+
+```{r power-analysis-computation-effsize4-S3, message=F, warning=F, results='hide', eval=TRUE}
+power4 <- data.frame()  
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n") 
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("gamma_scenario_3", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction4)
+    })
+    power4 <- rbind(power4, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+} 
+```
+
+```{r plot-power-S3, eval=TRUE, fig.align='center', fig.height=3.3, fig.width=7, message=FALSE, warning=FALSE}
+   
+power_line_plot <- rbind(   
+  power  %>% mutate(effsize = "Paper Effect Size"),
+  power2 %>% mutate(effsize = "Paper Effect Size/2"),
+  power3 %>% mutate(effsize = "Paper Effect Size/3"), 
+  power4 %>% mutate(effsize = "Paper Effect Size/4")
+  ) %>% 
+  mutate(effsize = factor(effsize, levels = effect_size)) %>% 
+    mutate( is_significant = ifelse(lwr>0, TRUE, FALSE) ) %>% 
+    group_by(N, effsize) %>% 
+    summarise(power = mean(is_significant)) %>% 
+    ungroup() %>%  
+    ggplot(aes(N, power)) +
+    geom_line(aes(linetype=effsize, color=effsize), size=1) +
+    geom_point(aes(color=effsize), size=3) +
+    geom_hline(yintercept=0.8, linetype=2) +
+    scale_y_continuous(limits = c(0,1), labels=scales::percent) +
+    scale_x_continuous(breaks = n_sbj_range) +
+    labs(x='Sample Size', y='1-β') +
+    scale_color_jcolors(palette = "pal6") +
+    mytheme() + theme(legend.position='right')
+
+# power_quantile_plot <- rbind(
+#   power  %>% mutate(effsize = "Paper Effect Size"),
+#   power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#   power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#   power4 %>% mutate(effsize = "Paper Effect Size/4")
+#   ) %>%
+#     ggplot(aes(N, lwr, color = effsize)) +
+#     stat_pointinterval() +
+#     mytheme() + theme(legend.position = 'none') +
+#     geom_hline(yintercept = 0, linetype=2) +
+#     geom_line(data = rbind( power  %>% mutate(effsize = "Paper Effect Size"),
+#                             power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#                             power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#                             power4 %>% mutate(effsize = "Paper Effect Size/4")) %>% 
+#                 group_by(N, effsize) %>% summarise(m=median(lwr)),
+#               aes(N, m, color=effsize)) +
+#     scale_x_continuous(breaks = NULL) +
+#     labs(x='Sample Size', y='2.5% Quantile Posterior') +
+#     scale_color_jcolors(palette = "pal6") +
+#     # scale_color_manual(values = c("gray80", "#6B244C")) +
+#   facet_wrap(~effsize)
+
+
+# plot_grid(plot_grid(NULL, power_line_plot, NULL, rel_widths = c(0.2, 1, 0.2), nrow = 1), 
+#           NULL,
+#           power_quantile_plot, 
+#           rel_heights = c(0.6, 0.1, 1),
+#           nrow = 3 )
+power_line_plot
+```
+
+
+#### Questions
+
+<br>
+<p class="comment">
+You are on the beach on a hot day, and you would really like a cold bottle of beer. A friend offers to go buy the beer from [a fancy resort hotel / a small, run-down grocery store]. They ask how much you are willing to pay for the beer: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender. 
+</p>
+
+<div class="alert alert-info">
+  What price do you tell them?
+</div>
+
+#### Stan Code
+```{stan stan-code-S3, output.var='gamma_scenario_3', code=readLines('gamma_scenario_3.stan'), cache = TRUE} 
+
+```
+
+```{r print-stan-code-S3, eval = TRUE, echo = FALSE}
+cat(get_stancode(gamma_scenario_3))  
+```
+
+
+### {-}
+
+<br><br>
+
+## Jacket-Calculator
+
+<br>
+
+### {.tabset}
+#### Power Analysis
+
+```{r power-analysis-functions-S4, message=F, warning=F, results='hide', eval=TRUE} 
+# ---- Power Calculation ---- #
+nModels <- 5
+nChains <- 2
+nClusters <- nModels*nChains
+
+n_sim <- 200
+n_sbj_range <- c(10, 50, 100, 150, 200, 250, 300) 
+
+# Effect found in the paper Thaler 1985
+logit    = function(p) log(p/(1-p)) 
+p_effect = c(0.29, 0.68)
+linear_effect <- logit( p_effect )
+eff_size = p_effect[2] - p_effect[1]
+eff_size = linear_effect[2] - linear_effect[1]
+
+sim_y <- function(sbj, eff_size){
+  
+  logit = function(p) log(p/(1-p)) 
+  
+  p_effect    = c(0.29, 0.68)
+  price   = c('High', 'Low')
+  linear_effect <- logit( p_effect )
+  linear_effect[2]  <- linear_effect[1]+eff_size
+  
+  # Population Effect
+  theta  <- plogis(linear_effect)
+  response = rbinom(2, 1, theta)
+
+  data.frame(subject=sbj, price, response)
+  
+}
+
+# -- Run Models in Parallel -- #
+samplingfunction<-function(x){ 
+    
+  price   = c('Low', 'High')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ price, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0(price[1], ' - ', price[2]),
+    N        = n
+    # Rhat_ok  = all(base::summary(fit)[['summary']][,'Rhat']<1.05)
+  )
+      
+}
+
+samplingfunction2<-function(x){ 
+    
+  price   = c('Low', 'High')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/2)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ price, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(price[1], ' - ', price[2]),
+      N        = n
+    )
+  # }
+      
+}
+
+samplingfunction3<-function(x){ 
+    
+  price   = c('Low', 'High')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/3)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ price, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(price[1], ' - ', price[2]),
+      N        = n
+    )
+  # }
+      
+}
+ 
+samplingfunction4<-function(x){ 
+    
+  price   = c('Low', 'High')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/4)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ price, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(price[1], ' - ', price[2]),
+      N        = n
+    )
+  # }
+      
+}
+```
+
+```{r power-analysis-computation-effsize1-S4, message=F, warning=F, results='hide', eval=TRUE}
+power <- data.frame()    
+for (n in n_sbj_range) {  
+    message("\n\nN Subjects: ", n, "\n") 
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction)
+    })
+    power <- rbind(power, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}   
+```
+
+```{r power-analysis-computation-effsize2-S4, message=F, warning=F, results='hide', eval=TRUE}
+power2 <- data.frame()     
+for (n in n_sbj_range) {
+    message("\n\nN Subjects: ", n)  
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction2)
+    })
+    power2 <- rbind(power2, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r power-analysis-computation-effsize3-S4, message=F, warning=F, results='hide', eval=TRUE}
+power3 <- data.frame()    
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n") 
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction3)
+    })
+    power3 <- rbind(power3, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r power-analysis-computation-effsize4-S4, message=F, warning=F, results='hide', eval=TRUE}
+power4 <- data.frame()    
+for (n in n_sbj_range) {  
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction4)
+    })
+    power4 <- rbind(power4, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r plot-power-S4, eval=TRUE, fig.align='center', fig.height=3.3, fig.width=7, message=FALSE, warning=FALSE} 
+power_line_plot <- rbind(    
+  power  %>% mutate(effsize = "Paper Effect Size"),
+  power2 %>% mutate(effsize = "Paper Effect Size/2"),
+  power3 %>% mutate(effsize = "Paper Effect Size/3"), 
+  power4 %>% mutate(effsize = "Paper Effect Size/4")
+  ) %>% 
+  mutate(effsize = factor(effsize, levels = effect_size)) %>% 
+    mutate( is_significant = ifelse(lwr>0, TRUE, FALSE) ) %>% 
+    group_by(N, effsize) %>% 
+    summarise(power = mean(is_significant)) %>% 
+    ungroup() %>%  
+    ggplot(aes(N, power)) +
+    geom_line(aes(linetype=effsize, color=effsize), size=1) +
+    geom_point(aes(color=effsize), size=3) +
+    geom_hline(yintercept=0.8, linetype=2) +
+    scale_y_continuous(limits = c(0,1), labels=scales::percent) +
+    scale_x_continuous(breaks = n_sbj_range) +
+    labs(x='Sample Size', y='1-β') +
+    scale_color_jcolors(palette = "pal6") +
+    mytheme() + theme(legend.position='right')
+
+# power_quantile_plot <- rbind(
+#   power  %>% mutate(effsize = "Paper Effect Size"),
+#   power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#   power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#   power4 %>% mutate(effsize = "Paper Effect Size/4")
+#   ) %>%
+#     ggplot(aes(N, lwr, color = effsize)) +
+#     stat_pointinterval() +
+#     mytheme() + theme(legend.position = 'none') +
+#     geom_hline(yintercept = 0, linetype=2) +
+#     geom_line(data = rbind( power  %>% mutate(effsize = "Paper Effect Size"),
+#                             power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#                             power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#                             power4 %>% mutate(effsize = "Paper Effect Size/4")) %>% 
+#                 group_by(N, effsize) %>% summarise(m=median(lwr)),
+#               aes(N, m, color=effsize)) +
+#     scale_x_continuous(breaks = NULL) +
+#     labs(x='Sample Size', y='2.5% Quantile Posterior') +
+#     scale_color_jcolors(palette = "pal6") +
+#     # scale_color_manual(values = c("gray80", "#6B244C")) +
+#   facet_wrap(~effsize)
+
+
+# plot_grid(plot_grid(power_line_plot, rel_widths = c(0.2, 1, 0.2), nrow = 1), 
+#           NULL,
+#           power_quantile_plot, 
+#           rel_heights = c(0.6, 0.1, 1),
+#           nrow = 3 )
+
+power_line_plot
+```
+
+
+#### Questions
+
+<br>
+<p class="comment">
+You are about to purchase a jacket for [&#36;125 / &#36;15] and a Bluetooth speaker for [&#36;15 / &#36;125]. The salesman informs you that the speaker you wish to buy is on sale for [&#36;10 / &#36;120] at the other branch store, located 20 minutes away.
+</p>
+
+<div class="alert alert-info">
+Would you make the trip to the other store?
+ a) Yes
+ a) No 
+</div>
+
+<p class="comment">
+Imagine that you are about to purchase a jacket for [&#36;125 / &#36;15] and a calculator for [&#36;15 / &#36;125]. The salesman informs you that the calculator you wish to buy is on sale for [&#36;10 / &#36;120] at the other branch store, located 20 minutes away. 
+</p>
+
+<div class="alert alert-info">
+Would you make the trip to the other store?
+ a) Yes
+ a) No 
+</div>
+
+#### Stan Code
+```{r stan-code-S4, cache=TRUE}
+ bernoulli_scenario_4 <- rstan::stan_model('bernoulli_scenario_4.stan')  
+```
+
+```{r print-stan-code-S4, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_4))  
+``` 
+
+
+### {-}
+
+## Lost Ticket
+
+<br>
+
+### {.tabset}
+
+#### Power Analysis
+
+```{r power-analysis-functions-S5, message=F, warning=F, results='hide', eval=TRUE}
+
+# ---- Power Calculation ---- #
+nModels <- 5
+nChains <- 2
+nClusters <- nModels*nChains 
+
+n_sim <- 200
+n_sbj_range <- c(10, 50, 100, 150, 200, 250, 300) 
+
+# Effect found in the paper Thaler 1985
+logit    = function(p) log(p/(1-p)) 
+loss       = c('Cash', 'Ticket')
+p_effect    = c(0.88, 0.46)
+
+linear_effect <- logit( p_effect )
+eff_size = linear_effect[2] - linear_effect[1]
+
+sim_y <- function(sbj, eff_size){
+  
+  logit = function(p) log(p/(1-p)) 
+  
+  loss       = c('Cash', 'Ticket')
+  p_effect    = c(0.88, 0.46)
+  linear_effect <- logit( p_effect )
+  linear_effect[2]  <- linear_effect[1]+eff_size
+  
+  # Population Effect
+  theta  <- plogis(linear_effect)
+  response = rbinom(2, 1, theta)
+
+  data.frame(subject=sbj, loss, response)
+  
+}
+
+# -- Run Models in Parallel -- #
+samplingfunction<-function(x){ 
+    
+  loss       = c('Cash', 'Ticket')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ loss, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0(loss[2], ' - ', loss[1]),
+    N        = n
+    # Rhat_ok  = all(base::summary(fit)[['summary']][,'Rhat']<1.05)
+  )
+      
+}
+
+samplingfunction2<-function(x){ 
+    
+  loss       = c('Cash', 'Ticket')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/2)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ loss, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(loss[2], ' - ', loss[1]),
+      N        = n
+    )
+  # }
+      
+}
+
+samplingfunction3<-function(x){ 
+    
+  loss       = c('Cash', 'Ticket')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/3)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ loss, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(loss[2], ' - ', loss[1]),
+      N        = n
+    )
+  # }
+      
+}
+ 
+samplingfunction4<-function(x){ 
+    
+  loss       = c('Cash', 'Ticket')
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/4)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ loss, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    N_sbj    = n,
+    J_sbj    = data_sim$subject,
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_4,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  # s <- summary(fit)
+  # if( all(s$summary[,'Rhat']<1.05) ){
+    efit <- rstan::extract(fit)
+   
+    data.frame(
+      estimate = apply(efit$b, 2, mean)[2],
+      lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+      upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+      store    = paste0(loss[2], ' - ', loss[1]),
+      N        = n
+    )
+  # }
+      
+}
+
+```
+
+```{r power-analysis-computation-effsize1-S5, message=F, warning=F, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+power <- data.frame()     
+for (n in n_sbj_range) {  
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction)
+    })
+    power <- rbind(power, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}   
+```
+
+```{r power-analysis-computation-effsize2-S5, message=F, warning=F, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+power2 <- data.frame()     
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n) 
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction2)
+    })
+    power2 <- rbind(power2, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r power-analysis-computation-effsize3-S5, message=F, warning=F, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+power3 <- data.frame()      
+for (n in n_sbj_range) {
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction3)
+    })
+    power3 <- rbind(power3, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r power-analysis-computation-effsize4-S5, message=F, warning=F, results='hide', eval=TRUE}
+power4 <- data.frame()     
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_4", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction4)
+    })
+    power4 <- rbind(power4, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r plot-power-S5, message=F, warning=F, fig.width=7, fig.height=3.3, fig.align='center', eval = TRUE}
+power_line_plot <- rbind(     
+  power  %>% mutate(effsize = "Paper Effect Size"),
+  power2 %>% mutate(effsize = "Paper Effect Size/2"),
+  power3 %>% mutate(effsize = "Paper Effect Size/3"), 
+  power4 %>% mutate(effsize = "Paper Effect Size/4")
+  ) %>% 
+  mutate(effsize = factor(effsize, levels = effect_size)) %>% 
+    mutate( is_significant = ifelse(upr<0, TRUE, FALSE) ) %>% 
+    group_by(N, effsize) %>% 
+    summarise(power = mean(is_significant)) %>% 
+    ungroup() %>%  
+    ggplot(aes(N, power)) +
+    geom_line(aes(linetype=effsize, color=effsize), size=1) +
+    geom_point(aes(color=effsize), size=3) +
+    geom_hline(yintercept=0.8, linetype=2) +
+    scale_y_continuous(limits = c(0,1), labels=scales::percent) +
+    scale_x_continuous(breaks = n_sbj_range) +
+    labs(x='Sample Size', y='1-β') +
+    scale_color_jcolors(palette = "pal6") +
+    mytheme() + theme(legend.position='right')
+
+# power_quantile_plot <- rbind(
+#   power  %>% mutate(effsize = "Paper Effect Size"),
+#   power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#   power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#   power4 %>% mutate(effsize = "Paper Effect Size/4")
+#   ) %>%
+#     ggplot(aes(N, upr, color = effsize)) +
+#     stat_pointinterval() +
+#     mytheme() + theme(legend.position = 'none') +
+#     geom_hline(yintercept = 0, linetype=2) +
+#     geom_line(data = rbind( power  %>% mutate(effsize = "Paper Effect Size"),
+#                             power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#                             power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#                             power4 %>% mutate(effsize = "Paper Effect Size/4")) %>% 
+#                 group_by(N, effsize) %>% summarise(m=median(upr)),
+#               aes(N, m, color=effsize)) +
+#     scale_x_continuous(breaks = NULL) +
+#     labs(x='Sample Size', y='2.5% Quantile Posterior') +
+#     scale_color_jcolors(palette = "pal6") +
+#     # scale_color_manual(values = c("gray80", "#6B244C")) +
+#   facet_wrap(~effsize)
+
+# 
+# plot_grid(plot_grid(power_line_plot, rel_widths = c(0.2, 1, 0.2), nrow = 1), 
+#           NULL,
+#           power_quantile_plot, 
+#           rel_heights = c(0.6, 0.1, 1),
+#           nrow = 3 )
+
+power_line_plot
+```
+
+#### Questions
+
+<br>
+<p class="comment">
+Imagine you are on your way to a play with [a pair of tickets for which you have paid &#36;40 / the intention of buying two tickets worth &#36;40 in total]. On entering the theater, you discover that [you have lost the tickets / you have lost &#36;40 in cash].
+</p>
+
+<div class="alert alert-info">
+Would you pay $40 for another pair of tickets?
+ a) Yes
+ b) No
+</div>
+
+#### Stan Code
+
+```{r print-stan-code-S5, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_4))  
+```
+
+
+### {-}
+
+
+
+## Membership gym
+
+<br>
+
+### {.tabset}
+#### Power Analysis
+
+```{r power-analysis-functions-S6, message=F, warning=F, results='hide', eval=TRUE}
+
+# ---- Power Calculation ---- #
+nModels <- 5
+nChains <- 2
+nClusters <- nModels*nChains
+
+n_sim <- 200
+n_sbj_range <- c(10, 50, 100, 150, 200, 250, 300) 
+
+# Effect found in the paper Thaler 1985
+logit    = function(p) log(p/(1-p)) 
+frame    = c(0, 1) # Yearly - Per-session
+p_effect = c(0.18, 0.78)
+
+linear_effect <- logit( p_effect )
+eff_size = linear_effect[2] - linear_effect[1]
+
+sim_y <- function(sbj, eff_size){
+  
+  logit = function(p) log(p/(1-p)) 
+  
+  frame    = c(0, 1) # Yearly - Per-session
+  p_effect = c(0.18, 0.78)
+  linear_effect <- logit( p_effect )
+  linear_effect[2]  <- linear_effect[1]+eff_size
+  std = 0.5
+  
+  # Random Effect
+  re <- rnorm(1, 0, std)
+  # Population Effect
+  theta  <- plogis(linear_effect+re)
+  response = rbinom(2, 1, theta)
+
+  data.frame(subject=sbj, frame, response)
+  
+}
+
+# -- Run Models in Parallel -- #
+samplingfunction<-function(x){ 
+    
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ frame, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_6,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0('Per-session - Yearly'),
+    N        = n
+  )
+      
+}
+
+samplingfunction2<-function(x){ 
+    
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/2)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ frame, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_6,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0('Per-session - Yearly'),
+    N        = n
+  )
+      
+}
+
+samplingfunction3<-function(x){ 
+    
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/3)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ frame, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_6,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0('Per-session - Yearly'),
+    N        = n
+  )
+      
+}
+
+samplingfunction4<-function(x){ 
+    
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/4)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ frame, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_6,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0('Per-session - Yearly'),
+    N        = n
+  )
+      
+}
+```
+
+```{r power-analysis-computation-effsize1-S6, message=F, warning=F, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+power <- data.frame()    
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n") 
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_6", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction)
+    })
+    power <- rbind(power, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}   
+```
+
+```{r power-analysis-computation-effsize2-S6, message=F, warning=F, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+power2 <- data.frame()     
+for (n in n_sbj_range) {
+    message("\n\nN Subjects: ", n) 
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_6", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction2)
+    })
+    power2 <- rbind(power2, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r power-analysis-computation-effsize3-S6, message=F, warning=F, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+power3 <- data.frame()     
+for (n in n_sbj_range) {
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_6", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction3)
+    })
+    power3 <- rbind(power3, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r power-analysis-computation-effsize4-S6, message=F, warning=F, results='hide', eval=TRUE}
+power4 <- data.frame()    
+for (n in n_sbj_range) {  
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_6", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction4)
+    })
+    power4 <- rbind(power4, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r plot-power-S6, message=F, warning=F, fig.width=7, fig.height=3.3, fig.align='center', eval = TRUE}
+power_line_plot <- rbind(    
+  power  %>% mutate(effsize = "Paper Effect Size"),
+  power2 %>% mutate(effsize = "Paper Effect Size/2"),
+  power3 %>% mutate(effsize = "Paper Effect Size/3"), 
+  power4 %>% mutate(effsize = "Paper Effect Size/4")
+  ) %>% 
+  mutate(effsize = factor(effsize, levels = effect_size)) %>% 
+    mutate( is_significant = ifelse(lwr>0, TRUE, FALSE) ) %>% 
+    group_by(N, effsize) %>% 
+    summarise(power = mean(is_significant)) %>% 
+    ungroup() %>%  
+    ggplot(aes(N, power)) +
+    geom_line(aes(linetype=effsize, color=effsize), size=1) +
+    geom_point(aes(color=effsize), size=3) +
+    geom_hline(yintercept=0.8, linetype=2) +
+    scale_y_continuous(limits = c(0,1), labels=scales::percent) +
+    scale_x_continuous(breaks = n_sbj_range) +
+    labs(x='Sample Size', y='1-β') +
+    scale_color_jcolors(palette = "pal6") +
+    mytheme() + theme(legend.position='right')
+
+# power_quantile_plot <- rbind(
+#   power  %>% mutate(effsize = "Paper Effect Size"),
+#   power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#   power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#   power4 %>% mutate(effsize = "Paper Effect Size/4")
+#   ) %>%
+#     ggplot(aes(N, lwr, color = effsize)) +
+#     stat_pointinterval() +
+#     mytheme() + theme(legend.position = 'none') +
+#     geom_hline(yintercept = 0, linetype=2) +
+#     geom_line(data = rbind( power  %>% mutate(effsize = "Paper Effect Size"),
+#                             power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#                             power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#                             power4 %>% mutate(effsize = "Paper Effect Size/4")) %>% 
+#                 group_by(N, effsize) %>% summarise(m=median(lwr)),
+#               aes(N, m, color=effsize)) +
+#     scale_x_continuous(breaks = NULL) +
+#     labs(x='Sample Size', y='2.5% Quantile Posterior') +
+#     scale_color_jcolors(palette = "pal6") +
+#     # scale_color_manual(values = c("gray80", "#6B244C")) +
+#   facet_wrap(~effsize)
+
+# 
+# plot_grid(plot_grid(power_line_plot, rel_widths = c(0.2, 1, 0.2), nrow = 1), 
+#           NULL,
+#           power_quantile_plot, 
+#           rel_heights = c(0.6, 0.1, 1),
+#           nrow = 3 )
+
+power_line_plot
+```
+
+#### Questions
+
+<br>
+<p class="comment">
+You have a gym membership in a nearby town that you travel to on a regular basis. You go to this gym every single Monday night. The membership allows you to pay [&#36;20 (non-refundable) per session / &#36;1000 a year (i.e., roughly &#36;20 per visit)]. One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forego your exercise that evening.
+</p>
+
+<div class="alert alert-info">
+Which of the following statements better captures your feelings about the cost of the missed workout?
+ a) I feel like I wasted $20
+ b) I feel like I wasted nothing, since my visit had already been paid for
+ c) I feel like I wasted something, but no specific amount or measure comes to mind
+</div>
+
+#### Stan Code
+
+```{r stan-code-S6, cache=TRUE, results='hide'}
+bernoulli_scenario_6 <- rstan::stan_model('bernoulli_scenario_6.stan') 
+```
+
+```{r print-stan-code-S6, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_6)) 
+```
+
+
+### {-}
+
+
+
+## Airplanes coupons
+
+<br>
+
+### {.tabset}
+
+#### Power Analysis
+
+```{r power-analysis-functions-S7, message=F, warning=F, results='hide', eval=TRUE}
+
+# ---- Power Calculation ---- #
+nModels <- 5
+nChains <- 2
+nClusters <- nModels*nChains
+
+n_sim <- 200
+n_sbj_range <- c(10, 50, 100, 150, 200, 250, 300) 
+
+# Effect found in the paper Thaler 1985
+logit    = function(p) log(p/(1-p)) 
+coupon   = c(0, 1) # Free - Purchased
+p_effect = c(0.05, 0.25)
+
+linear_effect <- logit( p_effect )
+eff_size = linear_effect[2] - linear_effect[1]
+
+sim_y <- function(sbj, eff_size){
+  
+  logit = function(p) log(p/(1-p)) 
+  
+  coupon   = c(0, 1) # Free - Purchased
+  p_effect = c(0.05, 0.25)
+  linear_effect <- logit( p_effect )
+  linear_effect[2]  <- linear_effect[1]+eff_size
+  std = 0.5
+  
+  # Random Effect
+  re <- rnorm(1, 0, std)
+  # Population Effect
+  theta  <- plogis(linear_effect+re)
+  response = rbinom(2, 1, theta)
+
+  data.frame(subject=sbj, coupon, response)
+  
+}
+
+# -- Run Models in Parallel -- #
+samplingfunction<-function(x){ 
+    
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ coupon, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_6,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0('Purchased - Free'),
+    N        = n
+  )
+      
+}
+
+samplingfunction2<-function(x){ 
+    
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/2)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ coupon, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_6,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0('Purchased - Free'),
+    N        = n
+  )
+      
+}
+
+samplingfunction3<-function(x){ 
+    
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/3)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ coupon, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_6,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0('Purchased - Free'),
+    N        = n
+  )
+      
+}
+
+samplingfunction4<-function(x){ 
+    
+  #Simulate data
+  data_sim <- purrr::map_dfr(seq_len(n), sim_y, eff_size=eff_size/4)
+
+  ## Create Stan Data
+  
+  X <- model.matrix(~ coupon, data_sim)
+
+  #Stan Data
+  stan_data <- list(
+    N = nrow(data_sim),
+    Y = data_sim$response,
+    X = X,
+    K = ncol(X),
+    
+    prior_only = 0
+  )
+
+  fit <- rstan::sampling(bernoulli_scenario_6,
+                         iter    = 2000,
+                         chains  = 2,
+                         cores   = 2,
+                         pars    = 'b',
+                         refresh = 0,
+                         data    = stan_data,
+                         save_warmup = FALSE
+                         )
+  
+  efit <- rstan::extract(fit)
+ 
+  data.frame(
+    estimate = apply(efit$b, 2, mean)[2],
+    lwr      = apply(efit$b, 2, quantile, probs=0.025)[2],
+    upr      = apply(efit$b, 2, quantile, probs=0.975)[2],
+    store    = paste0('Purchased - Free'),
+    N        = n
+  )
+      
+}
+
+```
+
+```{r power-analysis-computation-effsize1-S7, message=F, warning=F, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+power <- data.frame()    
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_6", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction)
+    })
+    power <- rbind(power, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl) 
+}   
+```
+
+```{r power-analysis-computation-effsize2-S7, message=F, warning=F, results='hide', eval=TRUE}
+# ---- Power Calculation ---- # 
+power2 <- data.frame()    
+for (n in n_sbj_range) {
+    message("\n\nN Subjects: ", n) 
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_6", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction2)
+    })
+    power2 <- rbind(power2, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r power-analysis-computation-effsize3-S7, message=F, warning=F, results='hide', eval=TRUE}
+# ---- Power Calculation ---- #
+power3 <- data.frame()    
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_6", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction3)
+    })
+    power3 <- rbind(power3, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r power-analysis-computation-effsize4-S7, message=F, warning=F, results='hide', eval=TRUE}
+power4 <- data.frame()    
+for (n in n_sbj_range) { 
+    message("\n\nN Subjects: ", n, "\n")
+
+    message("Setting up Clusters...")
+    cl <- parallel::makeCluster(nClusters, outfile = "")
+    parallel::clusterExport(cl, c("bernoulli_scenario_6", "n_sbj_range", "sim_y", 
+                                  "eff_size", "n"))
+
+    out <- map_dfr(seq_len(round(n_sim/nModels)), function(i) {
+        message("\r", "Simulation: ", i * nModels, "/", n_sim, appendLF = FALSE)
+        parallel::parLapply(cl, 1:nModels, samplingfunction4)
+    })
+    power4 <- rbind(power4, out)
+
+    message("Shutting down Clusters...")
+    parallel::stopCluster(cl)
+}  
+```
+
+```{r plot-power-S7, message=F, warning=F, fig.width=7, fig.height=3.3, fig.align='center', eval=TRUE}
+power_line_plot <- rbind(    
+  power  %>% mutate(effsize = "Paper Effect Size"),
+  power2 %>% mutate(effsize = "Paper Effect Size/2"),
+  power3 %>% mutate(effsize = "Paper Effect Size/3"), 
+  power4 %>% mutate(effsize = "Paper Effect Size/4")
+  ) %>% 
+  mutate(effsize = factor(effsize, levels = effect_size)) %>% 
+    mutate( is_significant = ifelse(lwr>0, TRUE, FALSE) ) %>% 
+    group_by(N, effsize) %>% 
+    summarise(power = mean(is_significant)) %>% 
+    ungroup() %>%  
+    ggplot(aes(N, power)) +
+    geom_line(aes(linetype=effsize, color=effsize), size=1) +
+    geom_point(aes(color=effsize), size=3) +
+    geom_hline(yintercept=0.8, linetype=2) +
+    scale_y_continuous(limits = c(0,1), labels=scales::percent) +
+    scale_x_continuous(breaks = n_sbj_range) +
+    labs(x='Sample Size', y='1-β') +
+    scale_color_jcolors(palette = "pal6") +
+    mytheme() + theme(legend.position='right')
+
+# power_quantile_plot <- rbind(
+#   power  %>% mutate(effsize = "Paper Effect Size"),
+#   power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#   power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#   power4 %>% mutate(effsize = "Paper Effect Size/4")
+#   ) %>%
+#     ggplot(aes(N, lwr, color = effsize)) +
+#     stat_pointinterval() +
+#     mytheme() + theme(legend.position = 'none') +
+#     geom_hline(yintercept = 0, linetype=2) +
+#     geom_line(data = rbind( power  %>% mutate(effsize = "Paper Effect Size"),
+#                             power2 %>% mutate(effsize = "Paper Effect Size/2"),
+#                             power3 %>% mutate(effsize = "Paper Effect Size/3"),
+#                             power4 %>% mutate(effsize = "Paper Effect Size/4")) %>% 
+#                 group_by(N, effsize) %>% summarise(m=median(lwr)),
+#               aes(N, m, color=effsize)) +
+#     scale_x_continuous(breaks = NULL) +
+#     labs(x='Sample Size', y='2.5% Quantile Posterior') +
+#     scale_color_jcolors(palette = "pal6") +
+#     # scale_color_manual(values = c("gray80", "#6B244C")) +
+#   facet_wrap(~effsize)
+
+
+# plot_grid(plot_grid(power_line_plot, rel_widths = c(0.2, 1, 0.2), nrow = 1), 
+#           NULL,
+#           power_quantile_plot, 
+#           rel_heights = c(0.6, 0.1, 1),
+#           nrow = 3 )
+
+power_line_plot
+```
+
+#### Questions
+
+<br>
+<p class="comment">
+You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth &#36;35, which can be used to upgrade your ticket/seat from economy to business class. They purchased one coupon for the standard price of &#36;35 and received the other one for free. Just one coupon is required to upgrade your class on the current flight, and your friend offers you the coupon [which he purchased / which he got for free] so that you can upgrade as well.
+</p>
+
+<div class="alert alert-info">
+What do you think is the most appropriate thing to do?
+ a) Pay your friend $35 for the coupon.
+ b) Consider it a gift and not pay for the coupon.
+ c) Pay some, but not the full amount for the coupon (for example, half the price).
+</div>
+
+#### Stan Code
+
+```{r print-stan-code-S7, eval = TRUE, echo = FALSE}
+cat(get_stancode(bernoulli_scenario_6)) 
+```
+
+
+### {-}

@@ -1,0 +1,27 @@
+{
+    "id": "584CB76B",
+    "path": "~/Dropbox/Ongoing/Mental Account Replication/Pilot/Short Version/Analysis Procedure/Report.Rmd",
+    "project_path": "Report.Rmd",
+    "type": "r_markdown",
+    "hash": "3460105278",
+    "contents": "",
+    "dirty": false,
+    "created": 1651937660494.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "668,93",
+        "scrollLine": "397",
+        "last_setup_crc32": ""
+    },
+    "folds": "53|14|144|0|\n147|40|213|0|\n261|14|306|0|\n307|14|317|0|\n318|8|374|0|\n320|93|352|0|\n400|37|428|0|\n430|32|488|0|\n490|33|547|0|\n549|33|606|0|\n608|33|665|0|\n",
+    "lastKnownWriteTime": 1652028523,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1652028538899,
+    "read_only": false,
+    "read_only_alternatives": []
+}
