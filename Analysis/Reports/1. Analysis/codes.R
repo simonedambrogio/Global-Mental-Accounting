@@ -1,3 +1,177 @@
+
+# --- Hierarchical Bayesian Meta-Analysis  --- #
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+tab_01 = data.frame(
+  scale = c("BAS-T", "SR", "BDI", "ASRM", "M-SRM"),
+  high = c("46.17 (2.87)", "17.94 (1.88)", "7.11 (6.50)", 
+           "6.46 (4.01)", "11.05 (3.36)"),
+  moderate = c("37.99 (1.32)", "11.52 (1.84)", "6.18 (6.09)", 
+               "5.63 (3.69)", "11.76 (2.75)"),
+  p = c("<.001", "<.001", ".254", ".109", ".078")
+)
+
+kable(
+  tab_01,
+  format = "latex",
+  booktabs = TRUE,
+  col.names = c("Scale", "High BAS group", "Moderate BAS group", "p"),
+  align = c("l", "c", "c", "c"),
+  caption = "Means and Standard Deviations of Scores on Baseline Measures"
+)
+
+post
+
+data.frame(Function = c("`read_delim()`", "a", letters[1:6]),
+           Formula = c("$\\leftarrow$", "a", letters[1:6]),
+           Break = c("this continues on a<br>new line", "a", letters[1:6]),
+           Link = c("[Google](www.google.com)", "a", letters[1:6])) |>
+  kbl(format = "markdown") 
+
+# Participants from 21 countries
+df <- data_Plane %>% 
+  filter(coupon=='free') %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 )
+
+length( unique(df$subject) )
+
+df_egypt <- df %>% filter(coupon=="free") %>% filter(Country=='Egypt')
+
+convert_farsi_to_arabic <- function(x) {
+  if(x=="٠"|x=="۰"){
+    return( "0" )
+  } else if (x=="۱" | x=="١"){
+    return( "1" )
+  } else if (x=="۲" | x=="٢"){
+    return( "2" )
+  } else if (x=="۳"|x=="٣"){
+    return( "3" )
+  } else if (x=="۴" | x=="٤"){
+    return( "4" )
+  } else if (x=="۵" | x=="٥"){
+    return( "5" )
+  } else if (x=="۶"|x=="٦"){
+    return( "6" )
+  } else if (x=="۷" | x=="٧"){
+    return( "7" )
+  } else if (x=="۸" | x=="٨"){
+    return( "8" )
+  } else if (x=="۹" | x=="٩"){
+    return( "9" )
+  } else if( any(x %in% as.character(0:9) ) ){
+    return( x )
+  } else {
+    warning( paste("Persian number", x, "not found!!!") )
+  }
+}
+
+convert <- function(x){
+  apply(
+    str_split(string = x, pattern = "", simplify = T),
+    2,
+    convert_farsi_to_arabic
+  ) %>% paste0(collapse = "")
+}
+
+
+df[df$Country=='Egypt', "Age"] <-  sapply(as.list(df_egypt$Age), convert)
+
+rbind(
+  df %>% 
+    mutate(Age=as.numeric(Age)) %>% 
+    summarise(
+      Country="pooled",
+      Language=names(which.max(table(NativeLanguage))),
+      n = n(),
+      `% female` = round(mean(Gender=='Female')*100,2),
+      `Age, median (IQR) (yr)` = str_c(median(Age), " (", quantile(Age,probs = .25), "-", quantile(Age,probs = .75), ")")
+    ),
+  df %>% 
+    group_by(Country) %>% 
+    mutate(Age=as.numeric(Age)) %>% 
+    summarise(
+      Country=names(which.max(table(Country))),
+      Language=names(which.max(table(NativeLanguage))),
+      n = n(),
+      `% female` = round(mean(Gender=='Female')*100,2),
+      `Age, median (IQR) (yr)` = str_c(median(Age), " (", quantile(Age,probs = .25), "-", quantile(Age,probs = .75), ")")
+    ) 
+) %>% 
+  kbl(caption="<b>Table 1 | </b> Demographics",
+      format = "html", table.attr = "style='width:50%;'") %>% 
+  kable_classic(html_font = "Cambria")
+
+
+theta_fullExclusion$MrAB %>% filter(condition=="gain")
+
+lazyLoad("Report_cache/html/plot-MrAB-unpooled-posteriors-full-exclusion_c7bc9f4c7adbf512247dd9a4889ed25f")
+
+post_plot1
+
+table_unpooled <- post_plot1 %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("MrAB1")
+    } else {
+      return("")
+    } 
+  }
+
+table_unpooled <- rbind(apply(table_unpooled[1,], 2, empty), table_unpooled)
+
+table_unpooled |>
+  kbl(caption="<b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis",
+      format = "html", table.attr = "style='width:90%;'") %>% 
+  kable_classic(html_font = "Cambria")
+
+
+
+fixef(mMrAB2) %>% as.data.frame(row.names = '') %>% 
+  mutate(Study="MrAB1", 
+         `$\\hat{\\beta}$` = round(Estimate, 2),
+         `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+         ) %>% 
+  select(-c(Est.Error, Q2.5, Q97.5, Estimate))
+
+post %>% filter(family=="binomial") %>% 
+  filter(Country!="all") %>% 
+  ggplot(aes(x, post, color=Country)) +
+  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  # geom_point(data = data_paper, aes(x, theta), color="#472E7CFF", size=30, shape="-") +
+
+  geom_segment(data = data_paper, linewidth=1.8,
+               aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
+  geom_point(data = post %>% filter(family=="binomial") %>%
+               filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5,3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
 lazyLoad("Report_cache/html/fit-MrAB-finantial-literacy_3c6336b4c6cc2482adb5f563c9e628d8")
 
 # Sample Size #
