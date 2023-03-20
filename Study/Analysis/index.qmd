@@ -20,6 +20,17 @@ execute:
   message: false
 ---
 
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| output: false
+
+# ----- Update chunks ----- #
+# update-pavlovia
+
+```
+
 ```{r Code-to-load-data-and-libraries}
 #| code-fold: true
 #| code-summary: "Code to load data and libraries"
@@ -7193,6 +7204,28 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 
 :::
+
+
+```{bash, engine.opts='-l'}
+#| warning: false
+#| message: false
+#| echo: false
+#| output: false
+
+# update-pavlovia
+
+pathdir="/Volumes/PROJECTS/Ongoing/MMAR/Pavlovia/mmar-analysis"
+
+cp -r index_files $pathdir
+cp index.html $pathdir
+
+cd $pathdir
+git pull
+git add -A
+git commit -m "update report"
+git push
+
+```
 
 
 
