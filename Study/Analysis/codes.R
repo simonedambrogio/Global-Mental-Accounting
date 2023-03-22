@@ -4,43 +4,17 @@ library(knitr)
 library(kableExtra)
 library(tidyverse)
 
-tab_01 = data.frame(
-  scale = c("BAS-T", "SR", "BDI", "ASRM", "M-SRM"),
-  high = c("46.17 (2.87)", "17.94 (1.88)", "7.11 (6.50)", 
-           "6.46 (4.01)", "11.05 (3.36)"),
-  moderate = c("37.99 (1.32)", "11.52 (1.84)", "6.18 (6.09)", 
-               "5.63 (3.69)", "11.76 (2.75)"),
-  p = c("<.001", "<.001", ".254", ".109", ".078")
-)
-
-kable(
-  tab_01,
-  format = "latex",
-  booktabs = TRUE,
-  col.names = c("Scale", "High BAS group", "Moderate BAS group", "p"),
-  align = c("l", "c", "c", "c"),
-  caption = "Means and Standard Deviations of Scores on Baseline Measures"
-)
-
-post
-
-data.frame(Function = c("`read_delim()`", "a", letters[1:6]),
-           Formula = c("$\\leftarrow$", "a", letters[1:6]),
-           Break = c("this continues on a<br>new line", "a", letters[1:6]),
-           Link = c("[Google](www.google.com)", "a", letters[1:6])) |>
-  kbl(format = "markdown") 
+lazyLoad('index_cache/html/Code-to-load-data-and-libraries_d4033ba30588e0897d19923a4badd205')
 
 # Participants from 21 countries
 df <- data_Plane %>% 
   filter(coupon=='free') %>% 
-  # EXCLUSION: Full Exclusion
+  # EXCLUSION: Preregistered
   filter( !(Country %in% countries2remove) ) %>% 
   filter( attention_check_grater_than_3 )
 
-length( unique(df$subject) )
 
 df_egypt <- df %>% filter(coupon=="free") %>% filter(Country=='Egypt')
-
 convert_farsi_to_arabic <- function(x) {
   if(x=="٠"|x=="۰"){
     return( "0" )
@@ -77,12 +51,12 @@ convert <- function(x){
   ) %>% paste0(collapse = "")
 }
 
-
 df[df$Country=='Egypt', "Age"] <-  sapply(as.list(df_egypt$Age), convert)
 
 rbind(
   df %>% 
     mutate(Age=as.numeric(Age)) %>% 
+    filter(Age>0 & Age<99) %>% 
     summarise(
       Country="pooled",
       Language=names(which.max(table(NativeLanguage))),
@@ -92,17 +66,18 @@ rbind(
     ),
   df %>% 
     group_by(Country) %>% 
-    mutate(Age=as.numeric(Age)) %>% 
+    mutate(Age=round(as.numeric(Age)),0) %>% 
+    filter(Age>0 & Age<99) %>% 
     summarise(
       Country=names(which.max(table(Country))),
       Language=names(which.max(table(NativeLanguage))),
       n = n(),
       `% female` = round(mean(Gender=='Female')*100,2),
-      `Age, median (IQR) (yr)` = str_c(median(Age), " (", quantile(Age,probs = .25), "-", quantile(Age,probs = .75), ")")
+      `Age, median (IQR) (yr)` = str_c(round(median(Age)), " (", round(quantile(Age,probs = .25)), "-", round(quantile(Age,probs = .75)), ")")
     ) 
 ) %>% 
-  kbl(caption="<b>Table 1 | </b> Demographics",
-      format = "html", table.attr = "style='width:50%;'") %>% 
+  kbl(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+      format = "html", table.attr = "style='width:40%;'") %>% 
   kable_classic(html_font = "Cambria")
 
 
