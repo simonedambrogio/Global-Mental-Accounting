@@ -1238,5 +1238,24 @@ dPlane <- data_Plane %>%
 
 write.csv(dPlane, file = "./Preregistered/Plane.csv", row.names = FALSE)
 
+# -------------------------- All ---------------------------- #
 
+MrAB <- read.csv("./Preregistered/MrAB.csv")
+Game <- read.csv("./Preregistered/Game.csv")
+Drink <- read.csv("./Preregistered/Drink.csv")
+Jacket <- read.csv("./Preregistered/Jacket.csv")
+Play <- read.csv("./Preregistered/Play.csv")
+Gym <- read.csv("./Preregistered/Gym.csv")
+Plane <- read.csv("./Preregistered/Plane.csv")
 
+All <- rbind(
+  MrAB %>% mutate(study="MrAB"),
+  Game %>% mutate(study="Game"),
+  Drink %>% mutate(study="Drink"),
+  Jacket %>% mutate(study="Jacket"),
+  Play %>% mutate(study="Play"),
+  Gym %>% mutate(study="Gym"),
+  Plane %>% mutate(study="Plane")
+)
+
+write.csv(All, file = "./Preregistered/All.csv", row.names = FALSE)
