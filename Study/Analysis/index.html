@@ -150,10 +150,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<div class="cell" data-layout-align="center" data-hash="index_cache/html/unnamed-chunk-1_8566d5709fce10ff02894c0c94672bdb">
+<div class="cell" data-layout-align="center" data-hash="index_cache/html/unnamed-chunk-1_2fcff9df81ae9c12b8be16dd1a04db60">
 
 </div>
-<div class="cell" data-layout-align="center" data-hash="index_cache/html/Code-to-load-data-and-libraries_d4033ba30588e0897d19923a4badd205">
+<div class="cell" data-layout-align="center" data-hash="index_cache/html/Code-to-load-data-and-libraries_fdfddf6fbc1f4f007cbfc5779e882289">
 <details>
 <summary>Code to load data and libraries</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load libraries</span></span>
@@ -165,15 +165,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>data_MrAB <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../../Data/data_MrAB.csv"</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>data_Game <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../../Data/data_Game.csv"</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>data_Drink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../../Data/data_Drink.csv"</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>data_Jacket <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../../Data/data_Jacket.csv"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>data_Play <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../../Data/data_Play.csv"</span>)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>data_Gym <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../../Data/data_Gym.csv"</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>data_Plane <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../../Data/data_Plane.csv"</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>data_MrAB <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../Data/data_MrAB.csv"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>data_Game <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../Data/data_Game.csv"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>data_Drink <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../Data/data_Drink.csv"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>data_Jacket <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../Data/data_Jacket.csv"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>data_Play <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../Data/data_Play.csv"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>data_Gym <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../Data/data_Gym.csv"</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>data_Plane <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"../Data/data_Plane.csv"</span>)</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>original_theta <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">'../../Data/original_theta.rds'</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>original_theta <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">'../Data/original_theta.rds'</span>)</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>data_paper <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(original_theta), <span class="cf">function</span>(i) original_theta[[i]])</span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>countries2remove <span class="ot">&lt;-</span> data_MrAB <span class="sc">%&gt;%</span> </span>
@@ -266,7 +266,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="demographics" class="level2">
 <h2 class="anchored" data-anchor-id="demographics">Demographics</h2>
 <p>Demographics of the <em>Preregistered</em> sample.</p>
-<div class="cell" data-layout-align="center" data-hash="index_cache/html/demographics_1231d708858ba4ede4e96b5068fdf297">
+<div class="cell" data-layout-align="center" data-hash="index_cache/html/demographics_bec683f913b7677720e8561e4a824de2">
 <details>
 <summary>Create table</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Participants from 21 countries</span></span>
@@ -341,29 +341,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>    ) </span>
 <span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>data_table <span class="sc">%&gt;%</span> </span>
-<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 1 | &lt;/b&gt; Demographics"</span>, <span class="at">align=</span><span class="fu">rep</span>(<span class="st">'l'</span>, <span class="dv">5</span>),</span>
-<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">table.attr =</span> <span class="st">"style='width:35%;'"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>  <span class="fu">save_kable</span>(<span class="st">"tables/Demographics.pdf"</span>)</span>
-<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>data_table <span class="sc">%&gt;%</span> </span>
-<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 1 | &lt;/b&gt; Demographics"</span>, <span class="at">align=</span><span class="fu">rep</span>(<span class="st">'l'</span>, <span class="dv">5</span>),</span>
-<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">table.attr =</span> <span class="st">"style='width:60%;'"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>data_table <span class="sc">%&gt;%</span></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 1 | &lt;/b&gt; Demographics"</span>, <span class="at">align=</span><span class="fu">rep</span>(<span class="st">'l'</span>, <span class="dv">5</span>),</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>      <span class="at">table.attr =</span> <span class="st">"style='width:40%;'"</span>, <span class="at">booktabs =</span> T) <span class="sc">%&gt;%</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>  <span class="co"># kable_material(c("striped", "hover")) %&gt;%</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">0</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">save_kable</span>(<span class="st">"tables/png/Demographics.png"</span>, <span class="at">zoom =</span> <span class="dv">3</span>)</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="co"># data_table %&gt;% </span></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="co">#   kbl(caption="&lt;b&gt;Table 1 | &lt;/b&gt; Demographics", align=rep('l', 5),</span></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="co">#       format = "html", table.attr = "style='width:40%;'") %&gt;% </span></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a><span class="co">#   kable_classic(html_font = "Cambria") %&gt;% </span></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="co">#     row_spec(0, bold = TRUE) %&gt;% </span></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="co">#   save_kable("tables/pdf/Demographics.pdf")</span></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>data_table <span class="sc">%&gt;%</span> </span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 1 | &lt;/b&gt; Demographics"</span>, <span class="at">align=</span><span class="fu">rep</span>(<span class="st">'l'</span>, <span class="dv">5</span>),</span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>      <span class="at">table.attr =</span> <span class="st">"style='width:60%;'"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_material</span>(<span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">0</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 
-<table style="width:60%; font-family: Cambria; margin-left: auto; margin-right: auto;" class=" lightable-classic">
+<table style="width:60%; font-family: Cambria; margin-left: auto; margin-right: auto; font-family: &quot;Source Sans Pro&quot;, helvetica, sans-serif; margin-left: auto; margin-right: auto;" class=" lightable-classic lightable-material lightable-striped lightable-hover">
 <caption>
 <b>Table 1 | </b> Demographics</caption>
  <thead>
   <tr>
-   <th style="text-align:left;"> Country </th>
-   <th style="text-align:left;"> Language </th>
-   <th style="text-align:left;"> n </th>
-   <th style="text-align:left;"> % female </th>
-   <th style="text-align:left;"> Age, median (IQR) (yr) </th>
+   <th style="text-align:left;font-weight: bold;"> Country </th>
+   <th style="text-align:left;font-weight: bold;"> Language </th>
+   <th style="text-align:left;font-weight: bold;"> n </th>
+   <th style="text-align:left;font-weight: bold;"> % female </th>
+   <th style="text-align:left;font-weight: bold;"> Age, median (IQR) (yr) </th>
   </tr>
  </thead>
 <tbody>
@@ -3431,7 +3442,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
-<div class="cell" data-layout-align="center" data-hash="index_cache/html/table-preregistered_eafc7e0f64652fe921ce7362c9b9911d">
+<div class="cell" data-layout-align="center" data-hash="index_cache/html/table-preregistered_1608c1604f2f57262c4532d4c661256c">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
@@ -3444,19 +3455,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>table_bayesian <span class="sc">%&gt;%</span> </span>
 <span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Study) <span class="sc">|&gt;</span></span>
 <span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 2 | &lt;/b&gt; Hierarchical Bayesian Meta-Analysis"</span>,</span>
-<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">table.attr =</span> <span class="st">"style='width:50%;'"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">save_kable</span>(<span class="st">"tables/Hierarchical Bayesian Meta-Analysis.pdf"</span>)</span>
-<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>table_bayesian <span class="sc">%&gt;%</span> </span>
-<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Study) <span class="sc">|&gt;</span></span>
-<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 2 | &lt;/b&gt; Hierarchical Bayesian Meta-Analysis"</span>,</span>
-<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">table.attr =</span> <span class="st">"style='width:50%;'"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">align=</span><span class="fu">c</span>(<span class="st">'c'</span>, <span class="st">'c'</span>),</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">table.attr =</span> <span class="st">"style='width:20%;'"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">0</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">save_kable</span>(<span class="st">"tables/png/Hierarchical Bayesian Meta-Analysis.png"</span>, <span class="at">zoom =</span> <span class="dv">3</span>)</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># save_kable("tables/pdf/Hierarchical Bayesian Meta-Analysis.pdf")</span></span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>table_bayesian <span class="sc">%&gt;%</span> </span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Study) <span class="sc">|&gt;</span></span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 2 | &lt;/b&gt; Hierarchical Bayesian Meta-Analysis"</span>,</span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">table.attr =</span> <span class="st">"style='width:50%;'"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_material</span>(<span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 
-<table style="width:50%; font-family: Cambria; margin-left: auto; margin-right: auto;" class=" lightable-classic">
+<table style="width:50%; font-family: Cambria; margin-left: auto; margin-right: auto; font-family: &quot;Source Sans Pro&quot;, helvetica, sans-serif; margin-left: auto; margin-right: auto;" class=" lightable-classic lightable-material lightable-striped lightable-hover">
 <caption>
 <b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis</caption>
  <thead>
@@ -6889,23 +6904,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div id="tabset-12-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-2-tab">
-<div class="cell" data-layout-align="center" data-hash="index_cache/html/table-preregistered-unpooled_43fed5a77f94901076a510ce397c3e01">
+<div class="cell" data-layout-align="center" data-hash="index_cache/html/table-preregistered-unpooled_bfb9acbc52bfcfd0a9fee834becc0f58">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>table_unpooled <span class="sc">%&gt;%</span> </span>
 <span id="cb99-2"><a href="#cb99-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 3 | &lt;/b&gt; Unpooled Analysis"</span>,</span>
 <span id="cb99-3"><a href="#cb99-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">table.attr =</span> <span class="st">"style='width:50%;'"</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb99-4"><a href="#cb99-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb99-5"><a href="#cb99-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">save_kable</span>(<span class="st">"tables/Unpooled Analysis.pdf"</span>)</span>
-<span id="cb99-6"><a href="#cb99-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb99-7"><a href="#cb99-7" aria-hidden="true" tabindex="-1"></a>table_unpooled <span class="sc">%&gt;%</span> </span>
-<span id="cb99-8"><a href="#cb99-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 3 | &lt;/b&gt; Unpooled Analysis"</span>,</span>
-<span id="cb99-9"><a href="#cb99-9" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">table.attr =</span> <span class="st">"style='width:50%;'"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb99-10"><a href="#cb99-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb99-5"><a href="#cb99-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">0</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb99-6"><a href="#cb99-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">save_kable</span>(<span class="st">"tables/png/Unpooled Analysis.png"</span>, <span class="at">zoom =</span> <span class="dv">3</span>)</span>
+<span id="cb99-7"><a href="#cb99-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># save_kable("tables/pdf/Unpooled Analysis.pdf")</span></span>
+<span id="cb99-8"><a href="#cb99-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb99-9"><a href="#cb99-9" aria-hidden="true" tabindex="-1"></a>table_unpooled <span class="sc">%&gt;%</span> </span>
+<span id="cb99-10"><a href="#cb99-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption=</span><span class="st">"&lt;b&gt;Table 3 | &lt;/b&gt; Unpooled Analysis"</span>,</span>
+<span id="cb99-11"><a href="#cb99-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">table.attr =</span> <span class="st">"style='width:50%;'"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb99-12"><a href="#cb99-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_classic</span>(<span class="at">html_font =</span> <span class="st">"Cambria"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb99-13"><a href="#cb99-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_material</span>(<span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 
-<table style="width:50%; font-family: Cambria; margin-left: auto; margin-right: auto;" class=" lightable-classic">
+<table style="width:50%; font-family: Cambria; margin-left: auto; margin-right: auto; font-family: &quot;Source Sans Pro&quot;, helvetica, sans-serif; margin-left: auto; margin-right: auto;" class=" lightable-classic lightable-material lightable-striped lightable-hover">
 <caption>
 <b>Table 3 | </b> Unpooled Analysis</caption>
  <thead>
@@ -9920,7 +9938,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </div>
-<div class="cell" data-layout-align="center" data-engine.opts="-l" data-hash="index_cache/html/unnamed-chunk-7_f53c6fd93d8f2f3189e090868605a0f7">
+<div class="cell" data-layout-align="center" data-engine.opts="-l" data-hash="index_cache/html/unnamed-chunk-7_b53a635bcc491e6da28377f3f7a39adc">
 
 </div>
 </section>

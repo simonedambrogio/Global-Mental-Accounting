@@ -1,0 +1,230 @@
+---
+title: "Multicountry Replication Study"
+subtitle: "Questions"
+format: 
+  html:
+    code-fold: true
+    code-block-bg: true
+    toc: true
+    fig-format: svg
+    code-block-border-left: "#31BAE9" # 5A6570
+    link-external-newwindow: true
+knitr:
+  opts_chunk:
+    warning: false
+    message: false
+    fig.align: 'center'
+
+execute:
+  cache: false
+  warning: false
+  message: false
+---
+
+<style type="text/css">
+  body {
+    text-align: justify;
+    font-size: 18px;
+  }
+  img[src$="centerme"] {
+    display:block;
+    margin: 0 auto;
+  }
+  
+  p.comment {
+    background-color: #DBDBDB;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+</style>
+
+
+## MrAB
+
+<br>
+<p class="comment">
+<b>Gain-Gain VS Gain</b> <br><br>
+Mr. A was given two tickets to the Regional lottery. He won &#36;50 in one lottery and &#36;25 in the other.  <br><br>
+Mr. B was given a ticket to a single, larger Regional lottery. He won &#36;75.  <br><br>
+Who is happier? 
+</p>
+
+<div class="alert alert-info">
+  - A <br>
+  - B <br>
+  - No difference
+</div>
+
+<br><br>
+<p class="comment">
+<b>Loss-Loss VS Loss</b> <br><br>
+Mr. A received a letter from the IRS saying that he made a minor arithmetical mistake on his tax return and owed &#36;100. He received a similar letter the same day from his state income tax authority saying he owed &#36;50. There were no other repercussions from either mistake. <br><br>
+Mr. B received a letter from the IRS saying he made a minor arithmetical mistake on his tax return and owed &#36;150. There were no other repercussions from this mistake. <br><br>
+Who more upset? 
+</p>
+
+<div class="alert alert-info">
+  - A <br>
+  - B <br>
+  - No difference
+</div>
+
+<br><br>
+<p class="comment">
+<b>Gain-Loss VS Gain</b> <br><br>
+Mr. A bought his first National lottery ticket and won &#36;100. Also, in a freak accident, he damaged the rug in his apartment and had to pay the landlord &#36;80. <br><br>
+Mr. B bought his first National lottery ticket and won &#36;20.<br><br>
+Who is happier?
+</p>
+
+<div class="alert alert-info">
+  - A <br>
+  - B <br>
+  - No difference
+</div>
+
+<br><br>
+<p class="comment">
+<b>Loss-Gain VS Loss</b> <br><br>
+Mr. A’s car was damaged in a parking lot. He had to spend &#36;200 to repair the damage. The same day the car was damaged, he won &#36;25 in the office holiday raffle. <br><br>
+Mr. B’s car was damaged in a parking lot. He had to spend &#36;175 to repair the damage.<br><br>
+Who is more upset? 
+</p>
+
+<div class="alert alert-info">
+  - A <br>
+  - B <br>
+  - No difference
+</div>
+
+
+
+## Game 
+
+<br>
+<p class="comment">
+You are going to a sold-out game of your favorite local sport-team, and you have an extra ticket. The price marked on the ticket is &#36;5 but [you were given your tickets for free by a friend / which is what you paid for each ticket / but you paid &#36;10 for each ticket when you bought them from another student]. <br><br>
+You want to get rid of the extra ticket and you know the going price is $5. You find someone who wants the ticket. There is no law against charging more than the price marked on the ticket.
+</p>
+
+<div class="alert alert-info">
+  <p>What price do you ask for if... </p>
+  - He is a friend <br>
+  - He is a stranger
+</div>
+
+<div class="alert alert-info">
+  <p>What would you have said if you found out that the going market price was $10 instead? </p>
+  - He is a friend <br>
+  - He is a stranger
+</div>
+
+
+## Drink
+
+<br>
+<p class="comment">
+You are on the beach on a hot day, and you would really like a cold bottle of beer. A friend offers to go buy the beer from [a fancy resort hotel / a small, run-down grocery store]. They ask how much you are willing to pay for the beer: they will only buy it if it costs as much or less than the price you state. You trust your friend, and there is no possibility of bargaining with the bartender. 
+</p>
+
+<div class="alert alert-info">
+  What price do you tell them?
+</div>
+
+
+## Jacket
+
+<br>
+<p class="comment">
+You are about to purchase a jacket for [&#36;125 / &#36;15] and a Bluetooth speaker for [&#36;15 / &#36;125]. The salesman informs you that the speaker you wish to buy is on sale for [&#36;10 / &#36;120] at the other branch store, located 20 minutes away.
+</p>
+
+<div class="alert alert-info">
+  <p> Would you make the trip to the other store? </p>
+  - Yes
+  - No 
+</div>
+
+<p class="comment">
+Imagine that you are about to purchase a jacket for [&#36;125 / &#36;15] and a calculator for [&#36;15 / &#36;125]. The salesman informs you that the calculator you wish to buy is on sale for [&#36;10 / &#36;120] at the other branch store, located 20 minutes away. 
+</p>
+
+<div class="alert alert-info">
+ <p>Would you make the trip to the other store?</p>
+ - Yes
+ - No 
+</div>
+
+
+## Play
+
+<br>
+<p class="comment">
+Imagine you are on your way to a play with [a pair of tickets for which you have paid &#36;40 / the intention of buying two tickets worth &#36;40 in total]. On entering the theater, you discover that [you have lost the tickets / you have lost &#36;40 in cash].
+</p>
+
+<div class="alert alert-info">
+ <p>Would you pay $40 for another pair of tickets?</p>
+ - Yes
+ - No
+</div>
+
+
+## Gym
+
+<br>
+<p class="comment">
+You have a gym membership in a nearby town that you travel to on a regular basis. You go to this gym every single Monday night. The membership allows you to pay [&#36;20 (non-refundable) per session / &#36;1000 a year (i.e., roughly &#36;20 per visit)]. One Monday, just after you have arrived and changed into your gym clothes, you receive a phone call that requires you to leave and forego your exercise that evening.
+</p>
+
+<div class="alert alert-info">
+ <p>I feel like I wasted $20</p>
+ - 1 (Strongly agree)
+ - 2
+ - 3 
+ - 4
+ - 5 (Strongly disagree)
+</div>
+
+
+## Plane
+
+<br>
+<p class="comment">
+You are flying with a friend who has upgraded their ticket to business class and has two coupons, each worth &#36;35, which can be used to upgrade your ticket/seat from economy to business class. They purchased one coupon for the standard price of &#36;35 and received the other one for free. Just one coupon is required to upgrade your class on the current flight, and your friend offers you the coupon [which he purchased / which he got for free] so that you can upgrade as well.
+</p>
+
+<div class="alert alert-info">
+ <p>What do you think is the most appropriate thing to do?</p>
+ - Pay your friend $35 for the coupon.
+ - Consider it a gift and not pay for the coupon.
+ - Pay some, but not the full amount for the coupon (for example, half the price).
+</div>
+
+
+
+```{bash, engine.opts='-l'}
+#| warning: false
+#| message: false
+#| echo: false
+#| output: false
+#| eval: true
+
+pathdir="/Volumes/PROJECTS/Ongoing/MMAR/Pavlovia/mmar-questions"
+
+cp -r index_files $pathdir
+cp index.html $pathdir
+
+cd $pathdir
+git pull
+git add -A
+git commit -m "update report"
+git push
+
+```
+
+
+
+
+

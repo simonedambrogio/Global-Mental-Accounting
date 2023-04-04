@@ -1141,3 +1141,102 @@ original_theta <- list(
 )
 
 saveRDS(original_theta, file = "original_theta.rds")
+
+
+######################################################################################
+# ----------- Cleaned data set using Preregistered exclusion criterion ------------- #
+######################################################################################
+
+countries2remove <- data_MrAB %>% 
+  filter(attention_check_grater_than_3) %>% 
+  group_by(subject) %>% 
+  filter(row_number()==1) %>% 
+  group_by(Country) %>% 
+  summarise(sample_size=n()) %>% 
+  filter(sample_size<250) %>% 
+  .[,"Country", drop=TRUE]
+
+# ---------------------- Mr. A vs Mr. B ---------------------- #
+dMrAB <- data_MrAB %>% filter(response!=2) %>%
+  # filter(scenario_group=="gain") %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=scenario, response)
+
+write.csv(dMrAB, file = "./Preregistered/MrAB.csv", row.names = FALSE)
+
+# ------------------- The Sold Out Ticket ------------------- #
+dGame <- data_Game %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=buyer, response)
+
+write.csv(dGame, file = "./Preregistered/Game.csv", row.names = FALSE)
+
+# -------------------------- Drink --------------------------- #
+dDrink <- data_Drink %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Remove really really extreme outliers
+  filter(response<10000 & response>=0) %>% 
+  mutate(response=response+1, logResp=log(response)) %>% 
+  group_by(Country) %>%
+  mutate(response=as.vector(scale(logResp))) %>% 
+  ungroup() %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=store, response)
+
+write.csv(dDrink, file = "./Preregistered/Drink.csv", row.names = FALSE)
+
+# ------------------------- Jacket --------------------------- #
+dJacket <- data_Jacket %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=price, response)
+
+write.csv(dJacket, file = "./Preregistered/Jacket.csv", row.names = FALSE)
+
+# -------------------------- Play ---------------------------- #
+dPlay <- data_Play %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  mutate(loss=factor(loss, levels = c("ticket", "cash"))) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=loss, response)
+
+write.csv(dPlay, file = "./Preregistered/Play.csv", row.names = FALSE)
+
+# -------------------------- Gym ----------------------------- #
+dGym <- data_Gym %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  group_by(Country) %>%
+  mutate(response=as.vector(scale(response))) %>% 
+  ungroup() %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=frame, response)
+
+write.csv(dGym, file = "./Preregistered/Gym.csv", row.names = FALSE)
+
+# -------------------------- Plane ---------------------------- #
+dPlane <- data_Plane %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=coupon, response)
+
+write.csv(dPlane, file = "./Preregistered/Plane.csv", row.names = FALSE)
+
+
+

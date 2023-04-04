@@ -27,7 +27,7 @@ execute:
 #| output: false
 
 # ----- Update chunks ----- #
-# update-pavlovia-0
+# update-pavlovia-1
 
 ```
 
@@ -47,15 +47,15 @@ library(brms)
 library(plotly)
 
 # Load data
-data_MrAB <- read.csv(file = "../../Data/data_MrAB.csv")
-data_Game <- read.csv(file = "../../Data/data_Game.csv")
-data_Drink <- read.csv(file = "../../Data/data_Drink.csv")
-data_Jacket <- read.csv(file = "../../Data/data_Jacket.csv")
-data_Play <- read.csv(file = "../../Data/data_Play.csv")
-data_Gym <- read.csv(file = "../../Data/data_Gym.csv")
-data_Plane <- read.csv(file = "../../Data/data_Plane.csv")
+data_MrAB <- read.csv(file = "../Data/data_MrAB.csv")
+data_Game <- read.csv(file = "../Data/data_Game.csv")
+data_Drink <- read.csv(file = "../Data/data_Drink.csv")
+data_Jacket <- read.csv(file = "../Data/data_Jacket.csv")
+data_Play <- read.csv(file = "../Data/data_Play.csv")
+data_Gym <- read.csv(file = "../Data/data_Gym.csv")
+data_Plane <- read.csv(file = "../Data/data_Plane.csv")
 
-original_theta <- readRDS('../../Data/original_theta.rds')
+original_theta <- readRDS('../Data/original_theta.rds')
 data_paper <- map_dfr(1:length(original_theta), function(i) original_theta[[i]])
 
 countries2remove <- data_MrAB %>% 
@@ -177,16 +177,27 @@ data_table <- rbind(
     ) 
 )
 
-data_table %>% 
-  kbl(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-      format = "html", table.attr = "style='width:35%;'") %>% 
-  kable_classic(html_font = "Cambria") %>% 
-  save_kable("tables/Demographics.pdf")
+data_table %>%
+  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+      table.attr = "style='width:40%;'", booktabs = T) %>%
+  kable_classic(html_font = "Cambria") %>%
+  # kable_material(c("striped", "hover")) %>%
+  row_spec(0, bold = TRUE) %>%
+  save_kable("tables/png/Demographics.png", zoom = 3)
+
+# data_table %>% 
+#   kbl(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+#       format = "html", table.attr = "style='width:40%;'") %>% 
+#   kable_classic(html_font = "Cambria") %>% 
+#     row_spec(0, bold = TRUE) %>% 
+#   save_kable("tables/pdf/Demographics.pdf")
 
 data_table %>% 
-  kbl(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-      format = "html", table.attr = "style='width:60%;'") %>% 
-  kable_classic(html_font = "Cambria")
+  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+      table.attr = "style='width:60%;'") %>% 
+  kable_classic(html_font = "Cambria") %>% 
+  kable_material(c("striped", "hover")) %>% 
+  row_spec(0, bold = TRUE)
 
 ```
 
@@ -2152,15 +2163,19 @@ rownames(table_bayesian) <- table_bayesian$Study
 table_bayesian %>% 
   select(-Study) |>
   kbl(caption="<b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis",
-      format = "html", table.attr = "style='width:50%;'") %>% 
+      align=c('c', 'c'),
+      format = "html", table.attr = "style='width:20%;'") %>% 
   kable_classic(html_font = "Cambria") %>%
-  save_kable("tables/Hierarchical Bayesian Meta-Analysis.pdf")
+  row_spec(0, bold = TRUE) %>%
+  save_kable("tables/png/Hierarchical Bayesian Meta-Analysis.png", zoom = 3)
+  # save_kable("tables/pdf/Hierarchical Bayesian Meta-Analysis.pdf")
 
 table_bayesian %>% 
   select(-Study) |>
   kbl(caption="<b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis",
       format = "html", table.attr = "style='width:50%;'") %>% 
-  kable_classic(html_font = "Cambria")
+  kable_classic(html_font = "Cambria") %>% 
+  kable_material(c("striped", "hover"))
   
 ```
  
@@ -5255,12 +5270,15 @@ table_unpooled %>%
   kbl(caption="<b>Table 3 | </b> Unpooled Analysis",
       format = "html", table.attr = "style='width:50%;'") %>% 
   kable_classic(html_font = "Cambria") %>% 
-  save_kable("tables/Unpooled Analysis.pdf")
+  row_spec(0, bold = TRUE) %>%
+  save_kable("tables/png/Unpooled Analysis.png", zoom = 3)
+  # save_kable("tables/pdf/Unpooled Analysis.pdf")
   
 table_unpooled %>% 
   kbl(caption="<b>Table 3 | </b> Unpooled Analysis",
       format = "html", table.attr = "style='width:50%;'") %>% 
-  kable_classic(html_font = "Cambria")
+  kable_classic(html_font = "Cambria") %>% 
+  kable_material(c("striped", "hover"))
 
 ```
 
@@ -7322,7 +7340,7 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 #| echo: false
 #| output: false
 
-# update-pavlovia-0
+# update-pavlovia-1
 
 pathdir="/Volumes/PROJECTS/Ongoing/MMAR/Pavlovia/mmar-analysis"
 

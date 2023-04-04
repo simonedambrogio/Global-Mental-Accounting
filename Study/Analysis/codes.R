@@ -1,4 +1,76 @@
 
+countries2remove <- data_MrAB %>% 
+  filter(attention_check_grater_than_3) %>% 
+  group_by(subject) %>% 
+  filter(row_number()==1) %>% 
+  group_by(Country) %>% 
+  summarise(sample_size=n()) %>% 
+  filter(sample_size<250) %>% 
+  .[,"Country", drop=TRUE]
+
+dMrAB <- data_MrAB %>% filter(response!=2) %>%
+  # filter(scenario_group=="gain") %>%
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=scenario, response)
+
+dGame <- data_Game %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=buyer, response)
+
+dDrink <- data_Drink %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Remove really really extreme outliers
+  filter(response<10000 & response>=0) %>% 
+  mutate(response=response+1, logResp=log(response)) %>% 
+  group_by(Country) %>%
+  mutate(response=as.vector(scale(logResp))) %>% 
+  ungroup() %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=store, response)
+
+dJacket <- data_Jacket %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=price, response)
+
+dPlay <- data_Play %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  mutate(loss=factor(loss, levels = c("ticket", "cash"))) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=loss, response)
+
+dGym <- data_Gym %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  group_by(Country) %>%
+  mutate(response=as.vector(scale(response))) %>% 
+  ungroup() %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=frame, response)
+
+dPlane <- data_Plane %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=coupon, response)
+
+  
+
 # --- Hierarchical Bayesian Meta-Analysis  --- #
 library(knitr)
 library(kableExtra)
@@ -76,9 +148,14 @@ rbind(
       `Age, median (IQR) (yr)` = str_c(round(median(Age)), " (", round(quantile(Age,probs = .25)), "-", round(quantile(Age,probs = .75)), ")")
     ) 
 ) %>% 
-  kbl(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-      format = "html", table.attr = "style='width:40%;'") %>% 
-  kable_classic(html_font = "Cambria")
+  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+      table.attr = "style='width:40%;'", booktabs = T) %>% 
+  # row_spec(2:3, color = 'white', background = 'black') %>%
+  # kable_styling(latex_options = c("striped", "scale_down")) 
+  kable_classic(html_font = "Cambria") %>% 
+  # kable_material(c("striped", "hover")) %>% 
+  row_spec(0, bold = TRUE) %>% 
+  save_kable("test.png", zoom = 3)
 
 
 theta_fullExclusion$MrAB %>% filter(condition=="gain")
