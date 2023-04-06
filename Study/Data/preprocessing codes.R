@@ -104,10 +104,11 @@ NativeLanguageList=lapply(Countries, function(Country){
   }
 }); names(NativeLanguageList) <- Countries 
 
+income <- read.csv("Raw Qualtrics Data/Income.csv")
+  
 ################################################################
 # ---------------------- Mr. A vs Mr. B ---------------------- #
 ################################################################
-
 MrAB <- TRUE
 if( MrAB ){
   data_MrAB <- map_dfr(Countries, function(Country){
@@ -162,9 +163,9 @@ if( MrAB ){
       
     
     # Create MrAB dataseta
-    dat %>%
+    d <- dat %>%
       select(subject, contains("MrAB", ignore.case = FALSE), all_of(control_variables)) %>%
-      # Recode response
+      # Re-code response
       mutate(`gain-gain VS gain` = case_when(MrAB1 == "A" ~ 1, 
                                              MrAB1 == "B" ~ 0, 
                                              T ~ 2), 
@@ -180,9 +181,521 @@ if( MrAB ){
       select(-contains("MrAB", ignore.case = FALSE)) %>%
       reshape2::melt(id.var = c("subject", control_variables), 
                      variable.name = "scenario", value.name = "response") %>%
-      mutate(scenario_group = ifelse(scenario == "gain-gain VS gain" | scenario == "gain-loss VS gain", "gain", "loss"))  
+      mutate(scenario_group = ifelse(scenario == "gain-gain VS gain" | scenario == "gain-loss VS gain", "gain", "loss"))
+      
   })
   
+  # -------- Income conversion ------- #
+  numeric_income <- c()
+  
+  # "Austria"
+  d <- data_MrAB %>% filter(Country==Countries[1])
+  inc <- income[income$Country==Countries[1],-1] %>% unlist() %>% as.numeric()
+  
+  list_string <- str_split(d$Income, pattern = ' ')
+  
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="Less") && return(0)
+    any(ls=="More") && return(5)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls[1]) == inc) )
+  })
+  
+  numeric_income <- c(numeric_income, num_income)
+  
+  # "Brazil"
+  d <- data_MrAB %>% filter(Country==Countries[2])
+  inc <- c(1100, 2200, 3300, 4400, 5500, 6600, 7700, 9900)
+  
+  list_string <- str_split(d$Income, pattern = ' ')
+  
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="less") && return(0)
+    any(ls=="more") && return(8)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls[2])-1 == inc) )
+  })
+  num_income <- num_income/8*5
+  
+  numeric_income <- c(numeric_income, num_income)
+  
+  
+  # "Canada"
+  d <- data_MrAB %>% filter(Country==Countries[3])
+  inc <- income[income$Country==Countries[3],-1] %>% unlist() %>% as.numeric()
+  
+  list_string <- str_split(d$Income, pattern = ' ')
+  # Remove $ and , symbol
+  list_string <- lapply(list_string, function(ls){ 
+    ls[1] %>% 
+    str_remove(pattern = '[$]') %>% 
+    str_remove(pattern = '[,]')
+  })
+
+  ls <- list_string[[3]]
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="Less") && return(0)
+    any(ls=="More") && return(5)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls) == inc) )
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  
+  # ---- "China" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[4])
+  inc <- income[income$Country==Countries[4],-1] %>% unlist() %>% as.numeric()
+  
+  list_string <- str_split(d$Income, pattern = ' ')
+  
+  # Remove $ and , symbol
+  list_string <- lapply(list_string, function(ls){ 
+    ls[1] %>% 
+      str_remove(pattern = '[￥]')
+  })
+  
+  ls <- list_string[[3]]
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="Less") && return(0)
+    any(ls=="More") && return(5)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls) == inc) )
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Colombia" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[5]) # table(d$Income) 
+  inc <- income[income$Country==Countries[5],-1] %>% unlist() %>% as.numeric()
+  
+  list_string <- str_split(d$Income, pattern = ' ')
+  
+  # Remove ´ and . symbol
+  list_string <- lapply(list_string, function(ls){ 
+    (ls[1]!='$') && return(ls[1])
+    ls[2] %>% 
+      str_remove(pattern = '[´]') %>% 
+      str_remove(pattern = '[.]')
+  })
+  
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="Less") && return(0)
+    any(ls=="More") && return(5)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls) == inc) )
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Denmark" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[6]); table(d$Income) 
+  inc <- income[income$Country==Countries[6],-1] %>% unlist() %>% as.numeric()
+  
+  list_string <- str_split(d$Income, pattern = ' ')
+  
+  # Remove symbol
+  list_string <- lapply(list_string, function(ls){ 
+    ls[1] %>% 
+      str_remove(pattern = '[.]')
+  })
+  
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="Less") && return(0)
+    any(ls=="More") && return(5)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls) == inc) )
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Egypt" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[7]); table(d$Income) 
+  inc <- income[income$Country==Countries[7],-1] %>% unlist() %>% as.numeric()
+  
+  list_stsring <- str_split(d$Income, pattern = ' ')
+  
+  # Remove symbol
+  list_string <- lapply(list_string, function(ls){ 
+    (ls[1]!='EGP') && return(ls[1])
+    ls[2] %>% 
+      str_remove(pattern = '[.]')
+  })
+  
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="Less") && return(0)
+    any(ls=="More") && return(5)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls) == inc) )
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "France" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[8]); table(d$Income) 
+  inc <- income[income$Country==Countries[8],-1] %>% unlist() %>% as.numeric()
+  
+  list_string <- str_split(d$Income, pattern = ' ')
+  
+  # Remove symbol
+  list_string <- lapply(list_string, function(ls){ 
+    ls[1] %>% 
+      str_remove(pattern = '[€]')
+  })
+  
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="Less") && return(0)
+    any(ls=="More") && return(5)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls) == inc) )
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Germany" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[9]); table(d$Income) 
+  inc <- income[income$Country==Countries[9],-1] %>% unlist() %>% as.numeric()
+  
+  list_string <- str_split(d$Income, pattern = ' ')
+  
+  # Remove symbol
+  list_string <- lapply(list_string, function(ls){ 
+    ls[1] %>% 
+      str_remove(pattern = '[€]')
+  })
+  
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="Less") && return(0)
+    any(ls=="More") && return(5)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls) == inc) )
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Ghana" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[10]); table(d$Income) 
+  inc <- income[income$Country==Countries[10],-1] %>% unlist() %>% as.numeric()
+  
+  list_string <- str_split(d$Income, pattern = ' ')
+  
+  # Remove symbol
+  list_string <- lapply(list_string, function(ls){ 
+    (ls[1]!="GHS") && return(ls[1])
+    paste0(c(ls[2], ls[3]), collapse = "")
+  })
+  
+  num_income <- sapply(list_string, function(ls){
+    any(ls=="Less") && return(0)
+    any(ls=="More") && return(5)
+    any(ls=="Prefer") && return(NA)
+    return( which(as.numeric(ls) == inc) )
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Hungary" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[11]); table(d$Income) 
+  
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 190 000 forint") && return(0)
+    (ls=="190 000 – 280 000 forint") && return(1)
+    (ls=="280 000 – 375 000 forint") && return(2)
+    (ls=="375 000 – 470 000 forint") && return(3)
+    (ls=="470 000 – 560 000 forint") && return(4)
+    (ls=="More than 560 000 forint") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "India" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[12]); table(d$Income) 
+  
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than Rs 210000") && return(0)
+    (ls=="Rs 210000 - Rs 315000") && return(1)
+    (ls=="Rs 315000 - Rs 420000") && return(2)
+    (ls=="Rs 420000- Rs 525000") && return(3)
+    (ls=="Rs 525000- Rs 630000") && return(4)
+    (ls=="More than Rs 630000") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "India" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[13]); table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls==uIncome[1]) && return(0)
+    (ls==uIncome[4]) && return(1)
+    (ls==uIncome[5]) && return(2)
+    (ls==uIncome[6]) && return(3)
+    (ls==uIncome[7]) && return(4)
+    (ls==uIncome[2]) && return(5)
+    (ls==uIncome[3]) && return(NA)
+  })
+  
+  # ---- "Iran" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[14]); print(Countries[14]); table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 3,100,000 Tomans") && return(0)
+    (ls=="3,100,000 - 4,700,000 Tomans") && return(1)
+    (ls=="4,700,000 - 6,200,000 Tomans") && return(2)
+    (ls=="6,200,000 - 7,700,000 Tomans") && return(3)
+    (ls=="7,700,000 - 9,300,000 Tomans") && return(4)
+    (ls=="More than 9,300,000 Tomans") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  # ---- "Iran" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[15]); print(Countries[15]); table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 8,100") && return(0)
+    (ls=="8,100 - 12,500") && return(1)
+    (ls=="12,500 - 16,300") && return(2)
+    (ls=="16,300 - 20,800") && return(3)
+    (ls=="20,800 - 25,000") && return(4)
+    (ls=="More than 25,000") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Italy" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[16]); Countries[16]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 15.000 €") && return(0)
+    (ls=="15.000 € - 22.000 €") && return(1)
+    (ls=="22.000 € - 30.000 €") && return(2)
+    (ls=="30.000 € - 38.000 €") && return(3)
+    (ls=="38.000 € - 45.000 €") && return(4)
+    (ls=="More than 45.000 €") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Lithuania" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[17]); Countries[17]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 600 Eur") && return(0)
+    (ls=="600 Eur – 1000 Eur") && return(1)
+    (ls=="1000 Eur - 1300 Eur") && return(2)
+    (ls=="1300 Eur - 1600 Eur") && return(3)
+    (ls=="1600 Eur - 2000 Eur") && return(4)
+    (ls=="More than 2000 Eur") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Morocco" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[18]); Countries[18]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 30000 Dirhams") && return(0)
+    (ls=="30000 Dirhams - 45000 Dirhams") && return(1)
+    (ls=="45000 Dirhams - 60000 Dirhams") && return(2)
+    (ls=="60000 Dirhams - 75000 Dirhams") && return(3)
+    (ls=="75000 Dirhams - 90000 Dirhams") && return(4)
+    (ls=="More than 90000 Dirhams") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Netherlands" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[19]); Countries[19]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than €17000,-") && return(0)
+    (ls=="€17000,- – €26000,-") && return(1)
+    (ls=="€26000,- – €35000,-") && return(2)
+    (ls=="€35000,- – €44000,-") && return(3)
+    (ls=="€44000,- – €53000,-") && return(4)
+    (ls=="More than €53000,-") && return(5)
+    (ls=="Prefer not to say") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Portugal" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[20]); Countries[20]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 5500 €") && return(0)
+    (ls=="5500 € – 8200 €") && return(0.71)
+    (ls=="8200 € – 11 000 €") && return(1.43)
+    (ls=="11 000 € – 13 700 €") && return(2.14)
+    (ls=="13 700 € – 16 500 €") && return(2.85)
+    (ls=="16 500 € – 22 000 €") && return(3.57)
+    (ls=="22 000 € – 27 000 €") && return(4.29)
+    (ls=="More than 27 000 €") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Romania" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[21]); Countries[21]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 1900 lei") && return(0)
+    (ls=="1900  - 2800 lei") && return(1)
+    (ls=="2800 - 3800 lei") && return(2)
+    (ls=="3800 - 4800 lei") && return(3)
+    (ls=="4800 - 5700 lei") && return(4)
+    (ls=="More than 5700 lei") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Russia" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[22]); Countries[22]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 17 000 ₽") && return(0)
+    (ls=="17 000 ₽ - 34 000 ₽") && return(1)
+    (ls=="34 000 ₽ - 51 000 ₽") && return(2)
+    (ls=="51 000 ₽ - 68 000 ₽") && return(3)
+    (ls=="68 000 ₽ - 85 000 ₽") && return(4)
+    (ls=="More than 85 000 ₽") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+
+  # ---- "Singapore" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[23]); Countries[23]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than $60000") && return(0)
+    (ls=="$60000 - $90000") && return(1)
+    (ls=="$90000 - $120000") && return(2)
+    (ls=="$120000 - $150000") && return(3)
+    (ls=="$150000 - $180000") && return(4)
+    (ls=="More than $180000") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "South Africa" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[24]); Countries[24]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than R75 000") && return(0)
+    (ls=="R75 000 - R110 000") && return(1)
+    (ls=="R110 000 - R150 000") && return(2)
+    (ls=="R150 000 - R190 000") && return(3)
+    (ls=="R190 000 - R225 000") && return(4)
+    (ls=="More than R225 000") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "South Korea" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[25]); Countries[25]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than ₩14,000,000") && return(0)
+    (ls=="₩14,000,000 - ₩21,000,000") && return(1)
+    (ls=="₩21,000,000 - ₩28,000,000") && return(2)
+    (ls=="₩28,000,000 -\b ₩35,000,000") && return(3)
+    (ls=="₩35,000,000 - ₩42,000,000") && return(4)
+    (ls=="More than ₩42,000,000") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Spain" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[26]); Countries[26]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 8000€") && return(0)
+    (ls=="8000€ - 12000€") && return(1)
+    (ls=="12000€ - 16000€") && return(2)
+    (ls=="16000€ - 20000€") && return(3)
+    (ls=="20000€ - 24000€") && return(4)
+    (ls=="More than 24000€") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Sweden" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[27]); Countries[27]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 130000 SEK") && return(0)
+    (ls=="130000 SEK - 195000 SEK") && return(1)
+    (ls=="195000 SEK - 260000 SEK") && return(2)
+    (ls=="260000 SEK - 325000 SEK") && return(3)
+    (ls=="325000 SEK - 390000 SEK") && return(4)
+    (ls=="More than 390000 SEK") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Switzerland" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[28]); Countries[28]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than CHF 25'000") && return(0)
+    (ls=="CHF 25'000 - CHF 38'000") && return(1)
+    (ls=="CHF 38'000 - CHF 50'000") && return(2)
+    (ls=="CHF 50'000 - CHF 62'000") && return(3)
+    (ls=="CHF 62'000 - CHF 75'000") && return(4)
+    (ls=="More than CHF 75'000") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Turkey" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[29]); Countries[29]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 45000 TL") && return(0)
+    (ls=="45000 TL – 68000 TL") && return(1)
+    (ls=="68000 TL – 90000 TL") && return(2)
+    (ls=="90000 TL – 112000 TL") && return(3)
+    (ls=="112000 TL – 135000 TL") && return(4)
+    (ls=="More than  135000 TL") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "UK" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[30]); Countries[30]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than £15,000") && return(0)
+    (ls=="£15,000 - £22,000") && return(1)
+    (ls=="£22,000 - £30,000") && return(2)
+    (ls=="£30,000 - £38,000") && return(3)
+    (ls=="£38,000 - £45,000") && return(4)
+    (ls=="More than £45,000") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "USA" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[31]); Countries[31]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than $35,000") && return(0)
+    (ls=="$35,000 - $52,000") && return(1)
+    (ls=="$52,000 - $70,000") && return(2)
+    (ls=="$70,000 - $87,000") && return(3)
+    (ls=="$87,000 - $105,000") && return(4)
+    (ls=="More than $105,000") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+  # ---- "Vietnam" ---- #
+  d <- data_MrAB %>% filter(Country==Countries[32]); Countries[32]; table(d$Income) 
+  uIncome <- table(d$Income) %>% names()
+  num_income <- sapply(as.list(d$Income), function(ls){
+    (ls=="Less than 5.000.000Đ") && return(0)
+    (ls=="5.000.000Đ -  7.500.000Đ") && return(1)
+    (ls=="7.500.000Đ - 10.000.000Đ") && return(2)
+    (ls=="10.000.000Đ - 12.500.000Đ") && return(3)
+    (ls=="12.500.000Đ - 15.000.000Đ") && return(4)
+    (ls=="More than 15.000.000Đ") && return(5)
+    (ls=="Prefer not to answer") && return(NA)
+  })
+  numeric_income <- c(numeric_income, num_income)
+  
+
   write.csv(data_MrAB, file = "data_MrAB.csv")
   
   # Effect found in the paper Thaler 1985

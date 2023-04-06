@@ -6622,21 +6622,181 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 
 
+## Exploratory Analysis
 
-##  Financial Literacy
-
-<br>
-
-In this section we perform a Bayesian unpooled analysis to explore the role of financial literacy, i.e., are people with higher levels of financial literacy less susceptible to the mental accounting effect?
-
-<br>
-
+In this section we perform a Bayesian unpooled analysis to explore the role of financial literacy (i.e., are people with higher levels of financial literacy less susceptible to the mental accounting effect?), age, gender, and income.
 
 ::: {.panel-tabset}
 
+###  Age
 
-### Preregistered
+::: {.panel-tabset}
 
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+```{r age-plot }
+#| code-summary: "Show plot code"
+
+data_MrAB %>% filter(response!=2) %>%
+  filter(scenario_group=="gain") %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # filter(Country=='Austria') %>% 
+  group_by(Country, subject) %>% 
+  filter(row_number()==1) %>% 
+  select(Age) %>% 
+  ungroup() %>% 
+  mutate(Age=as.numeric(Age)) %>%
+  filter(Age>0 & Age<99) %>% 
+  ggplot(aes(Age, Country, color=Country)) +
+  geom_boxplot() +
+  theme_pubr() + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none") +
+  scale_color_manual(values = viridis::viridis_pal()(nCountries))
+
+```
+
+#### MrAB
+
+```{r fit-MrAB-unpooled-exploratory-preregistered-exclusion}
+#| code-summary: Show codes
+#| output: false
+#| eval: true
+
+mMrAB1 <- brm(response ~ scenario*(FinancialLiteracy+Age+) * Country,
+              data = data_MrAB %>% filter(response!=2) %>%
+                filter(scenario_group=="gain") %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ) %>% 
+                mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )), 
+              iter = 5000, refresh = 0, family="bernoulli")
+
+
+mMrAB2 <- brm(response ~ scenario*FinancialLiteracy * Country,
+              data = data_MrAB %>% filter(response!=2) %>%
+                filter(scenario_group=="loss") %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ) %>% 
+                mutate(scenario=factor(scenario, levels = c("loss-gain VS loss", "loss-loss VS loss") )),
+              iter = 5000, refresh = 0, family="bernoulli")
+```
+
+#### Game
+
+```{r fit-Game-unpooled-exploratory-preregistered-exclusion}
+#| code-summary: Show codes
+#| output: false
+#| eval: false
+mGame <- brm(response ~ buyer*FinancialLiteracy * Country,
+              data = data_Game %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ),
+              iter = 5000, refresh = 0, family="bernoulli")
+
+```
+
+#### Drink
+
+```{r fit-Drink-unpooled-exploratory-preregistered-exclusion}
+#| code-summary: Show codes
+#| output: false
+#| eval: false
+mDrink<- brm(response ~ store*FinancialLiteracy * Country,
+              data = data_Drink %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ) %>% 
+               # Remove really really extreme outliers
+                filter(response<10000 & response>=0) %>% 
+                mutate(response=response+1, logResp=log(response)) %>% 
+                group_by(Country) %>%
+                mutate(response=as.vector(scale(logResp))) %>% 
+                ungroup(),
+              iter = 5000, refresh = 0)
+
+```
+
+#### Jacket
+
+```{r fit-Jacket-unpooled-exploratory-preregistered-exclusion}
+#| code-summary: Show codes
+#| output: false
+#| eval: false
+
+mJacket <- brm(response ~ price*FinancialLiteracy * Country,
+              data = data_Jacket %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ),
+              iter = 5000, refresh = 0, family="bernoulli")
+
+```
+
+#### Play
+
+```{r fit-Play-unpooled-exploratory-preregistered-exclusion}
+#| code-summary: Show codes
+#| output: false
+#| eval: false
+
+mPlay <- brm(response ~ loss*FinancialLiteracy * Country,
+              data = data_Play %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ) %>% 
+               mutate(loss=factor(loss, levels = c("ticket", "cash"))),
+              iter = 5000, refresh = 0, family="bernoulli")
+
+```
+
+#### Gym
+
+```{r fit-Gym-unpooled-exploratory-preregistered-exclusion}
+#| code-summary: Show codes
+#| output: false
+#| eval: false
+
+mGym <- brm(response ~ frame*FinancialLiteracy * Country,
+              data = data_Gym %>% 
+               # EXCLUSION: Full Exclusion
+               filter( !(Country %in% countries2remove) ) %>% 
+               filter( attention_check_grater_than_3 ) %>% 
+               group_by(Country) %>%
+               mutate(response=as.vector(scale(response))) %>% 
+               ungroup(),
+              iter = 5000, refresh = 0)
+
+```
+
+#### Plane
+
+```{r fit-Plane-unpooled-exploratory-preregistered-exclusion}
+#| code-summary: Show codes
+#| output: false
+#| eval: false
+
+mPlane <- brm(response ~ coupon*FinancialLiteracy * Country,
+              data = data_Plane %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ),
+              iter = 5000, refresh = 0, family="bernoulli")
+
+```
+
+
+:::
+
+###  Financial Literacy
 
 ::: {.panel-tabset}
 
@@ -7330,9 +7490,7 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
-
 :::
-
 
 ```{bash, engine.opts='-l'}
 #| warning: false
