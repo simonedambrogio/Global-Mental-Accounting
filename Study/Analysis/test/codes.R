@@ -1,3 +1,8 @@
+# Bonferroni Correction https://bookdown.org/content/3686/null-hypothesis-significance-testing.html
+alpha_pc <- .05
+c        <- 21
+# the Bonferroni correction
+alpha_pc / c
 
 countries2remove <- data_MrAB %>% 
   filter(attention_check_grater_than_3) %>% 

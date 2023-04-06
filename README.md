@@ -7,17 +7,12 @@
 
 ### TO DO:
 
-#### Check Demographics: 
-- Age
-- Sex
-- Income
-- Education
+- Check Numbers of different exclusion criterions
 
-#### Change Table
-- Language
+- Run Exploratory analysis
 
-#### Supplementary Results
+- Supplementary Results
 
-#### Report html
-Write replication rate automatically (127/140 successful replications)
+- Report htmt\
+    Write replication rate automatically (127/140 successful replications)
 
