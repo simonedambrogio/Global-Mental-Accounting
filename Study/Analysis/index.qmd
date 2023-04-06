@@ -46,6 +46,29 @@ library(reshape2); library(parallel); library(rstan)
 library(brms)
 library(plotly)
 
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+
+color_21countries <- c(
+  "#440154FF", "#481467FF", "#482576FF", "#463480FF", 
+  "#414487FF", "#3B528BFF", "#35608DFF", "#2F6C8EFF",
+  "#2A788EFF", "#25848EFF", "#21908CFF", "#1E9C89FF",
+  "#22A884FF", "#2FB47CFF", "#43BF71FF", "#5DC863FF",
+  "#7AD151FF", "#9AD93CFF", "#BBDF27FF", "#DEE318FF",
+  "#FDE725FF"
+)
+
+# Load Preregistered data 
+MrAB <- read.csv("../Data/Preregistered/MrAB.csv")
+Game <- read.csv("../Data/Preregistered/Game.csv")
+Drink <- read.csv("../Data/Preregistered/Drink.csv")
+Jacket <- read.csv("../Data/Preregistered/Jacket.csv")
+Play <- read.csv("../Data/Preregistered/Play.csv")
+Gym <- read.csv("../Data/Preregistered/Gym.csv")
+Plane <- read.csv("../Data/Preregistered/Plane.csv")
+
 # Load data
 data_MrAB <- read.csv(file = "../Data/data_MrAB.csv")
 data_Game <- read.csv(file = "../Data/data_Game.csv")
@@ -158,8 +181,8 @@ data_table <- rbind(
     mutate(Age=as.numeric(Age)) %>% 
     filter(Age>0 & Age<99) %>% 
     summarise(
-      Country="pooled",
-      Language=names(which.max(table(NativeLanguage))),
+      Country="Pooled",
+      Language="",
       n = n(),
       `% female` = round(mean(Gender=='Female')*100,2),
       `Age, median (IQR) (yr)` = str_c(median(Age), " (", quantile(Age,probs = .25), "-", quantile(Age,probs = .75), ")")
@@ -175,22 +198,28 @@ data_table <- rbind(
       `% female` = round(mean(Gender=='Female')*100,2),
       `Age, median (IQR) (yr)` = str_c(round(median(Age)), " (", round(quantile(Age,probs = .25)), "-", round(quantile(Age,probs = .75)), ")")
     ) 
-)
+) %>% 
+  mutate(
+    Language=ifelse(Country=="Canada", "English, French", Language),
+    Language=ifelse(Country=="India", "Hindi, Tamil, English", Language)
+    )
+
 
 data_table %>%
   kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-      table.attr = "style='width:40%;'", booktabs = T) %>%
+        table.attr = "style='width:40%;'", booktabs = T) %>%
   kable_classic(html_font = "Cambria") %>%
   # kable_material(c("striped", "hover")) %>%
-  row_spec(0, bold = TRUE) %>%
+  row_spec(0, bold = TRUE) %>% 
   save_kable("tables/png/Demographics.png", zoom = 3)
 
-# data_table %>% 
-#   kbl(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-#       format = "html", table.attr = "style='width:40%;'") %>% 
-#   kable_classic(html_font = "Cambria") %>% 
-#     row_spec(0, bold = TRUE) %>% 
-#   save_kable("tables/pdf/Demographics.pdf")
+data_table %>%
+  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+        table.attr = "style='width:40%;'", booktabs = T) %>%
+  kable_classic(html_font = "Cambria") %>%
+  # kable_material(c("striped", "hover")) %>%
+  row_spec(0, bold = TRUE) %>% 
+  save_kable("tables/pdf/Demographics.pdf", zoom = 3)
 
 data_table %>% 
   kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
@@ -2152,11 +2181,6 @@ cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
 #### Table
 
 ```{r table-preregistered}
-
-library(knitr)
-library(kableExtra)
-library(tidyverse)
-
 #
 rownames(table_bayesian) <- table_bayesian$Study
 
@@ -6639,53 +6663,44 @@ Click on the tabs to see the model's summary for each study
 ```{r age-plot }
 #| code-summary: "Show plot code"
 
-data_MrAB %>% filter(response!=2) %>%
-  filter(scenario_group=="gain") %>% 
-  # EXCLUSION: Full Exclusion
-  filter( !(Country %in% countries2remove) ) %>% 
-  filter( attention_check_grater_than_3 ) %>% 
-  # filter(Country=='Austria') %>% 
-  group_by(Country, subject) %>% 
-  filter(row_number()==1) %>% 
-  select(Age) %>% 
-  ungroup() %>% 
+Jacket %>% 
+  filter(condition==first(Jacket$condition)) %>% 
   mutate(Age=as.numeric(Age)) %>%
-  filter(Age>0 & Age<99) %>% 
+  filter(Age>18 & Age<99) %>% 
   ggplot(aes(Age, Country, color=Country)) +
-  geom_boxplot() +
+  geom_boxplot(width = 0.5) +
+  geom_jitter(alpha=0.1, width = 0.3, height = 0.2) +
   theme_pubr() + 
   guides(size = "none") + 
   theme(text = element_text(size = 15),
         axis.text.y = element_text(size = 15),
         legend.position = "none") +
-  scale_color_manual(values = viridis::viridis_pal()(nCountries))
+  scale_color_manual(values = color_21countries) +
+  labs(y=NULL)
 
 ```
 
 #### MrAB
 
-```{r fit-MrAB-unpooled-exploratory-preregistered-exclusion}
+```{r fit-MrAB1-unpooled-exploratory-preregistered-exclusion}
 #| code-summary: Show codes
 #| output: false
 #| eval: true
 
-mMrAB1 <- brm(response ~ scenario*(FinancialLiteracy+Age+) * Country,
-              data = data_MrAB %>% filter(response!=2) %>%
-                filter(scenario_group=="gain") %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_3 ) %>% 
-                mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )), 
-              iter = 5000, refresh = 0, family="bernoulli")
-
-
-mMrAB2 <- brm(response ~ scenario*FinancialLiteracy * Country,
-              data = data_MrAB %>% filter(response!=2) %>%
-                filter(scenario_group=="loss") %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_3 ) %>% 
-                mutate(scenario=factor(scenario, levels = c("loss-gain VS loss", "loss-loss VS loss") )),
+mMrAB1 <- brm(response ~ condition * (Age+Education+FinancialLiteracy+Gender+numeric_income) * Country,
+              data = MrAB %>% 
+                # Tidy
+                mutate(Age=as.numeric(Age)) %>%
+                filter(Age>0 & Age<99) %>% 
+                mutate(Education=as.numeric(Education)) %>% 
+                filter(Education<100) %>% 
+                mutate(condition_group=ifelse(
+                  condition %in% c("gain-gain VS gain", "gain-loss VS gain"),
+                  "gain",
+                  "loss"
+                )) %>% 
+                filter(condition_group=="gain") %>% 
+                mutate(condition=factor(condition, levels = c("gain-loss VS gain", "gain-gain VS gain") )),
               iter = 5000, refresh = 0, family="bernoulli")
 ```
 
@@ -6793,6 +6808,53 @@ mPlane <- brm(response ~ coupon*FinancialLiteracy * Country,
 
 ```
 
+:::
+
+###  Education
+
+::: {.panel-tabset}
+
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+```{r education-plot }
+#| code-summary: "Show plot code"
+
+Jacket %>% 
+  # Tidy
+  filter(condition==first(Jacket$condition)) %>% 
+  mutate(Age=as.numeric(Age)) %>%
+  filter(Age>0 & Age<99) %>% 
+  mutate(Education=as.numeric(Education)) %>% 
+  filter(Education<100) %>% 
+  # Plot
+  ggplot(aes(Education, Country, color=Country)) +
+  geom_boxplot(width = 0.5) +
+  geom_jitter(alpha=0.1, width = 0.3, height = 0.2) +
+  scale_color_manual(values = color_21countries) +
+  theme_pubr() +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none") +
+  labs(y=NULL) 
+
+```
+
+#### MrAB
+
+#### Game
+
+#### Drink
+
+#### Jacket
+
+#### Play
+
+#### Gym
+
+#### Plane
 
 :::
 
@@ -7489,6 +7551,106 @@ plotSMD <- post %>% filter(family=="gaussian") %>%
 cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
+
+###  Gender
+
+::: {.panel-tabset}
+
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+```{r gender-plot }
+#| code-summary: "Show plot code"
+Jacket %>% 
+  # Tidy
+  filter(condition==first(Jacket$condition)) %>% 
+  mutate(Age=as.numeric(Age)) %>%
+  filter(Age>0 & Age<99) %>% 
+  mutate(Education=as.numeric(Education)) %>% 
+  filter(Education<100) %>% 
+  filter(Gender!="Prefer not to say") %>% 
+  group_by(Country) %>% 
+  summarise(pMale = mean(ifelse(Gender=='Male', 1, 0))) %>% 
+  # Plot
+  ggplot(aes(pMale, Country, fill=Country)) +
+  geom_bar(stat = "identity", width=0.8) +
+  geom_boxplot(width = 0.5) +
+  scale_fill_manual(values = color_21countries) +
+  theme_pubr() +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none") +
+  labs(x="Proportion of Male", y=NULL)
+```
+
+#### MrAB
+
+#### Game
+
+#### Drink
+
+#### Jacket
+
+#### Play
+
+#### Gym
+
+#### Plane
+
+:::
+
+
+###  Income
+
+::: {.panel-tabset}
+
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+```{r income-plot }
+#| code-summary: "Show plot code"
+
+Jacket %>% 
+  # Tidy
+  filter(condition==first(Jacket$condition)) %>% 
+  mutate(Age=as.numeric(Age)) %>%
+  filter(Age>0 & Age<99) %>% 
+  mutate(Education=as.numeric(Education)) %>% 
+  filter(Education<100) %>% 
+  # Plot
+  ggplot(aes(numeric_income, Country, color=Country)) +
+  geom_jitter(alpha=0.1, width = 0.2, height = 0.2) +
+  scale_color_manual(values = color_21countries) +
+  theme_pubr() +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none") +
+  labs(y=NULL, x="Income") +
+  scale_x_continuous(breaks = 0:5)
+
+```
+
+#### MrAB
+
+#### Game
+
+#### Drink
+
+#### Jacket
+
+#### Play
+
+#### Gym
+
+#### Plane
+
+:::
+
+
 
 :::
 

@@ -5,18 +5,19 @@
 [Study Analysis](https://run.pavlovia.org/simonedambrogio/mmar-analysis)
 
 
-TO DO
+### TO DO:
 
-Check Demographics: 
+#### Check Demographics: 
 - Age
 - Sex
 - Income
-- Educcation
+- Education
 
-Change Table
+#### Change Table
 - Language
-- 
 
-Supplementary Results
+#### Supplementary Results
 
+#### Report html
+Write replication rate automatically (127/140 successful replications)
 
