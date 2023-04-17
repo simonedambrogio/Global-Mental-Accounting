@@ -656,3 +656,98 @@ plotSMD <- post %>% filter(family=="gaussian") %>%
   guides(size = "none") + 
   theme(text = element_text(size = 20), legend.position = "none")
 
+
+
+lazyLoad("index_cache/html/plot-unpooled-posteriors-full-exclusion_ce9b0439721c7cced74a25d6ac21e29f")
+
+country='Austria'
+
+
+
+unpooled <- map_dfr(as.list(unique(post$Country)), function(country){
+  rbind(
+    post %>% 
+      filter(study=='MrAB') %>% 
+      filter(Country==country) %>% 
+      mutate(replication=(credible[x==1.2]=='yes') & (credible[x==1.8]=='yes')) %>% 
+      filter(row_number()==1),
+    post %>% 
+      filter(study!='MrAB') %>% 
+      filter(Country==country) %>% 
+      mutate(replication=credible=='yes'),
+  )
+})
+
+
+unpooled$replication |> mean() |> round(digits=3) * 100
+
+
+post %>% 
+  group_by(Country)
+  mutate(replication = ifelse())
+
+  
+  # ------- Fin Lit ------------ #
+  lazyLoad("index_cache/html/plot-unpooled-posteriors-fin_lit-preregistered-exclusion_41926bea4c76ccd80502fcc222f8ac65")
+  
+  
+  post %>% filter(family=="binomial") %>% 
+    ggplot(aes(x, theta, color=credible)) +
+    geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
+    geom_hline(yintercept = 0, linetype=2, size=1) +
+    theme_pubr() + theme(legend.position = "right") +
+    labs(x=NULL, y=expression(Posterior~log(OR))) +
+    scale_y_continuous(guide = "prism_offset", limits = c(-1.5,1.5), breaks = -1:5) +
+    scale_size(range = c(3, 8)) +
+    scale_x_continuous(breaks =c(1.5, 3:6), 
+                       labels = post %>% filter(family=="binomial") %>% 
+                         .[,"study",drop=T] %>% unique(),
+                       guide = "prism_offset") + 
+    scale_color_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+    guides(size = "none") + 
+    theme(text = element_text(size = 15), legend.position = "none")
+  
+  
+  lazyLoad("index_cache/html/plot-MrAB-unpooled-fin_lit-posteriors-preregistered-exclusion_7a7e2bcbb22715f2fe9322f68a5b18a7")
+
+  post_plot1 %>%  
+    ggplot(aes(x = theta, y = Country)) +
+    stat_halfeye(aes(fill=credible, color=credible)) +
+    geom_vline(xintercept = 0, linetype=2) +
+    theme_pubr() + 
+    labs(x=expression(log(OR)), y=NULL) +
+    scale_y_discrete(guide = "prism_offset") + 
+    scale_x_continuous(guide = "prism_offset") + 
+    scale_fill_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+    scale_color_manual(values = c("#33628DFF", "#560f56", "gray"), breaks = c("higher", "lower","no")) +
+    guides(size = "none") + 
+    theme(text = element_text(size = 15),
+          axis.text.x = element_blank(),
+          axis.text.y = element_text(size = 15),
+          legend.position = "none")
+  
+  post_plot1 %>% 
+    group_by(Country) %>% 
+    mutate(sample=row_number()) %>% 
+    group_by(sample) %>% 
+    mutate(theta=mean(theta)) %>% 
+    filter(Country=='Austria') %>% 
+    ungroup() %>% 
+    mutate(Country='All') %>% 
+    select(-sample) %>% 
+    
+    ggplot(aes(x = theta, y = Country)) +
+    stat_halfeye(aes(fill=credible, color=credible)) +
+    geom_vline(xintercept = 0, linetype=2) +
+    theme_pubr() + 
+    labs(x=expression(log(OR)), y=NULL) +
+    scale_y_discrete(guide = "prism_offset") + 
+    scale_x_continuous(guide = "prism_offset") + 
+    scale_fill_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+    scale_color_manual(values = c("#33628DFF", "#560f56", "gray"), breaks = c("higher", "lower","no")) +
+    guides(size = "none") + 
+    theme(text = element_text(size = 15),
+          axis.text.x = element_blank(),
+          axis.text.y = element_text(size = 15),
+          legend.position = "none")
+  

@@ -27,7 +27,7 @@ execute:
 #| output: false
 
 # ----- Update chunks ----- #
-# update-pavlovia-1
+# update-pavlovia-0
 
 ```
 
@@ -43,11 +43,11 @@ library(dplyr); library(purrr); library(stringr)
 library(ggplot2); library(ggpubr); library(jcolors)
 library(cowplot); library(ggprism); library(tidybayes)
 library(reshape2); library(parallel); library(rstan)
-library(brms)
-library(plotly)
+library(brms);
+library(plotly);
 
-library(knitr)
-library(kableExtra)
+library(knitr);
+# library(kableExtra);
 library(tidyverse)
 
 
@@ -127,7 +127,6 @@ Demographics of the *Preregistered* sample.
 ```{r demographics}
 #| code-summary: "Create table"
 
-
 # Participants from 21 countries
 df <- data_Plane %>% 
   filter(coupon=='free') %>% 
@@ -205,28 +204,28 @@ data_table <- rbind(
     )
 
 
-data_table %>%
-  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-        table.attr = "style='width:40%;'", booktabs = T) %>%
-  kable_classic(html_font = "Cambria") %>%
-  # kable_material(c("striped", "hover")) %>%
-  row_spec(0, bold = TRUE) %>% 
-  save_kable("tables/png/Demographics.png", zoom = 3)
+# data_table %>%
+#   kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+#         table.attr = "style='width:40%;'", booktabs = T) %>%
+#   kable_classic(html_font = "Cambria") %>%
+#   # kable_material(c("striped", "hover")) %>%
+#   row_spec(0, bold = TRUE) %>% 
+#   save_kable("tables/png/Demographics.png", zoom = 3)
 
-data_table %>%
-  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-        table.attr = "style='width:40%;'", booktabs = T) %>%
-  kable_classic(html_font = "Cambria") %>%
-  # kable_material(c("striped", "hover")) %>%
-  row_spec(0, bold = TRUE) %>% 
-  save_kable("tables/pdf/Demographics.pdf", zoom = 3)
+# data_table %>%
+#   kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+#         table.attr = "style='width:40%;'", booktabs = T) %>%
+#   kable_classic(html_font = "Cambria") %>%
+#   # kable_material(c("striped", "hover")) %>%
+#   row_spec(0, bold = TRUE) %>% 
+#   save_kable("tables/pdf/Demographics.pdf", zoom = 3)
 
-data_table %>% 
-  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-      table.attr = "style='width:60%;'") %>% 
-  kable_classic(html_font = "Cambria") %>% 
-  kable_material(c("striped", "hover")) %>% 
-  row_spec(0, bold = TRUE)
+# data_table %>% 
+#   kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+#       table.attr = "style='width:60%;'") %>% 
+#   kable_classic(html_font = "Cambria") %>% 
+#   kable_material(c("striped", "hover")) %>% 
+#   row_spec(0, bold = TRUE)
 
 ```
 
@@ -241,6 +240,232 @@ In this section we show the effect size of each study for each country. We use l
 <br>
 
 ::: {.panel-tabset}
+
+### Preregistered
+
+```{r create-preregistered-exclusion }
+#| code-summary: "Create preregistered exclusion dataset"
+
+data_MrAB_theta <- data_MrAB %>% filter(response!=2) %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Calculate mean Finantial Literacy
+  group_by(Country) %>% 
+  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
+  # Calculate ODD RATIO
+  group_by(scenario, scenario_group, response, Country) %>% 
+  mutate(n = n()) %>% filter(row_number()==1) %>% 
+  group_by(scenario, Country) %>% 
+  mutate(Odds = n[response==1]/n[response==0]) %>% 
+  group_by(scenario_group, Country) %>% 
+  # filter(Country=="Austria", scenario_group=="gain") %>% 
+  mutate(se_theta = sqrt(sum(1/n))) %>%
+  group_by(scenario, Country) %>% filter(row_number()==1) %>% select(-response) %>% 
+  group_by(Country) %>% 
+  mutate(ORgain = Odds[scenario=="gain-gain VS gain"]/Odds[scenario=="gain-loss VS gain"],
+         ORloss = Odds[scenario=="loss-loss VS loss"]/Odds[scenario=="loss-gain VS loss"],
+         theta = ifelse(scenario_group=="gain", log(ORgain), log(ORloss))) %>% 
+  group_by(Country, scenario_group) %>% filter(row_number()==1) %>% 
+  select(-c(ORgain, ORloss, Odds, n)) %>% ungroup()
+
+data_Game_theta <- data_Game %>%
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Calculate mean Finantial Literacy
+  group_by(Country) %>% 
+  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
+  # Calculate ODD RATIO
+  group_by(buyer, response, Country) %>%
+  mutate(n = n()) %>% filter(row_number()==1) %>%
+  group_by(buyer, Country) %>%
+  mutate(Odds = n[response==1]/n[response==0]) %>%
+  group_by(buyer, Country) %>%
+  # filter(Country=="Austria", scenario_group=="gain") %>%
+  mutate(se_theta = sqrt(sum(1/n))) %>%
+  filter(row_number()==1) %>% select(-response) %>%
+  group_by(Country) %>% 
+  mutate(OR = Odds[buyer=="Stranger"]/Odds[buyer=="Friend"],
+         theta = log(OR)) %>% filter(row_number()==1) %>% 
+  select(-c(OR, Odds, n)) %>% ungroup() 
+
+data_Drink_theta <- data_Drink %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Calculate mean Finantial Literacy
+  group_by(Country) %>% 
+  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
+  # Remove really really extreme outliers
+  filter(response<10000 & response>=0) %>% 
+  mutate(response=response+1, logResp=log(response)) %>% 
+  # Compute effect size as Standardized Mean Difference
+  group_by(Country, store) %>% mutate(n=n()) %>% 
+  group_by(Country) %>% 
+  # Calculate Mean Difference 
+  mutate(md=mean(logResp[store=="Resort Hotel"])-mean(logResp[store=="Grocery Store"])) %>% 
+  # Calculate effect size
+  mutate(theta=md/sd(logResp)) %>% 
+  group_by(Country, store) %>% filter(row_number()==1) %>% 
+  group_by(Country) %>% 
+  # -- Calculate standard error -- #
+  mutate(first = sum(n) / (n[store=="Resort Hotel"]*n[store=="Grocery Store"]),
+         second = theta[1]^2/(2*sum(n)),
+         se_theta = sqrt(first+second)) %>% 
+  select(-c(md, response, first, second, logResp, n)) %>% 
+  filter(row_number()==1) %>% ungroup()
+
+data_Jacket_theta <- data_Jacket %>%
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Calculate mean Finantial Literacy
+  group_by(Country) %>% 
+  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
+  # Calculate ODD RATIO
+  group_by(price, response, Country) %>% 
+  mutate(n = n()) %>% filter(row_number()==1) %>% 
+  group_by(price, Country) %>% 
+  mutate(Odds = n[response==1]/n[response==0]) %>% 
+  group_by(price, Country) %>% 
+  # filter(Country=="Austria", scenario_group=="gain") %>% 
+  mutate(se_theta = sqrt(sum(1/n))) %>%
+  group_by(price, Country) %>% filter(row_number()==1) %>% select(-response) %>% 
+  group_by(Country) %>% 
+  mutate(OR = Odds[price=="low"]/Odds[price=="high"],
+         theta = log(OR)) %>% filter(row_number()==1) %>% 
+  select(-c(OR, Odds, n)) %>% ungroup()
+
+data_Play_theta <- data_Play %>%
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Calculate mean Finantial Literacy
+  group_by(Country) %>% 
+  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
+  # Calculate ODD RATIO
+  group_by(loss, response, Country) %>% 
+  mutate(n = n()) %>% filter(row_number()==1) %>% 
+  group_by(loss, Country) %>% 
+  mutate(Odds = n[response==1]/n[response==0]) %>% 
+  group_by(loss, Country) %>% 
+  # filter(Country=="Austria", scenario_group=="gain") %>% 
+  mutate(se_theta = sqrt(sum(1/n))) %>%
+  group_by(loss, Country) %>% filter(row_number()==1) %>% select(-response) %>% 
+  group_by(Country) %>% 
+  mutate(OR = Odds[loss=="cash"]/Odds[loss=="ticket"],
+         theta = log(OR)) %>% filter(row_number()==1) %>% 
+  select(-c(OR, Odds, n)) %>% ungroup()
+
+data_Gym_theta <- data_Gym %>%
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Calculate mean Finantial Literacy
+  group_by(Country) %>% 
+  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
+  # Calculate Mean Difference
+  group_by(frame, Country) %>% mutate(n = n()) %>%
+  group_by(Country) %>% 
+  mutate(pooled_sd = sd(response),
+         md = mean(response[frame=="Yearly"])-mean(response[frame=="Per-session"]),
+         theta = md/pooled_sd) %>% 
+  group_by(frame, Country) %>% filter(row_number()==1) %>% 
+  group_by(Country) %>%
+  # -- Calculate standard error -- #
+  mutate(first = sum(n) / (n[frame=="Per-session"]*n[frame=="Yearly"]),
+         second = theta[1]^2/(2*sum(n)),
+         se_theta = sqrt(first+second)) %>% 
+  filter(row_number()==1) %>% ungroup() %>% 
+  select(-c(md, first, second, pooled_sd, n, response))
+
+data_Plane_theta <- data_Plane %>%
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Calculate mean Finantial Literacy
+  group_by(Country) %>% 
+  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
+  # Calculate ODD RATIO
+  group_by(coupon, response, Country) %>% 
+  mutate(n = n()) %>% filter(row_number()==1) %>% 
+  group_by(coupon, Country) %>% 
+  mutate(Odds = n[response==1]/n[response==0]) %>% 
+  group_by(coupon, Country) %>% 
+  # filter(Country=="Austria", scenario_group=="gain") %>% 
+  mutate(se_theta = sqrt(sum(1/n))) %>%
+  group_by(coupon, Country) %>% filter(row_number()==1) %>% select(-response) %>% 
+  group_by(Country) %>% 
+  mutate(OR = Odds[coupon=="purchased"]/Odds[coupon=="free"],
+         theta = log(OR)) %>% filter(row_number()==1) %>% 
+  select(-c(OR, Odds, n)) %>% ungroup()
+
+theta_preregisteredExclusion <- list(
+  MrAB = data_MrAB_theta %>% 
+    mutate(study="MrAB", x=ifelse(scenario_group=="gain", 1.2, 1.8),
+           family="binomial") %>% 
+    select(-c(X, scenario)) %>% rename(condition = scenario_group),
+  Game = data_Game_theta %>% mutate(study="Game", x=3, family="binomial") %>% 
+    select(-c(X, market_value)) %>% rename(condition = buyer),
+  Drink = data_Drink_theta %>% mutate(study="Drink", x=1, family="gaussian") %>% 
+    select(-c(X)) %>% rename(condition = store),
+  Jacket = data_Jacket_theta %>% mutate(study="Jacket", x=4, family="binomial") %>% 
+    select(-c(X)) %>% rename(condition = price),
+  Play = data_Play_theta %>% mutate(study="Play", x=5, family="binomial") %>% 
+    select(-c(X)) %>% rename(condition = loss),
+  Gym = data_Gym_theta %>% mutate(study="Gym", x=2, family="gaussian") %>% 
+    select(-c(X)) %>% rename(condition = frame),
+  Plane = data_Plane_theta %>% mutate(study="Plane", x=6, family="binomial") %>% 
+    select(-c(X)) %>% rename(condition = coupon)
+)
+```
+
+```{r plot-preregistered-exclusion}
+#| fig-width: 8
+#| fig-height: 3.5
+#| code-summary: "Plot full exclusion dataset"
+
+data_theta <- map_dfr(1:length(theta_preregisteredExclusion), function(i) theta_preregisteredExclusion[[i]])
+nCountries <- length(unique(theta_preregisteredExclusion[[1]]$Country))
+
+plot_OR <- data_theta %>% filter(family=="binomial") %>% 
+  ggplot(aes(x, theta)) +
+  geom_jitter( aes(size=1/se_theta, color=Country), width = 0.1, alpha=0.7) +
+  geom_point(data = data_paper, color="firebrick", size=35, shape="-") +
+  geom_hline(yintercept = 0, linetype=2) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(log(OR))) +
+  scale_color_manual(values = viridis::viridis_pal()(nCountries)) +
+  scale_fill_manual(values = viridis::viridis_pal()(nCountries)) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5,3:6), 
+                     labels = unique(data_theta$study[data_theta$family=="binomial"]),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+plot_d <- data_theta %>% filter(family=="gaussian") %>% 
+  filter( !(Country %in% countries2remove) ) %>% 
+  ggplot(aes(x, theta, color=Country)) +
+  geom_jitter( aes(size=1/se_theta), width = 0.1, alpha=0.7) +
+  geom_hline(yintercept = 0, linetype=2) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(SMD)) +
+  scale_color_manual(values = viridis::viridis_pal()(nCountries)) +
+  scale_y_continuous(guide = "prism_offset", breaks = -1:1, limits = c(-1, 1.5)) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
+                     labels = unique(data_theta$study[data_theta$family=="gaussian"]),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+cowplot::plot_grid(plot_OR, plot_d, nrow = 1, rel_widths = c(0.7, .3))
+
+```
+
 
 ### Full
 
@@ -672,230 +897,6 @@ cowplot::plot_grid(plot_OR, plot_d, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
-### Preregistered
-
-```{r create-preregistered-exclusion }
-#| code-summary: "Create preregistered exclusion dataset"
-
-data_MrAB_theta <- data_MrAB %>% filter(response!=2) %>% 
-  # EXCLUSION: Full Exclusion
-  filter( !(Country %in% countries2remove) ) %>% 
-  filter( attention_check_grater_than_3 ) %>% 
-  # Calculate mean Finantial Literacy
-  group_by(Country) %>% 
-  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
-  # Calculate ODD RATIO
-  group_by(scenario, scenario_group, response, Country) %>% 
-  mutate(n = n()) %>% filter(row_number()==1) %>% 
-  group_by(scenario, Country) %>% 
-  mutate(Odds = n[response==1]/n[response==0]) %>% 
-  group_by(scenario_group, Country) %>% 
-  # filter(Country=="Austria", scenario_group=="gain") %>% 
-  mutate(se_theta = sqrt(sum(1/n))) %>%
-  group_by(scenario, Country) %>% filter(row_number()==1) %>% select(-response) %>% 
-  group_by(Country) %>% 
-  mutate(ORgain = Odds[scenario=="gain-gain VS gain"]/Odds[scenario=="gain-loss VS gain"],
-         ORloss = Odds[scenario=="loss-loss VS loss"]/Odds[scenario=="loss-gain VS loss"],
-         theta = ifelse(scenario_group=="gain", log(ORgain), log(ORloss))) %>% 
-  group_by(Country, scenario_group) %>% filter(row_number()==1) %>% 
-  select(-c(ORgain, ORloss, Odds, n)) %>% ungroup()
-
-data_Game_theta <- data_Game %>%
-  # EXCLUSION: Full Exclusion
-  filter( !(Country %in% countries2remove) ) %>% 
-  filter( attention_check_grater_than_3 ) %>% 
-  # Calculate mean Finantial Literacy
-  group_by(Country) %>% 
-  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
-  # Calculate ODD RATIO
-  group_by(buyer, response, Country) %>%
-  mutate(n = n()) %>% filter(row_number()==1) %>%
-  group_by(buyer, Country) %>%
-  mutate(Odds = n[response==1]/n[response==0]) %>%
-  group_by(buyer, Country) %>%
-  # filter(Country=="Austria", scenario_group=="gain") %>%
-  mutate(se_theta = sqrt(sum(1/n))) %>%
-  filter(row_number()==1) %>% select(-response) %>%
-  group_by(Country) %>% 
-  mutate(OR = Odds[buyer=="Stranger"]/Odds[buyer=="Friend"],
-         theta = log(OR)) %>% filter(row_number()==1) %>% 
-  select(-c(OR, Odds, n)) %>% ungroup() 
-
-data_Drink_theta <- data_Drink %>% 
-  # EXCLUSION: Full Exclusion
-  filter( !(Country %in% countries2remove) ) %>% 
-  filter( attention_check_grater_than_3 ) %>% 
-  # Calculate mean Finantial Literacy
-  group_by(Country) %>% 
-  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
-  # Remove really really extreme outliers
-  filter(response<10000 & response>=0) %>% 
-  mutate(response=response+1, logResp=log(response)) %>% 
-  # Compute effect size as Standardized Mean Difference
-  group_by(Country, store) %>% mutate(n=n()) %>% 
-  group_by(Country) %>% 
-  # Calculate Mean Difference 
-  mutate(md=mean(logResp[store=="Resort Hotel"])-mean(logResp[store=="Grocery Store"])) %>% 
-  # Calculate effect size
-  mutate(theta=md/sd(logResp)) %>% 
-  group_by(Country, store) %>% filter(row_number()==1) %>% 
-  group_by(Country) %>% 
-  # -- Calculate standard error -- #
-  mutate(first = sum(n) / (n[store=="Resort Hotel"]*n[store=="Grocery Store"]),
-         second = theta[1]^2/(2*sum(n)),
-         se_theta = sqrt(first+second)) %>% 
-  select(-c(md, response, first, second, logResp, n)) %>% 
-  filter(row_number()==1) %>% ungroup()
-
-data_Jacket_theta <- data_Jacket %>%
-  # EXCLUSION: Full Exclusion
-  filter( !(Country %in% countries2remove) ) %>% 
-  filter( attention_check_grater_than_3 ) %>% 
-  # Calculate mean Finantial Literacy
-  group_by(Country) %>% 
-  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
-  # Calculate ODD RATIO
-  group_by(price, response, Country) %>% 
-  mutate(n = n()) %>% filter(row_number()==1) %>% 
-  group_by(price, Country) %>% 
-  mutate(Odds = n[response==1]/n[response==0]) %>% 
-  group_by(price, Country) %>% 
-  # filter(Country=="Austria", scenario_group=="gain") %>% 
-  mutate(se_theta = sqrt(sum(1/n))) %>%
-  group_by(price, Country) %>% filter(row_number()==1) %>% select(-response) %>% 
-  group_by(Country) %>% 
-  mutate(OR = Odds[price=="low"]/Odds[price=="high"],
-         theta = log(OR)) %>% filter(row_number()==1) %>% 
-  select(-c(OR, Odds, n)) %>% ungroup()
-
-data_Play_theta <- data_Play %>%
-  # EXCLUSION: Full Exclusion
-  filter( !(Country %in% countries2remove) ) %>% 
-  filter( attention_check_grater_than_3 ) %>% 
-  # Calculate mean Finantial Literacy
-  group_by(Country) %>% 
-  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
-  # Calculate ODD RATIO
-  group_by(loss, response, Country) %>% 
-  mutate(n = n()) %>% filter(row_number()==1) %>% 
-  group_by(loss, Country) %>% 
-  mutate(Odds = n[response==1]/n[response==0]) %>% 
-  group_by(loss, Country) %>% 
-  # filter(Country=="Austria", scenario_group=="gain") %>% 
-  mutate(se_theta = sqrt(sum(1/n))) %>%
-  group_by(loss, Country) %>% filter(row_number()==1) %>% select(-response) %>% 
-  group_by(Country) %>% 
-  mutate(OR = Odds[loss=="cash"]/Odds[loss=="ticket"],
-         theta = log(OR)) %>% filter(row_number()==1) %>% 
-  select(-c(OR, Odds, n)) %>% ungroup()
-
-data_Gym_theta <- data_Gym %>%
-  # EXCLUSION: Full Exclusion
-  filter( !(Country %in% countries2remove) ) %>% 
-  filter( attention_check_grater_than_3 ) %>% 
-  # Calculate mean Finantial Literacy
-  group_by(Country) %>% 
-  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
-  # Calculate Mean Difference
-  group_by(frame, Country) %>% mutate(n = n()) %>%
-  group_by(Country) %>% 
-  mutate(pooled_sd = sd(response),
-         md = mean(response[frame=="Yearly"])-mean(response[frame=="Per-session"]),
-         theta = md/pooled_sd) %>% 
-  group_by(frame, Country) %>% filter(row_number()==1) %>% 
-  group_by(Country) %>%
-  # -- Calculate standard error -- #
-  mutate(first = sum(n) / (n[frame=="Per-session"]*n[frame=="Yearly"]),
-         second = theta[1]^2/(2*sum(n)),
-         se_theta = sqrt(first+second)) %>% 
-  filter(row_number()==1) %>% ungroup() %>% 
-  select(-c(md, first, second, pooled_sd, n, response))
-
-data_Plane_theta <- data_Plane %>%
-  # EXCLUSION: Full Exclusion
-  filter( !(Country %in% countries2remove) ) %>% 
-  filter( attention_check_grater_than_3 ) %>% 
-  # Calculate mean Finantial Literacy
-  group_by(Country) %>% 
-  mutate(FinancialLiteracy = mean(FinancialLiteracy)) %>% 
-  # Calculate ODD RATIO
-  group_by(coupon, response, Country) %>% 
-  mutate(n = n()) %>% filter(row_number()==1) %>% 
-  group_by(coupon, Country) %>% 
-  mutate(Odds = n[response==1]/n[response==0]) %>% 
-  group_by(coupon, Country) %>% 
-  # filter(Country=="Austria", scenario_group=="gain") %>% 
-  mutate(se_theta = sqrt(sum(1/n))) %>%
-  group_by(coupon, Country) %>% filter(row_number()==1) %>% select(-response) %>% 
-  group_by(Country) %>% 
-  mutate(OR = Odds[coupon=="purchased"]/Odds[coupon=="free"],
-         theta = log(OR)) %>% filter(row_number()==1) %>% 
-  select(-c(OR, Odds, n)) %>% ungroup()
-
-theta_preregisteredExclusion <- list(
-  MrAB = data_MrAB_theta %>% 
-    mutate(study="MrAB", x=ifelse(scenario_group=="gain", 1.2, 1.8),
-           family="binomial") %>% 
-    select(-c(X, scenario)) %>% rename(condition = scenario_group),
-  Game = data_Game_theta %>% mutate(study="Game", x=3, family="binomial") %>% 
-    select(-c(X, market_value)) %>% rename(condition = buyer),
-  Drink = data_Drink_theta %>% mutate(study="Drink", x=1, family="gaussian") %>% 
-    select(-c(X)) %>% rename(condition = store),
-  Jacket = data_Jacket_theta %>% mutate(study="Jacket", x=4, family="binomial") %>% 
-    select(-c(X)) %>% rename(condition = price),
-  Play = data_Play_theta %>% mutate(study="Play", x=5, family="binomial") %>% 
-    select(-c(X)) %>% rename(condition = loss),
-  Gym = data_Gym_theta %>% mutate(study="Gym", x=2, family="gaussian") %>% 
-    select(-c(X)) %>% rename(condition = frame),
-  Plane = data_Plane_theta %>% mutate(study="Plane", x=6, family="binomial") %>% 
-    select(-c(X)) %>% rename(condition = coupon)
-)
-```
-
-```{r plot-preregistered-exclusion}
-#| fig-width: 8
-#| fig-height: 3.5
-#| code-summary: "Plot full exclusion dataset"
-
-data_theta <- map_dfr(1:length(theta_preregisteredExclusion), function(i) theta_preregisteredExclusion[[i]])
-nCountries <- length(unique(theta_preregisteredExclusion[[1]]$Country))
-
-plot_OR <- data_theta %>% filter(family=="binomial") %>% 
-  ggplot(aes(x, theta)) +
-  geom_jitter( aes(size=1/se_theta, color=Country), width = 0.1, alpha=0.7) +
-  geom_point(data = data_paper, color="firebrick", size=35, shape="-") +
-  geom_hline(yintercept = 0, linetype=2) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(log(OR))) +
-  scale_color_manual(values = viridis::viridis_pal()(nCountries)) +
-  scale_fill_manual(values = viridis::viridis_pal()(nCountries)) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks =c(1.5,3:6), 
-                     labels = unique(data_theta$study[data_theta$family=="binomial"]),
-                     guide = "prism_offset") + 
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-plot_d <- data_theta %>% filter(family=="gaussian") %>% 
-  filter( !(Country %in% countries2remove) ) %>% 
-  ggplot(aes(x, theta, color=Country)) +
-  geom_jitter( aes(size=1/se_theta), width = 0.1, alpha=0.7) +
-  geom_hline(yintercept = 0, linetype=2) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(SMD)) +
-  scale_color_manual(values = viridis::viridis_pal()(nCountries)) +
-  scale_y_continuous(guide = "prism_offset", breaks = -1:1, limits = c(-1, 1.5)) + 
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
-                     labels = unique(data_theta$study[data_theta$family=="gaussian"]),
-                     guide = "prism_offset") + 
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-cowplot::plot_grid(plot_OR, plot_d, nrow = 1, rel_widths = c(0.7, .3))
-
-```
 
 ### Partial
 
@@ -1309,6 +1310,661 @@ In this section we perform a Bayesian meta-analysis. The purple dots indicate th
 <br>
 
 ::: {.panel-tabset}
+
+### Preregistered
+
+::: {.panel-tabset}
+
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+#### MrAB
+
+```{r fit-MrAB}
+#| code-summary: Show codes
+#| output: false
+
+# MrAB
+mMrAB1 <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+              data = theta_preregisteredExclusion$MrAB %>% filter(condition=="gain"),
+              iter = 10000, refresh = 0)
+
+fe <- fixef(mMrAB1)[,"Estimate"]
+re <- ranef(mMrAB1)$Country[,,][,"Estimate"]
+postMrAB1 <- data.frame(post=c(fe, fe+re), 
+                        Country=c("all", names(re)), 
+                        study="MrAB", x = 1.2)
+
+mMrAB2 <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+              data = theta_preregisteredExclusion$MrAB %>% filter(condition=="loss"),
+              iter = 10000, refresh = 0)
+
+fe <- fixef(mMrAB2)[,"Estimate"]
+re <- ranef(mMrAB2)$Country[,,][,"Estimate"]
+postMrAB2 <- data.frame(post=c(fe, fe+re), 
+                        Country=c("all", names(re)), 
+                        study="MrAB", x = 1.8)
+
+```
+
+```{r summary-fit-MrAB1}
+#| echo: false
+
+table_bayesian <- fixef(mMrAB1) %>% as.data.frame(row.names = '') %>% 
+  mutate(Study="MrAB1", 
+         Estimate = round(Estimate, 2),
+         `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+         ) %>% 
+  select(-c(Est.Error, Q2.5, Q97.5))
+
+
+sjPlot::tab_model(mMrAB1)
+```
+
+```{r summary-fit-MrAB2}
+#| echo: false
+
+table_bayesian <- rbind(
+  table_bayesian,
+  fixef(mMrAB2) %>% as.data.frame(row.names = '') %>% 
+    mutate(Study="MrAB2", 
+           Estimate = round(Estimate, 2),
+           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+           ) %>% 
+    select(-c(Est.Error, Q2.5, Q97.5))
+)
+
+sjPlot::tab_model(mMrAB2)
+```
+
+#### Game
+```{r fit-Game}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+# MrAB
+mGame <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+             data = theta_preregisteredExclusion$Game,
+             iter = 10000)
+
+fe <- fixef(mGame)[,"Estimate"]
+re <- ranef(mGame)$Country[,,][,"Estimate"]
+postGame <- data.frame(post=c(fe, fe+re), 
+                       Country=c("all", names(re)), 
+                       study="Game", x = 3)
+
+```
+
+```{r summary-fit-Game}
+#| echo: false
+
+table_bayesian <- rbind(
+  table_bayesian,
+  fixef(mGame) %>% as.data.frame(row.names = '') %>% 
+    mutate(Study="Game", 
+           Estimate = round(Estimate, 2),
+           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+           ) %>% 
+    select(-c(Est.Error, Q2.5, Q97.5))
+)
+
+sjPlot::tab_model(mGame)
+```
+
+#### Drink
+```{r fit-Drink}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mDrink <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+             data = theta_preregisteredExclusion$Drink,
+             iter = 10000)
+
+fe <- fixef(mDrink)[,"Estimate"]
+re <- ranef(mDrink)$Country[,,][,"Estimate"]
+postDrink <- data.frame(post=c(fe, fe+re), 
+                        Country=c("all", names(re)), 
+                        study="Drink", x = 1)
+
+```
+
+```{r summary-fit-Drink}
+#| echo: false
+
+table_bayesian <- rbind(
+  table_bayesian,
+  fixef(mDrink) %>% as.data.frame(row.names = '') %>% 
+    mutate(Study="Drink", 
+           Estimate = round(Estimate, 2),
+           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+           ) %>% 
+    select(-c(Est.Error, Q2.5, Q97.5))
+)
+sjPlot::tab_model(mDrink)
+```
+
+#### Jacket
+```{r fit-Jacket}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mJacket <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+               data = theta_preregisteredExclusion$Jacket,
+               iter = 10000)
+
+fe <- fixef(mJacket)[,"Estimate"]
+re <- ranef(mJacket)$Country[,,][,"Estimate"]
+postJacket <- data.frame(post=c(fe, fe+re), 
+                         Country=c("all", names(re)), 
+                         study="Jacket", x = 4)
+
+```
+
+```{r summary-fit-Jacket}
+#| echo: false
+
+table_bayesian <- rbind(
+  table_bayesian,
+  fixef(mJacket) %>% as.data.frame(row.names = '') %>% 
+    mutate(Study="Jacket", 
+           Estimate = round(Estimate, 2),
+           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+           ) %>% 
+    select(-c(Est.Error, Q2.5, Q97.5))
+)
+
+sjPlot::tab_model(mJacket)
+```
+
+#### Play
+```{r fit-Play}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mPlay <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+             data = theta_preregisteredExclusion$Play,
+             iter = 10000)
+
+fe <- fixef(mPlay)[,"Estimate"]
+re <- ranef(mPlay)$Country[,,][,"Estimate"]
+postPlay <- data.frame(post=c(fe, fe+re), 
+                       Country=c("all", names(re)), 
+                       study="Play", x = 5)
+
+```
+
+```{r summary-fit-Play}
+#| echo: false
+
+table_bayesian <- rbind(
+  table_bayesian,
+  fixef(mPlay) %>% as.data.frame(row.names = '') %>% 
+    mutate(Study="Play", 
+           Estimate = round(Estimate, 2),
+           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+           ) %>% 
+    select(-c(Est.Error, Q2.5, Q97.5))
+)
+
+sjPlot::tab_model(mPlay)
+```
+
+#### Gym
+```{r fit-Gym}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mGym <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+            data = theta_preregisteredExclusion$Gym,
+            iter = 10000)
+
+fe <- fixef(mGym)[,"Estimate"]
+re <- ranef(mGym)$Country[,,][,"Estimate"]
+postGym <- data.frame(post=c(fe, fe+re), 
+                      Country=c("all", names(re)), 
+                      study="Gym", x = 2)
+
+```
+
+```{r summary-fit-Gym}
+#| echo: false
+
+table_bayesian <- rbind(
+  table_bayesian,
+  fixef(mGym) %>% as.data.frame(row.names = '') %>% 
+    mutate(Study="Gym", 
+           Estimate = round(Estimate, 2),
+           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+           ) %>% 
+    select(-c(Est.Error, Q2.5, Q97.5))
+)
+
+sjPlot::tab_model(mGym)
+```
+
+#### Plane
+```{r fit-Plane}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mPlane <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+              data = theta_preregisteredExclusion$Plane,
+              iter = 10000)
+
+fe <- fixef(mPlane)[,"Estimate"]
+re <- ranef(mPlane)$Country[,,][,"Estimate"]
+postPlane <- data.frame(post=c(fe, fe+re), 
+                        Country=c("all", names(re)), 
+                        study="Plane", x = 6)
+
+```
+
+```{r summary-fit-Plane}
+#| echo: false
+
+table_bayesian <- rbind(
+  table_bayesian,
+  fixef(mPlane) %>% as.data.frame(row.names = '') %>% 
+    mutate(Study="Plane", 
+           Estimate = round(Estimate, 2),
+           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+           ) %>% 
+    select(-c(Est.Error, Q2.5, Q97.5))
+)
+#
+sjPlot::tab_model(mPlane)
+```
+
+:::
+
+::: {.panel-tabset}
+
+#### Plot
+
+```{r plot-posteriors-preregistered}
+#| fig-width: 8
+#| fig-height: 3.5
+#| code-summary: "Plot posteriors full exclusion"
+#| warning: false
+
+
+post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% 
+  mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
+
+post_OR <- post %>% filter(family=="binomial") %>% 
+  filter(Country!="all") %>% 
+  ggplot(aes(x, post, color=Country)) +
+  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  geom_segment(data = data_paper, linewidth=1.8,
+               aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5,3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+
+post_SMD <- post %>% filter(family=="gaussian") %>% 
+  filter(Country!="all") %>% 
+  ggplot(aes(x, post, color=Country)) +
+  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  geom_point(data = post %>% filter(family=="gaussian") %>% 
+               filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = post %>% filter(family=="gaussian") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~SMD)) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,1.5), breaks = -1:1) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
+                     labels = post %>% filter(family=="gaussian") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
+
+```
+
+#### Table
+
+```{r table-preregistered}
+#| eval: false
+
+rownames(table_bayesian) <- table_bayesian$Study
+
+table_bayesian %>% 
+  select(-Study) |>
+  kbl(caption="<b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis",
+      align=c('c', 'c'),
+      format = "html", table.attr = "style='width:20%;'") %>% 
+  kable_classic(html_font = "Cambria") %>%
+  row_spec(0, bold = TRUE) %>%
+  save_kable("tables/png/Hierarchical Bayesian Meta-Analysis.png", zoom = 3)
+  # save_kable("tables/pdf/Hierarchical Bayesian Meta-Analysis.pdf")
+
+table_bayesian %>% 
+  select(-Study) |>
+  kbl(caption="<b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis",
+      format = "html", table.attr = "style='width:50%;'") %>% 
+  kable_classic(html_font = "Cambria") %>% 
+  kable_material(c("striped", "hover"))
+  
+```
+ 
+::: 
+
+Number of participants: `r data_table$n[1]`
+
+### Partial
+
+
+::: {.panel-tabset}
+
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+
+#### MrAB
+
+```{r}
+#| include: false
+df <- data_Plane %>% 
+               # EXCLUSION: Full Exclusion
+                # filter( native_language_is_country_language | Country!=Residence ) %>% 
+                # filter( !loi_lower_than_loiX0_33 ) %>%
+               filter( !(Country %in% countries2remove) ) %>% 
+               filter( attention_check_grater_than_2 )
+
+n_participants <- length( unique(df$subject) )
+```
+
+
+```{r fit-MrAB-partial}
+#| code-summary: Show codes
+#| output: false
+
+# MrAB
+mMrAB1 <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+              data = theta_partialExclusion$MrAB %>% filter(condition=="gain"),
+              iter = 10000, refresh = 0)
+
+fe <- fixef(mMrAB1)[,"Estimate"]
+re <- ranef(mMrAB1)$Country[,,][,"Estimate"]
+postMrAB1 <- data.frame(post=c(fe, fe+re), 
+                        Country=c("all", names(re)), 
+                        study="MrAB", x = 1.2)
+
+mMrAB2 <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+              data = theta_partialExclusion$MrAB %>% filter(condition=="loss"),
+              iter = 10000, refresh = 0)
+
+fe <- fixef(mMrAB2)[,"Estimate"]
+re <- ranef(mMrAB2)$Country[,,][,"Estimate"]
+postMrAB2 <- data.frame(post=c(fe, fe+re), 
+                        Country=c("all", names(re)), 
+                        study="MrAB", x = 1.8)
+
+```
+
+```{r summary-fit-MrAB1-partial}
+#| echo: false
+sjPlot::tab_model(mMrAB1)
+```
+
+```{r summary-fit-MrAB2-partial}
+#| echo: false
+sjPlot::tab_model(mMrAB2)
+```
+
+#### Game
+```{r fit-Game-partial}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+# MrAB
+mGame <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+             data = theta_partialExclusion$Game,
+             iter = 10000)
+
+fe <- fixef(mGame)[,"Estimate"]
+re <- ranef(mGame)$Country[,,][,"Estimate"]
+postGame <- data.frame(post=c(fe, fe+re), 
+                       Country=c("all", names(re)), 
+                       study="Game", x = 3)
+
+sjPlot::tab_model(mGame)
+```
+
+```{r summary-fit-Game-partial}
+#| echo: false
+sjPlot::tab_model(mGame)
+```
+
+#### Drink
+```{r fit-Drink-partial}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mDrink <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+             data = theta_partialExclusion$Drink,
+             iter = 10000)
+
+fe <- fixef(mDrink)[,"Estimate"]
+re <- ranef(mDrink)$Country[,,][,"Estimate"]
+postDrink <- data.frame(post=c(fe, fe+re), 
+                        Country=c("all", names(re)), 
+                        study="Drink", x = 1)
+
+sjPlot::tab_model(mDrink)
+```
+
+```{r summary-fit-Drink-partial}
+#| echo: false
+sjPlot::tab_model(mDrink)
+```
+
+#### Jacket
+```{r fit-Jacket-partial}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mJacket <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+               data = theta_partialExclusion$Jacket,
+               iter = 10000)
+
+fe <- fixef(mJacket)[,"Estimate"]
+re <- ranef(mJacket)$Country[,,][,"Estimate"]
+postJacket <- data.frame(post=c(fe, fe+re), 
+                         Country=c("all", names(re)), 
+                         study="Jacket", x = 4)
+
+sjPlot::tab_model(mJacket)
+```
+
+```{r summary-fit-Jacket-partial}
+#| echo: false
+sjPlot::tab_model(mJacket)
+```
+
+#### Play
+```{r fit-Play-partial}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mPlay <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+             data = theta_partialExclusion$Play,
+             iter = 10000)
+
+fe <- fixef(mPlay)[,"Estimate"]
+re <- ranef(mPlay)$Country[,,][,"Estimate"]
+postPlay <- data.frame(post=c(fe, fe+re), 
+                       Country=c("all", names(re)), 
+                       study="Play", x = 5)
+
+sjPlot::tab_model(mPlay)
+```
+
+```{r summary-fit-Play-partial}
+#| echo: false
+sjPlot::tab_model(mPlay)
+```
+
+#### Gym
+```{r fit-Gym-partial}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mGym <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+            data = theta_partialExclusion$Gym,
+            iter = 10000)
+
+fe <- fixef(mGym)[,"Estimate"]
+re <- ranef(mGym)$Country[,,][,"Estimate"]
+postGym <- data.frame(post=c(fe, fe+re), 
+                      Country=c("all", names(re)), 
+                      study="Gym", x = 2)
+
+sjPlot::tab_model(mGym)
+```
+
+```{r summary-fit-Gym-partial}
+#| echo: false
+sjPlot::tab_model(mGym)
+```
+
+#### Plane
+```{r fit-Plane-partial}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mPlane <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+              data = theta_partialExclusion$Plane,
+              iter = 10000)
+
+fe <- fixef(mPlane)[,"Estimate"]
+re <- ranef(mPlane)$Country[,,][,"Estimate"]
+postPlane <- data.frame(post=c(fe, fe+re), 
+                        Country=c("all", names(re)), 
+                        study="Plane", x = 6)
+
+sjPlot::tab_model(mPlane)
+```
+
+```{r summary-fit-Plane-partial}
+#| echo: false
+sjPlot::tab_model(mPlane)
+```
+
+:::
+
+```{r plot-posteriors-partial-exclusion}
+#| fig-width: 8
+#| fig-height: 3.5
+#| code-summary: "Plot posteriors"
+#| warning: false
+
+post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% 
+  mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
+
+post_OR <- post %>% filter(family=="binomial") %>% 
+  filter(Country!="all") %>% 
+  ggplot(aes(x, post, color=Country)) +
+  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  geom_segment(data = data_paper, linewidth=1.8,
+               aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5,3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+post_OR <- post %>% filter(family=="binomial") %>% 
+  filter(Country!="all") %>% 
+  ggplot(aes(x, post, color=Country)) +
+  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  geom_segment(data = data_paper, linewidth=1.8,
+               aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5,3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+
+post_SMD <- post %>% filter(family=="gaussian") %>% 
+  filter(Country!="all") %>% 
+  ggplot(aes(x, post, color=Country)) +
+  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  geom_point(data = post %>% filter(family=="gaussian") %>% 
+               filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = post %>% filter(family=="gaussian") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~SMD)) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,1.5), breaks = -1:1) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
+                     labels = post %>% filter(family=="gaussian") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
+
+```
+
+Number of participants: `r n_participants`
+
+
 
 ### Full
 
@@ -1831,671 +2487,6 @@ cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
 
 Number of participants: `r n_participants`
 
-### Preregistered
-
-::: {.panel-tabset}
-
-#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
-
-Click on the tabs to see the model's summary for each study
-
-#### MrAB
-
-```{r}
-#| include: false
-df <- data_Plane %>% 
-               # EXCLUSION: Full Exclusion
-                # filter( native_language_is_country_language | Country!=Residence ) %>% 
-                # filter( !loi_lower_than_loiX0_33 ) %>%
-               filter( !(Country %in% countries2remove) ) %>% 
-               filter( attention_check_grater_than_3 )
-
-n_participants <- length( unique(df$subject) )
-```
-
-
-```{r fit-MrAB}
-#| code-summary: Show codes
-#| output: false
-
-# MrAB
-mMrAB1 <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-              data = theta_preregisteredExclusion$MrAB %>% filter(condition=="gain"),
-              iter = 10000, refresh = 0)
-
-fe <- fixef(mMrAB1)[,"Estimate"]
-re <- ranef(mMrAB1)$Country[,,][,"Estimate"]
-postMrAB1 <- data.frame(post=c(fe, fe+re), 
-                        Country=c("all", names(re)), 
-                        study="MrAB", x = 1.2)
-
-mMrAB2 <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-              data = theta_preregisteredExclusion$MrAB %>% filter(condition=="loss"),
-              iter = 10000, refresh = 0)
-
-fe <- fixef(mMrAB2)[,"Estimate"]
-re <- ranef(mMrAB2)$Country[,,][,"Estimate"]
-postMrAB2 <- data.frame(post=c(fe, fe+re), 
-                        Country=c("all", names(re)), 
-                        study="MrAB", x = 1.8)
-
-```
-
-```{r summary-fit-MrAB1}
-#| echo: false
-
-table_bayesian <- fixef(mMrAB1) %>% as.data.frame(row.names = '') %>% 
-  mutate(Study="MrAB1", 
-         Estimate = round(Estimate, 2),
-         `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
-         ) %>% 
-  select(-c(Est.Error, Q2.5, Q97.5))
-
-
-sjPlot::tab_model(mMrAB1)
-```
-
-```{r summary-fit-MrAB2}
-#| echo: false
-
-table_bayesian <- rbind(
-  table_bayesian,
-  fixef(mMrAB2) %>% as.data.frame(row.names = '') %>% 
-    mutate(Study="MrAB2", 
-           Estimate = round(Estimate, 2),
-           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
-           ) %>% 
-    select(-c(Est.Error, Q2.5, Q97.5))
-)
-
-sjPlot::tab_model(mMrAB2)
-```
-
-#### Game
-```{r fit-Game}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-# MrAB
-mGame <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-             data = theta_preregisteredExclusion$Game,
-             iter = 10000)
-
-fe <- fixef(mGame)[,"Estimate"]
-re <- ranef(mGame)$Country[,,][,"Estimate"]
-postGame <- data.frame(post=c(fe, fe+re), 
-                       Country=c("all", names(re)), 
-                       study="Game", x = 3)
-
-```
-
-```{r summary-fit-Game}
-#| echo: false
-
-table_bayesian <- rbind(
-  table_bayesian,
-  fixef(mGame) %>% as.data.frame(row.names = '') %>% 
-    mutate(Study="Game", 
-           Estimate = round(Estimate, 2),
-           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
-           ) %>% 
-    select(-c(Est.Error, Q2.5, Q97.5))
-)
-
-sjPlot::tab_model(mGame)
-```
-
-#### Drink
-```{r fit-Drink}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mDrink <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-             data = theta_preregisteredExclusion$Drink,
-             iter = 10000)
-
-fe <- fixef(mDrink)[,"Estimate"]
-re <- ranef(mDrink)$Country[,,][,"Estimate"]
-postDrink <- data.frame(post=c(fe, fe+re), 
-                        Country=c("all", names(re)), 
-                        study="Drink", x = 1)
-
-```
-
-```{r summary-fit-Drink}
-#| echo: false
-
-table_bayesian <- rbind(
-  table_bayesian,
-  fixef(mDrink) %>% as.data.frame(row.names = '') %>% 
-    mutate(Study="Drink", 
-           Estimate = round(Estimate, 2),
-           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
-           ) %>% 
-    select(-c(Est.Error, Q2.5, Q97.5))
-)
-sjPlot::tab_model(mDrink)
-```
-
-#### Jacket
-```{r fit-Jacket}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mJacket <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-               data = theta_preregisteredExclusion$Jacket,
-               iter = 10000)
-
-fe <- fixef(mJacket)[,"Estimate"]
-re <- ranef(mJacket)$Country[,,][,"Estimate"]
-postJacket <- data.frame(post=c(fe, fe+re), 
-                         Country=c("all", names(re)), 
-                         study="Jacket", x = 4)
-
-```
-
-```{r summary-fit-Jacket}
-#| echo: false
-
-table_bayesian <- rbind(
-  table_bayesian,
-  fixef(mJacket) %>% as.data.frame(row.names = '') %>% 
-    mutate(Study="Jacket", 
-           Estimate = round(Estimate, 2),
-           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
-           ) %>% 
-    select(-c(Est.Error, Q2.5, Q97.5))
-)
-
-sjPlot::tab_model(mJacket)
-```
-
-#### Play
-```{r fit-Play}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mPlay <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-             data = theta_preregisteredExclusion$Play,
-             iter = 10000)
-
-fe <- fixef(mPlay)[,"Estimate"]
-re <- ranef(mPlay)$Country[,,][,"Estimate"]
-postPlay <- data.frame(post=c(fe, fe+re), 
-                       Country=c("all", names(re)), 
-                       study="Play", x = 5)
-
-```
-
-```{r summary-fit-Play}
-#| echo: false
-
-table_bayesian <- rbind(
-  table_bayesian,
-  fixef(mPlay) %>% as.data.frame(row.names = '') %>% 
-    mutate(Study="Play", 
-           Estimate = round(Estimate, 2),
-           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
-           ) %>% 
-    select(-c(Est.Error, Q2.5, Q97.5))
-)
-
-sjPlot::tab_model(mPlay)
-```
-
-#### Gym
-```{r fit-Gym}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mGym <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-            data = theta_preregisteredExclusion$Gym,
-            iter = 10000)
-
-fe <- fixef(mGym)[,"Estimate"]
-re <- ranef(mGym)$Country[,,][,"Estimate"]
-postGym <- data.frame(post=c(fe, fe+re), 
-                      Country=c("all", names(re)), 
-                      study="Gym", x = 2)
-
-```
-
-```{r summary-fit-Gym}
-#| echo: false
-
-table_bayesian <- rbind(
-  table_bayesian,
-  fixef(mGym) %>% as.data.frame(row.names = '') %>% 
-    mutate(Study="Gym", 
-           Estimate = round(Estimate, 2),
-           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
-           ) %>% 
-    select(-c(Est.Error, Q2.5, Q97.5))
-)
-
-sjPlot::tab_model(mGym)
-```
-
-#### Plane
-```{r fit-Plane}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mPlane <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-              data = theta_preregisteredExclusion$Plane,
-              iter = 10000)
-
-fe <- fixef(mPlane)[,"Estimate"]
-re <- ranef(mPlane)$Country[,,][,"Estimate"]
-postPlane <- data.frame(post=c(fe, fe+re), 
-                        Country=c("all", names(re)), 
-                        study="Plane", x = 6)
-
-```
-
-```{r summary-fit-Plane}
-#| echo: false
-
-table_bayesian <- rbind(
-  table_bayesian,
-  fixef(mPlane) %>% as.data.frame(row.names = '') %>% 
-    mutate(Study="Plane", 
-           Estimate = round(Estimate, 2),
-           `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
-           ) %>% 
-    select(-c(Est.Error, Q2.5, Q97.5))
-)
-#
-sjPlot::tab_model(mPlane)
-```
-
-:::
-
-::: {.panel-tabset}
-
-#### Plot
-
-```{r plot-posteriors-preregistered}
-#| fig-width: 8
-#| fig-height: 3.5
-#| code-summary: "Plot posteriors full exclusion"
-#| warning: false
-
-
-post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% 
-  mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
-
-post_OR <- post %>% filter(family=="binomial") %>% 
-  filter(Country!="all") %>% 
-  ggplot(aes(x, post, color=Country)) +
-  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
-  geom_segment(data = data_paper, linewidth=1.8,
-               aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
-  geom_point(data = post %>% filter(family=="binomial") %>% 
-               filter(Country=="all"), color="#228B8DFF", size=5) +
-  geom_point(data = post %>% filter(family=="binomial") %>% 
-               filter(Country=="all"), color="white", size=3) +
-  geom_hline(yintercept = 0, linetype=2, size=1) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(Posterior~log(OR))) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks =c(1.5,3:6), 
-                     labels = post %>% filter(family=="binomial") %>% 
-                       .[,"study",drop=T] %>% unique(),
-                     guide = "prism_offset") + 
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-
-post_SMD <- post %>% filter(family=="gaussian") %>% 
-  filter(Country!="all") %>% 
-  ggplot(aes(x, post, color=Country)) +
-  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
-  geom_point(data = post %>% filter(family=="gaussian") %>% 
-               filter(Country=="all"), color="#228B8DFF", size=5) +
-  geom_point(data = post %>% filter(family=="gaussian") %>% 
-               filter(Country=="all"), color="white", size=3) +
-  geom_hline(yintercept = 0, linetype=2, size=1) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(Posterior~SMD)) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,1.5), breaks = -1:1) + 
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
-                     labels = post %>% filter(family=="gaussian") %>% 
-                       .[,"study",drop=T] %>% unique(),
-                     guide = "prism_offset") + 
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
-
-```
-
-#### Table
-
-```{r table-preregistered}
-#
-rownames(table_bayesian) <- table_bayesian$Study
-
-table_bayesian %>% 
-  select(-Study) |>
-  kbl(caption="<b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis",
-      align=c('c', 'c'),
-      format = "html", table.attr = "style='width:20%;'") %>% 
-  kable_classic(html_font = "Cambria") %>%
-  row_spec(0, bold = TRUE) %>%
-  save_kable("tables/png/Hierarchical Bayesian Meta-Analysis.png", zoom = 3)
-  # save_kable("tables/pdf/Hierarchical Bayesian Meta-Analysis.pdf")
-
-table_bayesian %>% 
-  select(-Study) |>
-  kbl(caption="<b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis",
-      format = "html", table.attr = "style='width:50%;'") %>% 
-  kable_classic(html_font = "Cambria") %>% 
-  kable_material(c("striped", "hover"))
-  
-```
- 
-::: 
-
-Number of participants: `r n_participants`
-
-### Partial
-
-
-::: {.panel-tabset}
-
-#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
-
-Click on the tabs to see the model's summary for each study
-
-
-#### MrAB
-
-```{r}
-#| include: false
-df <- data_Plane %>% 
-               # EXCLUSION: Full Exclusion
-                # filter( native_language_is_country_language | Country!=Residence ) %>% 
-                # filter( !loi_lower_than_loiX0_33 ) %>%
-               filter( !(Country %in% countries2remove) ) %>% 
-               filter( attention_check_grater_than_2 )
-
-n_participants <- length( unique(df$subject) )
-```
-
-
-```{r fit-MrAB-partial}
-#| code-summary: Show codes
-#| output: false
-
-# MrAB
-mMrAB1 <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-              data = theta_partialExclusion$MrAB %>% filter(condition=="gain"),
-              iter = 10000, refresh = 0)
-
-fe <- fixef(mMrAB1)[,"Estimate"]
-re <- ranef(mMrAB1)$Country[,,][,"Estimate"]
-postMrAB1 <- data.frame(post=c(fe, fe+re), 
-                        Country=c("all", names(re)), 
-                        study="MrAB", x = 1.2)
-
-mMrAB2 <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-              data = theta_partialExclusion$MrAB %>% filter(condition=="loss"),
-              iter = 10000, refresh = 0)
-
-fe <- fixef(mMrAB2)[,"Estimate"]
-re <- ranef(mMrAB2)$Country[,,][,"Estimate"]
-postMrAB2 <- data.frame(post=c(fe, fe+re), 
-                        Country=c("all", names(re)), 
-                        study="MrAB", x = 1.8)
-
-```
-
-```{r summary-fit-MrAB1-partial}
-#| echo: false
-sjPlot::tab_model(mMrAB1)
-```
-
-```{r summary-fit-MrAB2-partial}
-#| echo: false
-sjPlot::tab_model(mMrAB2)
-```
-
-#### Game
-```{r fit-Game-partial}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-# MrAB
-mGame <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-             data = theta_partialExclusion$Game,
-             iter = 10000)
-
-fe <- fixef(mGame)[,"Estimate"]
-re <- ranef(mGame)$Country[,,][,"Estimate"]
-postGame <- data.frame(post=c(fe, fe+re), 
-                       Country=c("all", names(re)), 
-                       study="Game", x = 3)
-
-sjPlot::tab_model(mGame)
-```
-
-```{r summary-fit-Game-partial}
-#| echo: false
-sjPlot::tab_model(mGame)
-```
-
-#### Drink
-```{r fit-Drink-partial}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mDrink <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-             data = theta_partialExclusion$Drink,
-             iter = 10000)
-
-fe <- fixef(mDrink)[,"Estimate"]
-re <- ranef(mDrink)$Country[,,][,"Estimate"]
-postDrink <- data.frame(post=c(fe, fe+re), 
-                        Country=c("all", names(re)), 
-                        study="Drink", x = 1)
-
-sjPlot::tab_model(mDrink)
-```
-
-```{r summary-fit-Drink-partial}
-#| echo: false
-sjPlot::tab_model(mDrink)
-```
-
-#### Jacket
-```{r fit-Jacket-partial}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mJacket <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-               data = theta_partialExclusion$Jacket,
-               iter = 10000)
-
-fe <- fixef(mJacket)[,"Estimate"]
-re <- ranef(mJacket)$Country[,,][,"Estimate"]
-postJacket <- data.frame(post=c(fe, fe+re), 
-                         Country=c("all", names(re)), 
-                         study="Jacket", x = 4)
-
-sjPlot::tab_model(mJacket)
-```
-
-```{r summary-fit-Jacket-partial}
-#| echo: false
-sjPlot::tab_model(mJacket)
-```
-
-#### Play
-```{r fit-Play-partial}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mPlay <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-             data = theta_partialExclusion$Play,
-             iter = 10000)
-
-fe <- fixef(mPlay)[,"Estimate"]
-re <- ranef(mPlay)$Country[,,][,"Estimate"]
-postPlay <- data.frame(post=c(fe, fe+re), 
-                       Country=c("all", names(re)), 
-                       study="Play", x = 5)
-
-sjPlot::tab_model(mPlay)
-```
-
-```{r summary-fit-Play-partial}
-#| echo: false
-sjPlot::tab_model(mPlay)
-```
-
-#### Gym
-```{r fit-Gym-partial}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mGym <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-            data = theta_partialExclusion$Gym,
-            iter = 10000)
-
-fe <- fixef(mGym)[,"Estimate"]
-re <- ranef(mGym)$Country[,,][,"Estimate"]
-postGym <- data.frame(post=c(fe, fe+re), 
-                      Country=c("all", names(re)), 
-                      study="Gym", x = 2)
-
-sjPlot::tab_model(mGym)
-```
-
-```{r summary-fit-Gym-partial}
-#| echo: false
-sjPlot::tab_model(mGym)
-```
-
-#### Plane
-```{r fit-Plane-partial}
-#| code-summary: Show codes
-#| eval: true
-#| output: false
-
-mPlane <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-              data = theta_partialExclusion$Plane,
-              iter = 10000)
-
-fe <- fixef(mPlane)[,"Estimate"]
-re <- ranef(mPlane)$Country[,,][,"Estimate"]
-postPlane <- data.frame(post=c(fe, fe+re), 
-                        Country=c("all", names(re)), 
-                        study="Plane", x = 6)
-
-sjPlot::tab_model(mPlane)
-```
-
-```{r summary-fit-Plane-partial}
-#| echo: false
-sjPlot::tab_model(mPlane)
-```
-
-:::
-
-```{r plot-posteriors-partial-exclusion}
-#| fig-width: 8
-#| fig-height: 3.5
-#| code-summary: "Plot posteriors"
-#| warning: false
-
-post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% 
-  mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
-
-post_OR <- post %>% filter(family=="binomial") %>% 
-  filter(Country!="all") %>% 
-  ggplot(aes(x, post, color=Country)) +
-  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
-  geom_segment(data = data_paper, linewidth=1.8,
-               aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
-  geom_point(data = post %>% filter(family=="binomial") %>% 
-               filter(Country=="all"), color="#228B8DFF", size=5) +
-  geom_point(data = post %>% filter(family=="binomial") %>% 
-               filter(Country=="all"), color="white", size=3) +
-  geom_hline(yintercept = 0, linetype=2, size=1) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(Posterior~log(OR))) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks =c(1.5,3:6), 
-                     labels = post %>% filter(family=="binomial") %>% 
-                       .[,"study",drop=T] %>% unique(),
-                     guide = "prism_offset") + 
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-post_OR <- post %>% filter(family=="binomial") %>% 
-  filter(Country!="all") %>% 
-  ggplot(aes(x, post, color=Country)) +
-  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
-  geom_segment(data = data_paper, linewidth=1.8,
-               aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
-  geom_point(data = post %>% filter(family=="binomial") %>% 
-               filter(Country=="all"), color="#228B8DFF", size=5) +
-  geom_point(data = post %>% filter(family=="binomial") %>% 
-               filter(Country=="all"), color="white", size=3) +
-  geom_hline(yintercept = 0, linetype=2, size=1) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(Posterior~log(OR))) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks =c(1.5,3:6), 
-                     labels = post %>% filter(family=="binomial") %>% 
-                       .[,"study",drop=T] %>% unique(),
-                     guide = "prism_offset") + 
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-
-post_SMD <- post %>% filter(family=="gaussian") %>% 
-  filter(Country!="all") %>% 
-  ggplot(aes(x, post, color=Country)) +
-  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
-  geom_point(data = post %>% filter(family=="gaussian") %>% 
-               filter(Country=="all"), color="#228B8DFF", size=5) +
-  geom_point(data = post %>% filter(family=="gaussian") %>% 
-               filter(Country=="all"), color="white", size=3) +
-  geom_hline(yintercept = 0, linetype=2, size=1) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(Posterior~SMD)) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,1.5), breaks = -1:1) + 
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
-                     labels = post %>% filter(family=="gaussian") %>% 
-                       .[,"study",drop=T] %>% unique(),
-                     guide = "prism_offset") + 
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
-
-```
-
-Number of participants: `r n_participants`
-
 
 ### None
 
@@ -2791,6 +2782,1633 @@ In this section we perform a Bayesian unpooled analysis. We will compute the eff
 <br>
 
 ::: {.panel-tabset}
+
+### Preregistered
+
+::: {.panel-tabset}
+
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+#### MrAB
+
+```{r fit-MrAB-unpooled-full-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mMrAB1 <- brm(response ~ scenario * Country,
+              data = data_MrAB %>% filter(response!=2) %>%
+                filter(scenario_group=="gain") %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ) %>% 
+                mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )), 
+              iter = 5000, refresh = 0, family="bernoulli")
+
+
+mMrAB2 <- brm(response ~ scenario * Country,
+              data = data_MrAB %>% filter(response!=2) %>%
+                filter(scenario_group=="loss") %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ) %>% 
+                mutate(scenario=factor(scenario, levels = c("loss-gain VS loss", "loss-loss VS loss") )),
+              iter = 5000, refresh = 0, family="bernoulli")
+```
+
+```{r plot-MrAB-unpooled-posteriors-full-exclusion}
+#| fig-width: 6
+#| fig-height: 10
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mMrAB1)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "scenario" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot1 <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postMrAB1 <- post_plot1 %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+plMrAB1 <- post_plot1 %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+
+post <- prepare_predictions(mMrAB2)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "scenario" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot2 <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.8) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postMrAB2 <- post_plot2 %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+plMrAB2 <- post_plot2 %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.line.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        legend.position = "none")
+
+cowplot::plot_grid(plMrAB1, plMrAB2, nrow = 1)
+
+```
+
+```{r summary-fit-MrAB1-unpooled-full-exclusion}
+#| echo: false
+
+
+table_unpooled <- post_plot1 %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("MrAB1")
+    } else {
+      return("")
+    } 
+  }
+
+table_unpooled <- rbind(apply(table_unpooled[1,], 2, empty), table_unpooled)
+
+rmarkdown::paged_table(
+  post_plot1 %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+```{r summary-fit-MrAB2-unpooled-full-exclusion}
+#| echo: false
+
+
+tu <- post_plot1 %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("MrAB2")
+    } else {
+      return("")
+    } 
+  }
+
+table_unpooled <- 
+  rbind(
+    table_unpooled,
+    rbind(apply(tu[1,], 2, empty), tu)
+  )
+
+rmarkdown::paged_table(
+  post_plot2 %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+
+#### Game
+
+```{r fit-Game-unpooled-full-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mGame <- brm(response ~ buyer * Country,
+              data = data_Game %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ),
+              iter = 5000, refresh = 0, family="bernoulli")
+
+```
+
+```{r plot-Game-unpooled-posteriors-full-exclusion}
+#| fig-width: 4
+#| fig-height: 10
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mGame)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "buyer" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Game", family="binomial", x=3) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postGame <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Game-unpooled-full-exclusion}
+#| echo: false
+
+
+tu <- post_plot %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("Game")
+    } else {
+      return("")
+    } 
+  }
+
+table_unpooled <- 
+  rbind(
+    table_unpooled,
+    rbind(apply(tu[1,], 2, empty), tu)
+  )
+
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+#### Drink
+
+```{r fit-Drink-unpooled-full-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mDrink <- brm(response ~ store * Country,
+              data = data_Drink %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ) %>% 
+                # Remove really really extreme outliers
+                filter(response<10000 & response>=0) %>% 
+                mutate(response=response+1, logResp=log(response)) %>% 
+                group_by(Country) %>%
+                mutate(response=as.vector(scale(logResp))) %>% 
+                ungroup(),
+              iter = 5000, refresh = 0)
+
+```
+
+```{r plot-Drink-unpooled-posteriors-full-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mDrink)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "store" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Drink", family="gaussian", x=1) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+ 
+postDrink <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>%   
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(SMD), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Drink-unpooled-full-exclusion}
+#| echo: false
+
+
+tu <- post_plot %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("Drink")
+    } else {
+      return("")
+    } 
+  }
+
+table_unpooled <- 
+  rbind(
+    table_unpooled,
+    rbind(apply(tu[1,], 2, empty), tu)
+  )
+
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+#### Jacket
+
+```{r fit-Jacket-unpooled-full-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mJacket <- brm(response ~ price * Country,
+               data = data_Jacket %>% 
+                 # EXCLUSION: Full Exclusion
+                 filter( !(Country %in% countries2remove) ) %>% 
+                 filter( attention_check_grater_than_3 ),
+               iter = 5000, refresh = 0, family="bernoulli")
+```
+
+```{r plot-Jacket-unpooled-posteriors-full-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mJacket)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "price" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Jacket", family="binomial", x=4) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postJacket <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Jacket-unpooled-full-exclusion}
+#| echo: false
+
+
+tu <- post_plot %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("Jacket")
+    } else {
+      return("")
+    } 
+  }
+
+tu <- 
+  rbind(
+    table_unpooled,
+    rbind(apply(tu[1,], 2, empty), tu)
+  )
+
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+#### Play
+
+```{r fit-Play-unpooled-full-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mPlay <- brm(response ~ loss * Country,
+             data = data_Play %>% 
+               # EXCLUSION: Full Exclusion
+               filter( !(Country %in% countries2remove) ) %>% 
+               filter( attention_check_grater_than_3 ) %>% 
+               mutate(loss=factor(loss, levels = c("ticket", "cash"))),
+             iter = 5000, refresh = 0, family="bernoulli")
+```
+
+```{r plot-Play-unpooled-posteriors-full-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mPlay)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "loss" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Play", family="binomial", x=5) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postPlay <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Play-unpooled-full-exclusion}
+#| echo: false
+
+
+tu <- post_plot %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("Play")
+    } else {
+      return("")
+    } 
+  }
+
+table_unpooled <- 
+  rbind(
+    table_unpooled,
+    rbind(apply(tu[1,], 2, empty), tu)
+  )
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+#### Gym
+
+```{r fit-Gym-unpooled-full-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mGym <- brm(response ~ frame * Country,
+            data = data_Gym %>% 
+              # EXCLUSION: Full Exclusion
+              filter( !(Country %in% countries2remove) ) %>% 
+              filter( attention_check_grater_than_3 ) %>% 
+              group_by(Country) %>%
+                mutate(response=as.vector(scale(response))) %>% 
+                ungroup(),
+             iter = 5000, refresh = 0)
+```
+
+```{r plot-Gym-unpooled-posteriors-full-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mGym)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta" #
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "frame" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Gym", family="binomial", x=2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postGym <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(SMD), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Gym-unpooled-full-exclusion}
+#| echo: false
+
+
+tu <- post_plot %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("Gym")
+    } else {
+      return("")
+    } 
+  }
+
+table_unpooled <- 
+  rbind(
+    table_unpooled,
+    rbind(apply(tu[1,], 2, empty), tu)
+  )
+
+rmarkdown::paged_table( 
+  post_plot %>% #
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+
+#### Plane
+
+```{r fit-Plane-unpooled-full-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mPlane <- brm(response ~ coupon * Country,
+             data = data_Plane %>% 
+               # EXCLUSION: Full Exclusion
+               filter( !(Country %in% countries2remove) ) %>% 
+               filter( attention_check_grater_than_3 ),
+             iter = 5000, refresh = 0, family="bernoulli")
+```
+
+```{r plot-Plane-unpooled-posteriors-full-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mPlane)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "coupon" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Plane", family="binomial", x=6) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postPlane <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Plane-unpooled-full-exclusion}
+#| echo: false
+
+
+tu <- post_plot %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("Plane")
+    } else {
+      return("")
+    } 
+  }
+
+table_unpooled <- 
+  rbind(
+    table_unpooled,
+    rbind(apply(tu[1,], 2, empty), tu)
+  )
+
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+:::
+
+```{r unpooled-replication-rate}
+#| echo: false
+
+post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% # Recalcu
+  mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
+
+unpooled <- map_dfr(as.list(unique(post$Country)), function(country){
+  rbind(
+    post %>% 
+      filter(study=='MrAB') %>% 
+      filter(Country==country) %>% 
+      mutate(replication=(credible[x==1.2]=='yes') & (credible[x==1.8]=='yes')) %>% 
+      filter(row_number()==1),
+    post %>% 
+      filter(study!='MrAB') %>% 
+      filter(Country==country) %>% 
+      mutate(replication=credible=='yes'),
+  )
+})
+
+ # effects for `r unpooled$Country |> unique() |> length()` countries, for a total of 147 effects, and found an overall replication rate of `r unpooled$replication |> mean() |> round(digits=3) * 100`%
+```
+
+We estimated `r (n_studies = unpooled$x |> unique() |> length())` effects for `r (n_countries = unpooled$Country |> unique() |> length())` countries, for a total of `r n_studies*n_countries` effects, and found an overall replication rate of `r unpooled$replication |> mean() |> round(digits=3) * 100`%
+
+::: {.panel-tabset}
+
+
+#### Plot
+
+```{r plot-unpooled-posteriors-full-exclusion}
+#| fig-width: 8
+#| fig-height: 3.5
+#| code-summary: "Plot posteriors"
+#| warning: false
+       
+post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% # Recalcu
+  mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
+
+plotOR <- post %>% filter(family=="binomial") %>% 
+  ggplot(aes(x, theta, color=credible)) +
+  geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) +
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5, 3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  scale_color_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+plotSMD <- post %>% filter(family=="gaussian") %>% 
+  ggplot(aes(x, theta, color=credible)) +
+  geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~SMD)) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,1.5), breaks = -1:5) +
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
+                     labels = post %>% filter(family=="gaussian") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  scale_color_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+
+cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
+
+```
+
+#### Table
+
+```{r table-preregistered-unpooled}
+#| eval: false
+
+
+table_unpooled %>% 
+  kbl(caption="<b>Table 3 | </b> Unpooled Analysis",
+      format = "html", table.attr = "style='width:50%;'") %>% 
+  kable_classic(html_font = "Cambria") %>% 
+  row_spec(0, bold = TRUE) %>%
+  save_kable("tables/png/Unpooled Analysis.png", zoom = 3)
+  # save_kable("tables/pdf/Unpooled Analysis.pdf")
+  
+table_unpooled %>% 
+  kbl(caption="<b>Table 3 | </b> Unpooled Analysis",
+      format = "html", table.attr = "style='width:50%;'") %>% 
+  kable_classic(html_font = "Cambria") %>% 
+  kable_material(c("striped", "hover"))
+
+```
+
+:::
+
+### Partial
+
+::: {.panel-tabset}
+
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+#### MrAB
+
+```{r fit-MrAB-unpooled-partial-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mMrAB1 <- brm(response ~ scenario * Country,
+              data = data_MrAB %>% filter(response!=2) %>%
+                filter(scenario_group=="gain") %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_2 ) %>% 
+                mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )), 
+              iter = 5000, refresh = 0, family="bernoulli")
+
+
+mMrAB2 <- brm(response ~ scenario * Country,
+              data = data_MrAB %>% filter(response!=2) %>%
+                filter(scenario_group=="loss") %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_2 ) %>% 
+                mutate(scenario=factor(scenario, levels = c("loss-gain VS loss", "loss-loss VS loss") )),
+              iter = 5000, refresh = 0, family="bernoulli")
+```
+
+```{r plot-MrAB-unpooled-posteriors-partial-exclusion}
+#| fig-width: 6
+#| fig-height: 10
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mMrAB1)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "scenario" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot1 <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postMrAB1 <- post_plot1 %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+plMrAB1 <- post_plot1 %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+
+post <- prepare_predictions(mMrAB2)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "scenario" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot2 <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.8) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postMrAB2 <- post_plot2 %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+plMrAB2 <- post_plot2 %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.line.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        legend.position = "none")
+
+cowplot::plot_grid(plMrAB1, plMrAB2, nrow = 1)
+
+```
+
+```{r summary-fit-MrAB1-unpooled-partial-exclusion}
+#| echo: false
+rmarkdown::paged_table(
+  post_plot1 %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+```{r summary-fit-MrAB2-unpooled-partial-exclusion}
+#| echo: false
+rmarkdown::paged_table(
+  post_plot2 %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+
+#### Game
+
+```{r fit-Game-unpooled-partial-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mGame <- brm(response ~ buyer * Country,
+              data = data_Game %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_2 ),
+              iter = 5000, refresh = 0, family="bernoulli")
+
+```
+
+```{r plot-Game-unpooled-posteriors-partial-exclusion}
+#| fig-width: 4
+#| fig-height: 10
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mGame)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "buyer" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Game", family="binomial", x=3) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postGame <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Game-unpooled-partial-exclusion}
+#| echo: false
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+#### Drink
+
+```{r fit-Drink-unpooled-partial-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mDrink <- brm(response ~ store * Country,
+              data = data_Drink %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_2 ) %>% 
+                # Remove really really extreme outliers
+                filter(response<10000 & response>=0) %>% 
+                mutate(response=response+1, logResp=log(response)) %>% 
+                group_by(Country) %>%
+                mutate(response=as.vector(scale(logResp))) %>% 
+                ungroup(),
+              iter = 5000, refresh = 0)
+
+```
+
+```{r plot-Drink-unpooled-posteriors-partial-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mDrink)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "store" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Drink", family="gaussian", x=1) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+ 
+postDrink <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>%   
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(SMD), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Drink-unpooled-partial-exclusion}
+#| echo: false
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+#### Jacket
+
+```{r fit-Jacket-unpooled-partial-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mJacket <- brm(response ~ price * Country,
+               data = data_Jacket %>% 
+                 # EXCLUSION: Full Exclusion
+                 filter( !(Country %in% countries2remove) ) %>% 
+                 filter( attention_check_grater_than_2 ),
+               iter = 5000, refresh = 0, family="bernoulli")
+```
+
+```{r plot-Jacket-unpooled-posteriors-partial-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mJacket)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "price" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Jacket", family="binomial", x=4) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postJacket <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Jacket-unpooled-partial-exclusion}
+#| echo: false
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+#### Play
+
+```{r fit-Play-unpooled-partial-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mPlay <- brm(response ~ loss * Country,
+             data = data_Play %>% 
+               # EXCLUSION: Full Exclusion
+               filter( !(Country %in% countries2remove) ) %>% 
+               filter( attention_check_grater_than_2 ) %>% 
+               mutate(loss=factor(loss, levels = c("ticket", "cash"))),
+             iter = 5000, refresh = 0, family="bernoulli")
+```
+
+```{r plot-Play-unpooled-posteriors-partial-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mPlay)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "loss" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Play", family="binomial", x=5) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postPlay <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Play-unpooled-partial-exclusion}
+#| echo: false
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+#### Gym
+
+```{r fit-Gym-unpooled-partial-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mGym <- brm(response ~ frame * Country,
+            data = data_Gym %>% 
+              # EXCLUSION: Full Exclusion
+              filter( !(Country %in% countries2remove) ) %>% 
+              filter( attention_check_grater_than_2 ) %>% 
+              group_by(Country) %>%
+                mutate(response=as.vector(scale(response))) %>% 
+                ungroup(),
+             iter = 5000, refresh = 0)
+```
+
+```{r plot-Gym-unpooled-posteriors-partial-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mGym)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta" #
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "frame" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Gym", family="binomial", x=2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postGym <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(SMD), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Gym-unpooled-partial-exclusion}
+#| echo: false
+rmarkdown::paged_table( 
+  post_plot %>% #
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+
+#### Plane
+
+```{r fit-Plane-unpooled-partial-exclusion}
+#| code-summary: Show codes
+#| output: false
+
+mPlane <- brm(response ~ coupon * Country,
+             data = data_Plane %>% 
+               # EXCLUSION: Full Exclusion
+               filter( !(Country %in% countries2remove) ) %>% 
+               filter( attention_check_grater_than_2 ),
+             iter = 5000, refresh = 0, family="bernoulli")
+```
+
+```{r plot-Plane-unpooled-posteriors-partial-exclusion}
+#| fig-width: 4
+#| fig-height: 10 
+#| code-summary: "Plot posteriors"
+#| warning: false
+ 
+post <- prepare_predictions(mPlane)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "coupon" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Plane", family="binomial", x=6) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postPlane <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+```{r summary-fit-Plane-unpooled-partial-exclusion}
+#| echo: false
+rmarkdown::paged_table( 
+  post_plot %>% 
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+:::
+
+```{r plot-unpooled-posteriors-partial-exclusion}
+#| fig-width: 8
+#| fig-height: 3.5
+#| code-summary: "Plot posteriors"
+#| warning: false
+       
+post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% 
+  mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
+
+plotOR <- post %>% filter(family=="binomial") %>% 
+  ggplot(aes(x, theta, color=credible)) +
+  geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) +
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5, 3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  scale_color_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+plotSMD <- post %>% filter(family=="gaussian") %>% 
+  ggplot(aes(x, theta, color=credible)) +
+  geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~SMD)) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,1.5), breaks = -1:5) +
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
+                     labels = post %>% filter(family=="gaussian") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  scale_color_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+
+cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
+
+```
+
+
 
 ### Full
 
@@ -4387,1603 +6005,6 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
-### Preregistered
-
-::: {.panel-tabset}
-
-#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
-
-Click on the tabs to see the model's summary for each study
-
-#### MrAB
-
-```{r fit-MrAB-unpooled-full-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mMrAB1 <- brm(response ~ scenario * Country,
-              data = data_MrAB %>% filter(response!=2) %>%
-                filter(scenario_group=="gain") %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_3 ) %>% 
-                mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )), 
-              iter = 5000, refresh = 0, family="bernoulli")
-
-
-mMrAB2 <- brm(response ~ scenario * Country,
-              data = data_MrAB %>% filter(response!=2) %>%
-                filter(scenario_group=="loss") %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_3 ) %>% 
-                mutate(scenario=factor(scenario, levels = c("loss-gain VS loss", "loss-loss VS loss") )),
-              iter = 5000, refresh = 0, family="bernoulli")
-```
-
-```{r plot-MrAB-unpooled-posteriors-full-exclusion}
-#| fig-width: 6
-#| fig-height: 10
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mMrAB1)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "scenario" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot1 <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postMrAB1 <- post_plot1 %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-plMrAB1 <- post_plot1 %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-
-
-post <- prepare_predictions(mMrAB2)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "scenario" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot2 <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.8) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postMrAB2 <- post_plot2 %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-plMrAB2 <- post_plot2 %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.line.y = element_blank(),
-        axis.ticks.y = element_blank(),
-        legend.position = "none")
-
-cowplot::plot_grid(plMrAB1, plMrAB2, nrow = 1)
-
-```
-
-```{r summary-fit-MrAB1-unpooled-full-exclusion}
-#| echo: false
-
-
-table_unpooled <- post_plot1 %>% 
-  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-  filter(row_number()==1) %>% 
-  select(Country, mu, lower, upper) %>% 
-  ungroup() %>% 
-  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
-         mu=round(mu,2)) %>% 
-  rename(Estimate = mu) %>% 
-  mutate(` ` = "") %>% 
-  .[,c(6,1,2,5)] 
-
-
-empty <- function(x){ 
-  if(x==''){
-    return("MrAB1")
-    } else {
-      return("")
-    } 
-  }
-
-table_unpooled <- rbind(apply(table_unpooled[1,], 2, empty), table_unpooled)
-
-rmarkdown::paged_table(
-  post_plot1 %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-```{r summary-fit-MrAB2-unpooled-full-exclusion}
-#| echo: false
-
-
-tu <- post_plot1 %>% 
-  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-  filter(row_number()==1) %>% 
-  select(Country, mu, lower, upper) %>% 
-  ungroup() %>% 
-  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
-         mu=round(mu,2)) %>% 
-  rename(Estimate = mu) %>% 
-  mutate(` ` = "") %>% 
-  .[,c(6,1,2,5)] 
-
-
-empty <- function(x){ 
-  if(x==''){
-    return("MrAB2")
-    } else {
-      return("")
-    } 
-  }
-
-table_unpooled <- 
-  rbind(
-    table_unpooled,
-    rbind(apply(tu[1,], 2, empty), tu)
-  )
-
-rmarkdown::paged_table(
-  post_plot2 %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-
-#### Game
-
-```{r fit-Game-unpooled-full-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mGame <- brm(response ~ buyer * Country,
-              data = data_Game %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_3 ),
-              iter = 5000, refresh = 0, family="bernoulli")
-
-```
-
-```{r plot-Game-unpooled-posteriors-full-exclusion}
-#| fig-width: 4
-#| fig-height: 10
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mGame)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "buyer" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Game", family="binomial", x=3) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postGame <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Game-unpooled-full-exclusion}
-#| echo: false
-
-
-tu <- post_plot %>% 
-  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-  filter(row_number()==1) %>% 
-  select(Country, mu, lower, upper) %>% 
-  ungroup() %>% 
-  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
-         mu=round(mu,2)) %>% 
-  rename(Estimate = mu) %>% 
-  mutate(` ` = "") %>% 
-  .[,c(6,1,2,5)] 
-
-
-empty <- function(x){ 
-  if(x==''){
-    return("Game")
-    } else {
-      return("")
-    } 
-  }
-
-table_unpooled <- 
-  rbind(
-    table_unpooled,
-    rbind(apply(tu[1,], 2, empty), tu)
-  )
-
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-#### Drink
-
-```{r fit-Drink-unpooled-full-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mDrink <- brm(response ~ store * Country,
-              data = data_Drink %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_3 ) %>% 
-                # Remove really really extreme outliers
-                filter(response<10000 & response>=0) %>% 
-                mutate(response=response+1, logResp=log(response)) %>% 
-                group_by(Country) %>%
-                mutate(response=as.vector(scale(logResp))) %>% 
-                ungroup(),
-              iter = 5000, refresh = 0)
-
-```
-
-```{r plot-Drink-unpooled-posteriors-full-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mDrink)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "store" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Drink", family="gaussian", x=1) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
- 
-postDrink <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>%   
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(SMD), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Drink-unpooled-full-exclusion}
-#| echo: false
-
-
-tu <- post_plot %>% 
-  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-  filter(row_number()==1) %>% 
-  select(Country, mu, lower, upper) %>% 
-  ungroup() %>% 
-  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
-         mu=round(mu,2)) %>% 
-  rename(Estimate = mu) %>% 
-  mutate(` ` = "") %>% 
-  .[,c(6,1,2,5)] 
-
-
-empty <- function(x){ 
-  if(x==''){
-    return("Drink")
-    } else {
-      return("")
-    } 
-  }
-
-table_unpooled <- 
-  rbind(
-    table_unpooled,
-    rbind(apply(tu[1,], 2, empty), tu)
-  )
-
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-#### Jacket
-
-```{r fit-Jacket-unpooled-full-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mJacket <- brm(response ~ price * Country,
-               data = data_Jacket %>% 
-                 # EXCLUSION: Full Exclusion
-                 filter( !(Country %in% countries2remove) ) %>% 
-                 filter( attention_check_grater_than_3 ),
-               iter = 5000, refresh = 0, family="bernoulli")
-```
-
-```{r plot-Jacket-unpooled-posteriors-full-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mJacket)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "price" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Jacket", family="binomial", x=4) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postJacket <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Jacket-unpooled-full-exclusion}
-#| echo: false
-
-
-tu <- post_plot %>% 
-  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-  filter(row_number()==1) %>% 
-  select(Country, mu, lower, upper) %>% 
-  ungroup() %>% 
-  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
-         mu=round(mu,2)) %>% 
-  rename(Estimate = mu) %>% 
-  mutate(` ` = "") %>% 
-  .[,c(6,1,2,5)] 
-
-
-empty <- function(x){ 
-  if(x==''){
-    return("Jacket")
-    } else {
-      return("")
-    } 
-  }
-
-tu <- 
-  rbind(
-    table_unpooled,
-    rbind(apply(tu[1,], 2, empty), tu)
-  )
-
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-#### Play
-
-```{r fit-Play-unpooled-full-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mPlay <- brm(response ~ loss * Country,
-             data = data_Play %>% 
-               # EXCLUSION: Full Exclusion
-               filter( !(Country %in% countries2remove) ) %>% 
-               filter( attention_check_grater_than_3 ) %>% 
-               mutate(loss=factor(loss, levels = c("ticket", "cash"))),
-             iter = 5000, refresh = 0, family="bernoulli")
-```
-
-```{r plot-Play-unpooled-posteriors-full-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mPlay)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "loss" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Play", family="binomial", x=5) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postPlay <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Play-unpooled-full-exclusion}
-#| echo: false
-
-
-tu <- post_plot %>% 
-  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-  filter(row_number()==1) %>% 
-  select(Country, mu, lower, upper) %>% 
-  ungroup() %>% 
-  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
-         mu=round(mu,2)) %>% 
-  rename(Estimate = mu) %>% 
-  mutate(` ` = "") %>% 
-  .[,c(6,1,2,5)] 
-
-
-empty <- function(x){ 
-  if(x==''){
-    return("Play")
-    } else {
-      return("")
-    } 
-  }
-
-table_unpooled <- 
-  rbind(
-    table_unpooled,
-    rbind(apply(tu[1,], 2, empty), tu)
-  )
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-#### Gym
-
-```{r fit-Gym-unpooled-full-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mGym <- brm(response ~ frame * Country,
-            data = data_Gym %>% 
-              # EXCLUSION: Full Exclusion
-              filter( !(Country %in% countries2remove) ) %>% 
-              filter( attention_check_grater_than_3 ) %>% 
-              group_by(Country) %>%
-                mutate(response=as.vector(scale(response))) %>% 
-                ungroup(),
-             iter = 5000, refresh = 0)
-```
-
-```{r plot-Gym-unpooled-posteriors-full-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mGym)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta" #
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "frame" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Gym", family="binomial", x=2) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postGym <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(SMD), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Gym-unpooled-full-exclusion}
-#| echo: false
-
-
-tu <- post_plot %>% 
-  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-  filter(row_number()==1) %>% 
-  select(Country, mu, lower, upper) %>% 
-  ungroup() %>% 
-  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
-         mu=round(mu,2)) %>% 
-  rename(Estimate = mu) %>% 
-  mutate(` ` = "") %>% 
-  .[,c(6,1,2,5)] 
-
-
-empty <- function(x){ 
-  if(x==''){
-    return("Gym")
-    } else {
-      return("")
-    } 
-  }
-
-table_unpooled <- 
-  rbind(
-    table_unpooled,
-    rbind(apply(tu[1,], 2, empty), tu)
-  )
-
-rmarkdown::paged_table( 
-  post_plot %>% #
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-
-#### Plane
-
-```{r fit-Plane-unpooled-full-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mPlane <- brm(response ~ coupon * Country,
-             data = data_Plane %>% 
-               # EXCLUSION: Full Exclusion
-               filter( !(Country %in% countries2remove) ) %>% 
-               filter( attention_check_grater_than_3 ),
-             iter = 5000, refresh = 0, family="bernoulli")
-```
-
-```{r plot-Plane-unpooled-posteriors-full-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mPlane)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "coupon" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Plane", family="binomial", x=6) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postPlane <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Plane-unpooled-full-exclusion}
-#| echo: false
-
-
-tu <- post_plot %>% 
-  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-  filter(row_number()==1) %>% 
-  select(Country, mu, lower, upper) %>% 
-  ungroup() %>% 
-  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
-         mu=round(mu,2)) %>% 
-  rename(Estimate = mu) %>% 
-  mutate(` ` = "") %>% 
-  .[,c(6,1,2,5)] 
-
-
-empty <- function(x){ 
-  if(x==''){
-    return("Plane")
-    } else {
-      return("")
-    } 
-  }
-
-table_unpooled <- 
-  rbind(
-    table_unpooled,
-    rbind(apply(tu[1,], 2, empty), tu)
-  )
-
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-:::
-
-::: {.panel-tabset}
-
-#### Plot
-
-```{r plot-unpooled-posteriors-full-exclusion}
-#| fig-width: 8
-#| fig-height: 3.5
-#| code-summary: "Plot posteriors"
-#| warning: false
-       
-post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% # Recalcu
-  mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
-
-plotOR <- post %>% filter(family=="binomial") %>% 
-  ggplot(aes(x, theta, color=credible)) +
-  geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
-  geom_hline(yintercept = 0, linetype=2, size=1) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(Posterior~log(OR))) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) +
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks =c(1.5, 3:6), 
-                     labels = post %>% filter(family=="binomial") %>% 
-                       .[,"study",drop=T] %>% unique(),
-                     guide = "prism_offset") + 
-  scale_color_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-plotSMD <- post %>% filter(family=="gaussian") %>% 
-  ggplot(aes(x, theta, color=credible)) +
-  geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
-  geom_hline(yintercept = 0, linetype=2, size=1) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(Posterior~SMD)) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,1.5), breaks = -1:5) +
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
-                     labels = post %>% filter(family=="gaussian") %>% 
-                       .[,"study",drop=T] %>% unique(),
-                     guide = "prism_offset") + 
-  scale_color_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-
-cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
-
-```
-
-#### Table
-
-```{r table-preregistered-unpooled}
-
-table_unpooled %>% 
-  kbl(caption="<b>Table 3 | </b> Unpooled Analysis",
-      format = "html", table.attr = "style='width:50%;'") %>% 
-  kable_classic(html_font = "Cambria") %>% 
-  row_spec(0, bold = TRUE) %>%
-  save_kable("tables/png/Unpooled Analysis.png", zoom = 3)
-  # save_kable("tables/pdf/Unpooled Analysis.pdf")
-  
-table_unpooled %>% 
-  kbl(caption="<b>Table 3 | </b> Unpooled Analysis",
-      format = "html", table.attr = "style='width:50%;'") %>% 
-  kable_classic(html_font = "Cambria") %>% 
-  kable_material(c("striped", "hover"))
-
-```
-
-:::
-
-### Partial
-
-::: {.panel-tabset}
-
-#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
-
-Click on the tabs to see the model's summary for each study
-
-#### MrAB
-
-```{r fit-MrAB-unpooled-partial-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mMrAB1 <- brm(response ~ scenario * Country,
-              data = data_MrAB %>% filter(response!=2) %>%
-                filter(scenario_group=="gain") %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_2 ) %>% 
-                mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )), 
-              iter = 5000, refresh = 0, family="bernoulli")
-
-
-mMrAB2 <- brm(response ~ scenario * Country,
-              data = data_MrAB %>% filter(response!=2) %>%
-                filter(scenario_group=="loss") %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_2 ) %>% 
-                mutate(scenario=factor(scenario, levels = c("loss-gain VS loss", "loss-loss VS loss") )),
-              iter = 5000, refresh = 0, family="bernoulli")
-```
-
-```{r plot-MrAB-unpooled-posteriors-partial-exclusion}
-#| fig-width: 6
-#| fig-height: 10
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mMrAB1)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "scenario" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot1 <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postMrAB1 <- post_plot1 %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-plMrAB1 <- post_plot1 %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-
-
-post <- prepare_predictions(mMrAB2)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "scenario" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot2 <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.8) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postMrAB2 <- post_plot2 %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-plMrAB2 <- post_plot2 %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.line.y = element_blank(),
-        axis.ticks.y = element_blank(),
-        legend.position = "none")
-
-cowplot::plot_grid(plMrAB1, plMrAB2, nrow = 1)
-
-```
-
-```{r summary-fit-MrAB1-unpooled-partial-exclusion}
-#| echo: false
-rmarkdown::paged_table(
-  post_plot1 %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-```{r summary-fit-MrAB2-unpooled-partial-exclusion}
-#| echo: false
-rmarkdown::paged_table(
-  post_plot2 %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-
-#### Game
-
-```{r fit-Game-unpooled-partial-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mGame <- brm(response ~ buyer * Country,
-              data = data_Game %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_2 ),
-              iter = 5000, refresh = 0, family="bernoulli")
-
-```
-
-```{r plot-Game-unpooled-posteriors-partial-exclusion}
-#| fig-width: 4
-#| fig-height: 10
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mGame)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "buyer" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Game", family="binomial", x=3) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postGame <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Game-unpooled-partial-exclusion}
-#| echo: false
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-#### Drink
-
-```{r fit-Drink-unpooled-partial-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mDrink <- brm(response ~ store * Country,
-              data = data_Drink %>% 
-                # EXCLUSION: Full Exclusion
-                filter( !(Country %in% countries2remove) ) %>% 
-                filter( attention_check_grater_than_2 ) %>% 
-                # Remove really really extreme outliers
-                filter(response<10000 & response>=0) %>% 
-                mutate(response=response+1, logResp=log(response)) %>% 
-                group_by(Country) %>%
-                mutate(response=as.vector(scale(logResp))) %>% 
-                ungroup(),
-              iter = 5000, refresh = 0)
-
-```
-
-```{r plot-Drink-unpooled-posteriors-partial-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mDrink)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "store" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Drink", family="gaussian", x=1) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
- 
-postDrink <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>%   
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(SMD), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Drink-unpooled-partial-exclusion}
-#| echo: false
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-#### Jacket
-
-```{r fit-Jacket-unpooled-partial-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mJacket <- brm(response ~ price * Country,
-               data = data_Jacket %>% 
-                 # EXCLUSION: Full Exclusion
-                 filter( !(Country %in% countries2remove) ) %>% 
-                 filter( attention_check_grater_than_2 ),
-               iter = 5000, refresh = 0, family="bernoulli")
-```
-
-```{r plot-Jacket-unpooled-posteriors-partial-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mJacket)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "price" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Jacket", family="binomial", x=4) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postJacket <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Jacket-unpooled-partial-exclusion}
-#| echo: false
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-#### Play
-
-```{r fit-Play-unpooled-partial-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mPlay <- brm(response ~ loss * Country,
-             data = data_Play %>% 
-               # EXCLUSION: Full Exclusion
-               filter( !(Country %in% countries2remove) ) %>% 
-               filter( attention_check_grater_than_2 ) %>% 
-               mutate(loss=factor(loss, levels = c("ticket", "cash"))),
-             iter = 5000, refresh = 0, family="bernoulli")
-```
-
-```{r plot-Play-unpooled-posteriors-partial-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mPlay)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "loss" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Play", family="binomial", x=5) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postPlay <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Play-unpooled-partial-exclusion}
-#| echo: false
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-#### Gym
-
-```{r fit-Gym-unpooled-partial-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mGym <- brm(response ~ frame * Country,
-            data = data_Gym %>% 
-              # EXCLUSION: Full Exclusion
-              filter( !(Country %in% countries2remove) ) %>% 
-              filter( attention_check_grater_than_2 ) %>% 
-              group_by(Country) %>%
-                mutate(response=as.vector(scale(response))) %>% 
-                ungroup(),
-             iter = 5000, refresh = 0)
-```
-
-```{r plot-Gym-unpooled-posteriors-partial-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mGym)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta" #
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "frame" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Gym", family="binomial", x=2) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postGym <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(SMD), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Gym-unpooled-partial-exclusion}
-#| echo: false
-rmarkdown::paged_table( 
-  post_plot %>% #
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-
-#### Plane
-
-```{r fit-Plane-unpooled-partial-exclusion}
-#| code-summary: Show codes
-#| output: false
-
-mPlane <- brm(response ~ coupon * Country,
-             data = data_Plane %>% 
-               # EXCLUSION: Full Exclusion
-               filter( !(Country %in% countries2remove) ) %>% 
-               filter( attention_check_grater_than_2 ),
-             iter = 5000, refresh = 0, family="bernoulli")
-```
-
-```{r plot-Plane-unpooled-posteriors-partial-exclusion}
-#| fig-width: 4
-#| fig-height: 10 
-#| code-summary: "Plot posteriors"
-#| warning: false
- 
-post <- prepare_predictions(mPlane)$dpars$mu$fe$b %>% 
-  as.data.frame()
-
-names(post)[1] <- "Austria"
-names(post)[2] <- "theta"
-names(post) <- str_remove( names(post), "b_" )
-names(post) <- str_remove( names(post), "coupon" )
-names(post) <- str_remove( names(post), "Country" )
-all_countries <- names(post)[-2]
-all_countries <- all_countries[-grep(":", all_countries)]
-
-post_plot <- map_dfr(all_countries, function(country){
-  if(country=="Austria"){
-    theta <- post[,"theta"]
-  } else {
-    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
-  }
-  data.frame(theta, Country=country, study="Plane", family="binomial", x=6) %>% 
-    mutate(lower = HDInterval::hdi( theta )["lower"],
-           upper = HDInterval::hdi( theta )["upper"],
-           credible = ifelse(lower<0, "no", "yes"))
-})
-
-postPlane <- post_plot %>% 
-  group_by(Country) %>% 
-  mutate(theta=mean(theta)) %>% 
-  filter(row_number()==1)
-
-post_plot %>% 
-  ggplot(aes(x = theta, y = Country)) +
-  stat_halfeye(aes(fill=credible, color=credible)) +
-  geom_vline(xintercept = 0, linetype=2) +
-  theme_pubr() + 
-  labs(x=expression(log(OR)), y=NULL) +
-  scale_y_discrete(guide = "prism_offset") + 
-  scale_x_continuous(guide = "prism_offset") + 
-  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none")
-```
-
-```{r summary-fit-Plane-unpooled-partial-exclusion}
-#| echo: false
-rmarkdown::paged_table( 
-  post_plot %>% 
-    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
-    filter(row_number()==1) %>% 
-    select(Country, mu, lower, upper) %>% 
-    ungroup()
-  )
-```
-
-:::
-
-```{r plot-unpooled-posteriors-partial-exclusion}
-#| fig-width: 8
-#| fig-height: 3.5
-#| code-summary: "Plot posteriors"
-#| warning: false
-       
-post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% 
-  mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
-
-plotOR <- post %>% filter(family=="binomial") %>% 
-  ggplot(aes(x, theta, color=credible)) +
-  geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
-  geom_hline(yintercept = 0, linetype=2, size=1) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(Posterior~log(OR))) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) +
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks =c(1.5, 3:6), 
-                     labels = post %>% filter(family=="binomial") %>% 
-                       .[,"study",drop=T] %>% unique(),
-                     guide = "prism_offset") + 
-  scale_color_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-plotSMD <- post %>% filter(family=="gaussian") %>% 
-  ggplot(aes(x, theta, color=credible)) +
-  geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
-  geom_hline(yintercept = 0, linetype=2, size=1) +
-  theme_pubr() + theme(legend.position = "right") +
-  labs(x=NULL, y=expression(Posterior~SMD)) +
-  scale_y_continuous(guide = "prism_offset", limits = c(-1,1.5), breaks = -1:5) +
-  scale_size(range = c(3, 8)) +
-  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
-                     labels = post %>% filter(family=="gaussian") %>% 
-                       .[,"study",drop=T] %>% unique(),
-                     guide = "prism_offset") + 
-  scale_color_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15), legend.position = "none")
-
-
-cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
-
-```
-
 
 ### None
 
@@ -6652,6 +6673,156 @@ In this section we perform a Bayesian unpooled analysis to explore the role of f
 
 ::: {.panel-tabset}
 
+```{r fit-exploratory-MrAB1}
+#| code-summary: Fit MrAB1
+#| output: false
+#| eval: true
+
+mMrAB1 <- brm(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) | Country),
+                data = MrAB %>% 
+                  # Tidy
+                  mutate(Age=as.numeric(Age)) %>%
+                  filter(Age>0 & Age<99) %>% 
+                  mutate(Education=as.numeric(Education)) %>% 
+                  filter(Education<100) %>% 
+                  filter(Gender%in%c("Male", "Female")) %>% 
+                  mutate(condition_group=ifelse(
+                    condition %in% c("gain-gain VS gain", "gain-loss VS gain"),
+                    "gain",
+                    "loss"
+                  )) %>% 
+                  filter(condition_group=="gain") %>% 
+                  mutate(condition=factor(condition, levels = c("gain-loss VS gain", "gain-gain VS gain") )), 
+                iter = 10000, refresh = 0, family="bernoulli")
+
+```
+
+```{r fit-exploratory-MrAB2}
+#| code-summary: Fit MrAB2
+#| output: false
+#| eval: true
+
+mMrAB2 <- brm(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
+                data = MrAB %>% 
+                  # Tidy
+                  mutate(Age=as.numeric(Age)) %>%
+                  filter(Age>0 & Age<99) %>% 
+                  mutate(Education=as.numeric(Education)) %>% 
+                  filter(Education<100) %>% 
+                  filter(Gender%in%c("Male", "Female")) %>% 
+                  mutate(condition_group=ifelse(
+                    condition %in% c("gain-gain VS gain", "gain-loss VS gain"),
+                    "gain",
+                    "loss"
+                  )) %>% 
+                  filter(condition_group=="loss") %>% 
+                  mutate(condition=factor(condition, levels = c("loss-gain VS loss", "loss-loss VS loss") )), 
+                iter = 10000, refresh = 0, family="bernoulli")
+
+```
+
+```{r fit-exploratory-Game}
+#| code-summary: Fit Game
+#| output: false
+#| eval: true
+
+mGame <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
+                data = Game %>% 
+                  # Tidy
+                  mutate(Age=as.numeric(Age)) %>%
+                  filter(Age>0 & Age<99) %>% 
+                  mutate(Education=as.numeric(Education)) %>% 
+                  filter(Education<100) %>% 
+                  filter(Gender%in%c("Male", "Female")), 
+                family=binomial())
+
+```
+
+```{r fit-exploratory-Drink}
+#| code-summary: Fit Drink
+#| output: false
+#| eval: true
+
+mDrink <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
+                data = Drink %>% 
+                  # Tidy
+                  mutate(Age=as.numeric(Age)) %>%
+                  filter(Age>0 & Age<99) %>% 
+                  mutate(Education=as.numeric(Education)) %>% 
+                  filter(Education<100) %>% 
+                  filter(Gender%in%c("Male", "Female")))
+
+```
+
+```{r fit-exploratory-Jacket}
+#| code-summary: Fit Jacket
+#| output: false
+#| eval: true
+
+mJacket <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
+                data = Jacket %>% 
+                  # Tidy
+                  mutate(Age=as.numeric(Age)) %>%
+                  filter(Age>0 & Age<99) %>% 
+                  mutate(Education=as.numeric(Education)) %>% 
+                  filter(Education<100) %>% 
+                  filter(Gender%in%c("Male", "Female")), 
+                family=binomial())
+
+```
+
+```{r fit-exploratory-Play}
+#| code-summary: Fit Play
+#| output: false
+#| eval: true
+
+mPlay <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
+                data = Play %>% 
+                  # Tidy
+                  mutate(Age=as.numeric(Age)) %>%
+                  filter(Age>0 & Age<99) %>% 
+                  mutate(Education=as.numeric(Education)) %>% 
+                  filter(Education<100) %>% 
+                  filter(Gender%in%c("Male", "Female")) %>% 
+                 mutate(condition=factor(condition, levels = c("ticket", "cash"))), 
+                family=binomial())
+
+```
+
+```{r fit-exploratory-Gym}
+#| code-summary: Fit Gym
+#| output: false
+#| eval: true
+
+mGym <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
+                data = Gym %>% 
+                  # Tidy
+                  mutate(Age=as.numeric(Age)) %>%
+                  filter(Age>0 & Age<99) %>% 
+                  mutate(Education=as.numeric(Education)) %>% 
+                  filter(Education<100) %>% 
+                  filter(Gender%in%c("Male", "Female")))
+
+```
+
+```{r fit-exploratory-Plane}
+#| code-summary: Fit Plane
+#| output: false
+#| eval: true
+
+mPlane <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
+                data = Plane %>% 
+                  # Tidy
+                  mutate(Age=as.numeric(Age)) %>%
+                  filter(Age>0 & Age<99) %>% 
+                  mutate(Education=as.numeric(Education)) %>% 
+                  filter(Education<100) %>% 
+                  filter(Gender%in%c("Male", "Female")), 
+                family=binomial())
+
+```
+
+
 ###  Age
 
 ::: {.panel-tabset}
@@ -6702,6 +6873,92 @@ mMrAB1 <- brm(response ~ condition * (Age+Education+FinancialLiteracy+Gender+num
                 filter(condition_group=="gain") %>% 
                 mutate(condition=factor(condition, levels = c("gain-loss VS gain", "gain-gain VS gain") )),
               iter = 5000, refresh = 0, family="bernoulli")
+```
+
+```{r fit-MrAB2-unpooled-exploratory-preregistered-exclusion}
+#| code-summary: Show codes
+#| output: false
+#| eval: false
+
+mMrAB2 <- brm(response ~ condition * (Age+Education+FinancialLiteracy+Gender+numeric_income) * Country,
+              data = MrAB %>% 
+                # Tidy
+                mutate(Age=as.numeric(Age)) %>%
+                filter(Age>0 & Age<99) %>% 
+                mutate(Education=as.numeric(Education)) %>% 
+                filter(Education<100) %>% 
+                mutate(condition_group=ifelse(
+                  condition %in% c("gain-gain VS gain", "gain-loss VS gain"),
+                  "gain",
+                  "loss"
+                )) %>% 
+                filter(condition_group=="loss") %>% 
+                mutate(condition=factor(condition, levels = c("loss-gain VS loss", "loss-loss VS loss") )),
+              iter = 10000, refresh = 0, family="bernoulli")
+```
+
+```{r plot-MrAB-unpooled-age-posteriors-preregistered-exclusion}
+#| fig-width: 6
+#| fig-height: 10
+#| code-summary: "Plot posteriors"
+#| warning: false
+#| eval: true
+
+predictor_of_interest <- "Age"
+post <- prepare_predictions(mMrAB1)$dpars$mu$fe$b %>% 
+  as.data.frame() %>% 
+  select(contains("condition") & contains(":") & contains(predictor_of_interest))
+
+names(post) <- c("Austria", sapply(2:length(post), function(i) strsplit( names(post)[i], "Country")[[1]][2]))
+all_countries <- names(post)
+post_plot1 <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"Austria"]
+  } else {
+    theta <- post[,"Austria"] + post[,country]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "higher"),
+           credible = ifelse(upper>0, credible, "lower"))
+})
+
+postMrAB1 <- post_plot1 %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+plMrAB1 <- post_plot1 %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+  scale_color_manual(values = c("#33628DFF", "#560f56", "gray"), breaks = c("higher", "lower","no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+cowplot::plot_grid(plMrAB1, plMrAB1, nrow = 1)
+
+```
+
+```{r summary-fit-MrAB1-unpooled-age-preregistered-exclusion}
+#| echo: false
+#| eval: true
+rmarkdown::paged_table(
+  post_plot1 %>% #r
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
 ```
 
 #### Game
@@ -6843,6 +7100,299 @@ Jacket %>%
 ```
 
 #### MrAB
+
+```{r plot-MrAB-unpooled-education-posteriors-preregistered-exclusion}
+#| fig-width: 6
+#| fig-height: 10
+#| code-summary: "Plot posteriors"
+#| warning: false
+#| eval: true
+
+predictor_of_interest <- "Education"
+post <- prepare_predictions(mMrAB1)$dpars$mu$fe$b %>% 
+  as.data.frame() %>% 
+  select(contains("condition") & contains(":") & contains(predictor_of_interest))
+
+names(post) <- c("Austria", sapply(2:length(post), function(i) strsplit( names(post)[i], "Country")[[1]][2]))
+all_countries <- names(post)
+post_plot1 <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"Austria"]
+  } else {
+    theta <- post[,"Austria"] + post[,country]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "higher"),
+           credible = ifelse(upper>0, credible, "lower"))
+})
+
+postMrAB1 <- post_plot1 %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+plMrAB1 <- post_plot1 %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+  scale_color_manual(values = c("#33628DFF", "#560f56", "gray"), breaks = c("higher", "lower","no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+cowplot::plot_grid(plMrAB1, plMrAB1, nrow = 1)
+
+```
+
+```{r summary-fit-MrAB1-unpooled-education-preregistered-exclusion}
+#| echo: false
+#| eval: true
+rmarkdown::paged_table(
+  post_plot1 %>% #r
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+#### Game
+
+#### Drink
+
+#### Jacket
+
+#### Play
+
+#### Gym
+
+#### Plane
+
+:::
+
+###  Gender
+
+::: {.panel-tabset}
+
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+```{r gender-plot }
+#| code-summary: "Show plot code"
+Jacket %>% 
+  # Tidy
+  filter(condition==first(Jacket$condition)) %>% 
+  mutate(Age=as.numeric(Age)) %>%
+  filter(Age>0 & Age<99) %>% 
+  mutate(Education=as.numeric(Education)) %>% 
+  filter(Education<100) %>% 
+  filter(Gender!="Prefer not to say") %>% 
+  group_by(Country) %>% 
+  summarise(pMale = mean(ifelse(Gender=='Male', 1, 0))) %>% 
+  # Plot
+  ggplot(aes(pMale, Country, fill=Country)) +
+  geom_bar(stat = "identity", width=0.8) +
+  geom_boxplot(width = 0.5) +
+  scale_fill_manual(values = color_21countries) +
+  theme_pubr() +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none") +
+  labs(x="Proportion of Male", y=NULL)
+```
+
+#### MrAB
+
+
+```{r plot-MrAB-unpooled-gender-posteriors-preregistered-exclusion}
+#| fig-width: 6
+#| fig-height: 10
+#| code-summary: "Plot posteriors"
+#| warning: false
+#| eval: true
+
+predictor_of_interest <- "GenderMale"
+post <- prepare_predictions(mMrAB1)$dpars$mu$fe$b %>% 
+  as.data.frame() %>% 
+  select(contains("condition") & contains(":") & contains(predictor_of_interest))
+
+names(post) <- c("Austria", sapply(2:length(post), function(i) strsplit( names(post)[i], "Country")[[1]][2]))
+all_countries <- names(post)
+post_plot1 <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"Austria"]
+  } else {
+    theta <- post[,"Austria"] + post[,country]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "higher"),
+           credible = ifelse(upper>0, credible, "lower"))
+})
+
+postMrAB1 <- post_plot1 %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+plMrAB1 <- post_plot1 %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+  scale_color_manual(values = c("#33628DFF", "#560f56", "gray"), breaks = c("higher", "lower","no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+cowplot::plot_grid(plMrAB1, plMrAB1, nrow = 1)
+
+```
+
+```{r summary-fit-MrAB1-unpooled-gender-preregistered-exclusion}
+#| echo: false
+#| eval: true
+rmarkdown::paged_table(
+  post_plot1 %>% #r
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
+
+#### Game
+
+#### Drink
+
+#### Jacket
+
+#### Play
+
+#### Gym
+
+#### Plane
+
+:::
+
+
+###  Income
+
+::: {.panel-tabset}
+
+#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
+Click on the tabs to see the model's summary for each study
+
+```{r income-plot }
+#| code-summary: "Show plot code"
+
+Jacket %>% 
+  # Tidy
+  filter(condition==first(Jacket$condition)) %>% 
+  mutate(Age=as.numeric(Age)) %>%
+  filter(Age>0 & Age<99) %>% 
+  mutate(Education=as.numeric(Education)) %>% 
+  filter(Education<100) %>% 
+  # Plot
+  ggplot(aes(numeric_income, Country, color=Country)) +
+  geom_jitter(alpha=0.1, width = 0.2, height = 0.2) +
+  scale_color_manual(values = color_21countries) +
+  theme_pubr() +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none") +
+  labs(y=NULL, x="Income") +
+  scale_x_continuous(breaks = 0:5)
+
+```
+
+#### MrAB
+
+```{r plot-MrAB-unpooled-income-posteriors-preregistered-exclusion}
+#| fig-width: 6
+#| fig-height: 10
+#| code-summary: "Plot posteriors"
+#| warning: false
+#| eval: true
+
+predictor_of_interest <- "numeric_income"
+post <- prepare_predictions(mMrAB1)$dpars$mu$fe$b %>% 
+  as.data.frame() %>% 
+  select(contains("condition") & contains(":") & contains(predictor_of_interest))
+
+names(post) <- c("Austria", sapply(2:length(post), function(i) strsplit( names(post)[i], "Country")[[1]][2]))
+all_countries <- names(post)
+post_plot1 <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"Austria"]
+  } else {
+    theta <- post[,"Austria"] + post[,country]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "higher"),
+           credible = ifelse(upper>0, credible, "lower"))
+})
+
+postMrAB1 <- post_plot1 %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+plMrAB1 <- post_plot1 %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+  scale_color_manual(values = c("#33628DFF", "#560f56", "gray"), breaks = c("higher", "lower","no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+cowplot::plot_grid(plMrAB1, plMrAB1, nrow = 1)
+
+```
+
+```{r summary-fit-MrAB1-unpooled-income-preregistered-exclusion}
+#| echo: false
+#| eval: true
+rmarkdown::paged_table(
+  post_plot1 %>% #r
+    group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+    filter(row_number()==1) %>% 
+    select(Country, mu, lower, upper) %>% 
+    ungroup()
+  )
+```
+
 
 #### Game
 
@@ -7552,105 +8102,6 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
-###  Gender
-
-::: {.panel-tabset}
-
-#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
-
-Click on the tabs to see the model's summary for each study
-
-```{r gender-plot }
-#| code-summary: "Show plot code"
-Jacket %>% 
-  # Tidy
-  filter(condition==first(Jacket$condition)) %>% 
-  mutate(Age=as.numeric(Age)) %>%
-  filter(Age>0 & Age<99) %>% 
-  mutate(Education=as.numeric(Education)) %>% 
-  filter(Education<100) %>% 
-  filter(Gender!="Prefer not to say") %>% 
-  group_by(Country) %>% 
-  summarise(pMale = mean(ifelse(Gender=='Male', 1, 0))) %>% 
-  # Plot
-  ggplot(aes(pMale, Country, fill=Country)) +
-  geom_bar(stat = "identity", width=0.8) +
-  geom_boxplot(width = 0.5) +
-  scale_fill_manual(values = color_21countries) +
-  theme_pubr() +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none") +
-  labs(x="Proportion of Male", y=NULL)
-```
-
-#### MrAB
-
-#### Game
-
-#### Drink
-
-#### Jacket
-
-#### Play
-
-#### Gym
-
-#### Plane
-
-:::
-
-
-###  Income
-
-::: {.panel-tabset}
-
-#### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
-
-Click on the tabs to see the model's summary for each study
-
-```{r income-plot }
-#| code-summary: "Show plot code"
-
-Jacket %>% 
-  # Tidy
-  filter(condition==first(Jacket$condition)) %>% 
-  mutate(Age=as.numeric(Age)) %>%
-  filter(Age>0 & Age<99) %>% 
-  mutate(Education=as.numeric(Education)) %>% 
-  filter(Education<100) %>% 
-  # Plot
-  ggplot(aes(numeric_income, Country, color=Country)) +
-  geom_jitter(alpha=0.1, width = 0.2, height = 0.2) +
-  scale_color_manual(values = color_21countries) +
-  theme_pubr() +
-  guides(size = "none") + 
-  theme(text = element_text(size = 15),
-        axis.text.y = element_text(size = 15),
-        legend.position = "none") +
-  labs(y=NULL, x="Income") +
-  scale_x_continuous(breaks = 0:5)
-
-```
-
-#### MrAB
-
-#### Game
-
-#### Drink
-
-#### Jacket
-
-#### Play
-
-#### Gym
-
-#### Plane
-
-:::
-
-
 
 :::
 
@@ -7660,7 +8111,7 @@ Jacket %>%
 #| echo: false
 #| output: false
 
-# update-pavlovia-1
+# update-pavlovia-0
 
 pathdir="/Volumes/PROJECTS/Ongoing/MMAR/Pavlovia/mmar-analysis"
 
