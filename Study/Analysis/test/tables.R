@@ -3,7 +3,7 @@ library(kableExtra)
 library(tidyverse)
 
 # --- Table Demographics --- #
-lazyLoad("index_cache/html/Code-to-load-data-and-libraries_37cc09b9b8b38c500f5001a43db21c81")
+lazyLoad("index_cache/html/Code-to-load-data-and-libraries_ac2dcc77804d4e19a61ad58c57f9e0c7")
 
 # Participants from 21 countries
 df <- data_Plane %>% 
@@ -91,3 +91,13 @@ data_table %>%
   # kable_material(c("striped", "hover")) %>%
   row_spec(0, bold = TRUE) %>% 
   save_kable("tables/png/Demographics.png", zoom = 3)
+
+data_table %>%
+  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+        table.attr = "style='width:40%;'", booktabs = T) %>%
+  kable_classic(html_font = "Cambria") %>%
+  # kable_material(c("striped", "hover")) %>%
+  row_spec(0, bold = TRUE) %>% 
+  save_kable("tables/png/Demographics.png", zoom = 3)
+
+

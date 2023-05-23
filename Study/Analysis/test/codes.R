@@ -751,3 +751,44 @@ post %>%
           axis.text.y = element_text(size = 15),
           legend.position = "none")
   
+  
+lazyLoad("index_cache/html/plot-posteriors-preregistered_0456326a7c965df4f27fa1804bfabe26")
+post
+
+
+post %>% filter(family=="binomial") %>% 
+  filter(Country!="all") %>% 
+  ggplot(aes(x, post, color=Country)) +
+  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  # geom_segment(data = data_paper, linewidth=1.8,
+  #              aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
+  
+  geom_segment(data = post %>% filter(family=="binomial") %>% 
+                 filter(Country=="all"), color="#228B8DFF",
+               aes(x=x, xend=x, y=lower, yend=upper), linewidth=1) +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5,3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+
+lazyLoad("index_cache/html/fit-Gym_438cd00e186b2f6a364e735e8fd982ff")
+
+fixef(mGym)
+
+
+postGym$lower <- c(fixef(mGym)[,"Q2.5"], fixef(mGym)[,"Q2.5"]+ranef(mGym)$Country[,,][,"Q2.5"] )
+postGym$upper <- c(fixef(mGym)[,"Q97.5"], fixef(mGym)[,"Q97.5"]+ranef(mGym)$Country[,,][,"Q97.5"] )
+
+

@@ -204,28 +204,28 @@ data_table <- rbind(
     )
 
 
-# data_table %>%
-#   kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-#         table.attr = "style='width:40%;'", booktabs = T) %>%
-#   kable_classic(html_font = "Cambria") %>%
-#   # kable_material(c("striped", "hover")) %>%
-#   row_spec(0, bold = TRUE) %>% 
-#   save_kable("tables/png/Demographics.png", zoom = 3)
+data_table %>%
+  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+        table.attr = "style='width:40%;'", booktabs = T) %>%
+  kable_classic(html_font = "Cambria") %>%
+  # kable_material(c("striped", "hover")) %>%
+  row_spec(0, bold = TRUE) %>%
+  save_kable("tables/png/Demographics.png", zoom = 3)
 
 # data_table %>%
 #   kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
 #         table.attr = "style='width:40%;'", booktabs = T) %>%
 #   kable_classic(html_font = "Cambria") %>%
 #   # kable_material(c("striped", "hover")) %>%
-#   row_spec(0, bold = TRUE) %>% 
+#   row_spec(0, bold = TRUE) %>%
 #   save_kable("tables/pdf/Demographics.pdf", zoom = 3)
 
-# data_table %>% 
-#   kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
-#       table.attr = "style='width:60%;'") %>% 
-#   kable_classic(html_font = "Cambria") %>% 
-#   kable_material(c("striped", "hover")) %>% 
-#   row_spec(0, bold = TRUE)
+data_table %>%
+  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+      table.attr = "style='width:60%;'") %>%
+  kable_classic(html_font = "Cambria") %>%
+  kable_material(c("striped", "hover")) %>%
+  row_spec(0, bold = TRUE)
 
 ```
 
@@ -1349,7 +1349,7 @@ postMrAB2 <- data.frame(post=c(fe, fe+re),
 ```
 
 ```{r summary-fit-MrAB1}
-#| echo: false
+#| echo: true
 
 table_bayesian <- fixef(mMrAB1) %>% as.data.frame(row.names = '') %>% 
   mutate(Study="MrAB1", 
@@ -1363,7 +1363,7 @@ sjPlot::tab_model(mMrAB1)
 ```
 
 ```{r summary-fit-MrAB2}
-#| echo: false
+#| echo: true
 
 table_bayesian <- rbind(
   table_bayesian,
@@ -1398,7 +1398,7 @@ postGame <- data.frame(post=c(fe, fe+re),
 ```
 
 ```{r summary-fit-Game}
-#| echo: false
+#| echo: true
 
 table_bayesian <- rbind(
   table_bayesian,
@@ -1432,7 +1432,7 @@ postDrink <- data.frame(post=c(fe, fe+re),
 ```
 
 ```{r summary-fit-Drink}
-#| echo: false
+#| echo: true
 
 table_bayesian <- rbind(
   table_bayesian,
@@ -1465,7 +1465,7 @@ postJacket <- data.frame(post=c(fe, fe+re),
 ```
 
 ```{r summary-fit-Jacket}
-#| echo: false
+#| echo: true
 
 table_bayesian <- rbind(
   table_bayesian,
@@ -1499,7 +1499,7 @@ postPlay <- data.frame(post=c(fe, fe+re),
 ```
 
 ```{r summary-fit-Play}
-#| echo: false
+#| echo: true
 
 table_bayesian <- rbind(
   table_bayesian,
@@ -1533,7 +1533,7 @@ postGym <- data.frame(post=c(fe, fe+re),
 ```
 
 ```{r summary-fit-Gym}
-#| echo: false
+#| echo: true
 
 table_bayesian <- rbind(
   table_bayesian,
@@ -1567,7 +1567,7 @@ postPlane <- data.frame(post=c(fe, fe+re),
 ```
 
 ```{r summary-fit-Plane}
-#| echo: false
+#| echo: true
 
 table_bayesian <- rbind(
   table_bayesian,
@@ -1594,6 +1594,30 @@ sjPlot::tab_model(mPlane)
 #| code-summary: "Plot posteriors full exclusion"
 #| warning: false
 
+# Include Credible interval
+postMrAB1$lower <- c(fixef(mMrAB1)[,"Q2.5"], fixef(mMrAB1)[,"Q2.5"]+ranef(mMrAB1)$Country[,,][,"Q2.5"] )
+postMrAB1$upper <- c(fixef(mMrAB1)[,"Q97.5"], fixef(mMrAB1)[,"Q97.5"]+ranef(mMrAB1)$Country[,,][,"Q97.5"] )
+
+postMrAB2$lower <- c(fixef(mMrAB2)[,"Q2.5"], fixef(mMrAB2)[,"Q2.5"]+ranef(mMrAB2)$Country[,,][,"Q2.5"] )
+postMrAB2$upper <- c(fixef(mMrAB2)[,"Q97.5"], fixef(mMrAB2)[,"Q97.5"]+ranef(mMrAB2)$Country[,,][,"Q97.5"] )
+
+postGame$lower <- c(fixef(mGame)[,"Q2.5"], fixef(mGame)[,"Q2.5"]+ranef(mGame)$Country[,,][,"Q2.5"] )
+postGame$upper <- c(fixef(mGame)[,"Q97.5"], fixef(mGame)[,"Q97.5"]+ranef(mGame)$Country[,,][,"Q97.5"] )
+
+postDrink$lower <- c(fixef(mDrink)[,"Q2.5"], fixef(mDrink)[,"Q2.5"]+ranef(mDrink)$Country[,,][,"Q2.5"] )
+postDrink$upper <- c(fixef(mDrink)[,"Q97.5"], fixef(mDrink)[,"Q97.5"]+ranef(mDrink)$Country[,,][,"Q97.5"] )
+
+postJacket$lower <- c(fixef(mJacket)[,"Q2.5"], fixef(mJacket)[,"Q2.5"]+ranef(mJacket)$Country[,,][,"Q2.5"] )
+postJacket$upper <- c(fixef(mJacket)[,"Q97.5"], fixef(mJacket)[,"Q97.5"]+ranef(mJacket)$Country[,,][,"Q97.5"] )
+
+postPlay$lower <- c(fixef(mPlay)[,"Q2.5"], fixef(mPlay)[,"Q2.5"]+ranef(mPlay)$Country[,,][,"Q2.5"] )
+postPlay$upper <- c(fixef(mPlay)[,"Q97.5"], fixef(mPlay)[,"Q97.5"]+ranef(mPlay)$Country[,,][,"Q97.5"] )
+
+postGym$lower <- c(fixef(mGym)[,"Q2.5"], fixef(mGym)[,"Q2.5"]+ranef(mGym)$Country[,,][,"Q2.5"] )
+postGym$upper <- c(fixef(mGym)[,"Q97.5"], fixef(mGym)[,"Q97.5"]+ranef(mGym)$Country[,,][,"Q97.5"] )
+
+postPlane$lower <- c(fixef(mPlane)[,"Q2.5"], fixef(mPlane)[,"Q2.5"]+ranef(mPlane)$Country[,,][,"Q2.5"] )
+postPlane$upper <- c(fixef(mPlane)[,"Q97.5"], fixef(mPlane)[,"Q97.5"]+ranef(mPlane)$Country[,,][,"Q97.5"] )
 
 post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% 
   mutate(family=ifelse(study%in%c("Drink","Gym"), "gaussian", "binomial"))
@@ -1604,10 +1628,15 @@ post_OR <- post %>% filter(family=="binomial") %>%
   geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
   geom_segment(data = data_paper, linewidth=1.8,
                aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
+  
+  geom_segment(data = post %>% filter(family=="binomial") %>% 
+                 filter(Country=="all"), color="#228B8DFF",
+               aes(x=x, xend=x, y=lower, yend=upper), linewidth=0.8) +
   geom_point(data = post %>% filter(family=="binomial") %>% 
                filter(Country=="all"), color="#228B8DFF", size=5) +
   geom_point(data = post %>% filter(family=="binomial") %>% 
                filter(Country=="all"), color="white", size=3) +
+  
   geom_hline(yintercept = 0, linetype=2, size=1) +
   theme_pubr() + theme(legend.position = "right") +
   labs(x=NULL, y=expression(Posterior~log(OR))) +
@@ -1625,6 +1654,10 @@ post_SMD <- post %>% filter(family=="gaussian") %>%
   filter(Country!="all") %>% 
   ggplot(aes(x, post, color=Country)) +
   geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  
+  geom_segment(data = post %>% filter(family=="gaussian") %>% 
+                 filter(Country=="all"), color="#228B8DFF",
+               aes(x=x, xend=x, y=lower, yend=upper), linewidth=1) +
   geom_point(data = post %>% filter(family=="gaussian") %>% 
                filter(Country=="all"), color="#228B8DFF", size=5) +
   geom_point(data = post %>% filter(family=="gaussian") %>% 
@@ -1648,7 +1681,7 @@ cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
 #### Table
 
 ```{r table-preregistered}
-#| eval: false
+#| eval: true
 
 rownames(table_bayesian) <- table_bayesian$Study
 
@@ -2919,7 +2952,7 @@ cowplot::plot_grid(plMrAB1, plMrAB2, nrow = 1)
 ```
 
 ```{r summary-fit-MrAB1-unpooled-full-exclusion}
-#| echo: false
+#| echo: true
 
 
 table_unpooled <- post_plot1 %>% 
@@ -3711,7 +3744,7 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 #### Table
 
 ```{r table-preregistered-unpooled}
-#| eval: false
+#| eval: true
 
 
 table_unpooled %>% 
@@ -3868,7 +3901,7 @@ cowplot::plot_grid(plMrAB1, plMrAB2, nrow = 1)
 ```
 
 ```{r summary-fit-MrAB1-unpooled-partial-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table(
   post_plot1 %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -3879,7 +3912,7 @@ rmarkdown::paged_table(
 ```
 
 ```{r summary-fit-MrAB2-unpooled-partial-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table(
   post_plot2 %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -3957,7 +3990,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Game-unpooled-partial-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -4041,7 +4074,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Drink-unpooled-partial-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -4117,7 +4150,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Jacket-unpooled-partial-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -4194,7 +4227,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Play-unpooled-partial-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -4273,7 +4306,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Gym-unpooled-partial-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% #
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -4350,7 +4383,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Plane-unpooled-partial-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -4550,7 +4583,7 @@ cowplot::plot_grid(plMrAB1, plMrAB2, nrow = 1)
 ```
 
 ```{r summary-fit-MrAB1-unpooled-full}
-#| echo: false
+#| echo: true
 
 
 table_unpooled <- post_plot1 %>% 
@@ -4585,7 +4618,7 @@ rmarkdown::paged_table(
 ```
 
 ```{r summary-fit-MrAB2-unpooled-full}
-#| echo: false
+#| echo: true
 
 table_unpooled <- post_plot2 %>% 
   group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -4806,7 +4839,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Drink-unpooled-full}
-#| echo: false
+#| echo: true
 
 
 table_unpooled <- post_plot %>% 
@@ -4912,7 +4945,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Jacket-unpooled-full}
-#| echo: false
+#| echo: true
 
 
 table_unpooled <- post_plot %>% 
@@ -5019,7 +5052,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Play-unpooled-full}
-#| echo: false
+#| echo: true
 
 
 table_unpooled <- post_plot %>% 
@@ -5129,7 +5162,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Gym-unpooled-full}
-#| echo: false
+#| echo: true
 
 
 table_unpooled <- post_plot %>% 
@@ -5236,7 +5269,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Plane-unpooled-full}
-#| echo: false
+#| echo: true
 
 
 table_unpooled <- post_plot %>% 
@@ -5460,7 +5493,7 @@ cowplot::plot_grid(plMrAB1, plMrAB2, nrow = 1)
 ```
 
 ```{r summary-fit-MrAB1-unpooled-exploratory}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table(
   post_plot1 %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -5471,7 +5504,7 @@ rmarkdown::paged_table(
 ```
 
 ```{r summary-fit-MrAB2-unpooled-exploratory}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table(
   post_plot2 %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -5550,7 +5583,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Game-unpooled-exploratory}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -6673,156 +6706,6 @@ In this section we perform a Bayesian unpooled analysis to explore the role of f
 
 ::: {.panel-tabset}
 
-```{r fit-exploratory-MrAB1}
-#| code-summary: Fit MrAB1
-#| output: false
-#| eval: true
-
-mMrAB1 <- brm(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) | Country),
-                data = MrAB %>% 
-                  # Tidy
-                  mutate(Age=as.numeric(Age)) %>%
-                  filter(Age>0 & Age<99) %>% 
-                  mutate(Education=as.numeric(Education)) %>% 
-                  filter(Education<100) %>% 
-                  filter(Gender%in%c("Male", "Female")) %>% 
-                  mutate(condition_group=ifelse(
-                    condition %in% c("gain-gain VS gain", "gain-loss VS gain"),
-                    "gain",
-                    "loss"
-                  )) %>% 
-                  filter(condition_group=="gain") %>% 
-                  mutate(condition=factor(condition, levels = c("gain-loss VS gain", "gain-gain VS gain") )), 
-                iter = 10000, refresh = 0, family="bernoulli")
-
-```
-
-```{r fit-exploratory-MrAB2}
-#| code-summary: Fit MrAB2
-#| output: false
-#| eval: true
-
-mMrAB2 <- brm(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
-                data = MrAB %>% 
-                  # Tidy
-                  mutate(Age=as.numeric(Age)) %>%
-                  filter(Age>0 & Age<99) %>% 
-                  mutate(Education=as.numeric(Education)) %>% 
-                  filter(Education<100) %>% 
-                  filter(Gender%in%c("Male", "Female")) %>% 
-                  mutate(condition_group=ifelse(
-                    condition %in% c("gain-gain VS gain", "gain-loss VS gain"),
-                    "gain",
-                    "loss"
-                  )) %>% 
-                  filter(condition_group=="loss") %>% 
-                  mutate(condition=factor(condition, levels = c("loss-gain VS loss", "loss-loss VS loss") )), 
-                iter = 10000, refresh = 0, family="bernoulli")
-
-```
-
-```{r fit-exploratory-Game}
-#| code-summary: Fit Game
-#| output: false
-#| eval: true
-
-mGame <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
-                data = Game %>% 
-                  # Tidy
-                  mutate(Age=as.numeric(Age)) %>%
-                  filter(Age>0 & Age<99) %>% 
-                  mutate(Education=as.numeric(Education)) %>% 
-                  filter(Education<100) %>% 
-                  filter(Gender%in%c("Male", "Female")), 
-                family=binomial())
-
-```
-
-```{r fit-exploratory-Drink}
-#| code-summary: Fit Drink
-#| output: false
-#| eval: true
-
-mDrink <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
-                data = Drink %>% 
-                  # Tidy
-                  mutate(Age=as.numeric(Age)) %>%
-                  filter(Age>0 & Age<99) %>% 
-                  mutate(Education=as.numeric(Education)) %>% 
-                  filter(Education<100) %>% 
-                  filter(Gender%in%c("Male", "Female")))
-
-```
-
-```{r fit-exploratory-Jacket}
-#| code-summary: Fit Jacket
-#| output: false
-#| eval: true
-
-mJacket <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
-                data = Jacket %>% 
-                  # Tidy
-                  mutate(Age=as.numeric(Age)) %>%
-                  filter(Age>0 & Age<99) %>% 
-                  mutate(Education=as.numeric(Education)) %>% 
-                  filter(Education<100) %>% 
-                  filter(Gender%in%c("Male", "Female")), 
-                family=binomial())
-
-```
-
-```{r fit-exploratory-Play}
-#| code-summary: Fit Play
-#| output: false
-#| eval: true
-
-mPlay <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
-                data = Play %>% 
-                  # Tidy
-                  mutate(Age=as.numeric(Age)) %>%
-                  filter(Age>0 & Age<99) %>% 
-                  mutate(Education=as.numeric(Education)) %>% 
-                  filter(Education<100) %>% 
-                  filter(Gender%in%c("Male", "Female")) %>% 
-                 mutate(condition=factor(condition, levels = c("ticket", "cash"))), 
-                family=binomial())
-
-```
-
-```{r fit-exploratory-Gym}
-#| code-summary: Fit Gym
-#| output: false
-#| eval: true
-
-mGym <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
-                data = Gym %>% 
-                  # Tidy
-                  mutate(Age=as.numeric(Age)) %>%
-                  filter(Age>0 & Age<99) %>% 
-                  mutate(Education=as.numeric(Education)) %>% 
-                  filter(Education<100) %>% 
-                  filter(Gender%in%c("Male", "Female")))
-
-```
-
-```{r fit-exploratory-Plane}
-#| code-summary: Fit Plane
-#| output: false
-#| eval: true
-
-mPlane <- glmer(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + (condition+FinancialLiteracy+Age+Education+FinancialLiteracy+Gender+numeric_income | Country),
-                data = Plane %>% 
-                  # Tidy
-                  mutate(Age=as.numeric(Age)) %>%
-                  filter(Age>0 & Age<99) %>% 
-                  mutate(Education=as.numeric(Education)) %>% 
-                  filter(Education<100) %>% 
-                  filter(Gender%in%c("Male", "Female")), 
-                family=binomial())
-
-```
-
-
 ###  Age
 
 ::: {.panel-tabset}
@@ -7581,7 +7464,7 @@ rmarkdown::paged_table(
 ```
 
 ```{r summary-fit-MrAB2-unpooled-fin_lit-preregistered-exclusion}
-#| echo: false
+#| echo: true
 #| eval: true
 rmarkdown::paged_table(
   post_plot2 %>% #r
@@ -7657,7 +7540,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Game-unpooled-fin_lit-preregistered-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -7738,7 +7621,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Drink-unpooled-fin_lit-preregistered-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -7813,7 +7696,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Jacket-unpooled-fin_lit-preregistered-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -7889,7 +7772,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Play-unpooled-fin_lit-preregistered-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -7967,7 +7850,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-mGym-unpooled-fin_lit-preregistered-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
@@ -8042,7 +7925,7 @@ post_plot %>%
 ```
 
 ```{r summary-fit-Plane-unpooled-fin_lit-preregistered-exclusion}
-#| echo: false
+#| echo: true
 rmarkdown::paged_table( 
   post_plot %>% 
     group_by(Country) %>% mutate(mu=mean(theta)) %>% 
