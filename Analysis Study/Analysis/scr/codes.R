@@ -1,0 +1,1038 @@
+# Bonferroni Correction https://bookdown.org/content/3686/null-hypothesis-significance-testing.html
+alpha_pc <- .05
+c        <- 21
+# the Bonferroni correction
+alpha_pc / c
+
+countries2remove <- data_MrAB %>% 
+  filter(attention_check_grater_than_3) %>% 
+  group_by(subject) %>% 
+  filter(row_number()==1) %>% 
+  group_by(Country) %>% 
+  summarise(sample_size=n()) %>% 
+  filter(sample_size<250) %>% 
+  .[,"Country", drop=TRUE]
+
+dMrAB <- data_MrAB %>% filter(response!=2) %>%
+  # filter(scenario_group=="gain") %>%
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=scenario, response)
+
+dGame <- data_Game %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=buyer, response)
+
+dDrink <- data_Drink %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Remove really really extreme outliers
+  filter(response<10000 & response>=0) %>% 
+  mutate(response=response+1, logResp=log(response)) %>% 
+  group_by(Country) %>%
+  mutate(response=as.vector(scale(logResp))) %>% 
+  ungroup() %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=store, response)
+
+dJacket <- data_Jacket %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=price, response)
+
+dPlay <- data_Play %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  mutate(loss=factor(loss, levels = c("ticket", "cash"))) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=loss, response)
+
+dGym <- data_Gym %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  group_by(Country) %>%
+  mutate(response=as.vector(scale(response))) %>% 
+  ungroup() %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=frame, response)
+
+dPlane <- data_Plane %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  select(subject, Gender, Age, Income, Education, Country, FinancialLiteracy, 
+         condition=coupon, response)
+
+  
+
+# --- Hierarchical Bayesian Meta-Analysis  --- #
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+lazyLoad('index_cache/html/Code-to-load-data-and-libraries_d4033ba30588e0897d19923a4badd205')
+
+# Participants from 21 countries
+df <- data_Plane %>% 
+  filter(coupon=='free') %>% 
+  # EXCLUSION: Preregistered
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 )
+
+
+df_egypt <- df %>% filter(coupon=="free") %>% filter(Country=='Egypt')
+convert_farsi_to_arabic <- function(x) {
+  if(x=="٠"|x=="۰"){
+    return( "0" )
+  } else if (x=="۱" | x=="١"){
+    return( "1" )
+  } else if (x=="۲" | x=="٢"){
+    return( "2" )
+  } else if (x=="۳"|x=="٣"){
+    return( "3" )
+  } else if (x=="۴" | x=="٤"){
+    return( "4" )
+  } else if (x=="۵" | x=="٥"){
+    return( "5" )
+  } else if (x=="۶"|x=="٦"){
+    return( "6" )
+  } else if (x=="۷" | x=="٧"){
+    return( "7" )
+  } else if (x=="۸" | x=="٨"){
+    return( "8" )
+  } else if (x=="۹" | x=="٩"){
+    return( "9" )
+  } else if( any(x %in% as.character(0:9) ) ){
+    return( x )
+  } else {
+    warning( paste("Persian number", x, "not found!!!") )
+  }
+}
+
+convert <- function(x){
+  apply(
+    str_split(string = x, pattern = "", simplify = T),
+    2,
+    convert_farsi_to_arabic
+  ) %>% paste0(collapse = "")
+}
+
+df[df$Country=='Egypt', "Age"] <-  sapply(as.list(df_egypt$Age), convert)
+
+rbind(
+  df %>% 
+    mutate(Age=as.numeric(Age)) %>% 
+    filter(Age>0 & Age<99) %>% 
+    summarise(
+      Country="pooled",
+      Language=names(which.max(table(NativeLanguage))),
+      n = n(),
+      `% female` = round(mean(Gender=='Female')*100,2),
+      `Age, median (IQR) (yr)` = str_c(median(Age), " (", quantile(Age,probs = .25), "-", quantile(Age,probs = .75), ")")
+    ),
+  df %>% 
+    group_by(Country) %>% 
+    mutate(Age=round(as.numeric(Age)),0) %>% 
+    filter(Age>0 & Age<99) %>% 
+    summarise(
+      Country=names(which.max(table(Country))),
+      Language=names(which.max(table(NativeLanguage))),
+      n = n(),
+      `% female` = round(mean(Gender=='Female')*100,2),
+      `Age, median (IQR) (yr)` = str_c(round(median(Age)), " (", round(quantile(Age,probs = .25)), "-", round(quantile(Age,probs = .75)), ")")
+    ) 
+) %>% 
+  kable(caption="<b>Table 1 | </b> Demographics", align=rep('l', 5),
+      table.attr = "style='width:40%;'", booktabs = T) %>% 
+  # row_spec(2:3, color = 'white', background = 'black') %>%
+  # kable_styling(latex_options = c("striped", "scale_down")) 
+  kable_classic(html_font = "Cambria") %>% 
+  # kable_material(c("striped", "hover")) %>% 
+  row_spec(0, bold = TRUE) %>% 
+  save_kable("test.png", zoom = 3)
+
+
+theta_fullExclusion$MrAB %>% filter(condition=="gain")
+
+lazyLoad("Report_cache/html/plot-MrAB-unpooled-posteriors-full-exclusion_c7bc9f4c7adbf512247dd9a4889ed25f")
+
+post_plot1
+
+table_unpooled <- post_plot1 %>% 
+  group_by(Country) %>% mutate(mu=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  select(Country, mu, lower, upper) %>% 
+  ungroup() %>% 
+  mutate(`CIs (95%)`=str_c(round(lower,2), round(upper,2), sep = ' - '),
+         mu=round(mu,2)) %>% 
+  rename(Estimate = mu) %>% 
+  mutate(` ` = "") %>% 
+  .[,c(6,1,2,5)] 
+
+
+empty <- function(x){ 
+  if(x==''){
+    return("MrAB1")
+    } else {
+      return("")
+    } 
+  }
+
+table_unpooled <- rbind(apply(table_unpooled[1,], 2, empty), table_unpooled)
+
+table_unpooled |>
+  kbl(caption="<b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis",
+      format = "html", table.attr = "style='width:90%;'") %>% 
+  kable_classic(html_font = "Cambria")
+
+
+
+fixef(mMrAB2) %>% as.data.frame(row.names = '') %>% 
+  mutate(Study="MrAB1", 
+         `$\\hat{\\beta}$` = round(Estimate, 2),
+         `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
+         ) %>% 
+  select(-c(Est.Error, Q2.5, Q97.5, Estimate))
+
+post %>% filter(family=="binomial") %>% 
+  filter(Country!="all") %>% 
+  ggplot(aes(x, post, color=Country)) +
+  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  # geom_point(data = data_paper, aes(x, theta), color="#472E7CFF", size=30, shape="-") +
+
+  geom_segment(data = data_paper, linewidth=1.8,
+               aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
+  geom_point(data = post %>% filter(family=="binomial") %>%
+               filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5,3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+lazyLoad("Report_cache/html/fit-MrAB-finantial-literacy_3c6336b4c6cc2482adb5f563c9e628d8")
+
+# Sample Size #
+data_MrAB %>% 
+  group_by(subject) %>% 
+  filter(row_number()==1) %>% 
+  group_by(Country) %>% 
+  mutate(sample_size=n()) %>% 
+  filter(sample_size>=250) %>% 
+  # Apply new criterion
+  # A
+  filter(!loi_lower_than_loiX0_33) %>%
+  # B
+  filter(native_language_is_country_language) %>%
+  # C
+  filter(attention_check_grater_than_3) %>%
+  # D
+  # filter(attention_check_grater_than_2) %>%
+  # Result
+  nrow()
+
+data_MrAB %>% 
+  group_by(subject) %>% 
+  filter(row_number()==1) %>% 
+  # Apply new criterion
+  # A
+  filter(!loi_lower_than_loiX0_33) %>%
+  # B
+  filter(native_language_is_country_language) %>%
+  # C
+  filter(attention_check_grater_than_3) %>%
+  # D
+  # filter(attention_check_grater_than_2) %>%
+  group_by(Country) %>% 
+  summarise(sample_size=n()) %>% 
+  filter(sample_size>=250) %>% 
+  # Result
+  nrow()
+
+
+
+data_MrAB %>%
+  filter(attention_check_grater_than_2) %>% 
+  group_by(subject,Country) %>% 
+  filter(row_number()==1) %>% 
+  group_by(Country) %>% 
+  mutate(sample_size=n()) %>% 
+  ungroup() %>% #nrow() %>% 
+  filter(sample_size>=250) %>% nrow()
+  
+  
+
+
+summary( mMrAB1 )
+
+mGame <- brm(response ~ buyer*FinancialLiteracy*Country,
+             data = data_Game %>% 
+               # EXCLUSION: Preregistered Exclusion
+               filter( !(Country %in% countries2remove) ) %>% 
+               filter( attention_check_grater_than_3 ),
+             iter = 1000, refresh = 0, family="bernoulli")
+
+post <- prepare_predictions(mGame)$dpars$mu$fe$b %>% 
+  as.data.frame() %>% 
+  select(contains(":") & contains("FinancialLiteracy"))
+
+names(post)[1] <- "Austria"
+names(post) <- str_remove( names(post), "b_buyerStranger:FinancialLiteracy:Country" )
+post <- post %>% select(!contains(":"))
+all_countries <- names(post)
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"Austria"]
+  } else {
+    theta <- post[,"Austria"] + post[,country]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postMrAB1 <- post_plot1 %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+plMrAB1 <- post_plot1 %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#bf7fbf", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#560f56", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 20),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+
+plot(effects::allEffects(mGame), multiline=T)
+
+as.data.frame(effects::allEffects(mGame))[[1]] %>% 
+  group_by(Country, FinancialLiteracy) %>% 
+  mutate(theta = fit[buyer=='Stranger']-fit[buyer=='Friend']) %>% 
+  filter(row_number()==1) %>% mutate(FinancialLiteracy=as.numeric(FinancialLiteracy)) %>% 
+  ggplot(aes(FinancialLiteracy, theta, color=Country)) +
+  geom_line()
+
+
+data.frame( b = as.vector( coef(mGame)[c(35, 98:128)] ),
+            country = unique(data_Game$Country) ) %>% 
+  ggplot(aes(1, b, color=country)) +
+  geom_jitter() +
+  geom_hline(yintercept = 0)
+
+data_MrAB %>% 
+  group_by(Country, subject) %>% 
+  filter(row_number()==1) %>% 
+  group_by(Country) %>% 
+  summarise(mean(FinancialLiteracy))
+
+dat <- data_MrAB %>% 
+  group_by(Country, subject) %>% 
+  filter(row_number()==1) %>% 
+  group_by(Country) %>%
+  mutate(N=n()) %>% 
+  group_by(Country, FinancialLiteracy) %>% 
+  summarise(fqFinLit = n()/N)
+
+nCountries <- length(unique(dat$Country))
+
+ggplot(dat, aes(FinancialLiteracy, fqFinLit, color=Country)) +
+  geom_line(size=1) +
+  theme_pubr() +
+  scale_color_manual(values = viridis::viridis_pal()(nCountries)) +
+  theme(text = element_text(size = 20), legend.position = "none") +
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_y_continuous(guide = "prism_offset") +
+  labs(y='Frequency', x='Financial Literacy')
+
+mDrink <- lm(response ~ store * Country,
+             data = data_Drink %>% 
+               # EXCLUSION: Full Exclusion
+               filter( !(Country %in% countries2remove) ) %>% 
+               filter( attention_check_grater_than_3 ) %>% 
+               # Remove really really extreme outliers
+               filter(response<10000 & response>=0) %>% 
+               # filter(Country=='Vietnam') %>% 
+               mutate(response=response+1, logResp=log(response)) %>% 
+               group_by(Country) %>%
+               mutate(response=as.vector(scale(logResp))) %>% 
+               ungroup())
+
+summary(mDrink)
+
+lazyLoad("Report_cache/html/fit-Drink-unpooled-full-exclusion_476ea8268cf38131304840ccbd9f2044")
+
+post <- prepare_predictions(mDrink)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+mean( post$b_storeResortHotel + post$`b_storeResortHotel:CountryVietnam` )
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "store" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Drink", family="gaussian", x=1) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+
+mean( with( post_plot, theta[Country=='Vietnam'] ) )
+postDrink <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+post_plot %>%   
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(theta[SMD]), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#bf7fbf", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#560f56", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 20),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+data_Drink %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Remove really really extreme outliers
+  filter(response<10000 & response>=0) %>% 
+  mutate(response=response+1, logResp=log(response)) %>% 
+  # Compute effect size as Standardized Mean Difference
+  group_by(Country) %>% 
+  # Calculate Mean Difference 
+  mutate(md=mean(logResp[store=="Resort Hotel"])-mean(logResp[store=="Grocery Store"])) %>% 
+  # Calculate effect size
+  mutate(theta=md/sd(logResp)) %>% 
+  group_by(Country, store) %>% filter(row_number()==1) %>% 
+  group_by(Country) %>% 
+  
+  select(-c(md, response, logResp)) %>% 
+  filter(row_number()==1) %>% ungroup() %>% 
+  filter(Country=='Vietnam') %>% 
+  select(theta)
+
+
+data_MrAB %>% 
+  filter(attention_check_grater_than_3) %>% 
+  group_by(subject) %>% 
+  filter(row_number()==1) %>% 
+  ungroup() %>% 
+  # group_by(Country) %>%
+  summarise(m = paste( round((1-mean(Country==Residence))*100,2),  "%") )
+  summarise(m = paste( round((1-mean( (Country==Residence) | native_language_is_country_language ))*100,2),  "%") )
+  
+
+data_MrAB %>% 
+  filter(attention_check_grater_than_3) %>% 
+  group_by(subject) %>% 
+  filter(row_number()==1) %>% 
+  group_by(Country) %>% 
+  summarise(sample_size=n()) %>% 
+  filter(sample_size<=250) %>% 
+  .[,"Country", drop=TRUE]
+
+lazyLoad("Report_cache/html/")
+post <- prepare_predictions(mDrink)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "store" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"Austria"] + post[,"theta"]
+  } else {
+    theta <- post[,"Austria"] + post[,country] + post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Drink", family="gaussian", x=1) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+post_plot %>%   
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(theta[SMD]), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#bf7fbf", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#560f56", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 20),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+post_plot %>% 
+  select(Country, theta, lower, upper) %>% 
+  group_by(Country) %>% filter(row_number()==1) %>% 
+  ungroup()
+
+data_Drink %>% 
+  # EXCLUSION: Full Exclusion
+  filter( !(Country %in% countries2remove) ) %>% 
+  filter( attention_check_grater_than_3 ) %>% 
+  # Remove really really extreme outliers
+  filter(response<10000 & response>=0) %>% 
+  mutate(response=response+1, logResp=log(response)) %>% 
+  filter(Country=="Austria") %>% 
+  mutate(response=as.vector(scale(response))) %>% 
+  ggplot(aes(response, fill=store)) +
+  geom_density(alpha=.5)
+
+glm( response ~ coupon, 
+    data = data_Plane %>% 
+      # EXCLUSION: Full Exclusion
+      filter( !(Country %in% countries2remove) ) %>% 
+      filter( attention_check_grater_than_3 ), 
+    family="binomial"
+    
+    ) %>% summary()
+
+lm( response ~ frame, 
+     data = data_Gym %>% 
+       # EXCLUSION: Full Exclusion
+       filter( !(Country %in% countries2remove) ) %>% 
+       filter( attention_check_grater_than_3 )
+) %>% summary()
+
+
+glm(response ~ scenario + Country,
+    data = data_MrAB %>% filter(response!=2) %>%
+      filter(scenario_group=="loss") %>% 
+      # EXCLUSION: Full Exclusion
+      filter( !(Country %in% countries2remove) ) %>% 
+      filter( attention_check_grater_than_3 ) %>% 
+      mutate(scenario=factor(scenario, levels = c("loss-gain VS loss", "loss-loss VS loss") )), 
+family="binomial")
+
+lazyLoad("Report_cache/html/fit-Game-unpooled-full-exclusion_7498e593588ae4fe1c415435b3ed5597")
+
+summary( mGame )
+sjPlot::tab_model(mGame)
+
+library(tidybayes)
+
+mMrAB1 <- brm(response ~ scenario + Country,
+              data = data_MrAB %>% filter(response!=2) %>%
+                filter(scenario_group=="gain") %>% 
+                # EXCLUSION: Full Exclusion
+                filter( !(Country %in% countries2remove) ) %>% 
+                filter( attention_check_grater_than_3 ) %>% 
+                mutate(scenario=factor(scenario, levels = c("gain-loss VS gain", "gain-gain VS gain") )), 
+              iter = 10000, refresh = 0, family="bernoulli")
+
+post <- prepare_predictions(mMrAB1)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_Country" )
+all_countries <- names(post)[-2]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"Austria"] + post[,"theta"]
+  } else {
+    theta <- post[,"Austria"] + post[,country] + post[,"theta"]
+  }
+  data.frame(theta, Country=country, study="MrAB", family="binomial", x=1.2) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+  
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0) +
+  theme_pubr() + 
+  labs(x=expression(theta[OR]), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#bf7fbf", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#560f56", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 20),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+
+
+postMrAB1 <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+
+lazyLoad("Report_cache/html/plot-unpooled-posteriors-fill-exclusion_85e48329d645837824049c9986be42e8")
+
+plotOR <- post %>% filter(family=="binomial") %>% 
+  ggplot(aes(x, theta, color=credible)) +
+  geom_jitter( width = 0.1, alpha=0.7, size=2 ) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~theta[OR])) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5, 3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  scale_color_manual(values = c("#560f56", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 20), legend.position = "none")
+
+plotSMD <- post %>% filter(family=="gaussian") %>% 
+  ggplot(aes(x, theta, color=credible)) +
+  geom_jitter( width = 0.1, alpha=0.7, size=2 ) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~theta[SMD])) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks = 1:2, limits = c(0.5, 2.5),
+                     labels = post %>% filter(family=="gaussian") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  scale_color_manual(values = c("#560f56", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 20), legend.position = "none")
+
+
+
+lazyLoad("index_cache/html/plot-unpooled-posteriors-full-exclusion_ce9b0439721c7cced74a25d6ac21e29f")
+
+country='Austria'
+
+
+
+unpooled <- map_dfr(as.list(unique(post$Country)), function(country){
+  rbind(
+    post %>% 
+      filter(study=='MrAB') %>% 
+      filter(Country==country) %>% 
+      mutate(replication=(credible[x==1.2]=='yes') & (credible[x==1.8]=='yes')) %>% 
+      filter(row_number()==1),
+    post %>% 
+      filter(study!='MrAB') %>% 
+      filter(Country==country) %>% 
+      mutate(replication=credible=='yes'),
+  )
+})
+
+
+unpooled$replication |> mean() |> round(digits=3) * 100
+
+
+post %>% 
+  group_by(Country)
+  mutate(replication = ifelse())
+
+  
+  # ------- Fin Lit ------------ #
+  lazyLoad("index_cache/html/plot-unpooled-posteriors-fin_lit-preregistered-exclusion_41926bea4c76ccd80502fcc222f8ac65")
+  
+  
+  post %>% filter(family=="binomial") %>% 
+    ggplot(aes(x, theta, color=credible)) +
+    geom_jitter( width = 0.1, alpha=0.7, size=4 ) +
+    geom_hline(yintercept = 0, linetype=2, size=1) +
+    theme_pubr() + theme(legend.position = "right") +
+    labs(x=NULL, y=expression(Posterior~log(OR))) +
+    scale_y_continuous(guide = "prism_offset", limits = c(-1.5,1.5), breaks = -1:5) +
+    scale_size(range = c(3, 8)) +
+    scale_x_continuous(breaks =c(1.5, 3:6), 
+                       labels = post %>% filter(family=="binomial") %>% 
+                         .[,"study",drop=T] %>% unique(),
+                       guide = "prism_offset") + 
+    scale_color_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+    guides(size = "none") + 
+    theme(text = element_text(size = 15), legend.position = "none")
+  
+  
+  lazyLoad("index_cache/html/plot-MrAB-unpooled-fin_lit-posteriors-preregistered-exclusion_7a7e2bcbb22715f2fe9322f68a5b18a7")
+
+  post_plot1 %>%  
+    ggplot(aes(x = theta, y = Country)) +
+    stat_halfeye(aes(fill=credible, color=credible)) +
+    geom_vline(xintercept = 0, linetype=2) +
+    theme_pubr() + 
+    labs(x=expression(log(OR)), y=NULL) +
+    scale_y_discrete(guide = "prism_offset") + 
+    scale_x_continuous(guide = "prism_offset") + 
+    scale_fill_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+    scale_color_manual(values = c("#33628DFF", "#560f56", "gray"), breaks = c("higher", "lower","no")) +
+    guides(size = "none") + 
+    theme(text = element_text(size = 15),
+          axis.text.x = element_blank(),
+          axis.text.y = element_text(size = 15),
+          legend.position = "none")
+  
+  post_plot1 %>% 
+    group_by(Country) %>% 
+    mutate(sample=row_number()) %>% 
+    group_by(sample) %>% 
+    mutate(theta=mean(theta)) %>% 
+    filter(Country=='Austria') %>% 
+    ungroup() %>% 
+    mutate(Country='All') %>% 
+    select(-sample) %>% 
+    
+    ggplot(aes(x = theta, y = Country)) +
+    stat_halfeye(aes(fill=credible, color=credible)) +
+    geom_vline(xintercept = 0, linetype=2) +
+    theme_pubr() + 
+    labs(x=expression(log(OR)), y=NULL) +
+    scale_y_discrete(guide = "prism_offset") + 
+    scale_x_continuous(guide = "prism_offset") + 
+    scale_fill_manual(values = c("#228B8DFF", "#D5006A", "gray"), breaks = c("higher", "lower","no")) +
+    scale_color_manual(values = c("#33628DFF", "#560f56", "gray"), breaks = c("higher", "lower","no")) +
+    guides(size = "none") + 
+    theme(text = element_text(size = 15),
+          axis.text.x = element_blank(),
+          axis.text.y = element_text(size = 15),
+          legend.position = "none")
+  
+  
+lazyLoad("index_cache/html/plot-posteriors-preregistered_0456326a7c965df4f27fa1804bfabe26")
+post
+
+
+post %>% filter(family=="binomial") %>% 
+  filter(Country!="all") %>% 
+  ggplot(aes(x, post, color=Country)) +
+  geom_jitter( width = 0.1, alpha=0.7, color="gray", size=2 ) +
+  # geom_segment(data = data_paper, linewidth=1.8,
+  #              aes(x=x-0.2, xend=x+0.2, y=theta, yend=theta), color="#472E7CFF") +
+  
+  geom_segment(data = post %>% filter(family=="binomial") %>% 
+                 filter(Country=="all"), color="#228B8DFF",
+               aes(x=x, xend=x, y=lower, yend=upper), linewidth=1) +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = post %>% filter(family=="binomial") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,5.5), breaks = -1:5) + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(breaks =c(1.5,3:6), 
+                     labels = post %>% filter(family=="binomial") %>% 
+                       .[,"study",drop=T] %>% unique(),
+                     guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15), legend.position = "none")
+
+
+lazyLoad("index_cache/html/fit-Gym_438cd00e186b2f6a364e735e8fd982ff")
+
+fixef(mGym)
+
+
+postGym$lower <- c(fixef(mGym)[,"Q2.5"], fixef(mGym)[,"Q2.5"]+ranef(mGym)$Country[,,][,"Q2.5"] )
+postGym$upper <- c(fixef(mGym)[,"Q97.5"], fixef(mGym)[,"Q97.5"]+ranef(mGym)$Country[,,][,"Q97.5"] )
+
+
+
+# --- Hierarchical Bayesian Meta-Analysis - Supplementary Figure --- #
+
+
+library(brms)
+
+
+get_posterior <- function(m){
+  post <- as_draws(m)
+  lapply(post, function(ls) ls$b_Intercept) %>% 
+    unlist() %>% as.vector()
+}
+
+# ---- Preregistered ---- #
+# MrAB
+lazyLoad("index_cache/html/fit-MrAB_50b99ade40c2a069e339c397b293f65b")
+df_plot <- data.frame(post=get_posterior(mMrAB1), model="MrAB1", ec="Preregistered")
+df_plot <- rbind(df_plot,
+  data.frame(post=get_posterior(mMrAB2), model="MrAB2", ec="Preregistered")
+)
+# Game
+lazyLoad("index_cache/html/fit-Game_4c4080dd2452151ddb845d504d26a55a")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mGame), model="Game", ec="Preregistered")
+)
+# Drink
+lazyLoad("index_cache/html/fit-Drink_667d9296929a49dd7210770142a4cbb3")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mDrink), model="Drink", ec="Preregistered")
+)
+# Jacket
+lazyLoad("index_cache/html/fit-Jacket_852a5d55bca871351a6a5cae0741f073")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mJacket), model="Jacket", ec="Preregistered")
+)
+# Play
+lazyLoad("index_cache/html/fit-Play_71b14b3e9f39372bf46578e0af68c90f")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mPlay), model="Play", ec="Preregistered")
+)
+# Gym
+lazyLoad("index_cache/html/fit-Gym_438cd00e186b2f6a364e735e8fd982ff")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mGym), model="Gym", ec="Preregistered")
+)
+# Plane
+lazyLoad("index_cache/html/fit-Plane_6c33ce0d58080e6adef5a7ce269aa0f7")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mPlane), model="Plane", ec="Preregistered")
+)
+
+# ---- Exploratory ---- #
+# MrAB
+lazyLoad("index_cache/html/fit-MrAB-exploratory_90921e6431586a9ec29db650b351a2fb")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mMrAB1), model="MrAB1", ec="Exploratory")
+)
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mMrAB2), model="MrAB2", ec="Exploratory")
+)
+# Game
+lazyLoad("index_cache/html/fit-Game-exploratory_1a00f208d55c16fe008ce292cd624277")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mGame), model="Game", ec="Exploratory")
+)
+# Drink
+lazyLoad("index_cache/html/fit-Drink-exploratory_5baa13dd1a905bc07d03a1eaff9120c2")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mDrink), model="Drink", ec="Exploratory")
+)
+# Jacket
+lazyLoad("index_cache/html/fit-Jacket-exploratory_23dccd254f468fa212f0dfc4fcb4439d")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mJacket), model="Jacket", ec="Exploratory")
+)
+# Play
+lazyLoad("index_cache/html/fit-Play-exploratory_e8204f6cd2cf317a3ea26c1bde51e44c")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mPlay), model="Play", ec="Exploratory")
+)
+# Gym
+lazyLoad("index_cache/html/fit-Gym-exploratory_893f9b40a068438b0a493eacad794daf")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mGym), model="Gym", ec="Exploratory")
+)
+# Plane
+lazyLoad("index_cache/html/fit-Plane-exploratory_fd49e2d5e2228ede03f8ca5eca75e7ef")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mPlane), model="Plane", ec="Exploratory")
+)
+
+# ---- Partial ---- #
+# MrAB
+lazyLoad("index_cache/html/fit-MrAB-partial_46227cff13d052a21772d07d0734b04d")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mMrAB1), model="MrAB1", ec="Partial")
+)
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mMrAB2), model="MrAB2", ec="Partial")
+)
+# Game
+lazyLoad("index_cache/html/fit-Game-partial_5255b5549d9efad2801deca4929c300a")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mGame), model="Game", ec="Partial")
+)
+# Drink
+lazyLoad("index_cache/html/fit-Drink-partial_f9f41fe0e199f7e71480fb0585a05998")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mDrink), model="Drink", ec="Partial")
+)
+# Jacket
+lazyLoad("index_cache/html/fit-Jacket-partial_f0f03cd4a74d757485381cd8c8b50e94")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mJacket), model="Jacket", ec="Partial")
+)
+# Play
+lazyLoad("index_cache/html/fit-Play-partial_a28d3ee9c4f27762b0638e13d2e60264")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mPlay), model="Play", ec="Partial")
+)
+# Gym
+lazyLoad("index_cache/html/fit-Gym-partial_368044997c928f96a9c54d4ed636da73")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mGym), model="Gym", ec="Partial")
+)
+# Plane
+lazyLoad("index_cache/html/fit-Plane-partial_e9814a9b42773027e1021f7b1044a2b2")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mPlane), model="Plane", ec="Partial")
+)
+
+# ---- None ---- #
+# MrAB
+lazyLoad("index_cache/html/fit-MrAB-no_bd32e72c928d6b16754abf9defecafd0")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mMrAB1), model="MrAB1", ec="None")
+)
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mMrAB2), model="MrAB2", ec="None")
+)
+# Game
+lazyLoad("index_cache/html/fit-Game-no_69d165d6155e372d3bc66ec7bdebe523")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mGame), model="Game", ec="None")
+)
+# Drink
+lazyLoad("index_cache/html/fit-Drink-no_e5bfe22355e04816e6cbcf7b5752e2c5")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mDrink), model="Drink", ec="None")
+)
+# Jacket
+lazyLoad("index_cache/html/fit-Jacket-no_b195d6ad78d3a373a5daca6a8d18a842")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mJacket), model="Jacket", ec="None")
+)
+# Play
+lazyLoad("index_cache/html/fit-Play-no_5ee5bf98ac826717a09654c3f010cfd4")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mPlay), model="Play", ec="None")
+)
+# Gym
+lazyLoad("index_cache/html/fit-Gym-no_5cc6a944399d1fe8b67244e5e5ac51ec")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mGym), model="Gym", ec="None")
+)
+# Plane
+lazyLoad("index_cache/html/fit-Plane-no_ddc9f0edf0df2459f37ee16c441b9a3f")
+df_plot <- rbind(df_plot,
+                 data.frame(post=get_posterior(mPlane), model="Plane", ec="None")
+)
+
+
+
+df_plot %>% 
+  mutate(model=factor(model, levels = c('MrAB1', 'MrAB2', 'Game', 'Drink', 'Jacket', 'Play', 'Gym', 'Plane'))) %>%
+  mutate(ec=factor(ec, levels = c('Preregistered', 'Exploratory', 'Partial', 'None'))) %>%
+  ggplot(aes(post, color=ec)) +
+  geom_density(alpha=0, size=1) +
+  facet_wrap(~model, scales = "free") +
+  labs(color='Exclusion Criterion', y="Posterior Probability") +
+  theme_pubr() + theme(legend.position = c(0.85, 0.15)) +
+  scale_color_manual(values = c("#E69F00", "#56B4E9", "#009E73", "#F0E442")) +
+  theme(text = element_text(size = 15), 
+        axis.ticks.y = element_blank(), 
+        axis.text.y = element_blank(),
+        axis.ticks.x = element_blank(), 
+        axis.text.x = element_blank())  
+
+ggsave('index_files/figure-html/Hierarchical Bayesian Meta-Analysis - Supplementary Figure.pdf', width = 10, height = 7)  
+ggsave('index_files/figure-html/Hierarchical Bayesian Meta-Analysis - Supplementary Figure.svg', width = 10, height = 7)  
+ggsave('index_files/figure-html/Hierarchical Bayesian Meta-Analysis - Supplementary Figure.png', width = 10, height = 7)  
+
+
+
+unique(df_plot$ec)
+
+df_plot$post_diff <- c(
+  df_plot$post[df_plot$ec=='Preregistered'],
+  df_plot$post[df_plot$ec=='Preregistered']-df_plot$post[df_plot$ec=='Exploratory'],
+  df_plot$post[df_plot$ec=='Preregistered']-df_plot$post[df_plot$ec=='Partial'],
+  df_plot$post[df_plot$ec=='Preregistered']-df_plot$post[df_plot$ec=='None']
+)
+
+df_plot$post[df_plot$ec=='Preregistered']-df_plot$post[df_plot$ec=='None']
+df_plot %>% 
+  mutate(model=factor(model, level = c('MrAB1', 'MrAB2', 'Game', 'Drink', 'Jacket', 'Play', 'Gym', 'Plane'))) %>%
+  mutate(ec=factor(ec, level = c('Preregistered', 'Exploratory', 'Partial', 'None'))) %>%
+  filter(ec!='Preregistered') %>% 
+  ggplot(aes(post_diff, color=ec)) +
+  geom_density(alpha=0, size=1) +
+  geom_vline(xintercept = 0, linetype=2, color='gray') +
+  facet_wrap(~model, scales = "free") +
+  labs(color='Other Datasets', y="Posterior Probability", x='Preregistered Dataset - Other Datasets') +
+  theme_pubr() + theme(legend.position = c(0.85, 0.15)) +
+  scale_color_manual(values = c("#E69F00", "#56B4E9", "#009E73", "#F0E442")) +
+  theme(text = element_text(size = 15), 
+        axis.ticks.y = element_blank(), 
+        axis.text.y = element_blank(),
+        axis.ticks.x = element_blank(), 
+        axis.text.x = element_blank())
+
+df_plot %>% 
+  mutate(model=factor(model, level = c('MrAB1', 'MrAB2', 'Game', 'Drink', 'Jacket', 'Play', 'Gym', 'Plane'))) %>%
+  mutate(ec=factor(ec, level = c('Preregistered', 'Exploratory', 'Partial', 'None'))) %>%
+  filter(ec!='Preregistered') %>% 
+  group_by(model, ec) %>% 
+  summarise(mean(post_diff>0 | post_diff>0))
+
+
+prova <- df_plot %>% 
+  mutate(model=factor(model, level = c('MrAB1', 'MrAB2', 'Game', 'Drink', 'Jacket', 'Play', 'Gym', 'Plane'))) %>%
+  mutate(ec=factor(ec, level = c('Preregistered', 'Exploratory', 'Partial', 'None'))) %>%
+  filter(ec!='Preregistered') %>%
+  filter(ec=='Exploratory', model=='MrAB1')
+  
+
+mean(prova$post_diff>0 | prova$post_diff<0)
+
+ggsave('index_files/figure-html/Hierarchical Bayesian Meta-Analysis - Supplementary Figure1.pdf', width = 10, height = 7)  
+ggsave('index_files/figure-html/Hierarchical Bayesian Meta-Analysis - Supplementary Figure1.svg', width = 10, height = 7)  
+ggsave('index_files/figure-html/Hierarchical Bayesian Meta-Analysis - Supplementary Figure1.png', width = 10, height = 7)  
+
+
+

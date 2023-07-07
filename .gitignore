@@ -2,3 +2,4 @@
 *_cache 
 .Rproj.user
 .vscode
+.gitignore

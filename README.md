@@ -1,26 +1,9 @@
-Refer to article:
+## The robustness of mental accounting: A global perspective
 
-**Priolo et al. The robustness of mental accounting: A global perspective. 2023**
+In this repository, we provide code to run the *Power Analysis* and the *Analysis Plan*, code and data to analyse the *Pilot* study, and code and data to analyse the *Final* study described in Priolo et al. (2023): "The robustness of mental accounting: A global perspective".
+
 
 ## Data 
 
-Data used to in code is available at Zenodo
 
-
-
-[Preliminary Analysis](https://run.pavlovia.org/simonedambrogio/research-record-mental-account-replication/)
-
-[Study Analysis](https://run.pavlovia.org/simonedambrogio/mmar-analysis)
-
-
-### TO DO:
-
-- Check Numbers of different exclusion criterions
-
-- Run Exploratory analysis
-
-- Supplementary Results
-
-- Report htmt\
-    Write replication rate automatically (127/140 successful replications)
-
+For any questions, comments, or suggestions, please reach out to Simone D'Ambrogio (simone.dambrogio@psy.ox.ac.uk).
