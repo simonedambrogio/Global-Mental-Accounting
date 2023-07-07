@@ -156,7 +156,6 @@ Jacket %>%
   scale_x_continuous(breaks = 0:5)
 
 
-
 data = MrAB %>% 
   # Tidy
   mutate(Age=as.numeric(Age)) %>%
@@ -256,25 +255,6 @@ df <- rbind(
   df_plot(mDrink, 7, "Drink"),
   df_plot(mGym, 8, "Gym")
 ) 
-
-df %>% filter(var=="Financial\nLiteracy")
-
-df %>% 
-  ggplot(aes(x, beta, fill=var, color=var, shape=is_sign, linetype=is_sign)) +
-  geom_hline(yintercept = 0, linewidth=0.2) +
-  geom_segment(aes(x = x, xend=x, y=lower, yend=upper)) +
-  geom_point(stat="identity", size=3) +
-  theme_pubr() +
-  scale_x_continuous(breaks = c(1.5, 3:8), 
-                     labels = c("MrAB", "Game", "Jacket", "Play", 
-                                "Plane", "Drink", "Gym"),
-                     guide = "prism_offset") +
-  scale_y_continuous(guide = "prism_offset") + 
-  labs(fill=NULL, x=NULL, y=expression(beta), color=NULL) +
-  theme(legend.position = c(0.9, 0.25), 
-        text = element_text(size = 15)) +
-  guides(fill="none", alpha="none") +
-  facet_wrap(~var, scale="free")
 
 
 df %>% 

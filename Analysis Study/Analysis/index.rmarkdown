@@ -103,6 +103,7 @@ countries2remove_attention_check_grater_than_2 <- data_MrAB %>%
 ```
 
 
+
 ## Exclusion Criterion
 
 In this report we define five exclusion criterion. First, exclude participants with a completion time lower than a third of the median value of the Length of Interview [$LOI_{subject} < {Mdn(LOI) \over 3}$]. Second, exclude participants whose Country group is different than their Residence OR Native Language [$(Residence | Native~Language) != Country$]. Third, exclude participants who will report a value below 4 (i.e. 1-3) on the “attentional check” question (i.e. “How serious have you been about filling in the survey?”) [$attentional~ check < 4$]. Fourth, exclude participants who will report a value below 3 (i.e. 1-2) on the “attentional check” question [$attentional~ check < 3$]. Fifth, exclude countries with a sample size lower than 250 participants [$Sample < 250$]. 
@@ -131,6 +132,7 @@ In this report we will run the entire analysis protocol for five exclusion crite
 Demographics of the sample. 
 
 #### Preregistered
+
 
 ```{r demographics}
 #| code-summary: "Create table"
@@ -239,7 +241,9 @@ data_table %>%
 
 ```
 
+
 #### Exploratory
+
 
 ```{r demographics-exploratory}
 #| code-summary: "Create table"
@@ -313,7 +317,9 @@ data_table %>%
 
 ```
 
+
 #### Partial 
+
 
 ```{r demographics-partial}
 #| code-summary: "Create table"
@@ -386,7 +392,9 @@ data_table %>%
 
 ```
 
+
 #### None 
+
 
 ```{r demographics-none}
 #| code-summary: "Create table"
@@ -459,6 +467,7 @@ data_table %>%
 ```
 
 
+
 :::
 
 <br><br>
@@ -474,6 +483,7 @@ In this section we show the effect size of each study for each country. We use l
 ::: {.panel-tabset}
 
 ### Preregistered
+
 
 ```{r create-preregistered-exclusion }
 #| code-summary: "Create preregistered exclusion dataset"
@@ -699,7 +709,9 @@ cowplot::plot_grid(plot_OR, plot_d, nrow = 1, rel_widths = c(0.7, .3))
 ```
 
 
+
 ### Full
+
 
 
 ```{r create-full }
@@ -918,7 +930,9 @@ cowplot::plot_grid(plot_OR, plot_d, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 ### Exploratory
+
 
 ```{r create-exploratory }
 #| code-summary: "Create exploratory dataset"
@@ -1130,7 +1144,9 @@ cowplot::plot_grid(plot_OR, plot_d, nrow = 1, rel_widths = c(0.7, .3))
 ```
 
 
+
 ### Partial
+
 
 ```{r create-partial-exclusion }
 #| code-summary: "Create partial exclusion dataset"
@@ -1333,7 +1349,9 @@ cowplot::plot_grid(plot_OR, plot_d, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 ### None
+
 
 ```{r create-no-exclusion }
 #| code-summary: "Create no exclusion dataset"
@@ -1529,6 +1547,7 @@ cowplot::plot_grid(plot_OR, plot_d, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 :::
 
 <br><br>
@@ -1554,6 +1573,7 @@ Click on the tabs to see the model's summary for each study
 #### MrAB
 
 
+
 ```{r}
 #| include: false
 
@@ -1570,8 +1590,6 @@ n_participants <- nrow(
   df %>% mutate(Age=as.numeric(Age)) %>% filter(Age>0 & Age<99)
   )
 ```
-
-
 
 ```{r fit-MrAB}
 #| code-summary: Show codes
@@ -1630,7 +1648,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mMrAB2)
 ```
 
+
 #### Game
+
 ```{r fit-Game}
 #| code-summary: Show codes
 #| eval: true
@@ -1665,7 +1685,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mGame)
 ```
 
+
 #### Drink
+
 ```{r fit-Drink}
 #| code-summary: Show codes
 #| eval: true
@@ -1698,7 +1720,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mDrink)
 ```
 
+
 #### Jacket
+
 ```{r fit-Jacket}
 #| code-summary: Show codes
 #| eval: true
@@ -1732,7 +1756,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mJacket)
 ```
 
+
 #### Play
+
 ```{r fit-Play}
 #| code-summary: Show codes
 #| eval: true
@@ -1766,7 +1792,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlay)
 ```
 
+
 #### Gym
+
 ```{r fit-Gym}
 #| code-summary: Show codes
 #| eval: true
@@ -1800,7 +1828,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mGym)
 ```
 
+
 #### Plane
+
 ```{r fit-Plane}
 #| code-summary: Show codes
 #| eval: true
@@ -1834,11 +1864,13 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlane)
 ```
 
+
 :::
 
 ::: {.panel-tabset}
 
 #### Plot
+
 
 ```{r plot-posteriors-preregistered}
 #| fig-width: 8
@@ -1930,7 +1962,9 @@ cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-preregistered}
 #| eval: true
@@ -1970,6 +2004,7 @@ table_bayesian[,c(4,1:3)] %>%
   kable_material(c("striped", "hover"))
 
 ```
+
  
 ::: 
 
@@ -1987,6 +2022,7 @@ Click on the tabs to see the model's summary for each study
 
 #### MrAB
 
+
 ```{r}
 #| include: false
 df <- data_Plane %>% 
@@ -2002,7 +2038,6 @@ n_participants <- nrow(
   df %>% mutate(Age=as.numeric(Age)) %>% filter(Age>0 & Age<99)
   )
 ```
-
 
 ```{r fit-MrAB-partial}
 #| code-summary: Show codes
@@ -2061,7 +2096,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mMrAB2)
 ```
 
+
 #### Game
+
 ```{r fit-Game-partial}
 #| code-summary: Show codes
 #| eval: true
@@ -2097,7 +2134,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mGame)
 ```
 
+
 #### Drink
+
 
 ```{r fit-Drink-partial}
 #| code-summary: Show codes
@@ -2132,7 +2171,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mDrink)
 ```
 
+
 #### Jacket
+
 ```{r fit-Jacket-partial}
 #| code-summary: Show codes
 #| eval: true
@@ -2167,7 +2208,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mJacket)
 ```
 
+
 #### Play
+
 ```{r fit-Play-partial}
 #| code-summary: Show codes
 #| eval: true
@@ -2202,7 +2245,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlay)
 ```
 
+
 #### Gym
+
 ```{r fit-Gym-partial}
 #| code-summary: Show codes
 #| eval: true
@@ -2237,7 +2282,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mGym)
 ```
 
+
 #### Plane
+
 ```{r fit-Plane-partial}
 #| code-summary: Show codes
 #| eval: true
@@ -2271,11 +2318,13 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlane)
 ```
 
+
 :::
 
 ::: {.panel-tabset}
 
 #### Plot 
+
 
 ```{r plot-posteriors-partial-exclusion}
 #| fig-width: 8
@@ -2367,7 +2416,9 @@ cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-preregistered-partial}
 #| eval: true
@@ -2407,6 +2458,7 @@ table_bayesian[,c(4,1:3)] %>%
   kable_material(c("striped", "hover"))
 
 ```
+
  
  
 :::
@@ -2425,6 +2477,7 @@ Number of participants: `r n_participants`
 Click on the tabs to see the model's summary for each study
 
 #### MrAB
+
 
 ```{r}
 #| include: false
@@ -2501,7 +2554,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mMrAB2)
 ```
 
+
 #### Game
+
 
 ```{r fit-Game-full}
 #| code-summary: Show codes
@@ -2537,7 +2592,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mGame)
 ```
 
+
 #### Drink
+
 
 ```{r fit-Drink-full}
 #| code-summary: Show codes
@@ -2572,7 +2629,9 @@ sjPlot::tab_model(mDrink)
 ```
 
 
+
 #### Jacket
+
 
 ```{r fit-Jacket-full}
 #| code-summary: Show codes
@@ -2607,7 +2666,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mJacket)
 ```
 
+
 #### Play
+
 
 ```{r fit-Play-full}
 #| code-summary: Show codes
@@ -2642,7 +2703,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlay)
 ```
 
+
 #### Gym
+
 
 ```{r fit-Gym-full}
 #| code-summary: Show codes
@@ -2677,7 +2740,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mGym)
 ```
 
+
 #### Plane
+
 
 ```{r fit-Plane-full}
 #| code-summary: Show codes
@@ -2711,12 +2776,14 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlane)
 ```
 
+
 :::
 
 
 ::: {.panel-tabset}
 
 #### Plot
+
 
 ```{r plot-posteriors-preregistered-full}
 #| fig-width: 8
@@ -2809,7 +2876,9 @@ cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-preregistered-full}
 #| eval: true
@@ -2850,6 +2919,7 @@ table_bayesian[,c(4,1:3)] %>%
 
 ```
 
+
 :::
 
 Number of participants: `r n_participants`
@@ -2864,6 +2934,7 @@ Number of participants: `r n_participants`
 Click on the tabs to see the model's summary for each study
 
 #### MrAB
+
 
 ```{r}
 #| include: false
@@ -2884,7 +2955,6 @@ n_participants <- nrow(
   df %>% mutate(Age=as.numeric(Age)) %>% filter(Age>0 & Age<99)
   )
 ```
-
 
 ```{r fit-MrAB-exploratory}
 #| code-summary: Show codes
@@ -2943,7 +3013,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mMrAB2)
 ```
 
+
 #### Game
+
 
 ```{r fit-Game-exploratory}
 #| code-summary: Show codes
@@ -2979,7 +3051,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mGame)
 ```
 
+
 #### Drink
+
 
 ```{r fit-Drink-exploratory}
 #| code-summary: Show codes
@@ -3013,7 +3087,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mDrink)
 ```
 
+
 #### Jacket
+
 
 ```{r fit-Jacket-exploratory}
 #| code-summary: Show codes
@@ -3048,7 +3124,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mJacket)
 ```
 
+
 #### Play
+
 
 ```{r fit-Play-exploratory}
 #| code-summary: Show codes
@@ -3083,7 +3161,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlay)
 ```
 
+
 #### Gym
+
 
 ```{r fit-Gym-exploratory}
 #| code-summary: Show codes
@@ -3118,7 +3198,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mGym)
 ```
 
+
 #### Plane
+
 
 ```{r fit-Plane-exploratory}
 #| code-summary: Show codes
@@ -3152,12 +3234,14 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlane)
 ```
 
+
 :::
 
 
 ::: {.panel-tabset}
 
 #### Plot
+
 
 ```{r plot-posteriors-exploratory}
 #| fig-width: 8
@@ -3250,7 +3334,9 @@ cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-preregistered-exploratory}
 #| eval: true
@@ -3291,6 +3377,7 @@ table_bayesian[,c(4,1:3)] %>%
 
 ```
 
+
 ::: 
 
 Number of participants: `r n_participants`
@@ -3305,6 +3392,7 @@ Number of participants: `r n_participants`
 Click on the tabs to see the model's summary for each study
 
 #### MrAB
+
 
 ```{r}
 #| include: false
@@ -3375,7 +3463,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mMrAB2)
 ```
 
+
 #### Game
+
 
 ```{r fit-Game-no}
 #| code-summary: Show codes
@@ -3413,7 +3503,9 @@ sjPlot::tab_model(mGame)
 ```
 
 
+
 #### Drink
+
 
 ```{r fit-Drink-no}
 #| code-summary: Show codes
@@ -3448,7 +3540,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mDrink)
 ```
 
+
 #### Jacket
+
 
 ```{r fit-Jacket-no}
 #| code-summary: Show codes
@@ -3484,7 +3578,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mJacket)
 ```
 
+
 #### Play
+
 
 ```{r fit-Play-no}
 #| code-summary: Show codes
@@ -3520,7 +3616,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlay)
 ```
 
+
 #### Gym
+
 
 ```{r fit-Gym-no}
 #| code-summary: Show codes
@@ -3556,7 +3654,9 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mGym)
 ```
 
+
 #### Plane
+
 
 ```{r fit-Plane-no}
 #| code-summary: Show codes
@@ -3591,12 +3691,14 @@ table_bayesian <- rbind(
 sjPlot::tab_model(mPlane)
 ```
 
+
 :::
 
 
 ::: {.panel-tabset}
 
 #### Plot
+
 
 ```{r plot-posteriors-no-exclusion}
 #| fig-width: 8
@@ -3688,7 +3790,9 @@ cowplot::plot_grid(post_OR, post_SMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-preregistered-no-exclusion}
 #| eval: true
@@ -3729,6 +3833,7 @@ table_bayesian[,c(4,1:3)] %>%
 
 ```
 
+
 :::
 
 Number of participants: `r n_participants`
@@ -3756,6 +3861,7 @@ In this section we perform a Bayesian unpooled analysis. We will compute the eff
 Click on the tabs to see the model's summary for each study
 
 #### MrAB
+
 
 ```{r fit-MrAB-unpooled-full-exclusion}
 #| code-summary: Show codes
@@ -3957,7 +4063,9 @@ rmarkdown::paged_table(
 ```
 
 
+
 #### Game
+
 
 ```{r fit-Game-unpooled-full-exclusion}
 #| code-summary: Show codes
@@ -4062,7 +4170,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Drink
+
 
 ```{r fit-Drink-unpooled-full-exclusion}
 #| code-summary: Show codes
@@ -4174,7 +4284,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Jacket
+
 
 ```{r fit-Jacket-unpooled-full-exclusion}
 #| code-summary: Show codes
@@ -4278,7 +4390,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Play
+
 
 ```{r fit-Play-unpooled-full-exclusion}
 #| code-summary: Show codes
@@ -4382,7 +4496,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Gym
+
 
 ```{r fit-Gym-unpooled-full-exclusion}
 #| code-summary: Show codes
@@ -4490,7 +4606,9 @@ rmarkdown::paged_table(
 ```
 
 
+
 #### Plane
+
 
 ```{r fit-Plane-unpooled-full-exclusion}
 #| code-summary: Show codes
@@ -4594,7 +4712,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 :::
+
 
 ```{r unpooled-replication-rate}
 #| echo: false
@@ -4619,11 +4739,13 @@ unpooled <- map_dfr(as.list(unique(post$Country)), function(country){
  # effects for `r unpooled$Country |> unique() |> length()` countries, for a total of 147 effects, and found an overall replication rate of `r unpooled$replication |> mean() |> round(digits=3) * 100`%
 ```
 
+
 We estimated `r (n_studies = unpooled$x |> unique() |> length())` effects for `r (n_countries = unpooled$Country |> unique() |> length())` countries, for a total of `r n_studies*n_countries` effects, and found an overall replication rate of `r unpooled$replication |> mean() |> round(digits=3) * 100`%
 
 ::: {.panel-tabset}
 
 #### Plot
+
 
 ```{r figure2 }
 #| fig-width: 8
@@ -4671,7 +4793,9 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-preregistered-unpooled}
 #| eval: true
@@ -4703,6 +4827,7 @@ table_unpooled %>%
 
 ```
 
+
 :::
 
 ### Partial
@@ -4714,6 +4839,7 @@ table_unpooled %>%
 Click on the tabs to see the model's summary for each study
 
 #### MrAB
+
 
 ```{r fit-MrAB-unpooled-partial-exclusion}
 #| code-summary: Show codes
@@ -4913,7 +5039,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Game
+
 
 ```{r fit-Game-unpooled-partial-exclusion}
 #| code-summary: Show codes
@@ -5018,7 +5146,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Drink
+
 
 ```{r fit-Drink-unpooled-partial-exclusion}
 #| code-summary: Show codes
@@ -5130,7 +5260,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Jacket
+
 
 ```{r fit-Jacket-unpooled-partial-exclusion}
 #| code-summary: Show codes
@@ -5234,7 +5366,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Play
+
 
 ```{r fit-Play-unpooled-partial-exclusion}
 #| code-summary: Show codes
@@ -5338,7 +5472,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Gym
+
 
 ```{r fit-Gym-unpooled-partial-exclusion}
 #| code-summary: Show codes
@@ -5445,7 +5581,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Plane
+
 
 ```{r fit-Plane-unpooled-partial-exclusion}
 #| code-summary: Show codes
@@ -5549,11 +5687,13 @@ rmarkdown::paged_table(
   )
 ```
 
+
 :::
 
 ::: {.panel-tabset}
 
 #### Plot
+
 
 ```{r plot-unpooled-posteriors-partial-exclusion}
 #| fig-width: 8
@@ -5601,7 +5741,9 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-unpooled-partial}
 #| eval: true
@@ -5632,6 +5774,7 @@ table_unpooled %>%
 
 ```
 
+
 :::
 
 ### Full
@@ -5643,6 +5786,7 @@ table_unpooled %>%
 Click on the tabs to see the model's summary for each study
 
 #### MrAB
+
 
 ```{r fit-MrAB-unpooled-full}
 #| code-summary: Show codes
@@ -5847,7 +5991,9 @@ rmarkdown::paged_table(
 ```
 
 
+
 #### Game
+
 
 ```{r fit-Game-unpooled-full}
 #| code-summary: Show codes
@@ -5954,7 +6100,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Drink
+
 
 ```{r fit-Drink-unpooled-full}
 #| code-summary: Show codes
@@ -6068,7 +6216,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Jacket
+
 
 ```{r fit-Jacket-unpooled-full}
 #| code-summary: Show codes
@@ -6174,7 +6324,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Play
+
 
 ```{r fit-Play-unpooled-full}
 #| code-summary: Show codes
@@ -6280,7 +6432,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Gym
+
 
 ```{r fit-Gym-unpooled-full}
 #| code-summary: Show codes
@@ -6390,7 +6544,9 @@ rmarkdown::paged_table(
 ```
 
 
+
 #### Plane
+
 
 ```{r fit-Plane-unpooled-full}
 #| code-summary: Show codes
@@ -6496,11 +6652,13 @@ rmarkdown::paged_table(
   )
 ```
 
+
 :::
 
 ::: {.panel-tabset}
 
 #### Plot
+
 
 ```{r plot-unpooled-posteriors-full}
 #| fig-width: 8
@@ -6548,7 +6706,9 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-unpooled-full}
 #| eval: true
@@ -6578,6 +6738,7 @@ table_unpooled %>%
 
 ```
 
+
 :::
 
 ### Exploratory
@@ -6589,6 +6750,7 @@ table_unpooled %>%
 Click on the tabs to see the model's summary for each study
 
 #### MrAB
+
 
 ```{r fit-MrAB-unpooled-exploratory}
 #| code-summary: Show codes
@@ -6791,7 +6953,9 @@ rmarkdown::paged_table(
 ```
 
 
+
 #### Game
+
 
 ```{r fit-Game-unpooled-exploratory}
 #| code-summary: Show codes
@@ -6897,7 +7061,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Drink
+
 
 ```{r fit-Drink-unpooled-exploratory}
 #| code-summary: Show codes
@@ -7009,7 +7175,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Jacket
+
 
 ```{r fit-Jacket-unpooled-exploratory}
 #| code-summary: Show codes
@@ -7114,7 +7282,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Play
+
 
 ```{r fit-Play-unpooled-exploratory}
 #| code-summary: Show codes
@@ -7219,7 +7389,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Gym
+
 
 ```{r fit-Gym-unpooled-exploratory}
 #| code-summary: Show codes
@@ -7328,7 +7500,9 @@ rmarkdown::paged_table(
 ```
 
 
+
 #### Plane
+
 
 ```{r fit-Plane-unpooled-exploratory}
 #| code-summary: Show codes
@@ -7433,12 +7607,14 @@ rmarkdown::paged_table(
   )
 ```
 
+
 :::
 
 
 ::: {.panel-tabset}
 
 #### Plot
+
 
 ```{r plot-unpooled-posteriors-exploratory}
 #| fig-width: 8
@@ -7486,7 +7662,9 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-unpooled-exploratory}
 #| eval: true
@@ -7517,6 +7695,7 @@ table_unpooled %>%
 
 ```
 
+
 :::
 
 ### None
@@ -7528,6 +7707,7 @@ table_unpooled %>%
 Click on the tabs to see the model's summary for each study
 
 #### MrAB
+
 
 ```{r fit-MrAB-unpooled-no-exclusion}
 #| code-summary: Show codes
@@ -7721,7 +7901,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Game
+
 
 ```{r fit-Game-unpooled-no-exclusion}
 #| code-summary: Show codes
@@ -7822,7 +8004,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Drink
+
 
 ```{r fit-Drink-unpooled-no-exclusion}
 #| code-summary: Show codes
@@ -7930,7 +8114,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Jacket
+
 
 ```{r fit-Jacket-unpooled-no-exclusion}
 #| code-summary: Show codes
@@ -8030,7 +8216,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Play
+
 
 ```{r fit-Play-unpooled-no-exclusion}
 #| code-summary: Show codes
@@ -8130,7 +8318,9 @@ rmarkdown::paged_table(
   )
 ```
 
+
 #### Gym
+
 
 ```{r fit-Gym-unpooled-no-exclusion}
 #| code-summary: Show codes
@@ -8234,7 +8424,9 @@ rmarkdown::paged_table(
 ```
 
 
+
 #### Plane
+
 
 ```{r fit-Plane-unpooled-no-exclusion}
 #| code-summary: Show codes
@@ -8334,11 +8526,13 @@ rmarkdown::paged_table(
   )
 ```
 
+
 :::
 
 ::: {.panel-tabset}
 
 #### Plot
+
 
 ```{r plot-unpooled-posteriors-no-exclusion}
 #| fig-width: 8
@@ -8386,7 +8580,9 @@ cowplot::plot_grid(plotOR, plotSMD, nrow = 1, rel_widths = c(0.7, .3))
 
 ```
 
+
 #### Table
+
 
 ```{r table-unpooled-no}
 #| eval: true
@@ -8416,6 +8612,7 @@ table_unpooled %>%
 
 ```
 
+
 :::
 
 ::: 
@@ -8428,6 +8625,7 @@ In this section we perform a Bayesian unpooled analysis to explore the role of f
 ::: {.panel-tabset}
 
 ### <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/120px-Home-icon.svg.png" width="20">
+
 
 ```{r fit-exploratory-models}
 #| code-summary: "Show exploratory model fit"
@@ -8688,7 +8886,9 @@ df %>%
 
 ```
 
+
 ###  Age
+
 
 ```{r age-plot }
 #| code-summary: "Show plot code"
@@ -8710,7 +8910,9 @@ Jacket %>%
 
 ```
 
+
 ###  Education
+
 
 ```{r education-plot }
 #| code-summary: "Show plot code"
@@ -8736,7 +8938,9 @@ Jacket %>%
 
 ```
 
+
 ###  Gender
+
 
 ```{r gender-plot }
 #| code-summary: "Show plot code"
@@ -8763,7 +8967,9 @@ Jacket %>%
   labs(x="Proportion of Male", y=NULL)
 ```
 
+
 ###  Income
+
 
 ```{r income-plot }
 #| code-summary: "Show plot code"
@@ -8789,7 +8995,9 @@ Jacket %>%
 
 ```
 
+
 ###  Financial Literacy
+
 
 ```{r financial-literacy-plotly }
 #| code-summary: "Show plot code"
@@ -8816,7 +9024,9 @@ fig <- plot_ly(plotlyDat,  type = 'scatter', mode = 'lines',
 fig
 ```
 
+
 :::
+
 
 ```{bash, engine.opts='-l'}
 #| warning: false
@@ -8838,8 +9048,4 @@ git commit -m "update report"
 git push
 
 ```
-
-
-
-
 
