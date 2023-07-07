@@ -1,8 +1,4 @@
----
-output:
-  html_document: default
-  pdf_document: default
----
+
 ## Data Description
 
 The dataset is organized in a long format.
