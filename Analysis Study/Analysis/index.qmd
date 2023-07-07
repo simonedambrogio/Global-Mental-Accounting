@@ -8827,7 +8827,7 @@ fig
 # update-pavlovia-0
 
 pathdir="/Volumes/PROJECTS/Ongoing/MMAR/Pavlovia/mmar-analysis"
-pathdir="/media/simonedambrogio/PROJECTS/Ongoing/MMAR/Pavlovia/mmar-analysis"
+# pathdir="/media/simonedambrogio/PROJECTS/Ongoing/MMAR/Pavlovia/mmar-analysis"
 cp -r index_files $pathdir
 cp index.html $pathdir
 

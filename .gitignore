@@ -5,3 +5,5 @@
 .gitignore
 Analysis Study/Data/Raw Qualtrics Data/
 Analysis Study/Data/preprocessing codes.R
+Analysis Study/Analysis/%
+Analysis Study/Analysis/tables/
