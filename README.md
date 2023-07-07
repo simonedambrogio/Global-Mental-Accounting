@@ -13,7 +13,7 @@ Preregistered Data: Analysis Study/Data/Preregristered
 Data with no exlusion criterion: Analysis Study/Data
 
 ## Other Analyses
-Click on the following links to acces a web-page that includes code usied for the [Power Analysis](https://run.pavlovia.org/simonedambrogio/research-record-mental-account-replication/Power%20Analysis.html), [Analysis Plan](https://run.pavlovia.org/simonedambrogio/research-record-mental-account-replication/Analysis%20Plan.html), and [Pilot](https://run.pavlovia.org/simonedambrogio/research-record-mental-account-replication/Compare%20Pilot%20Version.html).
+Click on the following links to acces a web-page that includes code usied for the [Power Analysis](https://run.pavlovia.org/simonedambrogio/research-record-mental-account-replication/Power%20Analysis.html), [Analysis Plan](https://run.pavlovia.org/simonedambrogio/research-record-mental-account-replication/Analysis%20Plan.html), and [Pilot](https://run.pavlovia.org/simonedambrogio/research-record-mental-account-replication/Compare%20Pilot%20Version.html) (Source code: Other Analyses/).
 
 ---
 
