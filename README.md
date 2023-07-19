@@ -2,6 +2,9 @@
 
 In this repository, we provide code and data to analyse the *Final* study described in Priolo et al. (2023): "The robustness of mental accounting: A global perspective". We also provide code to run the *Power Analysis* and the *Analysis Plan*, code and data to analyse the *Pilot* study.
 
+## Demo
+Click [here](https://run.pavlovia.org/simonedambrogio/mmar-demo/) to access a web-page that includes a demo with a small dataset that only includes the Plane study and the first three countries: Austria, Brazil, and Canada. Source code: Analysis Study/Analysis/index.qmd. You can execute it on your machine using the command ``` quarto render index.qmd ```
+
 ## Analysis Study
 
 Click [here](https://run.pavlovia.org/simonedambrogio/mmar-analysis/) to access a web-page that includes all the codes used to produce the results reported in the main text and in the supplementary materials are (Source code: Analysis Study/Analysis/index.qmd).
