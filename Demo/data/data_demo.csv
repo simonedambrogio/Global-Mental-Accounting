@@ -1,0 +1,1551 @@
+"","subject","Gender","Age","Income","numeric_income","Education","Country","FinancialLiteracy","condition","response"
+"1","R_YbiZdXhcwrYYiUF","Female",50,"Prefer not to answer",NA,11,"Austria",2,"free",0
+"2","R_1puPa4dqnAjWUnB","Male",66,"50000 € - 60000 €",4,18,"Austria",4,"free",0
+"3","R_eexGPMWuZPgFuH7","Female",27,"20000 € - 30000 €",1,17,"Austria",3,"free",0
+"4","R_1FK6nwfwT9fshfd","Female",22,"Less than 20000€",0,12,"Austria",0,"free",1
+"5","R_2VK03IlPZz32bZw","Female",25,"Less than 20000€",0,19,"Austria",3,"free",0
+"6","R_3GrkyYBOKbwbJhp","Male",21,"Less than 20000€",0,13,"Austria",4,"free",0
+"7","R_3qySGrCbpiW1JqM","Female",45,"Less than 20000€",0,13,"Austria",0,"free",1
+"8","R_RabPHaUrofh7NKx","Female",24,"Less than 20000€",0,16,"Austria",2,"free",0
+"9","R_xhf3dYoTU4SWDOV","Female",61,"20000 € - 30000 €",1,10,"Austria",2,"free",1
+"10","R_2wRWezYLSMQyhPe","Male",23,"40000 € - 50000 €",3,6,"Austria",2,"free",0
+"11","R_2c8ybwsShS1ZH98","Female",38,"More than 60000 €",5,22,"Austria",2,"free",0
+"12","R_2WHIGrLSpYatAZU","Female",49,"More than 60000 €",5,18,"Austria",3,"free",0
+"13","R_Xv1yCIjapbQc7jb","Female",32,"20000 € - 30000 €",1,14,"Austria",2,"free",0
+"14","R_XLnHy34yyPFT4XL","Female",18,"Less than 20000€",0,12,"Austria",3,"free",0
+"15","R_1Qc1ylA0KVSc8vk","Female",31,"Less than 20000€",0,12,"Austria",3,"free",0
+"16","R_2QXMwmvsxnxHFt2","Female",24,"Less than 20000€",0,8,"Austria",3,"free",0
+"17","R_2SAA6G0EggPrOwd","Male",34,"Less than 20000€",0,12,"Austria",4,"free",1
+"18","R_3CQ0hj1F413OZX2","Male",24,"Less than 20000€",0,18,"Austria",3,"free",0
+"19","R_2ar7FmuHr7d4K9V","Female",22,"Less than 20000€",0,13,"Austria",3,"free",0
+"20","R_27xNPuELJRwkqK2","Female",22,"20000 € - 30000 €",1,16,"Austria",3,"free",0
+"21","R_vNbJboIEnSZafnP","Female",26,"More than 60000 €",5,18,"Austria",3,"free",0
+"22","R_3e93y0QsTvgesM2","Female",68,"Less than 20000€",0,11,"Austria",1,"free",0
+"23","R_1F9P99aUmPYThss","Female",37,"Less than 20000€",0,18,"Austria",4,"free",0
+"24","R_R84IzhMLtUYhgGt","Female",47,"More than 60000 €",5,12,"Austria",1,"free",0
+"25","R_1P7uvD8rgWJb8XC","Male",50,"More than 60000 €",5,22,"Austria",3,"free",0
+"26","R_1odLwOzaLWVZZsW","Male",34,"20000 € - 30000 €",1,12,"Austria",2,"free",0
+"27","R_1gBJtlbV3s4YqTj","Male",39,"30000 € - 40000 €",2,16,"Austria",3,"free",0
+"28","R_1M5Nt8LaNZ3Ye8v","Male",19,"20000 € - 30000 €",1,12,"Austria",2,"free",0
+"29","R_AngQ9ZAhDmYhyGl","Female",35,"Less than 20000€",0,13,"Austria",2,"free",0
+"30","R_10Gi8ntoeoH0rJ0","Female",27,"Less than 20000€",0,21,"Austria",2,"free",0
+"31","R_26hzl2y1qZyuTqk","Female",29,"40000 € - 50000 €",3,12,"Austria",3,"free",0
+"32","R_POmKasYjB2knT2x","Male",41,"30000 € - 40000 €",2,19,"Austria",2,"free",0
+"33","R_3hioYBbjM9Sn6wK","Female",30,"20000 € - 30000 €",1,22,"Austria",3,"free",0
+"34","R_1JDCxvoxcvIV7bQ","Male",30,"Less than 20000€",0,24,"Austria",3,"free",0
+"35","R_1JPkEHFivLhqjP6","Female",34,"50000 € - 60000 €",4,18,"Austria",3,"free",1
+"36","R_2sci3ihyuEz6nYu","Male",31,"More than 60000 €",5,19,"Austria",4,"free",0
+"37","R_31SDrK9MuWLLYYV","Male",63,"40000 € - 50000 €",3,18,"Austria",4,"free",1
+"38","R_1mOU7f2PtGhIamw","Male",23,"20000 € - 30000 €",1,14,"Austria",3,"free",0
+"39","R_1LZ4yK9oSBVsFmi","Male",41,"More than 60000 €",5,15,"Austria",4,"free",0
+"40","R_33ez5FqrrFOEddn","Female",24,"Less than 20000€",0,18,"Austria",2,"free",0
+"41","R_0VZ6UbQ2qRnjRkt","Male",24,"Prefer not to answer",NA,9,"Austria",3,"free",0
+"42","R_1LIplwhbr9Ss26I","Female",29,"20000 € - 30000 €",1,22,"Austria",3,"free",0
+"43","R_2yeBltImc8PsyUy","Female",23,"Less than 20000€",0,18,"Austria",0,"free",1
+"44","R_1DU6FOvzjLF7oVn","Female",33,"More than 60000 €",5,17,"Austria",3,"free",0
+"45","R_2ZK6udDlQyzDxVW","Female",22,"Less than 20000€",0,14,"Austria",2,"free",0
+"46","R_27Btsu4LDEsCJ99","Female",27,"Less than 20000€",0,22,"Austria",2,"free",0
+"47","R_DuAwJUQmpuzjwAN","Female",28,"40000 € - 50000 €",3,14,"Austria",2,"free",1
+"48","R_1IKKQCVGOyvnyau","Male",25,"Less than 20000€",0,16,"Austria",3,"free",0
+"49","R_242bWxaodIS6uC7","Female",21,"Less than 20000€",0,16,"Austria",2,"free",0
+"50","R_2sbXAgTdqP9sotm","Male",24,"20000 € - 30000 €",1,17,"Austria",4,"free",0
+"51","R_eaPZh97cGsyobcd","Male",40,"50000 € - 60000 €",4,13,"Austria",4,"free",0
+"52","R_vkjyWbrd1MhsnSx","Male",26,"Less than 20000€",0,18,"Austria",3,"free",0
+"53","R_1rwYqp65YMFaOXY","Male",27,"30000 € - 40000 €",2,16,"Austria",3,"free",0
+"54","R_1Hk8esY8vAIhNCG","Male",35,"30000 € - 40000 €",2,13,"Austria",3,"free",0
+"55","R_1CJVwxSpRQsysXy","Female",31,"50000 € - 60000 €",4,18,"Austria",4,"free",0
+"56","R_2y9gCcyVnhbXiLy","Female",40,"50000 € - 60000 €",4,16,"Austria",4,"free",0
+"57","R_30kLkRe4TxfplMw","Male",39,"More than 60000 €",5,13,"Austria",3,"free",1
+"58","R_271AkGtX2UHHD95","Male",30,"30000 € - 40000 €",2,22,"Austria",3,"free",0
+"59","R_UzJlYDrsPAdKUFj","Female",25,"Less than 20000€",0,18,"Austria",2,"free",0
+"60","R_3qfhV41AeOhMBoA","Female",23,"20000 € - 30000 €",1,14.5,"Austria",2,"free",0
+"61","R_31T86Y6Bvld3K7z","Female",65,"Less than 20000€",0,11,"Austria",2,"free",0
+"62","R_1kOblTGlxVfXNU2","Female",37,"Less than 20000€",0,16,"Austria",1,"free",0
+"63","R_3iJqWZnTxsi2ARe","Female",63,"40000 € - 50000 €",3,15,"Austria",3,"free",0
+"64","R_1LYDjswOAFTbD3a","Male",27,"More than 60000 €",5,22,"Austria",3,"free",0
+"65","R_SIhwpQI9IytbCOl","Female",23,"Prefer not to answer",NA,15,"Austria",4,"free",0
+"66","R_32Q4UE6467KBgPb","Female",32,"40000 € - 50000 €",3,17,"Austria",2,"free",0
+"67","R_1GPPaWV7YbIzZH9","Female",25,"Less than 20000€",0,13,"Austria",2,"free",0
+"68","R_RKwL9sFnMEudf5n","Female",26,"Less than 20000€",0,18,"Austria",3,"free",0
+"69","R_OJN8WGTmtpfXv7r","Female",26,"Prefer not to answer",NA,17,"Austria",2,"free",0
+"70","R_UbQVZ7zVgBjocsV","Male",25,"Less than 20000€",0,19,"Austria",3,"free",0
+"71","R_2TUaIrNZ5R0JH3G","Female",32,"30000 € - 40000 €",2,13,"Austria",3,"free",0
+"72","R_1HpYJsHEzecYCAw","Female",44,"20000 € - 30000 €",1,12,"Austria",2,"free",0
+"73","R_3DkCmqnqWZlZOyS","Male",31,"30000 € - 40000 €",2,12,"Austria",3,"free",0
+"74","R_21AMDNokMRoAUNB","Male",30,"30000 € - 40000 €",2,9,"Austria",3,"free",0
+"75","R_seePf1cEXVxyGxX","Female",25,"20000 € - 30000 €",1,19,"Austria",4,"free",0
+"76","R_ehZ3e3LoVaWGKXL","Male",38,"More than 60000 €",5,17,"Austria",3,"free",0
+"77","R_2EovLyjGG5EMSnL","Female",21,"Less than 20000€",0,12,"Austria",4,"free",0
+"78","R_3lMQkzPitEUiLaF","Male",48,"More than 60000 €",5,19,"Austria",4,"free",1
+"79","R_8uFlp8itUqKNxTj","Female",42,"20000 € - 30000 €",1,18,"Austria",3,"free",0
+"80","R_1MLqxTiSglel5JW","Female",55,"30000 € - 40000 €",2,20,"Austria",4,"free",0
+"81","R_24AfAfrg43B4RJW","Male",34,"20000 € - 30000 €",1,11,"Austria",4,"free",0
+"82","R_2TYs3CpRviw0tbh","Female",37,"20000 € - 30000 €",1,15,"Austria",3,"free",0
+"83","R_2YEs8RB1wPOFxby","Female",40,"30000 € - 40000 €",2,13,"Austria",3,"free",1
+"84","R_1M0ollZY96rSFGO","Female",25,"Less than 20000€",0,19,"Austria",4,"free",1
+"85","R_1q3zM5y9vTKNYMN","Female",30,"20000 € - 30000 €",1,18,"Austria",4,"free",1
+"86","R_3iVkGZLKpimpDEO","Female",28,"20000 € - 30000 €",1,20,"Austria",3,"free",1
+"87","R_PH6VObesjTEctoZ","Female",22,"Less than 20000€",0,16,"Austria",3,"free",0
+"88","R_3dSPe0HgY8njdJA","Female",40,"20000 € - 30000 €",1,17,"Austria",3,"free",0
+"89","R_1LByWHkE6lG0B6H","Male",45,"More than 60000 €",5,20,"Austria",3,"free",0
+"90","R_0PViXsWvwfsX9IJ","Female",29,"20000 € - 30000 €",1,17,"Austria",3,"free",1
+"91","R_74cWj49cxi4U0x3","Female",36,"50000 € - 60000 €",4,22,"Austria",3,"free",0
+"92","R_3PLJbxYs5ZdN11u","Female",23,"Less than 20000€",0,15,"Austria",3,"free",0
+"93","R_qQKAFcjZtKVgXzb","Female",23,"Less than 20000€",0,16,"Austria",3,"free",0
+"94","R_1JIta6ul9MRGwS4","Female",34,"30000 € - 40000 €",2,25,"Austria",1,"free",0
+"95","R_BrBSsOGSuOrcStj","Female",26,"20000 € - 30000 €",1,20,"Austria",3,"free",0
+"96","R_1gubDbKT8BZyl2i","Female",39,"20000 € - 30000 €",1,14,"Austria",2,"free",0
+"97","R_3GsauwEF9xwLSnp","Female",40,"20000 € - 30000 €",1,13,"Austria",3,"free",0
+"98","R_3LklZVUNpgNKmGp","Female",47,"40000 € - 50000 €",3,12,"Austria",2,"free",0
+"99","R_2rpa9wQQhGvx13K","Male",19,"More than 60000 €",5,14,"Austria",3,"free",0
+"100","R_PIgtd9g3KDAkWfT","Male",36,"50000 € - 60000 €",4,20,"Austria",3,"free",0
+"101","R_2qFamcgnGdWCaHw","Female",47,"More than 60000 €",5,27,"Austria",3,"free",1
+"102","R_3iCiyZ2fLQYoKLI","Male",28,"Less than 20000€",0,19,"Austria",3,"free",0
+"103","R_22CVmEtY3Nhukdi","Male",25,"20000 € - 30000 €",1,18,"Austria",4,"free",0
+"104","R_DUi2sOsjol9mFO1","Female",24,"30000 € - 40000 €",2,15,"Austria",2,"free",0
+"105","R_24co84ZTtnzPEUQ","Female",21,"Prefer not to answer",NA,15,"Austria",3,"free",0
+"106","R_2ZVoWotkv0tLyeq","Female",30,"Less than 20000€",0,18,"Austria",2,"free",0
+"107","R_2CxGrLxqnr9IsoJ","Female",62,"30000 € - 40000 €",2,17,"Austria",4,"free",0
+"108","R_3FVx6qhT5YGqxfa","Female",22,"20000 € - 30000 €",1,17,"Austria",3,"free",1
+"109","R_248evxMs9ikz14j","Female",32,"20000 € - 30000 €",1,18,"Austria",3,"free",0
+"110","R_3QXY2rMpmWNyov9","Male",19,"20000 € - 30000 €",1,10,"Austria",3,"free",0
+"111","R_1HhOF0rhkILMI5z","Female",26,"20000 € - 30000 €",1,19,"Austria",4,"free",0
+"112","R_2SBvA5SwMIzcmqy","Female",34,"Less than 20000€",0,15,"Austria",3,"free",0
+"113","R_1jeKLV4dZ7OuRuM","Female",34,"More than 60000 €",5,18,"Austria",3,"free",1
+"114","R_cvX6XL4hG1xCmqt","Female",32,"30000 € - 40000 €",2,12,"Austria",1,"free",0
+"115","R_yUQWGuI2HEwij8l","Male",26,"Prefer not to answer",NA,13,"Austria",3,"free",0
+"116","R_3LiqZLvp6EPBPa0","Female",41,"More than 60000 €",5,19,"Austria",2,"free",0
+"117","R_237ttpH59fxUFOT","Female",59,"20000 € - 30000 €",1,9,"Austria",0,"free",0
+"118","R_2rve5hX2xPcfl4T","Female",35,"20000 € - 30000 €",1,9,"Austria",3,"free",0
+"119","R_1H62z5qM5S2TFVM","Male",27,"More than 60000 €",5,17,"Austria",4,"free",0
+"120","R_1gHCmDdWE78Lh45","Female",58,"40000 € - 50000 €",3,17,"Austria",3,"free",1
+"121","R_1OxUKAckenr5nTD","Female",20,"Less than 20000€",0,14,"Austria",2,"free",0
+"122","R_O273HKVe4iY2Myl","Female",20,"Less than 20000€",0,14,"Austria",3,"free",0
+"123","R_11Xt8NNCUQlz5y6","Female",31,"30000 € - 40000 €",2,18,"Austria",4,"free",0
+"124","R_AiLMAR6JbHzYq7T","Female",35,"50000 € - 60000 €",4,17,"Austria",2,"free",1
+"125","R_2xGhfiUk3BMGAEv","Female",57,"20000 € - 30000 €",1,15,"Austria",4,"free",0
+"126","R_3PsCgXVYZdRbHlv","Male",23,"Less than 20000€",0,15,"Austria",3,"free",1
+"127","R_AsQhpZFPnLzQh9v","Male",22,"Less than 20000€",0,16,"Austria",4,"free",0
+"128","R_25tMSZPEalKg0Ku","Female",59,"40000 € - 50000 €",3,18,"Austria",2,"free",0
+"129","R_eldKo7TFPJf5hQZ","Male",32,"30000 € - 40000 €",2,25,"Austria",4,"free",1
+"130","R_XvuygHmCQh9k2nn","Female",23,"Less than 20000€",0,15,"Austria",1,"free",0
+"131","R_12yXYUbz7BkUi0G","Male",45,"30000 € - 40000 €",2,15,"Austria",0,"free",0
+"132","R_3De9mejg6cxR9wJ","Male",24,"Less than 20000€",0,15,"Austria",3,"free",0
+"133","R_pyfZEeEuK9eETYt","Male",24,"Less than 20000€",0,16,"Austria",3,"free",0
+"134","R_2VvyiFAl4du2Rh1","Male",26,"Less than 20000€",0,18,"Austria",2,"free",0
+"135","R_2ToeLVnjGa9HS5N","Female",28,"20000 € - 30000 €",1,17,"Austria",3,"free",0
+"136","R_3Mb1ud2tQVZxmFb","Male",24,"Prefer not to answer",NA,17,"Austria",3,"free",0
+"137","R_2E60x16CnFtLT3c","Male",30,"20000 € - 30000 €",1,9,"Austria",2,"free",0
+"138","R_emt5psRuecqD9Jf","Male",31,"20000 € - 30000 €",1,21,"Austria",3,"free",0
+"139","R_1Ow3a187SVwh3sb","Female",25,"20000 € - 30000 €",1,19,"Austria",2,"free",1
+"140","R_3meFplNWBE0nS8p","Male",25,"Less than 20000€",0,18,"Austria",4,"free",0
+"141","R_2Qy76R6ZSOrZhH1","Female",20,"Less than 20000€",0,14,"Austria",4,"free",0
+"142","R_6KGl9lsqDZQTY3L","Female",21,"Less than 20000€",0,15,"Austria",2,"free",0
+"143","R_33fGYrDHsRLi7tM","Male",20,"20000 € - 30000 €",1,12,"Austria",2,"free",0
+"144","R_RDdzzxBolxRskzD","Female",25,"Less than 20000€",0,17,"Austria",3,"free",1
+"145","R_3q9hmOtJVYA53vw","Female",27,"Less than 20000€",0,20,"Austria",1,"free",0
+"146","R_12LSz9uFp0FpAzp","Female",23,"Less than 20000€",0,17,"Austria",3,"free",1
+"147","R_3ehmYIGdUCqbDjX","Female",22,"Less than 20000€",0,8,"Austria",2,"free",0
+"148","R_3PjAqLoIyibuXuE","Male",25,"30000 € - 40000 €",2,13,"Austria",1,"free",0
+"149","R_2Yn9ODDN7EGpYrF","Female",22,"Less than 20000€",0,15,"Austria",3,"free",0
+"150","R_sHlvHsPshvzgzZv","Male",24,"20000 € - 30000 €",1,12,"Austria",2,"free",0
+"151","R_11jVPb0wTYmIy6k","Female",24,"30000 € - 40000 €",2,9,"Austria",0,"free",0
+"152","R_3CPgpNMX8pbyP3B","Female",38,"20000 € - 30000 €",1,22,"Austria",4,"free",0
+"153","R_b1nEo9uOqxYP37X","Female",35,"20000 € - 30000 €",1,10,"Austria",2,"free",0
+"154","R_1CmfEWy2RPEI84E","Male",19,"Less than 20000€",0,12,"Austria",2,"free",0
+"155","R_12AATmTuIuwX4bC","Female",29,"20000 € - 30000 €",1,10,"Austria",3,"free",0
+"156","R_1opzcFoQX96z6Bw","Female",47,"Less than 20000€",0,13,"Austria",2,"free",0
+"157","R_uh4oxraQjcMeUQV","Female",30,"Less than 20000€",0,21,"Austria",1,"free",0
+"158","R_W236lqhuIEdcj7j","Female",23,"Prefer not to answer",NA,17,"Austria",2,"free",0
+"159","R_3DiOs88rn4N1H0d","Male",27,"30000 € - 40000 €",2,19,"Austria",3,"free",0
+"160","R_1jp8BkUdAtqTPdX","Female",24,"Less than 20000€",0,9,"Austria",3,"free",0
+"161","R_3edVifqrKyjcbOl","Female",30,"20000 € - 30000 €",1,8,"Austria",3,"free",0
+"162","R_2TLu5gaIQGKl6TM","Female",22,"Less than 20000€",0,8,"Austria",2,"free",0
+"163","R_2Yy8BrdIjRnKfrM","Female",23,"Less than 20000€",0,16,"Austria",2,"free",0
+"164","R_yt0gx7zcDzlObOp","Female",40,"30000 € - 40000 €",2,14,"Austria",2,"free",1
+"165","R_2ZHqFNkEeDuKJ6V","Female",31,"Less than 20000€",0,9,"Austria",3,"free",0
+"166","R_1pSBDkbdlX9byP8","Female",29,"20000 € - 30000 €",1,4,"Austria",1,"free",0
+"167","R_1mDl0ZAivCpxiU9","Female",22,"Less than 20000€",0,16,"Austria",2,"free",0
+"168","R_xErN6lCesT0Ul3j","Female",20,"Prefer not to answer",NA,13,"Austria",2,"free",0
+"169","R_2fdiHlzbxubzi8B","Female",23,"20000 € - 30000 €",1,14,"Austria",2,"free",1
+"170","R_XtzUu9i3Zp0LsRj","Female",30,"20000 € - 30000 €",1,15,"Austria",3,"free",0
+"171","R_1FDppyOIPc1FUVm","Male",30,"20000 € - 30000 €",1,20,"Austria",2,"free",1
+"172","R_RhlRMiJjlznTe0N","Female",30,"20000 € - 30000 €",1,12,"Austria",0,"free",0
+"173","R_2aE8OQ2Ezo5yIu1","Female",24,"20000 € - 30000 €",1,18,"Austria",3,"free",0
+"174","R_RnyQG9IP8ZXBks1","Female",35,"Less than 20000€",0,20,"Austria",2,"free",0
+"175","R_3lrkNSSBbfK2KdW","Female",25,"Prefer not to answer",NA,17,"Austria",3,"free",0
+"176","R_2eXPYdfCiIxpGsJ","Male",25,"20000 € - 30000 €",1,18,"Austria",3,"free",0
+"177","R_1QSNzIhkGmSZAMp","Female",24,"Less than 20000€",0,17,"Austria",3,"free",0
+"178","R_uzjX1fvyM4twnEB","Female",24,"Less than 20000€",0,18,"Austria",2,"free",0
+"179","R_11cngFihuZtQEti","Female",25,"40000 € - 50000 €",3,16,"Austria",2,"free",0
+"180","R_3HRetemAtiOqKvx","Male",26,"Less than 20000€",0,18,"Austria",2,"free",0
+"181","R_2wgF5tDV4HVTftL","Female",27,"Less than 20000€",0,17,"Austria",3,"free",0
+"182","R_125veBZbsZdZtab","Male",25,"20000 € - 30000 €",1,10,"Austria",2,"free",0
+"183","R_3irSRIH4boiJmGi","Male",22,"20000 € - 30000 €",1,13,"Austria",3,"free",1
+"184","R_3hcIe6HDcNOuxpu","Female",26,"Less than 20000€",0,18,"Austria",3,"free",0
+"185","R_3oZpPipWfwv7miI","Male",29,"30000 € - 40000 €",2,16,"Austria",4,"free",0
+"186","R_2VwOHPp3ofZujUt","Female",34,"50000 € - 60000 €",4,18,"Austria",3,"free",0
+"187","R_2E48ODqj2omjxDD","Female",19,"Less than 20000€",0,13,"Austria",1,"free",0
+"188","R_29mMgwXBiL64XWF","Female",20,"Less than 20000€",0,14,"Austria",1,"free",0
+"189","R_1nMVFcbuXzHDGcq","Female",18,"Prefer not to answer",NA,12,"Austria",0,"free",0
+"190","R_SNc1eAvMvVRJ9wl","Female",19,"Prefer not to answer",NA,12,"Austria",0,"free",0
+"191","R_2Sl7tdJnyu5HctZ","Male",19,"Less than 20000€",0,12,"Austria",0,"free",0
+"192","R_3L5agpIoOjxzetQ","Male",21,"Less than 20000€",0,14,"Austria",3,"free",0
+"193","R_2tCZ89TdrR6wckv","Male",23,"Less than 20000€",0,17,"Austria",3,"free",1
+"194","R_RXHjqQV6jksyS77","Male",31,"20000 € - 30000 €",1,20,"Austria",3,"free",0
+"195","R_1igvCAC4cTVsnzd","Female",33,"30000 € - 40000 €",2,13,"Austria",1,"free",0
+"196","R_2rUCvdyDd2s4amn","Female",22,"Less than 20000€",0,16,"Austria",3,"free",0
+"197","R_wZbAtcCpUC0PWXD","Female",50,"20000 € - 30000 €",1,13,"Austria",3,"free",1
+"198","R_O9Cy09ljfolFpZf","Female",24,"Less than 20000€",0,17,"Austria",1,"free",0
+"199","R_2uxrYaXjxs9lFlr","Male",26,"30000 € - 40000 €",2,20,"Austria",3,"free",0
+"200","R_24oQEIEewJccBbw","Male",24,"20000 € - 30000 €",1,9,"Austria",3,"free",0
+"201","R_0MWQLRMvqzEqUGB","Female",23,"Less than 20000€",0,7,"Austria",2,"free",0
+"202","R_3sbu9nXRnyIHKJ8","Female",37,"50000 € - 60000 €",4,30,"Austria",4,"free",0
+"203","R_1Q0z7t0iWBuxf0X","Female",23,"20000 € - 30000 €",1,15,"Austria",3,"free",0
+"204","R_3ReKP81jrFV8ElX","Female",32,"50000 € - 60000 €",4,20,"Austria",4,"free",0
+"205","R_1mUvASNGaKO3q8U","Male",24,"Prefer not to answer",NA,16,"Austria",3,"free",0
+"206","R_ujPK0bRgTswyHnj","Female",34,"50000 € - 60000 €",4,12,"Austria",3,"free",0
+"207","R_01EVG5DAaxe2y3f","Female",30,"20000 € - 30000 €",1,21,"Austria",0,"free",0
+"208","R_3HChIniDBf8WdE5","Female",33,"20000 € - 30000 €",1,20,"Austria",3,"free",0
+"209","R_3HnOP7h1RHmcRYw","Male",23,"Less than 20000€",0,16,"Austria",2,"free",0
+"210","R_2s1lk6adGygrWUx","Male",24,"Less than 20000€",0,14,"Austria",1,"free",0
+"211","R_3g9TP572SNc7XQl","Male",21,"Less than 20000€",0,14,"Austria",4,"free",0
+"212","R_2Bba9u7P8NrcZmT","Female",32,"Less than 20000€",0,9,"Austria",2,"free",0
+"213","R_snWMcZo2zObZ5cZ","Female",27,"Less than 20000€",0,16,"Austria",3,"free",0
+"214","R_2th62iUX00PkbgA","Female",20,"Less than 20000€",0,15,"Austria",3,"free",0
+"215","R_2odoh9sfg4sQrwR","Female",67,"40000 € - 50000 €",3,14,"Austria",2,"free",0
+"216","R_1LiNAA4zQIfTBlA","Female",68,"30000 € - 40000 €",2,18,"Austria",3,"free",0
+"217","R_3Du5j0mdRlfYDfR","Female",49,"Less than 20000€",0,15,"Austria",2,"free",1
+"218","R_1K852ZYHWoP8eGS","Female",20,"Less than 20000€",0,14,"Austria",1,"free",0
+"219","R_2U5iIDdfYPJt02T","Male",38,"20000 € - 30000 €",1,10,"Austria",2,"free",0
+"220","R_2Sv53IDtDTHJgVC","Female",28,"30000 € - 40000 €",2,12,"Austria",3,"free",0
+"221","R_2pXCTYeRZReyiZ8","Female",23,"20000 € - 30000 €",1,12,"Austria",1,"free",0
+"222","R_1gIrDiVTqYK1meY","Male",35,"20000 € - 30000 €",1,5,"Austria",4,"free",0
+"223","R_Rep0HLUJeq5Ebv3","Female",25,"20000 € - 30000 €",1,14,"Austria",1,"free",0
+"224","R_OwDXOQOCls5O33X","Male",33,"40000 € - 50000 €",3,18,"Austria",2,"free",0
+"225","R_OvtLTu2p45J3k6B","Male",24,"Less than 20000€",0,17,"Austria",3,"free",0
+"226","R_1OpFOpIQmhS0eBf","Male",40,"40000 € - 50000 €",3,8,"Austria",4,"free",0
+"227","R_cunQlVIQnmtCafn","Female",19,"Less than 20000€",0,14,"Austria",1,"free",0
+"228","R_3p6d6IpFAwMvnsE","Male",32,"30000 € - 40000 €",2,12,"Austria",3,"free",1
+"229","R_1hZ4JZ61XuuYkRC","Female",28,"50000 € - 60000 €",4,17,"Austria",3,"free",0
+"230","R_2ckeJ5HoW5EaLkU","Female",22,"Less than 20000€",0,7,"Austria",2,"free",0
+"231","R_1OMFx5818vk9sgC","Female",34,"30000 € - 40000 €",2,12,"Austria",3,"free",1
+"232","R_12lubvGTUNJrVVc","Male",36,"40000 € - 50000 €",3,11,"Austria",3,"free",0
+"233","R_vGM7VBZPKHOsBFv","Female",25,"Less than 20000€",0,14,"Austria",1,"free",0
+"234","R_3EnCbeND5jIV979","Female",29,"20000 € - 30000 €",1,13,"Austria",3,"free",0
+"235","R_2ahSv1HOS8KhB51","Female",21,"20000 € - 30000 €",1,15,"Austria",3,"free",0
+"236","R_1FhrwehsMjmy1We","Female",25,"30000 € - 40000 €",2,18,"Austria",3,"free",0
+"237","R_3nrBd7IDfzXqtf6","Female",31,"40000 € - 50000 €",3,16,"Austria",2,"free",0
+"238","R_vJoLLhX22duztux","Male",28,"20000 € - 30000 €",1,12,"Austria",2,"free",0
+"239","R_ClewUGf3mrh5pPX","Female",18,"Less than 20000€",0,11,"Austria",0,"free",0
+"240","R_3NwjLpxiQmmJ2TO","Female",31,"Less than 20000€",0,13,"Austria",0,"free",0
+"241","R_cCmqya32GFr7Kc9","Male",24,"20000 € - 30000 €",1,13,"Austria",4,"free",0
+"242","R_1CmxxMlbQNCUZR2","Female",24,"Less than 20000€",0,18,"Austria",2,"free",0
+"243","R_1nONis291E8wyAa","Male",25,"Less than 20000€",0,16,"Austria",4,"free",1
+"244","R_1DI5iHobmfemjXU","Male",29,"20000 € - 30000 €",1,13,"Austria",1,"free",0
+"245","R_2zBhITGkdBmS96u","Female",26,"Less than 20000€",0,19,"Austria",1,"free",0
+"246","R_21H6Vu7VOHjCiWX","Female",22,"Less than 20000€",0,15,"Austria",3,"free",0
+"247","R_24jgjnLbm48yygp","Female",52,"Less than 20000€",0,15,"Austria",3,"free",0
+"248","R_8IFgSpgwrQ8LbNL","Female",34,"40000 € - 50000 €",3,16,"Austria",3,"free",0
+"249","R_1ePt3CigCEVRM9b","Female",25,"20000 € - 30000 €",1,17,"Austria",1,"free",0
+"250","R_3fE6Fh4a4dGFEx2","Female",35,"20000 € - 30000 €",1,18,"Austria",1,"free",0
+"251","R_SPfqmGFlbeVJ5MB","Male",18,"20000 € - 30000 €",1,9,"Austria",0,"free",1
+"252","R_1JUPMw80HTRTIZM","Female",36,"50000 € - 60000 €",4,20,"Austria",4,"free",0
+"253","R_1NnsRjE2jFu0R1O","Male",23,"Less than 20000€",0,16,"Austria",3,"free",1
+"254","R_2woWYWV13sQPayp","Female",22,"Prefer not to answer",NA,13,"Austria",0,"free",0
+"255","R_3Jn4tKmL5CERI6q","Female",21,"Less than 20000€",0,14,"Austria",4,"free",0
+"256","R_3k5GwScRdKftxYY","Male",52,"More than 60000 €",5,14,"Austria",3,"free",1
+"257","R_2ymxexWUfayfdA2","Female",24,"Less than 20000€",0,17,"Austria",3,"free",0
+"258","R_3oEDqMHuflI33An","Female",51,"More than 60000 €",5,12,"Austria",3,"free",1
+"259","R_1LbM0WXdN7nTBIh","Male",18,"More than 60000 €",5,14,"Austria",3,"free",0
+"260","R_3hstLTCnRMwq8l9","Female",39,"30000 € - 40000 €",2,17,"Austria",4,"free",0
+"261","R_qO61bBSvpzwJtFD","Female",21,"Less than 20000€",0,14,"Austria",2,"free",0
+"262","R_etit4k6r7eAJMGZ","Female",21,"Less than 20000€",0,14,"Austria",3,"free",1
+"263","R_3NWAfiwvZa0IAlv","Female",40,"Less than 20000€",0,15,"Austria",3,"free",1
+"264","R_2tKnmUHC4BQFW3Z","Female",29,"Less than 20000€",0,17,"Austria",3,"free",0
+"265","R_1ifIQ1N3Zy7ynoH","Female",23,"Less than 20000€",0,17,"Austria",2,"free",0
+"266","R_YbiZdXhcwrYYiUF","Female",50,"Prefer not to answer",NA,11,"Austria",2,"purchased",0
+"267","R_1puPa4dqnAjWUnB","Male",66,"50000 € - 60000 €",4,18,"Austria",4,"purchased",0
+"268","R_eexGPMWuZPgFuH7","Female",27,"20000 € - 30000 €",1,17,"Austria",3,"purchased",0
+"269","R_1FK6nwfwT9fshfd","Female",22,"Less than 20000€",0,12,"Austria",0,"purchased",1
+"270","R_2VK03IlPZz32bZw","Female",25,"Less than 20000€",0,19,"Austria",3,"purchased",0
+"271","R_3GrkyYBOKbwbJhp","Male",21,"Less than 20000€",0,13,"Austria",4,"purchased",0
+"272","R_3qySGrCbpiW1JqM","Female",45,"Less than 20000€",0,13,"Austria",0,"purchased",1
+"273","R_RabPHaUrofh7NKx","Female",24,"Less than 20000€",0,16,"Austria",2,"purchased",1
+"274","R_xhf3dYoTU4SWDOV","Female",61,"20000 € - 30000 €",1,10,"Austria",2,"purchased",1
+"275","R_2wRWezYLSMQyhPe","Male",23,"40000 € - 50000 €",3,6,"Austria",2,"purchased",0
+"276","R_2c8ybwsShS1ZH98","Female",38,"More than 60000 €",5,22,"Austria",2,"purchased",0
+"277","R_2WHIGrLSpYatAZU","Female",49,"More than 60000 €",5,18,"Austria",3,"purchased",0
+"278","R_Xv1yCIjapbQc7jb","Female",32,"20000 € - 30000 €",1,14,"Austria",2,"purchased",0
+"279","R_XLnHy34yyPFT4XL","Female",18,"Less than 20000€",0,12,"Austria",3,"purchased",0
+"280","R_1Qc1ylA0KVSc8vk","Female",31,"Less than 20000€",0,12,"Austria",3,"purchased",0
+"281","R_2QXMwmvsxnxHFt2","Female",24,"Less than 20000€",0,8,"Austria",3,"purchased",0
+"282","R_2SAA6G0EggPrOwd","Male",34,"Less than 20000€",0,12,"Austria",4,"purchased",0
+"283","R_3CQ0hj1F413OZX2","Male",24,"Less than 20000€",0,18,"Austria",3,"purchased",0
+"284","R_2ar7FmuHr7d4K9V","Female",22,"Less than 20000€",0,13,"Austria",3,"purchased",1
+"285","R_27xNPuELJRwkqK2","Female",22,"20000 € - 30000 €",1,16,"Austria",3,"purchased",0
+"286","R_vNbJboIEnSZafnP","Female",26,"More than 60000 €",5,18,"Austria",3,"purchased",0
+"287","R_3e93y0QsTvgesM2","Female",68,"Less than 20000€",0,11,"Austria",1,"purchased",0
+"288","R_1F9P99aUmPYThss","Female",37,"Less than 20000€",0,18,"Austria",4,"purchased",0
+"289","R_R84IzhMLtUYhgGt","Female",47,"More than 60000 €",5,12,"Austria",1,"purchased",1
+"290","R_1P7uvD8rgWJb8XC","Male",50,"More than 60000 €",5,22,"Austria",3,"purchased",0
+"291","R_1odLwOzaLWVZZsW","Male",34,"20000 € - 30000 €",1,12,"Austria",2,"purchased",0
+"292","R_1gBJtlbV3s4YqTj","Male",39,"30000 € - 40000 €",2,16,"Austria",3,"purchased",0
+"293","R_1M5Nt8LaNZ3Ye8v","Male",19,"20000 € - 30000 €",1,12,"Austria",2,"purchased",0
+"294","R_AngQ9ZAhDmYhyGl","Female",35,"Less than 20000€",0,13,"Austria",2,"purchased",0
+"295","R_10Gi8ntoeoH0rJ0","Female",27,"Less than 20000€",0,21,"Austria",2,"purchased",0
+"296","R_26hzl2y1qZyuTqk","Female",29,"40000 € - 50000 €",3,12,"Austria",3,"purchased",0
+"297","R_POmKasYjB2knT2x","Male",41,"30000 € - 40000 €",2,19,"Austria",2,"purchased",1
+"298","R_3hioYBbjM9Sn6wK","Female",30,"20000 € - 30000 €",1,22,"Austria",3,"purchased",0
+"299","R_1JDCxvoxcvIV7bQ","Male",30,"Less than 20000€",0,24,"Austria",3,"purchased",0
+"300","R_1JPkEHFivLhqjP6","Female",34,"50000 € - 60000 €",4,18,"Austria",3,"purchased",1
+"301","R_2sci3ihyuEz6nYu","Male",31,"More than 60000 €",5,19,"Austria",4,"purchased",0
+"302","R_31SDrK9MuWLLYYV","Male",63,"40000 € - 50000 €",3,18,"Austria",4,"purchased",1
+"303","R_1mOU7f2PtGhIamw","Male",23,"20000 € - 30000 €",1,14,"Austria",3,"purchased",1
+"304","R_1LZ4yK9oSBVsFmi","Male",41,"More than 60000 €",5,15,"Austria",4,"purchased",0
+"305","R_33ez5FqrrFOEddn","Female",24,"Less than 20000€",0,18,"Austria",2,"purchased",0
+"306","R_0VZ6UbQ2qRnjRkt","Male",24,"Prefer not to answer",NA,9,"Austria",3,"purchased",0
+"307","R_1LIplwhbr9Ss26I","Female",29,"20000 € - 30000 €",1,22,"Austria",3,"purchased",0
+"308","R_2yeBltImc8PsyUy","Female",23,"Less than 20000€",0,18,"Austria",0,"purchased",1
+"309","R_1DU6FOvzjLF7oVn","Female",33,"More than 60000 €",5,17,"Austria",3,"purchased",0
+"310","R_2ZK6udDlQyzDxVW","Female",22,"Less than 20000€",0,14,"Austria",2,"purchased",1
+"311","R_27Btsu4LDEsCJ99","Female",27,"Less than 20000€",0,22,"Austria",2,"purchased",1
+"312","R_DuAwJUQmpuzjwAN","Female",28,"40000 € - 50000 €",3,14,"Austria",2,"purchased",1
+"313","R_1IKKQCVGOyvnyau","Male",25,"Less than 20000€",0,16,"Austria",3,"purchased",0
+"314","R_242bWxaodIS6uC7","Female",21,"Less than 20000€",0,16,"Austria",2,"purchased",0
+"315","R_2sbXAgTdqP9sotm","Male",24,"20000 € - 30000 €",1,17,"Austria",4,"purchased",0
+"316","R_eaPZh97cGsyobcd","Male",40,"50000 € - 60000 €",4,13,"Austria",4,"purchased",0
+"317","R_vkjyWbrd1MhsnSx","Male",26,"Less than 20000€",0,18,"Austria",3,"purchased",0
+"318","R_1rwYqp65YMFaOXY","Male",27,"30000 € - 40000 €",2,16,"Austria",3,"purchased",0
+"319","R_1Hk8esY8vAIhNCG","Male",35,"30000 € - 40000 €",2,13,"Austria",3,"purchased",1
+"320","R_1CJVwxSpRQsysXy","Female",31,"50000 € - 60000 €",4,18,"Austria",4,"purchased",0
+"321","R_2y9gCcyVnhbXiLy","Female",40,"50000 € - 60000 €",4,16,"Austria",4,"purchased",0
+"322","R_30kLkRe4TxfplMw","Male",39,"More than 60000 €",5,13,"Austria",3,"purchased",1
+"323","R_271AkGtX2UHHD95","Male",30,"30000 € - 40000 €",2,22,"Austria",3,"purchased",0
+"324","R_UzJlYDrsPAdKUFj","Female",25,"Less than 20000€",0,18,"Austria",2,"purchased",0
+"325","R_3qfhV41AeOhMBoA","Female",23,"20000 € - 30000 €",1,14.5,"Austria",2,"purchased",0
+"326","R_31T86Y6Bvld3K7z","Female",65,"Less than 20000€",0,11,"Austria",2,"purchased",1
+"327","R_1kOblTGlxVfXNU2","Female",37,"Less than 20000€",0,16,"Austria",1,"purchased",0
+"328","R_3iJqWZnTxsi2ARe","Female",63,"40000 € - 50000 €",3,15,"Austria",3,"purchased",0
+"329","R_1LYDjswOAFTbD3a","Male",27,"More than 60000 €",5,22,"Austria",3,"purchased",0
+"330","R_SIhwpQI9IytbCOl","Female",23,"Prefer not to answer",NA,15,"Austria",4,"purchased",0
+"331","R_32Q4UE6467KBgPb","Female",32,"40000 € - 50000 €",3,17,"Austria",2,"purchased",1
+"332","R_1GPPaWV7YbIzZH9","Female",25,"Less than 20000€",0,13,"Austria",2,"purchased",0
+"333","R_RKwL9sFnMEudf5n","Female",26,"Less than 20000€",0,18,"Austria",3,"purchased",0
+"334","R_OJN8WGTmtpfXv7r","Female",26,"Prefer not to answer",NA,17,"Austria",2,"purchased",0
+"335","R_UbQVZ7zVgBjocsV","Male",25,"Less than 20000€",0,19,"Austria",3,"purchased",0
+"336","R_2TUaIrNZ5R0JH3G","Female",32,"30000 € - 40000 €",2,13,"Austria",3,"purchased",1
+"337","R_1HpYJsHEzecYCAw","Female",44,"20000 € - 30000 €",1,12,"Austria",2,"purchased",0
+"338","R_3DkCmqnqWZlZOyS","Male",31,"30000 € - 40000 €",2,12,"Austria",3,"purchased",0
+"339","R_21AMDNokMRoAUNB","Male",30,"30000 € - 40000 €",2,9,"Austria",3,"purchased",0
+"340","R_seePf1cEXVxyGxX","Female",25,"20000 € - 30000 €",1,19,"Austria",4,"purchased",1
+"341","R_ehZ3e3LoVaWGKXL","Male",38,"More than 60000 €",5,17,"Austria",3,"purchased",0
+"342","R_2EovLyjGG5EMSnL","Female",21,"Less than 20000€",0,12,"Austria",4,"purchased",1
+"343","R_3lMQkzPitEUiLaF","Male",48,"More than 60000 €",5,19,"Austria",4,"purchased",1
+"344","R_8uFlp8itUqKNxTj","Female",42,"20000 € - 30000 €",1,18,"Austria",3,"purchased",0
+"345","R_1MLqxTiSglel5JW","Female",55,"30000 € - 40000 €",2,20,"Austria",4,"purchased",0
+"346","R_24AfAfrg43B4RJW","Male",34,"20000 € - 30000 €",1,11,"Austria",4,"purchased",0
+"347","R_2TYs3CpRviw0tbh","Female",37,"20000 € - 30000 €",1,15,"Austria",3,"purchased",0
+"348","R_2YEs8RB1wPOFxby","Female",40,"30000 € - 40000 €",2,13,"Austria",3,"purchased",1
+"349","R_1M0ollZY96rSFGO","Female",25,"Less than 20000€",0,19,"Austria",4,"purchased",1
+"350","R_1q3zM5y9vTKNYMN","Female",30,"20000 € - 30000 €",1,18,"Austria",4,"purchased",1
+"351","R_3iVkGZLKpimpDEO","Female",28,"20000 € - 30000 €",1,20,"Austria",3,"purchased",1
+"352","R_PH6VObesjTEctoZ","Female",22,"Less than 20000€",0,16,"Austria",3,"purchased",1
+"353","R_3dSPe0HgY8njdJA","Female",40,"20000 € - 30000 €",1,17,"Austria",3,"purchased",0
+"354","R_1LByWHkE6lG0B6H","Male",45,"More than 60000 €",5,20,"Austria",3,"purchased",1
+"355","R_0PViXsWvwfsX9IJ","Female",29,"20000 € - 30000 €",1,17,"Austria",3,"purchased",1
+"356","R_74cWj49cxi4U0x3","Female",36,"50000 € - 60000 €",4,22,"Austria",3,"purchased",1
+"357","R_3PLJbxYs5ZdN11u","Female",23,"Less than 20000€",0,15,"Austria",3,"purchased",1
+"358","R_qQKAFcjZtKVgXzb","Female",23,"Less than 20000€",0,16,"Austria",3,"purchased",1
+"359","R_1JIta6ul9MRGwS4","Female",34,"30000 € - 40000 €",2,25,"Austria",1,"purchased",1
+"360","R_BrBSsOGSuOrcStj","Female",26,"20000 € - 30000 €",1,20,"Austria",3,"purchased",0
+"361","R_1gubDbKT8BZyl2i","Female",39,"20000 € - 30000 €",1,14,"Austria",2,"purchased",0
+"362","R_3GsauwEF9xwLSnp","Female",40,"20000 € - 30000 €",1,13,"Austria",3,"purchased",1
+"363","R_3LklZVUNpgNKmGp","Female",47,"40000 € - 50000 €",3,12,"Austria",2,"purchased",1
+"364","R_2rpa9wQQhGvx13K","Male",19,"More than 60000 €",5,14,"Austria",3,"purchased",1
+"365","R_PIgtd9g3KDAkWfT","Male",36,"50000 € - 60000 €",4,20,"Austria",3,"purchased",0
+"366","R_2qFamcgnGdWCaHw","Female",47,"More than 60000 €",5,27,"Austria",3,"purchased",1
+"367","R_3iCiyZ2fLQYoKLI","Male",28,"Less than 20000€",0,19,"Austria",3,"purchased",0
+"368","R_22CVmEtY3Nhukdi","Male",25,"20000 € - 30000 €",1,18,"Austria",4,"purchased",0
+"369","R_DUi2sOsjol9mFO1","Female",24,"30000 € - 40000 €",2,15,"Austria",2,"purchased",1
+"370","R_24co84ZTtnzPEUQ","Female",21,"Prefer not to answer",NA,15,"Austria",3,"purchased",0
+"371","R_2ZVoWotkv0tLyeq","Female",30,"Less than 20000€",0,18,"Austria",2,"purchased",1
+"372","R_2CxGrLxqnr9IsoJ","Female",62,"30000 € - 40000 €",2,17,"Austria",4,"purchased",0
+"373","R_3FVx6qhT5YGqxfa","Female",22,"20000 € - 30000 €",1,17,"Austria",3,"purchased",1
+"374","R_248evxMs9ikz14j","Female",32,"20000 € - 30000 €",1,18,"Austria",3,"purchased",1
+"375","R_3QXY2rMpmWNyov9","Male",19,"20000 € - 30000 €",1,10,"Austria",3,"purchased",1
+"376","R_1HhOF0rhkILMI5z","Female",26,"20000 € - 30000 €",1,19,"Austria",4,"purchased",0
+"377","R_2SBvA5SwMIzcmqy","Female",34,"Less than 20000€",0,15,"Austria",3,"purchased",0
+"378","R_1jeKLV4dZ7OuRuM","Female",34,"More than 60000 €",5,18,"Austria",3,"purchased",1
+"379","R_cvX6XL4hG1xCmqt","Female",32,"30000 € - 40000 €",2,12,"Austria",1,"purchased",0
+"380","R_yUQWGuI2HEwij8l","Male",26,"Prefer not to answer",NA,13,"Austria",3,"purchased",0
+"381","R_3LiqZLvp6EPBPa0","Female",41,"More than 60000 €",5,19,"Austria",2,"purchased",0
+"382","R_237ttpH59fxUFOT","Female",59,"20000 € - 30000 €",1,9,"Austria",0,"purchased",1
+"383","R_2rve5hX2xPcfl4T","Female",35,"20000 € - 30000 €",1,9,"Austria",3,"purchased",0
+"384","R_1H62z5qM5S2TFVM","Male",27,"More than 60000 €",5,17,"Austria",4,"purchased",0
+"385","R_1gHCmDdWE78Lh45","Female",58,"40000 € - 50000 €",3,17,"Austria",3,"purchased",1
+"386","R_1OxUKAckenr5nTD","Female",20,"Less than 20000€",0,14,"Austria",2,"purchased",0
+"387","R_O273HKVe4iY2Myl","Female",20,"Less than 20000€",0,14,"Austria",3,"purchased",0
+"388","R_11Xt8NNCUQlz5y6","Female",31,"30000 € - 40000 €",2,18,"Austria",4,"purchased",0
+"389","R_AiLMAR6JbHzYq7T","Female",35,"50000 € - 60000 €",4,17,"Austria",2,"purchased",1
+"390","R_2xGhfiUk3BMGAEv","Female",57,"20000 € - 30000 €",1,15,"Austria",4,"purchased",1
+"391","R_3PsCgXVYZdRbHlv","Male",23,"Less than 20000€",0,15,"Austria",3,"purchased",0
+"392","R_AsQhpZFPnLzQh9v","Male",22,"Less than 20000€",0,16,"Austria",4,"purchased",0
+"393","R_25tMSZPEalKg0Ku","Female",59,"40000 € - 50000 €",3,18,"Austria",2,"purchased",1
+"394","R_eldKo7TFPJf5hQZ","Male",32,"30000 € - 40000 €",2,25,"Austria",4,"purchased",1
+"395","R_XvuygHmCQh9k2nn","Female",23,"Less than 20000€",0,15,"Austria",1,"purchased",0
+"396","R_12yXYUbz7BkUi0G","Male",45,"30000 € - 40000 €",2,15,"Austria",0,"purchased",0
+"397","R_3De9mejg6cxR9wJ","Male",24,"Less than 20000€",0,15,"Austria",3,"purchased",0
+"398","R_pyfZEeEuK9eETYt","Male",24,"Less than 20000€",0,16,"Austria",3,"purchased",0
+"399","R_2VvyiFAl4du2Rh1","Male",26,"Less than 20000€",0,18,"Austria",2,"purchased",0
+"400","R_2ToeLVnjGa9HS5N","Female",28,"20000 € - 30000 €",1,17,"Austria",3,"purchased",0
+"401","R_3Mb1ud2tQVZxmFb","Male",24,"Prefer not to answer",NA,17,"Austria",3,"purchased",0
+"402","R_2E60x16CnFtLT3c","Male",30,"20000 € - 30000 €",1,9,"Austria",2,"purchased",0
+"403","R_emt5psRuecqD9Jf","Male",31,"20000 € - 30000 €",1,21,"Austria",3,"purchased",0
+"404","R_1Ow3a187SVwh3sb","Female",25,"20000 € - 30000 €",1,19,"Austria",2,"purchased",1
+"405","R_3meFplNWBE0nS8p","Male",25,"Less than 20000€",0,18,"Austria",4,"purchased",0
+"406","R_2Qy76R6ZSOrZhH1","Female",20,"Less than 20000€",0,14,"Austria",4,"purchased",1
+"407","R_6KGl9lsqDZQTY3L","Female",21,"Less than 20000€",0,15,"Austria",2,"purchased",0
+"408","R_33fGYrDHsRLi7tM","Male",20,"20000 € - 30000 €",1,12,"Austria",2,"purchased",0
+"409","R_RDdzzxBolxRskzD","Female",25,"Less than 20000€",0,17,"Austria",3,"purchased",1
+"410","R_3q9hmOtJVYA53vw","Female",27,"Less than 20000€",0,20,"Austria",1,"purchased",0
+"411","R_12LSz9uFp0FpAzp","Female",23,"Less than 20000€",0,17,"Austria",3,"purchased",1
+"412","R_3ehmYIGdUCqbDjX","Female",22,"Less than 20000€",0,8,"Austria",2,"purchased",0
+"413","R_3PjAqLoIyibuXuE","Male",25,"30000 € - 40000 €",2,13,"Austria",1,"purchased",1
+"414","R_2Yn9ODDN7EGpYrF","Female",22,"Less than 20000€",0,15,"Austria",3,"purchased",0
+"415","R_sHlvHsPshvzgzZv","Male",24,"20000 € - 30000 €",1,12,"Austria",2,"purchased",1
+"416","R_11jVPb0wTYmIy6k","Female",24,"30000 € - 40000 €",2,9,"Austria",0,"purchased",1
+"417","R_3CPgpNMX8pbyP3B","Female",38,"20000 € - 30000 €",1,22,"Austria",4,"purchased",0
+"418","R_b1nEo9uOqxYP37X","Female",35,"20000 € - 30000 €",1,10,"Austria",2,"purchased",1
+"419","R_1CmfEWy2RPEI84E","Male",19,"Less than 20000€",0,12,"Austria",2,"purchased",0
+"420","R_12AATmTuIuwX4bC","Female",29,"20000 € - 30000 €",1,10,"Austria",3,"purchased",0
+"421","R_1opzcFoQX96z6Bw","Female",47,"Less than 20000€",0,13,"Austria",2,"purchased",0
+"422","R_uh4oxraQjcMeUQV","Female",30,"Less than 20000€",0,21,"Austria",1,"purchased",1
+"423","R_W236lqhuIEdcj7j","Female",23,"Prefer not to answer",NA,17,"Austria",2,"purchased",1
+"424","R_3DiOs88rn4N1H0d","Male",27,"30000 € - 40000 €",2,19,"Austria",3,"purchased",0
+"425","R_1jp8BkUdAtqTPdX","Female",24,"Less than 20000€",0,9,"Austria",3,"purchased",0
+"426","R_3edVifqrKyjcbOl","Female",30,"20000 € - 30000 €",1,8,"Austria",3,"purchased",0
+"427","R_2TLu5gaIQGKl6TM","Female",22,"Less than 20000€",0,8,"Austria",2,"purchased",0
+"428","R_2Yy8BrdIjRnKfrM","Female",23,"Less than 20000€",0,16,"Austria",2,"purchased",0
+"429","R_yt0gx7zcDzlObOp","Female",40,"30000 € - 40000 €",2,14,"Austria",2,"purchased",0
+"430","R_2ZHqFNkEeDuKJ6V","Female",31,"Less than 20000€",0,9,"Austria",3,"purchased",0
+"431","R_1pSBDkbdlX9byP8","Female",29,"20000 € - 30000 €",1,4,"Austria",1,"purchased",0
+"432","R_1mDl0ZAivCpxiU9","Female",22,"Less than 20000€",0,16,"Austria",2,"purchased",0
+"433","R_xErN6lCesT0Ul3j","Female",20,"Prefer not to answer",NA,13,"Austria",2,"purchased",1
+"434","R_2fdiHlzbxubzi8B","Female",23,"20000 € - 30000 €",1,14,"Austria",2,"purchased",1
+"435","R_XtzUu9i3Zp0LsRj","Female",30,"20000 € - 30000 €",1,15,"Austria",3,"purchased",0
+"436","R_1FDppyOIPc1FUVm","Male",30,"20000 € - 30000 €",1,20,"Austria",2,"purchased",1
+"437","R_RhlRMiJjlznTe0N","Female",30,"20000 € - 30000 €",1,12,"Austria",0,"purchased",0
+"438","R_2aE8OQ2Ezo5yIu1","Female",24,"20000 € - 30000 €",1,18,"Austria",3,"purchased",0
+"439","R_RnyQG9IP8ZXBks1","Female",35,"Less than 20000€",0,20,"Austria",2,"purchased",0
+"440","R_3lrkNSSBbfK2KdW","Female",25,"Prefer not to answer",NA,17,"Austria",3,"purchased",0
+"441","R_2eXPYdfCiIxpGsJ","Male",25,"20000 € - 30000 €",1,18,"Austria",3,"purchased",0
+"442","R_1QSNzIhkGmSZAMp","Female",24,"Less than 20000€",0,17,"Austria",3,"purchased",0
+"443","R_uzjX1fvyM4twnEB","Female",24,"Less than 20000€",0,18,"Austria",2,"purchased",0
+"444","R_11cngFihuZtQEti","Female",25,"40000 € - 50000 €",3,16,"Austria",2,"purchased",1
+"445","R_3HRetemAtiOqKvx","Male",26,"Less than 20000€",0,18,"Austria",2,"purchased",1
+"446","R_2wgF5tDV4HVTftL","Female",27,"Less than 20000€",0,17,"Austria",3,"purchased",0
+"447","R_125veBZbsZdZtab","Male",25,"20000 € - 30000 €",1,10,"Austria",2,"purchased",0
+"448","R_3irSRIH4boiJmGi","Male",22,"20000 € - 30000 €",1,13,"Austria",3,"purchased",1
+"449","R_3hcIe6HDcNOuxpu","Female",26,"Less than 20000€",0,18,"Austria",3,"purchased",1
+"450","R_3oZpPipWfwv7miI","Male",29,"30000 € - 40000 €",2,16,"Austria",4,"purchased",0
+"451","R_2VwOHPp3ofZujUt","Female",34,"50000 € - 60000 €",4,18,"Austria",3,"purchased",0
+"452","R_2E48ODqj2omjxDD","Female",19,"Less than 20000€",0,13,"Austria",1,"purchased",0
+"453","R_29mMgwXBiL64XWF","Female",20,"Less than 20000€",0,14,"Austria",1,"purchased",0
+"454","R_1nMVFcbuXzHDGcq","Female",18,"Prefer not to answer",NA,12,"Austria",0,"purchased",1
+"455","R_SNc1eAvMvVRJ9wl","Female",19,"Prefer not to answer",NA,12,"Austria",0,"purchased",1
+"456","R_2Sl7tdJnyu5HctZ","Male",19,"Less than 20000€",0,12,"Austria",0,"purchased",0
+"457","R_3L5agpIoOjxzetQ","Male",21,"Less than 20000€",0,14,"Austria",3,"purchased",1
+"458","R_2tCZ89TdrR6wckv","Male",23,"Less than 20000€",0,17,"Austria",3,"purchased",1
+"459","R_RXHjqQV6jksyS77","Male",31,"20000 € - 30000 €",1,20,"Austria",3,"purchased",0
+"460","R_1igvCAC4cTVsnzd","Female",33,"30000 € - 40000 €",2,13,"Austria",1,"purchased",0
+"461","R_2rUCvdyDd2s4amn","Female",22,"Less than 20000€",0,16,"Austria",3,"purchased",1
+"462","R_wZbAtcCpUC0PWXD","Female",50,"20000 € - 30000 €",1,13,"Austria",3,"purchased",0
+"463","R_O9Cy09ljfolFpZf","Female",24,"Less than 20000€",0,17,"Austria",1,"purchased",1
+"464","R_2uxrYaXjxs9lFlr","Male",26,"30000 € - 40000 €",2,20,"Austria",3,"purchased",0
+"465","R_24oQEIEewJccBbw","Male",24,"20000 € - 30000 €",1,9,"Austria",3,"purchased",0
+"466","R_0MWQLRMvqzEqUGB","Female",23,"Less than 20000€",0,7,"Austria",2,"purchased",0
+"467","R_3sbu9nXRnyIHKJ8","Female",37,"50000 € - 60000 €",4,30,"Austria",4,"purchased",0
+"468","R_1Q0z7t0iWBuxf0X","Female",23,"20000 € - 30000 €",1,15,"Austria",3,"purchased",0
+"469","R_3ReKP81jrFV8ElX","Female",32,"50000 € - 60000 €",4,20,"Austria",4,"purchased",0
+"470","R_1mUvASNGaKO3q8U","Male",24,"Prefer not to answer",NA,16,"Austria",3,"purchased",0
+"471","R_ujPK0bRgTswyHnj","Female",34,"50000 € - 60000 €",4,12,"Austria",3,"purchased",1
+"472","R_01EVG5DAaxe2y3f","Female",30,"20000 € - 30000 €",1,21,"Austria",0,"purchased",0
+"473","R_3HChIniDBf8WdE5","Female",33,"20000 € - 30000 €",1,20,"Austria",3,"purchased",0
+"474","R_3HnOP7h1RHmcRYw","Male",23,"Less than 20000€",0,16,"Austria",2,"purchased",0
+"475","R_2s1lk6adGygrWUx","Male",24,"Less than 20000€",0,14,"Austria",1,"purchased",0
+"476","R_3g9TP572SNc7XQl","Male",21,"Less than 20000€",0,14,"Austria",4,"purchased",0
+"477","R_2Bba9u7P8NrcZmT","Female",32,"Less than 20000€",0,9,"Austria",2,"purchased",1
+"478","R_snWMcZo2zObZ5cZ","Female",27,"Less than 20000€",0,16,"Austria",3,"purchased",0
+"479","R_2th62iUX00PkbgA","Female",20,"Less than 20000€",0,15,"Austria",3,"purchased",0
+"480","R_2odoh9sfg4sQrwR","Female",67,"40000 € - 50000 €",3,14,"Austria",2,"purchased",0
+"481","R_1LiNAA4zQIfTBlA","Female",68,"30000 € - 40000 €",2,18,"Austria",3,"purchased",1
+"482","R_3Du5j0mdRlfYDfR","Female",49,"Less than 20000€",0,15,"Austria",2,"purchased",0
+"483","R_1K852ZYHWoP8eGS","Female",20,"Less than 20000€",0,14,"Austria",1,"purchased",1
+"484","R_2U5iIDdfYPJt02T","Male",38,"20000 € - 30000 €",1,10,"Austria",2,"purchased",0
+"485","R_2Sv53IDtDTHJgVC","Female",28,"30000 € - 40000 €",2,12,"Austria",3,"purchased",0
+"486","R_2pXCTYeRZReyiZ8","Female",23,"20000 € - 30000 €",1,12,"Austria",1,"purchased",0
+"487","R_1gIrDiVTqYK1meY","Male",35,"20000 € - 30000 €",1,5,"Austria",4,"purchased",0
+"488","R_Rep0HLUJeq5Ebv3","Female",25,"20000 € - 30000 €",1,14,"Austria",1,"purchased",0
+"489","R_OwDXOQOCls5O33X","Male",33,"40000 € - 50000 €",3,18,"Austria",2,"purchased",0
+"490","R_OvtLTu2p45J3k6B","Male",24,"Less than 20000€",0,17,"Austria",3,"purchased",0
+"491","R_1OpFOpIQmhS0eBf","Male",40,"40000 € - 50000 €",3,8,"Austria",4,"purchased",0
+"492","R_cunQlVIQnmtCafn","Female",19,"Less than 20000€",0,14,"Austria",1,"purchased",1
+"493","R_3p6d6IpFAwMvnsE","Male",32,"30000 € - 40000 €",2,12,"Austria",3,"purchased",0
+"494","R_1hZ4JZ61XuuYkRC","Female",28,"50000 € - 60000 €",4,17,"Austria",3,"purchased",0
+"495","R_2ckeJ5HoW5EaLkU","Female",22,"Less than 20000€",0,7,"Austria",2,"purchased",0
+"496","R_1OMFx5818vk9sgC","Female",34,"30000 € - 40000 €",2,12,"Austria",3,"purchased",0
+"497","R_12lubvGTUNJrVVc","Male",36,"40000 € - 50000 €",3,11,"Austria",3,"purchased",0
+"498","R_vGM7VBZPKHOsBFv","Female",25,"Less than 20000€",0,14,"Austria",1,"purchased",0
+"499","R_3EnCbeND5jIV979","Female",29,"20000 € - 30000 €",1,13,"Austria",3,"purchased",1
+"500","R_2ahSv1HOS8KhB51","Female",21,"20000 € - 30000 €",1,15,"Austria",3,"purchased",0
+"501","R_1FhrwehsMjmy1We","Female",25,"30000 € - 40000 €",2,18,"Austria",3,"purchased",1
+"502","R_3nrBd7IDfzXqtf6","Female",31,"40000 € - 50000 €",3,16,"Austria",2,"purchased",0
+"503","R_vJoLLhX22duztux","Male",28,"20000 € - 30000 €",1,12,"Austria",2,"purchased",0
+"504","R_ClewUGf3mrh5pPX","Female",18,"Less than 20000€",0,11,"Austria",0,"purchased",0
+"505","R_3NwjLpxiQmmJ2TO","Female",31,"Less than 20000€",0,13,"Austria",0,"purchased",0
+"506","R_cCmqya32GFr7Kc9","Male",24,"20000 € - 30000 €",1,13,"Austria",4,"purchased",1
+"507","R_1CmxxMlbQNCUZR2","Female",24,"Less than 20000€",0,18,"Austria",2,"purchased",0
+"508","R_1nONis291E8wyAa","Male",25,"Less than 20000€",0,16,"Austria",4,"purchased",1
+"509","R_1DI5iHobmfemjXU","Male",29,"20000 € - 30000 €",1,13,"Austria",1,"purchased",0
+"510","R_2zBhITGkdBmS96u","Female",26,"Less than 20000€",0,19,"Austria",1,"purchased",1
+"511","R_21H6Vu7VOHjCiWX","Female",22,"Less than 20000€",0,15,"Austria",3,"purchased",0
+"512","R_24jgjnLbm48yygp","Female",52,"Less than 20000€",0,15,"Austria",3,"purchased",1
+"513","R_8IFgSpgwrQ8LbNL","Female",34,"40000 € - 50000 €",3,16,"Austria",3,"purchased",0
+"514","R_1ePt3CigCEVRM9b","Female",25,"20000 € - 30000 €",1,17,"Austria",1,"purchased",0
+"515","R_3fE6Fh4a4dGFEx2","Female",35,"20000 € - 30000 €",1,18,"Austria",1,"purchased",0
+"516","R_SPfqmGFlbeVJ5MB","Male",18,"20000 € - 30000 €",1,9,"Austria",0,"purchased",1
+"517","R_1JUPMw80HTRTIZM","Female",36,"50000 € - 60000 €",4,20,"Austria",4,"purchased",1
+"518","R_1NnsRjE2jFu0R1O","Male",23,"Less than 20000€",0,16,"Austria",3,"purchased",1
+"519","R_2woWYWV13sQPayp","Female",22,"Prefer not to answer",NA,13,"Austria",0,"purchased",0
+"520","R_3Jn4tKmL5CERI6q","Female",21,"Less than 20000€",0,14,"Austria",4,"purchased",0
+"521","R_3k5GwScRdKftxYY","Male",52,"More than 60000 €",5,14,"Austria",3,"purchased",1
+"522","R_2ymxexWUfayfdA2","Female",24,"Less than 20000€",0,17,"Austria",3,"purchased",1
+"523","R_3oEDqMHuflI33An","Female",51,"More than 60000 €",5,12,"Austria",3,"purchased",1
+"524","R_1LbM0WXdN7nTBIh","Male",18,"More than 60000 €",5,14,"Austria",3,"purchased",0
+"525","R_3hstLTCnRMwq8l9","Female",39,"30000 € - 40000 €",2,17,"Austria",4,"purchased",0
+"526","R_qO61bBSvpzwJtFD","Female",21,"Less than 20000€",0,14,"Austria",2,"purchased",0
+"527","R_etit4k6r7eAJMGZ","Female",21,"Less than 20000€",0,14,"Austria",3,"purchased",1
+"528","R_3NWAfiwvZa0IAlv","Female",40,"Less than 20000€",0,15,"Austria",3,"purchased",1
+"529","R_2tKnmUHC4BQFW3Z","Female",29,"Less than 20000€",0,17,"Austria",3,"purchased",1
+"530","R_1ifIQ1N3Zy7ynoH","Female",23,"Less than 20000€",0,17,"Austria",2,"purchased",1
+"531","R_3hrM2CvmFEDm9C0","Female",51,"more than R$ 9900",5,17,"Brazil",4,"free",1
+"532","R_sb9OUHlXE0sBTY5","Female",36,"more than R$ 9900",5,18,"Brazil",2,"free",0
+"533","R_1Q0lPDI7BT3HXeU","Male",45,"more than R$ 9900",5,22,"Brazil",4,"free",0
+"534","R_2txLI2j1mdz6av4","Male",38,"more than R$ 9900",5,25,"Brazil",4,"free",1
+"535","R_vJQB5LgoARS3nmF","Female",41,"more than R$ 9900",5,20,"Brazil",4,"free",0
+"536","R_3EFoyiQvYHHkAJ5","Female",39,"more than R$ 9900",5,30,"Brazil",4,"free",1
+"537","R_r8Ts1yisPM8OHWp","Female",26,"R$ 1101 - R$ 2200",0.625,9,"Brazil",1,"free",0
+"538","R_22VUjJfry4ZqvtR","Female",24,"R$ 1101 - R$ 2200",0.625,18,"Brazil",2,"free",0
+"539","R_2SrhzuCPudu6Tow","Male",52,"R$ 5501 - R$ 7700",3.125,40,"Brazil",3,"free",1
+"540","R_1CeeoJ43HlOofaZ","Female",37,"more than R$ 9900",5,19,"Brazil",4,"free",0
+"541","R_2zUzAg97Hv8wIE0","Male",32,"R$ 5501 - R$ 7700",3.125,16,"Brazil",4,"free",0
+"542","R_1DqyVFxWC8tbLan","Female",33,"more than R$ 9900",5,27,"Brazil",2,"free",0
+"543","R_Zad2gePQRmMdE7n","Female",42,"more than R$ 9900",5,28,"Brazil",3,"free",1
+"544","R_2WGqOocm0pAaoFh","Male",46,"more than R$ 9900",5,20,"Brazil",3,"free",0
+"545","R_1f2DfkRYqxpTePH","Female",42,"more than R$ 9900",5,18,"Brazil",3,"free",0
+"546","R_2wSJZyxxij5XzL0","Female",47,"more than R$ 9900",5,20,"Brazil",4,"free",0
+"547","R_3R1l92VZ7AsuEFp","Female",51,"more than R$ 9900",5,18,"Brazil",4,"free",0
+"548","R_2dFUxB07IwQAEFi","Female",57,"R$ 5501 - R$ 7700",3.125,29,"Brazil",2,"free",0
+"549","R_3L0z1jDtR8KEcEx","Male",35,"R$ 7701 - R$ 9900",4.375,21,"Brazil",4,"free",1
+"550","R_1H1VwavangXbkUm","Male",31,"R$ 1101 - R$ 2200",0.625,9,"Brazil",4,"free",1
+"551","R_3LZSxgMghVwU43T","Female",36,"more than R$ 9900",5,17,"Brazil",3,"free",0
+"552","R_1QL6cJadYt7FJ4o","Male",30,"R$ 3301 - R$ 4400",1.875,22,"Brazil",3,"free",0
+"553","R_1lmHo9TXSdZ4jLe","Female",51,"more than R$ 9900",5,23,"Brazil",3,"free",0
+"554","R_1IWe1tTyNm4Ew8T","Female",31,"R$ 3301 - R$ 4400",1.875,22,"Brazil",2,"free",0
+"555","R_3OieXcsrCCkkGBJ","Female",33,"R$ 4401 - R$ 5500",2.5,5,"Brazil",0,"free",1
+"556","R_Zerp90Vux3SKbzb","Male",37,"R$ 5501 - R$ 7700",3.125,15,"Brazil",4,"free",1
+"557","R_2XbPzV90UwsD90M","Male",26,"R$ 2201 - R$ 3300",1.25,20,"Brazil",4,"free",0
+"558","R_31HI6Ov5NUuIf9h","Male",38,"more than R$ 9900",5,25,"Brazil",3,"free",0
+"559","R_PSAcygwZIe764a5","Female",56,"R$ 7701 - R$ 9900",4.375,18,"Brazil",2,"free",1
+"560","R_3jZJPMvlDjqsnuo","Female",39,"more than R$ 9900",5,20,"Brazil",4,"free",1
+"561","R_1jYRBEufYI5xLIV","Female",51,"R$ 2201 - R$ 3300",1.25,30,"Brazil",3,"free",0
+"562","R_2uHUv2hNsBz7aYr","Female",42,"Prefer not to answer",NA,15,"Brazil",1,"free",0
+"563","R_25FsD3QLoNItOHE","Female",46,"more than R$ 9900",5,26,"Brazil",1,"free",0
+"564","R_w6RFMQfN39UHEU9","Female",53,"more than R$ 9900",5,47,"Brazil",3,"free",1
+"565","R_2e81uOmGi7cbyyF","Female",65,"R$ 3301 - R$ 4400",1.875,16,"Brazil",2,"free",0
+"566","R_3O0RhvJaYArVswQ","Female",69,"R$ 5501 - R$ 7700",3.125,20,"Brazil",3,"free",1
+"567","R_3O8k8okYDxEAue9","Female",30,"R$ 4401 - R$ 5500",2.5,22,"Brazil",4,"free",0
+"568","R_9AFTAgAw2ZiWWqt","Female",49,"more than R$ 9900",5,21,"Brazil",4,"free",0
+"569","R_1Qi9EFef0HsvoJ1","Male",56,"less than R$ 1100",0,30,"Brazil",2,"free",1
+"570","R_3gSp15Lhbk9uTrv","Female",44,"R$ 3301 - R$ 4400",1.875,9,"Brazil",0,"free",0
+"571","R_z6fP3cVpNLl6sBr","Female",43,"more than R$ 9900",5,19,"Brazil",3,"free",0
+"572","R_1hGAO02A2pH7YWp","Female",34,"R$ 1101 - R$ 2200",0.625,16,"Brazil",2,"free",1
+"573","R_2uCyj5bVMBDGo09","Female",21,"R$ 2201 - R$ 3300",1.25,17,"Brazil",0,"free",0
+"574","R_3rNwv62OhLdaDjW","Female",43,"more than R$ 9900",5,19,"Brazil",3,"free",0
+"575","R_2WupRDyKQSUt8xw","Female",63,"Prefer not to answer",NA,20,"Brazil",2,"free",1
+"576","R_27p8EIzk2g56hC6","Female",31,"R$ 2201 - R$ 3300",1.25,8,"Brazil",3,"free",0
+"577","R_1pmoTJsxV6Oosks","Female",39,"R$ 7701 - R$ 9900",4.375,21,"Brazil",2,"free",0
+"578","R_3PbsCl5wc1jJSAV","Female",53,"R$ 5501 - R$ 7700",3.125,21,"Brazil",2,"free",0
+"579","R_2fcwTMHGZZOVDda","Male",36,"R$ 2201 - R$ 3300",1.25,24,"Brazil",3,"free",1
+"580","R_27d7MonHdeEJJSd","Male",56,"more than R$ 9900",5,14,"Brazil",4,"free",1
+"581","R_2bTrv5jm9C2JCIH","Male",61,"R$ 4401 - R$ 5500",2.5,15,"Brazil",3,"free",1
+"582","R_1ooPG2eJFXFHodO","Male",67,"R$ 1101 - R$ 2200",0.625,18,"Brazil",3,"free",0
+"583","R_3eaSwwhfF02KlGK","Female",35,"R$ 3301 - R$ 4400",1.875,16,"Brazil",3,"free",0
+"584","R_UaurZILouqFu8iB","Female",56,"more than R$ 9900",5,50,"Brazil",4,"free",0
+"585","R_3CE2qR1iSEdmQmx","Male",29,"R$ 3301 - R$ 4400",1.875,18,"Brazil",1,"free",0
+"586","R_1hYV82wRAhXX9BU","Female",27,"R$ 5501 - R$ 7700",3.125,15,"Brazil",3,"free",1
+"587","R_1FtxoLBfwbk9VRj","Male",51,"R$ 5501 - R$ 7700",3.125,15,"Brazil",2,"free",1
+"588","R_3sA2f51sZ1GemOx","Female",52,"R$ 5501 - R$ 7700",3.125,10,"Brazil",2,"free",1
+"589","R_3L1hAs7KlWDSk86","Female",37,"R$ 4401 - R$ 5500",2.5,15,"Brazil",3,"free",0
+"590","R_1laAkb68g0y0UkS","Female",41,"R$ 7701 - R$ 9900",4.375,20,"Brazil",3,"free",0
+"591","R_33kW67teZ4zLjkE","Male",24,"R$ 5501 - R$ 7700",3.125,16,"Brazil",3,"free",0
+"592","R_WCHrt7t7dgfGuaZ","Female",65,"Prefer not to answer",NA,30,"Brazil",3,"free",0
+"593","R_2yjZ8BNQl4F2Ex7","Female",27,"R$ 4401 - R$ 5500",2.5,18,"Brazil",3,"free",0
+"594","R_1mgQ53NES7Vo5ys","Male",57,"more than R$ 9900",5,20,"Brazil",4,"free",0
+"595","R_33sba7pVz543H5X","Female",50,"R$ 5501 - R$ 7700",3.125,14,"Brazil",1,"free",0
+"596","R_3kCkY62akP1G9M3","Male",54,"R$ 7701 - R$ 9900",4.375,16,"Brazil",4,"free",1
+"597","R_1PUIrxg5oCNEWMv","Male",74,"R$ 4401 - R$ 5500",2.5,15,"Brazil",3,"free",0
+"598","R_2fB93C7790pBkF3","Female",23,"R$ 4401 - R$ 5500",2.5,17,"Brazil",3,"free",0
+"599","R_86QHxS1OW22glGx","Female",45,"R$ 3301 - R$ 4400",1.875,20,"Brazil",2,"free",1
+"600","R_2f2qdKPg3auDagN","Female",60,"R$ 5501 - R$ 7700",3.125,20,"Brazil",3,"free",1
+"601","R_O8PFXxJZsAnWfDP","Male",54,"R$ 4401 - R$ 5500",2.5,21,"Brazil",4,"free",0
+"602","R_1f8JghhJKwn8HjR","Male",28,"R$ 7701 - R$ 9900",4.375,20,"Brazil",4,"free",0
+"603","R_2VvTHtcbg0wJTe0","Male",66,"R$ 7701 - R$ 9900",4.375,28,"Brazil",3,"free",0
+"604","R_1FqEt8sUVMUITS8","Male",31,"more than R$ 9900",5,19,"Brazil",3,"free",0
+"605","R_Rmdd3iiZC0S4q3v","Female",51,"more than R$ 9900",5,5,"Brazil",2,"free",1
+"606","R_2rkkTKVMrQdk1bG","Female",31,"more than R$ 9900",5,16,"Brazil",3,"free",0
+"607","R_20P7Q3RDru5lepb","Female",50,"R$ 1101 - R$ 2200",0.625,12,"Brazil",2,"free",1
+"608","R_2CCjbH2ZJ18mKbY","Male",66,"more than R$ 9900",5,18,"Brazil",3,"free",0
+"609","R_1eOSn7YULPTyy48","Male",56,"Prefer not to answer",NA,30,"Brazil",1,"free",0
+"610","R_VWmRUIJUw6eiOWt","Female",25,"R$ 1101 - R$ 2200",0.625,20,"Brazil",3,"free",0
+"611","R_2e4mfmve7uDDUQI","Male",47,"more than R$ 9900",5,22,"Brazil",4,"free",1
+"612","R_1Eg6N8ThfEiLE8q","Male",60,"R$ 5501 - R$ 7700",3.125,55,"Brazil",4,"free",1
+"613","R_22CQYLOULLhPhEt","Female",73,"more than R$ 9900",5,13,"Brazil",3,"free",1
+"614","R_2t5r4KnpOf3c8dX","Female",30,"R$ 2201 - R$ 3300",1.25,24,"Brazil",0,"free",0
+"615","R_1g6F5mlLOJrZ5U0","Female",24,"R$ 2201 - R$ 3300",1.25,18,"Brazil",4,"free",1
+"616","R_1JF6XOv9zvVz7ix","Male",41,"more than R$ 9900",5,16,"Brazil",4,"free",1
+"617","R_1H0HUu2ssMXSRkf","Female",43,"R$ 2201 - R$ 3300",1.25,13,"Brazil",3,"free",0
+"618","R_25zn8QGEfhhl1gh","Female",35,"more than R$ 9900",5,17,"Brazil",4,"free",0
+"619","R_1dAIAgiTmZZGRTo","Male",56,"more than R$ 9900",5,23,"Brazil",3,"free",0
+"620","R_2EB5NS0YX9OmUBU","Male",61,"R$ 3301 - R$ 4400",1.875,18,"Brazil",1,"free",0
+"621","R_UmvxVrIb2wwKVxf","Female",54,"R$ 4401 - R$ 5500",2.5,18,"Brazil",2,"free",0
+"622","R_25TQDjRbHt31Ca8","Male",20,"R$ 5501 - R$ 7700",3.125,12,"Brazil",3,"free",0
+"623","R_3ffyo8NPSIFp2gg","Male",54,"R$ 7701 - R$ 9900",4.375,16,"Brazil",0,"free",1
+"624","R_2R205wIPedSvKXH","Female",53,"R$ 5501 - R$ 7700",3.125,22,"Brazil",0,"free",0
+"625","R_1Bwf1Of8zBkZyet","Female",45,"R$ 1101 - R$ 2200",0.625,10,"Brazil",2,"free",1
+"626","R_BsKHfjOBJfaXO8x","Female",36,"R$ 1101 - R$ 2200",0.625,10,"Brazil",2,"free",1
+"627","R_3ncqID5SzBjg3Af","Male",36,"R$ 3301 - R$ 4400",1.875,24,"Brazil",2,"free",0
+"628","R_2uV74N2mFaQowt8","Male",57,"R$ 3301 - R$ 4400",1.875,13,"Brazil",3,"free",0
+"629","R_1EXs9Km4sVJKbzM","Male",44,"R$ 4401 - R$ 5500",2.5,17,"Brazil",4,"free",0
+"630","R_3g26MK8GCRYroSc","Female",68,"more than R$ 9900",5,20,"Brazil",3,"free",0
+"631","R_2WMQxPpsLPIgP6d","Female",40,"more than R$ 9900",5,20,"Brazil",3,"free",0
+"632","R_3KrM44qk3N3ztS8","Male",60,"more than R$ 9900",5,22,"Brazil",3,"free",0
+"633","R_11WPwKXtSk7Cx77","Male",33,"R$ 1101 - R$ 2200",0.625,26,"Brazil",2,"free",0
+"634","R_qC8DDUMYaYyLBCh","Female",64,"R$ 7701 - R$ 9900",4.375,25,"Brazil",3,"free",0
+"635","R_1eQrMxgGPIjuzUv","Female",61,"more than R$ 9900",5,27,"Brazil",2,"free",1
+"636","R_1gwqQ3v7gon7J2K","Female",22,"R$ 1101 - R$ 2200",0.625,8,"Brazil",3,"free",0
+"637","R_zdvlXHYaVXrSAkV","Female",66,"R$ 5501 - R$ 7700",3.125,26,"Brazil",3,"free",1
+"638","R_PCHQTYV27QPJalX","Female",62,"more than R$ 9900",5,32,"Brazil",3,"free",0
+"639","R_3QqI9L7OstRAdYR","Female",42,"more than R$ 9900",5,22,"Brazil",3,"free",0
+"640","R_WxnEssEFcSt1G1j","Female",32,"R$ 1101 - R$ 2200",0.625,12,"Brazil",3,"free",0
+"641","R_A57PCRA6sa3T1hD","Female",36,"R$ 1101 - R$ 2200",0.625,11,"Brazil",0,"free",0
+"642","R_2b31JXDIUtXxySw","Female",42,"R$ 2201 - R$ 3300",1.25,14,"Brazil",3,"free",0
+"643","R_11j6pSkPK8S2uNd","Female",31,"more than R$ 9900",5,21,"Brazil",2,"free",0
+"644","R_3gSio9emmGpqzrp","Female",27,"more than R$ 9900",5,20,"Brazil",2,"free",1
+"645","R_Rqb8FzY9JTMYkOl","Female",52,"R$ 5501 - R$ 7700",3.125,20,"Brazil",2,"free",0
+"646","R_1prm25aCTGruLgx","Female",31,"more than R$ 9900",5,23,"Brazil",3,"free",0
+"647","R_1BSgS79FBN5PSzG","Male",24,"R$ 7701 - R$ 9900",4.375,15,"Brazil",3,"free",0
+"648","R_1FqQwlqSK4eGG1Z","Female",35,"R$ 4401 - R$ 5500",2.5,20,"Brazil",3,"free",1
+"649","R_2aK1tCHN4LEHxRK","Male",22,"less than R$ 1100",0,15,"Brazil",1,"free",0
+"650","R_2yd8uUmnCgkY6t4","Male",28,"more than R$ 9900",5,24,"Brazil",2,"free",0
+"651","R_TuT2XF8sG2ulUhb","Female",31,"R$ 5501 - R$ 7700",3.125,21,"Brazil",3,"free",1
+"652","R_31Ajvav9B4fHnh6","Male",29,"R$ 7701 - R$ 9900",4.375,18,"Brazil",3,"free",0
+"653","R_242TkuSVeyM68dv","Female",34,"R$ 5501 - R$ 7700",3.125,25,"Brazil",2,"free",0
+"654","R_3kzf5ROFkg4eCKi","Male",38,"R$ 5501 - R$ 7700",3.125,12,"Brazil",2,"free",0
+"655","R_32L7Zbyi2dbeLa8","Male",33,"R$ 4401 - R$ 5500",2.5,22,"Brazil",2,"free",0
+"656","R_silrcN05AFjpLcl","Male",34,"more than R$ 9900",5,21,"Brazil",3,"free",0
+"657","R_3fZUVDTxXVQ2M8L","Male",33,"R$ 7701 - R$ 9900",4.375,16,"Brazil",3,"free",0
+"658","R_9T8Giut6aLa50ml","Female",31,"R$ 4401 - R$ 5500",2.5,16,"Brazil",3,"free",0
+"659","R_3ekPdJ5MnIhhtHK","Male",32,"more than R$ 9900",5,22,"Brazil",0,"free",0
+"660","R_3elhVuNNZLuL3Tl","Male",30,"more than R$ 9900",5,19,"Brazil",4,"free",0
+"661","R_1Hk0BSj2Sm0iQXL","Male",23,"R$ 4401 - R$ 5500",2.5,23,"Brazil",3,"free",0
+"662","R_3nCNwghttLMmvMc","Male",30,"more than R$ 9900",5,20,"Brazil",4,"free",0
+"663","R_3m8H9ME2mr39vfO","Female",35,"R$ 5501 - R$ 7700",3.125,22,"Brazil",1,"free",0
+"664","R_2EaBHKPxTsyylfv","Male",35,"R$ 5501 - R$ 7700",3.125,15,"Brazil",4,"free",0
+"665","R_1dNeeU4fzwkX7Id","Female",36,"R$ 3301 - R$ 4400",1.875,7,"Brazil",4,"free",1
+"666","R_2ZEvtvjP3nX6Q7n","Female",31,"Prefer not to answer",NA,17,"Brazil",4,"free",1
+"667","R_1ONTVbAs6vkBI41","Female",58,"more than R$ 9900",5,18,"Brazil",1,"free",0
+"668","R_2YJlLriBIk6z96C","Female",24,"more than R$ 9900",5,16,"Brazil",3,"free",0
+"669","R_ZCqgXBP7gTrdaa5","Female",40,"more than R$ 9900",5,19,"Brazil",3,"free",0
+"670","R_bCSdgHXYbTTTYB3","Female",36,"more than R$ 9900",5,17,"Brazil",4,"free",1
+"671","R_3HH8gMS5wKvAOEv","Male",53,"more than R$ 9900",5,17,"Brazil",3,"free",1
+"672","R_D8N9MI6CB1MRrUd","Male",75,"Prefer not to answer",NA,20,"Brazil",4,"free",0
+"673","R_qRfnVIlEy1mqMbD","Female",43,"R$ 3301 - R$ 4400",1.875,22,"Brazil",3,"free",0
+"674","R_ULr4gTgXxzIr2WB","Female",39,"more than R$ 9900",5,15,"Brazil",3,"free",0
+"675","R_8c5hBUlnxXEOyM9","Male",29,"Prefer not to answer",NA,16,"Brazil",2,"free",0
+"676","R_UzoEHD6eEEptZVn","Female",42,"more than R$ 9900",5,19,"Brazil",3,"free",1
+"677","R_6DpxmUPVZdkA9xv","Female",41,"R$ 5501 - R$ 7700",3.125,15,"Brazil",1,"free",0
+"678","R_1lxvOOouIyXIYZT","Female",55,"more than R$ 9900",5,19,"Brazil",3,"free",0
+"679","R_0kvaE8dS5I5bpmh","Female",35,"more than R$ 9900",5,17,"Brazil",3,"free",1
+"680","R_3oGt3ErjURSXwrN","Female",69,"R$ 3301 - R$ 4400",1.875,7,"Brazil",2,"free",0
+"681","R_6tlOKhyC3mHcGeB","Female",38,"more than R$ 9900",5,22,"Brazil",3,"free",0
+"682","R_1N2nw5oJWmOnLMa","Female",30,"R$ 3301 - R$ 4400",1.875,18,"Brazil",4,"free",0
+"683","R_24iPN0hcoBMY0r4","Male",48,"more than R$ 9900",5,15,"Brazil",2,"free",1
+"684","R_vNUgVpXo7Mx07eN","Female",32,"R$ 4401 - R$ 5500",2.5,15,"Brazil",1,"free",0
+"685","R_1KyhW99IYVsNF5A","Male",40,"more than R$ 9900",5,25,"Brazil",2,"free",0
+"686","R_3gRyYnITdsjfkqf","Female",33,"more than R$ 9900",5,19,"Brazil",3,"free",0
+"687","R_295P4moN6LQt6l5","Male",46,"R$ 4401 - R$ 5500",2.5,20,"Brazil",4,"free",0
+"688","R_3fUmRmnLcXAyvuU","Female",40,"more than R$ 9900",5,20,"Brazil",1,"free",1
+"689","R_2dFIhDsfK2g2Qeh","Female",63,"more than R$ 9900",5,16,"Brazil",3,"free",0
+"690","R_3g7c3L1nRm8OvFE","Male",30,"more than R$ 9900",5,20,"Brazil",3,"free",0
+"691","R_XTd2kDLcFTXAqOd","Female",39,"more than R$ 9900",5,19,"Brazil",3,"free",0
+"692","R_VURgRdDY3tYxWbn","Female",39,"more than R$ 9900",5,19,"Brazil",3,"free",1
+"693","R_2Tz8UbvnxRGY5ap","Male",28,"more than R$ 9900",5,17,"Brazil",3,"free",0
+"694","R_30i7fgDMZGrOMrV","Male",38,"more than R$ 9900",5,20,"Brazil",3,"free",0
+"695","R_1QsgBGwEE5CcvEn","Male",38,"more than R$ 9900",5,6,"Brazil",2,"free",1
+"696","R_2laUWCdZszW9Jyp","Female",31,"less than R$ 1100",0,16,"Brazil",3,"free",1
+"697","R_1GTwWWCDxPRVPMd","Female",56,"more than R$ 9900",5,22,"Brazil",3,"free",0
+"698","R_1f6Q2sh06MesyLV","Male",53,"more than R$ 9900",5,16,"Brazil",4,"free",0
+"699","R_3LZQS73FQZrjLTx","Female",42,"Prefer not to answer",NA,19,"Brazil",3,"free",0
+"700","R_2B4IkXCJQcxOmhE","Female",66,"more than R$ 9900",5,21,"Brazil",3,"free",0
+"701","R_1P0mmSv8SRq8bfx","Female",70,"R$ 3301 - R$ 4400",1.875,16,"Brazil",2,"free",0
+"702","R_25ZmOt7mqfmGh3C","Female",48,"more than R$ 9900",5,16,"Brazil",3,"free",0
+"703","R_3NCLmLQloeq0sm3","Male",65,"R$ 7701 - R$ 9900",4.375,15,"Brazil",2,"free",0
+"704","R_1Q5cgEfye8zgUb1","Female",42,"Prefer not to answer",NA,14,"Brazil",2,"free",1
+"705","R_3J35csfYPDigtKn","Female",41,"R$ 2201 - R$ 3300",1.25,20,"Brazil",2,"free",0
+"706","R_3P5GURMbrJJfV7S","Female",49,"R$ 7701 - R$ 9900",4.375,17,"Brazil",2,"free",0
+"707","R_1kN7AvYwxoBcp8v","Male",49,"more than R$ 9900",5,23,"Brazil",3,"free",1
+"708","R_242iEkLTjjdTq0h","Female",61,"R$ 5501 - R$ 7700",3.125,17,"Brazil",2,"free",1
+"709","R_2wyriHmo3C1yIoa","Female",55,"more than R$ 9900",5,15,"Brazil",4,"free",0
+"710","R_xmiyiFEJWgvBIcx","Male",75,"more than R$ 9900",5,20,"Brazil",4,"free",1
+"711","R_2ruoEugFymOC2kv","Male",59,"more than R$ 9900",5,20,"Brazil",3,"free",1
+"712","R_3CQ7uErYceE9hXg","Female",50,"more than R$ 9900",5,24,"Brazil",2,"free",0
+"713","R_Wkw9SgSMwWj102t","Female",73,"Prefer not to answer",NA,17,"Brazil",3,"free",1
+"714","R_eJdaZBTeM07zWpP","Male",40,"R$ 7701 - R$ 9900",4.375,25,"Brazil",3,"free",0
+"715","R_1CCQk0kUiHYT2jH","Male",49,"more than R$ 9900",5,17,"Brazil",4,"free",1
+"716","R_WAiVt0AoSzbpq4p","Female",71,"Prefer not to answer",NA,17,"Brazil",2,"free",0
+"717","R_3PZjUkF6OBkoeca","Female",51,"Prefer not to answer",NA,16,"Brazil",3,"free",0
+"718","R_3g5HjskzdPiLmbc","Male",28,"R$ 7701 - R$ 9900",4.375,23,"Brazil",4,"free",0
+"719","R_DHTphkFYVItw7EB","Female",72,"R$ 4401 - R$ 5500",2.5,13,"Brazil",3,"free",0
+"720","R_3rHBgTC0coKwLJ0","Male",37,"more than R$ 9900",5,17,"Brazil",4,"free",1
+"721","R_DV2UZYVJFHnxvtT","Female",44,"more than R$ 9900",5,17,"Brazil",3,"free",0
+"722","R_1lv27frfZF5VNuw","Female",37,"Prefer not to answer",NA,17,"Brazil",3,"free",1
+"723","R_AbxlwSaaVPSdc1X","Female",45,"more than R$ 9900",5,20,"Brazil",3,"free",1
+"724","R_8BW4Vfr6DsdSRGx","Female",40,"more than R$ 9900",5,20,"Brazil",3,"free",1
+"725","R_1hKAKe4cDphkakv","Male",38,"more than R$ 9900",5,22,"Brazil",3,"free",1
+"726","R_3QXm0pSM9n6joSv","Male",50,"more than R$ 9900",5,27,"Brazil",3,"free",0
+"727","R_2DMLvTZbrSdF9a2","Female",23,"more than R$ 9900",5,17,"Brazil",0,"free",0
+"728","R_2pSFQsyxULuVUzc","Male",41,"R$ 7701 - R$ 9900",4.375,3,"Brazil",3,"free",0
+"729","R_DCriN25TLOE5kZj","Female",50,"Prefer not to answer",NA,17,"Brazil",2,"free",0
+"730","R_2UVg44zT5eaTdtl","Male",73,"more than R$ 9900",5,18,"Brazil",4,"free",1
+"731","R_yF0GPkdDHqdkQmJ","Female",48,"more than R$ 9900",5,20,"Brazil",4,"free",0
+"732","R_1d17bQXg0UYmUHU","Female",41,"more than R$ 9900",5,18,"Brazil",3,"free",0
+"733","R_By2oWfgze9ydR0l","Female",41,"less than R$ 1100",0,11,"Brazil",2,"free",0
+"734","R_yL7GeHsezVYgv8R","Male",40,"more than R$ 9900",5,22,"Brazil",3,"free",0
+"735","R_3qrsQg3HvuTX11D","Male",69,"more than R$ 9900",5,16,"Brazil",3,"free",1
+"736","R_3IQXshGLZxGRl2p","Female",40,"more than R$ 9900",5,20,"Brazil",3,"free",0
+"737","R_1IimagBJ4WncHD3","Male",41,"more than R$ 9900",5,19,"Brazil",4,"free",0
+"738","R_3PcdwimvUi8i36R","Male",42,"more than R$ 9900",5,20,"Brazil",4,"free",0
+"739","R_RzdOX5EnNe1shxf","Female",46,"R$ 4401 - R$ 5500",2.5,20,"Brazil",1,"free",0
+"740","R_3WtHGuQUszfkOnT","Female",38,"more than R$ 9900",5,25,"Brazil",4,"free",1
+"741","R_CjDx8MC2yS0ywud","Male",41,"more than R$ 9900",5,19,"Brazil",4,"free",0
+"742","R_215lu5NS5zLao4K","Female",40,"more than R$ 9900",5,25,"Brazil",3,"free",0
+"743","R_XXM4TniptYYIcnv","Female",47,"R$ 7701 - R$ 9900",4.375,30,"Brazil",3,"free",1
+"744","R_3dQaQaplmL5NFfX","Female",29,"R$ 7701 - R$ 9900",4.375,17,"Brazil",3,"free",0
+"745","R_1OTdjW2LjAzM8xt","Male",37,"more than R$ 9900",5,10,"Brazil",4,"free",0
+"746","R_POlvFmyCCuPTzIl","Male",48,"more than R$ 9900",5,20,"Brazil",4,"free",0
+"747","R_2bOEHsCYAe3kWZR","Male",21,"R$ 2201 - R$ 3300",1.25,19,"Brazil",3,"free",1
+"748","R_2s6XgDKgZj9NPV0","Female",61,"R$ 2201 - R$ 3300",1.25,8,"Brazil",3,"free",1
+"749","R_qw22Ag9Wx3t8bRf","Female",39,"Prefer not to answer",NA,18,"Brazil",3,"free",0
+"750","R_1FP5vvV4m2m1g2S","Male",29,"more than R$ 9900",5,20,"Brazil",4,"free",0
+"751","R_24dhfMb14iKbyrz","Female",31,"more than R$ 9900",5,23,"Brazil",4,"free",0
+"752","R_2ARPGK1bmU8LMjE","Male",46,"more than R$ 9900",5,24,"Brazil",3,"free",0
+"753","R_20VDCrqbodqLFJO","Female",42,"more than R$ 9900",5,18,"Brazil",3,"free",0
+"754","R_2S6PUAHTUuYWTth","Female",33,"more than R$ 9900",5,9,"Brazil",3,"free",0
+"755","R_ApQUUsBHsPy6n8B","Female",33,"more than R$ 9900",5,12,"Brazil",3,"free",0
+"756","R_1E6EUViMY4oowOh","Male",34,"more than R$ 9900",5,20,"Brazil",3,"free",0
+"757","R_2sZvtxh6pwA9bL6","Female",34,"more than R$ 9900",5,19,"Brazil",2,"free",1
+"758","R_vc2tdaNqrMiTyfL","Male",29,"R$ 5501 - R$ 7700",3.125,15,"Brazil",3,"free",0
+"759","R_29g3jwi2jNto5T0","Female",46,"Prefer not to answer",NA,13,"Brazil",4,"free",1
+"760","R_25TPo4TaBCrSBq1","Male",30,"more than R$ 9900",5,17,"Brazil",4,"free",0
+"761","R_27vrz6ZyPwVwiRR","Female",30,"R$ 4401 - R$ 5500",2.5,27,"Brazil",2,"free",0
+"762","R_2qwtP0ZlvM9Wr9p","Male",32,"R$ 3301 - R$ 4400",1.875,26,"Brazil",2,"free",1
+"763","R_6lOu3juQ6Gbe1gt","Male",30,"R$ 7701 - R$ 9900",4.375,10,"Brazil",4,"free",0
+"764","R_3dPNlGdSdBMBBqO","Female",29,"more than R$ 9900",5,16,"Brazil",4,"free",0
+"765","R_11i5A6BnEMPusIt","Female",26,"more than R$ 9900",5,13,"Brazil",2,"free",0
+"766","R_3JejEr0lxQWpBeM","Female",63,"R$ 5501 - R$ 7700",3.125,19,"Brazil",2,"free",0
+"767","R_Deqv0QNNEMua4KZ","Male",57,"more than R$ 9900",5,14,"Brazil",3,"free",0
+"768","R_1ifmR5e69qXSydK","Female",54,"more than R$ 9900",5,17,"Brazil",3,"free",0
+"769","R_21amxp27AqyMMgH","Female",44,"more than R$ 9900",5,15,"Brazil",3,"free",0
+"770","R_2SibXC4N4EkxrWg","Male",25,"more than R$ 9900",5,15,"Brazil",4,"free",0
+"771","R_3CVm9EuViMhjl3k","Female",23,"R$ 2201 - R$ 3300",1.25,15,"Brazil",3,"free",0
+"772","R_YYbKdCl6Bjnakdb","Male",29,"more than R$ 9900",5,20,"Brazil",4,"free",0
+"773","R_2sdSgixaladaMsm","Female",27,"R$ 5501 - R$ 7700",3.125,17,"Brazil",4,"free",0
+"774","R_1kNaumezgSgJwSO","Female",25,"R$ 5501 - R$ 7700",3.125,15,"Brazil",3,"free",1
+"775","R_2cuUqRXyLTERJtV","Male",68,"Prefer not to answer",NA,12,"Brazil",3,"free",1
+"776","R_3L7ITnOVhmO5VvA","Female",36,"R$ 2201 - R$ 3300",1.25,25,"Brazil",4,"free",0
+"777","R_3n0gJCjSsTrtLgm","Female",40,"R$ 2201 - R$ 3300",1.25,18,"Brazil",2,"free",0
+"778","R_2qDvJrXGtwGUqQ7","Female",59,"less than R$ 1100",0,20,"Brazil",2,"free",1
+"779","R_x9MkC0rMUSZrk41","Male",37,"Prefer not to answer",NA,13,"Brazil",3,"free",1
+"780","R_scWeBJdquDDl5sZ","Female",72,"R$ 5501 - R$ 7700",3.125,22,"Brazil",3,"free",1
+"781","R_3scQw26OrR7jB3v","Female",32,"R$ 4401 - R$ 5500",2.5,20,"Brazil",3,"free",1
+"782","R_3hrM2CvmFEDm9C0","Female",51,"more than R$ 9900",5,17,"Brazil",4,"purchased",1
+"783","R_sb9OUHlXE0sBTY5","Female",36,"more than R$ 9900",5,18,"Brazil",2,"purchased",0
+"784","R_1Q0lPDI7BT3HXeU","Male",45,"more than R$ 9900",5,22,"Brazil",4,"purchased",0
+"785","R_2txLI2j1mdz6av4","Male",38,"more than R$ 9900",5,25,"Brazil",4,"purchased",1
+"786","R_vJQB5LgoARS3nmF","Female",41,"more than R$ 9900",5,20,"Brazil",4,"purchased",0
+"787","R_3EFoyiQvYHHkAJ5","Female",39,"more than R$ 9900",5,30,"Brazil",4,"purchased",1
+"788","R_r8Ts1yisPM8OHWp","Female",26,"R$ 1101 - R$ 2200",0.625,9,"Brazil",1,"purchased",0
+"789","R_22VUjJfry4ZqvtR","Female",24,"R$ 1101 - R$ 2200",0.625,18,"Brazil",2,"purchased",0
+"790","R_2SrhzuCPudu6Tow","Male",52,"R$ 5501 - R$ 7700",3.125,40,"Brazil",3,"purchased",0
+"791","R_1CeeoJ43HlOofaZ","Female",37,"more than R$ 9900",5,19,"Brazil",4,"purchased",0
+"792","R_2zUzAg97Hv8wIE0","Male",32,"R$ 5501 - R$ 7700",3.125,16,"Brazil",4,"purchased",0
+"793","R_1DqyVFxWC8tbLan","Female",33,"more than R$ 9900",5,27,"Brazil",2,"purchased",0
+"794","R_Zad2gePQRmMdE7n","Female",42,"more than R$ 9900",5,28,"Brazil",3,"purchased",1
+"795","R_2WGqOocm0pAaoFh","Male",46,"more than R$ 9900",5,20,"Brazil",3,"purchased",0
+"796","R_1f2DfkRYqxpTePH","Female",42,"more than R$ 9900",5,18,"Brazil",3,"purchased",0
+"797","R_2wSJZyxxij5XzL0","Female",47,"more than R$ 9900",5,20,"Brazil",4,"purchased",0
+"798","R_3R1l92VZ7AsuEFp","Female",51,"more than R$ 9900",5,18,"Brazil",4,"purchased",1
+"799","R_2dFUxB07IwQAEFi","Female",57,"R$ 5501 - R$ 7700",3.125,29,"Brazil",2,"purchased",0
+"800","R_3L0z1jDtR8KEcEx","Male",35,"R$ 7701 - R$ 9900",4.375,21,"Brazil",4,"purchased",1
+"801","R_1H1VwavangXbkUm","Male",31,"R$ 1101 - R$ 2200",0.625,9,"Brazil",4,"purchased",1
+"802","R_3LZSxgMghVwU43T","Female",36,"more than R$ 9900",5,17,"Brazil",3,"purchased",0
+"803","R_1QL6cJadYt7FJ4o","Male",30,"R$ 3301 - R$ 4400",1.875,22,"Brazil",3,"purchased",0
+"804","R_1lmHo9TXSdZ4jLe","Female",51,"more than R$ 9900",5,23,"Brazil",3,"purchased",1
+"805","R_1IWe1tTyNm4Ew8T","Female",31,"R$ 3301 - R$ 4400",1.875,22,"Brazil",2,"purchased",0
+"806","R_3OieXcsrCCkkGBJ","Female",33,"R$ 4401 - R$ 5500",2.5,5,"Brazil",0,"purchased",1
+"807","R_Zerp90Vux3SKbzb","Male",37,"R$ 5501 - R$ 7700",3.125,15,"Brazil",4,"purchased",1
+"808","R_2XbPzV90UwsD90M","Male",26,"R$ 2201 - R$ 3300",1.25,20,"Brazil",4,"purchased",0
+"809","R_31HI6Ov5NUuIf9h","Male",38,"more than R$ 9900",5,25,"Brazil",3,"purchased",0
+"810","R_PSAcygwZIe764a5","Female",56,"R$ 7701 - R$ 9900",4.375,18,"Brazil",2,"purchased",1
+"811","R_3jZJPMvlDjqsnuo","Female",39,"more than R$ 9900",5,20,"Brazil",4,"purchased",1
+"812","R_1jYRBEufYI5xLIV","Female",51,"R$ 2201 - R$ 3300",1.25,30,"Brazil",3,"purchased",0
+"813","R_2uHUv2hNsBz7aYr","Female",42,"Prefer not to answer",NA,15,"Brazil",1,"purchased",0
+"814","R_25FsD3QLoNItOHE","Female",46,"more than R$ 9900",5,26,"Brazil",1,"purchased",0
+"815","R_w6RFMQfN39UHEU9","Female",53,"more than R$ 9900",5,47,"Brazil",3,"purchased",1
+"816","R_2e81uOmGi7cbyyF","Female",65,"R$ 3301 - R$ 4400",1.875,16,"Brazil",2,"purchased",1
+"817","R_3O0RhvJaYArVswQ","Female",69,"R$ 5501 - R$ 7700",3.125,20,"Brazil",3,"purchased",1
+"818","R_3O8k8okYDxEAue9","Female",30,"R$ 4401 - R$ 5500",2.5,22,"Brazil",4,"purchased",0
+"819","R_9AFTAgAw2ZiWWqt","Female",49,"more than R$ 9900",5,21,"Brazil",4,"purchased",0
+"820","R_1Qi9EFef0HsvoJ1","Male",56,"less than R$ 1100",0,30,"Brazil",2,"purchased",1
+"821","R_3gSp15Lhbk9uTrv","Female",44,"R$ 3301 - R$ 4400",1.875,9,"Brazil",0,"purchased",0
+"822","R_z6fP3cVpNLl6sBr","Female",43,"more than R$ 9900",5,19,"Brazil",3,"purchased",0
+"823","R_1hGAO02A2pH7YWp","Female",34,"R$ 1101 - R$ 2200",0.625,16,"Brazil",2,"purchased",0
+"824","R_2uCyj5bVMBDGo09","Female",21,"R$ 2201 - R$ 3300",1.25,17,"Brazil",0,"purchased",0
+"825","R_3rNwv62OhLdaDjW","Female",43,"more than R$ 9900",5,19,"Brazil",3,"purchased",0
+"826","R_2WupRDyKQSUt8xw","Female",63,"Prefer not to answer",NA,20,"Brazil",2,"purchased",1
+"827","R_27p8EIzk2g56hC6","Female",31,"R$ 2201 - R$ 3300",1.25,8,"Brazil",3,"purchased",0
+"828","R_1pmoTJsxV6Oosks","Female",39,"R$ 7701 - R$ 9900",4.375,21,"Brazil",2,"purchased",0
+"829","R_3PbsCl5wc1jJSAV","Female",53,"R$ 5501 - R$ 7700",3.125,21,"Brazil",2,"purchased",0
+"830","R_2fcwTMHGZZOVDda","Male",36,"R$ 2201 - R$ 3300",1.25,24,"Brazil",3,"purchased",1
+"831","R_27d7MonHdeEJJSd","Male",56,"more than R$ 9900",5,14,"Brazil",4,"purchased",1
+"832","R_2bTrv5jm9C2JCIH","Male",61,"R$ 4401 - R$ 5500",2.5,15,"Brazil",3,"purchased",1
+"833","R_1ooPG2eJFXFHodO","Male",67,"R$ 1101 - R$ 2200",0.625,18,"Brazil",3,"purchased",0
+"834","R_3eaSwwhfF02KlGK","Female",35,"R$ 3301 - R$ 4400",1.875,16,"Brazil",3,"purchased",0
+"835","R_UaurZILouqFu8iB","Female",56,"more than R$ 9900",5,50,"Brazil",4,"purchased",1
+"836","R_3CE2qR1iSEdmQmx","Male",29,"R$ 3301 - R$ 4400",1.875,18,"Brazil",1,"purchased",0
+"837","R_1hYV82wRAhXX9BU","Female",27,"R$ 5501 - R$ 7700",3.125,15,"Brazil",3,"purchased",1
+"838","R_1FtxoLBfwbk9VRj","Male",51,"R$ 5501 - R$ 7700",3.125,15,"Brazil",2,"purchased",1
+"839","R_3sA2f51sZ1GemOx","Female",52,"R$ 5501 - R$ 7700",3.125,10,"Brazil",2,"purchased",1
+"840","R_3L1hAs7KlWDSk86","Female",37,"R$ 4401 - R$ 5500",2.5,15,"Brazil",3,"purchased",0
+"841","R_1laAkb68g0y0UkS","Female",41,"R$ 7701 - R$ 9900",4.375,20,"Brazil",3,"purchased",0
+"842","R_33kW67teZ4zLjkE","Male",24,"R$ 5501 - R$ 7700",3.125,16,"Brazil",3,"purchased",0
+"843","R_WCHrt7t7dgfGuaZ","Female",65,"Prefer not to answer",NA,30,"Brazil",3,"purchased",1
+"844","R_2yjZ8BNQl4F2Ex7","Female",27,"R$ 4401 - R$ 5500",2.5,18,"Brazil",3,"purchased",0
+"845","R_1mgQ53NES7Vo5ys","Male",57,"more than R$ 9900",5,20,"Brazil",4,"purchased",0
+"846","R_33sba7pVz543H5X","Female",50,"R$ 5501 - R$ 7700",3.125,14,"Brazil",1,"purchased",0
+"847","R_3kCkY62akP1G9M3","Male",54,"R$ 7701 - R$ 9900",4.375,16,"Brazil",4,"purchased",1
+"848","R_1PUIrxg5oCNEWMv","Male",74,"R$ 4401 - R$ 5500",2.5,15,"Brazil",3,"purchased",0
+"849","R_2fB93C7790pBkF3","Female",23,"R$ 4401 - R$ 5500",2.5,17,"Brazil",3,"purchased",0
+"850","R_86QHxS1OW22glGx","Female",45,"R$ 3301 - R$ 4400",1.875,20,"Brazil",2,"purchased",1
+"851","R_2f2qdKPg3auDagN","Female",60,"R$ 5501 - R$ 7700",3.125,20,"Brazil",3,"purchased",1
+"852","R_O8PFXxJZsAnWfDP","Male",54,"R$ 4401 - R$ 5500",2.5,21,"Brazil",4,"purchased",0
+"853","R_1f8JghhJKwn8HjR","Male",28,"R$ 7701 - R$ 9900",4.375,20,"Brazil",4,"purchased",0
+"854","R_2VvTHtcbg0wJTe0","Male",66,"R$ 7701 - R$ 9900",4.375,28,"Brazil",3,"purchased",0
+"855","R_1FqEt8sUVMUITS8","Male",31,"more than R$ 9900",5,19,"Brazil",3,"purchased",0
+"856","R_Rmdd3iiZC0S4q3v","Female",51,"more than R$ 9900",5,5,"Brazil",2,"purchased",1
+"857","R_2rkkTKVMrQdk1bG","Female",31,"more than R$ 9900",5,16,"Brazil",3,"purchased",0
+"858","R_20P7Q3RDru5lepb","Female",50,"R$ 1101 - R$ 2200",0.625,12,"Brazil",2,"purchased",1
+"859","R_2CCjbH2ZJ18mKbY","Male",66,"more than R$ 9900",5,18,"Brazil",3,"purchased",0
+"860","R_1eOSn7YULPTyy48","Male",56,"Prefer not to answer",NA,30,"Brazil",1,"purchased",0
+"861","R_VWmRUIJUw6eiOWt","Female",25,"R$ 1101 - R$ 2200",0.625,20,"Brazil",3,"purchased",1
+"862","R_2e4mfmve7uDDUQI","Male",47,"more than R$ 9900",5,22,"Brazil",4,"purchased",1
+"863","R_1Eg6N8ThfEiLE8q","Male",60,"R$ 5501 - R$ 7700",3.125,55,"Brazil",4,"purchased",1
+"864","R_22CQYLOULLhPhEt","Female",73,"more than R$ 9900",5,13,"Brazil",3,"purchased",1
+"865","R_2t5r4KnpOf3c8dX","Female",30,"R$ 2201 - R$ 3300",1.25,24,"Brazil",0,"purchased",0
+"866","R_1g6F5mlLOJrZ5U0","Female",24,"R$ 2201 - R$ 3300",1.25,18,"Brazil",4,"purchased",1
+"867","R_1JF6XOv9zvVz7ix","Male",41,"more than R$ 9900",5,16,"Brazil",4,"purchased",1
+"868","R_1H0HUu2ssMXSRkf","Female",43,"R$ 2201 - R$ 3300",1.25,13,"Brazil",3,"purchased",0
+"869","R_25zn8QGEfhhl1gh","Female",35,"more than R$ 9900",5,17,"Brazil",4,"purchased",0
+"870","R_1dAIAgiTmZZGRTo","Male",56,"more than R$ 9900",5,23,"Brazil",3,"purchased",1
+"871","R_2EB5NS0YX9OmUBU","Male",61,"R$ 3301 - R$ 4400",1.875,18,"Brazil",1,"purchased",0
+"872","R_UmvxVrIb2wwKVxf","Female",54,"R$ 4401 - R$ 5500",2.5,18,"Brazil",2,"purchased",0
+"873","R_25TQDjRbHt31Ca8","Male",20,"R$ 5501 - R$ 7700",3.125,12,"Brazil",3,"purchased",1
+"874","R_3ffyo8NPSIFp2gg","Male",54,"R$ 7701 - R$ 9900",4.375,16,"Brazil",0,"purchased",0
+"875","R_2R205wIPedSvKXH","Female",53,"R$ 5501 - R$ 7700",3.125,22,"Brazil",0,"purchased",1
+"876","R_1Bwf1Of8zBkZyet","Female",45,"R$ 1101 - R$ 2200",0.625,10,"Brazil",2,"purchased",1
+"877","R_BsKHfjOBJfaXO8x","Female",36,"R$ 1101 - R$ 2200",0.625,10,"Brazil",2,"purchased",1
+"878","R_3ncqID5SzBjg3Af","Male",36,"R$ 3301 - R$ 4400",1.875,24,"Brazil",2,"purchased",0
+"879","R_2uV74N2mFaQowt8","Male",57,"R$ 3301 - R$ 4400",1.875,13,"Brazil",3,"purchased",0
+"880","R_1EXs9Km4sVJKbzM","Male",44,"R$ 4401 - R$ 5500",2.5,17,"Brazil",4,"purchased",0
+"881","R_3g26MK8GCRYroSc","Female",68,"more than R$ 9900",5,20,"Brazil",3,"purchased",1
+"882","R_2WMQxPpsLPIgP6d","Female",40,"more than R$ 9900",5,20,"Brazil",3,"purchased",0
+"883","R_3KrM44qk3N3ztS8","Male",60,"more than R$ 9900",5,22,"Brazil",3,"purchased",0
+"884","R_11WPwKXtSk7Cx77","Male",33,"R$ 1101 - R$ 2200",0.625,26,"Brazil",2,"purchased",0
+"885","R_qC8DDUMYaYyLBCh","Female",64,"R$ 7701 - R$ 9900",4.375,25,"Brazil",3,"purchased",1
+"886","R_1eQrMxgGPIjuzUv","Female",61,"more than R$ 9900",5,27,"Brazil",2,"purchased",1
+"887","R_1gwqQ3v7gon7J2K","Female",22,"R$ 1101 - R$ 2200",0.625,8,"Brazil",3,"purchased",0
+"888","R_zdvlXHYaVXrSAkV","Female",66,"R$ 5501 - R$ 7700",3.125,26,"Brazil",3,"purchased",1
+"889","R_PCHQTYV27QPJalX","Female",62,"more than R$ 9900",5,32,"Brazil",3,"purchased",1
+"890","R_3QqI9L7OstRAdYR","Female",42,"more than R$ 9900",5,22,"Brazil",3,"purchased",0
+"891","R_WxnEssEFcSt1G1j","Female",32,"R$ 1101 - R$ 2200",0.625,12,"Brazil",3,"purchased",0
+"892","R_A57PCRA6sa3T1hD","Female",36,"R$ 1101 - R$ 2200",0.625,11,"Brazil",0,"purchased",0
+"893","R_2b31JXDIUtXxySw","Female",42,"R$ 2201 - R$ 3300",1.25,14,"Brazil",3,"purchased",1
+"894","R_11j6pSkPK8S2uNd","Female",31,"more than R$ 9900",5,21,"Brazil",2,"purchased",0
+"895","R_3gSio9emmGpqzrp","Female",27,"more than R$ 9900",5,20,"Brazil",2,"purchased",1
+"896","R_Rqb8FzY9JTMYkOl","Female",52,"R$ 5501 - R$ 7700",3.125,20,"Brazil",2,"purchased",0
+"897","R_1prm25aCTGruLgx","Female",31,"more than R$ 9900",5,23,"Brazil",3,"purchased",0
+"898","R_1BSgS79FBN5PSzG","Male",24,"R$ 7701 - R$ 9900",4.375,15,"Brazil",3,"purchased",0
+"899","R_1FqQwlqSK4eGG1Z","Female",35,"R$ 4401 - R$ 5500",2.5,20,"Brazil",3,"purchased",1
+"900","R_2aK1tCHN4LEHxRK","Male",22,"less than R$ 1100",0,15,"Brazil",1,"purchased",1
+"901","R_2yd8uUmnCgkY6t4","Male",28,"more than R$ 9900",5,24,"Brazil",2,"purchased",1
+"902","R_TuT2XF8sG2ulUhb","Female",31,"R$ 5501 - R$ 7700",3.125,21,"Brazil",3,"purchased",1
+"903","R_31Ajvav9B4fHnh6","Male",29,"R$ 7701 - R$ 9900",4.375,18,"Brazil",3,"purchased",0
+"904","R_242TkuSVeyM68dv","Female",34,"R$ 5501 - R$ 7700",3.125,25,"Brazil",2,"purchased",0
+"905","R_3kzf5ROFkg4eCKi","Male",38,"R$ 5501 - R$ 7700",3.125,12,"Brazil",2,"purchased",1
+"906","R_32L7Zbyi2dbeLa8","Male",33,"R$ 4401 - R$ 5500",2.5,22,"Brazil",2,"purchased",0
+"907","R_silrcN05AFjpLcl","Male",34,"more than R$ 9900",5,21,"Brazil",3,"purchased",0
+"908","R_3fZUVDTxXVQ2M8L","Male",33,"R$ 7701 - R$ 9900",4.375,16,"Brazil",3,"purchased",0
+"909","R_9T8Giut6aLa50ml","Female",31,"R$ 4401 - R$ 5500",2.5,16,"Brazil",3,"purchased",0
+"910","R_3ekPdJ5MnIhhtHK","Male",32,"more than R$ 9900",5,22,"Brazil",0,"purchased",0
+"911","R_3elhVuNNZLuL3Tl","Male",30,"more than R$ 9900",5,19,"Brazil",4,"purchased",1
+"912","R_1Hk0BSj2Sm0iQXL","Male",23,"R$ 4401 - R$ 5500",2.5,23,"Brazil",3,"purchased",0
+"913","R_3nCNwghttLMmvMc","Male",30,"more than R$ 9900",5,20,"Brazil",4,"purchased",0
+"914","R_3m8H9ME2mr39vfO","Female",35,"R$ 5501 - R$ 7700",3.125,22,"Brazil",1,"purchased",0
+"915","R_2EaBHKPxTsyylfv","Male",35,"R$ 5501 - R$ 7700",3.125,15,"Brazil",4,"purchased",0
+"916","R_1dNeeU4fzwkX7Id","Female",36,"R$ 3301 - R$ 4400",1.875,7,"Brazil",4,"purchased",1
+"917","R_2ZEvtvjP3nX6Q7n","Female",31,"Prefer not to answer",NA,17,"Brazil",4,"purchased",1
+"918","R_1ONTVbAs6vkBI41","Female",58,"more than R$ 9900",5,18,"Brazil",1,"purchased",1
+"919","R_2YJlLriBIk6z96C","Female",24,"more than R$ 9900",5,16,"Brazil",3,"purchased",1
+"920","R_ZCqgXBP7gTrdaa5","Female",40,"more than R$ 9900",5,19,"Brazil",3,"purchased",1
+"921","R_bCSdgHXYbTTTYB3","Female",36,"more than R$ 9900",5,17,"Brazil",4,"purchased",1
+"922","R_3HH8gMS5wKvAOEv","Male",53,"more than R$ 9900",5,17,"Brazil",3,"purchased",1
+"923","R_D8N9MI6CB1MRrUd","Male",75,"Prefer not to answer",NA,20,"Brazil",4,"purchased",1
+"924","R_qRfnVIlEy1mqMbD","Female",43,"R$ 3301 - R$ 4400",1.875,22,"Brazil",3,"purchased",1
+"925","R_ULr4gTgXxzIr2WB","Female",39,"more than R$ 9900",5,15,"Brazil",3,"purchased",1
+"926","R_8c5hBUlnxXEOyM9","Male",29,"Prefer not to answer",NA,16,"Brazil",2,"purchased",0
+"927","R_UzoEHD6eEEptZVn","Female",42,"more than R$ 9900",5,19,"Brazil",3,"purchased",1
+"928","R_6DpxmUPVZdkA9xv","Female",41,"R$ 5501 - R$ 7700",3.125,15,"Brazil",1,"purchased",0
+"929","R_1lxvOOouIyXIYZT","Female",55,"more than R$ 9900",5,19,"Brazil",3,"purchased",1
+"930","R_0kvaE8dS5I5bpmh","Female",35,"more than R$ 9900",5,17,"Brazil",3,"purchased",1
+"931","R_3oGt3ErjURSXwrN","Female",69,"R$ 3301 - R$ 4400",1.875,7,"Brazil",2,"purchased",0
+"932","R_6tlOKhyC3mHcGeB","Female",38,"more than R$ 9900",5,22,"Brazil",3,"purchased",1
+"933","R_1N2nw5oJWmOnLMa","Female",30,"R$ 3301 - R$ 4400",1.875,18,"Brazil",4,"purchased",0
+"934","R_24iPN0hcoBMY0r4","Male",48,"more than R$ 9900",5,15,"Brazil",2,"purchased",1
+"935","R_vNUgVpXo7Mx07eN","Female",32,"R$ 4401 - R$ 5500",2.5,15,"Brazil",1,"purchased",1
+"936","R_1KyhW99IYVsNF5A","Male",40,"more than R$ 9900",5,25,"Brazil",2,"purchased",1
+"937","R_3gRyYnITdsjfkqf","Female",33,"more than R$ 9900",5,19,"Brazil",3,"purchased",0
+"938","R_295P4moN6LQt6l5","Male",46,"R$ 4401 - R$ 5500",2.5,20,"Brazil",4,"purchased",0
+"939","R_3fUmRmnLcXAyvuU","Female",40,"more than R$ 9900",5,20,"Brazil",1,"purchased",1
+"940","R_2dFIhDsfK2g2Qeh","Female",63,"more than R$ 9900",5,16,"Brazil",3,"purchased",0
+"941","R_3g7c3L1nRm8OvFE","Male",30,"more than R$ 9900",5,20,"Brazil",3,"purchased",0
+"942","R_XTd2kDLcFTXAqOd","Female",39,"more than R$ 9900",5,19,"Brazil",3,"purchased",0
+"943","R_VURgRdDY3tYxWbn","Female",39,"more than R$ 9900",5,19,"Brazil",3,"purchased",1
+"944","R_2Tz8UbvnxRGY5ap","Male",28,"more than R$ 9900",5,17,"Brazil",3,"purchased",1
+"945","R_30i7fgDMZGrOMrV","Male",38,"more than R$ 9900",5,20,"Brazil",3,"purchased",0
+"946","R_1QsgBGwEE5CcvEn","Male",38,"more than R$ 9900",5,6,"Brazil",2,"purchased",1
+"947","R_2laUWCdZszW9Jyp","Female",31,"less than R$ 1100",0,16,"Brazil",3,"purchased",1
+"948","R_1GTwWWCDxPRVPMd","Female",56,"more than R$ 9900",5,22,"Brazil",3,"purchased",0
+"949","R_1f6Q2sh06MesyLV","Male",53,"more than R$ 9900",5,16,"Brazil",4,"purchased",0
+"950","R_3LZQS73FQZrjLTx","Female",42,"Prefer not to answer",NA,19,"Brazil",3,"purchased",0
+"951","R_2B4IkXCJQcxOmhE","Female",66,"more than R$ 9900",5,21,"Brazil",3,"purchased",1
+"952","R_1P0mmSv8SRq8bfx","Female",70,"R$ 3301 - R$ 4400",1.875,16,"Brazil",2,"purchased",0
+"953","R_25ZmOt7mqfmGh3C","Female",48,"more than R$ 9900",5,16,"Brazil",3,"purchased",1
+"954","R_3NCLmLQloeq0sm3","Male",65,"R$ 7701 - R$ 9900",4.375,15,"Brazil",2,"purchased",0
+"955","R_1Q5cgEfye8zgUb1","Female",42,"Prefer not to answer",NA,14,"Brazil",2,"purchased",1
+"956","R_3J35csfYPDigtKn","Female",41,"R$ 2201 - R$ 3300",1.25,20,"Brazil",2,"purchased",0
+"957","R_3P5GURMbrJJfV7S","Female",49,"R$ 7701 - R$ 9900",4.375,17,"Brazil",2,"purchased",0
+"958","R_1kN7AvYwxoBcp8v","Male",49,"more than R$ 9900",5,23,"Brazil",3,"purchased",1
+"959","R_242iEkLTjjdTq0h","Female",61,"R$ 5501 - R$ 7700",3.125,17,"Brazil",2,"purchased",1
+"960","R_2wyriHmo3C1yIoa","Female",55,"more than R$ 9900",5,15,"Brazil",4,"purchased",0
+"961","R_xmiyiFEJWgvBIcx","Male",75,"more than R$ 9900",5,20,"Brazil",4,"purchased",1
+"962","R_2ruoEugFymOC2kv","Male",59,"more than R$ 9900",5,20,"Brazil",3,"purchased",1
+"963","R_3CQ7uErYceE9hXg","Female",50,"more than R$ 9900",5,24,"Brazil",2,"purchased",0
+"964","R_Wkw9SgSMwWj102t","Female",73,"Prefer not to answer",NA,17,"Brazil",3,"purchased",1
+"965","R_eJdaZBTeM07zWpP","Male",40,"R$ 7701 - R$ 9900",4.375,25,"Brazil",3,"purchased",1
+"966","R_1CCQk0kUiHYT2jH","Male",49,"more than R$ 9900",5,17,"Brazil",4,"purchased",1
+"967","R_WAiVt0AoSzbpq4p","Female",71,"Prefer not to answer",NA,17,"Brazil",2,"purchased",0
+"968","R_3PZjUkF6OBkoeca","Female",51,"Prefer not to answer",NA,16,"Brazil",3,"purchased",0
+"969","R_3g5HjskzdPiLmbc","Male",28,"R$ 7701 - R$ 9900",4.375,23,"Brazil",4,"purchased",0
+"970","R_DHTphkFYVItw7EB","Female",72,"R$ 4401 - R$ 5500",2.5,13,"Brazil",3,"purchased",1
+"971","R_3rHBgTC0coKwLJ0","Male",37,"more than R$ 9900",5,17,"Brazil",4,"purchased",1
+"972","R_DV2UZYVJFHnxvtT","Female",44,"more than R$ 9900",5,17,"Brazil",3,"purchased",0
+"973","R_1lv27frfZF5VNuw","Female",37,"Prefer not to answer",NA,17,"Brazil",3,"purchased",1
+"974","R_AbxlwSaaVPSdc1X","Female",45,"more than R$ 9900",5,20,"Brazil",3,"purchased",1
+"975","R_8BW4Vfr6DsdSRGx","Female",40,"more than R$ 9900",5,20,"Brazil",3,"purchased",0
+"976","R_1hKAKe4cDphkakv","Male",38,"more than R$ 9900",5,22,"Brazil",3,"purchased",1
+"977","R_3QXm0pSM9n6joSv","Male",50,"more than R$ 9900",5,27,"Brazil",3,"purchased",0
+"978","R_2DMLvTZbrSdF9a2","Female",23,"more than R$ 9900",5,17,"Brazil",0,"purchased",0
+"979","R_2pSFQsyxULuVUzc","Male",41,"R$ 7701 - R$ 9900",4.375,3,"Brazil",3,"purchased",0
+"980","R_DCriN25TLOE5kZj","Female",50,"Prefer not to answer",NA,17,"Brazil",2,"purchased",0
+"981","R_2UVg44zT5eaTdtl","Male",73,"more than R$ 9900",5,18,"Brazil",4,"purchased",1
+"982","R_yF0GPkdDHqdkQmJ","Female",48,"more than R$ 9900",5,20,"Brazil",4,"purchased",1
+"983","R_1d17bQXg0UYmUHU","Female",41,"more than R$ 9900",5,18,"Brazil",3,"purchased",0
+"984","R_By2oWfgze9ydR0l","Female",41,"less than R$ 1100",0,11,"Brazil",2,"purchased",0
+"985","R_yL7GeHsezVYgv8R","Male",40,"more than R$ 9900",5,22,"Brazil",3,"purchased",1
+"986","R_3qrsQg3HvuTX11D","Male",69,"more than R$ 9900",5,16,"Brazil",3,"purchased",1
+"987","R_3IQXshGLZxGRl2p","Female",40,"more than R$ 9900",5,20,"Brazil",3,"purchased",1
+"988","R_1IimagBJ4WncHD3","Male",41,"more than R$ 9900",5,19,"Brazil",4,"purchased",0
+"989","R_3PcdwimvUi8i36R","Male",42,"more than R$ 9900",5,20,"Brazil",4,"purchased",0
+"990","R_RzdOX5EnNe1shxf","Female",46,"R$ 4401 - R$ 5500",2.5,20,"Brazil",1,"purchased",0
+"991","R_3WtHGuQUszfkOnT","Female",38,"more than R$ 9900",5,25,"Brazil",4,"purchased",1
+"992","R_CjDx8MC2yS0ywud","Male",41,"more than R$ 9900",5,19,"Brazil",4,"purchased",1
+"993","R_215lu5NS5zLao4K","Female",40,"more than R$ 9900",5,25,"Brazil",3,"purchased",0
+"994","R_XXM4TniptYYIcnv","Female",47,"R$ 7701 - R$ 9900",4.375,30,"Brazil",3,"purchased",1
+"995","R_3dQaQaplmL5NFfX","Female",29,"R$ 7701 - R$ 9900",4.375,17,"Brazil",3,"purchased",1
+"996","R_1OTdjW2LjAzM8xt","Male",37,"more than R$ 9900",5,10,"Brazil",4,"purchased",0
+"997","R_POlvFmyCCuPTzIl","Male",48,"more than R$ 9900",5,20,"Brazil",4,"purchased",0
+"998","R_2bOEHsCYAe3kWZR","Male",21,"R$ 2201 - R$ 3300",1.25,19,"Brazil",3,"purchased",1
+"999","R_2s6XgDKgZj9NPV0","Female",61,"R$ 2201 - R$ 3300",1.25,8,"Brazil",3,"purchased",1
+"1000","R_qw22Ag9Wx3t8bRf","Female",39,"Prefer not to answer",NA,18,"Brazil",3,"purchased",0
+"1001","R_1FP5vvV4m2m1g2S","Male",29,"more than R$ 9900",5,20,"Brazil",4,"purchased",1
+"1002","R_24dhfMb14iKbyrz","Female",31,"more than R$ 9900",5,23,"Brazil",4,"purchased",0
+"1003","R_2ARPGK1bmU8LMjE","Male",46,"more than R$ 9900",5,24,"Brazil",3,"purchased",0
+"1004","R_20VDCrqbodqLFJO","Female",42,"more than R$ 9900",5,18,"Brazil",3,"purchased",0
+"1005","R_2S6PUAHTUuYWTth","Female",33,"more than R$ 9900",5,9,"Brazil",3,"purchased",1
+"1006","R_ApQUUsBHsPy6n8B","Female",33,"more than R$ 9900",5,12,"Brazil",3,"purchased",1
+"1007","R_1E6EUViMY4oowOh","Male",34,"more than R$ 9900",5,20,"Brazil",3,"purchased",1
+"1008","R_2sZvtxh6pwA9bL6","Female",34,"more than R$ 9900",5,19,"Brazil",2,"purchased",1
+"1009","R_vc2tdaNqrMiTyfL","Male",29,"R$ 5501 - R$ 7700",3.125,15,"Brazil",3,"purchased",0
+"1010","R_29g3jwi2jNto5T0","Female",46,"Prefer not to answer",NA,13,"Brazil",4,"purchased",1
+"1011","R_25TPo4TaBCrSBq1","Male",30,"more than R$ 9900",5,17,"Brazil",4,"purchased",1
+"1012","R_27vrz6ZyPwVwiRR","Female",30,"R$ 4401 - R$ 5500",2.5,27,"Brazil",2,"purchased",0
+"1013","R_2qwtP0ZlvM9Wr9p","Male",32,"R$ 3301 - R$ 4400",1.875,26,"Brazil",2,"purchased",1
+"1014","R_6lOu3juQ6Gbe1gt","Male",30,"R$ 7701 - R$ 9900",4.375,10,"Brazil",4,"purchased",0
+"1015","R_3dPNlGdSdBMBBqO","Female",29,"more than R$ 9900",5,16,"Brazil",4,"purchased",0
+"1016","R_11i5A6BnEMPusIt","Female",26,"more than R$ 9900",5,13,"Brazil",2,"purchased",0
+"1017","R_3JejEr0lxQWpBeM","Female",63,"R$ 5501 - R$ 7700",3.125,19,"Brazil",2,"purchased",0
+"1018","R_Deqv0QNNEMua4KZ","Male",57,"more than R$ 9900",5,14,"Brazil",3,"purchased",0
+"1019","R_1ifmR5e69qXSydK","Female",54,"more than R$ 9900",5,17,"Brazil",3,"purchased",0
+"1020","R_21amxp27AqyMMgH","Female",44,"more than R$ 9900",5,15,"Brazil",3,"purchased",1
+"1021","R_2SibXC4N4EkxrWg","Male",25,"more than R$ 9900",5,15,"Brazil",4,"purchased",0
+"1022","R_3CVm9EuViMhjl3k","Female",23,"R$ 2201 - R$ 3300",1.25,15,"Brazil",3,"purchased",1
+"1023","R_YYbKdCl6Bjnakdb","Male",29,"more than R$ 9900",5,20,"Brazil",4,"purchased",0
+"1024","R_2sdSgixaladaMsm","Female",27,"R$ 5501 - R$ 7700",3.125,17,"Brazil",4,"purchased",1
+"1025","R_1kNaumezgSgJwSO","Female",25,"R$ 5501 - R$ 7700",3.125,15,"Brazil",3,"purchased",1
+"1026","R_2cuUqRXyLTERJtV","Male",68,"Prefer not to answer",NA,12,"Brazil",3,"purchased",1
+"1027","R_3L7ITnOVhmO5VvA","Female",36,"R$ 2201 - R$ 3300",1.25,25,"Brazil",4,"purchased",0
+"1028","R_3n0gJCjSsTrtLgm","Female",40,"R$ 2201 - R$ 3300",1.25,18,"Brazil",2,"purchased",0
+"1029","R_2qDvJrXGtwGUqQ7","Female",59,"less than R$ 1100",0,20,"Brazil",2,"purchased",1
+"1030","R_x9MkC0rMUSZrk41","Male",37,"Prefer not to answer",NA,13,"Brazil",3,"purchased",1
+"1031","R_scWeBJdquDDl5sZ","Female",72,"R$ 5501 - R$ 7700",3.125,22,"Brazil",3,"purchased",1
+"1032","R_3scQw26OrR7jB3v","Female",32,"R$ 4401 - R$ 5500",2.5,20,"Brazil",3,"purchased",1
+"1033","R_qI4svyd7HJzdeoh","Female",35,"$70,000 - $87,499",3,30,"Canada",4,"free",0
+"1034","R_1oAnqXkhBEGtmkQ","Female",41,"More than $105,000",5,13,"Canada",4,"free",0
+"1035","R_2ATl2x0BiwXZv6k","Female",34,"$87,500 - $104,999",4,14,"Canada",2,"free",0
+"1036","R_11c1EDEKH2d7eQS","Female",50,"More than $105,000",5,18,"Canada",4,"free",1
+"1037","R_3PSSiJCiWo84Gfd","Female",54,"More than $105,000",5,15,"Canada",3,"free",1
+"1038","R_31BDtUudxV5NvGM","Male",40,"More than $105,000",5,17,"Canada",4,"free",0
+"1039","R_1qUvqyAq9kbshKu","Female",38,"More than $105,000",5,15,"Canada",2,"free",0
+"1040","R_0CH9emiBMCZL4T7","Female",29,"$50,000 - $69,999",2,19,"Canada",3,"free",0
+"1041","R_3QWumCuhHN1bqoU","Female",26,"$50,000 - $69,999",2,16,"Canada",2,"free",0
+"1042","R_1lmYIxMY7bBtkli","Female",32,"More than $105,000",5,17,"Canada",2,"free",0
+"1043","R_20V5H2XEu8VONl7","Female",33,"More than $105,000",5,18,"Canada",2,"free",0
+"1044","R_10UDCZYBctFo8Xd","Female",56,"Prefer not to answer",NA,20,"Canada",2,"free",1
+"1045","R_Rr7jpjJZuzRvPIl","Female",41,"Less than $34,000",0,21,"Canada",1,"free",0
+"1046","R_YRkliM6pGsDYr4d","Female",32,"$87,500 - $104,999",4,23,"Canada",3,"free",0
+"1047","R_2CP3MkkZcdjUXff","Female",36,"More than $105,000",5,16,"Canada",3,"free",1
+"1048","R_1DLQA8LwXfNQaZz","Female",47,"More than $105,000",5,21,"Canada",3,"free",0
+"1049","R_Z4U5xarXc11VLgZ","Female",59,"$87,500 - $104,999",4,17,"Canada",3,"free",0
+"1050","R_3Pv4FK9GySJIrtG","Male",39,"More than $105,000",5,18,"Canada",3,"free",1
+"1051","R_x32sAWNM24Fgyop","Female",43,"More than $105,000",5,17,"Canada",2,"free",1
+"1052","R_0OpISi6BNVmUss9","Female",45,"More than $105,000",5,22,"Canada",3,"free",0
+"1053","R_xsIDstR6R1Jeonf","Male",27,"More than $105,000",5,18,"Canada",3,"free",1
+"1054","R_1LjIhoZwVfouwGE","Female",34,"More than $105,000",5,18,"Canada",1,"free",0
+"1055","R_1jiCUJJelnJphPx","Female",29,"More than $105,000",5,17,"Canada",3,"free",0
+"1056","R_1r9u5OdtfCyCI6M","Female",38,"More than $105,000",5,17,"Canada",2,"free",1
+"1057","R_1kUmQnFjUlx3kWc","Male",31,"More than $105,000",5,20,"Canada",4,"free",1
+"1058","R_DAyPNdVblnvtIJ3","Female",34,"More than $105,000",5,19,"Canada",3,"free",1
+"1059","R_3DdxiNhmHe2UPiP","Female",45,"More than $105,000",5,11,"Canada",1,"free",0
+"1060","R_3iL7T6auqQdcTFL","Female",30,"$50,000 - $69,999",2,24,"Canada",2,"free",1
+"1061","R_2yqtHdzyr1xJo2A","Female",33,"$34,000 - $49,999",1,17,"Canada",2,"free",1
+"1062","R_2743DLII89fV74r","Female",33,"$34,000 - $49,999",1,17,"Canada",2,"free",0
+"1063","R_1Hqrc8CemZ3xxI3","Female",26,"More than $105,000",5,17,"Canada",2,"free",0
+"1064","R_DN1dusnQ83TwhtD","Female",35,"More than $105,000",5,17,"Canada",3,"free",0
+"1065","R_3D5C5pvBRHJ5FUs","Male",27,"$70,000 - $87,499",3,15,"Canada",4,"free",0
+"1066","R_1rBcA7DV89J0w8A","Male",40,"More than $105,000",5,15,"Canada",2,"free",0
+"1067","R_2YV8UPRDJz7T0VE","Female",20,"$70,000 - $87,499",3,14,"Canada",2,"free",0
+"1068","R_1OqspDHVeyg5XDN","Male",30,"$50,000 - $69,999",2,17,"Canada",3,"free",0
+"1069","R_YahT9edLKg5gMNj","Female",43,"$87,500 - $104,999",4,18,"Canada",3,"free",0
+"1070","R_2pJhMrs89gDPlY9","Male",34,"$50,000 - $69,999",2,19,"Canada",4,"free",0
+"1071","R_aW2R6JWqjFrxaJH","Male",26,"$70,000 - $87,499",3,16,"Canada",3,"free",1
+"1072","R_2ya83uxBA5gSYom","Female",56,"Less than $34,000",0,19,"Canada",3,"free",1
+"1073","R_2pYkXYMXfN8U4Fn","Female",41,"$87,500 - $104,999",4,16,"Canada",4,"free",1
+"1074","R_2tyDvZsKtCCW3BK","Male",73,"More than $105,000",5,17,"Canada",3,"free",1
+"1075","R_3M3dc4kX07PyMmW","Female",31,"More than $105,000",5,10,"Canada",3,"free",1
+"1076","R_ymveOaooDFtUQVP","Female",38,"$87,500 - $104,999",4,19,"Canada",3,"free",0
+"1077","R_C1todJnt1uDaSDn","Male",75,"Prefer not to answer",NA,17,"Canada",4,"free",0
+"1078","R_2tbRlSXBiN5KTdi","Female",41,"$87,500 - $104,999",4,14,"Canada",3,"free",1
+"1079","R_3HRBSpg7G3dvx7m","Female",47,"More than $105,000",5,18,"Canada",3,"free",1
+"1080","R_216Dr0XHnQmHBgs","Male",39,"More than $105,000",5,15,"Canada",3,"free",0
+"1081","R_1i8Vhn6PKbpwmTY","Female",40,"More than $105,000",5,24,"Canada",4,"free",0
+"1082","R_2tDyepmWSYCRKeh","Female",62,"$87,500 - $104,999",4,15,"Canada",1,"free",0
+"1083","R_3sAEuNgOHSB3nD0","Female",70,"$87,500 - $104,999",4,18,"Canada",2,"free",1
+"1084","R_3g8eCB3QgwBH7Qo","Female",34,"Less than $34,000",0,18,"Canada",3,"free",0
+"1085","R_2ux3kGOna8Bd4iB","Female",38,"$70,000 - $87,499",3,20,"Canada",2,"free",0
+"1086","R_3MSaI0RQkk4TLSS","Female",52,"Prefer not to answer",NA,12,"Canada",2,"free",1
+"1087","R_12RVrVWQHq0DAg3","Female",47,"$70,000 - $87,499",3,20,"Canada",4,"free",0
+"1088","R_1Kqey0amiJYowoV","Female",28,"$70,000 - $87,499",3,23,"Canada",3,"free",0
+"1089","R_OpRvDyuPGNowdc5","Female",44,"Prefer not to answer",NA,17,"Canada",2,"free",1
+"1090","R_wTcTydI8bRVHZpD","Female",48,"$87,500 - $104,999",4,15,"Canada",3,"free",1
+"1091","R_cuMwX25s3Du1SRr","Female",49,"More than $105,000",5,18,"Canada",3,"free",0
+"1092","R_3R4LvUb2tRgFriE","Female",40,"$50,000 - $69,999",2,15,"Canada",3,"free",0
+"1093","R_qyBdMpbWnfDGQMh","Female",67,"$34,000 - $49,999",1,15,"Canada",2,"free",0
+"1094","R_2X5IldCoVeRbO3R","Female",35,"More than $105,000",5,20,"Canada",3,"free",0
+"1095","R_9zC0gJukxiyHXfH","Female",61,"$87,500 - $104,999",4,14,"Canada",3,"free",1
+"1096","R_1FFZWIDuesXVQ1E","Female",44,"More than $105,000",5,18,"Canada",4,"free",0
+"1097","R_10MBYiZBvckhfdr","Female",45,"More than $105,000",5,20,"Canada",2,"free",0
+"1098","R_3qvt4RCXexIgZpu","Female",49,"More than $105,000",5,19,"Canada",3,"free",1
+"1099","R_3HIel3sfefAYtKf","Male",52,"$87,500 - $104,999",4,20,"Canada",3,"free",0
+"1100","R_1rlhfod7siu68Fg","Male",48,"More than $105,000",5,13,"Canada",4,"free",1
+"1101","R_3JLgBnvvTZv60L2","Female",33,"$50,000 - $69,999",2,17,"Canada",2,"free",0
+"1102","R_e39RoutQI1stVol","Male",56,"More than $105,000",5,20,"Canada",4,"free",1
+"1103","R_27QBqHEFDDCDv5e","Female",40,"Less than $34,000",0,22,"Canada",4,"free",0
+"1104","R_1OGCmlb6ilLkPnJ","Male",33,"Less than $34,000",0,3,"Canada",4,"free",0
+"1105","R_CjcZt0FlFRkRgat","Male",24,"$34,000 - $49,999",1,12,"Canada",3,"free",0
+"1106","R_UR544fBDfy56eOd","Female",41,"$87,500 - $104,999",4,16,"Canada",1,"free",1
+"1107","R_2ru1vT3ldCnCwgb","Female",24,"Less than $34,000",0,16,"Canada",4,"free",0
+"1108","R_2xznLhGloeVTwp1","Female",51,"$70,000 - $87,499",3,20,"Canada",3,"free",1
+"1109","R_10UzH9LbsgO95vE","Female",23,"$34,000 - $49,999",1,16,"Canada",2,"free",0
+"1110","R_u54hGRLBwTH9JIt","Female",62,"$34,000 - $49,999",1,22,"Canada",2,"free",0
+"1111","R_9tU3Bvw0AICV3CF","Male",37,"$34,000 - $49,999",1,12,"Canada",4,"free",0
+"1112","R_1zSEcWmZckPIRod","Male",30,"$87,500 - $104,999",4,16,"Canada",4,"free",0
+"1113","R_2wyt10uDQ41N8Cx","Male",24,"$34,000 - $49,999",1,12,"Canada",3,"free",0
+"1114","R_s7oMHQUWMYKSKFH","Male",55,"$34,000 - $49,999",1,13,"Canada",2,"free",0
+"1115","R_zYiaW922hLAmeOZ","Male",34,"More than $105,000",5,18,"Canada",3,"free",1
+"1116","R_3dWDL3LFBdIgfPV","Male",45,"$50,000 - $69,999",2,25,"Canada",4,"free",0
+"1117","R_1CjbMx0rGPcSCag","Female",25,"More than $105,000",5,16,"Canada",4,"free",0
+"1118","R_ZJe0zObMzeGmNnX","Female",40,"More than $105,000",5,18,"Canada",4,"free",1
+"1119","R_RWB0qn61HSKPmdX","Male",50,"More than $105,000",5,16,"Canada",3,"free",0
+"1120","R_3MfXpTbh3xzZzFI","Female",39,"More than $105,000",5,21,"Canada",3,"free",0
+"1121","R_1k0NTQOHoCEeGrB","Female",36,"$34,000 - $49,999",1,18,"Canada",3,"free",0
+"1122","R_w6ukK2PyoFXqJNL","Female",64,"Less than $34,000",0,18,"Canada",4,"free",0
+"1123","R_cM8WMmhSjqhgUY9","Female",39,"Prefer not to answer",NA,19,"Canada",3,"free",0
+"1124","R_27qBRCpZ44OYbmB","Male",45,"$50,000 - $69,999",2,20,"Canada",4,"free",0
+"1125","R_1LCH9DRVhSEev1i","Male",64,"More than $105,000",5,19,"Canada",4,"free",1
+"1126","R_BXvPGZ9NouvsREJ","Male",38,"$50,000 - $69,999",2,22,"Canada",3,"free",0
+"1127","R_QadPrq9TYRvCQ8x","Female",34,"More than $105,000",5,21,"Canada",3,"free",0
+"1128","R_1lsFPhjfVI2p4kq","Male",54,"More than $105,000",5,17,"Canada",4,"free",0
+"1129","R_1qgKsuS5zafuk88","Female",64,"$34,000 - $49,999",1,19,"Canada",4,"free",1
+"1130","R_3QQT6fw1XB7X2eM","Male",65,"$70,000 - $87,499",3,17,"Canada",4,"free",0
+"1131","R_22o7NqyijZhQBA0","Female",52,"More than $105,000",5,17,"Canada",4,"free",1
+"1132","R_3L0dahSjx1AYyFR","Male",38,"More than $105,000",5,18,"Canada",3,"free",0
+"1133","R_vD2YlNEztZsR80F","Male",46,"More than $105,000",5,23,"Canada",3,"free",0
+"1134","R_1K0YvFOpsdUkW5M","Male",59,"$70,000 - $87,499",3,16,"Canada",4,"free",0
+"1135","R_1CCJCVBhUTM58Eg","Male",45,"More than $105,000",5,20,"Canada",4,"free",1
+"1136","R_3ERR2KnWeIV7Yym","Male",49,"$70,000 - $87,499",3,16,"Canada",4,"free",1
+"1137","R_2XnbHIvYNIxrpH6","Male",49,"More than $105,000",5,4,"Canada",3,"free",1
+"1138","R_3HZC67Vs9qPwF88","Female",46,"More than $105,000",5,17,"Canada",3,"free",0
+"1139","R_2zXRRkeW32cQ8jv","Male",35,"More than $105,000",5,15,"Canada",4,"free",0
+"1140","R_27KyOb9Xf139Sjg","Male",33,"$87,500 - $104,999",4,19,"Canada",4,"free",1
+"1141","R_2DREFIJYLFct2Jj","Male",42,"$87,500 - $104,999",4,25,"Canada",4,"free",0
+"1142","R_2TnqFlyn9iy9hmK","Male",47,"More than $105,000",5,18,"Canada",4,"free",0
+"1143","R_2CrKoTXPHrDCkaW","Male",53,"$87,500 - $104,999",4,19,"Canada",4,"free",1
+"1144","R_1DNJ6IYbkKfX6cd","Female",26,"$70,000 - $87,499",3,16,"Canada",4,"free",0
+"1145","R_12bbTyBgNJVk417","Male",36,"Less than $34,000",0,12,"Canada",2,"free",0
+"1146","R_8qAegySwSWE8hEd","Male",43,"More than $105,000",5,18,"Canada",4,"free",0
+"1147","R_9oVuMZ8EkWfPnFv","Male",46,"More than $105,000",5,17,"Canada",4,"free",0
+"1148","R_3hmX81cIqpP2bpi","Female",26,"$34,000 - $49,999",1,18,"Canada",2,"free",0
+"1149","R_O7NrHTtOc4vDF6N","Male",35,"Less than $34,000",0,24,"Canada",0,"free",0
+"1150","R_2ZDHCzFMHAESQ8l","Female",35,"$50,000 - $69,999",2,18,"Canada",2,"free",0
+"1151","R_1d0joQTIEbugXDA","Female",23,"Less than $34,000",0,19,"Canada",1,"free",0
+"1152","R_2t9DMbzKDwYHaXh","Female",21,"More than $105,000",5,16,"Canada",2,"free",1
+"1153","R_1nMDvTpvfF1hFLu","Female",23,"Less than $34,000",0,17,"Canada",2,"free",0
+"1154","R_1GNEionZdNod7rY","Male",34,"$50,000 - $69,999",2,14,"Canada",4,"free",0
+"1155","R_1rDCHK7iC9iGi4q","Female",28,"Less than $34,000",0,20,"Canada",2,"free",0
+"1156","R_2D8nfL8kijkcxII","Male",37,"$34,000 - $49,999",1,15,"Canada",3,"free",0
+"1157","R_21mT4jDceeGLb36","Female",56,"Less than $34,000",0,20,"Canada",3,"free",1
+"1158","R_2RX4mFvaWaYSYVx","Female",21,"$87,500 - $104,999",4,18,"Canada",2,"free",1
+"1159","R_Diy388n8usz9bH3","Male",34,"Prefer not to answer",NA,16,"Canada",3,"free",0
+"1160","R_1r97WbH4rij4PPe","Male",38,"More than $105,000",5,16,"Canada",4,"free",0
+"1161","R_RUAE55re9I1i2SB","Male",41,"$87,500 - $104,999",4,17,"Canada",3,"free",0
+"1162","R_WApy0D1tNtEScKZ","Female",37,"More than $105,000",5,20,"Canada",3,"free",0
+"1163","R_2TMGVOYhRKCGFV8","Male",31,"Less than $34,000",0,17,"Canada",4,"free",0
+"1164","R_sYDokeKmUttthZL","Male",30,"Less than $34,000",0,14,"Canada",1,"free",0
+"1165","R_1H2z21IIGpAcTYn","Female",30,"$50,000 - $69,999",2,14,"Canada",4,"free",0
+"1166","R_3Dp7TO6FcTAxu00","Male",20,"$70,000 - $87,499",3,17,"Canada",3,"free",1
+"1167","R_3hmed2lUQVg7nr4","Male",24,"Less than $34,000",0,16,"Canada",4,"free",0
+"1168","R_AMWvhXWIO23AM5X","Male",27,"$50,000 - $69,999",2,16,"Canada",4,"free",0
+"1169","R_1ou3LYkmUHXGHBO","Female",25,"$70,000 - $87,499",3,12,"Canada",1,"free",0
+"1170","R_21nAtTwZWoY6JiQ","Female",23,"Less than $34,000",0,13,"Canada",0,"free",0
+"1171","R_1PcNEcVS0DoWiYI","Male",53,"$34,000 - $49,999",1,15,"Canada",4,"free",0
+"1172","R_2zu1TciMp7x8zUB","Male",27,"More than $105,000",5,20,"Canada",2,"free",0
+"1173","R_0OPMmp25xpvDW13","Female",24,"More than $105,000",5,17,"Canada",4,"free",0
+"1174","R_1eJiiA8uLeHWfzl","Female",31,"More than $105,000",5,14,"Canada",0,"free",0
+"1175","R_1gUA54vh66SIJ6q","Female",21,"Prefer not to answer",NA,16,"Canada",2,"free",0
+"1176","R_1Kv9buBzgwnDXyC","Female",28,"Less than $34,000",0,18,"Canada",4,"free",0
+"1177","R_2wtc51CuJ1KcqiS","Male",31,"$50,000 - $69,999",2,16,"Canada",2,"free",0
+"1178","R_s5zvRla5TjzFj5T","Female",30,"More than $105,000",5,16,"Canada",4,"free",0
+"1179","R_1IWbh0X0uBbLt66","Female",37,"Less than $34,000",0,15,"Canada",3,"free",0
+"1180","R_2P1ADyqqTbcka6Y","Female",66,"More than $105,000",5,16,"Canada",3,"free",0
+"1181","R_2rkZ5hR5MXAebTZ","Male",56,"More than $105,000",5,17,"Canada",3,"free",1
+"1182","R_3R89btLi0mUAJNT","Male",55,"Less than $34,000",0,16,"Canada",4,"free",1
+"1183","R_3FakyrmL0IqPCk9","Male",21,"$70,000 - $87,499",3,16,"Canada",2,"free",0
+"1184","R_12JfDEU93UI83mw","Female",61,"$87,500 - $104,999",4,14,"Canada",3,"free",0
+"1185","R_3R7X6TgFE5C1ZYN","Male",43,"$34,000 - $49,999",1,16,"Canada",2,"free",0
+"1186","R_3dVUYkiPJVoYKSz","Male",24,"$70,000 - $87,499",3,14,"Canada",1,"free",0
+"1187","R_3fZrAWnt1ZcFfyD","Female",25,"$87,500 - $104,999",4,16,"Canada",4,"free",0
+"1188","R_Y017O0d4xIpJ8XL","Female",21,"Prefer not to answer",NA,18,"Canada",3,"free",0
+"1189","R_qR3BPfO6rzHWbgR","Male",28,"Less than $34,000",0,11,"Canada",3,"free",0
+"1190","R_ZIV3ew4PTCUHvdT","Female",30,"Less than $34,000",0,22,"Canada",0,"free",0
+"1191","R_2tsxMQJKhfezOos","Female",34,"More than $105,000",5,16,"Canada",3,"free",0
+"1192","R_3IczdSrEyUeDbXS","Female",32,"$70,000 - $87,499",3,21,"Canada",1,"free",0
+"1193","R_3EaSRNwqiIE38KV","Male",40,"$87,500 - $104,999",4,16,"Canada",3,"free",0
+"1194","R_25Lb0qar2ZKnECC","Male",19,"$87,500 - $104,999",4,18,"Canada",4,"free",1
+"1195","R_3PaAJJdfwVwIA8a","Female",22,"Less than $34,000",0,16,"Canada",3,"free",0
+"1196","R_2Yh23IgCKLnUkNB","Male",22,"Less than $34,000",0,8,"Canada",2,"free",1
+"1197","R_1hNq4VkdZPQOOD6","Female",35,"Prefer not to answer",NA,14,"Canada",0,"free",0
+"1198","R_3RaWNJWFo3RLhSx","Male",29,"Less than $34,000",0,12,"Canada",2,"free",0
+"1199","R_3HFHMxBaWZqpOU6","Female",53,"More than $105,000",5,18,"Canada",3,"free",0
+"1200","R_21t61oQE3MhOI5X","Female",43,"$70,000 - $87,499",3,19,"Canada",2,"free",1
+"1201","R_0jRQ7Cm8b1RWHUB","Female",29,"Less than $34,000",0,17,"Canada",4,"free",0
+"1202","R_0pGPEnA5wFR6lzP","Male",26,"$70,000 - $87,499",3,16,"Canada",3,"free",0
+"1203","R_3s4wAeZVmQK4hUQ","Female",75,"$34,000 - $49,999",1,13,"Canada",3,"free",0
+"1204","R_1rfgCQeTSJyOR0g","Female",27,"Less than $34,000",0,16,"Canada",3,"free",0
+"1205","R_3qk89tRvkVbvHIm","Male",23,"Prefer not to answer",NA,14,"Canada",1,"free",0
+"1206","R_3qKTTkKnRqH9Bcd","Female",42,"More than $105,000",5,21,"Canada",3,"free",0
+"1207","R_3rUmOh79wUaH2LT","Female",70,"More than $105,000",5,16,"Canada",3,"free",1
+"1208","R_33eUAf9yjKFRtOq","Female",27,"$50,000 - $69,999",2,18,"Canada",3,"free",0
+"1209","R_3310MDRiTwZHLJQ","Female",66,"Prefer not to answer",NA,18,"Canada",2,"free",0
+"1210","R_VKCLvxyHM9YwaSB","Female",41,"More than $105,000",5,16,"Canada",3,"free",0
+"1211","R_3wSLpfBcFBMqm9H","Female",30,"More than $105,000",5,7,"Canada",3,"free",1
+"1212","R_1n3g5Lif3uSPBnI","Female",68,"$70,000 - $87,499",3,15,"Canada",1,"free",0
+"1213","R_12rJNKHbM6IZa6s","Female",58,"$87,500 - $104,999",4,18,"Canada",4,"free",0
+"1214","R_wTrYFwdh6Lx2HUB","Female",45,"More than $105,000",5,18,"Canada",4,"free",0
+"1215","R_1LMz4GxBYqT0cmR","Female",29,"Less than $34,000",0,22,"Canada",3,"free",0
+"1216","R_3PBPakucU9fy6eR","Male",39,"$87,500 - $104,999",4,27,"Canada",3,"free",1
+"1217","R_1feoc3Yo7UiYLCT","Female",40,"More than $105,000",5,18,"Canada",4,"free",0
+"1218","R_PBBHGJSFjCsL7Ud","Female",28,"$50,000 - $69,999",2,15,"Canada",3,"free",0
+"1219","R_2DY6iTkvU9OKwlK","Male",21,"$70,000 - $87,499",3,16,"Canada",3,"free",0
+"1220","R_2dGAf3AK8liMTXq","Female",29,"$70,000 - $87,499",3,17,"Canada",3,"free",0
+"1221","R_3EoQCI4HeinIIRz","Male",29,"$34,000 - $49,999",1,14,"Canada",3,"free",0
+"1222","R_2uCG0xo1iLaPhW1","Male",28,"$50,000 - $69,999",2,16,"Canada",2,"free",0
+"1223","R_3DtOmVn9r4oCcuL","Female",24,"$87,500 - $104,999",4,18,"Canada",4,"free",0
+"1224","R_plwRuplm1sWHOQp","Male",25,"$87,500 - $104,999",4,20,"Canada",3,"free",0
+"1225","R_3r0N4Fdc2k1gCd2","Male",22,"Less than $34,000",0,8,"Canada",1,"free",0
+"1226","R_Cgd5pazd5EYiRUJ","Female",31,"$50,000 - $69,999",2,19,"Canada",0,"free",0
+"1227","R_3hrLC4AoFmtth4E","Male",30,"$50,000 - $69,999",2,18,"Canada",3,"free",0
+"1228","R_2tncR0BmxqKZ5Dc","Female",28,"$50,000 - $69,999",2,16,"Canada",3,"free",0
+"1229","R_a9H27CLrfpAApAB","Female",69,"$50,000 - $69,999",2,20,"Canada",3,"free",1
+"1230","R_3qHItwqfm8t6u26","Female",19,"Less than $34,000",0,13,"Canada",2,"free",0
+"1231","R_AG31Tst8uxoNAvn","Male",36,"More than $105,000",5,4,"Canada",2,"free",0
+"1232","R_Yb71cfdaijwqLa9","Female",60,"More than $105,000",5,19,"Canada",3,"free",1
+"1233","R_1imLh0t538ojKAj","Female",42,"More than $105,000",5,19,"Canada",3,"free",0
+"1234","R_12h8FDQqr52Tolg","Female",37,"More than $105,000",5,18,"Canada",2,"free",0
+"1235","R_1nZ0IUYNgVxENPa","Female",31,"$87,500 - $104,999",4,22,"Canada",2,"free",0
+"1236","R_XtdLgXnwpqVFpbH","Female",30,"$87,500 - $104,999",4,17,"Canada",3,"free",1
+"1237","R_1K3bsDwBbHuja6x","Male",46,"$87,500 - $104,999",4,8,"Canada",4,"free",0
+"1238","R_30l6KsMYg06Ugc4","Male",30,"$50,000 - $69,999",2,17,"Canada",4,"free",1
+"1239","R_3nBm42zZEbGe92C","Female",30,"$50,000 - $69,999",2,18,"Canada",4,"free",0
+"1240","R_1QgXt4YCiO0MNoS","Male",36,"More than $105,000",5,16,"Canada",2,"free",0
+"1241","R_3hmUcb88BJ5ftvb","Male",37,"Prefer not to answer",NA,17,"Canada",4,"free",0
+"1242","R_wKMJP8luHIlJzwd","Female",19,"$70,000 - $87,499",3,14,"Canada",2,"free",0
+"1243","R_2PwnH4IxcE0MONu","Male",24,"$34,000 - $49,999",1,16,"Canada",3,"free",1
+"1244","R_tRoaBbpICU80Esp","Male",46,"$87,500 - $104,999",4,8,"Canada",2,"free",0
+"1245","R_3dR1KFKca03HAoJ","Male",41,"More than $105,000",5,16,"Canada",3,"free",0
+"1246","R_22zXH9Zf6fhnbmL","Male",43,"More than $105,000",5,15,"Canada",4,"free",0
+"1247","R_28D70fTezDMcT3h","Female",29,"More than $105,000",5,18,"Canada",3,"free",0
+"1248","R_3HqohcQDb3lGlvT","Male",34,"$34,000 - $49,999",1,15,"Canada",2,"free",0
+"1249","R_2AFINvuKMvwBpuI","Male",37,"Prefer not to answer",NA,17,"Canada",4,"free",0
+"1250","R_NWrwa96Fq0LiAzn","Female",69,"Less than $34,000",0,14,"Canada",2,"free",0
+"1251","R_1mgafRlmHNVKAyL","Female",48,"$87,500 - $104,999",4,20,"Canada",2,"free",0
+"1252","R_2tMwg5bWWA8Cztb","Female",32,"$70,000 - $87,499",3,18,"Canada",4,"free",0
+"1253","R_3qrskyakRwESAWV","Female",31,"$50,000 - $69,999",2,24,"Canada",3,"free",1
+"1254","R_2s1fRpxpHNHMXQh","Female",35,"More than $105,000",5,17,"Canada",4,"free",0
+"1255","R_3EygiIz1Pixhwiu","Female",25,"$34,000 - $49,999",1,20,"Canada",0,"free",0
+"1256","R_2waDKjHMrO781sL","Male",45,"Less than $34,000",0,24,"Canada",4,"free",0
+"1257","R_3QPGJ3GIHwYsLXC","Male",38,"More than $105,000",5,18,"Canada",2,"free",0
+"1258","R_3FIgKMls42wTohk","Male",37,"Prefer not to answer",NA,17,"Canada",4,"free",0
+"1259","R_1BQ6cWzKEFJqiOB","Female",37,"$70,000 - $87,499",3,15,"Canada",2,"free",0
+"1260","R_2DTsWgmdYULiQVB","Female",41,"Less than $34,000",0,18,"Canada",3,"free",0
+"1261","R_2v2j40YVnpMdF1O","Female",29,"$34,000 - $49,999",1,16,"Canada",1,"free",0
+"1262","R_30cz5ukp91kQ5EY","Male",34,"$70,000 - $87,499",3,16,"Canada",3,"free",0
+"1263","R_xrAnr8GcVy4g86J","Male",46,"More than $105,000",5,21,"Canada",3,"free",0
+"1264","R_32RDIFCi36zodfz","Female",22,"$34,000 - $49,999",1,16,"Canada",2,"free",0
+"1265","R_2whJ3YHL8xjb2DP","Male",39,"$87,500 - $104,999",4,15,"Canada",2,"free",1
+"1266","R_1N3RbnTVfdKU6sQ","Male",40,"$87,500 - $104,999",4,18,"Canada",4,"free",0
+"1267","R_2XcESvGbNB8FK6e","Female",29,"More than $105,000",5,21,"Canada",3,"free",0
+"1268","R_AMWfgDXZjBGRlU5","Male",22,"$50,000 - $69,999",2,17,"Canada",1,"free",0
+"1269","R_2S0m2rqlgVN9E4s","Male",31,"$50,000 - $69,999",2,16,"Canada",3,"free",0
+"1270","R_5uvMEyAowOw6qLD","Female",37,"$87,500 - $104,999",4,25,"Canada",3,"free",0
+"1271","R_268SphHqtoMx7hg","Female",56,"$87,500 - $104,999",4,14,"Canada",2,"free",0
+"1272","R_2eapMWUBKzfo9A7","Male",62,"Prefer not to answer",NA,13,"Canada",3,"free",0
+"1273","R_2f6SFsgKQGhQNEU","Male",23,"Less than $34,000",0,16,"Canada",2,"free",1
+"1274","R_20NGhRvUPPnFCTN","Female",35,"$50,000 - $69,999",2,15,"Canada",3,"free",0
+"1275","R_2Tz0roJFvyYAasr","Female",49,"$70,000 - $87,499",3,18,"Canada",4,"free",1
+"1276","R_3iC2vTnuLCEew5v","Male",45,"Less than $34,000",0,16,"Canada",2,"free",0
+"1277","R_1cV34MsExKpwSFU","Female",19,"Less than $34,000",0,14,"Canada",4,"free",0
+"1278","R_2ZJqG5FIT0vh8AL","Female",43,"$70,000 - $87,499",3,17,"Canada",4,"free",1
+"1279","R_xcuRHQo59EB6Igh","Male",57,"$70,000 - $87,499",3,16,"Canada",1,"free",1
+"1280","R_12DVzuXzzMKqfIs","Male",25,"$34,000 - $49,999",1,14,"Canada",3,"free",0
+"1281","R_Br1KO8jfXApCS2d","Male",22,"$34,000 - $49,999",1,18,"Canada",3,"free",0
+"1282","R_27HJ7PD7ezWpGwS","Male",32,"$50,000 - $69,999",2,20,"Canada",4,"free",0
+"1283","R_2fjJvzXnDd1CPrM","Male",48,"More than $105,000",5,19,"Canada",3,"free",0
+"1284","R_2xWDs1kVDdzmQEb","Male",28,"Prefer not to answer",NA,18,"Canada",2,"free",0
+"1285","R_3itosiZXMsrw2E9","Male",23,"Less than $34,000",0,12,"Canada",4,"free",0
+"1286","R_2dmsxFdp7z9vRQO","Male",28,"Prefer not to answer",NA,18,"Canada",2,"free",1
+"1287","R_3RmuVIZcIjlOwPD","Male",28,"Prefer not to answer",NA,18,"Canada",2,"free",0
+"1288","R_1QnEPEpzBxXribM","Female",43,"$87,500 - $104,999",4,12,"Canada",2,"free",0
+"1289","R_1OrBFtPTRMzWRC7","Female",31,"$50,000 - $69,999",2,20,"Canada",2,"free",0
+"1290","R_1PXCKT5zHr4MJ9V","Male",55,"More than $105,000",5,8,"Canada",3,"free",0
+"1291","R_3els2Co1RMJ2bKt","Female",64,"$50,000 - $69,999",2,17,"Canada",3,"free",1
+"1292","R_qI4svyd7HJzdeoh","Female",35,"$70,000 - $87,499",3,30,"Canada",4,"purchased",0
+"1293","R_1oAnqXkhBEGtmkQ","Female",41,"More than $105,000",5,13,"Canada",4,"purchased",1
+"1294","R_2ATl2x0BiwXZv6k","Female",34,"$87,500 - $104,999",4,14,"Canada",2,"purchased",0
+"1295","R_11c1EDEKH2d7eQS","Female",50,"More than $105,000",5,18,"Canada",4,"purchased",1
+"1296","R_3PSSiJCiWo84Gfd","Female",54,"More than $105,000",5,15,"Canada",3,"purchased",1
+"1297","R_31BDtUudxV5NvGM","Male",40,"More than $105,000",5,17,"Canada",4,"purchased",0
+"1298","R_1qUvqyAq9kbshKu","Female",38,"More than $105,000",5,15,"Canada",2,"purchased",1
+"1299","R_0CH9emiBMCZL4T7","Female",29,"$50,000 - $69,999",2,19,"Canada",3,"purchased",0
+"1300","R_3QWumCuhHN1bqoU","Female",26,"$50,000 - $69,999",2,16,"Canada",2,"purchased",0
+"1301","R_1lmYIxMY7bBtkli","Female",32,"More than $105,000",5,17,"Canada",2,"purchased",1
+"1302","R_20V5H2XEu8VONl7","Female",33,"More than $105,000",5,18,"Canada",2,"purchased",0
+"1303","R_10UDCZYBctFo8Xd","Female",56,"Prefer not to answer",NA,20,"Canada",2,"purchased",1
+"1304","R_Rr7jpjJZuzRvPIl","Female",41,"Less than $34,000",0,21,"Canada",1,"purchased",1
+"1305","R_YRkliM6pGsDYr4d","Female",32,"$87,500 - $104,999",4,23,"Canada",3,"purchased",0
+"1306","R_2CP3MkkZcdjUXff","Female",36,"More than $105,000",5,16,"Canada",3,"purchased",0
+"1307","R_1DLQA8LwXfNQaZz","Female",47,"More than $105,000",5,21,"Canada",3,"purchased",0
+"1308","R_Z4U5xarXc11VLgZ","Female",59,"$87,500 - $104,999",4,17,"Canada",3,"purchased",1
+"1309","R_3Pv4FK9GySJIrtG","Male",39,"More than $105,000",5,18,"Canada",3,"purchased",1
+"1310","R_x32sAWNM24Fgyop","Female",43,"More than $105,000",5,17,"Canada",2,"purchased",1
+"1311","R_0OpISi6BNVmUss9","Female",45,"More than $105,000",5,22,"Canada",3,"purchased",1
+"1312","R_xsIDstR6R1Jeonf","Male",27,"More than $105,000",5,18,"Canada",3,"purchased",1
+"1313","R_1LjIhoZwVfouwGE","Female",34,"More than $105,000",5,18,"Canada",1,"purchased",0
+"1314","R_1jiCUJJelnJphPx","Female",29,"More than $105,000",5,17,"Canada",3,"purchased",0
+"1315","R_1r9u5OdtfCyCI6M","Female",38,"More than $105,000",5,17,"Canada",2,"purchased",1
+"1316","R_1kUmQnFjUlx3kWc","Male",31,"More than $105,000",5,20,"Canada",4,"purchased",1
+"1317","R_DAyPNdVblnvtIJ3","Female",34,"More than $105,000",5,19,"Canada",3,"purchased",1
+"1318","R_3DdxiNhmHe2UPiP","Female",45,"More than $105,000",5,11,"Canada",1,"purchased",0
+"1319","R_3iL7T6auqQdcTFL","Female",30,"$50,000 - $69,999",2,24,"Canada",2,"purchased",1
+"1320","R_2yqtHdzyr1xJo2A","Female",33,"$34,000 - $49,999",1,17,"Canada",2,"purchased",1
+"1321","R_2743DLII89fV74r","Female",33,"$34,000 - $49,999",1,17,"Canada",2,"purchased",0
+"1322","R_1Hqrc8CemZ3xxI3","Female",26,"More than $105,000",5,17,"Canada",2,"purchased",0
+"1323","R_DN1dusnQ83TwhtD","Female",35,"More than $105,000",5,17,"Canada",3,"purchased",1
+"1324","R_3D5C5pvBRHJ5FUs","Male",27,"$70,000 - $87,499",3,15,"Canada",4,"purchased",0
+"1325","R_1rBcA7DV89J0w8A","Male",40,"More than $105,000",5,15,"Canada",2,"purchased",1
+"1326","R_2YV8UPRDJz7T0VE","Female",20,"$70,000 - $87,499",3,14,"Canada",2,"purchased",0
+"1327","R_1OqspDHVeyg5XDN","Male",30,"$50,000 - $69,999",2,17,"Canada",3,"purchased",0
+"1328","R_YahT9edLKg5gMNj","Female",43,"$87,500 - $104,999",4,18,"Canada",3,"purchased",0
+"1329","R_2pJhMrs89gDPlY9","Male",34,"$50,000 - $69,999",2,19,"Canada",4,"purchased",0
+"1330","R_aW2R6JWqjFrxaJH","Male",26,"$70,000 - $87,499",3,16,"Canada",3,"purchased",1
+"1331","R_2ya83uxBA5gSYom","Female",56,"Less than $34,000",0,19,"Canada",3,"purchased",1
+"1332","R_2pYkXYMXfN8U4Fn","Female",41,"$87,500 - $104,999",4,16,"Canada",4,"purchased",1
+"1333","R_2tyDvZsKtCCW3BK","Male",73,"More than $105,000",5,17,"Canada",3,"purchased",1
+"1334","R_3M3dc4kX07PyMmW","Female",31,"More than $105,000",5,10,"Canada",3,"purchased",1
+"1335","R_ymveOaooDFtUQVP","Female",38,"$87,500 - $104,999",4,19,"Canada",3,"purchased",1
+"1336","R_C1todJnt1uDaSDn","Male",75,"Prefer not to answer",NA,17,"Canada",4,"purchased",0
+"1337","R_2tbRlSXBiN5KTdi","Female",41,"$87,500 - $104,999",4,14,"Canada",3,"purchased",1
+"1338","R_3HRBSpg7G3dvx7m","Female",47,"More than $105,000",5,18,"Canada",3,"purchased",1
+"1339","R_216Dr0XHnQmHBgs","Male",39,"More than $105,000",5,15,"Canada",3,"purchased",1
+"1340","R_1i8Vhn6PKbpwmTY","Female",40,"More than $105,000",5,24,"Canada",4,"purchased",0
+"1341","R_2tDyepmWSYCRKeh","Female",62,"$87,500 - $104,999",4,15,"Canada",1,"purchased",1
+"1342","R_3sAEuNgOHSB3nD0","Female",70,"$87,500 - $104,999",4,18,"Canada",2,"purchased",1
+"1343","R_3g8eCB3QgwBH7Qo","Female",34,"Less than $34,000",0,18,"Canada",3,"purchased",0
+"1344","R_2ux3kGOna8Bd4iB","Female",38,"$70,000 - $87,499",3,20,"Canada",2,"purchased",0
+"1345","R_3MSaI0RQkk4TLSS","Female",52,"Prefer not to answer",NA,12,"Canada",2,"purchased",1
+"1346","R_12RVrVWQHq0DAg3","Female",47,"$70,000 - $87,499",3,20,"Canada",4,"purchased",1
+"1347","R_1Kqey0amiJYowoV","Female",28,"$70,000 - $87,499",3,23,"Canada",3,"purchased",0
+"1348","R_OpRvDyuPGNowdc5","Female",44,"Prefer not to answer",NA,17,"Canada",2,"purchased",1
+"1349","R_wTcTydI8bRVHZpD","Female",48,"$87,500 - $104,999",4,15,"Canada",3,"purchased",1
+"1350","R_cuMwX25s3Du1SRr","Female",49,"More than $105,000",5,18,"Canada",3,"purchased",0
+"1351","R_3R4LvUb2tRgFriE","Female",40,"$50,000 - $69,999",2,15,"Canada",3,"purchased",1
+"1352","R_qyBdMpbWnfDGQMh","Female",67,"$34,000 - $49,999",1,15,"Canada",2,"purchased",1
+"1353","R_2X5IldCoVeRbO3R","Female",35,"More than $105,000",5,20,"Canada",3,"purchased",0
+"1354","R_9zC0gJukxiyHXfH","Female",61,"$87,500 - $104,999",4,14,"Canada",3,"purchased",1
+"1355","R_1FFZWIDuesXVQ1E","Female",44,"More than $105,000",5,18,"Canada",4,"purchased",1
+"1356","R_10MBYiZBvckhfdr","Female",45,"More than $105,000",5,20,"Canada",2,"purchased",1
+"1357","R_3qvt4RCXexIgZpu","Female",49,"More than $105,000",5,19,"Canada",3,"purchased",1
+"1358","R_3HIel3sfefAYtKf","Male",52,"$87,500 - $104,999",4,20,"Canada",3,"purchased",0
+"1359","R_1rlhfod7siu68Fg","Male",48,"More than $105,000",5,13,"Canada",4,"purchased",1
+"1360","R_3JLgBnvvTZv60L2","Female",33,"$50,000 - $69,999",2,17,"Canada",2,"purchased",0
+"1361","R_e39RoutQI1stVol","Male",56,"More than $105,000",5,20,"Canada",4,"purchased",1
+"1362","R_27QBqHEFDDCDv5e","Female",40,"Less than $34,000",0,22,"Canada",4,"purchased",1
+"1363","R_1OGCmlb6ilLkPnJ","Male",33,"Less than $34,000",0,3,"Canada",4,"purchased",0
+"1364","R_CjcZt0FlFRkRgat","Male",24,"$34,000 - $49,999",1,12,"Canada",3,"purchased",0
+"1365","R_UR544fBDfy56eOd","Female",41,"$87,500 - $104,999",4,16,"Canada",1,"purchased",1
+"1366","R_2ru1vT3ldCnCwgb","Female",24,"Less than $34,000",0,16,"Canada",4,"purchased",0
+"1367","R_2xznLhGloeVTwp1","Female",51,"$70,000 - $87,499",3,20,"Canada",3,"purchased",1
+"1368","R_10UzH9LbsgO95vE","Female",23,"$34,000 - $49,999",1,16,"Canada",2,"purchased",0
+"1369","R_u54hGRLBwTH9JIt","Female",62,"$34,000 - $49,999",1,22,"Canada",2,"purchased",1
+"1370","R_9tU3Bvw0AICV3CF","Male",37,"$34,000 - $49,999",1,12,"Canada",4,"purchased",1
+"1371","R_1zSEcWmZckPIRod","Male",30,"$87,500 - $104,999",4,16,"Canada",4,"purchased",1
+"1372","R_2wyt10uDQ41N8Cx","Male",24,"$34,000 - $49,999",1,12,"Canada",3,"purchased",0
+"1373","R_s7oMHQUWMYKSKFH","Male",55,"$34,000 - $49,999",1,13,"Canada",2,"purchased",0
+"1374","R_zYiaW922hLAmeOZ","Male",34,"More than $105,000",5,18,"Canada",3,"purchased",1
+"1375","R_3dWDL3LFBdIgfPV","Male",45,"$50,000 - $69,999",2,25,"Canada",4,"purchased",0
+"1376","R_1CjbMx0rGPcSCag","Female",25,"More than $105,000",5,16,"Canada",4,"purchased",0
+"1377","R_ZJe0zObMzeGmNnX","Female",40,"More than $105,000",5,18,"Canada",4,"purchased",1
+"1378","R_RWB0qn61HSKPmdX","Male",50,"More than $105,000",5,16,"Canada",3,"purchased",1
+"1379","R_3MfXpTbh3xzZzFI","Female",39,"More than $105,000",5,21,"Canada",3,"purchased",0
+"1380","R_1k0NTQOHoCEeGrB","Female",36,"$34,000 - $49,999",1,18,"Canada",3,"purchased",0
+"1381","R_w6ukK2PyoFXqJNL","Female",64,"Less than $34,000",0,18,"Canada",4,"purchased",0
+"1382","R_cM8WMmhSjqhgUY9","Female",39,"Prefer not to answer",NA,19,"Canada",3,"purchased",1
+"1383","R_27qBRCpZ44OYbmB","Male",45,"$50,000 - $69,999",2,20,"Canada",4,"purchased",1
+"1384","R_1LCH9DRVhSEev1i","Male",64,"More than $105,000",5,19,"Canada",4,"purchased",1
+"1385","R_BXvPGZ9NouvsREJ","Male",38,"$50,000 - $69,999",2,22,"Canada",3,"purchased",0
+"1386","R_QadPrq9TYRvCQ8x","Female",34,"More than $105,000",5,21,"Canada",3,"purchased",1
+"1387","R_1lsFPhjfVI2p4kq","Male",54,"More than $105,000",5,17,"Canada",4,"purchased",0
+"1388","R_1qgKsuS5zafuk88","Female",64,"$34,000 - $49,999",1,19,"Canada",4,"purchased",1
+"1389","R_3QQT6fw1XB7X2eM","Male",65,"$70,000 - $87,499",3,17,"Canada",4,"purchased",1
+"1390","R_22o7NqyijZhQBA0","Female",52,"More than $105,000",5,17,"Canada",4,"purchased",1
+"1391","R_3L0dahSjx1AYyFR","Male",38,"More than $105,000",5,18,"Canada",3,"purchased",1
+"1392","R_vD2YlNEztZsR80F","Male",46,"More than $105,000",5,23,"Canada",3,"purchased",1
+"1393","R_1K0YvFOpsdUkW5M","Male",59,"$70,000 - $87,499",3,16,"Canada",4,"purchased",0
+"1394","R_1CCJCVBhUTM58Eg","Male",45,"More than $105,000",5,20,"Canada",4,"purchased",1
+"1395","R_3ERR2KnWeIV7Yym","Male",49,"$70,000 - $87,499",3,16,"Canada",4,"purchased",1
+"1396","R_2XnbHIvYNIxrpH6","Male",49,"More than $105,000",5,4,"Canada",3,"purchased",1
+"1397","R_3HZC67Vs9qPwF88","Female",46,"More than $105,000",5,17,"Canada",3,"purchased",0
+"1398","R_2zXRRkeW32cQ8jv","Male",35,"More than $105,000",5,15,"Canada",4,"purchased",0
+"1399","R_27KyOb9Xf139Sjg","Male",33,"$87,500 - $104,999",4,19,"Canada",4,"purchased",1
+"1400","R_2DREFIJYLFct2Jj","Male",42,"$87,500 - $104,999",4,25,"Canada",4,"purchased",0
+"1401","R_2TnqFlyn9iy9hmK","Male",47,"More than $105,000",5,18,"Canada",4,"purchased",0
+"1402","R_2CrKoTXPHrDCkaW","Male",53,"$87,500 - $104,999",4,19,"Canada",4,"purchased",1
+"1403","R_1DNJ6IYbkKfX6cd","Female",26,"$70,000 - $87,499",3,16,"Canada",4,"purchased",0
+"1404","R_12bbTyBgNJVk417","Male",36,"Less than $34,000",0,12,"Canada",2,"purchased",0
+"1405","R_8qAegySwSWE8hEd","Male",43,"More than $105,000",5,18,"Canada",4,"purchased",0
+"1406","R_9oVuMZ8EkWfPnFv","Male",46,"More than $105,000",5,17,"Canada",4,"purchased",0
+"1407","R_3hmX81cIqpP2bpi","Female",26,"$34,000 - $49,999",1,18,"Canada",2,"purchased",0
+"1408","R_O7NrHTtOc4vDF6N","Male",35,"Less than $34,000",0,24,"Canada",0,"purchased",0
+"1409","R_2ZDHCzFMHAESQ8l","Female",35,"$50,000 - $69,999",2,18,"Canada",2,"purchased",0
+"1410","R_1d0joQTIEbugXDA","Female",23,"Less than $34,000",0,19,"Canada",1,"purchased",1
+"1411","R_2t9DMbzKDwYHaXh","Female",21,"More than $105,000",5,16,"Canada",2,"purchased",1
+"1412","R_1nMDvTpvfF1hFLu","Female",23,"Less than $34,000",0,17,"Canada",2,"purchased",0
+"1413","R_1GNEionZdNod7rY","Male",34,"$50,000 - $69,999",2,14,"Canada",4,"purchased",0
+"1414","R_1rDCHK7iC9iGi4q","Female",28,"Less than $34,000",0,20,"Canada",2,"purchased",1
+"1415","R_2D8nfL8kijkcxII","Male",37,"$34,000 - $49,999",1,15,"Canada",3,"purchased",0
+"1416","R_21mT4jDceeGLb36","Female",56,"Less than $34,000",0,20,"Canada",3,"purchased",1
+"1417","R_2RX4mFvaWaYSYVx","Female",21,"$87,500 - $104,999",4,18,"Canada",2,"purchased",1
+"1418","R_Diy388n8usz9bH3","Male",34,"Prefer not to answer",NA,16,"Canada",3,"purchased",1
+"1419","R_1r97WbH4rij4PPe","Male",38,"More than $105,000",5,16,"Canada",4,"purchased",0
+"1420","R_RUAE55re9I1i2SB","Male",41,"$87,500 - $104,999",4,17,"Canada",3,"purchased",1
+"1421","R_WApy0D1tNtEScKZ","Female",37,"More than $105,000",5,20,"Canada",3,"purchased",0
+"1422","R_2TMGVOYhRKCGFV8","Male",31,"Less than $34,000",0,17,"Canada",4,"purchased",1
+"1423","R_sYDokeKmUttthZL","Male",30,"Less than $34,000",0,14,"Canada",1,"purchased",0
+"1424","R_1H2z21IIGpAcTYn","Female",30,"$50,000 - $69,999",2,14,"Canada",4,"purchased",0
+"1425","R_3Dp7TO6FcTAxu00","Male",20,"$70,000 - $87,499",3,17,"Canada",3,"purchased",1
+"1426","R_3hmed2lUQVg7nr4","Male",24,"Less than $34,000",0,16,"Canada",4,"purchased",0
+"1427","R_AMWvhXWIO23AM5X","Male",27,"$50,000 - $69,999",2,16,"Canada",4,"purchased",0
+"1428","R_1ou3LYkmUHXGHBO","Female",25,"$70,000 - $87,499",3,12,"Canada",1,"purchased",1
+"1429","R_21nAtTwZWoY6JiQ","Female",23,"Less than $34,000",0,13,"Canada",0,"purchased",0
+"1430","R_1PcNEcVS0DoWiYI","Male",53,"$34,000 - $49,999",1,15,"Canada",4,"purchased",1
+"1431","R_2zu1TciMp7x8zUB","Male",27,"More than $105,000",5,20,"Canada",2,"purchased",0
+"1432","R_0OPMmp25xpvDW13","Female",24,"More than $105,000",5,17,"Canada",4,"purchased",0
+"1433","R_1eJiiA8uLeHWfzl","Female",31,"More than $105,000",5,14,"Canada",0,"purchased",1
+"1434","R_1gUA54vh66SIJ6q","Female",21,"Prefer not to answer",NA,16,"Canada",2,"purchased",1
+"1435","R_1Kv9buBzgwnDXyC","Female",28,"Less than $34,000",0,18,"Canada",4,"purchased",0
+"1436","R_2wtc51CuJ1KcqiS","Male",31,"$50,000 - $69,999",2,16,"Canada",2,"purchased",0
+"1437","R_s5zvRla5TjzFj5T","Female",30,"More than $105,000",5,16,"Canada",4,"purchased",0
+"1438","R_1IWbh0X0uBbLt66","Female",37,"Less than $34,000",0,15,"Canada",3,"purchased",0
+"1439","R_2P1ADyqqTbcka6Y","Female",66,"More than $105,000",5,16,"Canada",3,"purchased",1
+"1440","R_2rkZ5hR5MXAebTZ","Male",56,"More than $105,000",5,17,"Canada",3,"purchased",1
+"1441","R_3R89btLi0mUAJNT","Male",55,"Less than $34,000",0,16,"Canada",4,"purchased",1
+"1442","R_3FakyrmL0IqPCk9","Male",21,"$70,000 - $87,499",3,16,"Canada",2,"purchased",1
+"1443","R_12JfDEU93UI83mw","Female",61,"$87,500 - $104,999",4,14,"Canada",3,"purchased",0
+"1444","R_3R7X6TgFE5C1ZYN","Male",43,"$34,000 - $49,999",1,16,"Canada",2,"purchased",1
+"1445","R_3dVUYkiPJVoYKSz","Male",24,"$70,000 - $87,499",3,14,"Canada",1,"purchased",0
+"1446","R_3fZrAWnt1ZcFfyD","Female",25,"$87,500 - $104,999",4,16,"Canada",4,"purchased",0
+"1447","R_Y017O0d4xIpJ8XL","Female",21,"Prefer not to answer",NA,18,"Canada",3,"purchased",1
+"1448","R_qR3BPfO6rzHWbgR","Male",28,"Less than $34,000",0,11,"Canada",3,"purchased",0
+"1449","R_ZIV3ew4PTCUHvdT","Female",30,"Less than $34,000",0,22,"Canada",0,"purchased",0
+"1450","R_2tsxMQJKhfezOos","Female",34,"More than $105,000",5,16,"Canada",3,"purchased",0
+"1451","R_3IczdSrEyUeDbXS","Female",32,"$70,000 - $87,499",3,21,"Canada",1,"purchased",1
+"1452","R_3EaSRNwqiIE38KV","Male",40,"$87,500 - $104,999",4,16,"Canada",3,"purchased",0
+"1453","R_25Lb0qar2ZKnECC","Male",19,"$87,500 - $104,999",4,18,"Canada",4,"purchased",1
+"1454","R_3PaAJJdfwVwIA8a","Female",22,"Less than $34,000",0,16,"Canada",3,"purchased",0
+"1455","R_2Yh23IgCKLnUkNB","Male",22,"Less than $34,000",0,8,"Canada",2,"purchased",1
+"1456","R_1hNq4VkdZPQOOD6","Female",35,"Prefer not to answer",NA,14,"Canada",0,"purchased",0
+"1457","R_3RaWNJWFo3RLhSx","Male",29,"Less than $34,000",0,12,"Canada",2,"purchased",0
+"1458","R_3HFHMxBaWZqpOU6","Female",53,"More than $105,000",5,18,"Canada",3,"purchased",1
+"1459","R_21t61oQE3MhOI5X","Female",43,"$70,000 - $87,499",3,19,"Canada",2,"purchased",1
+"1460","R_0jRQ7Cm8b1RWHUB","Female",29,"Less than $34,000",0,17,"Canada",4,"purchased",0
+"1461","R_0pGPEnA5wFR6lzP","Male",26,"$70,000 - $87,499",3,16,"Canada",3,"purchased",0
+"1462","R_3s4wAeZVmQK4hUQ","Female",75,"$34,000 - $49,999",1,13,"Canada",3,"purchased",0
+"1463","R_1rfgCQeTSJyOR0g","Female",27,"Less than $34,000",0,16,"Canada",3,"purchased",1
+"1464","R_3qk89tRvkVbvHIm","Male",23,"Prefer not to answer",NA,14,"Canada",1,"purchased",0
+"1465","R_3qKTTkKnRqH9Bcd","Female",42,"More than $105,000",5,21,"Canada",3,"purchased",1
+"1466","R_3rUmOh79wUaH2LT","Female",70,"More than $105,000",5,16,"Canada",3,"purchased",1
+"1467","R_33eUAf9yjKFRtOq","Female",27,"$50,000 - $69,999",2,18,"Canada",3,"purchased",1
+"1468","R_3310MDRiTwZHLJQ","Female",66,"Prefer not to answer",NA,18,"Canada",2,"purchased",0
+"1469","R_VKCLvxyHM9YwaSB","Female",41,"More than $105,000",5,16,"Canada",3,"purchased",1
+"1470","R_3wSLpfBcFBMqm9H","Female",30,"More than $105,000",5,7,"Canada",3,"purchased",1
+"1471","R_1n3g5Lif3uSPBnI","Female",68,"$70,000 - $87,499",3,15,"Canada",1,"purchased",0
+"1472","R_12rJNKHbM6IZa6s","Female",58,"$87,500 - $104,999",4,18,"Canada",4,"purchased",1
+"1473","R_wTrYFwdh6Lx2HUB","Female",45,"More than $105,000",5,18,"Canada",4,"purchased",1
+"1474","R_1LMz4GxBYqT0cmR","Female",29,"Less than $34,000",0,22,"Canada",3,"purchased",1
+"1475","R_3PBPakucU9fy6eR","Male",39,"$87,500 - $104,999",4,27,"Canada",3,"purchased",1
+"1476","R_1feoc3Yo7UiYLCT","Female",40,"More than $105,000",5,18,"Canada",4,"purchased",0
+"1477","R_PBBHGJSFjCsL7Ud","Female",28,"$50,000 - $69,999",2,15,"Canada",3,"purchased",0
+"1478","R_2DY6iTkvU9OKwlK","Male",21,"$70,000 - $87,499",3,16,"Canada",3,"purchased",0
+"1479","R_2dGAf3AK8liMTXq","Female",29,"$70,000 - $87,499",3,17,"Canada",3,"purchased",0
+"1480","R_3EoQCI4HeinIIRz","Male",29,"$34,000 - $49,999",1,14,"Canada",3,"purchased",0
+"1481","R_2uCG0xo1iLaPhW1","Male",28,"$50,000 - $69,999",2,16,"Canada",2,"purchased",0
+"1482","R_3DtOmVn9r4oCcuL","Female",24,"$87,500 - $104,999",4,18,"Canada",4,"purchased",1
+"1483","R_plwRuplm1sWHOQp","Male",25,"$87,500 - $104,999",4,20,"Canada",3,"purchased",1
+"1484","R_3r0N4Fdc2k1gCd2","Male",22,"Less than $34,000",0,8,"Canada",1,"purchased",0
+"1485","R_Cgd5pazd5EYiRUJ","Female",31,"$50,000 - $69,999",2,19,"Canada",0,"purchased",0
+"1486","R_3hrLC4AoFmtth4E","Male",30,"$50,000 - $69,999",2,18,"Canada",3,"purchased",0
+"1487","R_2tncR0BmxqKZ5Dc","Female",28,"$50,000 - $69,999",2,16,"Canada",3,"purchased",0
+"1488","R_a9H27CLrfpAApAB","Female",69,"$50,000 - $69,999",2,20,"Canada",3,"purchased",1
+"1489","R_3qHItwqfm8t6u26","Female",19,"Less than $34,000",0,13,"Canada",2,"purchased",0
+"1490","R_AG31Tst8uxoNAvn","Male",36,"More than $105,000",5,4,"Canada",2,"purchased",1
+"1491","R_Yb71cfdaijwqLa9","Female",60,"More than $105,000",5,19,"Canada",3,"purchased",1
+"1492","R_1imLh0t538ojKAj","Female",42,"More than $105,000",5,19,"Canada",3,"purchased",0
+"1493","R_12h8FDQqr52Tolg","Female",37,"More than $105,000",5,18,"Canada",2,"purchased",0
+"1494","R_1nZ0IUYNgVxENPa","Female",31,"$87,500 - $104,999",4,22,"Canada",2,"purchased",0
+"1495","R_XtdLgXnwpqVFpbH","Female",30,"$87,500 - $104,999",4,17,"Canada",3,"purchased",1
+"1496","R_1K3bsDwBbHuja6x","Male",46,"$87,500 - $104,999",4,8,"Canada",4,"purchased",0
+"1497","R_30l6KsMYg06Ugc4","Male",30,"$50,000 - $69,999",2,17,"Canada",4,"purchased",1
+"1498","R_3nBm42zZEbGe92C","Female",30,"$50,000 - $69,999",2,18,"Canada",4,"purchased",1
+"1499","R_1QgXt4YCiO0MNoS","Male",36,"More than $105,000",5,16,"Canada",2,"purchased",0
+"1500","R_3hmUcb88BJ5ftvb","Male",37,"Prefer not to answer",NA,17,"Canada",4,"purchased",0
+"1501","R_wKMJP8luHIlJzwd","Female",19,"$70,000 - $87,499",3,14,"Canada",2,"purchased",0
+"1502","R_2PwnH4IxcE0MONu","Male",24,"$34,000 - $49,999",1,16,"Canada",3,"purchased",0
+"1503","R_tRoaBbpICU80Esp","Male",46,"$87,500 - $104,999",4,8,"Canada",2,"purchased",0
+"1504","R_3dR1KFKca03HAoJ","Male",41,"More than $105,000",5,16,"Canada",3,"purchased",0
+"1505","R_22zXH9Zf6fhnbmL","Male",43,"More than $105,000",5,15,"Canada",4,"purchased",0
+"1506","R_28D70fTezDMcT3h","Female",29,"More than $105,000",5,18,"Canada",3,"purchased",0
+"1507","R_3HqohcQDb3lGlvT","Male",34,"$34,000 - $49,999",1,15,"Canada",2,"purchased",0
+"1508","R_2AFINvuKMvwBpuI","Male",37,"Prefer not to answer",NA,17,"Canada",4,"purchased",0
+"1509","R_NWrwa96Fq0LiAzn","Female",69,"Less than $34,000",0,14,"Canada",2,"purchased",1
+"1510","R_1mgafRlmHNVKAyL","Female",48,"$87,500 - $104,999",4,20,"Canada",2,"purchased",1
+"1511","R_2tMwg5bWWA8Cztb","Female",32,"$70,000 - $87,499",3,18,"Canada",4,"purchased",0
+"1512","R_3qrskyakRwESAWV","Female",31,"$50,000 - $69,999",2,24,"Canada",3,"purchased",1
+"1513","R_2s1fRpxpHNHMXQh","Female",35,"More than $105,000",5,17,"Canada",4,"purchased",1
+"1514","R_3EygiIz1Pixhwiu","Female",25,"$34,000 - $49,999",1,20,"Canada",0,"purchased",0
+"1515","R_2waDKjHMrO781sL","Male",45,"Less than $34,000",0,24,"Canada",4,"purchased",0
+"1516","R_3QPGJ3GIHwYsLXC","Male",38,"More than $105,000",5,18,"Canada",2,"purchased",1
+"1517","R_3FIgKMls42wTohk","Male",37,"Prefer not to answer",NA,17,"Canada",4,"purchased",0
+"1518","R_1BQ6cWzKEFJqiOB","Female",37,"$70,000 - $87,499",3,15,"Canada",2,"purchased",0
+"1519","R_2DTsWgmdYULiQVB","Female",41,"Less than $34,000",0,18,"Canada",3,"purchased",0
+"1520","R_2v2j40YVnpMdF1O","Female",29,"$34,000 - $49,999",1,16,"Canada",1,"purchased",1
+"1521","R_30cz5ukp91kQ5EY","Male",34,"$70,000 - $87,499",3,16,"Canada",3,"purchased",0
+"1522","R_xrAnr8GcVy4g86J","Male",46,"More than $105,000",5,21,"Canada",3,"purchased",0
+"1523","R_32RDIFCi36zodfz","Female",22,"$34,000 - $49,999",1,16,"Canada",2,"purchased",0
+"1524","R_2whJ3YHL8xjb2DP","Male",39,"$87,500 - $104,999",4,15,"Canada",2,"purchased",1
+"1525","R_1N3RbnTVfdKU6sQ","Male",40,"$87,500 - $104,999",4,18,"Canada",4,"purchased",1
+"1526","R_2XcESvGbNB8FK6e","Female",29,"More than $105,000",5,21,"Canada",3,"purchased",1
+"1527","R_AMWfgDXZjBGRlU5","Male",22,"$50,000 - $69,999",2,17,"Canada",1,"purchased",0
+"1528","R_2S0m2rqlgVN9E4s","Male",31,"$50,000 - $69,999",2,16,"Canada",3,"purchased",0
+"1529","R_5uvMEyAowOw6qLD","Female",37,"$87,500 - $104,999",4,25,"Canada",3,"purchased",0
+"1530","R_268SphHqtoMx7hg","Female",56,"$87,500 - $104,999",4,14,"Canada",2,"purchased",0
+"1531","R_2eapMWUBKzfo9A7","Male",62,"Prefer not to answer",NA,13,"Canada",3,"purchased",1
+"1532","R_2f6SFsgKQGhQNEU","Male",23,"Less than $34,000",0,16,"Canada",2,"purchased",1
+"1533","R_20NGhRvUPPnFCTN","Female",35,"$50,000 - $69,999",2,15,"Canada",3,"purchased",1
+"1534","R_2Tz0roJFvyYAasr","Female",49,"$70,000 - $87,499",3,18,"Canada",4,"purchased",1
+"1535","R_3iC2vTnuLCEew5v","Male",45,"Less than $34,000",0,16,"Canada",2,"purchased",0
+"1536","R_1cV34MsExKpwSFU","Female",19,"Less than $34,000",0,14,"Canada",4,"purchased",0
+"1537","R_2ZJqG5FIT0vh8AL","Female",43,"$70,000 - $87,499",3,17,"Canada",4,"purchased",1
+"1538","R_xcuRHQo59EB6Igh","Male",57,"$70,000 - $87,499",3,16,"Canada",1,"purchased",1
+"1539","R_12DVzuXzzMKqfIs","Male",25,"$34,000 - $49,999",1,14,"Canada",3,"purchased",1
+"1540","R_Br1KO8jfXApCS2d","Male",22,"$34,000 - $49,999",1,18,"Canada",3,"purchased",0
+"1541","R_27HJ7PD7ezWpGwS","Male",32,"$50,000 - $69,999",2,20,"Canada",4,"purchased",0
+"1542","R_2fjJvzXnDd1CPrM","Male",48,"More than $105,000",5,19,"Canada",3,"purchased",1
+"1543","R_2xWDs1kVDdzmQEb","Male",28,"Prefer not to answer",NA,18,"Canada",2,"purchased",1
+"1544","R_3itosiZXMsrw2E9","Male",23,"Less than $34,000",0,12,"Canada",4,"purchased",0
+"1545","R_2dmsxFdp7z9vRQO","Male",28,"Prefer not to answer",NA,18,"Canada",2,"purchased",0
+"1546","R_3RmuVIZcIjlOwPD","Male",28,"Prefer not to answer",NA,18,"Canada",2,"purchased",0
+"1547","R_1QnEPEpzBxXribM","Female",43,"$87,500 - $104,999",4,12,"Canada",2,"purchased",0
+"1548","R_1OrBFtPTRMzWRC7","Female",31,"$50,000 - $69,999",2,20,"Canada",2,"purchased",1
+"1549","R_1PXCKT5zHr4MJ9V","Male",55,"More than $105,000",5,8,"Canada",3,"purchased",0
+"1550","R_3els2Co1RMJ2bKt","Female",64,"$50,000 - $69,999",2,17,"Canada",3,"purchased",1

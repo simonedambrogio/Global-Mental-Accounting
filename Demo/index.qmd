@@ -1,0 +1,369 @@
+---
+title: "Demo Multicountry Replication Study"
+format: 
+  html:
+    code-fold: false
+    code-block-bg: true
+    toc: true
+    fig-format: svg
+    code-block-border-left: "#31BAE9" # 5A6570
+    link-external-newwindow: true
+knitr:
+  opts_chunk:
+    warning: false
+    message: false
+    fig.align: 'center'
+
+execute:
+  cache: true
+  warning: false
+  message: false
+---
+
+```{r Code-to-load-data-and-libraries}
+#| code-fold: true
+#| code-summary: "Code to load data and libraries"
+#| eval: true
+#| warning: false
+#| message: false
+
+# Load libraries
+library(dplyr); library(purrr); library(stringr)
+library(ggplot2); library(ggpubr); library(jcolors)
+library(cowplot); library(ggprism); library(tidybayes)
+library(reshape2); library(parallel); library(rstan)
+library(brms); library(plotly);
+
+library(flextable); library(knitr);
+library(kableExtra); library(tidyverse)
+
+# Load Preregistered data 
+Plane <- read.csv("data/data_demo.csv") %>% 
+  # Tidy
+  mutate(Age=as.numeric(Age)) %>%
+  filter(Age>0 & Age<99) %>% 
+  mutate(Education=as.numeric(Education)) %>% 
+  filter(Education<100) %>% 
+  filter(Gender%in%c("Male", "Female")) %>% 
+  filter(Country %in% c("Austria", "Brazil","Canada")) 
+
+```
+
+
+<br><br>
+
+## Effect Size
+
+<br>
+
+In this demo we only consider the Plane study and only the first three countries: Austria, Brazil, and Canada. For the Plane study, we coded the participants response as a binary variable: for each coupon type (purchased or free) we transformed the response “Pay your friend” in 1, and in 0 otherwise. We the computed the effect size according to:
+
+<p style="text-align:center"> $log(OR) = log(\frac{a/b}{c/d})$ </p>
+
+
+where a is the number of 1s in the purchased condition, b is the number of 0s in the purchased condition, c is the number of 1s in the free condition, and d is the number of 0s in the free condition.
+
+We also computed the standard error as follows:
+
+<p style="text-align:center"> $SE_{log(OR)} = \sqrt{(\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d})}$ </p>
+
+<br>
+
+
+```{r create-preregistered-exclusion }
+#| code-summary: "Compute effect size"
+
+Plane_theta <- Plane %>%
+  # Calculate ODD RATIO
+  group_by(condition, response, Country) %>% 
+  mutate(n = n()) %>% filter(row_number()==1) %>% 
+  group_by(condition, Country) %>% 
+  mutate(Odds = n[response==1]/n[response==0]) %>% 
+  group_by(condition, Country) %>%
+  mutate(se_theta = sqrt(sum(1/n))) %>%
+  group_by(condition, Country) %>% filter(row_number()==1) %>% select(-response) %>% 
+  group_by(Country) %>% 
+  mutate(OR = Odds[condition=="purchased"]/Odds[condition=="free"],
+         theta = log(OR)) %>% filter(row_number()==1) %>% ungroup() %>% 
+  select(Country, theta, se_theta)
+
+Plane_theta %>%
+  kable(table.attr = "style='width:40%;'") %>%
+  kable_classic(html_font = "Cambria") %>%
+  kable_material(c("striped", "hover")) %>%
+  row_spec(0, bold = TRUE)
+
+  
+```
+
+
+
+In the figure below, each dot correspond to a country. The dots size indicate the inverse of the standard error (e.g. 1/SE).
+
+```{r plot-preregistered-exclusion}
+#| fig-width: 5
+#| fig-height: 4
+#| code-summary: "Plot effect size"
+
+Plane_theta %>% 
+  ggplot(aes(Country, theta)) +
+  geom_point( aes(size=1/se_theta, color=Country), width = 0.1, alpha=0.7) +
+  geom_hline(yintercept = 0, linetype=2) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(log(OR))) +
+  scale_color_manual(values = viridis::magma(n = 10)[c(2, 5, 8)]) +
+  scale_fill_manual(values = viridis::viridis_pal()(3)) +
+  scale_y_continuous(guide = "prism_offset", limits = c(-1,1.6), breaks = -1:5) + 
+  coord_cartesian(ylim = c(-1,1.2)) +
+  scale_size(range = c(4, 6)) +
+  scale_x_discrete(guide = "prism_offset") + 
+  guides(size = "none") + 
+  theme(text = element_text(size = 15, family="Arial"), legend.position = "none")
+
+```
+
+
+## Bayesian Meta-Analysis
+
+<br>
+
+We can now use the log(OR) and the standard error to perform a Bayesian meta-analysis.
+
+```{r fit-Plane}
+#| code-summary: Show codes
+#| eval: true
+#| output: false
+
+mPlane <- brm(theta|se(se_theta) ~ 1 + (1|Country),
+               data = Plane_theta,
+               iter = 5000)
+```
+
+```{r plot-fit-Plane}
+#| code-summary: Show codes
+#| fig-width: 5
+#| fig-height: 4
+#| eval: true
+
+fe <- fixef(mPlane)[,"Estimate"]
+re <- ranef(mPlane)$Country[,,][,"Estimate"]
+postPlane <- data.frame(post=c(fe, fe+re), 
+                         Country=c("all", names(re)), 
+                         study="Plane", x = 4)
+postPlane$lower <- c(fixef(mPlane)[,"Q2.5"], fixef(mPlane)[,"Q2.5"]+ranef(mPlane)$Country[,,][,"Q2.5"] )
+postPlane$upper <- c(fixef(mPlane)[,"Q97.5"], fixef(mPlane)[,"Q97.5"]+ranef(mPlane)$Country[,,][,"Q97.5"] )
+
+postPlane %>%
+  filter(Country!="all") %>% 
+  mutate(x=x+c(-.5, -0.1, 0.4)) %>% 
+  ggplot(aes(x, post)) +
+  geom_point( width = 0.1, alpha=0.7, size=4, aes(color=Country) ) +
+  geom_segment(data = postPlane %>% filter(Country=="all"), color="#228B8DFF",
+               aes(x=x, xend=x, y=lower, yend=upper), linewidth=0.8) +
+  geom_point(data = postPlane %>% filter(Country=="all"), color="#228B8DFF", size=5) +
+  geom_point(data = postPlane %>% filter(Country=="all") %>% 
+               filter(Country=="all"), color="white", size=3) +
+  
+  geom_hline(yintercept = 0, linetype=2, size=1) +
+  theme_pubr() + theme(legend.position = "right") +
+  labs(x=NULL, y=expression(Posterior~log(OR))) +
+  scale_y_continuous(guide = "prism_offset") + 
+  scale_size(range = c(3, 8)) +
+  scale_x_continuous(limits =c(3,5), 
+                     guide = "prism_offset") + 
+  coord_cartesian(ylim=c(-1,1.5)) +
+  guides(size = "none") + labs(color="") +
+  scale_color_manual(values = viridis::magma(n = 10)[c(2, 5, 8)]) +
+  theme(text = element_text(size = 15, family="Arial"), 
+        legend.position = c(0.85, 0.25), 
+        axis.line.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank())
+
+```
+
+
+Each smaller dot represents one country (random effect), and the green dot and bar indicate the mean pooled effect and its 95% Credible Intervals (CIs).
+
+<br>
+
+##  Unpooled Analysis
+
+<br>
+
+In this section we perform a Bayesian unpooled analysis. We will compute the effect size for each country independently.
+
+
+```{r fit-Plane-unpooled}
+#| code-summary: Show codes
+#| output: false
+
+mPlane <- brm(response ~ condition * Country,
+               data = Plane,
+               iter = 2000, refresh = 0, family="bernoulli")
+```
+
+```{r prepare-plot-Plane-unpooled-posteriors}
+#| code-summary: "Prepare plot posteriors"
+#| warning: false
+#| code-fold: true
+ 
+post <- prepare_predictions(mPlane)$dpars$mu$fe$b %>% 
+  as.data.frame()
+
+names(post)[1] <- "Austria"
+names(post)[2] <- "theta"
+names(post) <- str_remove( names(post), "b_" )
+names(post) <- str_remove( names(post), "price" )
+names(post) <- str_remove( names(post), "Country" )
+all_countries <- names(post)[-2]
+all_countries <- all_countries[-grep(":", all_countries)]
+
+post_plot <- map_dfr(all_countries, function(country){
+  if(country=="Austria"){
+    theta <- post[,"theta"]
+  } else {
+    theta <- post[,"theta"] + post[,grep(paste0(":",country), names(post))]
+  }
+  data.frame(theta, Country=country, study="Plane", family="binomial", x=4) %>% 
+    mutate(lower = HDInterval::hdi( theta )["lower"],
+           upper = HDInterval::hdi( theta )["upper"],
+           credible = ifelse(lower<0, "no", "yes"))
+})
+
+postPlane <- post_plot %>% 
+  group_by(Country) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1)
+```
+
+```{r plot-Plane-unpooled-posteriors}
+#| fig-width: 4
+#| fig-height: 3
+#| code-summary: "Plot posteriors"
+#| warning: false
+
+
+post_plot %>% 
+  ggplot(aes(x = theta, y = Country)) +
+  stat_halfeye(aes(fill=credible, color=credible)) +
+  geom_vline(xintercept = 0, linetype=2) +
+  theme_pubr() + 
+  labs(x=expression(log(OR)), y=NULL) +
+  scale_y_discrete(guide = "prism_offset") + 
+  scale_x_continuous(guide = "prism_offset") + 
+  scale_fill_manual(values = c("#228B8DFF", "gray"), breaks = c("yes", "no")) +
+  scale_color_manual(values = c("#33628DFF", "gray"), breaks = c("yes", "no")) +
+  guides(size = "none") + 
+  theme(text = element_text(size = 15),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 15),
+        legend.position = "none")
+```
+
+
+## Exploratory Analysis
+
+Finally, we performed a Bayesian unpooled analysis to explore the role of financial literacy (i.e., are people with higher levels of financial literacy less susceptible to the mental accounting effect?), age, gender, and income. 
+
+*It will take about 2 minutes to run the cell below*
+
+```{r fit-exploratory-models}
+#| warning: false
+#| output: false
+
+
+mPlane <- brm(response ~ condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) + 
+                (condition*(Age+Education+FinancialLiteracy+Gender+numeric_income) | Country),
+              data = Plane, 
+              iter = 1000, refresh = 1, chains = 2, cores = 2,
+              family="bernoulli")
+
+```
+
+
+```{r prepare-plot-Plane-exploratory-posteriors}
+#| code-summary: "Prepare plot posteriors"
+#| warning: false
+#| code-fold: true
+ 
+library(stringi)
+
+data = Plane %>% group_by(subject) %>% filter(row_number()==1) %>% ungroup()
+  
+
+df_plot <- function(m, x, study_name){
+  fe <- fixef(m) %>% as.data.frame()
+  fe <- data.frame(beta=fe[,1], lower=fe[,3], upper=fe[,4], var=row.names(fe))
+  
+  fe %>% 
+    filter(stri_detect_fixed(var, ":")) %>% 
+    mutate(var=sapply(str_split(var, ":"), function(x) x[2])) %>% 
+    mutate(
+      x=seq(x-0.2, x+0.2, length=5), 
+      study=study_name,
+      var=ifelse(var=="FinancialLiteracy", "Financial\nLiteracy",var),
+      var=ifelse(var=="GenderMale", "Gender",var),
+      var=ifelse(var=="numeric_income", "Income",var)
+    ) %>% 
+    mutate(is_sign=ifelse(sign(lower)==sign(upper),"yes", "no"))
+    
+}
+
+
+df <- df_plot(mPlane, 6, "Plane")
+
+```
+
+```{r plot-Plane-exploratory-posteriors}
+#| fig-width: 8
+#| fig-height: 6
+#| code-summary: "Plot posteriors"
+#| warning: false
+
+df %>% 
+  mutate(is_sign=factor(is_sign, levels=c("yes", "no"))) %>% 
+  # Age
+  mutate(beta=ifelse(var=="Age", beta*sd(data$Age), beta)) %>% 
+  mutate(lower=ifelse(var=="Age", lower*sd(data$Age), lower)) %>% 
+  mutate(upper=ifelse(var=="Age", upper*sd(data$Age), upper)) %>% 
+  # Education
+  mutate(beta=ifelse(var=="Education", beta*sd(data$Education), beta)) %>% 
+  mutate(lower=ifelse(var=="Education", lower*sd(data$Education), lower)) %>% 
+  mutate(upper=ifelse(var=="Education", upper*sd(data$Education), upper)) %>% 
+  # Financial Literacy
+  mutate(beta=ifelse(var=="Financial\nLiteracy", beta*sd(data$FinancialLiteracy), beta)) %>% 
+  mutate(lower=ifelse(var=="Financial\nLiteracy", lower*sd(data$FinancialLiteracy), lower)) %>% 
+  mutate(upper=ifelse(var=="Financial\nLiteracy", upper*sd(data$FinancialLiteracy), upper)) %>% 
+  # Income
+  mutate(beta=ifelse(var=="Income", beta*sd(data$numeric_income, na.rm=T), beta)) %>% 
+  mutate(lower=ifelse(var=="Income", lower*sd(data$numeric_income, na.rm=T), lower)) %>% 
+  mutate(upper=ifelse(var=="Income", upper*sd(data$numeric_income, na.rm=T), upper)) %>% 
+  
+  mutate(x = x+c(0.2, 0.1, 0, -0.1, -0.2)) %>% 
+  
+  ggplot(aes(x, beta, fill=var, color=study, linetype=is_sign)) +
+  geom_hline(yintercept = 0, linewidth=0.2, linetype=2) +
+  geom_segment(aes(x = x, xend=x, y=lower, yend=upper)) +
+  geom_point(stat="identity", size=3) +
+  theme_cowplot() +
+  scale_x_continuous(breaks = c(1.5, 3:8), 
+                     labels = c("MrAB", "Game", "Jacket", "Play", 
+                                "Plane", "Drink", "Gym"),
+                     guide = "prism_offset") +
+  scale_y_continuous(guide = "prism_offset") + 
+  labs(fill=NULL, x=NULL, y=expression(Standardized~beta), color="Study") +
+  theme(legend.position = "none", 
+        text = element_text(size = 15, family="Arial"), 
+        # strip.background = element_rect(fill="#E2E2E2"),
+        strip.background = element_rect(fill="#F9F9F9"),
+        axis.ticks.x = element_blank(),
+        axis.line.x = element_blank(),
+        axis.text.x = element_blank()) +
+  guides(fill="none", alpha="none", shape="none", linetype="none") +
+  facet_wrap(~var) +
+  scale_color_manual(values = colorspace::qualitative_hcl(7, "Dark 3")[6])
+
+```
+
+
