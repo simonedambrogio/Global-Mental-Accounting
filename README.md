@@ -8,7 +8,7 @@ Click [here](https://run.pavlovia.org/simonedambrogio/mmar-demo/) to access a we
 ## Analysis Study
 
 Click [here](https://run.pavlovia.org/simonedambrogio/mmar-analysis/) to access a web-page that includes all the codes used to produce the results reported in the main text and in the supplementary materials are. 
-Source code: Analysis Study/Analysis/index.qmd. You can execute it on your machine using the command ``` quarto render Demo/index.qmd ```. The file should be rendered in whithin 3 and 4 days on a "normal" desktop computer.
+Source code: Analysis Study/Analysis/index.qmd. You can execute it on your machine using the command ``` quarto render Analysis Study/Analysis/index.qmd ```. The file should be rendered in whithin 3 and 4 days on a "normal" desktop computer.
 
 ### Data 
 
