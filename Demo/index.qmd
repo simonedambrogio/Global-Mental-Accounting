@@ -135,8 +135,9 @@ We can now use the log(OR) and the standard error to perform a Bayesian meta-ana
 #| output: false
 
 mPlane <- brm(theta|se(se_theta) ~ 1 + (1|Country),
-               data = Plane_theta,
-               iter = 5000)
+              prior = prior_string("normal(0,2.5)", class = "Intercept"),
+              data = Plane_theta,
+              iter = 5000, cores=4)
 ```
 
 ```{r plot-fit-Plane}
@@ -145,6 +146,7 @@ mPlane <- brm(theta|se(se_theta) ~ 1 + (1|Country),
 #| fig-height: 4
 #| eval: true
 
+# re-run
 fe <- fixef(mPlane)[,"Estimate"]
 re <- ranef(mPlane)$Country[,,][,"Estimate"]
 postPlane <- data.frame(post=c(fe, fe+re), 
@@ -199,8 +201,10 @@ In this section we perform a Bayesian unpooled analysis. We will compute the eff
 #| output: false
 
 mPlane <- brm(response ~ condition * Country,
-               data = Plane,
-               iter = 2000, refresh = 0, family="bernoulli")
+              prior = prior_string("normal(0,2.5)", class = "b"),
+              family="bernoulli",
+              data = Plane,
+              iter = 2000, refresh = 0, cores = 4)
 ```
 
 ```{r prepare-plot-Plane-unpooled-posteriors}
@@ -208,6 +212,7 @@ mPlane <- brm(response ~ condition * Country,
 #| warning: false
 #| code-fold: true
  
+# re-run
 post <- prepare_predictions(mPlane)$dpars$mu$fe$b %>% 
   as.data.frame()
 
@@ -243,7 +248,7 @@ postPlane <- post_plot %>%
 #| code-summary: "Plot posteriors"
 #| warning: false
 
-
+# re-run
 post_plot %>% 
   ggplot(aes(x = theta, y = Country)) +
   stat_halfeye(aes(fill=credible, color=credible)) +
