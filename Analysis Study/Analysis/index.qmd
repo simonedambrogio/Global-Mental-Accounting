@@ -9349,13 +9349,18 @@ zscore <- function(x) as.vector(scale(x))
 info <- 
   read.csv("../Data/Info Countries/data.csv") %>% 
   filter(Country %in% unique(post$Country)) %>% 
-  select(Country, GDP.per.capita..current.US..) %>% 
-  rename(GDPxCapita = GDP.per.capita..current.US..) %>% 
+  select(Country, GDP.per.capita..current.US.., Democracy.index) %>% 
+  rename(
+    GDPxCapita = GDP.per.capita..current.US..,
+    democracy_index=Democracy.index
+  ) %>% 
   mutate(
     # GDPxCapita: Remove (2022) and convert in number
     GDPxCapita = str_replace(GDPxCapita, "\\([^()]{0,}\\)", ""),
     GDPxCapita = str_remove(GDPxCapita, ","),
-    GDPxCapita = as.numeric(GDPxCapita)
+    GDPxCapita = as.numeric(GDPxCapita),
+    democracy_index = str_replace(democracy_index, ",", "."),
+    democracy_index=as.numeric(democracy_index)
   )
 
 info <- info %>% 
@@ -9385,6 +9390,41 @@ info <- info %>%
     )
   )
 
+exchange_rates <- read.csv("scr/exchange-rate/exchange_rates_2022-10-01.csv")
+
+
+# Create a named vector for all countries
+currency_codes <- c(
+    "Austria" = "EUR",      # Euro
+    "Brazil" = "BRL",       # Brazilian Real
+    "Canada" = "CAD",       # Canadian Dollar
+    "China" = "CNY",        # Chinese Yuan
+    "Denmark" = "DKK",      # Danish Krone
+    "Egypt" = "EGP",        # Egyptian Pound
+    "France" = "EUR",       # Euro
+    "Germany" = "EUR",      # Euro
+    "India" = "INR",        # Indian Rupee
+    "Indonesia" = "IDR",    # Indonesian Rupiah
+    "Italy" = "EUR",        # Euro
+    "Lithuania" = "EUR",    # Euro
+    "Morocco" = "MAD",      # Moroccan Dirham
+    "Netherlands" = "EUR",  # Euro
+    "Portugal" = "EUR",     # Euro
+    "Romania" = "RON",      # Romanian Leu
+    "Spain" = "EUR",        # Euro
+    "Sweden" = "SEK",       # Swedish Krona
+    "Switzerland" = "CHF",  # Swiss Franc
+    "USA" = "USD",          # US Dollar
+    "Vietnam" = "VND"       # Vietnamese Dong
+)
+
+# Create results dataframe and merge with exchange rates
+exchange_rate_df <- data.frame(
+    Country = names(currency_codes),
+    Currency = currency_codes
+) %>%
+    left_join(exchange_rates, by = "Currency")
+
 theta <- map_dfr(theta_preregisteredExclusion, function(df) df )
 
 sbj_regressors <- Gym %>% 
@@ -9410,7 +9450,8 @@ df <- left_join(theta[,c("Country", "theta", "se_theta", "family", "study", "x")
   mutate( choensd = ifelse(family=="binomial", theta*lor2smd, theta),
           choensd = ifelse(family=="binomial1", NA, choensd) ) %>% 
   mutate( se = ifelse(family=="binomial", se_theta*lor2smd, se_theta),
-          se = ifelse(family=="binomial1", NA, se) )
+          se = ifelse(family=="binomial1", NA, se) ) %>% 
+  left_join(exchange_rate_df, by="Country")
 
 ```
 
@@ -10040,7 +10081,125 @@ df %>%
 
 ```
 
+
+### Full Non-Linear
+
+```{r fit-fullnonlinear-gdp}
+#| code-summary: "Fit Non-Linear Model"
+#| warning: false
+
+#
+d <- df %>%
+  mutate(
+    x = zscore(GDPxCapita),
+    y = choensd,
+    zdemocracy = zscore(democracy_index),
+    zface_value = zscore(log(Rate_to_USD))
+  ) %>%
+  filter(family != "binomial1")
+
+# Define the nonlinear formula with random effects plus linear face value effect
+nlform <- bf(
+  y ~ K / (1 + exp(-r * (x - x0))) + betademocracy * zdemocracy + betaface * zface_value,
+  K ~ 1 + (1|study),
+  r ~ 1 + (1|study),
+  x0 ~ 1 + (1|study),
+  betademocracy ~ 1 + (1|study),
+  betaface ~ 1 + (1|study),
+  nl = TRUE
+)
+
+# Define priors
+priors <- c(
+  prior(normal(1, 1), nlpar = "K"),
+  prior(normal(0, 2.5), nlpar = "r"),
+  prior(normal(-1, 1), nlpar = "x0"),
+  prior(normal(0, 2.5), nlpar = "betademocracy"),
+  prior(normal(0, 2.5), nlpar = "betaface")
+)
+
+# Fit the model
+bm2 <- brm(
+  formula = nlform,
+  data = d,
+  prior = priors,
+  family = gaussian(),
+  control = list(adapt_delta = 0.95),
+  chains = 4,
+  iter = 20000,
+  cores = 4,
+  seed = 123
+)
+
+summary(bm2)
+
+```
+
+
 :::
+
+
+## Multidimensional Scaling Analysis
+```{r mds}
+#| code-summary: "Fit MDS"
+
+# Perform MDS on the correlation matrix
+lor2smd = sqrt( 3 / (pi^2) )
+df <- theta[,c("Country", "theta", "study", "family")] %>% 
+  group_by(study) %>% 
+  mutate( theta = ifelse(family=="binomial", theta*lor2smd, theta)) %>% 
+  na.omit() %>% ungroup() %>% 
+  group_by(Country, study) %>% 
+  mutate(theta=mean(theta)) %>% 
+  filter(row_number()==1) %>% 
+  ungroup() %>% 
+  select(Country, study, theta) %>% 
+  pivot_wider(
+    names_from = study,
+    values_from = theta,
+    id_cols = Country
+  )
+
+dist_matrix <- dist(t(scale(df[,-1])))
+mds_fit <- cmdscale(dist_matrix, k = 3, eig = TRUE)
+
+mds_df <- data.frame(
+  x = mds_fit$points[,1],
+  y = mds_fit$points[,2],
+  z = mds_fit$points[,3],
+  scenario = colnames(df)[-1]
+)
+
+```
+
+```{r plot-mds}
+#| code-summary: "Plot MDS"
+
+# Define colors for each scenario
+scenario_colors <- colorspace::qualitative_hcl(7, "Dark 3")[c(5, 2, 4, 7, 6, 1, 3)]
+names(scenario_colors) <- c("MrAB", "Game", "Play", "Drink", "Jacket", "Plane", "Gym")
+
+# Create 3D plot using plotly
+plot_ly(mds_df, 
+        x = ~x, 
+        y = ~y, 
+        z = ~z, 
+        type = "scatter3d",
+        mode = "markers+text",
+        text = ~scenario,
+        textposition = "top center",
+        color = ~scenario,  # Use scenario for color mapping
+        colors = scenario_colors,  # Specify the color palette
+        marker = list(size = 5)) %>%
+  layout(
+    showlegend = FALSE,
+    scene = list(
+      xaxis = list(title = "Dimension 1", tickvals = -3:3, range=c(-4, 4)), 
+      yaxis = list(title = "Dimension 2", tickvals = -3:3, range=c(-4, 4)),
+      zaxis = list(title = "Dimension 3", tickvals = -3:3, range=c(-4, 4))
+    )
+  )
+```
 
 ## Individual-level Analysis
 
