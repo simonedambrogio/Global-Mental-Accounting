@@ -82,7 +82,7 @@ data_Plane <- read.csv(file = "../Data/data_Plane.csv")
 original_theta <- readRDS('../Data/original_theta.rds')
 data_paper <- map_dfr(1:length(original_theta), function(i) original_theta[[i]])
 
-
+ 
 countries2remove <- data_MrAB %>% 
   filter(attention_check_grater_than_3) %>% 
   group_by(subject) %>% 
@@ -530,8 +530,6 @@ data_MrAB_theta <- data_MrAB %>%
   filter(row_number()==1) %>% 
   ungroup()
     
-
-
 data_Game_theta <- data_Game %>%
   # EXCLUSION: Full Exclusion
   filter( !(Country %in% countries2remove) ) %>% 
@@ -1756,7 +1754,7 @@ table_bayesian <- fixef(mMrAB1) %>% as.data.frame(row.names = '') %>%
          Estimate = round(Estimate, 2),
          `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
          ) %>% 
-  select(-c(Est.Error, Q2.5, Q97.5))
+  select(-c(Est.Error, Q2.5, Q97.5)) 
 
 
 sjPlot::tab_model(mMrAB1)
@@ -1774,7 +1772,7 @@ table_bayesian <- rbind(
            `CIs (95%)`=str_c(round(Q2.5,2), round(Q97.5,2), sep = ' - '),
            ) %>% 
     select(-c(Est.Error, Q2.5, Q97.5))
-)
+) 
 
 sjPlot::tab_model(mMrAB2)
 ```
@@ -1785,7 +1783,7 @@ sjPlot::tab_model(mMrAB2)
 #| eval: true
 #| output: false
 
-# MrAB
+# Game
 mGame <- brm(theta|se(se_theta) ~ 1 + (1|Country),
              prior = prior_string("normal(0,2.5)", class = "Intercept"),
              data = theta_preregisteredExclusion$Game,
@@ -1802,6 +1800,7 @@ postGame <- data.frame(post=c(fe, fe+re),
 ```{r summary-fit-Game}
 #| echo: true
 
+# Game
 # re-run1
 table_bayesian <- rbind(
   table_bayesian,
@@ -1813,7 +1812,7 @@ table_bayesian <- rbind(
     select(-c(Est.Error, Q2.5, Q97.5))
 )
 
-sjPlot::tab_model(mGame)
+sjPlot::tab_model(mGame) 
 ```
 
 #### Drink
@@ -1848,7 +1847,7 @@ table_bayesian <- rbind(
            ) %>% 
     select(-c(Est.Error, Q2.5, Q97.5))
 )
-sjPlot::tab_model(mDrink)
+sjPlot::tab_model(mDrink) 
 ```
 
 #### Jacket
@@ -1884,7 +1883,7 @@ table_bayesian <- rbind(
     select(-c(Est.Error, Q2.5, Q97.5))
 )
 
-sjPlot::tab_model(mJacket)
+sjPlot::tab_model(mJacket) 
 ```
 
 #### Play
@@ -1920,7 +1919,7 @@ table_bayesian <- rbind(
     select(-c(Est.Error, Q2.5, Q97.5))
 )
 
-sjPlot::tab_model(mPlay)
+sjPlot::tab_model(mPlay) 
 ```
 
 #### Gym
@@ -1956,7 +1955,7 @@ table_bayesian <- rbind(
     select(-c(Est.Error, Q2.5, Q97.5))
 )
 
-sjPlot::tab_model(mGym)
+sjPlot::tab_model(mGym) 
 ```
 
 #### Plane
@@ -1992,7 +1991,7 @@ table_bayesian <- rbind(
     select(-c(Est.Error, Q2.5, Q97.5))
 )
 #
-sjPlot::tab_model(mPlane)
+sjPlot::tab_model(mPlane) 
 ```
 
 :::
@@ -2007,7 +2006,7 @@ sjPlot::tab_model(mPlane)
 #| code-summary: "Plot posteriors full exclusion"
 #| warning: false
 
-# Re-plot1
+# Re-plot1 
 # Include Credible interval
 postMrAB1$lower <- c(fixef(mMrAB1)[,"Q2.5"], fixef(mMrAB1)[,"Q2.5"]+ranef(mMrAB1)$Country[,,][,"Q2.5"] )
 postMrAB1$upper <- c(fixef(mMrAB1)[,"Q97.5"], fixef(mMrAB1)[,"Q97.5"]+ranef(mMrAB1)$Country[,,][,"Q97.5"] )
@@ -2119,6 +2118,8 @@ post_SMD <- post %>% filter(family=="gaussian") %>%
 
 cowplot::plot_grid(post_OR, post_ER, post_SMD, nrow = 1, rel_widths = c(0.5, .2, .3))
 
+ggsave(filename = "index_files/figure-html/figure1.png")
+ggsave(filename = "index_files/figure-html/figure1.svg")
 ```
 
 #### Table
@@ -2127,7 +2128,7 @@ cowplot::plot_grid(post_OR, post_ER, post_SMD, nrow = 1, rel_widths = c(0.5, .2,
 ```{r compute-bayes-factor-bayesian-meta-analysis}
 #| code-summary: Compute Bayes Factor
 
-# re-run1
+# re-run1 
 compute_bayes_factor <- function(model){
   intercept <- as_draws(model, variable = "b_Intercept")
   posterior <- as.vector(unlist(intercept))
@@ -2144,14 +2145,14 @@ log10_bf <- c(
   round(log10(as.numeric(compute_bayes_factor(mPlay))), 2),
   round(log10(as.numeric(compute_bayes_factor(mGym))), 2),
   round(log10(as.numeric(compute_bayes_factor(mPlane))), 2)
-)
+) 
 
 ```
 
 ```{r table-preregistered}
 #| eval: true
 
-# re-run1
+# re-run1 
 rownames(table_bayesian) <- table_bayesian$Study
  
 table_bayesian$`log₁₀(BF)` <- log10_bf
@@ -2175,7 +2176,7 @@ table_bayesian[,c(5,1:4)] %>%
   kbl(caption="<b>Table 2 | </b> Hierarchical Bayesian Meta-Analysis",
       format = "html", table.attr = "style='width:50%;'") %>%
   kable_classic(html_font = "Cambria") %>%
-  kable_material(c("striped", "hover"))
+  kable_material(c("striped", "hover")) 
 
 ```
  
@@ -4332,6 +4333,7 @@ cowplot::plot_grid(plMrAB1, plMrAB2, rel_widths = c(1, 0.8), nrow = 1)
 #| echo: true
 
 # re-run1
+# test
 post_plot1$log10_bf = NA
 for( country in unique(post_plot1$Country) ){
   idx = post_plot1$Country==country
@@ -4370,13 +4372,14 @@ rmarkdown::paged_table(
     filter(row_number()==1) %>% 
     select(Country, mu, lower, upper) %>% 
     ungroup()
-  )
+  ) 
 ```
 
 ```{r summary-fit-MrAB2-unpooled-preregistered-exclusion}
 #| echo: false
 
 # re-run
+# test
 post_plot2$log10_bf = NA
 for( country in unique(post_plot2$Country) ){
   idx = post_plot2$Country==country
@@ -4419,7 +4422,7 @@ rmarkdown::paged_table(
     filter(row_number()==1) %>% 
     select(Country, mu, lower, upper) %>% 
     ungroup()
-  )
+  ) 
 ```
 
 
@@ -4435,7 +4438,7 @@ mGame <- brm(response ~ buyer * Country,
                 # EXCLUSION: Full Exclusion
                 filter( !(Country %in% countries2remove) ) %>% 
                 filter( attention_check_grater_than_3 ),
-              iter = 20000, refresh = 0, family="bernoulli")
+              iter = 20000, refresh = 0, family="bernoulli") 
 
 ```
 
@@ -4447,7 +4450,7 @@ mGame <- brm(response ~ buyer * Country,
  
 post <- prepare_predictions(mGame)$dpars$mu$fe$b %>% 
   as.data.frame()
-
+ 
 names(post)[1] <- "Austria"
 names(post)[2] <- "theta"
 names(post) <- str_remove( names(post), "b_" )
@@ -4494,6 +4497,7 @@ post_plot %>%
 #| echo: false
 
 # re-run1
+# test
 post_plot$log10_bf = NA
 for( country in unique(post_plot$Country) ){
   idx = post_plot$Country==country
@@ -4536,7 +4540,7 @@ rmarkdown::paged_table(
     filter(row_number()==1) %>% 
     select(Country, mu, lower, upper) %>% 
     ungroup()
-  )
+  )  
 ```
 
 #### Drink
@@ -4617,6 +4621,7 @@ post_plot %>%
 #| echo: false
 
 # re-run1
+# test
 post_plot$log10_bf = NA
 for( country in unique(post_plot$Country) ){
   idx = post_plot$Country==country
@@ -4659,7 +4664,7 @@ rmarkdown::paged_table(
     filter(row_number()==1) %>% 
     select(Country, mu, lower, upper) %>% 
     ungroup()
-  )
+  ) 
 ```
 
 #### Jacket
@@ -4732,6 +4737,7 @@ post_plot %>%
 #| echo: false
 
 # re-run1
+# test
 empty <- function(x){ 
   if(x==''){
     return("Jacket")
@@ -4752,7 +4758,7 @@ rmarkdown::paged_table(
     filter(row_number()==1) %>% 
     select(Country, mu, lower, upper) %>% 
     ungroup()
-  )
+  ) 
 ```
 
 #### Play
@@ -4826,6 +4832,7 @@ post_plot %>%
 #| echo: false
 
 # re-run1
+# test
 post_plot$log10_bf = NA
 for( country in unique(post_plot$Country) ){
   idx = post_plot$Country==country
@@ -4867,7 +4874,7 @@ rmarkdown::paged_table(
     filter(row_number()==1) %>% 
     select(Country, mu, lower, upper) %>% 
     ungroup()
-  )
+  ) 
 ```
 
 #### Gym
@@ -4943,6 +4950,7 @@ post_plot %>%
 #| echo: false
 
 # re-run1
+# test
 post_plot$log10_bf = NA
 for( country in unique(post_plot$Country) ){
   idx = post_plot$Country==country
@@ -4985,7 +4993,7 @@ rmarkdown::paged_table(
     filter(row_number()==1) %>% 
     select(Country, mu, lower, upper) %>% 
     ungroup()
-  )
+  ) 
 ```
 
 
@@ -5059,6 +5067,7 @@ post_plot %>%
 #| echo: false
 
 # re-run
+# test
 post_plot$log10_bf = NA
 for( country in unique(post_plot$Country) ){
   idx = post_plot$Country==country
@@ -5101,7 +5110,7 @@ rmarkdown::paged_table(
     filter(row_number()==1) %>% 
     select(Country, mu, lower, upper) %>% 
     ungroup()
-  )
+  ) 
 ```
 
 :::
@@ -5110,6 +5119,7 @@ rmarkdown::paged_table(
 #| echo: false
 
 # re-run1
+# test
 post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% # Recalcute
   mutate(family=case_when(
       study%in%c("Drink","Gym") ~ "gaussian", 
@@ -5146,8 +5156,9 @@ We estimated `r (n_studies = unpooled$study |> unique() |> length())` effects fo
 #| fig-height: 3.5
 #| code-summary: "Plot posteriors"
 #| warning: false
-       
+        
 # re-run
+# test
 post <- rbind(postMrAB1,postMrAB2,postGame,postDrink,postJacket,postPlay,postGym,postPlane) %>% # Recalculate
   mutate(family=case_when(
       study%in%c("Drink","Gym") ~ "gaussian", 
@@ -5206,13 +5217,17 @@ plotSMD <- post %>% filter(family=="gaussian") %>%
 
 cowplot::plot_grid(plotOR, plotER, plotSMD, nrow = 1, rel_widths = c(0.5, .2, .3))
 
+ggsave(filename = "index_files/figure-paper/figure2.png")
+ggsave(filename = "index_files/figure-paper/figure2.svg")
+
 ```
 
 #### Table
 
 ```{r table-preregistered-unpooled}
 #| eval: true
-
+ 
+# test
 # table_unpooled %>% 
 #   kbl(caption="<b>Table 3 | </b> Unpooled Analysis",
 #       format = "html", table.attr = "style='width:50%;'") %>% 
@@ -5221,7 +5236,7 @@ cowplot::plot_grid(plotOR, plotER, plotSMD, nrow = 1, rel_widths = c(0.5, .2, .3
 #   save_kable("tables/png/Unpooled Analysis.png", zoom = 3)
   # save_kable("tables/pdf/Unpooled Analysis.pdf")
   
-# re-run1
+# re-run1.  
 table_unpooled %>%
   rename(`log₁₀(BF)` = log10_bf) %>%
   flextable() %>% 
